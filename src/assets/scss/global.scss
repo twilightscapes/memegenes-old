@@ -512,6 +512,8 @@ input:focus, textarea:focus {
 	border:0px solid red;
 	border-radius: 12px;
 	background:#ccc;
+	min-width: 50vw;
+	max-width:80vw;
 }
 
 
