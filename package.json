@@ -1,15 +1,15 @@
 {
-  "name": "@twilightscapes/gatsby-starter-myresume",
-  "description": "A starter to launch your blazing fast personal website and a blog, Built with Gatsby and Netlify CMS. Made with ❤ by Todd Lambert",
+  "name": "@memegene/gatsby-starter",
+  "description": "A starter",
   "version": "2.0.0",
-  "author": "Todd Lambert <toddlambert@gmail.com>",
+  "author": "Anonymous <Anonymous@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twilightscapes/gatsby-starter-MyResume.git"
+    "url": "https://github.com/.git"
   },
   "bugs": {
-    "url": "https://github.com/twilightscapes/gatsby-starter-MyResume/issues"
+    "url": "https://github.com/issues"
   },
   "scripts": {
     "build": "gatsby build",

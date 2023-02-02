@@ -28,12 +28,12 @@ const Foo = () => {
 
       
 
-<p className="specialfont" style={{textAlign:'center', fontSize:'140%'}}>Please Share:</p>
-<div style={{   background: 'transparent',
+<p className="specialfont pleaseshare" style={{textAlign:'center', fontSize:'140%'}}>Please Share:</p>
+<div className="sharebutts" style={{   background: 'transparent',
   borderRadius: "",
-  border: '0px solid red',
+  // border: '0px solid red',
   color: '',
-  padding: '0',
+  padding: '20px 0 0 0',
   display:'flex',
   flexDirection:'row',
   justifyContent:'center',

@@ -4,12 +4,12 @@ title: Proceed To Games
 slug: /proceed-to-games
 date: 2023-06-01 01:23
 description: Meet the Sirens
-youtuber: "Y7EZBP9j7h0"
+youtuber: "https://youtu.be/Y7EZBP9j7h0"
 youtuber2: ""
-youtubeshoworiginal: "1"
+youtubeshoworiginal: true
 youtubersuggestion1: ""
-youtubersuggestion2: ""
-youtubersuggestion3: ""
+youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
+youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
 youtubestart: "40"
 youtubeend: "140"
 youtubemute: true
@@ -30,10 +30,10 @@ nftdrop: ""
 nftredeem: ""
 contentinvideo: true
 ---
-<div style="position:relative; top:; z-index:0; border:px solid blue; height:100%; width:; display:flex; justify-content:center; ">
+<div style="position:relative; top:; z-index:0; border:px solid blue; height:100%; width:; display:flex; justify-content:center; margin-top:1%;">
 
 
-<div class="" style="position:relative; z-index:0; min-width:50%; height:100%; padding:3vh 1rem 1rem 3rem; font-size:clamp(.7rem, 2.3vw, 3rem); left:0;, top:4vh; line-height:90%; text-shadow:0 2px 7px #000; background:rgba(0,0,0,0.8); border-radius:12px; border:0px solid yellow;">
+<div class="" style="position:relative; z-index:0; min-width:50%; height:100%;  padding:3vh 1rem 1rem 3rem; font-size:clamp(.7rem, 2.3vw, 3rem); left:0;, top:4vh; line-height:90%; text-shadow:0 2px 7px #000; background:rgba(0,0,0,0.8); border-radius:12px; border:0px solid yellow;">
   <p>You will receive an identity disk.</p>
   <p>Everything you do or learn</p>
   <p>will be imprinted on this disk.</p>

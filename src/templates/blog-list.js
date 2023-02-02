@@ -110,7 +110,7 @@ class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
     const { currentPage, numPages } = this.props.pageContext
-    const blogSlug = "/minutes/"
+    const blogSlug = "/archive/"
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
     const prevPage =
@@ -153,7 +153,7 @@ class BlogIndex extends React.Component {
 
         <div id="" className="wrap-element1 " style={{overflow:'hidden', width:'100vw', height:'100vh', position:'fixed', top:'0'}}>
 <ReactPlayer
-         className='frontbg'
+         className='frontbg mobilehide'
          url="https://www.youtube.com/embed/c_V1iD6F1kk"
          width="100%"
          height="100vh"
@@ -215,9 +215,15 @@ class BlogIndex extends React.Component {
 
  {posts}
 
-
+<article style={{textAlign:'center', display:'flex', flexDirection:'column'}}>
+  
+  
 
         <Pagination {...props} />
+        
+        <Link className="post-card button " to="/#posts" style={{textDecoration:'none', color:'inherit',}}><RiArrowLeftLine style={{fontSize:'20px'}} />  View Newest</Link>
+        
+</article>
 </div>
 
         

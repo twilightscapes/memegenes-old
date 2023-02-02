@@ -1,21 +1,21 @@
 ---
 slug: /
 tagline: ""
-description: "Everything cool in ONLY 60 seconds"
+description: "Meme Genes -  where great memes goes to die!"
 featuredImage: /assets/allin60seconds.jpg
 secondaryImage: /assets/transparent.png
 underlayImage: /assets/transparent.png
-showInfo: true
+showInfo: false
 youtuber: "https://youtu.be/14zqZsUzplg"
 youtubeautostart: true
-title: All In 60 Seconds
+title: Where great memes goes to die!
 svgImage: /assets/null.svg
-showPosts: "1"
+showPosts: true
 cta:
   ctaText: How does this work?
   ctaLink: /howitworks/
 youtubeend: ""
-showFeature: true
+showFeature: false
 nftredeem: ""
 youtubecontrols: false
 template: index-page

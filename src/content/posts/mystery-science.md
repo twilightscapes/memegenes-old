@@ -6,7 +6,7 @@ date: 2021-10-18 10:43
 description: A bit of a tribute to the great MST3000
 youtuber: "https://youtu.be/XjuLZwlDxh8"
 youtuber2: ""
-youtubeshoworiginal: "1"
+youtubeshoworiginal: true
 youtubersuggestion1: ""
 youtubersuggestion2: "https://youtu.be/3lyudrx1pJo"
 youtubersuggestion3: "https://youtu.be/l_XqDxL6xJM"

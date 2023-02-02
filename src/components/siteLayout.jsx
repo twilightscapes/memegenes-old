@@ -120,6 +120,7 @@ This is 2nd menu
 <div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', border:'0px solid blue'}}>
 {/* <img className="" src={iconimage} alt="Logo" style={{borderRadius:'12px'}} /> */}
 <Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'1', margin:'0 0 0 0', width:'100%', display:'' }}/> 
+<div style={{fontSize:'80%'}}>memegenes.com</div>
 {/* <object className="" id="logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="Animated Logo" title="Animated Logo" >Animated Logo</object> */}
 </div>
   </label>
@@ -138,28 +139,28 @@ This is 2nd menu
 
   
 
-<ul className="sidebarMenuInner post-card" style={{maxWidth:'400px', position:'absolute', right:'0', display:'', justifyContent:''}}>
+<ul className="sidebarMenuInner" style={{maxWidth:'400px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
 <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
 <Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'180px', height:'180px', border:'0px solid'}}></Link>
-<SiteLogo />
+<SiteLogo />MemeGenes.com
 </li>
 
 
-<li className="carto" style={{textAlign:''}}>
+{/* <li className="carto" style={{textAlign:''}}>
               <Link className="navbar-item txtshadow" to="/projects">
       <div style={{display:'flex', gap:'10px'}}>
-        {/* <AiOutlineFundProjectionScreen style={{fontSize:'2vw'}} /> */}
+ 
         View By Project
         </div>
               </Link>
-      </li> 
+      </li>  */}
 
 
 <li className="carto">
-      <Link className="navbar-item txtshadow" to="/minutes/">
+      <Link className="navbar-item txtshadow" to="/archive/">
       <div style={{display:'flex', gap:'10px'}}>
-      View All Minutes
+      View All Posts
       </div>
         </Link>
 </li>
@@ -175,7 +176,7 @@ This is 2nd menu
 
 
 
-<li className="carto" style={{textAlign:'', pointerEvents:'none'}}>
+<li className="carto" style={{textAlign:'', pointerEvents:''}}>
           <Link className="navbar-item txtshadow" to="/about/">
 
           About This Site
@@ -184,7 +185,11 @@ This is 2nd menu
   </li> 
 
 
-
+  <li className="grad" style={{position:'relative',}}>
+        <Link to="/contact" className="navbar-item" style={{paddingRight:'',}}>
+          Contact
+        </Link>
+        </li>
 
   <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
 

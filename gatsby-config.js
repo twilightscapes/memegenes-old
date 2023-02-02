@@ -175,10 +175,10 @@ module.exports = {
     //     modulePath: ``, // default: undefined
     //     enableIdentityWidget: true,
     //     publicPath: `admin`,
-    //     htmlTitle: `All in 60 CMS`,
+    //     htmlTitle: `Meme Genes CMS`,
     //     htmlFavicon: `static/siteimages/manifest-icon-192.png`,
     //     includeRobots: false,
-    //     logo_url: 'https://twilightscapes.com/assets/tw-logo-white.svg'
+    //     logo_url: 'https://memegenes.com/assets/logo.svg'
     //   },
     // },
 
@@ -214,8 +214,8 @@ module.exports = {
     // {
     //   resolve: 'gatsby-plugin-robots-txt',
     //   options: {
-    //     host: 'https://allin60.com',
-    //     sitemap: 'https://allin60.com/sitemap.xml',
+    //     host: 'https://memegenes.com',
+    //     sitemap: 'https://memegenes.com/sitemap.xml',
     //     resolveEnv: () => process.env.GATSBY_ENV,
     //     env: {
     //       development: {
@@ -230,10 +230,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `All in 60 Seconds`,
-        short_name: `All in 60`,
+        name: `Meme Genes`,
+        short_name: `Meme Genes`,
         start_url: `/?user_mode=app`,
-        description: `All in ONLY 60 seconds`,
+        description: `Meme Genes`,
         background_color: `#111`,
         lang: `en`,
         theme_color: `#111`,

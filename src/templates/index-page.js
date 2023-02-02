@@ -93,7 +93,7 @@ query HomeQueryHomeQuery($id: String!) {
   posts: allMarkdownRemark(
     sort: {frontmatter: {date: DESC}}
     filter: {frontmatter: {template: {eq: "blog-post"}}}
-    limit: 3
+    limit: 6
   ) {
     edges {
       node {
@@ -871,24 +871,29 @@ Through NFT
 {/* end show Posts */}
 {ShowPosts ? (
 
-<div id="posts" name="posts" style={{padding:'0 3%'}}>
-  
- 
-<div className="specialfont" style={{textAlign:'center', fontSize:'5vw', margin:'0 0',}}>Latest Minutes:</div>
+
+
+<div className="horizontal-holder allin60panel" style={{position:'relative', background:'none'}}>
+
+
+
+
+ <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
+
+
+ <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
+
+
+
+
 
         <BlogListHome data={posts} />
 
-
-       
-        
-        <div style={{textAlign:'center'}}><Link className="button " to="/minutes/" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>More Minutes </Link>
+        <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
         </div>
 
+</div>
 
-
- 
-
-  
 </div>
 
    ) : (
@@ -985,7 +990,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
 
 
 
-<h3 style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', margin:'10vh auto 2rem auto'}}>Todd's Other Work</h3>
+{/* <h3 style={{textAlign:'center', fontSize:'clamp(1.3rem, 1.1vw + 1.5rem, 3rem)', margin:'10vh auto 2rem auto'}}>Todd's Other Work</h3>
  
  <div className="flexbutt noexit print" style={{padding:'0 4%',
 position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px', margin:'0 auto 2rem auto', }}>
@@ -1002,7 +1007,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
     </div>
 
 
-{/*     
+    
     <div className="flexcheek network" style={{height:'', margin:'', display:'flex', flexDirection:'column', justifyContent:'space-between'}}>
     <a className="noexit" href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
     <StaticImage src="../../static/assets/urban-fetish-button.jpg" alt="Todd Lambert Night photos" style={{borderRadius:'8px'}}  /></a>
@@ -1010,7 +1015,7 @@ position:'relative', height:'', width:'', overflow:'', display:'flex', gap:'20px
     Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. 
     <br /><br />
     <div style={{textAlign:'center',}}><a className="post-card button " href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>UrbanFetish.com</a></div>
-    </div> */}
+    </div>
 
 
 
@@ -1034,7 +1039,7 @@ Todd sells exceptionally fast and well-built multimedia web apps called VidSocks
     </div>
 
 
-</div>
+</div> */}
 
 
 
@@ -1054,7 +1059,7 @@ Virtual Tour<br />
 <br /><br /> */}
 
 
-<div style={{position:'relative', top:'', margin:'10vh 0', padding:'0',  width:'', }}>
+<div style={{position:'relative', top:'', margin:'10px 0 0 0 ', padding:'0',  width:'', }}>
 <SocialMe />
 </div>
 

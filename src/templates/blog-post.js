@@ -97,7 +97,8 @@ const Pagination = props => (
           // textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff'
         }}>
 &#10094; &nbsp; {" "} <span className="page-title">
-              {props.previous.frontmatter.title}
+              {/* {props.previous.frontmatter.title} */}
+              Previous
             </span></button>
           </Link>
         </li>
@@ -108,7 +109,11 @@ const Pagination = props => (
 <button className="" style={{display:'flex', justifyContent:'flex-start',
           // textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff'
           }}>
-            <span className="page-title">{props.next.frontmatter.title}</span> {" "} &nbsp; &#10095;
+            <span className="page-title">
+              {/* {props.next.frontmatter.title} */}
+Next
+              </span>
+             {" "} &nbsp; &#10095;
           </button>
           </Link>
         </li>
@@ -318,7 +323,7 @@ const OriginalUrl = frontmatter.youtuber
           //   Suggestion2,
           //   Suggestion3
           // ]}
-          width="150px"
+          width="300px"
           height="150px"
           style={{marginTop:'-50px', position:'absolute', zIndex:'0'}}
           config={{
@@ -334,12 +339,12 @@ const OriginalUrl = frontmatter.youtuber
           playIcon={
             <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
           
-        <div className="" style={{position:'absolute', top:'-200px', left:'10px', zIndex:'', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
+        <div className="" style={{position:'absolute', top:'-100px', left:'10px', zIndex:'', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
           
       
           {/* <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div> */}
 
-          <div className="popped" style={{display:'flex', width:'', margin:'0 auto', fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'2rem', background:'rgba(51, 51, 51, 0.3)', borderRadius:'8px', border:'1px solid #666', filter:'drop-shadow(2px 2px 2px #000)', cursor:'pointer'}}><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000)'}} /><div style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)', color:'#999', }}>Extra Audio</div></div>
+          <div className="popped" style={{display:'flex', width:'', margin:'0 auto', fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'2rem', background:'rgba(51, 51, 51, 0.3)', borderRadius:'8px', border:'1px solid #666', filter:'drop-shadow(2px 2px 2px #000)', cursor:'pointer'}}><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000)'}} /><div style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)', color:'#999', }}>Oh Really?</div></div>
           
           </div>
           </button>}
@@ -454,8 +459,8 @@ const OriginalUrl = frontmatter.youtuber
 {/* <div className='player-wrapper intro' style={{position:'relative', bottom:'0', zIndex:'', height:'100vh', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)',  }}> */}
 <div id="top"></div>
 
-<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'20px', right:'', display:'flex', justifyContent:'center', width:'', margin:'0 auto', gap:'20px',
-textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff',	background:'rgba(0, 0, 0, .9)', padding:'5px 10px', borderRadius:'12px',
+<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'20px', right:'', display:'flex', justifyContent:'center', width:'', margin:'0 auto', gap:'2vw',
+textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', padding:'12px 0 10px 10px', borderRadius:'12px',
 
  }}>
 
@@ -491,8 +496,13 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
         </AnchorLink>
        
           ) : (
-            ""
+            <AnchorLink to="#original" style={{}}>
+            Credits
+                  </AnchorLink>
           )}
+
+
+{(previous || next) && <Pagination {...props} />}
 
 
 {/* <AnchorLink to="#footer" style={{border:'0px solid', }}>
@@ -631,7 +641,7 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 {ContentinVideo ? (
   <div id="contentvideo"
-        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', aspectRatio:'16/9', padding:'', margin:'0 auto', color:'inherit !important', border:'1px solid transparent', position:'absolute', bottom:'0', left:'0', top:'0', right:'0', zindex:'1',}}
+        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'1px solid transparent', position:'absolute', bottom:'', left:'0', top:'0', right:'0', zindex:'1', maxHeight:'90vh', borderBottom:'0px solid', }}
         dangerouslySetInnerHTML={{ __html: html }}
       ></div>
  ) : (
@@ -681,18 +691,39 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 {/* <AnchorLink className="" to="#sharethis" style={{position:'absolute', top:'0', zIndex:'60'}}>
                 About Us 
               </AnchorLink> */}
-<div style={{padding:'0 5vw', color:'inherit !important'}}>
+{/* <div style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'', right:'', display:'flex', justifyContent:'center', width:'', margin:'0 auto', gap:'20px',
+textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff', padding:'5px 10px', borderRadius:'12px',
+
+ }}>
+  
       {(previous || next) && <Pagination {...props} />}
-      </div>
+      </div> */}
 
 
 
 
 
 
-
-        
-        
+{!ContentinVideo ? (
+<article className="blog-post">
+        <header style={{height:'', display:'grid', placeContent:'center'}}>
+          <section className="article-header1" style={{textAlign:'center', margin:'2vh 0 0 0', height:'auto', color:''}}>
+            <h1 className="tronText" style={{fontSize:'4vw'}}>{frontmatter.title}</h1>
+            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
+            {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
+          </section>
+        </header>
+<div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
+      <div
+        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', width:'100%', maxWidth:'', padding:'10vh 10vw', margin:'0 auto', color:'inherit !important'}}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />    
+</div>
+ </article>
+        ) : (
+          ""
+        )}
+         
 
 
      
@@ -793,8 +824,7 @@ Click to play original video
 <section id="comments" style={{height:'100vh', marginTop:'',   display:'grid', placeContent:'center'}}>
 
 <CommentBox />
-<br />
-<GoBack />
+
 
 </section>
           ) : (
@@ -811,44 +841,13 @@ Click to play original video
 
 
 
-      <article className="blog-post">
-        <header style={{height:'', display:'grid', placeContent:'center'}}>
-          <section className="article-header1" style={{textAlign:'center', margin:'0', height:'auto', color:''}}>
-            <h1 className="tronText" style={{fontSize:'4vw'}}>{frontmatter.title}</h1>
-            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
-            {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
-          </section>
-        </header>
- </article>
 
-
-
-
-
-
-
-
-
-
-
-{/* <div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
-
-
-      <div
-        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', width:'100%', maxWidth:'', padding:'10vh 0', margin:'0 auto', color:'inherit !important'}}
-        dangerouslySetInnerHTML={{ __html: html }}
-      />    
-  
- 
-</div> */}
 
       
 
       
 
-   
-   <br />
-   <GoBack />
+
    <br />
    <br />
    </CustomBox>

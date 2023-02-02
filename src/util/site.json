@@ -3,18 +3,18 @@
     "iconimage": "/assets/logo.svg",
     "favicon32x32": "/icons/icon-512x512.png",
     "favicon16x16": "/icons/icon-192x192.png",
-    "companyname": "All in 60 Seconds",
+    "companyname": "Meme Genes",
     "siteUrl": "https://allin60.com",
     "twitterUsername": "toddlambert",
-    "titleDefault": "All in 60 Seconds",
+    "titleDefault": "Meme Genes",
     "icon192": "/icons/icon-192x192.png",
     "titleTemplate": "%s",
-    "title": "All In 60 Seconds",
+    "title": "Meme Genes",
     "image": "/assets/default-og-image.jpg",
-    "description": "Everything cool in only 60 seconds",
+    "description": "Your butt will look great in Meme Genes",
     "icon512": "/icons/icon-512x512.png",
-    "showfooter": true,
+    "showfooter": false,
     "comments": "5665058684141568-proj"
   },
-  "ga": "UA-220944517-1"
+  "ga": ""
 }

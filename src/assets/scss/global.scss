@@ -74,6 +74,9 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .i
 	display: none;
 }
 
+// .sharebutts{font-size:clamp(1rem, 1vw, 2rem) !important; padding:5rem; border:1px solid red; color:#ad04a5 !important; }
+
+
 
 .lineOne {
 	transition-delay:.7s; 
@@ -388,6 +391,8 @@ body.homepage .ReactModalPortal .nextbutt {
   // margin-right: 0.4em;
   vertical-align: top
 }
+
+body.homepage .resp-sharing-button__icon svg{ width: 5vw; height: 5vh;}
 
 .resp-sharing-button__link span{display:none;}
 .resp-sharing-button__link:hover{filter: brightness(85%);}
@@ -715,7 +720,7 @@ a [aria-current]:hover{
 }
 
 
-
+body.homepage .pleaseshare{display:none;}
 
 
 .seotext{
@@ -817,8 +822,8 @@ body.blogpost .sidebarIconToggle{display: none;}
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color:#111;
-	// background-color:rgba(32, 140, 146, 0.493);
+	// background-color:#111;
+	background-color:rgba(17, 17, 17, 0.8) !important;
 	border-left:1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 12px 0 0 12px !important;
 	min-width: 220px;
@@ -1103,10 +1108,10 @@ animation: fadeout .5s forwards;
 
 @media (hover: hover) {
 .horizontal-scroll-wrapper::before, .sliderholder1::before{
-  content:' Scroll Projects  \276F \276F ' !important;
+  content:' Scroll  \276F \276F ' !important;
 }
 .horizontal-scroll::before, .sliderholder1::before{
-  content:' Scroll Projects \276F \276F ' !important;
+  content:' Scroll \276F \276F ' !important;
 }
 
 }
@@ -1436,14 +1441,14 @@ body.homepage .horizontal-holder{height:250px !important}
 .pagination a{
 	color:inherit !important;
 }
-.pagination {
-	position:relative;
-	bottom:8vh;
-}
+// .pagination {
+// 	position:relative;
+// 	bottom:10px;
+// }
 .pagination ul{
 	display:flex;
 	justify-content:center;
-	gap:20px;
+	gap:1vw;
 }
 
 
@@ -1453,12 +1458,12 @@ body.homepage .horizontal-holder{height:250px !important}
 	// color:#999;
 	font-size: 1rem;
 	border-radius: 12px;
-	border:1px solid;
+	// border:1px solid;
 	// filter: drop-shadow(2px 2px 2px #000);
 	cursor:pointer;
  text-shadow:2px 2px 0 #222 !important; 
- background:rgba(0, 0, 0, .9);
- padding:5px 2vw;
+//  background:rgba(0, 0, 0, .9);
+ padding:0 2vw;
  color:#fff;
 //  filter:drop-shadow(0px 0px 5px rgba(155,155,155,1)) !important; 
 
@@ -1529,13 +1534,13 @@ body.homepage .horizontal-holder{height:250px !important}
 		margin:0 auto !important;
    }
 
-	.pagination{
-		position:absolute;
-		top:50vh !important;
-		border:0px solid yellow !important;
-		width:90% !important;
-		margin:0 auto !important;
-	}
+	// .pagination{
+	// 	position:absolute;
+	// 	top:50vh !important;
+	// 	border:0px solid yellow !important;
+	// 	width:90% !important;
+	// 	margin:0 auto !important;
+	// }
 	.pagination li {
 		width:100% !important;
 	}
