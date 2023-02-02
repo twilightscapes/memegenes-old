@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "iconimage": "/assets/logo.svg",
+    "favicon32x32": "/icons/icon-512x512.png",
+    "favicon16x16": "/icons/icon-192x192.png",
+    "companyname": "All in 60 Seconds",
+    "siteUrl": "https://allin60.com",
+    "twitterUsername": "toddlambert",
+    "titleDefault": "All in 60 Seconds",
+    "icon192": "/icons/icon-192x192.png",
+    "titleTemplate": "%s",
+    "title": "All In 60 Seconds",
+    "image": "/assets/default-og-image.jpg",
+    "description": "Everything cool in only 60 seconds",
+    "icon512": "/icons/icon-512x512.png",
+    "showfooter": true,
+    "comments": "5665058684141568-proj"
+  },
+  "ga": "UA-220944517-1"
+}
