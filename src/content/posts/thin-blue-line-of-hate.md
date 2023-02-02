@@ -24,7 +24,7 @@ underlayImage: "/assets/transparent.png"
 featuredImage: /assets/murica-promo.png
 svgImage: 
 nftlink: ""
-nftdrop: "2021-11-24T14:00:00"
+nftdrop: ""
 nftredeem: ""
 contentinvideo: true
 ---
@@ -34,19 +34,11 @@ contentinvideo: true
 <div style="position:relative; top:; z-index:0; border:px solid blue; height:100%; width:; display:flex; justify-content:center; margin-top:1%;">
 
 
-<div class="" style="position:relative; z-index:0; min-width:50%; height:100%;  padding:3vh 1rem 1rem 3rem; font-size:clamp(.7rem, 2.3vw, 3rem); left:0;, top:4vh; line-height:90%; text-shadow:0 2px 7px #000; background:rgba(0,0,0,0.8); border-radius:12px; border:0px solid yellow;">
-  <p>You will receive an identity disk.</p>
-  <p>Everything you do or learn</p>
-  <p>will be imprinted on this disk.</p>
-  <br />
-  <p>If you lose your disk or fail to</p>
-  <p>follow commands, you will be</p>
-  <p>subject to immediate de-resolution.</p>
-  <br />
-  <p>Mirroring complete. Disk Activated.</p>
+<!-- <div class="" style="position:relative; z-index:0; min-width:50%; height:100%;  padding:3vh 1rem 1rem 3rem; font-size:clamp(.7rem, 2.3vw, 3rem); left:0;, top:4vh; line-height:90%; text-shadow:0 2px 7px #000; background:rgba(0,0,0,0.8); border-radius:12px; border:0px solid yellow;">
+
   <br />
   <p class="TRON txtshadow tronText actionJackson" style="cursor:pointer; margin:0 auto; padding: 0; text-decoration:none; text-shadow:3px 3px 6px rgb(0, 162, 184); font-size:80%;"><a href="/lightdisc-grid/" style="position:relative;">Proceed to games.</a></p>
-</div>
+</div> -->
 
 
 
