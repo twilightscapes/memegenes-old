@@ -132,7 +132,7 @@ date={Date.now() + 60000} className="countdown">
           )}
 
 
-<div className="" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'0 auto', height:'100%', color:'#fff', textAlign:'left', padding:'.5rem 0', borderRadius:'12px', border:'2px solid #111', textShadow:'1px 2px 0px #000'}}>
+<div className="" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'0 auto', height:'100%', color:'', textAlign:'left', padding:'.5rem 0', borderRadius:'12px',}}>
 
 <h2 className="title" style={{fontSize:'clamp(1rem, 3.5vw, 3.8rem)', }}>
   <Link 
