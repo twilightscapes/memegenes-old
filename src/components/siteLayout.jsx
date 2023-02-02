@@ -141,9 +141,12 @@ This is 2nd menu
 
 <ul className="sidebarMenuInner" style={{maxWidth:'300px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
+
+
+
 <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
-<Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'', height:'', border:'0px solid'}}></Link>
-<SiteLogo />MemeGenes.com
+<Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'', height:'50px', border:'0px solid'}}></Link>
+<SiteLogo />
 </li>
 
 
