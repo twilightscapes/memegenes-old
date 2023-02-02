@@ -176,13 +176,13 @@ This is 2nd menu
 
 
 
-<li className="carto" style={{textAlign:'', pointerEvents:''}}>
+{/* <li className="carto" style={{textAlign:'', pointerEvents:''}}>
           <Link className="navbar-item txtshadow" to="/about/">
 
           About This Site
 
           </Link>
-  </li> 
+  </li>  */}
 
 
   <li className="grad" style={{position:'relative',}}>

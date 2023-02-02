@@ -151,7 +151,7 @@ class BlogIndex extends React.Component {
         
 
 
-        <div id="" className="wrap-element1 " style={{overflow:'hidden', width:'100vw', height:'100vh', position:'fixed', top:'0'}}>
+        {/* <div id="" className="wrap-element1 " style={{overflow:'hidden', width:'100vw', height:'100vh', position:'fixed', top:'0'}}>
 <ReactPlayer
          className='frontbg mobilehide'
          url="https://www.youtube.com/embed/c_V1iD6F1kk"
@@ -181,7 +181,7 @@ class BlogIndex extends React.Component {
             
   
             <div style={{position:'relative', maxWidth:'100vw', margin:'10% 0', zIndex:'', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-    {/* <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} /> */}
+    <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
   </div>
         
             <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
@@ -189,7 +189,7 @@ class BlogIndex extends React.Component {
             </div>
             </button>}
          
-          /></div>
+          /></div> */}
 
 
 

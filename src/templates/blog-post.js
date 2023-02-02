@@ -639,9 +639,18 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
 
 
 
+{Svg ? (
+  <AddSvg />
+     ) : (
+       ""
+       )}
+
+
+
+
 {ContentinVideo ? (
   <div id="contentvideo"
-        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'1px solid transparent', position:'absolute', bottom:'', left:'0', top:'0', right:'0', zindex:'1', maxHeight:'90vh', borderBottom:'0px solid', }}
+        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'1px solid transparent', position:'absolute', bottom:'', left:'0', top:'0', right:'0', zindex:'3', maxHeight:'90vh', borderBottom:'0px solid', }}
         dangerouslySetInnerHTML={{ __html: html }}
       ></div>
  ) : (
@@ -653,11 +662,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
 
 
 
- {Svg ? (
-  <AddSvg />
-     ) : (
-       ""
-       )}
+
 
 
         </div>
@@ -760,7 +765,10 @@ Click to play original video
 
           <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}>
             Legal:<br />
-            <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
+            <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link>
+            <br />
+            <p>*This is a parody website meant for education and entertainment purposes.</p>
+            </div>
 
 <br />
   <GoBack />

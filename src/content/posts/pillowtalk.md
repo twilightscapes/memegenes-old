@@ -17,7 +17,7 @@ audiostart: "820"
 audioend: "5000"
 youtubecontrols: true
 youtubeautostart: true
-isnftforsale: "1"
+isnftforsale: "0"
 svgzindex: "0"
 comments: "1"
 shareable: "1"
@@ -25,7 +25,7 @@ underlayImage: /assets/PillowTalkBG.png
 featuredImage: /assets/Experiences-Header-8.jpg
 svgImage: /assets/lindell.svg
 nftlink: ""
-nftdrop: ""
+nftdrop: "2023-06-01 01:23"
 nftredeem: ""
 contentinvideo: false
 ---
@@ -40,7 +40,5 @@ If you enjoyed this, please buy the NFT! You get a funny piece of art and a grea
 
 
 
-<h2 class="neonText" style="text-align: center;">BUY THE NFT!</h2>
-<nft-card style="border:none;border-radius:12px" contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e" tokenId="14583650834310525071617320783641503123203461641321595508191183191728178855937"> </nft-card>
 
 <!-- XjuLZwlDxh8 -->

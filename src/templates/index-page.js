@@ -1059,9 +1059,9 @@ Virtual Tour<br />
 <br /><br /> */}
 
 
-<div style={{position:'relative', top:'', margin:'10px 0 0 0 ', padding:'0',  width:'', }}>
+{/* <div style={{position:'relative', top:'', margin:'10px 0 0 0 ', padding:'0',  width:'', }}>
 <SocialMe />
-</div>
+</div> */}
 
 
 

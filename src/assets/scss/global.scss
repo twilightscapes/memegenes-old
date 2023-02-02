@@ -1270,7 +1270,7 @@ animation: fadeout .5s forwards;
 body.homepage .horizontal-holder{
 	position:relative;
 	overflow:hidden;
-	height:80vh !important;
+	height:100vh !important;
 }
 
 
@@ -1356,7 +1356,7 @@ body::before{
 	border:2px solid red;
 }
 body.homepage::before{display:none;}
-body.homepage .horizontal-holder{height:250px !important}
+body.homepage .horizontal-holder{height:inherit !important}
 }
 
 .react-player__preview{
@@ -1606,6 +1606,10 @@ body.homepage .horizontal-holder{height:250px !important}
         display: block;
         margin: 0;
         border-radius: 12px;
+      }
+
+	  .featured-image1 img {
+  max-height: 80vh;
       }
     
   

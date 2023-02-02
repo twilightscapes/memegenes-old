@@ -7,22 +7,22 @@ import TimeAgo from 'react-timeago'
 
 // const Completionist = () => ""
 
-// const Completionist = () => <span>All In 60 Seconds</span>
+// const Completionist = () => <span>Meme Genes</span>
 // const renderer = ({ hours, minutes, seconds, completed }) => {
 //   if (completed) {
 
-//     return <a href="https://tron.allin60.com/"><Completionist /></a>;
+//     return <a href="https://memegenes.com/"><Completionist /></a>;
 //   } else {
 
 //     return (
 //        <span>
-//         All In {seconds} Seconds
+//         Meme Genes
 //       </span> 
 //     )
 //   }
 // }
 
-// const ViewIt = () => <span>All In 60 Seconds - VIEW NOW!</span>
+// const ViewIt = () => <span>Meme Genes - VIEW NOW!</span>
 // const renderer1 = ({ hours, minutes, seconds, completed }) => {
 //   if (completed) {
 //     // Render a complete state
@@ -31,7 +31,7 @@ import TimeAgo from 'react-timeago'
 //     // Render a countdown
 //     return (
 //        <span>
-//         All In {seconds} Seconds
+//         Meme in {seconds} Seconds
 //       </span> 
 //     )
 //   }
@@ -59,10 +59,10 @@ const PostCard = ({ data }) => (
         <GatsbyImage
           image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
           alt={data.frontmatter.title + " - Featured image"}
-          className="featured-image"
-          style={{position:'relative', zIndex:'1'}}
+          className="featured-image1"
+          style={{position:'relative', zIndex:'1', maxHeight:'80vh'}}
         />
-        <div
+        {/* <div
               style={{
                 alignItems: "center",
                 backgroundColor: "",
@@ -78,7 +78,7 @@ const PostCard = ({ data }) => (
               }}
            >
 
-           {/* <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+           <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
     <g fill="none" fillRule="evenodd">
         <g transform="translate(1 1)" strokeWidth="2">
             <circle strokeOpacity=".5" cx="18" cy="18" r="18"/>
@@ -93,8 +93,8 @@ const PostCard = ({ data }) => (
             </path>
         </g>
     </g>
-</svg> */}
-        </div>
+</svg>
+        </div> */}
       </Link>
       
     ) : (
@@ -103,7 +103,7 @@ const PostCard = ({ data }) => (
     )}
 
 
-<div className="post-content" style={{display:'none'}}>
+<div className="post-content" style={{display:'flex'}}>
 
 
 
@@ -132,7 +132,7 @@ date={Date.now() + 60000} className="countdown">
           )}
 
 
-<div className="" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'0 auto', color:'#fff', textAlign:'left', padding:'.5rem 0', borderRadius:'12px', border:'0px solid #111', textShadow:'1px 2px 0px #000'}}>
+<div className="" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'0 auto', height:'100%', color:'#fff', textAlign:'left', padding:'.5rem 0', borderRadius:'12px', border:'2px solid #111', textShadow:'1px 2px 0px #000'}}>
 
 <h2 className="title" style={{fontSize:'clamp(1rem, 3.5vw, 3.8rem)', }}>
   <Link 
