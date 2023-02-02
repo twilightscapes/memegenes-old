@@ -2,9 +2,10 @@
 template: blog-post
 title: Thin Blue Line Of Hate
 slug: /thin-blue-line-of-hate
-date: 2021-10-01 10:43
+date: 2023-02-02 09:43
 description: The same that work forces are the same that burn crosses
 youtuber: "https://youtu.be/9nl00N6I5Ak"
+youtuber2: ""
 youtubeshoworiginal: true
 youtubersuggestion1: ""
 youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
@@ -15,16 +16,16 @@ youtubemute: true
 youtubecontrols: false
 youtubeautostart: true
 youtubeloop: true
-isnftforsale: "1"
+isnftforsale: false
 svgzindex: "0"
-comments: "1"
-shareable: "1"
+comments: true
+shareable: true
 underlayImage: "/assets/transparent.png"
 featuredImage: /assets/murica-promo.png
 svgImage: 
 nftlink: ""
 nftdrop: "2021-11-24T14:00:00"
-nftredeem:
+nftredeem: ""
 contentinvideo: true
 ---
 
