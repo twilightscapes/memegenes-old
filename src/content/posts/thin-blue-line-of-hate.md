@@ -22,7 +22,7 @@ comments: true
 shareable: true
 underlayImage: "/assets/transparent.png"
 featuredImage: /assets/murica-promo.png
-svgImage: 
+svgImage: /assets/murica.svg
 nftlink: ""
 nftdrop: ""
 nftredeem: ""
@@ -45,7 +45,7 @@ contentinvideo: true
 
 
 
-<object class="" style="height:100vw; width:100vw; aspect-ratio: 16 / 9; position:absolute; top:-450px; left:0; z-index:5;" class="" id="" data="/assets/murica.svg" type="image/svg+xml" alt="animated content" title="animated content" ></object>
+<!-- <object class="" style="height:100vw; width:100vw; aspect-ratio: 16 / 9; position:absolute; top:0; left:0; z-index:5;" class="" id="" data="/assets/murica.svg" type="image/svg+xml" alt="animated content" title="animated content" ></object> -->
 
 
 
