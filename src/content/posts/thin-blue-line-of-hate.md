@@ -1,35 +1,35 @@
 ---
 template: blog-post
-title: Proceed To Games
-slug: /proceed-to-games
-date: 2023-06-01 01:23
-description: Meet the Sirens
-youtuber: "https://youtu.be/Y7EZBP9j7h0"
-youtuber2: ""
+title: Thin Blue Line Of Hate
+slug: /thin-blue-line-of-hate
+date: 2021-10-01 10:43
+description: The same that work forces are the same that burn crosses
+youtuber: "https://youtu.be/9nl00N6I5Ak"
 youtubeshoworiginal: true
 youtubersuggestion1: ""
 youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
 youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
-youtubestart: "40"
-youtubeend: "140"
+youtubestart: "0"
+youtubeend: "0"
 youtubemute: true
-audiostart: ""
-audioend: ""
 youtubecontrols: false
-youtubeloop: true
 youtubeautostart: true
-isnftforsale: ""
+youtubeloop: true
+isnftforsale: "1"
 svgzindex: "0"
 comments: "1"
 shareable: "1"
-underlayImage: /assets/transparent.png
-featuredImage: /assets/tron/proceed-to-games.jpg
+underlayImage: "/assets/transparent.png"
+featuredImage: /assets/murica-promo.png
 svgImage: 
 nftlink: ""
-nftdrop: ""
-nftredeem: ""
+nftdrop: "2021-11-24T14:00:00"
+nftredeem:
 contentinvideo: true
 ---
+
+
+
 <div style="position:relative; top:; z-index:0; border:px solid blue; height:100%; width:; display:flex; justify-content:center; margin-top:1%;">
 
 
@@ -51,11 +51,9 @@ contentinvideo: true
 
 
 
-<div style="position:relative; top:0; right:18vw; border:0px solid; z-index:1; max-width:; height:; background:;">
-<a href="/the-grid/sirens/" style="position:absolute; top:0; right:0; display:block; width:40%; height:100%; right:-10vw; z-index:1; border:0px solid green; background:;">
-<object class="character" style="height:100%;" class="" id="svg1" data="/assets/tron/tron-chick1.svg" type="image/svg+xml" alt="animated content" title="animated content" ></object>
-</a>
-</div>
+
+<object class="" style="height:100vw; width:100vw; aspect-ratio: 16 / 9; position:absolute; top:-450px; left:0; z-index:5;" class="" id="" data="/assets/murica.svg" type="image/svg+xml" alt="animated content" title="animated content" ></object>
+
 
 
 
@@ -67,8 +65,15 @@ contentinvideo: true
 
 
 
- 
 
- 
+<!-- <object class="" style="height:100%; width:100vw; aspect-ratio: 16 / 9; position:absolute; top:0; z-index:5;" class="" id="" data="/assets/murica.svg" type="image/svg+xml" alt="animated content" title="animated content" ></object> -->
 
-<!-- XjuLZwlDxh8 -->
+
+
+
+
+
+<!-- Some of those that work forces
+
+Are the same that burn crosses -->
+
