@@ -639,11 +639,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
 
 
 
-{Svg ? (
-  <AddSvg />
-     ) : (
-       ""
-       )}
+
 
 
 
@@ -659,7 +655,11 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
 
 
         
-
+{Svg ? (
+  <AddSvg />
+     ) : (
+       ""
+       )}
 
 
 

@@ -11,7 +11,7 @@ youtubersuggestion1: ""
 youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
 youtubersuggestion3: "https://youtu.be/8yFVBuGcOe8-3"
 youtubestart: "0"
-youtubeend: "0"
+youtubeend: "39"
 youtubemute: true
 youtubecontrols: false
 youtubeautostart: true
@@ -34,11 +34,11 @@ contentinvideo: true
 <div style="position:relative; top:; z-index:0; border:px solid blue; height:100%; width:; display:flex; justify-content:center; margin-top:1%;">
 
 
-<!-- <div class="" style="position:relative; z-index:0; min-width:50%; height:100%;  padding:3vh 1rem 1rem 3rem; font-size:clamp(.7rem, 2.3vw, 3rem); left:0;, top:4vh; line-height:90%; text-shadow:0 2px 7px #000; background:rgba(0,0,0,0.8); border-radius:12px; border:0px solid yellow;">
-
-  <br />
-  <p class="TRON txtshadow tronText actionJackson" style="cursor:pointer; margin:0 auto; padding: 0; text-decoration:none; text-shadow:3px 3px 6px rgb(0, 162, 184); font-size:80%;"><a href="/lightdisc-grid/" style="position:relative;">Proceed to games.</a></p>
-</div> -->
+<div class="" style="position:relative; z-index:0; min-width:50%; height:100%; margin-top:30%;  padding:1rem; font-size:clamp(1rem, 2.3vw, 3rem); left:0;, top:4vh; line-height:90%; text-shadow:0 2px 7px #000; background:rgba(0,0,0,0.8); border-radius:12px; border:0px solid yellow; text-align:center;">
+TRUMP IS A RACIST
+  <!-- <br />
+  <p class="TRON txtshadow tronText actionJackson" style="cursor:pointer; margin:0 auto; padding: 0; text-decoration:none; text-shadow:3px 3px 6px rgb(0, 162, 184); font-size:80%;"><a href="/lightdisc-grid/" style="position:relative;">Proceed to games.</a></p> -->
+</div>
 
 
 
