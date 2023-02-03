@@ -484,8 +484,8 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 
     {isMobile ? 
-      <AnchorLink to="#top" style={{}}><button onClick={resizeDesk}><RxDoubleArrowUp /></button></AnchorLink> :
-      <button onClick={resizeMobile}>x</button>
+      <AnchorLink to="#top" style={{cursor:'pointer'}}><div onClick={resizeDesk}><RxDoubleArrowUp /></div></AnchorLink> :
+      <div onClick={resizeMobile} style={{cursor:'pointer'}}>x</div>
     }
 
 </div>
