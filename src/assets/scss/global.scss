@@ -315,6 +315,9 @@ p{
 	overflow-x: hidden !important;
 	*/
 }
+
+.clickplays{color:default;}
+
 .nextbutt .back{
 	display:none;
 	font-size: 1rem;
@@ -770,7 +773,7 @@ body.homepage .pleaseshare{display:none;}
 
 
 body.blogpost .sidebarIconToggle{display: none;}
-body svg{font-family: Compacta, Sans-Serif !important; color:inherit !important;}
+// body svg{font-family: Compacta, Sans-Serif !important; }
 
 // #sidebarMenu {
 // 	position: fixed;

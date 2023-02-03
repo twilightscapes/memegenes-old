@@ -17,6 +17,8 @@ import CommentBox from "../components/commentbox"
 import useSiteMetadata from "../hooks/SiteMetadata"
 // import Countdown from 'react-countdown'
 
+
+import { ImCheckmark, ImCross } from "react-icons/im"
 import { RxDoubleArrowUp } from "react-icons/rx"
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { AiOutlineAudioMuted } from "react-icons/ai"
@@ -191,7 +193,7 @@ const Suggestion3 = frontmatter.youtubersuggestion3
 const YoutubeLoop = frontmatter.youtubeloop
 
 const ContentinVideo = frontmatter.contentinvideo
-
+const LiarLiar = frontmatter.liarliar
 
 if (Suggestion1) {
   <ShowSuggestion />
@@ -339,7 +341,7 @@ const OriginalUrl = frontmatter.youtuber
           // ]}
           width="300px"
           height="150px"
-          style={{marginTop:'-50px', position:'absolute', zIndex:'0'}}
+          style={{marginTop:'0', position:'relative', zIndex:'0'}}
           config={{
             
             youtube: {
@@ -351,16 +353,29 @@ const OriginalUrl = frontmatter.youtuber
           playing
           playsinline
           playIcon={
-            <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+            <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
           
-        <div className="" style={{position:'absolute', top:'-100px', left:'10px', zIndex:'', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
+        <div className="" style={{position:'absolute', top:'-150px', left:'10px', zIndex:'', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
           
       
           {/* <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div> */}
 
-          <div className="popped" style={{display:'flex', width:'', margin:'0 auto', fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'2rem', background:'rgba(51, 51, 51, 0.3)', borderRadius:'8px', border:'1px solid #666', filter:'drop-shadow(2px 2px 2px #000)', cursor:'pointer'}}><AiOutlineAudioMuted style={{margin:'0 auto', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000)'}} /><div style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)', color:'#999', }}>Oh Really?</div></div>
-          
+          <div className="popped" style={{display:'flex', width:'', margin:'0 auto', fontWeight:'bold', padding:'.3rem', color:'#ccc', fontSize:'2rem', background:'rgba(51, 51, 51, 0.3)', borderRadius:'8px', border:'1px solid #666', filter:'drop-shadow(2px 2px 2px #000)', cursor:'pointer'}}>
+            
+ 
+
+            <AiOutlineAudioMuted style={{margin:'0 1vw', fontSize:'20px', filter:'drop-shadow(2px 2px 2px #000)'}} />
+            
+            {LiarLiar ? (
+  <ImCross style={{margin:'0 1vw', fontSize:'20px', color:'#ff0000', filter:'drop-shadow(2px 2px 2px #000)'}} />
+          ) : (
+            ""
+          )}
+            
+            <div style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem', filter:'drop-shadow(2px 2px 2px #000)', color:'#ccc', }}>{frontmatter.audiotitle}</div>
           </div>
+          
+      </div>
           </button>}
    
             light="../assets/transparent.png"
@@ -509,16 +524,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
           )}
 
 
-{ShowOriginal ? (
-          <AnchorLink to="#original"  style={{cursor:'pointer', padding:'5px'}}>
-  Credits
-        </AnchorLink>
-       
-          ) : (
-            <AnchorLink to="#original"  style={{cursor:'pointer', padding:'5px'}}>
-            Credits
-                  </AnchorLink>
-          )}
+
 
 {ShareThis ? (
 <AnchorLink to="#sharethis"  style={{cursor:'pointer', padding:'5px'}}>
@@ -527,6 +533,18 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
  ) : (
   ""
 )}
+
+
+{ShowOriginal ? (
+          <AnchorLink to="#original"  style={{cursor:'pointer', padding:'5px'}}>
+  Legal
+        </AnchorLink>
+       
+          ) : (
+            <AnchorLink to="#original"  style={{cursor:'pointer', padding:'5px'}}>
+            Legal
+                  </AnchorLink>
+          )}
 
 
 
@@ -939,6 +957,8 @@ export const pageQuery = graphql`
         youtubeend
         audiostart
         audioend
+        audiotitle
+        liarliar
         youtubemute
         youtubeloop
         youtubecontrols

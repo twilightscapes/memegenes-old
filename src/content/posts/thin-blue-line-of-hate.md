@@ -16,6 +16,8 @@ youtubemute: true
 youtubecontrols: false
 youtubeautostart: true
 youtubeloop: true
+audiotitle: "Fuckin' Liar!"
+liarliar: false
 isnftforsale: false
 svgzindex: "0"
 comments: true
