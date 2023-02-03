@@ -1,15 +1,15 @@
 ---
 template: blog-post
-title: PillowTalk2
-slug: /pillowtalk2
+title: My Last Bed
+slug: /mylastbed
 date: 2023-02-02 15:43
-description: Let's Find Mike A Woman
-youtuber: "https://youtu.be/SD0EKkyuakY"
+description: When its that time and you want to go in compfort.
+youtuber: ""
 youtuber2: ""
 youtubeshoworiginal: true
 youtubersuggestion1: ""
-youtubersuggestion2: "https://youtu.be/zQB-_N7CIYY https://youtu.be/iiZnOlRPiE0"
-youtubersuggestion3: "https://youtu.be/24nttG5Lnio"
+youtubersuggestion2: ""
+youtubersuggestion3: ""
 youtubestart: "0"
 youtubeend: "0"
 youtubemute: true
@@ -17,16 +17,16 @@ audiostart: "820"
 audioend: "5000"
 audiotitle: ""
 liarliar: false
-youtubecontrols: false
+youtubecontrols: true
 youtubeautostart: true
 youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: true
 shareable: true
-underlayImage: /assets/PillowTalkBG2.webp
-featuredImage: /assets/Experiences-Header-8.jpg
-svgImage: /assets/lindell2.svg
+underlayImage: 
+featuredImage: /assets/MyLastBed.webp
+svgImage:
 nftlink: ""
 nftdrop: ""
 nftredeem: ""

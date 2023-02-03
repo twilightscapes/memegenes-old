@@ -330,6 +330,7 @@ const OriginalUrl = frontmatter.youtuber
     const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2
     return (
 
+
 <ReactPlayer
           className='audioframe'
           url={iframeUrl3}
@@ -402,6 +403,7 @@ const OriginalUrl = frontmatter.youtuber
 // const svgUrl = "../assets/" + frontmatter.svgImage.publicURL + ""
 // const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
 
+const YouTube = frontmatter.youtuber
   const YouTube2 = frontmatter.youtuber2
   const AudioStart = frontmatter.audiostart
   const AudioEnd = frontmatter.audioend
@@ -594,7 +596,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
               image={FrontImage}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{ width:'100vw',  top:'0', zIndex:'-2', border:'0px solid red !important', paddingBottom:'',}}
+              style={{ width:'100vw', height:'90vh',  top:'0', zIndex:'-2', border:'0px solid red !important', paddingBottom:'',}}
             />
 
           ) : (
@@ -603,7 +605,8 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
     
 
 
-<button
+    {YouTube ? (
+<div
           // onMouseMove={handleMouseMove}
           // onMouseLeave={hanldeMouseLeave}
           // ref={playerContainerRef}
@@ -648,9 +651,11 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
             }}
           
           />
-</button>
+</div>
 
-
+) : (
+  ""
+  )}
 
 
 
@@ -732,11 +737,11 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
             ""
           )}
 
-{ !YouTube2 ? (
-            ""
+{YouTube2 ? (
+            <Iframer3 />
        
           ) : (
-            <Iframer3 />
+            ""
           )}
 
 {/* <AnchorLink className="" to="#sharethis" style={{position:'absolute', top:'0', zIndex:'60'}}>

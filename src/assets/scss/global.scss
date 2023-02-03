@@ -1615,6 +1615,10 @@ body.homepage .horizontal-holder{height:inherit !important}
 
 	  .featured-image1 img {
   max-height: 80vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  object-fit: scale-down !important;
       }
     
   
