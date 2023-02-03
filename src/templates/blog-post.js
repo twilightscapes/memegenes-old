@@ -146,7 +146,10 @@ const Post = ({ data, pageContext }) => {
   //   const NftRedeem = frontmatter.nftredeem
   //   const NftDrop = frontmatter.nftdrop
 
-
+  const resizeMobile = () => {
+    const elements = document.querySelectorAll('.menusnapp');
+    elements.forEach(el => el.style.display = 'none', el => el.style.overflow = 'hidden');
+  }
 
   const Svg = frontmatter.svgImage
   // const svgZindex = frontmatter.svgzindex
@@ -364,7 +367,7 @@ const OriginalUrl = frontmatter.youtuber
   function AddSvg(){
     const svgUrl = frontmatter.svgImage.publicURL
     return (
-      <object className="" id="" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'0', left:'0', right:'0', bottom:'0', overflow:'', border:'0px solid red', zIndex:'', aspectRatio:'', width:'100vw', background:'transparent', objectFit:'cover'   }} alt="animated content" title="animated content" ></object>
+      <object className="animator" id="" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'0', left:'0', right:'0', bottom:'0', overflow:'', border:'0px solid red', zIndex:'', aspectRatio:'', width:'100vw', background:'transparent', objectFit:'cover'   }} alt="animated content" title="animated content" ></object>
     )
   }
 
@@ -459,19 +462,19 @@ const OriginalUrl = frontmatter.youtuber
 {/* <div className='player-wrapper intro' style={{position:'relative', bottom:'0', zIndex:'', height:'100vh', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)',  }}> */}
 <div id="top"></div>
 
-<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'1',  left:'20px', right:'', display:'flex', justifyContent:'center', width:'', margin:'0 auto', gap:'2vw',
-textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', padding:'12px 0 10px 10px', borderRadius:'12px',
+<div className="pagemenu" style={{position:'fixed', bottom:'0px', zIndex:'1',  left:'0px', right:'', display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'20px',
+textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .5)', padding:'12px 10px 10px 10px', borderRadius:'12px',
 
  }}>
-
-  <AnchorLink to="#top" style={{}}>
-  <RxDoubleArrowUp />
+<div>
+  <AnchorLink to="#top" style={{}} onClick={resizeMobile}>
+  <button onClick={resizeMobile}><RxDoubleArrowUp /></button>
         </AnchorLink>
-
+</div>
 
         <label id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer'}}>Menu</label>
 
-
+<div className="menusnapp" style={{ display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'20px',}}>
     {ShareThis ? (
 <AnchorLink to="#sharethis" style={{}}>
   Share
@@ -509,7 +512,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
   Footer
         </AnchorLink> */}
 
-
+</div>
 </div>
 
 
@@ -759,15 +762,19 @@ Click to play original video
           ) : (
             ""
           )}
-          <br />
-          <br />
+          
           <br />
 
           <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}>
             Legal:<br />
             <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link>
-            <br />
+      
             <p>*This is a parody website meant for education and entertainment purposes.</p>
+
+            <br />
+          Some image credit to <a href="https://www.flickr.com/photos/donkeyhotey/" target="_blank" >DonkeyHotey</a>
+          <br />
+
             </div>
 
 <br />

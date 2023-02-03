@@ -770,7 +770,7 @@ body.homepage .pleaseshare{display:none;}
 
 
 body.blogpost .sidebarIconToggle{display: none;}
-
+body svg{font-family: Compacta, Sans-Serif !important; color:inherit !important;}
 
 // #sidebarMenu {
 // 	position: fixed;
@@ -1497,12 +1497,12 @@ body.homepage .horizontal-holder{height:inherit !important}
 	height:60px;
 	font-weight:bold;
 	padding:2px;
-	color:#999;
+	color:#ddd;
 	font-size:1rem;
 	border-radius:12px;
 	border:1px solid #666;
 	cursor:pointer;
-	background:rgba(0, 0, 0, .9);
+	background:rgba(0, 0, 0, .5);
 
 }
 .hudicon{

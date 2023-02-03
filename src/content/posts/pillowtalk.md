@@ -22,9 +22,9 @@ isnftforsale: false
 svgzindex: "0"
 comments: true
 shareable: true
-underlayImage: /assets/PillowTalkBG.png
+underlayImage: /assets/PillowTalkBG2.webp
 featuredImage: /assets/Experiences-Header-8.jpg
-svgImage: /assets/lindell.svg
+svgImage: /assets/lindell2.svg
 nftlink: ""
 nftdrop: ""
 nftredeem: ""
