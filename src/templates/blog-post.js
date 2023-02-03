@@ -485,7 +485,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
     {isMobile ? 
       <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><div onClick={resizeDesk}><RxDoubleArrowUp /></div></AnchorLink> :
-      <div onClick={resizeMobile} style={{cursor:'pointer', padding:'5px'}}>x</div>
+      <div onClick={resizeMobile} style={{cursor:'pointer', padding:'0 5px 5px 5px'}}>x</div>
     }
 
 </div>
@@ -493,14 +493,11 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
         <label id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer', color:'#fff',filter:'drop-shadow(0px 0px 5px rgba(155,155,155,3))'}}>Menu</label>
 
 <div className="menusnapp" style={{ display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'20px',}}>
+  
+   
+  {(previous || next) && <Pagination {...props} />}
+
   |
-    {ShareThis ? (
-<AnchorLink to="#sharethis" style={{}}>
-  Share
-        </AnchorLink>
- ) : (
-  ""
-)}
 
 {Comments ? (
           <AnchorLink to="#comments" style={{}}>
@@ -523,9 +520,17 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
                   </AnchorLink>
           )}
 
-|
+{ShareThis ? (
+<AnchorLink to="#sharethis" style={{}}>
+  Share
+        </AnchorLink>
+ ) : (
+  ""
+)}
 
-{(previous || next) && <Pagination {...props} />}
+
+
+
 
 
 {/* <AnchorLink to="#footer" style={{border:'0px solid', }}>
