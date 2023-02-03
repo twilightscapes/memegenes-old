@@ -522,7 +522,9 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
         </AnchorLink>
        
           ) : (
-            ""
+            <AnchorLink to="#comments"  style={{cursor:'pointer', padding:'5px'}}>
+            Comments
+                  </AnchorLink>
           )}
 
 
@@ -771,7 +773,7 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
         </header>
 <div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
       <div
-        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', width:'100%', maxWidth:'', padding:'10vh 10vw', margin:'0 auto', color:'inherit !important'}}
+        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'center', width:'100%', maxWidth:'', padding:'10vh 10vw', margin:'0 auto', color:'inherit !important'}}
         dangerouslySetInnerHTML={{ __html: html }}
       />    
 </div>
@@ -789,15 +791,15 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 
 
-      <section id="original" style={{height:'100vh', marginTop:'100vh',   display:'grid', placeContent:'center'}}>
+      <section id="original" style={{height:'100vh', marginTop:'50vh',   display:'grid', placeContent:'center'}}>
 
       {ShowOriginal ? (
           <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
-<div style={{maxWidth:'90vw', width:'100%', height:'440px', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
+<div style={{maxWidth:'60vw', width:'100%', height:'', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
   
                     {/* <Iframer2 /> */}
 <a href={OriginalUrl} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
- <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'1rem', fontSize:'2rem', width:'100%', height:'300px', border:'1px solid', borderRadius:'12px'}}>Support Our Video Sponsors
+ <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'1rem', fontSize:'2rem', width:'100%', height:'', border:'1px solid', borderRadius:'12px'}}>Support Our Video Sponsors
 
 <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
 Click to play original video
@@ -813,19 +815,21 @@ Click to play original video
           
           <br />
 
-          <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}>
+          <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none', maxWidth:'70vw'}}>
             Legal:<br />
             <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link>
-      
-            <p>*This is a parody website meant for education and entertainment purposes.</p>
+      <br /> <br />
+            <p style={{textAlign:'left'}}>*This is a parody website meant for education and entertainment purposes. <br />All characters, and events portrayed in this production are fictitious.<br />There is no identification with actual persons (living or deceased), <br />places, buildings, and/or products that are intended or should be inferred. 
+            <br />
+            Any resemblance to real persons, living or dead, is purely coincidental.<br />All content is purely satirical in nature. No celebrities were harmed.</p>
 
             <br />
-          Some image credit to <a href="https://www.flickr.com/photos/donkeyhotey/" target="_blank" >DonkeyHotey</a>
+          Some imagery from <a href="https://www.flickr.com/photos/donkeyhotey/" target="_blank" >DonkeyHotey</a>
           <br />
 
             </div>
 
-<br />
+
   <GoBack />
 </section>
 
@@ -891,7 +895,13 @@ Click to play original video
 
 </section>
           ) : (
-            ""
+            <section id="comments" style={{height:'100vh', marginTop:'',   display:'grid', placeContent:'center'}}>
+
+{/* <CommentBox /> */}
+Comments have been disabled for this post.
+<GoBack />
+
+</section>
           )}
 
 
@@ -917,7 +927,7 @@ Click to play original video
 
    <section id="footer" style={{height:'100vh', marginTop:'',  }}>
    <Footer />
-   <GoBack /></section>
+   </section>
     </Layout>
 
 
