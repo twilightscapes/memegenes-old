@@ -536,7 +536,7 @@ flex-direction: column;
 	 .spotlight:hover{
 		background:rgba(0, 0, 0, 0);
 		backdrop-filter: none;
-		.posticon{animation: move 1.5s forwards;}
+		.posticon{animation: move 1.5s forwards; animation-delay: .5s;}
 	 }
 
 	 
