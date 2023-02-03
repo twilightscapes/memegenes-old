@@ -490,9 +490,10 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 </div>
 
-        <label id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer'}}>Menu</label>
+        <label id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer', color:'#fff',filter:'drop-shadow(0px 0px 5px rgba(155,155,155,3))'}}>Menu</label>
 
 <div className="menusnapp" style={{ display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'20px',}}>
+  |
     {ShareThis ? (
 <AnchorLink to="#sharethis" style={{}}>
   Share
@@ -522,6 +523,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
                   </AnchorLink>
           )}
 
+|
 
 {(previous || next) && <Pagination {...props} />}
 
