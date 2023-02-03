@@ -153,13 +153,13 @@ const Post = ({ data, pageContext }) => {
 const resizeMobile = () => {
   setIsMobile(true);
   const elements = document.querySelectorAll('.menusnapp');
-  elements.forEach(el => el.style.display = 'none', el => el.style.overflow = 'hidden');
+  elements.forEach(el => el.style.display = 'none', el => el.style.overflow = 'hidden', el => el.style.transition = 'transform 1550ms ease-in-out');
 }
 
 const resizeDesk = () => {
   setIsMobile(false);
   const elements = document.querySelectorAll('.menusnapp');
-  elements.forEach(el => el.style.display = 'flex');
+  elements.forEach(el => el.style.display = 'flex', el => el.style.transition = 'transform 1550ms ease-in-out');
 }
 
   const Svg = frontmatter.svgImage
