@@ -146,10 +146,21 @@ const Post = ({ data, pageContext }) => {
   //   const NftRedeem = frontmatter.nftredeem
   //   const NftDrop = frontmatter.nftdrop
 
-  const resizeMobile = () => {
-    const elements = document.querySelectorAll('.menusnapp');
-    elements.forEach(el => el.style.display = 'none', el => el.style.overflow = 'hidden');
-  }
+
+
+  const [isMobile, setIsMobile] = useState(false);
+
+const resizeMobile = () => {
+  setIsMobile(true);
+  const elements = document.querySelectorAll('.menusnapp');
+  elements.forEach(el => el.style.display = 'none', el => el.style.overflow = 'hidden');
+}
+
+const resizeDesk = () => {
+  setIsMobile(false);
+  const elements = document.querySelectorAll('.menusnapp');
+  elements.forEach(el => el.style.display = 'flex');
+}
 
   const Svg = frontmatter.svgImage
   // const svgZindex = frontmatter.svgzindex
@@ -467,9 +478,16 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .5)', paddi
 
  }}>
 <div>
-  <AnchorLink to="#top" style={{}} onClick={resizeMobile}>
+  {/* <AnchorLink to="#top" style={{}} onClick={resizeMobile}>
   <button onClick={resizeMobile}><RxDoubleArrowUp /></button>
-        </AnchorLink>
+        </AnchorLink> */}
+
+
+    {isMobile ? 
+      <button onClick={resizeDesk}><RxDoubleArrowUp /></button> :
+      <button onClick={resizeMobile}>x</button>
+    }
+
 </div>
 
         <label id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer'}}>Menu</label>
