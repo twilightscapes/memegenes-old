@@ -179,7 +179,10 @@ date={Date.now() + 60000} className="countdown">
     <ImPlay className="posticon" style={{margin:'0 auto', width:'60%', height:'20vh', fontSize:'60px'}} />Play
     </>
 ) : (
+  <>
   <SiteLogo className="posticon" style={{margin:'0 auto', height:'25vh', width:'100%',}} />
+  <FaImage className="posticon" style={{margin:'0 auto', width:'70%', fontSize:'100px'}} />
+  </>
 )}
 
 </div>
