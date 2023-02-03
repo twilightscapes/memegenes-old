@@ -500,7 +500,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
   |
 
 {Comments ? (
-          <AnchorLink to="#comments" style={{}}>
+          <AnchorLink to="#comments"  style={{cursor:'pointer', padding:'5px'}}>
   Comments
         </AnchorLink>
        
@@ -510,18 +510,18 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 
 {ShowOriginal ? (
-          <AnchorLink to="#original" style={{}}>
+          <AnchorLink to="#original"  style={{cursor:'pointer', padding:'5px'}}>
   Credits
         </AnchorLink>
        
           ) : (
-            <AnchorLink to="#original" style={{}}>
+            <AnchorLink to="#original"  style={{cursor:'pointer', padding:'5px'}}>
             Credits
                   </AnchorLink>
           )}
 
 {ShareThis ? (
-<AnchorLink to="#sharethis" style={{}}>
+<AnchorLink to="#sharethis"  style={{cursor:'pointer', padding:'5px'}}>
   Share
         </AnchorLink>
  ) : (
