@@ -96,7 +96,7 @@ const Pagination = props => (
           <button className="" style={{display:'flex', justifyContent:'flex-end',
           // textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff'
         }}>
-&#10094; &nbsp; {" "} <span className="page-title">
+&#10094; &nbsp; {" "} <span className="page-title mobilehide">
               {/* {props.previous.frontmatter.title} */}
               Previous
             </span></button>
@@ -109,7 +109,7 @@ const Pagination = props => (
 <button className="" style={{display:'flex', justifyContent:'flex-start',
           // textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff'
           }}>
-            <span className="page-title">
+            <span className="page-title mobilehide">
               {/* {props.next.frontmatter.title} */}
 Next
               </span>
@@ -474,7 +474,7 @@ const OriginalUrl = frontmatter.youtuber
 <div id="top"></div>
 
 <div className="pagemenu" style={{position:'fixed', bottom:'0px', zIndex:'2',  left:'0px', right:'', display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'20px',
-textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', padding:'12px 20px 10px 10px', borderRadius:'0 12px 0 0',
+textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', padding:'12px 20px 10px 10px', borderTop:'1px solid #666', borderRight:'1px solid #666', borderRadius:'0 12px 0 0',
 
  }}>
 <div>
@@ -484,8 +484,8 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 
     {isMobile ? 
-      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><div onClick={resizeDesk}><RxDoubleArrowUp /></div></AnchorLink> :
-      <div onClick={resizeMobile} style={{cursor:'pointer', padding:'0 5px 5px 5px'}}>x</div>
+      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeDesk}><RxDoubleArrowUp /></button></AnchorLink> :
+      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeMobile} style={{cursor:'pointer', padding:'0 5px 5px 5px'}}>x</button></AnchorLink>
     }
 
 </div>
