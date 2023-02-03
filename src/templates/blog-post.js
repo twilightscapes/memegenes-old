@@ -474,7 +474,7 @@ const OriginalUrl = frontmatter.youtuber
 <div id="top"></div>
 
 <div className="pagemenu" style={{position:'fixed', bottom:'0px', zIndex:'2',  left:'0px', right:'', display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'20px',
-textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', padding:'12px 10px 10px 10px', borderRadius:'0 12px 0 0',
+textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', padding:'12px 20px 10px 10px', borderRadius:'0 12px 0 0',
 
  }}>
 <div>
