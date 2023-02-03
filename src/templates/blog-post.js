@@ -495,9 +495,9 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 <div className="menusnapp" style={{ display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'20px',}}>
   
    
-  {(previous || next) && <Pagination {...props} />}
 
-  |
+
+  
 
 {Comments ? (
           <AnchorLink to="#comments"  style={{cursor:'pointer', padding:'5px'}}>
@@ -530,7 +530,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 
 
-
+<div  style={{cursor:'pointer', padding:'0 5px'}}>{(previous || next) && <Pagination {...props} />}</div>
 
 
 {/* <AnchorLink to="#footer" style={{border:'0px solid', }}>
