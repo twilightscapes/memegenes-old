@@ -1,8 +1,12 @@
 /** @jsx jsx */
+import * as React from "react"
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import TimeAgo from 'react-timeago'
+import { ImPlay } from "react-icons/im"
+import { FaImage } from "react-icons/fa"
+import SiteLogo from "../../static/assets/logo.svg"
 // import Countdown from 'react-countdown'
 
 // const Completionist = () => ""
@@ -156,6 +160,32 @@ date={Date.now() + 60000} className="countdown">
 <p style={{minWidth:'150px', position:'', textAlign:'center', border:'0px solid red'}}>
   <TimeAgo date={data.frontmatter.date}/>
 </p>
+
+
+</div>
+
+<div className="spotlight">
+  <div style={{display:'grid', placeContent:'center'}}>
+<Link to={data.frontmatter.slug} style={{}}>
+<div className="posticon" style={{fontWeight:'bold', padding:'1rem 3vw', fontSize:'2rem', width:'100%', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px'}}>
+
+  
+
+{/* <FaImage className="posticon" style={{margin:'0 auto', width:'70%', fontSize:'100px'}} /> */}
+
+{data.frontmatter.youtuber ? (
+  <>
+  <SiteLogo className="posticon" style={{margin:'0 auto', height:'25vh', width:'100%',}}/>
+    <ImPlay className="posticon" style={{margin:'0 auto', width:'60%', height:'20vh', fontSize:'60px'}} />Play
+    </>
+) : (
+  <SiteLogo className="posticon" style={{margin:'0 auto', height:'25vh', width:'100%',}} />
+)}
+
+</div>
+
+</Link>
+</div>
 </div>
 </div>
 

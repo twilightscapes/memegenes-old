@@ -16,9 +16,9 @@ import Theme from "./theme"
 // import { CartButton } from "./cart-button"
 // import SearchIcon from "../../static/assets/search"
 
-
+// import ss from "../../static/assets/pagebg.webp"
 // import { Link } from "gatsby-plugin-anchor-links"
-// import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 // import Install from './install-discount'
 // import { navigate } from "gatsby";
@@ -228,6 +228,7 @@ This is 2nd menu
 {children}
 
       
+<StaticImage src="../../static/assets/page-bg.webp" alt="Twilightscapes Default Image" style={{height:'100vh', maxHeight:'100vh', position:'absolute', zIndex:'-1', top:'0', border:'2px solid !important', objectFit:'contain',}} />
       
       {/* <Consent /> */}
      {/* <Install /> */}

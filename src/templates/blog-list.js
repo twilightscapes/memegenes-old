@@ -53,6 +53,7 @@ query blogListQuery($skip: Int!, $limit: Int!) {
           slug
           title
           nftdrop
+          youtuber
           featuredImage {
             childImageSharp {
               gatsbyImageData(layout: FULL_WIDTH)

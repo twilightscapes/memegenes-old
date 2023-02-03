@@ -1,9 +1,9 @@
 ---
 template: blog-post
-title: My Last Bed
-slug: /mylastbed
-date: 2023-02-02 15:43
-description: When its that time and you want to go in compfort.
+title: Feel the power in your little hands
+slug: /m-16-columbine
+date: 2023-02-01 17:43
+description: Your classmates will all be jealous of you and your new M-16 Columbine!
 youtuber: ""
 youtuber2: ""
 youtubeshoworiginal: false
@@ -20,19 +20,21 @@ liarliar: false
 youtubecontrols: true
 youtubeautostart: true
 youtubeloop: true
-isnftforsale: false
+isnftforsale: true
 svgzindex: "0"
 comments: false
 shareable: true
 underlayImage: 
-featuredImage: /assets/MyLastBed.webp
+featuredImage: /assets/m-16-columbine.webp
 svgImage:
+nftredeem: true
 nftlink: ""
 nftdrop: ""
-nftredeem: true
+
 contentinvideo: false
 ---
-America's Favorite Pillow Guy has a brand product out, called My Last Bed! 
+NRA and GOP Approved!
+
 
 
 

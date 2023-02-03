@@ -106,6 +106,7 @@ query HomeQueryHomeQuery($id: String!) {
           nftdrop
           youtubemute
           youtubeloop
+          youtuber
           featuredImage {
             publicURL
             childImageSharp {

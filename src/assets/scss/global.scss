@@ -519,6 +519,27 @@ input:focus, textarea:focus {
 	max-width:80vw;
 }
 
+.spotlight{
+	padding:0; position:absolute; bottom:0; left:0; right:0; top:0;
+	//  height:calc(85% + 10px); width:100vw;
+display:flex;
+flex-direction: column;
+	 display:grid; place-self:center; 
+	 pointer-events: pointer; cursor: pointer; z-index:1; color:#fff; 
+	// background:rgba(0, 0, 0, 0.9);
+	 margin:0 auto;
+	//  backdrop-filter: blur(4px);
+	
+	
+	}
+
+	 .spotlight:hover{
+		background:rgba(0, 0, 0, 0);
+		backdrop-filter: none;
+		.posticon{animation: move 1.5s forwards;}
+	 }
+
+	 
 
 
 .label {

@@ -1,9 +1,9 @@
 ---
 template: blog-post
-title: My Last Bed
-slug: /mylastbed
-date: 2023-02-02 15:43
-description: When its that time and you want to go in compfort.
+title: All Aboard the Trump Train
+slug: /trump-train
+date: 2023-02-02 17:43
+description: There is no stopping this Trump Train.
 youtuber: ""
 youtuber2: ""
 youtubeshoworiginal: false
@@ -25,14 +25,15 @@ svgzindex: "0"
 comments: false
 shareable: true
 underlayImage: 
-featuredImage: /assets/MyLastBed.webp
+featuredImage: /assets/trump-train.webp
 svgImage:
 nftlink: ""
 nftdrop: ""
-nftredeem: true
+nftredeem: false
 contentinvideo: false
 ---
-America's Favorite Pillow Guy has a brand product out, called My Last Bed! 
+His biggest fantasy comes true.
+
 
 
 

@@ -27,7 +27,7 @@ featuredImage: /assets/murica-promo.png
 svgImage: /assets/murica.svg
 nftlink: ""
 nftdrop: ""
-nftredeem: ""
+nftredeem: false
 contentinvideo: true
 ---
 
