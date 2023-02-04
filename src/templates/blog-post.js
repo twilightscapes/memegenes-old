@@ -463,9 +463,18 @@ const YouTube = frontmatter.youtuber
     
     <Layout className="page">
 <CustomBox style={{}}>
-<Helmet>
-  <body id="body" className="blogpost" style={{background:''}} />
+
+{ContentinVideo ? (
+  <Helmet>
+  <body id="body" className="blogpost noscroll" style={{}} />
 </Helmet>
+) : (
+  <Helmet>
+  <body id="body" className="blogpost" style={{overflowY:'auto'}} />
+</Helmet>
+  )}
+
+
 
       <Seo
         title={frontmatter.title}
@@ -700,7 +709,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 {ContentinVideo ? (
   <div id="contentvideo"
-        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'1px solid transparent', position:'absolute', bottom:'', left:'0', top:'0', right:'0', zindex:'3', maxHeight:'90vh', borderBottom:'0px solid', }}
+        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'1px solid transparent', position:'absolute', bottom:'', left:'0', top:'0', right:'0', zindex:'', maxHeight:'90vh', borderBottom:'0px solid', }}
         dangerouslySetInnerHTML={{ __html: html }}
       ></div>
  ) : (
@@ -727,7 +736,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 
 
-     <div className="panel" style={{width:'90%', height:'', maxWidth:'1024px', margin:'5vh auto 0 auto', borderRadius:'12px', }}>
+     <div className="panel" style={{width:'90%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', borderRadius:'0 0 12px 12px', }}>
 
 
       

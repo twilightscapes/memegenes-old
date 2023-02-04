@@ -12,12 +12,12 @@ body {
 }
 
 body.homepage{
-//   overflow-y: hidden !important;
+  overflow-y: hidden !important;
   overflow-x: hidden !important;
 }
 
-body.blogpost{
-//   overflow-y: hidden !important;
+body.noscroll{
+  overflow-y: hidden !important;
   overflow-x: hidden !important;
 }
 
@@ -81,6 +81,85 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .i
 // .sharebutts{font-size:clamp(1rem, 4vw, 2rem) !important; padding:5rem; border:0px solid red; color:#ad04a5 !important; }
 // .sharebutts svg{ width:160px; border:1px solid blue;}
 
+.filterfail::before{
+	border:0px solid red; width:70vw; height:72vh; display: block;
+	// background:rgba(0, 0, 0, .5); 
+	position:absolute;
+	top:0;
+	left:2vw;
+	z-index:2;
+	opacity:0;
+	content: " ";
+}
+
+.filterfail::before{
+animation: kariFilter 6s ease-in-out;
+animation-delay: 1s;
+animation-direction: alternate;
+animation-iteration-count:infinite; 
+}
+
+
+@keyframes kariFilter{
+	0% { transform:translateY(-100%);opacity:0; }
+	25% { transform:translateY(0%);opacity:1;
+		-webkit-backdrop-filter: blur(2px); 
+		backdrop-filter: blur(2px); 
+		opactiy:.2;
+	}
+	50% { transform:translateY(0%);opacity:1;
+		-webkit-backdrop-filter: blur(6px); 
+		backdrop-filter: blur(6px); 
+		opacity:1;
+	}
+	75% {transform:translateY(0%);opacity:1;
+		-webkit-backdrop-filter: blur(12px); 
+		backdrop-filter: blur(12px); 
+		opacity:.4;
+	}
+	100% { transform:translateY(-100%);opacity:1;
+		-webkit-backdrop-filter: blur(0); 
+		backdrop-filter: blur(0); 
+		opacity:0;
+	}
+  }
+
+  @keyframes kariMask{
+	0% { 
+		opacity:0;
+		-webkit-backdrop-filter: blur(2px); 
+		backdrop-filter: blur(2px);
+	 }
+	25% {
+		-webkit-backdrop-filter: blur(2px); 
+		backdrop-filter: blur(2px); 
+		opacity:.2;
+	}
+	50% { 
+		-webkit-backdrop-filter: blur(6px); 
+		backdrop-filter: blur(6px); 
+		opacity:.4;
+	}
+	75% {
+		-webkit-backdrop-filter: blur(8px); 
+		backdrop-filter: blur(8px); 
+		opacity:.4;
+	}
+	100% { 
+		-webkit-backdrop-filter: blur(2); 
+		backdrop-filter: blur(2); 
+		opacity:0;
+	}
+  }
+
+
+  .lakemask{
+	animation: kariMask 6s ease-in-out;
+	animation-delay: 4s;
+// animation-direction: alternate;
+animation-iteration-count:infinite;
+opacity:0;
+}
 
 .lineOne {
 	transition-delay:.7s; 
@@ -1569,6 +1648,10 @@ body.homepage .horizontal-holder{height:inherit !important}
 	background:rgba(0, 0, 0, .7);
 	color:#fff;
 }
+
+
+
+
 
 
 @media (max-width: 48em) {
