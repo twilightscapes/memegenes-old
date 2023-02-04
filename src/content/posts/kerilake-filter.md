@@ -1,8 +1,8 @@
 ---
 template: blog-post
-title: Keri Lake's Filter breaks
-slug: /keri-lake-filter
-date: 2023-02-03 10:43
+title: Kari Lake's Filter Breaks
+slug: /kari-lake-filter
+date: 2023-02-04 10:43
 description: Holy shit, what was that?
 youtuber: "https://youtu.be/uJn3yxOPeGs"
 youtuber2: ""
