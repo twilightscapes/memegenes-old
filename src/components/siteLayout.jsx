@@ -228,7 +228,7 @@ This is 2nd menu
 {children}
 
       
-<StaticImage className="backimage" src="../../static/assets/page-bg.webp" alt="Twilightscapes Default Image" style={{height:'100vh', maxHeight:'100vh', position:'absolute', zIndex:'-2', top:'0', border:'0px solid !important', objectFit:'contain',}} />
+<StaticImage className="backimage" src="../../static/assets/newspaper.webp" alt="Twilightscapes Default Image" style={{height:'100vh', maxHeight:'100vh', position:'fixed', zIndex:'-2', top:'0', border:'0px solid !important', objectFit:'contain',}} />
       
       {/* <Consent /> */}
      {/* <Install /> */}

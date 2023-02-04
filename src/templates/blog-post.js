@@ -727,7 +727,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 
 
-
+     <div className="panel" style={{width:'90%', height:'', maxWidth:'1024px', margin:'5vh auto 0 auto', borderRadius:'12px', }}>
 
 
       
@@ -907,7 +907,7 @@ Comments have been disabled for this post.
 
 
 
-
+</div>
 
 
 
