@@ -216,6 +216,8 @@ class BlogIndex extends React.Component {
 
  {posts}
 
+
+
 <article style={{textAlign:'center', display:'flex', flexDirection:'column'}}>
   
   
