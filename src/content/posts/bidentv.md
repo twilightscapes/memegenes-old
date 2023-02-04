@@ -22,7 +22,7 @@ youtubeautostart: true
 youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
-comments: false
+comments: true
 shareable: true
 underlayImage: 
 featuredImage: /assets/yourmemegoeshere.webp

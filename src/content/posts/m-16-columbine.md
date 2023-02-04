@@ -30,7 +30,6 @@ svgImage:
 nftredeem: true
 nftlink: ""
 nftdrop: ""
-
 contentinvideo: false
 ---
 NRA and GOP Approved!
