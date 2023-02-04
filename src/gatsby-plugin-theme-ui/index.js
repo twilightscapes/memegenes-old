@@ -4,7 +4,7 @@ import { lightness } from "@theme-ui/color"
 const theme = {
   colors: {
     ...defaultColors,
-    text: "rgba(70, 16, 99, 0.808)",
+    text: "rgba(70, 16, 99, 1)",
     background: "rgba(238, 208, 254, 0.808)",
     primary: "var(--primary-color)",
     accent: "#fff",
