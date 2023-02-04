@@ -18,6 +18,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             slug
             template
             title
+            tags
           }
         }
       }
@@ -40,6 +41,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
     const next = index === 0 ? null : posts[index - 1].node
 
+
+    
     createPage({
       path: post.node.frontmatter.slug,
       component: path.resolve(

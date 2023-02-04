@@ -599,7 +599,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
               image={FrontImage}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{ width:'100vw', height:'90vh',  top:'0', zIndex:'-2', border:'0px solid red !important', paddingBottom:'',}}
+              style={{ width:'100vw', height:'90%',  top:'0', zIndex:'-2', border:'0px solid red !important', paddingBottom:'',}}
             />
 
           ) : (

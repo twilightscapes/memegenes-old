@@ -31,6 +31,9 @@ nftlink: ""
 nftdrop: ""
 nftredeem: false
 contentinvideo: false
+tags:
+  - tag1
+  - tag2
 ---
 America's Favorite Pillow Guy has a brand new show out, called PillowTalk! You as a viewer get to help Mike find True Love™ and a great night's sleep. 
 
