@@ -9,12 +9,7 @@ import Layout from "../components/siteLayout"
 const NotFound = () => (
   <Layout className="not-found-page">
     <Seo title="Page not found" />
-    <div
-      className="wrapper"
-      style={{
-        textAlign: "center",
-      }}
-    >
+    <div className="panel" style={{width:'90%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', padding:'2vh 10vw', borderRadius:'0 0 12px 12px', }}>
       <header>
         <br /> <br />
         <AiFillRobot

@@ -28,17 +28,7 @@ export default function SignedUpPage() {
  
 
 
-<div
-      className="wrapper"
-      style={{
-        textAlign: "center",
-        display:'flex',
-        justifyContent:'center',
-        flexDirection:'column',
-        width:'80%',
-        margin:'0 auto',
-      }}
-    ><div className="spacer33"></div> 
+<div className="panel" style={{width:'90%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', padding:'2vh 10vw', borderRadius:'0 0 12px 12px', }}><div className="spacer33"></div> 
       {/* <AiTwotoneCamera
         style={{
           fontSize: "150px",

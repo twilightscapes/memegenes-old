@@ -28,7 +28,7 @@ export default function PrivacyPage() {
 
 
 <section className="outer section section--gradient">
-      <div className="container" style={{padding: '2rem 10%'}}>
+<div className="panel" style={{width:'90%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', padding:'2vh 10vw', borderRadius:'0 0 12px 12px', }}>
 
       <div className="mobile"><GoBack /></div>
 

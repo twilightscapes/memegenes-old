@@ -8,14 +8,7 @@ import Layout from "../components/siteLayout"
 const Thanks = () => (
   <Layout className="thanks-page">
     <Seo title="Thank you" />
-    <div
-      className="wrapper"
-      style={{
-        textAlign: "center",
-        width:'80%',
-        margin:'0 auto'
-      }}
-    >
+    <div className="panel" style={{width:'90%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', padding:'2vh 10vw', borderRadius:'0 0 12px 12px', }}>
 <div className="spacer33"></div> 
       <RiCheckboxCircleLine className="neonText" 
         style={{
