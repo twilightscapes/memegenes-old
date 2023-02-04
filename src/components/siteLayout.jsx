@@ -158,7 +158,7 @@ This is 2nd menu
 
 
 <li className="carto">
-      <Link className="navbar-item txtshadow" to="/archive/">
+      <Link className="navbar-item txtshadow" to="/archive/2/">
       <div style={{display:'flex', gap:'10px'}}>
       View All Posts
       </div>
