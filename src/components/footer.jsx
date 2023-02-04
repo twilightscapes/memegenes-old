@@ -230,7 +230,10 @@ export default function Footer() {
       <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link state={{modal: true}} to="/disclaimer/">Disclaimer</Link>  |  <Link state={{modal: true}} to="/privacy/">Privacy Policy</Link>  |  <Link state={{modal: true}} to="/terms/">Terms of Service</Link></div>
   
 
-<div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date())} {companyname}</div>
+<div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; 2023&nbsp;
+{/* {(new Date().getFullYear())}  */}
+ {companyname}
+</div>
 
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem', position:'relative', right:'', top:'10px'}}>
 {/* <Theme  style={{display:'flex', alignSelf:'center',}} />
