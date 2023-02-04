@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import * as React from "react"
+// import * as React from "react"
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
@@ -8,7 +8,7 @@ import { ImPlay } from "react-icons/im"
 import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
 
-import SiteLogo from "../../static/assets/logo.svg"
+// import SiteLogo from "../../static/assets/logo.svg"
 // import Countdown from 'react-countdown'
 
 // const Completionist = () => ""

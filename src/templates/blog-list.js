@@ -6,8 +6,8 @@ import * as React from "react"
 // import { FaHandPointDown } from "react-icons/fa"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import { StaticImage } from "gatsby-plugin-image"
-import { ImPlay } from "react-icons/im"
-import ReactPlayer from 'react-player/lazy'
+// import { ImPlay } from "react-icons/im"
+// import ReactPlayer from 'react-player/lazy'
 // import useSiteMetadata from "../hooks/SiteMetadata"
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"

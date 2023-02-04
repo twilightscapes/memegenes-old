@@ -1,9 +1,9 @@
 ---
 template: blog-post
-title: Kari Lake's Filter Breaks
+title: Kari Lake revealed as two-faced by filter glitch
 slug: /kari-lake-filter
 date: 2023-02-04 10:43
-description: Holy shit, what was that?
+description: Aw Snap! What was that? Skari Lake's face literally just slid off her head.
 youtuber: "https://youtu.be/uJn3yxOPeGs"
 youtuber2: ""
 youtubeshoworiginal: true

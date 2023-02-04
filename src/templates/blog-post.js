@@ -18,7 +18,7 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 // import Countdown from 'react-countdown'
 
 
-import { ImCheckmark, ImCross } from "react-icons/im"
+import { ImCross } from "react-icons/im"
 import { RxDoubleArrowUp } from "react-icons/rx"
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { AiOutlineAudioMuted } from "react-icons/ai"
@@ -145,7 +145,7 @@ const Post = ({ data, pageContext }) => {
 
 
   //   const NftLink = frontmatter.nftlink
-    const NftRedeem = frontmatter.nftredeem
+    // const NftRedeem = frontmatter.nftredeem
   //   const NftDrop = frontmatter.nftdrop
 
 
@@ -246,8 +246,8 @@ Add your own in the comments below!
 }
 
 const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
-const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
-const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
+// const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
+// const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
 const iframeUrl = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber + ""
   // const YouTube = frontmatter.youtuber
 
@@ -420,7 +420,7 @@ const YouTube = frontmatter.youtuber
 
 
   const { siteUrl } = useSiteMetadata()
-  const { iconimage } = useSiteMetadata()
+  // const { iconimage } = useSiteMetadata()
 
 
 
@@ -511,8 +511,8 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 
     {isMobile ? 
-      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeDesk}><RxDoubleArrowUp /></button></AnchorLink> :
-      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeMobile} style={{cursor:'pointer', padding:'0 5px 5px 5px'}}>x</button></AnchorLink>
+      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeDesk} aria-label="Return To Top"><RxDoubleArrowUp /></button></AnchorLink> :
+      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 5px 5px 5px'}}>x</button></AnchorLink>
     }
 
 </div>
@@ -806,7 +806,7 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
       {ShowOriginal ? (
           <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
 <div style={{maxWidth:'60vw', width:'100%', height:'', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
-  
+  rel="noreferrer"
                     {/* <Iframer2 /> */}
 <a href={OriginalUrl} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
  <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'1rem', fontSize:'2rem', width:'100%', height:'', border:'1px solid', borderRadius:'12px'}}>Support Our Video Sponsors
@@ -834,7 +834,7 @@ Click to play original video
             Any resemblance to real persons, living or dead, is purely coincidental.<br />All content is purely satirical in nature. No celebrities were harmed.</p>
 
             <br />
-          Some imagery from <a href="https://www.flickr.com/photos/donkeyhotey/" target="_blank" >DonkeyHotey</a>
+          Some imagery from <a rel="noopener noreferrer" href="https://www.flickr.com/photos/donkeyhotey/" target="_blank" >DonkeyHotey</a>
           <br />
 
             </div>

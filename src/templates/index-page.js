@@ -1,11 +1,11 @@
 import * as React from "react"
 // import React, { useState, useRef } from "react";
 import { Link, graphql } from "gatsby"
-import ReactPlayer from 'react-player/lazy'
+// import ReactPlayer from 'react-player/lazy'
 import Layout from "../components/siteLayout"
 import Footer from "../components/footer";
 import Seo from "../components/seo"
-import { ImPlay } from "react-icons/im"
+// import { ImPlay } from "react-icons/im"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image"
 // import Controls from "../components/Controls";
@@ -13,7 +13,7 @@ import { Helmet } from "react-helmet"
 import { getSrc } from "gatsby-plugin-image"
 import BlogListHome from "../components/blog-list-home"
 import Newsignup from "../components/newssign"
-import SocialMe from "../components/share"
+// import SocialMe from "../components/share"
 // import Details from "../components/equipment-list"
 // import Contact from "../components/Contact-inc"
 
@@ -159,8 +159,8 @@ const HomePage = ({ data }) => {
     // const imageData = data.desktop.childImageSharp.fluid
     const { siteUrl } = useSiteMetadata()
 
-    const YouTubeStart = frontmatter.youtubestart
-    const YouTubeEnd = frontmatter.youtubeend
+    // const YouTubeStart = frontmatter.youtubestart
+    // const YouTubeEnd = frontmatter.youtubeend
 
     // const YouTubeMute = frontmatter.youtubemute
     // const YouTubeControls = frontmatter.youtubecontrols
@@ -220,7 +220,7 @@ const HomePage = ({ data }) => {
     //   setState({ ...state, muted: !state.muted });
     // };
     
-    const { iconimage } = useSiteMetadata()
+    // const { iconimage } = useSiteMetadata()
 
  
 
@@ -240,45 +240,39 @@ else{
 function Iframer() {
   
 
-  const Url = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=" + frontmatter.youtubeautostart + "&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=" + frontmatter.youtubeloop + "&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+  // const Url = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=" + frontmatter.youtubeautostart + "&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=" + frontmatter.youtubeloop + "&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
   return (
-    <ReactPlayer
-    className='react-player66'
-    url={Url}
-    
-    // url={[
-    //   iframeUrl,
-    //   YoutuberSuggestion1,
-    //   YoutuberSuggestion2,
-    //   YoutuberSuggestion3
-    // ]}
-    width="100%"
-    height="100%"
+//     <ReactPlayer
+//     className='react-player66'
+//     url={Url}
+//     width="100%"
+//     height="100%"
 
-    config={{
-      youtube: {
-        playerVars: { showinfo:1, autoplay:frontmatter.youtubestart, controls:frontmatter.youtubecontrols, start:YouTubeStart, end:YouTubeEnd, mute:frontmatter.youtubemute  }
-      },
-    }}
-    loop
-    playing
-    playsinline
-      playIcon={
-        <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
+//     config={{
+//       youtube: {
+//         playerVars: { showinfo:1, autoplay:frontmatter.youtubestart, controls:frontmatter.youtubecontrols, start:YouTubeStart, end:YouTubeEnd, mute:frontmatter.youtubemute  }
+//       },
+//     }}
+//     loop
+//     playing
+//     playsinline
+//       playIcon={
+//         <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItem:'center', paddingTop:''}}>
 
-    <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', margin:'0 auto'}}>
+//     <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', margin:'0 auto'}}>
     
 
-      <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-<img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
-</div>
+//       <div style={{position:'relative', maxWidth:'100vw', margin:'4% 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important',}}>
+// <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'100%', maxWidth:'30vw', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important',}} />
+// </div>
 
-      <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
-<ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-      </div>
-      </button>}
-        light="../assets/transparent.png"
-    />
+//       <span style={{fontWeight:'bold', padding:'0 0 0 0', fontSize:'2rem'}}>Click To Play</span>
+// <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+//       </div>
+//       </button>}
+//         light="../assets/transparent.png"
+//     />
+""
   )
 }
 
