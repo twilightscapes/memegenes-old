@@ -66,7 +66,10 @@ const PostCard = ({ data }) => (
           image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
           alt={data.frontmatter.title + " - Featured image"}
           className="featured-image1"
-          style={{position:'relative', zIndex:'1', maxHeight:'80vh'}}
+          placeholder="blurred"
+              loading="eager"
+              layout="constrained"
+              style={{position:'relative', zIndex:'1', maxHeight:'80vh'}}
         />
         {/* <div
               style={{

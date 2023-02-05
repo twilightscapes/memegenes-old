@@ -1800,8 +1800,14 @@ body.homepage .horizontal-holder{height:inherit !important}
   background-repeat: no-repeat;
   background-position: bottom;
   object-fit: scale-down !important;
+  border-radius: 8px !important;
+  width:auto !important;
+  margin:0 auto !important;
+  overflow: hidden;
+//   border:1px solid #666;
       }
-    
+
+
   
 
     .post-card img{border-radius: 12px !important;}
@@ -1973,5 +1979,4 @@ ul {
 ul li {
   display: inline-block;
 }
-
 
