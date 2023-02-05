@@ -1,20 +1,21 @@
 {
   "meta": {
     "iconimage": "/assets/logo.svg",
-    "favicon32x32": "/icons/icon-512x512.png",
-    "favicon16x16": "/icons/icon-192x192.png",
+    "favicon32x32": "/assets/logo.png",
+    "favicon16x16": "/assets/logo.png",
     "companyname": "Meme Genes",
     "siteUrl": "https://memegenes.com",
     "twitterUsername": "memegenesx",
     "titleDefault": "Meme Genes",
-    "icon192": "/icons/icon-192x192.png",
+    "icon192": "/assets/logo.png",
     "titleTemplate": "%s",
+    "comments": "5639031584980992-proj",
     "title": "Meme Genes",
+    "showfooter": true,
     "image": "/assets/default-og-image.jpg",
     "description": "Your butt will look great in these Meme Genes",
-    "icon512": "/icons/icon-512x512.png",
-    "showfooter": true,
-    "comments": "5639031584980992-proj"
+    "icon512": "/assets/logo.png"
   },
-  "ga": ""
+  "ga": "UA-49869143-1",
+  "comments": "5639031584980992-proj"
 }
