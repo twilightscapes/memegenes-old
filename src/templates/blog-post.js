@@ -21,8 +21,8 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 import { ImCross } from "react-icons/im"
 import { RxDoubleArrowUp } from "react-icons/rx"
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
-import { AiOutlineAudioMuted, AiFillCaretRight, AiFillCaretLeft, AiFillInfoCircle, AiOutlineMenu } from "react-icons/ai"
-import { FaShareAlt } from "react-icons/fa"
+import { AiOutlineAudioMuted, AiFillCaretRight, AiFillCaretLeft, AiOutlineCloseCircle, AiOutlineMenu, AiFillCloseCircle } from "react-icons/ai"
+import { FaShareAlt, FaInfoCircle } from "react-icons/fa"
 
 import { BsFillChatLeftTextFill } from "react-icons/bs"
 
@@ -94,7 +94,7 @@ const CustomBox = styled.div`
 
 const Pagination = props => (
   <div className="pagination -post1" style={{position:'', bottom:'',}}>
-    <ul className="" style={{display:'flex', gap:'20px', paddingTop:'5px'}}>
+    <ul className="" style={{display:'flex', gap:'2vw', paddingTop:'5px'}}>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
         <li style={{display:'flex', justifyContent:'flex-end',}}>
@@ -490,7 +490,7 @@ const YouTube = frontmatter.youtuber
 <div id="top"></div>
 
 
-<div className="pagemenu" style={{position:'fixed', bottom:'0px', zIndex:'2',  left:'0px', right:'', display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'20px',
+<div className="pagemenu" style={{position:'fixed', bottom:'0px', zIndex:'2',  left:'0px', right:'', display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'5vw',
 textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', padding:'12px 10px 10px 10px', borderTop:'1px solid #666', borderRight:'1px solid #666', borderRadius:'0 12px 0 0',
 
  }}>
@@ -502,14 +502,14 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
     {isMobile ? 
       <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeDesk} aria-label="Return To Top"><RxDoubleArrowUp /></button></AnchorLink> :
-      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 5px 5px 5px'}}>x</button></AnchorLink>
+      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 5px 5px 5px'}}><AiOutlineCloseCircle /></button></AnchorLink>
     }
 
 </div>
 
-        <label aria-label="open menu" id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer', color:'#fff', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,3))'}}><AiOutlineMenu style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} /></label>
+        <label aria-label="open menu" id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer', color:'#fff', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,3))'}}><AiOutlineMenu style={{cursor:'pointer', padding:'', width:'25px', height:'20px'}} /></label>
 
-<div className="menusnapp" style={{ display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'25px',}}>
+<div className="menusnapp" style={{ display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'5vw',}}>
   
    
 
@@ -541,12 +541,12 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 {ShowOriginal ? (
           <AnchorLink to="#original"  style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}}>
-  <AiFillInfoCircle style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} />
+  <FaInfoCircle style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} />
         </AnchorLink>
        
           ) : (
             <AnchorLink to="#original"  style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}}>
-            <AiFillInfoCircle style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} />
+            <FaInfoCircle style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} />
                   </AnchorLink>
           )}
 
