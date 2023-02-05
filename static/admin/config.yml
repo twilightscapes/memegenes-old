@@ -1,4 +1,5 @@
 backend:
+  # name: test-repo
   name: git-gateway
   branch: main
   commit_messages:
@@ -9,7 +10,7 @@ backend:
     deleteMedia: "[skip ci] Delete “{{path}}”"
 
 # Uncomment local_backend when you need to develop in your local
-local_backend: true # run npx netlify-cms-proxy-server for local testing
+# local_backend: true # run npx netlify-cms-proxy-server for local testing
 logo_url: https://memegenes.com/assets/logo.svg
 media_folder: "static/assets"
 public_folder: "/assets"
@@ -48,18 +49,20 @@ collections:
         }
       - { label: "SEO Description", name: "description", widget: "text" }
       - { label: "YouTube Url", name: "youtuber", widget: "string", required: false }
-      - { label: "YouTube AutoPlay", name: "youtubeautoplay", widget: "boolean", default: "false", required: false }
+      - { label: "YouTube AutoPlay", name: "youtubeautostart", widget: "boolean", default: "false", required: false }
       - { label: "YouTube Mute", name: "youtubemute", widget: "boolean", default: "true", required: false }
-      - { label: "YouTube Show Controls", name: "youtubecontrols", widget: "boolean", default: "false", required: false }
+      - { label: "Show Custom Player Controls", name: "youtubecontrols", widget: "boolean", default: "false", required: false }
       - { label: "YouTube Start", name: "youtubestart", widget: "string", hint: "This is measured in seconds - 32 would start the video at the 32-second mark", required: false }
       - { label: "YouTube End", name: "youtubeend", widget: "string", hint: "This is measured in seconds - 102 would end the video at the 1-min  and 42-second mark", required: false }
+      - { label: "YouTube - Loop Video", name: "youtubeloop", widget: "boolean", hint: "Set video to loop", default: "true", required: false }
       - { label: "YouTube - Show Original?", name: "youtubeshoworiginal", widget: "boolean", hint: "It's nice manners when using a video, you should link to the original", default: "true", required: false }
       - { label: "YouTube - Suggestion 1", name: "youtubersuggestion1", widget: "string", required: false }
       - { label: "YouTube - Suggestion 2", name: "youtubersuggestion2", widget: "string", required: false }
       - { label: "YouTube - Suggestion 3", name: "youtubersuggestion3", widget: "string", required: false }
       - { label: "Make Comments Available?", name: "comments", widget: "boolean", default: "true", required: false }
       - { label: "Make Post Shareable?", name: "shareable", widget: "boolean", default: "true", required: false }
-      - { label: "Is this an NFT?", name: "isnftforsale", widget: "boolean", default: "false", hint: "If yes, the post will show Artist Notes and other NFT related items", required: false }
+      - { label: "Turn Page Scroll On", name: "scrollable", widget: "boolean", default: "false", hint: "Allows post to be scrolled vertically", required: false }
+      - { label: "Fact Check Mark", name: "liarliar", widget: "boolean", default: "false", hint: "Shows Check mark next to 2nd Video", required: false }
       - { label: "Paste OpenSea or Foundation Url", name: "scrollable", widget: "string", hint: "Paste your OpenSea or Foundation link - will be put in iframe", required: false }
       - { label: "For NFT DROP - enter drop time", name: "nftdrop", widget: "datetime", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm",format: "YYYY-MM-DDTHH:mm:ss", required: false }
       - { label: "Paste OpenSea or Foundation Url", name: "nftredeem", widget: "string", required: false }
