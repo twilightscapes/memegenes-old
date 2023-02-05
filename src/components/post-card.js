@@ -159,7 +159,7 @@ date={Date.now() + 60000} className="countdown">
   </Link>
 </h2>
 
-<p style={{minWidth:'150px', position:'', textAlign:'center', border:'0px solid red',}}>
+<p style={{minWidth:'', position:'', textAlign:'center', border:'0px solid red', fontSize:'70%'}}>
   <TimeAgo date={data.frontmatter.date}/>
 </p>
 
