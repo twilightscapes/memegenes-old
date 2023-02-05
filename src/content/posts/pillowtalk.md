@@ -23,7 +23,6 @@ youtuber: https://youtu.be/SD0EKkyuakY
 youtubeautostart: true
 youtubeshoworiginal: true
 comments: true
-nftredeem: false
 featuredImage: /assets/Experiences-Header-8.jpg
 underlayImage: /assets/PillowTalkBG.png
 svgImage: /assets/lindell2.svg

@@ -29,7 +29,7 @@ featuredImage: /assets/roofies-ad.webp
 svgImage:
 scrollable: false
 nftdrop: ""
-nftredeem: false
+
 contentinvideo: false
 ---
 

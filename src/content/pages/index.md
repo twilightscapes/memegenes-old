@@ -16,7 +16,7 @@ cta:
   ctaLink: /howitworks/
 youtubeend: ""
 showFeature: false
-nftredeem: false
+
 youtubecontrols: false
 template: index-page
 youtubemute: true

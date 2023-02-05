@@ -29,7 +29,7 @@ featuredImage: /assets/love-happens.webp
 svgImage:
 scrollable: false
 nftdrop: ""
-nftredeem: false
+
 contentinvideo: false
 ---
 When good love goes bad.

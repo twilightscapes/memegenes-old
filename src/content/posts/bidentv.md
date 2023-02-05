@@ -29,7 +29,7 @@ featuredImage: /assets/yourmemegoeshere.webp
 svgImage:
 scrollable: false
 nftdrop: ""
-nftredeem: false
+
 contentinvideo: false
 ---
 Your Meme Goes Here Dipshit!

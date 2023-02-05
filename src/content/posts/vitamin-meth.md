@@ -29,7 +29,7 @@ featuredImage: /assets/vitamin-meth.webp
 svgImage:
 scrollable: false
 nftdrop: ""
-nftredeem: false
+
 contentinvideo: false
 ---
 Your kids will love it!

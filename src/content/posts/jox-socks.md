@@ -29,7 +29,7 @@ featuredImage: /assets/jox-socks.webp
 svgImage:
 scrollable: false
 nftdrop: ""
-nftredeem: false
+
 contentinvideo: false
 ---
 

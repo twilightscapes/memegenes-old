@@ -29,7 +29,7 @@ featuredImage: /assets/q-nuts.webp
 svgImage:
 scrollable: false
 nftdrop: ""
-nftredeem: false
+
 contentinvideo: false
 ---
 Where they go one, they go all!

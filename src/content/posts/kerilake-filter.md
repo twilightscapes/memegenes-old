@@ -29,7 +29,7 @@ featuredImage: /assets/kari-no-filter.webp
 svgImage: 
 scrollable: false
 nftdrop: ""
-nftredeem: false
+
 contentinvideo: true
 ---
 <div class="filterfail" style="">

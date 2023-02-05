@@ -29,7 +29,7 @@ featuredImage: /assets/trump-train.webp
 svgImage:
 scrollable: false
 nftdrop: ""
-nftredeem: false
+
 contentinvideo: false
 ---
 His biggest fantasy comes true.

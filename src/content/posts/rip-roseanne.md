@@ -29,7 +29,7 @@ featuredImage: /assets/rip-roseanne.webp
 svgImage:
 scrollable: false
 nftdrop: ""
-nftredeem: false
+
 contentinvideo: false
 ---
 
