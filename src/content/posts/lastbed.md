@@ -27,7 +27,7 @@ shareable: true
 underlayImage: 
 featuredImage: /assets/MyLastBed.webp
 svgImage:
-nftlink: ""
+scrollable: false
 nftdrop: ""
 nftredeem: true
 contentinvideo: false

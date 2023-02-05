@@ -21,7 +21,29 @@ body.noscroll{
   overflow-x: hidden !important;
 }
 
+body.blogpost{
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
+}
+
+body.scroll{
+	overflow-y: scroll !important;
+	overflow-x: hidden !important;
+  }
+
+
 body.blogpost .backimage{z-index:-5 !important;}
+
+body.blogpost section{
+height:auto !important;
+margin:100vh 0 !important;
+overflow:auto !important;
+padding:0 4vw;
+}
+body.scroll section{
+margin:0 !important;
+  }
+  
 
 // body{position:relative;}
 // body:after{content: (''); background-image: url('../../../static/assets/hytron-bg.svg'); height: 100vh; width:100%; background-size: cover; position:fixed; top:0; left:0; z-index:-1; }
@@ -1448,6 +1470,7 @@ body.homepage .horizontal-holder{
 @media (max-width: 48rem) {
 body::before{
 	content:" \21BB  PLEASE ROTATE YOUR DEVICE \21BB ";
+	z-index: 1;
 	animation: fadeout 4s forwards;
 	animation-delay:4s;
 	position:fixed;
@@ -1631,11 +1654,28 @@ body.homepage .horizontal-holder{height:inherit !important}
 	display:block;
 	top:0;
 	color:#fff !important;
-	background:rgba(0, 0, 0, .7);
-	z-index: -4;
+	// background:rgba(0, 0, 0, .7);
+	z-index: -3;
 	// height:110vh;
-	backdrop-filter: blur(6px);
+	// backdrop-filter: blur(6px);
 }
+
+.wrap-element::before {
+	position: fixed;
+	display:block;
+	top:0;
+	left:0;
+	z-index: -4;
+	height:200vh;
+	width:100vw;
+	color:#fff !important;
+	background:rgba(0, 0, 0, .7);
+	backdrop-filter: blur(6px);
+	border:0px solid yellow;
+	content:" ";
+}
+
+
 .wrap-element iframe {
 	position: absolute;
 	top: 0;

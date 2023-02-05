@@ -27,7 +27,7 @@ shareable: true
 underlayImage: 
 featuredImage: /assets/yourmemegoeshere.webp
 svgImage:
-nftlink: ""
+scrollable: false
 nftdrop: ""
 nftredeem: false
 contentinvideo: false

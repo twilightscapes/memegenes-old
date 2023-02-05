@@ -25,7 +25,7 @@ shareable: true
 underlayImage: "/assets/transparent.png"
 featuredImage: /assets/murica-promo.png
 svgImage: /assets/murica.svg
-nftlink: ""
+scrollable: false
 nftdrop: ""
 nftredeem: false
 contentinvideo: true

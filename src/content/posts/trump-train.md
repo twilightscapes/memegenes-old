@@ -27,7 +27,7 @@ shareable: true
 underlayImage: 
 featuredImage: /assets/trump-train.webp
 svgImage:
-nftlink: ""
+scrollable: false
 nftdrop: ""
 nftredeem: false
 contentinvideo: false

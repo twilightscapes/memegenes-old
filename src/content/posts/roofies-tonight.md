@@ -27,7 +27,7 @@ shareable: true
 underlayImage: 
 featuredImage: /assets/roofies-ad.webp
 svgImage:
-nftlink: ""
+scrollable: false
 nftdrop: ""
 nftredeem: false
 contentinvideo: false

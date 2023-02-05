@@ -27,7 +27,7 @@ shareable: true
 underlayImage: 
 featuredImage: /assets/q-nuts.webp
 svgImage:
-nftlink: ""
+scrollable: false
 nftdrop: ""
 nftredeem: false
 contentinvideo: false

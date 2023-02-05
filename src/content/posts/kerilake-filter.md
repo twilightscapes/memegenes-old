@@ -27,7 +27,7 @@ shareable: true
 underlayImage: /assets/PillowTalkBG2.webp
 featuredImage: /assets/kari-no-filter.webp
 svgImage: 
-nftlink: ""
+scrollable: false
 nftdrop: ""
 nftredeem: false
 contentinvideo: true

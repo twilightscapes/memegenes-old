@@ -144,7 +144,7 @@ const Post = ({ data, pageContext }) => {
     : ""
 
 
-  //   const NftLink = frontmatter.nftlink
+  //   const scrollable = frontmatter.scrollable
     // const NftRedeem = frontmatter.nftredeem
   //   const NftDrop = frontmatter.nftdrop
 
@@ -464,13 +464,13 @@ const YouTube = frontmatter.youtuber
     <Layout className="page">
 <CustomBox style={{}}>
 
-{ContentinVideo ? (
+{frontmatter.scrollable ? (
   <Helmet>
-  <body id="body" className="blogpost noscroll" style={{}} />
+  <body id="body" className="blogpost scroll" style={{}} />
 </Helmet>
 ) : (
   <Helmet>
-  <body id="body" className="blogpost" style={{overflowY:'auto'}} />
+  <body id="body" className="blogpost" style={{}} />
 </Helmet>
   )}
 
@@ -732,17 +732,14 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 
 
-      {/* </div> */}
+ {/* ****************Page Content BELOW**************** */}
 
 
 
      <div className="panel" style={{width:'90%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', borderRadius:'0 0 12px 12px', }}>
 
 
-      
-
-
-{Suggestion1 ? (
+     {Suggestion1 ? (
             <ShowSuggestion style={{position:'relative', top:'', zIndex:'0',}} />
        
           ) : (
@@ -755,6 +752,38 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
           ) : (
             ""
           )}
+
+
+      
+{!ContentinVideo ? (
+<article className="blog-post">
+        <header style={{height:'', display:'grid', placeContent:'center'}}>
+          <section className="article-header1" style={{textAlign:'center', margin:'', height:'auto', color:''}}>
+            <h1 className="tronText" style={{fontSize:'4vw'}}>{frontmatter.title}</h1>
+            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
+            {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
+          </section>
+        </header>
+<div style={{padding:'0 0', borderTop:'0px solid', margin:'20vh 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
+      <div
+        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'center', width:'100%', maxWidth:'', padding:'10vh 10vw', margin:'0 auto', color:'inherit !important'}}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />    
+</div>
+ </article>
+        ) : (
+          ""
+        )}
+
+
+
+
+
+
+
+
+
+
 
 {/* <AnchorLink className="" to="#sharethis" style={{position:'absolute', top:'0', zIndex:'60'}}>
                 About Us 
@@ -772,25 +801,7 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 
 
-{!ContentinVideo ? (
-<article className="blog-post">
-        <header style={{height:'', display:'grid', placeContent:'center'}}>
-          <section className="article-header1" style={{textAlign:'center', margin:'2vh 0 0 0', height:'auto', color:''}}>
-            <h1 className="tronText" style={{fontSize:'4vw'}}>{frontmatter.title}</h1>
-            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
-            {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
-          </section>
-        </header>
-<div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
-      <div
-        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'center', width:'100%', maxWidth:'', padding:'10vh 10vw', margin:'0 auto', color:'inherit !important'}}
-        dangerouslySetInnerHTML={{ __html: html }}
-      />    
-</div>
- </article>
-        ) : (
-          ""
-        )}
+
          
 
 
@@ -801,12 +812,12 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 
 
-      <section id="original" style={{height:'100vh', marginTop:'50vh',   display:'grid', placeContent:'center'}}>
+      <section id="original" style={{height:'100vh', marginTop:'100vh', paddingTop:'10%',   display:'grid', placeContent:'center'}}>
 
       {ShowOriginal ? (
           <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
 <div style={{maxWidth:'60vw', width:'100%', height:'', maxHeight:'40vh', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
-  rel="noreferrer"
+
                     {/* <Iframer2 /> */}
 <a href={OriginalUrl} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
  <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'1rem', fontSize:'2rem', width:'100%', height:'', border:'1px solid', borderRadius:'12px'}}>Support Our Video Sponsors
@@ -857,7 +868,7 @@ Click to play original video
 
 {ShareThis ? (
 
-<section id="sharethis" style={{height:'100vh', marginTop:'',   display:'grid', placeContent:'center'}}>
+<section id="sharethis" style={{height:'', marginTop:'',   display:'grid', placeContent:'center'}}>
 
   <br />
 <ShareSocial />
@@ -898,17 +909,20 @@ Click to play original video
 
 {Comments ? (
 
-<section id="comments" style={{height:'100vh', marginTop:'',   display:'grid', placeContent:'center'}}>
+<section id="comments" style={{height:'', paddingBottom:'100vh',   display:'grid', placeContent:'center',}}>
 
 <CommentBox />
+<GoBack />
 
 
 </section>
           ) : (
-            <section id="comments" style={{height:'100vh', marginTop:'',   display:'grid', placeContent:'center'}}>
+            <section id="comments" style={{height:'', paddingBottom:'100vh',   display:'grid', placeContent:'center',}}>
 
 {/* <CommentBox /> */}
 Comments have been disabled for this post.
+
+
 <GoBack />
 
 </section>
@@ -995,7 +1009,7 @@ export const pageQuery = graphql`
         isnftforsale
         nftdrop
         svgzindex
-        nftlink
+        scrollable
         featuredImage {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)

@@ -28,7 +28,7 @@ underlayImage:
 featuredImage: /assets/m-16-columbine.webp
 svgImage:
 nftredeem: true
-nftlink: ""
+scrollable: false
 nftdrop: ""
 contentinvideo: false
 ---

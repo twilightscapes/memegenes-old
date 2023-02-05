@@ -27,7 +27,7 @@ shareable: true
 underlayImage: 
 featuredImage: /assets/vitamin-meth.webp
 svgImage:
-nftlink: ""
+scrollable: false
 nftdrop: ""
 nftredeem: false
 contentinvideo: false
