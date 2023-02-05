@@ -2,35 +2,35 @@
 template: blog-post
 title: PillowTalk
 slug: /pillowtalk
-date: 2023-02-03 10:43
 description: Let's Find Mike A Woman
-youtuber: "https://youtu.be/SD0EKkyuakY"
-youtuber2: "https://youtu.be/CWf5FYSK7Yc"
-youtubeshoworiginal: true
-youtubersuggestion1: ""
-youtubersuggestion2: "https://youtu.be/iiZnOlRPiE0"
-youtubersuggestion3: "https://youtu.be/24nttG5Lnio"
+youtubemute: true
+youtubecontrols: false
 youtubestart: "0"
 youtubeend: "0"
-youtubemute: true
-audiostart: "20"
-audioend: "5000"
-audiotitle: "Alternate Soundtrack"
-liarliar: false
-youtubecontrols: false
-youtubeautostart: true
 youtubeloop: true
-isnftforsale: false
-svgzindex: "0"
-comments: true
+youtubersuggestion1: ""
+youtubersuggestion3: https://youtu.be/24nttG5Lnio
+audiotitle: Alternate Soundtrack
+youtuber2: https://youtu.be/CWf5FYSK7Yc
+audioend: "5000"
 shareable: true
-underlayImage: /assets/PillowTalkBG.png
-featuredImage: /assets/Experiences-Header-8.jpg
-svgImage: /assets/lindell2.svg
-scrollable: true
+scrollable: false
+liarliar: true
 nftdrop: ""
+audiostart: "20"
+date: 2023-02-03 10:43
+youtuber: https://youtu.be/SD0EKkyuakY
+youtubeautostart: true
+youtubeshoworiginal: true
+comments: true
 nftredeem: false
+featuredImage: /assets/Experiences-Header-8.jpg
+underlayImage: /assets/PillowTalkBG.png
+svgImage: /assets/lindell2.svg
+svgzindex: "0"
 contentinvideo: false
+isnftforsale: false
+youtubersuggestion2: https://youtu.be/iiZnOlRPiE0
 ---
 America's Favorite Pillow Guy has a brand new show out, called PillowTalk! You as a viewer get to help Mike find True Love™ and a great night's sleep. 
 
