@@ -36,11 +36,7 @@ contentinvideo: false
 
 
 
-<!-- {/* [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/StaticJsCMS/static-cms-hugo-netlify-template&amp;stack=cms) */} -->
 
-<a className="button" href="https://app.netlify.com/start/deploy?repository=https://github.com/twilightscapes/memegenes&amp;stack=cms" rel="nofollow">
-Deploy to Netlify
-</a>
 
 
 <!-- https://youtu.be/VgdB9QYKeyM -->

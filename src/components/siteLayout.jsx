@@ -143,7 +143,7 @@ This is 2nd menu
 
 <li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
 <Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'180px', height:'180px', border:'0px solid'}}></Link>
-<SiteLogo />MemeGenes.com
+<SiteLogo />
 </li>
 
 
@@ -157,9 +157,9 @@ This is 2nd menu
       </li>  */}
 
 
-<li className="carto">
+<li className="carto"  style={{textAlign:'center', marginBottom:'2vh'}}>
       <Link className="navbar-item txtshadow" to="/archive/2/">
-      <div style={{display:'block', gap:'10px', textAlign:'center'}}>
+      <div style={{display:'block', gap:'10px',}}>
       View All Posts
       </div>
         </Link>

@@ -27,7 +27,7 @@ shareable: true
 underlayImage: /assets/PillowTalkBG.png
 featuredImage: /assets/Experiences-Header-8.jpg
 svgImage: /assets/lindell2.svg
-scrollable: false
+scrollable: true
 nftdrop: ""
 nftredeem: false
 contentinvideo: false
