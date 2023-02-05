@@ -5,7 +5,7 @@ import { useState, useRef } from "react";
 
 import Controls from "../components/Controls";
 
-import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
+import { IoArrowRedoSharp, IoArrowUndoSharp, IoCloseOutline } from "react-icons/io5"
 import { jsx } from "theme-ui"
 import { Link, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
@@ -21,8 +21,9 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 import { ImCross } from "react-icons/im"
 import { RxDoubleArrowUp } from "react-icons/rx"
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
-import { AiOutlineAudioMuted, AiFillCaretRight, AiFillCaretLeft, AiOutlineCloseCircle, AiOutlineMenu, AiFillCloseCircle } from "react-icons/ai"
+import { AiOutlineAudioMuted, AiFillCaretRight, AiFillCaretLeft, AiOutlineMenu, AiFillCloseCircle } from "react-icons/ai"
 import { FaShareAlt, FaInfoCircle } from "react-icons/fa"
+import { ImMenu } from "react-icons/im"
 
 import { BsFillChatLeftTextFill } from "react-icons/bs"
 
@@ -502,12 +503,12 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
     {isMobile ? 
       <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeDesk} aria-label="Return To Top"><RxDoubleArrowUp /></button></AnchorLink> :
-      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 5px 5px 5px'}}><AiOutlineCloseCircle /></button></AnchorLink>
+      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 5px 5px 5px'}}><IoCloseOutline /></button></AnchorLink>
     }
 
 </div>
 
-        <label aria-label="open menu" id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer', color:'#fff', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,3))'}}><AiOutlineMenu style={{cursor:'pointer', padding:'', width:'25px', height:'20px'}} /></label>
+        <label aria-label="open menu" id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer', color:'#fff', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,3))'}}><ImMenu style={{cursor:'pointer', padding:'', width:'5vw', height:'20px'}} /></label>
 
 <div className="menusnapp" style={{ display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'5vw',}}>
   
