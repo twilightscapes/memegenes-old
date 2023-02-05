@@ -22,7 +22,7 @@
   "dependencies": {
     "@mdx-js/runtime": "^1.6.22",
     "@sindresorhus/slugify": "^2.1.1",
-    "@staticcms/core": "^1.1.0",
+    "@staticcms/app": "1.2.6",
     "@theme-ui/color": "^0.15.4",
     "commentbox.io": "^2.1.0",
     "gatsby": "^5.4.2",
@@ -39,7 +39,7 @@
     "gatsby-plugin-sass": "^6.4.0",
     "gatsby-plugin-sharp": "^5.4.0",
     "gatsby-plugin-sitemap": "^6.4.0",
-    "gatsby-plugin-static-cms": "^1.1.0",
+    "gatsby-plugin-static-cms": "1.1.2",
     "gatsby-plugin-styled-components": "^6.4.0",
     "gatsby-plugin-theme-ui": "^0.6.0",
     "gatsby-plugin-web-font-loader": "^1.0.4",
