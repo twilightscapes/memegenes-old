@@ -735,8 +735,8 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 {ShareThis ? (
 
-<section id="sharethis" style={{height:'', marginTop:'', display:'grid', placeContent:'center'}}>
-<ShareSocial />
+<section id="sharethis" style={{width:'', height:'', marginTop:'', display:'grid', placeContent:'center'}}>
+<ShareSocial style={{width:'500px'}} />
 <GoBack />
 </section>
           ) : (
@@ -804,7 +804,7 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 {Comments ? (
 
-<section id="comments" style={{height:'', paddingBottom:'100vh',   display:'grid', placeContent:'center',}}>
+<section id="comments" style={{height:'', paddingBottom:'10vh',   display:'grid', placeContent:'center',}}>
 
 <CommentBox />
 <GoBack />
@@ -812,7 +812,7 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 </section>
           ) : (
-            <section id="comments" style={{height:'', paddingBottom:'100vh',   display:'grid', placeContent:'center',}}>
+            <section id="comments" style={{height:'', paddingBottom:'10vh',   display:'grid', placeContent:'center',}}>
 
 {/* <CommentBox /> */}
 Comments have been disabled for this post.
@@ -832,7 +832,7 @@ Comments have been disabled for this post.
 
 
 
-      <section id="original" style={{height:'', marginTop:'-50vh', paddingTop:'10%',   display:'grid', placeContent:'center'}}>
+      <section id="original" style={{height:'', marginTop:'', paddingTop:'10%',   display:'grid', placeContent:'center'}}>
 
       {ShowOriginal ? (
           <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
