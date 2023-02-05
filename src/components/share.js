@@ -1,6 +1,6 @@
 import * as React from "react"
 // import { ShareSocial } from 'react-share-social' 
-// import useSiteMetadata from "../hooks/SiteMetadata"
+import useSiteMetadata from "../hooks/SiteMetadata"
 import styled from "styled-components"
 
 const CustomBox = styled.div`
@@ -15,6 +15,8 @@ const Foo = () => {
 
   // const url = typeof window !== 'undefined' ? window.location.href : '';
 
+  const { siteUrl } = useSiteMetadata();
+  
   return (
 <CustomBox style={{}}>
     {/* <ShareSocial
@@ -28,12 +30,12 @@ const Foo = () => {
 
       
 
-<p className="specialfont pleaseshare" style={{textAlign:'center', fontSize:'140%'}}>Please Share:</p>
+<p className="specialfont pleaseshare" style={{margin:'10px 0 0 0', textAlign:'center', fontSize:'140%'}}>Please Share:</p>
 <div className="sharebutts" style={{   background: 'transparent',
   borderRadius: "",
   // border: '0px solid red',
   color: '',
-  padding: '20px 0 0 0',
+  padding: '0 0 0 0',
   display:'flex',
   flexDirection:'row',
   justifyContent:'center',

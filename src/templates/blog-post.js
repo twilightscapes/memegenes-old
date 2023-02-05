@@ -479,14 +479,10 @@ const YouTube = frontmatter.youtuber
 
 
 
-{/* <Seo
-          title={`Welcome to the GRID`}
-          description={`I tried to picture clusters of information as they moved through the computer. What did they look like? Ships? Motorcycles? Were the circuits like freeways? I kept dreaming of a world I thought I'd never see.`}
-          image={'https://allin60.com/tronin60.jpg'}
-        /> */}
 
 
-{/* <div className='player-wrapper intro' style={{position:'relative', bottom:'0', zIndex:'', height:'100vh', maxHeight:'', overflow:'', filter: 'drop-shadow(0 0 20px #000)',  }}> */}
+
+
 <div id="top"></div>
 
 
@@ -737,7 +733,15 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
           )}
 
 
+{ShareThis ? (
 
+<section id="sharethis" style={{height:'', marginTop:'', display:'grid', placeContent:'center'}}>
+<ShareSocial />
+<GoBack />
+</section>
+          ) : (
+            ""
+          )}
 
       
 {!ContentinVideo ? (
@@ -795,22 +799,7 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 
 
-{ShareThis ? (
 
-<section id="sharethis" style={{height:'', marginTop:'',   display:'grid', placeContent:'center'}}>
-
-  <br />
-<ShareSocial />
-<br />
-<GoBack />
-
-
-
-
-</section>
-          ) : (
-            ""
-          )}
           
 
 {Comments ? (
