@@ -49,6 +49,7 @@ collections:
         }
       - { label: "SEO Description", name: "description", widget: "text" }
       - { label: "YouTube Url", name: "youtuber", widget: "string", required: false }
+      - { label: "Second YouTube Url", name: "youtuber2", widget: "string", required: false, hint: "You can use this to rebute things or show alternate content" }
       - { label: "YouTube AutoPlay", name: "youtubeautostart", widget: "boolean", default: "false", required: false }
       - { label: "YouTube Mute", name: "youtubemute", widget: "boolean", default: "true", required: false }
       - { label: "Show Custom Player Controls", name: "youtubecontrols", widget: "boolean", default: "false", required: false }
