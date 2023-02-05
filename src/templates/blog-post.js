@@ -736,7 +736,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 
 
-     <div className="panel" style={{width:'90%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', borderRadius:'12px', }}>
+     <div className="panel" style={{width:'100%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', borderRadius:'0 0 12px 12px', }}>
 
 
      {Suggestion1 ? (
