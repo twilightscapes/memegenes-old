@@ -113,7 +113,7 @@ const Pagination = props => (
           }}>
             <span className="page-title mobilehide">
               {/* {props.next.frontmatter.title} */}
-Next
+Newer
               </span>
              {" "} &nbsp; &#10095;
           </button>
@@ -562,7 +562,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 
 
-<div  style={{cursor:'pointer', padding:'0 5px'}}>{(previous || next) && <Pagination {...props} />}</div>
+<div  style={{cursor:'pointer', padding:'0 10px', borderLeft:'1px solid #666'}}>{(previous || next) && <Pagination {...props} />}</div>
 
 
 {/* <AnchorLink to="#footer" style={{border:'0px solid', }}>

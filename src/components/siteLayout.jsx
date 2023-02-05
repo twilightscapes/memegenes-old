@@ -159,7 +159,7 @@ This is 2nd menu
 
 <li className="carto">
       <Link className="navbar-item txtshadow" to="/archive/2/">
-      <div style={{display:'flex', gap:'10px'}}>
+      <div style={{display:'block', gap:'10px', textAlign:'center'}}>
       View All Posts
       </div>
         </Link>
@@ -185,11 +185,11 @@ This is 2nd menu
   </li>  */}
 
 
-  <li className="grad" style={{position:'relative',}}>
+  {/* <li className="grad" style={{position:'relative',}}>
         <Link to="/contact" className="navbar-item" style={{paddingRight:'',}}>
           Contact
         </Link>
-        </li>
+        </li> */}
 
   <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
 

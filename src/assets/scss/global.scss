@@ -619,7 +619,7 @@ flex-direction: column;
 	 .spotlight:hover{
 		background:rgba(0, 0, 0, 0);
 		backdrop-filter: none;
-		.posticon{animation: move 1.5s forwards; animation-delay: .5s;}
+		.posticons{animation: move 1.5s forwards; animation-delay: .5s;}
 	 }
 
 	 
@@ -1429,6 +1429,9 @@ body.homepage .horizontal-holder{
 		// height: 20%;
 		margin: 0 0 100% 0;
 	}
+
+	.posticon{height:5vh !important;}
+
 	.horizontal-scroll{
 		width: calc(100% + 1px);
 		transform: rotate(-90deg) translateY(-100%);

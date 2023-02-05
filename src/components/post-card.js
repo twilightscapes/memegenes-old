@@ -167,10 +167,14 @@ date={Date.now() + 60000} className="countdown">
 </div>
 
 {data.frontmatter.youtuber ? (
-<div className="spotlight">
-  <div style={{display:'grid', placeContent:'center'}}>
 <Link to={data.frontmatter.slug} style={{}}>
-<div className="posticon" style={{fontWeight:'bold', padding:'1rem 2vw', fontSize:'2rem', width:'40vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px',}}>
+  <div className="spotlight">
+
+  <div style={{display:'grid', placeContent:'center'}}>
+    
+
+
+<div className="posticons" style={{fontWeight:'bold', padding:'1rem 2vw', fontSize:'clamp(1rem, 4vw, 2rem)', width:'40vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px',}}>
 
   
 
@@ -201,9 +205,10 @@ date={Date.now() + 60000} className="countdown">
 Play Multimedia
 </div>
 
+
+</div>
+</div>
 </Link>
-</div>
-</div>
 ) : (
   ""
 )}
