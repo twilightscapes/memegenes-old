@@ -145,7 +145,7 @@ const Post = ({ data, pageContext }) => {
 
 
   //   const scrollable = frontmatter.scrollable
-    // const NftRedeem = frontmatter.nftredeem
+
   //   const NftDrop = frontmatter.nftdrop
 
 
@@ -1005,7 +1005,6 @@ export const pageQuery = graphql`
         contentinvideo
         comments
         shareable
-        nftredeem
         isnftforsale
         nftdrop
         svgzindex

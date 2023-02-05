@@ -29,7 +29,6 @@ featuredImage: /assets/MyLastBed.webp
 svgImage:
 scrollable: false
 nftdrop: ""
-nftredeem: true
 contentinvideo: false
 ---
 America's Favorite Pillow Guy has a brand product out, called My Last Bed! 
