@@ -4,18 +4,18 @@ title: PillowTalk
 slug: /pillowtalk
 description: Let's Find Mike A Woman
 youtubemute: true
-youtubecontrols: false
-youtubestart: "0"
+youtubecontrols: true
 youtubeend: "0"
 youtubeloop: true
 youtubersuggestion1: ""
 youtubersuggestion3: https://youtu.be/24nttG5Lnio
+shareable: true
+scrollable: false
+contentinvideo: false
+liarliar: true
 audiotitle: Alternate Soundtrack
 youtuber2: https://youtu.be/CWf5FYSK7Yc
 audioend: "5000"
-shareable: true
-scrollable: false
-liarliar: true
 nftdrop: ""
 audiostart: "20"
 date: 2023-02-03 10:43
@@ -27,8 +27,8 @@ featuredImage: /assets/Experiences-Header-8.jpg
 underlayImage: /assets/PillowTalkBG.png
 svgImage: /assets/lindell2.svg
 svgzindex: "0"
-contentinvideo: false
 isnftforsale: false
+youtubestart: "0"
 youtubersuggestion2: https://youtu.be/iiZnOlRPiE0
 ---
 America's Favorite Pillow Guy has a brand new show out, called PillowTalk! You as a viewer get to help Mike find True Love™ and a great night's sleep. 
