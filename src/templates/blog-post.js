@@ -21,7 +21,7 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 import { ImCross } from "react-icons/im"
 import { RxDoubleArrowUp } from "react-icons/rx"
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
-import { AiOutlineAudioMuted } from "react-icons/ai"
+import { AiOutlineAudioMuted, AiFillCaretRight, AiFillCaretLeft } from "react-icons/ai"
 import Footer from "../components/footer"
 // import { SRLWrapper } from "simple-react-lightbox"
 import { CopyToClipboard } from 'react-copy-to-clipboard'
@@ -90,34 +90,24 @@ const CustomBox = styled.div`
 
 const Pagination = props => (
   <div className="pagination -post1" style={{position:'', bottom:'',}}>
-    <ul className="" style={{}}>
+    <ul className="" style={{display:'', justifyContent:'', paddingTop:'5px'}}>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
-        <li style={{}}>
-          <Link style={{}}  to= {props.previous.frontmatter.slug + "/"} rel="prev">
-          <button className="" style={{display:'flex', justifyContent:'flex-end',
-          // textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff'
-        }}>
-&#10094; &nbsp; {" "} <span className="page-title mobilehide">
-              {/* {props.previous.frontmatter.title} */}
-              Previous
-            </span></button>
+        <li style={{display:'flex', justifyContent:'flex-end',}}>
+<Link style={{}}  to= {props.previous.frontmatter.slug + "/"} rel="prev">
+ <button className="" style={{display:'flex', justifyContent:'',}}><AiFillCaretLeft />&nbsp; <span className="page-title">
+{/* {props.previous.frontmatter.title} */}Previous</span>
+</button>
           </Link>
         </li>
       )}
       {props.next && props.next.frontmatter.template === "blog-post" && (
-        <li style={{}}>
-          <Link to={props.next.frontmatter.slug + "/"} rel="next">
-<button className="" style={{display:'flex', justifyContent:'flex-start',
-          // textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1))', color:'#fff'
-          }}>
-            <span className="page-title mobilehide">
-              {/* {props.next.frontmatter.title} */}
-Newer
-              </span>
-             {" "} &nbsp; &#10095;
-          </button>
-          </Link>
+        <li style={{display:'flex', justifyContent:'flex-end',}}>
+<Link to={props.next.frontmatter.slug + "/"} rel="next">
+<button className="" style={{display:'flex', justifyContent:'', }}>
+<span className="page-title">{/* {props.next.frontmatter.title} */}Newer</span> &nbsp; <AiFillCaretRight />
+</button>
+</Link>
         </li>
       )}
     </ul>
@@ -356,7 +346,7 @@ const OriginalUrl = frontmatter.youtuber
           playIcon={
             <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', height:'0', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
           
-        <div className="" style={{position:'absolute', top:'-300px', right:'10px', zIndex:'55', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
+        <div className="" style={{position:'absolute', top:'-350px', right:'10px', zIndex:'55', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
           
       
           {/* <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div> */}
@@ -501,7 +491,7 @@ const YouTube = frontmatter.youtuber
 
 
 <div className="pagemenu" style={{position:'fixed', bottom:'0px', zIndex:'2',  left:'0px', right:'', display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'20px',
-textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', padding:'12px 20px 10px 10px', borderTop:'1px solid #666', borderRight:'1px solid #666', borderRadius:'0 12px 0 0',
+textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', padding:'12px 10px 10px 10px', borderTop:'1px solid #666', borderRight:'1px solid #666', borderRadius:'0 12px 0 0',
 
  }}>
 <div>
