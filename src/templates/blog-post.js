@@ -21,7 +21,11 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 import { ImCross } from "react-icons/im"
 import { RxDoubleArrowUp } from "react-icons/rx"
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
-import { AiOutlineAudioMuted, AiFillCaretRight, AiFillCaretLeft } from "react-icons/ai"
+import { AiOutlineAudioMuted, AiFillCaretRight, AiFillCaretLeft, AiFillInfoCircle, AiOutlineMenu } from "react-icons/ai"
+import { FaShareAlt } from "react-icons/fa"
+
+import { BsFillChatLeftTextFill } from "react-icons/bs"
+
 import Footer from "../components/footer"
 // import { SRLWrapper } from "simple-react-lightbox"
 import { CopyToClipboard } from 'react-copy-to-clipboard'
@@ -90,7 +94,7 @@ const CustomBox = styled.div`
 
 const Pagination = props => (
   <div className="pagination -post1" style={{position:'', bottom:'',}}>
-    <ul className="" style={{display:'', justifyContent:'', paddingTop:'5px'}}>
+    <ul className="" style={{display:'flex', gap:'20px', paddingTop:'5px'}}>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
         <li style={{display:'flex', justifyContent:'flex-end',}}>
@@ -503,9 +507,9 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 </div>
 
-        <label id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer', color:'#fff',filter:'drop-shadow(0px 0px 5px rgba(155,155,155,3))'}}>Menu</label>
+        <label aria-label="open menu" id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer', color:'#fff', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,3))'}}><AiOutlineMenu style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} /></label>
 
-<div className="menusnapp" style={{ display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'20px',}}>
+<div className="menusnapp" style={{ display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'25px',}}>
   
    
 
@@ -513,13 +517,13 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
   
 
 {Comments ? (
-          <AnchorLink to="#comments"  style={{cursor:'pointer', padding:'5px'}}>
-  Comments
+          <AnchorLink to="#comments"  style={{cursor:'pointer', padding:''}}>
+  <BsFillChatLeftTextFill style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} />
         </AnchorLink>
        
           ) : (
-            <AnchorLink to="#comments"  style={{cursor:'pointer', padding:'5px'}}>
-            Comments
+            <AnchorLink to="#comments"  style={{cursor:'pointer', padding:''}}>
+            <BsFillChatLeftTextFill style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} />
                   </AnchorLink>
           )}
 
@@ -528,7 +532,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 {ShareThis ? (
 <AnchorLink to="#sharethis"  style={{cursor:'pointer', padding:'5px'}}>
-  Share
+<FaShareAlt style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}}/>
         </AnchorLink>
  ) : (
   ""
@@ -536,13 +540,13 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 
 {ShowOriginal ? (
-          <AnchorLink to="#original"  style={{cursor:'pointer', padding:'5px'}}>
-  Legal
+          <AnchorLink to="#original"  style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}}>
+  <AiFillInfoCircle style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} />
         </AnchorLink>
        
           ) : (
-            <AnchorLink to="#original"  style={{cursor:'pointer', padding:'5px'}}>
-            Legal
+            <AnchorLink to="#original"  style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}}>
+            <AiFillInfoCircle style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} />
                   </AnchorLink>
           )}
 
