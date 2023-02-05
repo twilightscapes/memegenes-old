@@ -34,6 +34,7 @@ youtubersuggestion2: https://youtu.be/iiZnOlRPiE0
 
 ### America's Favorite Pillow Guy has a brand new show out, called PillowTalk! Let's hope Mike find True Love™ and a great night's sleep. 
 
+<br />
 Mike Lindell is the founder and CEO of MyPillow, a pillow manufacturing company based in Chaska, Minnesota. He is known for his colorful personality and aggressive marketing tactics, which have made MyPillow one of the most recognizable brands in the bedding industry.
 
 MyPillow was founded in 2004 and has since grown into a multi-million dollar company. The company is known for its patented interlocking fill, which is designed to adjust to the user's individual needs and provide a comfortable sleeping experience. MyPillow also offers a variety of pillows in different shapes, sizes, and firmness levels to meet the needs of a wide range of customers.

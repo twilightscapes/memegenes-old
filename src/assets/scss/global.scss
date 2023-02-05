@@ -505,7 +505,7 @@ body.homepage .ReactModalPortal .nextbutt {
 }
 
 .resp-sharing-button__icon svg {
-  width: 10vw;
+  width:clamp(5vh, 10vh, 8vh);
   height: 10vh;
   // margin-right: 0.4em;
   vertical-align: top
