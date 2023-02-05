@@ -27,7 +27,7 @@ shareable: true
 underlayImage: /assets/PillowTalkBG2.webp
 featuredImage: /assets/kari-no-filter.webp
 svgImage: 
-scrollable: false
+scrollable: true
 nftdrop: ""
 
 contentinvideo: true
@@ -36,10 +36,22 @@ contentinvideo: true
 <img class="lakemask" src="/assets/lakemouth.webp" width="100%" />
 </div>
 
+<div style="text-align:left !important;">
 
+Kari Lake is an American journalist who has gained notoriety for her coverage of election fraud in Arizona. Lake is the chief anchor and investigative reporter for Fox 10 News in Phoenix, Arizona. She has spent years covering the issue of election fraud and has been at the forefront of efforts to uncover the truth about the 2020 US Presidential Election.
 
-<!-- https://youtu.be/zQB-_N7CIYY  -->
+Lake's coverage of election fraud began in the lead up to the 2020 election, when she started to receive reports of irregularities from concerned citizens and election observers. She quickly became a vocal advocate for election transparency and began to investigate the claims of fraud that were circulating. Her reporting was some of the first to bring attention to the issue in Arizona and helped to spur a broader national conversation about the integrity of the election.
 
-<!-- https://youtu.be/VgdB9QYKeyM -->
+In the aftermath of the election, Lake continued to cover the issue, reporting on claims of irregularities, voter suppression, and other forms of fraud that were being made. She interviewed witnesses, analyzed data, and conducted her own independent investigations, all in an effort to get to the bottom of the claims being made.
 
-<!-- XjuLZwlDxh8 -->
+Her reporting soon drew the attention of the state's political establishment, and Lake became a target of criticism and attacks from those who disagreed with her stance on election fraud. Despite the backlash, she refused to back down and continued to report on the issue, even as it became increasingly politicized.
+
+One of the most notable instances of Lake's coverage of election fraud was her reporting on the Maricopa County audit, which was conducted in 2021. The audit was initiated after allegations of fraud were made and Lake covered the process from start to finish, reporting on the findings and the controversy surrounding the audit. Her reporting on the issue helped to bring national attention to the issue of election fraud in Arizona and helped to build support for further investigations into the matter.
+
+Despite the controversies that surrounded her coverage of election fraud, Lake remained steadfast in her commitment to uncovering the truth. She faced criticism and attacks from those who disagreed with her stance on the issue, but she refused to be intimidated and continued to report on the matter, even as it became more politically charged.
+
+Today, Lake remains one of the most prominent voices in the fight against election fraud. She continues to report on the issue and is widely regarded as a leading expert on the matter. Her reporting has helped to shed light on the issue and has contributed to the larger national conversation about the integrity of our elections.
+
+In conclusion, Kari Lake is an accomplished journalist who has become a leading voice in the fight against election fraud in Arizona. Her tireless reporting and commitment to uncovering the truth have made her a respected voice in the media and a powerful advocate for election transparency. Her reporting has helped to bring national attention to the issue of election fraud and has contributed to the larger conversation about the integrity of our elections. Lake's work serves as an example of the important role that journalists play in our democracy and demonstrates the power of journalism to bring light to important issues and hold those in power accountable.
+
+</div>

@@ -1,1 +1,22 @@
 npx pwa-asset-generator ./src/img/logo.svg ./static/siteimages --background "linear-gradient(180deg, #43186b 1%, #9851c476 80%)" --scrape false --xhtml true --opaque false
+
+
+
+const pwaAssetGenerator = require('pwa-asset-generator');
+
+// Generate images over a module function call, instead of using CLI commands
+(async () => {
+  const { savedImages, htmlMeta, manifestJsonContent } = await pwaAssetGenerator.generateImages(
+    '../src/img/logo.svg',
+    '../static/siteimages',
+    {
+      scrape: false,
+      background: "linear-gradient(180deg, #43186b 1%, #9851c476 80%)",
+      splashOnly: true,
+      portraitOnly: true,
+      log: false
+    });
+})();
+
+// Access to static data for Apple Device specs that are used for generating launch images
+const appleDeviceSpecsForLaunchImages = pwaAssetGenerator.appleDeviceSpecsForLaunchImages;

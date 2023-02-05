@@ -342,7 +342,7 @@ const OriginalUrl = frontmatter.youtuber
           // ]}
           width="300px"
           height="150px"
-          style={{marginTop:'0', position:'relative', zIndex:'0'}}
+          style={{marginTop:'0', position:'absolute', zIndex:'0'}}
           config={{
             
             youtube: {
@@ -354,7 +354,7 @@ const OriginalUrl = frontmatter.youtuber
           playing
           playsinline
           playIcon={
-            <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+            <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', height:'0', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
           
         <div className="" style={{position:'absolute', top:'-150px', left:'10px', zIndex:'', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
           
@@ -756,15 +756,15 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
       
 {!ContentinVideo ? (
-<article className="blog-post">
+<article className="blog-post" style={{marginTop:'0'}}>
         <header style={{height:'', display:'grid', placeContent:'center'}}>
-          <section className="article-header1" style={{textAlign:'center', margin:'', height:'auto', color:''}}>
+          <section className="article-header1" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
             <h1 className="tronText" style={{fontSize:'4vw'}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
             {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
           </section>
         </header>
-<div style={{padding:'0 0', borderTop:'0px solid', margin:'20vh 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
+<div style={{padding:'0 0', borderTop:'0px solid', margin:'vh 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
       <div
         className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'center', width:'100%', maxWidth:'', padding:'10vh 10vw', margin:'0 auto', color:'inherit !important'}}
         dangerouslySetInnerHTML={{ __html: html }}
@@ -801,7 +801,44 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 
 
+{ShareThis ? (
 
+<section id="sharethis" style={{height:'', marginTop:'',   display:'grid', placeContent:'center'}}>
+
+  <br />
+<ShareSocial />
+<br />
+<GoBack />
+
+
+
+
+</section>
+          ) : (
+            ""
+          )}
+          
+
+{Comments ? (
+
+<section id="comments" style={{height:'', paddingBottom:'100vh',   display:'grid', placeContent:'center',}}>
+
+<CommentBox />
+<GoBack />
+
+
+</section>
+          ) : (
+            <section id="comments" style={{height:'', paddingBottom:'100vh',   display:'grid', placeContent:'center',}}>
+
+{/* <CommentBox /> */}
+Comments have been disabled for this post.
+
+
+<GoBack />
+
+</section>
+          )}
          
 
 
@@ -866,23 +903,6 @@ Click to play original video
    
 
 
-{ShareThis ? (
-
-<section id="sharethis" style={{height:'', marginTop:'',   display:'grid', placeContent:'center'}}>
-
-  <br />
-<ShareSocial />
-<br />
-<GoBack />
-
-
-
-
-</section>
-          ) : (
-            ""
-          )}
-
 
 
 
@@ -907,26 +927,7 @@ Click to play original video
 
 
 
-{Comments ? (
 
-<section id="comments" style={{height:'', paddingBottom:'100vh',   display:'grid', placeContent:'center',}}>
-
-<CommentBox />
-<GoBack />
-
-
-</section>
-          ) : (
-            <section id="comments" style={{height:'', paddingBottom:'100vh',   display:'grid', placeContent:'center',}}>
-
-{/* <CommentBox /> */}
-Comments have been disabled for this post.
-
-
-<GoBack />
-
-</section>
-          )}
 
 
 
@@ -949,9 +950,9 @@ Comments have been disabled for this post.
    <br />
    </CustomBox>
 
-   <section id="footer" style={{height:'100vh', marginTop:'',  }}>
+  
    <Footer />
-   </section>
+  
     </Layout>
 
 
