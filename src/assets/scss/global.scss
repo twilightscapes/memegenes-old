@@ -114,25 +114,36 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .i
 // .sharebutts svg{ width:160px; border:1px solid blue;}
 // .sharebutts svg {color:#999 !important}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .effects::after{
 	border:0px solid red; display: block;
 	// background:rgba(0, 0, 0, .5); 
 	position:fixed;
-	top:1vh;
-	left:2vw;
-	width:73vw; height:calc(30vh * 2);
+	display:grid;
+	place-content: center;
+	top:3vh;
+	left:2.5vw;
+	width:73vw;
+	max-height: 58vh;
 	z-index:0;
 	opacity:0;
+	aspect-ratio: 4 / 3 !important;
 	content: " ";
 }
-
-
-
-
-
-
-
-
 
 .effects::after{
 animation: kariFilter 6s ease-in-out;
@@ -141,20 +152,12 @@ animation-direction: alternate;
 animation-iteration-count:infinite; 
 }
 
-
-
-
 @media (max-width: 48rem) {
-	.karieffect::before{
-		width:74vw; height:220px;
-	}
+	.effects::after{height:190px;}
 }
-@media (min-width: 49rem) {
-	.karieffect::before{
-		width:75vw; height:calc(32vh * 2);
-	}
+@media (min-width: 1144px) {
+	.effects::after{max-height:74vh;}
 }
-
 
 @keyframes kariFilter{
 	0% { 
