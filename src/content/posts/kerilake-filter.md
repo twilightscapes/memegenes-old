@@ -24,7 +24,7 @@ isnftforsale: false
 svgzindex: "0"
 comments: true
 shareable: true
-underlayImage: /assets/PillowTalkBG2.webp
+underlayImage: /assets/tv-crew.webp
 featuredImage: /assets/kari-no-filter.webp
 svgImage: 
 scrollable: true
@@ -40,7 +40,15 @@ animation-iteration-count:infinite;
 " />
 
 
+<div class="bubble bubble-bottom-left" style="position:absolute; width:; top:30%; left:20vw; display:flex; justify-content:center;">AH SHIT Bob! She's definitely <span style="font-size:120%; font-weight:bold;"> &nbsp; NOT &nbsp; </span> gonna be happy about this <span style="font-size:160%; font-weight:bold;"> &nbsp;!!!</span></div>
+
+
+<div class="bubble bubble-bottom-right" style="position:absolute; width:50vw; top:50%; right:20vw; display:block; justify-content:center; font-size:120%">Yeah well... you know... <br />you can put <span style="font-weight:bold;">vasoline on sandpaper</span> too,<br /> but in the end <span style="font-weight:bold;">it will still rub you raw!</span></div>
+
+
+
 <div style="text-align:left !important; margin-top:100vh;">
+
 
 Kari Lake is an American journalist who has gained notoriety for her coverage of election fraud in Arizona. Lake is the chief anchor and investigative reporter for Fox 10 News in Phoenix, Arizona. She has spent years covering the issue of election fraud and has been at the forefront of efforts to uncover the truth about the 2020 US Presidential Election.
 
