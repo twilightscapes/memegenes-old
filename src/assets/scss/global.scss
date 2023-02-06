@@ -323,44 +323,41 @@ opacity:0;
 
      body.blogpost .effects:before{
           content: "MemeGenes.com";
-        position:absolute;
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        align-self:center;
-		padding:20% 0 0 0;
-        animation: poof .9s forwards;
-        animation-delay: .6s;
-        overflow: hidden;
-        width:100vw;
-		height:200vh;
-        font-size:clamp(2rem, 9.5vw, 5.8rem); 
-		color:#f8f8fc;
-		text-shadow: 12px 7px 15px 12px black;
-        background-color:#402c5465;
-        border:0px solid yellow;
-        background-size: 50%;
-        background-position:center 50px;
-		z-index: 1;
-		text-shadow:0 0 7px #bc57eb,0 0 10px rgb(196, 134, 180),0 0 21px rgb(167, 139, 162),0 0 22px #FA02B7,0 0 32px #FA02B7,0 0 42px #ccc,0 0 42px #FA02B7,0 0 31px #9e66e7;
-		outline:1px solid rgba(0, 0, 0, 1) ;
-		filter: drop-shadow(1px 0px 4px rgba(0,0,0,.9));
-		background-color: rgb(63, 42, 179) ;
-		background: linear-gradient(
-		  68deg,
-		   rgb(69, 19, 73),
-			rgb(131, 63, 203),
-			 #09a5e2,
-			  rgb(99, 6, 107));
-		background-size: 300% 30%;
-		background-size: cover;
+		  position:absolute;
+		  display: flex;
+		  align-items: flex-start;
+		  justify-content: center;
+		  align-self:center;
+		  padding:20% 2% 0 2%;
+		  animation: poof .9s forwards;
+		  animation-delay: .4s;
+		  overflow: hidden;
+		  width:100vw;
+		  height:200vh;
+		  z-index: 1;
+	
+		  font-size:clamp(1.8rem, 7.5vw, 5.8rem); 
+		  color:#f8f8fc;
+		  text-shadow: 12px 7px 15px 2px black;
+		  text-shadow:0 0 7px #bc57eb,0 0 10px rgb(196, 134, 180),0 0 21px rgb(167, 139, 162),0 0 22px #FA02B7,0 0 32px #FA02B7,0 0 42px #ccc,0 0 42px #FA02B7,0 0 31px #9e66e7;
+		  outline:0px solid rgba(0, 0, 0, 1) ;
+		  filter: drop-shadow(1px 0px 4px rgba(0,0,0,.9));
+		  background-color: rgb(63, 42, 179) ;
+		//   background: linear-gradient(
+		// 	0deg,
+		// 	 rgb(69, 19, 73),
+		// 	  rgb(131, 63, 203),
+		// 	   #8a48b6,
+		// 		rgb(99, 6, 107));
+		  background-color:rgba(31, 19, 43, 1);
+		  background-image: url(../../../static/assets/newspaper.webp);
 	
 	 }
 
 
 
 
-     body.homepage #intro:before{
+     body.homepage #intro::before{
 		content: "Where great memes go to die";
 	  position:absolute;
 	  display: flex;
@@ -369,34 +366,50 @@ opacity:0;
 	  align-self:center;
 	  padding:20% 2% 0 2%;
 	  animation: poof .9s forwards;
-	  animation-delay: .6s;
+	  animation-delay: 1.4s;
 	  overflow: hidden;
 	  width:100vw;
 	  height:200vh;
+	  z-index: 1;
+
 	  font-size:clamp(1.8rem, 7.5vw, 5.8rem); 
 	  color:#f8f8fc;
-	  text-shadow: 12px 7px 15px 12px black;
-	  background-color:#402c5465;
-	  border:0px solid yellow;
-	  background-size: 50%;
-	  background-position:center 50px;
-	  z-index: 1;
+	  text-shadow: 12px 7px 15px 2px black;
 	  text-shadow:0 0 7px #bc57eb,0 0 10px rgb(196, 134, 180),0 0 21px rgb(167, 139, 162),0 0 22px #FA02B7,0 0 32px #FA02B7,0 0 42px #ccc,0 0 42px #FA02B7,0 0 31px #9e66e7;
-	  outline:1px solid rgba(0, 0, 0, 1) ;
+	  outline:0px solid rgba(0, 0, 0, 1) ;
 	  filter: drop-shadow(1px 0px 4px rgba(0,0,0,.9));
 	  background-color: rgb(63, 42, 179) ;
-	  background: linear-gradient(
-		68deg,
-		 rgb(69, 19, 73),
-		  rgb(131, 63, 203),
-		   #09a5e2,
-			rgb(99, 6, 107));
-	  background-size: 300% 30%;
-	  background-size: cover;
-  
+	//   background: linear-gradient(
+	// 	0deg,
+	// 	 rgb(69, 19, 73),
+	// 	  rgb(131, 63, 203),
+	// 	   #8a48b6,
+	// 		rgb(99, 6, 107));
+	  background-color:rgba(31, 19, 43, 1);
+	  background-image: url(../../../static/assets/newspaper.webp);
+
    }
 
-
+//    body.homepage::before{
+// 	animation: poof .9s forwards;
+// 	background-image: url(../../../static/assets/newspaper.webp);
+// 	  background-size: 300% 100%;
+// 	  background-size: cover;
+//   	  background-position:center top;
+// 		content: " DAMN";
+// 		position:absolute;
+// 		display: flex;
+// 		align-items: flex-start;
+// 		justify-content: center;
+// 		align-self:center;
+// 		padding:20% 2% 0 2%;
+// 		animation: poof .9s forwards;
+// 		animation-delay: 1s;
+// 		overflow: hidden;
+// 		width:100vw;
+// 		height:200vh;
+// 		z-index: 0;
+//    }
 
 
 
@@ -754,9 +767,9 @@ body.homepage .resp-sharing-button__icon svg{ width: 5vw; height: 5vh;}
 
 /* Safari Desktop NO SNAP */
 @supports(font:-apple-system-body) and (not(-webkit-touch-callout:default)){
-	// .horizontal-scroll-wrapper, .horizontal-scroll {
-	// 	scroll-snap-type:none !important;
-	// }
+	.horizontal-scroll-wrapper, .horizontal-scroll {
+		scroll-snap-type:none !important;
+	}
 	
 }
 /* iOS ONLY browsers */
