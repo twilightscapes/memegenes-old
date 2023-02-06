@@ -16,7 +16,10 @@ const style = {
     color: '#fff',
     display:'flex',
     justifyContent:'center',
-    flexDirection:'column'
+    flexDirection:'column',
+    padding:'0',
+    width:'100%',
+    minWidth: '400px',
   },
 
 

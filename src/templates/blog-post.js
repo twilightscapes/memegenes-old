@@ -98,7 +98,7 @@ const Pagination = props => (
     <ul className="" style={{display:'flex', gap:'2vw', paddingTop:'5px'}}>
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
-        <li style={{display:'flex', justifyContent:'flex-end',}}>
+        <li style={{display:'flex', justifyContent:'flex-start',}}>
 <Link style={{}}  to= {props.previous.frontmatter.slug + "/"} rel="prev">
  <button className="" style={{display:'flex', justifyContent:'',}}><AiFillCaretLeft />&nbsp; <span className="page-title">
 {/* {props.previous.frontmatter.title} */}Previous</span>
@@ -700,7 +700,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 {ContentinVideo ? (
   <div id="contentvideo"
-        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'0px solid transparent', position:'absolute', bottom:'', left:'0', top:'0', right:'0', zindex:'-1', maxHeight:'90vh', borderBottom:'0px solid', }}
+        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'0px solid transparent', position:'absolute', bottom:'', left:'0', top:'0', right:'0', zindex:'-1', maxHeight:'100vh', borderBottom:'0px solid', }}
         dangerouslySetInnerHTML={{ __html: html }}
       ></div>
  ) : (
@@ -740,8 +740,8 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 {ShareThis ? (
 
-<section id="sharethis" style={{width:'', height:'', marginTop:'', display:'grid', placeContent:'center'}}>
-<ShareSocial style={{width:'500px'}} />
+<section id="sharethis" style={{width:'auto', height:'', padding:'0', display:'grid', placeContent:'center', border:'0px solid'}}>
+<ShareSocial style={{}} />
 <GoBack />
 </section>
           ) : (

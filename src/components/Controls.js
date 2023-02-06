@@ -73,11 +73,11 @@ const Controls = forwardRef(
         </>
       ) : (
   <>
-      <div style={{position:'absolute', display:'block', background:'#000', height:'60px', width:'100%', zIndex:'', top:'0', right:'0', textAlign:'center', paddingTop:'10px' }}>allin60.com</div>
+      <div style={{position:'absolute', display:'block', background:'#000', height:'60px', width:'100%', zIndex:'1', top:'0', right:'0', textAlign:'center', paddingTop:'10px' }}>MemeGenes.com</div>
 
-  <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'1', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'center' }}>
+  <div style={{position:'absolute', background:'#111', height:'110vh', width:'100%', zIndex:'1', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'center' }}>
  
-  <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="VidSock" style={{ width:'30vw', height:'', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', bottom:'20vh'}} />
+  <img className="homepage-bg" src={iconimage} width="300px" height="150px" alt="MemeGenes" style={{ width:'30vw', height:'', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', bottom:'20vh'}} />
 
   </div>
   </>

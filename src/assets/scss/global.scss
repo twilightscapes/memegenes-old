@@ -297,19 +297,23 @@ opacity:0;
 	0% {
 	  transform: translateY(0);
 	  display: none;
+	  z-index: -5;	
 	  }
 
-	  90% {
+	  59% {
 		transform: translateY(-100vh);
 		transform:scaleY(1.35) scaleX(2.5);
 		height:0;
 		  filter: blur(60px);
-		  opacity: 0;   	
+		  opacity: 0;   
+		  z-index: 1;	
 		}
+
 	  
 	100% {
 		opacity: 0; 
-		display:none;	
+		display:none;
+		z-index: -5;		
 	  }
 	}
 
@@ -318,14 +322,15 @@ opacity:0;
           content: "MemeGenes.com";
         position:absolute;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         align-self:center;
+		padding:20% 0 0 0;
         animation: poof .9s forwards;
         animation-delay: .6s;
         overflow: hidden;
         width:100vw;
-		height:100vh;
+		height:200vh;
         font-size:clamp(2rem, 9.5vw, 5.8rem); 
 		color:#f8f8fc;
 		text-shadow: 12px 7px 15px 12px black;
@@ -346,8 +351,47 @@ opacity:0;
 			  rgb(99, 6, 107));
 		background-size: 300% 30%;
 		background-size: cover;
-		height: 100%;
+	
 	 }
+
+
+
+
+     body.homepage #intro:before{
+		content: "Where great memes go to die";
+	  position:absolute;
+	  display: flex;
+	  align-items: flex-start;
+	  justify-content: center;
+	  align-self:center;
+	  padding:20% 2% 0 2%;
+	  animation: poof .9s forwards;
+	  animation-delay: .6s;
+	  overflow: hidden;
+	  width:100vw;
+	  height:200vh;
+	  font-size:clamp(1.8rem, 7.5vw, 5.8rem); 
+	  color:#f8f8fc;
+	  text-shadow: 12px 7px 15px 12px black;
+	  background-color:#402c5465;
+	  border:0px solid yellow;
+	  background-size: 50%;
+	  background-position:center 50px;
+	  z-index: 1;
+	  text-shadow:0 0 7px #bc57eb,0 0 10px rgb(196, 134, 180),0 0 21px rgb(167, 139, 162),0 0 22px #FA02B7,0 0 32px #FA02B7,0 0 42px #ccc,0 0 42px #FA02B7,0 0 31px #9e66e7;
+	  outline:1px solid rgba(0, 0, 0, 1) ;
+	  filter: drop-shadow(1px 0px 4px rgba(0,0,0,.9));
+	  background-color: rgb(63, 42, 179) ;
+	  background: linear-gradient(
+		68deg,
+		 rgb(69, 19, 73),
+		  rgb(131, 63, 203),
+		   #09a5e2,
+			rgb(99, 6, 107));
+	  background-size: 300% 30%;
+	  background-size: cover;
+  
+   }
 
 
 
@@ -1708,7 +1752,8 @@ body.homepage .horizontal-holder{height:inherit !important}
 }
 @media (max-width: 48rem) {
 
-	.featured-image1{max-height: 400px !important;}
+	.featured-image1{max-height: 36vh !important; margin-top:1rem !important
+		;}
 	.flexbutt{
 		flex-direction: column !important;
 	}
@@ -1856,11 +1901,15 @@ body.homepage .horizontal-holder{height:inherit !important}
 
 	.controlsbox{
 		position:absolute !important;
-		right:20px;
+		right:10px;
 		bottom:inherit !important;
-		top:30vh !important;
+		top:32vh !important;
 		width:inherit !important;
 		margin:0 auto !important;
+   }
+   .controls, .controls svg{
+	width:40px;
+	height:40px;
    }
 
 	// .pagination{
@@ -1945,7 +1994,7 @@ body.homepage .horizontal-holder{height:inherit !important}
   object-fit: scale-down !important;
   border-radius: 8px !important;
   width:auto !important;
-  margin:0 auto !important;
+  margin:2vh auto 0 auto;
   overflow: hidden;
 //   border:1px solid #666;
       }
