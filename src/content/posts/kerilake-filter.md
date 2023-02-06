@@ -33,7 +33,7 @@ nftdrop: ""
 contentinvideo: true
 ---
 
-<img class="lakemask" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;
+<img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;
 animation: kariFilter 6s ease-in-out;
 animation-delay: 4s;
 animation-iteration-count:infinite;
