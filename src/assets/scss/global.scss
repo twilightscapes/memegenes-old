@@ -297,7 +297,7 @@ opacity:0;
 	0% {
 	  transform: translateY(0);
 	  display: none;
-	  z-index: -5;	
+	  z-index: 1;	
 	  }
 
 	  59% {
@@ -309,7 +309,10 @@ opacity:0;
 		  z-index: 1;	
 		}
 
-	  
+		99% {
+			opacity: 0; 
+			
+		  }
 	100% {
 		opacity: 0; 
 		display:none;
