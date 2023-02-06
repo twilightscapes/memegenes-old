@@ -19,7 +19,7 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 
 
 import { ImCross } from "react-icons/im"
-import { RxDoubleArrowUp } from "react-icons/rx"
+import { RxDoubleArrowUp, RxDoubleArrowDown } from "react-icons/rx"
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { AiOutlineAudioMuted, AiFillCaretRight, AiFillCaretLeft, AiOutlineMenu, AiFillCloseCircle } from "react-icons/ai"
 import { FaShareAlt, FaInfoCircle } from "react-icons/fa"
@@ -502,8 +502,8 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 
     {isMobile ? 
-      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeDesk} aria-label="Return To Top"><RxDoubleArrowUp /></button></AnchorLink> :
-      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 5px 5px 5px'}}><IoCloseOutline /></button></AnchorLink>
+      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeDesk} aria-label="Return To Top"><RxDoubleArrowDown /></button></AnchorLink> :
+      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 5px 5px 5px'}}><RxDoubleArrowUp /></button></AnchorLink>
     }
 
 </div>
