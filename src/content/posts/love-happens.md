@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Sometimes your intestests align and Love Happens!
+title: Sometimes your intestests align and Love Happens! 
 slug: /love-happens
 date: 2023-02-02 22:43
 description: They are the perfect DC couple. What could go wrong?

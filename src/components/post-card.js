@@ -67,11 +67,11 @@ const PostCard = ({ data }) => (
           alt={data.frontmatter.title + " - Featured image"}
           className="featured-image1"
           placeholder="blurred"
-              loading="eager"
+              // loading="eager"
               layout="constrained"
               style={{position:'relative', zIndex:'1', maxHeight:'80vh'}}
         />
-        {/* <div
+        <div
               style={{
                 alignItems: "center",
                 backgroundColor: "",
@@ -103,7 +103,7 @@ const PostCard = ({ data }) => (
         </g>
     </g>
 </svg>
-        </div> */}
+        </div>
       </Link>
       
     ) : (
@@ -141,9 +141,9 @@ date={Date.now() + 60000} className="countdown">
           )}
 
 
-<div className="" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'10px auto', height:'100%', textAlign:'left', padding:'.5rem 3vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'8px', color:'#fff' }}>
+<div className="" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'10px auto', height:'100%', textAlign:'left', padding:'1vh 1vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'8px', color:'#fff' }}>
 
-<h2 className="title" style={{fontSize:'clamp(1rem, 3.5vw, 3.8rem)', }}>
+<h2 className="title" style={{fontSize:'clamp(1.3rem, 2.8vw, 3.8rem)', }}>
   <Link 
     to={data.frontmatter.slug}
   >

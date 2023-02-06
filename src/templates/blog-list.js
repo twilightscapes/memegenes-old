@@ -9,6 +9,7 @@ import * as React from "react"
 // import { ImPlay } from "react-icons/im"
 // import ReactPlayer from 'react-player/lazy'
 // import useSiteMetadata from "../hooks/SiteMetadata"
+import Footer from "../components/footer";
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 import { RiArrowRightLine, RiArrowLeftLine} from "react-icons/ri"
@@ -232,7 +233,7 @@ class BlogIndex extends React.Component {
 </div>
 
 
-
+<Footer />
       </Layout>
     )
   }
