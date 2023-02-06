@@ -40,10 +40,10 @@ animation-iteration-count:infinite;
 " />
 
 
-<div class="bubble bubble-bottom-left" style="position:absolute; width:; top:30%; left:20vw; display:flex; justify-content:center;">AH SHIT Bob! She's definitely <span style="font-size:120%; font-weight:bold;"> &nbsp; NOT &nbsp; </span> gonna be happy about this <span style="font-size:160%; font-weight:bold;"> &nbsp;!!!</span></div>
+<div class="bubble bubble-bottom-left" style="position:absolute; width:; top:30%; left:20vw; display:flex; justify-content:center;backdrop-filter: blur(6px);">AH SHIT Bob! She's definitely <span style="font-size:120%; font-weight:bold;"> &nbsp; NOT &nbsp; </span> gonna be happy about this <span style="font-size:160%; font-weight:bold;"> &nbsp;!!!</span></div>
 
 
-<div class="bubble bubble-bottom-right" style="position:absolute; width:50vw; top:50%; right:20vw; display:block; justify-content:center; font-size:120%">Yeah well... you know... <br />you can put <span style="font-weight:bold;">vasoline on sandpaper</span> too,<br /> but in the end <span style="font-weight:bold;">it will still rub you raw!</span></div>
+<div class="bubble bubble-bottom-right" style="position:absolute; width:50vw; top:50%; right:20vw; display:block; justify-content:center; font-size:110%;backdrop-filter: blur(6px);">Yeah well... you know... <br />you can put <span style="font-weight:bold;">vasoline on sandpaper</span> too,<br /> but in the end <span style="font-weight:bold;">it will still rub you raw!</span></div>
 
 
 
