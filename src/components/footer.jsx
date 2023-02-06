@@ -243,7 +243,10 @@ export default function Footer() {
 
 <a href="https://mysresume.site" target="_blank" rel="noreferrer">Web App by MyResume</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Site Report Card</a>
 </div>
-
+<br />
+<br />
+<br />
+<br />
 
 
 
