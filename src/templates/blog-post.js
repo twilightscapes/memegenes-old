@@ -585,7 +585,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 
 
-<div className="wrap-element" style={{
+<div className="wrap-element effects" style={{
   overflow:'hidden',
   // height:'clamp(30vh, 80vh, 100vh)',
   aspectRatio:'16/9',
@@ -618,7 +618,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
           <ReactPlayer
             allow="autoplay"
             ref={playerRef}
-            style={{position:'', zIndex:''}}
+            style={{position:'', zIndex:'0'}}
             width="100%"
             height="100%"
           //       url={[
@@ -669,7 +669,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
               className="mcboaty1"
-              style={{height:'auto', width:'100%', maxHeight:'100%', overflow:'hidden', position:'absolute', bottom:'0', zIndex:'',
+              style={{height:'auto', width:'100%', maxHeight:'100%', overflow:'hidden', position:'absolute', bottom:'0', zIndex:'0',
              objectFit:'contain', border:'0px solid red !important', background:'transparent'}}
             />
             
@@ -700,7 +700,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 {ContentinVideo ? (
   <div id="contentvideo"
-        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'0px solid transparent', position:'absolute', bottom:'', left:'0', top:'0', right:'0', zindex:'', maxHeight:'90vh', borderBottom:'0px solid', }}
+        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'0px solid transparent', position:'absolute', bottom:'', left:'0', top:'0', right:'0', zindex:'-1', maxHeight:'90vh', borderBottom:'0px solid', }}
         dangerouslySetInnerHTML={{ __html: html }}
       ></div>
  ) : (

@@ -32,11 +32,11 @@ nftdrop: ""
 
 contentinvideo: true
 ---
-<div class="filterfail" style="">
-<img class="lakemask" src="/assets/lakemouth.webp" width="100%" />
-</div>
 
-<div style="text-align:left !important;">
+<img class="lakemask" src="/assets/lakemouth.webp" width="100%" style="transform:none !important; z-index:-1; opacity:.3 !important;" />
+
+
+<div style="text-align:left !important; margin-top:100vh;">
 
 Kari Lake is an American journalist who has gained notoriety for her coverage of election fraud in Arizona. Lake is the chief anchor and investigative reporter for Fox 10 News in Phoenix, Arizona. She has spent years covering the issue of election fraud and has been at the forefront of efforts to uncover the truth about the 2020 US Presidential Election.
 

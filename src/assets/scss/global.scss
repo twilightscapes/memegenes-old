@@ -114,18 +114,27 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .i
 // .sharebutts svg{ width:160px; border:1px solid blue;}
 // .sharebutts svg {color:#999 !important}
 
-.filterfail::before{
-	border:0px solid red; width:70vw; height:72vh; display: block;
+.effects::after{
+	border:0px solid red; display: block;
 	// background:rgba(0, 0, 0, .5); 
-	position:absolute;
-	top:0;
+	position:fixed;
+	top:1vh;
 	left:2vw;
-	z-index:2;
+	width:73vw; height:calc(30vh * 2);
+	z-index:0;
 	opacity:0;
 	content: " ";
 }
 
-.filterfail::before{
+
+
+
+
+
+
+
+
+.effects::after{
 animation: kariFilter 6s ease-in-out;
 animation-delay: 1s;
 animation-direction: alternate;
@@ -133,82 +142,78 @@ animation-iteration-count:infinite;
 }
 
 
-@keyframes kariFilter{
-	0% { transform:translateY(-100%);opacity:0; }
-	25% { transform:translateY(0%);opacity:1;
-		-webkit-backdrop-filter: blur(2px); 
-		backdrop-filter: blur(2px); 
-		opactiy:.2;
+
+
+@media (max-width: 48rem) {
+	.karieffect::before{
+		width:74vw; height:220px;
 	}
-	50% { transform:translateY(0%);opacity:1;
+}
+@media (min-width: 49rem) {
+	.karieffect::before{
+		width:75vw; height:calc(32vh * 2);
+	}
+}
+
+
+@keyframes kariFilter{
+	0% { 
+		// transform:translateY(-100%);
+		opacity:0; }
+
+	25% {
+		// transform:translateY(0%);
+		-webkit-backdrop-filter: blur(15px); 
+		backdrop-filter: blur(15px); 
+		opacity:.1;
+	}
+	50% {
+		// transform:translateY(-20%);
 		-webkit-backdrop-filter: blur(6px); 
 		backdrop-filter: blur(6px); 
 		opacity:1;
 	}
-	75% {transform:translateY(0%);opacity:1;
+	75% {
+		// transform:translateY(-40%);
 		-webkit-backdrop-filter: blur(12px); 
 		backdrop-filter: blur(12px); 
 		opacity:.4;
 	}
-	100% { transform:translateY(-100%);opacity:1;
-		-webkit-backdrop-filter: blur(0); 
-		backdrop-filter: blur(0); 
-		opacity:0;
-	}
-  }
-
-  @keyframes kariMask{
-	0% { 
-		opacity:0;
-		-webkit-backdrop-filter: blur(2px); 
-		backdrop-filter: blur(2px);
-	 }
-	25% {
-		-webkit-backdrop-filter: blur(2px); 
-		backdrop-filter: blur(2px); 
-		opacity:.2;
-	}
-	50% { 
-		-webkit-backdrop-filter: blur(6px); 
-		backdrop-filter: blur(6px); 
-		opacity:.4;
-	}
-	75% {
+	100% { 
+		// transform:translateY(-100%);
 		-webkit-backdrop-filter: blur(8px); 
 		backdrop-filter: blur(8px); 
-		opacity:.4;
-	}
-	100% { 
-		-webkit-backdrop-filter: blur(2); 
-		backdrop-filter: blur(2); 
 		opacity:0;
 	}
   }
 
 
-  .lakemask{
-	animation: kariMask 6s ease-in-out;
-	animation-delay: 4s;
-// animation-direction: alternate;
-animation-iteration-count:infinite;
-opacity:0;
-}
 
-.lineOne {
-	transition-delay:.7s; 
-	transition:.7s ease in;
-	animation: txtFlyIn .7s linear;
-  }
-  .lineTwo {
-	  transition-delay:1s; 
-	  transition:1s ease in;
-	  animation: txtFlyIn 1s linear;
-  }
-  .lineThree {
-	  transition-delay:1.3s; 
-	  transition:1.3s ease in;
-	  animation: txtFlyIn 1.3s linear;
-  }
+
+
+
+
+
+
+
+
+
+
+// .lineOne {
+// 	transition-delay:.7s; 
+// 	transition:.7s ease in;
+// 	animation: txtFlyIn .7s linear;
+//   }
+//   .lineTwo {
+// 	  transition-delay:1s; 
+// 	  transition:1s ease in;
+// 	  animation: txtFlyIn 1s linear;
+//   }
+//   .lineThree {
+// 	  transition-delay:1.3s; 
+// 	  transition:1.3s ease in;
+// 	  animation: txtFlyIn 1.3s linear;
+//   }
 
 
   @keyframes movingBG {
