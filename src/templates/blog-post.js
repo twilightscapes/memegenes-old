@@ -769,7 +769,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 <div style={{padding:'0 0', borderTop:'0px solid', margin:'vh 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
       <div
-        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'center', width:'100%', maxWidth:'', padding:'2vh 6% 10vh 6%', margin:'0 auto', color:'inherit !important'}}
+        className="blog-post-content" style={{ fontSize:'clamp(1.2rem, 2.8vw, 1.8rem)', textAlign:'center', width:'100%', maxWidth:'', padding:'2vh 6% 10vh 6%', margin:'0 auto', color:'inherit !important'}}
         dangerouslySetInnerHTML={{ __html: html }}
       />    
 </div>
