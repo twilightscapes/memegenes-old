@@ -1772,6 +1772,7 @@ body.homepage .horizontal-holder{height:inherit !important}
 	}
 	.introspace{
 		padding-top:40vh;
+		color:#ddd;
 	}
 }
 /* HUD CONTROLS */
@@ -1861,20 +1862,20 @@ body.homepage .horizontal-holder{height:inherit !important}
 	// backdrop-filter: blur(6px);
 }
 
-.wrap-element::before {
-	position: fixed;
-	display:block;
-	top:0;
-	left:0;
-	z-index: -4;
-	height:200vh;
-	width:100vw;
-	color:#fff !important;
-	background:rgba(0, 0, 0, .7);
-	backdrop-filter: blur(6px);
-	border:0px solid yellow;
-	content:" ";
-}
+// .wrap-element::before {
+// 	position: fixed;
+// 	display:block;
+// 	top:0;
+// 	left:0;
+// 	z-index: -4;
+// 	height:200vh;
+// 	width:100vw;
+// 	color:#fff !important;
+// 	background:rgba(0, 0, 0, .7);
+// 	backdrop-filter: blur(6px);
+// 	border:0px solid yellow;
+// 	content:" ";
+// }
 
 
 .wrap-element iframe {
@@ -1888,11 +1889,12 @@ body.homepage .horizontal-holder{height:inherit !important}
 
 
 .panel{
-	backdrop-filter: blur(6px);
-	background: var(--theme-ui-colors-background);
+	backdrop-filter: blur(14px);
+	background: var(--theme-ui-colors-cardBg);
 	color: var(--theme-ui-colors-text);
-	// color:rgba(30, 16, 37, 0.651);
+	// color:rgba(27, 25, 29, 0.7);
 	margin-top: 1vh !important;
+	text-shadow: var(--theme-ui-colors-textShadow);
 }
 
 

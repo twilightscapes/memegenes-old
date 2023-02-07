@@ -4,12 +4,13 @@ import { lightness } from "@theme-ui/color"
 const theme = {
   colors: {
     ...defaultColors,
-    text: "rgba(70, 16, 99, 1)",
-    background: "rgba(238, 208, 254, 0.808)",
+    text: "rgba(24, 18, 28, .9)",
+    textShadow: "0 2px 2px rgba(255, 255, 255, .7)",
+    background: "rgba(215, 208, 219, 1)",
     primary: "var(--primary-color)",
     accent: "#fff",
     muted: "rgba(0, 0, 0, 0.7)",
-    cardBg: "linear-gradient(180deg, #333 1%, #111 80%)",
+    cardBg: "rgba(235, 234, 236, 0.1)",
     borderColor: "#444",
     labelText: "#777",
     inputBorder: "#aaa",
@@ -22,11 +23,12 @@ const theme = {
     modes: {
       dark: {
         text: "#f5f5f5",
-        background: "rgba(30, 16, 37, 0.1)",
+        textShadow: "0 2px 2px rgba(0, 0, 0, .7)",
+        background: "rgba(28, 19, 32, 0.898)",
         primary: "var(--primary-color)",
         accent: "#5C2941",
         muted: "rgba(255, 255, 255, 0.7)",
-        cardBg: "linear-gradient(180deg, #333 1%, #ff0000 80%)",
+        cardBg: "rgba(27, 25, 29, 0.3)",
         borderColor: "#888",
         labelText: "#777",
         inputBorder: "#777",

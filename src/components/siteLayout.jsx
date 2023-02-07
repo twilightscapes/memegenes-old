@@ -224,7 +224,7 @@ This is 2nd menu
 
   <div style={{marginTop:'5px'}}><CartButton quantity={quantity} /></div> */}
      
-     
+     <div style={{position:'absolute', display:'block', background:'#000', height:'', width:'100%', zIndex:'4', top:'0', right:'0', textAlign:'center', padding:'8px' }}>MemeGenes.com</div>
 </header>
 {children}
 
