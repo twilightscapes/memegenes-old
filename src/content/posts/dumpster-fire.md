@@ -5,9 +5,9 @@ slug: /dumpster-fire
 date: 2023-02-09 10:43
 description: Aw Snap! What was that? Skari Lake's face literally just slid off her head.
 youtuber: "https://youtu.be/7g7kH671BVA"
-youtuber2: ""
+youtuber2: 
 youtubeshoworiginal: true
-youtubersuggestion1: ""
+youtubersuggestion1: 
 youtubersuggestion2: "https://youtu.be/iiZnOlRPiE0"
 youtubersuggestion3: "https://youtu.be/24nttG5Lnio"
 youtubestart: "0"
@@ -16,7 +16,7 @@ youtubemute: true
 audiostart: "20"
 audioend: "5000"
 audiotitle: "Liar Liar!"
-liarliar: true
+liarliar: false
 youtubecontrols: true
 youtubeautostart: true
 youtubeloop: true
@@ -28,8 +28,8 @@ underlayImage: /assets/trump-dumpfire.webp
 featuredImage: /assets/trump-fire-promo.webp
 svgImage: 
 scrollable: true
-nftdrop: ""
-contentinvideo: true
+nftdrop: 
+contentinvideo: false
 ---
 <div class="contentinside">
 <!-- <img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;
@@ -91,38 +91,11 @@ li h2{
     padding:1px 1vw 1px 3vw;
     margin:-2.6vh auto 2vh auto;
     border-radius: 12px;
-    font-size:clamp(3rem, 4.5vw, 5.8rem) !important;
+    font-size:clamp(2.5rem, 4.5vw, 5.8rem) !important;
     color: #ddd;
     		text-shadow: 0 20px 7px #000,0 8px 20px rgb(40, 8, 202),0px 12px 10px rgb(139, 142, 167),0 2px rgb(39, 67, 227),0 5px 2px rgb(39, 61, 227),0 0 2px rgb(39, 52, 227),0 0 2px rgb(39, 42, 227),0 0 1px rgb(39, 73, 227);
 }
 
-
-/* li:nth-child(even) {
-  border-left: 2px dashed;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-  margin-right: 30px; 
-  padding-right: 0;
-}
-
-li:nth-child(odd) {
-  border-right: 2px dashed;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  margin-left: 30px; 
-  padding-left: 0;
-} */
-
-/* li:first-child {
-  border-top: 0;
-  border-top-right-radius:0;
-  border-top-left-radius:0;
-}
-
-li:last-child {
-  border-bottom-right-radius:0;
-  border-bottom-left-radius:0;
-} */
     </style>
 
 
