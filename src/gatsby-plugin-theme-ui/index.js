@@ -22,7 +22,7 @@ const theme = {
     modes: {
       dark: {
         text: "#f5f5f5",
-        background: "rgba(70, 16, 99, 0.808)",
+        background: "rgba(30, 16, 37, 0.1)",
         primary: "var(--primary-color)",
         accent: "#5C2941",
         muted: "rgba(255, 255, 255, 0.7)",

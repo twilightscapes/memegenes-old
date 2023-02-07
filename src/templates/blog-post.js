@@ -593,7 +593,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
   overflow:'hidden',
   // height:'clamp(30vh, 80vh, 100vh)',
   aspectRatio:'16/9',
-
+maxHeight:'90vh'
   }}>
 
 
@@ -678,8 +678,8 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
               image={UnderlayImage}
               alt={frontmatter.title + " - image"}
               className="mcboaty1"
-              style={{height:'auto', width:'100%', maxHeight:'100%', overflow:'hidden', position:'absolute', bottom:'0', zIndex:'0',
-             objectFit:'contain', border:'0px solid red !important', background:'transparent'}}
+              style={{height:'auto', width:'100%', maxHeight:'100%', overflow:'hidden', position:'absolute', left:'0', right:'0', bottom:'0', top:'0', zIndex:'0',
+             objectFit:'cover', border:'0px solid red !important', background:'transparent',}}
             />
             
           ) : (
@@ -751,7 +751,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
 
       
 
-<article className="blog-post" style={{marginTop:'0'}}>
+<article className="blog-post" style={{marginTop:'-3vh',}}>
         
 
         {YouTube2 ? (
@@ -772,7 +772,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
 
 <div>
 {ShareThis ? (
-<header style={{height:'', display:'grid', placeContent:'center'}}>
+<header style={{ height:'', display:'grid', placeContent:'center'}}>
 
        
 
