@@ -656,6 +656,10 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
             }}
           
           />
+          <div className="youtubeblockertop" style={{position:'absolute', display:'block', background:'#000', height:'', width:'100%', zIndex:'4', top:'0', right:'0', textAlign:'center', padding:'12px',
+          animation:'fadeout 1s forwards', animationDelay:'4s'
+        
+        }}>MemeGenes.com</div>
 </div>
 
 ) : (
@@ -871,14 +875,16 @@ Click to play original video
             Legal:<br />
             <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link>
       <br /> <br />
-            <p style={{textAlign:'left'}}>*This is a parody website meant for education and entertainment purposes. <br />All characters, and events portrayed in this production are fictitious.<br />There is no identification with actual persons (living or deceased), <br />places, buildings, and/or products that are intended or should be inferred. 
-            <br />
-            Any resemblance to real persons, living or dead, is purely coincidental.<br />All content is purely satirical in nature. No celebrities were harmed.</p>
+            <p style={{textAlign:'left'}}>
+              <strong>*This is a parody website meant for education and entertainment purposes.</strong> <br /><br />
+              
+              All characters, and events portrayed in this production are fictitious or are being portrayed in a satirical manner.<br /><br />There is no identification with actual persons (living or deceased), <br />places, buildings, and/or products. There is no harm/insult intended or and none should be inferred. 
+            <br /><br /> No celebrities were harmed.
 
-            <br />
-          Some imagery from <a rel="noopener noreferrer" href="https://www.flickr.com/photos/donkeyhotey/" target="_blank" >DonkeyHotey</a>
+          <br /><br />
+          Video footage public youtube.com | Some imagery provided from <a rel="noopener noreferrer" href="https://www.flickr.com/photos/donkeyhotey/" target="_blank" >DonkeyHotey</a>
           <br />
-
+</p>
             </div>
 
 
