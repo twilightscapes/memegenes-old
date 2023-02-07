@@ -100,23 +100,25 @@ const Pagination = props => (
         // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
         <li style={{display:'flex', justifyContent:'flex-start',}}>
 <Link style={{}}  to= {props.previous.frontmatter.slug + "/"} rel="prev">
- <button className="" style={{display:'flex', justifyContent:'',}}><AiFillCaretLeft />&nbsp; <span className="page-title">
+ <button className="" style={{display:'flex', justifyContent:'',}}><span className="page-title">
 {props.previous.frontmatter.title}
 {/* Previous */}
 </span>
+&nbsp;&nbsp;<AiFillCaretLeft />
 </button>
           </Link>
         </li>
       )}
-      <div style={{fontSize:'15px', marginTop:'-5px'}}>|</div>
+      <div style={{fontSize:'15px', marginTop:'-5px'}}>GO TO:</div>
       {props.next && props.next.frontmatter.template === "blog-post" && (
         <li style={{display:'flex', justifyContent:'flex-end',}}>
 <Link to={props.next.frontmatter.slug + "/"} rel="next">
 <button className="" style={{display:'flex', justifyContent:'', }}>
+  <AiFillCaretRight />&nbsp;&nbsp;
 <span className="page-title">
   {props.next.frontmatter.title}
 {/* Newer */}
-</span> &nbsp; <AiFillCaretRight />
+</span>
 </button>
 </Link>
         </li>
@@ -504,8 +506,8 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
 <div>
 
     {isMobile ? 
-      <AnchorLink to="#top" style={{cursor:'pointer',}}><button onClick={resizeDesk} aria-label="Return To Top" style={{cursor:'pointer', padding:'0 5px'}}><RxDoubleArrowUp /></button></AnchorLink> :
-      <AnchorLink to="#top" style={{cursor:'pointer'}}><button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 5px'}}><RxDoubleArrowUp />x</button></AnchorLink>
+      <AnchorLink to="#top" style={{cursor:'pointer',}}><button onClick={resizeDesk} aria-label="Return To Top" style={{cursor:'pointer', padding:'5px 5px'}}>x</button></AnchorLink> :
+      <AnchorLink to="#top" style={{cursor:'pointer'}}><button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'5px 5px'}}>x</button></AnchorLink>
     }
 
 </div>
