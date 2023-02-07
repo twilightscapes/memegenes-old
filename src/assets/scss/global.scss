@@ -322,7 +322,7 @@ animation-iteration-count:infinite;
 	}
 
 
-     body.blogpost .effects::before{
+     body.blogpost .effects::before,  body.bloglist::before{
           content: "MemeGenes.com";
 		  position:absolute;
 		  display: flex;
