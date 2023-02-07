@@ -593,6 +593,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
   overflow:'hidden',
   // height:'clamp(30vh, 80vh, 100vh)',
   aspectRatio:'16/9',
+
   }}>
 
 
@@ -735,7 +736,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
 
 
 
-     <div className="panel" style={{width:'100%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', borderRadius:'0 0 12px 12px', overflow:'hidden' }}>
+     <div className="panel" style={{width:'100%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', borderRadius:'12px', overflow:'hidden' }}>
 
 
      {Suggestion1 ? (
@@ -751,13 +752,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
       
 
 <article className="blog-post" style={{marginTop:'0'}}>
-        <header style={{height:'', display:'grid', placeContent:'center'}}>
-          <section className="article-header1" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
-            <h1 className="tronText" style={{fontSize:'4vw'}}>{frontmatter.title}</h1>
-            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
-            {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
-          </section>
-        </header>
+        
 
         {YouTube2 ? (
             <Iframer3 />
@@ -766,27 +761,58 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
             ""
           )}
 
-{ShareThis ? (
 
-<div id="sharethis" style={{width:'auto', height:'', padding:'0', display:'grid', placeContent:'center', border:'0px solid'}}>
-<ShareSocial style={{}} />
-<GoBack />
-</div>
-          ) : (
-            ""
-          )}
 
 
 
 
 
 {/* ((((((((((body content)))))))))) */}
-<div style={{padding:'0 0', borderTop:'0px solid', margin:'vh 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
+{frontmatter.scrollable ? (
+
+<div>
+{ShareThis ? (
+<header style={{height:'', display:'grid', placeContent:'center'}}>
+
+       
+
+
+  <div id="sharethis" style={{width:'auto', height:'', padding:'0', display:'grid', placeContent:'center', border:'0px solid'}}>
+  <ShareSocial style={{}} />
+  </div>
+
+  <div className="article-header1" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
+            <h1 className="tronText" style={{fontSize:'4vw'}}>{frontmatter.title}</h1>
+            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
+            {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
+          </div>
+  </header>
+            ) : (
+              ""
+            )}
+
+
+  <div style={{padding:'0 0', borderTop:'0px solid', margin:'vh 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
       <div
         className="blog-post-content bodycontent" style={{ fontSize:'clamp(1.2rem, 2.8vw, 1.8rem)', textAlign:'center', width:'100%', maxWidth:'', padding:'2vh 6% 10vh 6%', margin:'0 auto', color:'inherit !important'}}
         dangerouslySetInnerHTML={{ __html: html }}
       />    
 </div>
+</div>
+
+) : (
+  <div>
+  {ShareThis ? (
+
+    <div id="sharethis" style={{width:'auto', height:'', padding:'0', display:'grid', placeContent:'center', border:'0px solid'}}>
+    <ShareSocial style={{}} />
+    </div>
+              ) : (
+                ""
+              )}
+</div>
+          )}
+
  </article>
 
 
@@ -844,9 +870,9 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 
  {ShowOriginal ? (
-      <section id="original" style={{height:'', marginTop:'', paddingTop:'',   display:'grid', placeContent:'center'}}>
+      <div id="original" style={{height:'', marginTop:'10vh', paddingTop:'',   display:'grid', placeContent:'center'}}>
 
-     
+{YouTube ? (
           <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
 <div style={{maxWidth:'90vw', width:'100%', height:'', maxHeight:'', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
 
@@ -861,6 +887,9 @@ Click to play original video
        </div>
  
        </div>
+           ) : (
+            ""
+          )}
        
       
           
@@ -884,7 +913,7 @@ Click to play original video
 
 
   <GoBack />
-</section>
+</div>
     ) : (
             ""
           )}

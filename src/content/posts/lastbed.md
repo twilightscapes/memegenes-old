@@ -6,7 +6,7 @@ date: 2023-02-02 15:43
 description: When its that time and you want to go in compfort.
 youtuber: ""
 youtuber2: ""
-youtubeshoworiginal: false
+youtubeshoworiginal: true
 youtubersuggestion1: ""
 youtubersuggestion2: ""
 youtubersuggestion3: ""
@@ -27,7 +27,7 @@ shareable: true
 underlayImage: 
 featuredImage: /assets/MyLastBed.webp
 svgImage:
-scrollable: false
+scrollable: true
 nftdrop: ""
 contentinvideo: false
 ---
