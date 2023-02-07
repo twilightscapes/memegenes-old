@@ -498,14 +498,14 @@ const YouTube = frontmatter.youtuber
 
 
 <div className="pagemenu" style={{position:'fixed', bottom:'0px', zIndex:'2',  left:'0px', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80%', margin:'0 auto', gap:'5vw',
-textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', padding:'2.5vh 2vw', borderTop:'1px solid #666', borderRight:'1px solid #666', borderRadius:'0 12px 0 0', textShadow:'0 1px 1px rgba(0, 0, 0, .7)'
+textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', padding:'1.5vh 2vw', borderTop:'1px solid #666', borderRight:'1px solid #666', borderRadius:'0 12px 0 0', textShadow:'0 1px 1px rgba(0, 0, 0, .7)'
 
  }}>
 <div>
 
     {isMobile ? 
-      <AnchorLink to="#top" style={{cursor:'pointer', padding:'15px'}}><button onClick={resizeDesk} aria-label="Return To Top" style={{cursor:'pointer',}}><RxDoubleArrowUp /></button></AnchorLink> :
-      <AnchorLink to="#top" style={{cursor:'pointer', padding:'15px'}}><button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer',}}><RxDoubleArrowUp /></button></AnchorLink>
+      <AnchorLink to="#top" style={{cursor:'pointer',}}><button onClick={resizeDesk} aria-label="Return To Top" style={{cursor:'pointer', padding:'0 5px'}}><RxDoubleArrowUp /></button></AnchorLink> :
+      <AnchorLink to="#top" style={{cursor:'pointer'}}><button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 5px'}}><RxDoubleArrowUp />x</button></AnchorLink>
     }
 
 </div>
@@ -555,7 +555,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
 
 
 
-<div  style={{cursor:'pointer', padding:'0 0', borderLeft:'0px solid #666'}}>{(previous || next) && <Pagination {...props} />}</div>
+<div  style={{cursor:'pointer', padding:'1vh 0', borderLeft:'0px solid #666'}}>{(previous || next) && <Pagination {...props} />}</div>
 
 
 {/* <AnchorLink to="#footer" style={{border:'0px solid', }}>
