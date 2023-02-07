@@ -73,7 +73,7 @@ const Controls = forwardRef(
         </>
       ) : (
   <>
-      <div style={{position:'absolute', display:'block', background:'#000', height:'60px', width:'100%', zIndex:'1', top:'0', right:'0', textAlign:'center', paddingTop:'10px' }}>MemeGenes.com</div>
+
 
   <div style={{position:'absolute', background:'#111', height:'110vh', width:'100%', zIndex:'1', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'center' }}>
  

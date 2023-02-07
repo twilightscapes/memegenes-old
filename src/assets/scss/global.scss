@@ -36,9 +36,9 @@ body.blogpost .backimage{z-index:-5 !important;}
 
 body.blogpost section{
 height:auto !important;
-margin:100vh 0 !important;
-overflow:auto !important;
-padding:0 4vw;
+// margin:100vh 0 !important;
+
+padding:0;
 }
 body.scroll section{
 margin:20vh !important;
@@ -129,7 +129,7 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .i
 
 
 
-.effects::after{
+.lake::after{
 	border:0px solid red; display: block;
 	// background:rgba(0, 0, 0, .5); 
 	position:fixed;
@@ -145,7 +145,7 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .i
 	content: " ";
 }
 
-.effects::after{
+.lake::after{
 animation: kariFilter 6s ease-in-out;
 animation-delay: 1s;
 animation-direction: alternate;
@@ -153,10 +153,10 @@ animation-iteration-count:infinite;
 }
 
 @media (max-width: 48rem) {
-	.effects::after{height:190px;}
+	.lake::after{height:190px;}
 }
 @media (min-width: 1144px) {
-	.effects::after{max-height:74vh;}
+	.lake::after{max-height:74vh;}
 }
 
 @keyframes kariFilter{
@@ -207,11 +207,6 @@ animation-iteration-count:infinite;
 	padding: 2vh 2vw;
 	text-align: center;
 	color: #000;
-animation: bubbleBop 9s ease-in;
-animation-delay: 6s;
-animation-direction: forwards;
-animation-iteration-count:infinite;
-opacity:0;
   }
   
   .bubble-bottom-left::before {
@@ -242,12 +237,6 @@ opacity:0;
 	opacity:.7;
   }
 
-  .bubble-bottom-right{
-	animation: bubbleBop1 10s ease-in ;
-	animation-delay: 8s ;
-
-	animation-iteration-count:infinite;
-  }
  
   @media (max-width: 48rem) {
 	.bubble{
@@ -321,7 +310,7 @@ opacity:0;
 	}
 
 
-     body.blogpost .effects:before{
+     body.blogpost::before{
           content: "MemeGenes.com";
 		  position:absolute;
 		  display: flex;
@@ -379,37 +368,22 @@ opacity:0;
 	  outline:0px solid rgba(0, 0, 0, 1) ;
 	  filter: drop-shadow(1px 0px 4px rgba(0,0,0,.9));
 	  background-color: rgb(63, 42, 179) ;
-	//   background: linear-gradient(
-	// 	0deg,
-	// 	 rgb(69, 19, 73),
-	// 	  rgb(131, 63, 203),
-	// 	   #8a48b6,
-	// 		rgb(99, 6, 107));
 	  background-color:rgba(31, 19, 43, 1);
 	  background-image: url(../../../static/assets/newspaper.webp);
 
    }
 
-//    body.homepage::before{
-// 	animation: poof .9s forwards;
-// 	background-image: url(../../../static/assets/newspaper.webp);
-// 	  background-size: 300% 100%;
-// 	  background-size: cover;
-//   	  background-position:center top;
-// 		content: " DAMN";
-// 		position:absolute;
-// 		display: flex;
-// 		align-items: flex-start;
-// 		justify-content: center;
-// 		align-self:center;
-// 		padding:20% 2% 0 2%;
-// 		animation: poof .9s forwards;
-// 		animation-delay: 1s;
-// 		overflow: hidden;
-// 		width:100vw;
-// 		height:200vh;
-// 		z-index: 0;
-//    }
+
+
+
+
+#contentvideo .contentbody{display:none !important; color:red !important;}
+.bodycontent .contentinside {display:none !important; border:0px solid blue;}
+
+
+
+
+
 
 
 
@@ -1112,7 +1086,7 @@ body.homepage .pleaseshare{display:none;}
 
 
 
-body.blogpost .sidebarIconToggle .bug {display: none;}
+// body.blogpost .sidebarIconToggle .bug {display: none;}
 
 
 // body svg{font-family: Compacta, Sans-Serif !important; }

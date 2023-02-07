@@ -1,65 +1,54 @@
 ---
 template: blog-post
-title: Kari Lake revealed as two-faced by filter glitch
-slug: /kari-lake-filter
-date: 2023-02-04 10:43
+title: Well that's certainly a dumpster fire.
+slug: /dumpster-fire
+date: 2023-02-09 10:43
 description: Aw Snap! What was that? Skari Lake's face literally just slid off her head.
-youtuber: "https://youtu.be/uJn3yxOPeGs"
+youtuber: "https://youtu.be/7g7kH671BVA"
 youtuber2: ""
 youtubeshoworiginal: true
 youtubersuggestion1: ""
 youtubersuggestion2: "https://youtu.be/iiZnOlRPiE0"
 youtubersuggestion3: "https://youtu.be/24nttG5Lnio"
-youtubestart: "120"
-youtubeend: "138"
+youtubestart: "0"
+youtubeend: 
 youtubemute: true
 audiostart: "20"
 audioend: "5000"
 audiotitle: "Liar Liar!"
 liarliar: true
-youtubecontrols: false
+youtubecontrols: true
 youtubeautostart: true
 youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: true
 shareable: true
-underlayImage: /assets/tv-crew.webp
+underlayImage: /assets/trump-bs.webp
 featuredImage: /assets/kari-no-filter.webp
 svgImage: 
 scrollable: true
 nftdrop: ""
 contentinvideo: true
 ---
-<div class="contentinside lake1" style="">
-<img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;
+<div class="contentinside">
+<!-- <img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;
 animation: kariFilter 6s ease-in-out;
 animation-delay: 4s;
 animation-iteration-count:infinite;
-" />
+" /> -->
 
 
-<div class="bubble bubble-bottom-left" style="position:absolute; width:; top:30%; left:20vw; display:flex; justify-content:center;backdrop-filter: blur(6px);
-animation: bubbleBop 9s ease-in;
-animation-delay: 6s;
-animation-direction: forwards;
-animation-iteration-count:1;
-opacity:0;
-">AH SHIT Bob! She's definitely <span style="font-size:120%; font-weight:bold;"> &nbsp; NOT &nbsp; </span> gonna be happy about this <span style="font-size:160%; font-weight:bold;"> &nbsp;!!!</span></div>
+<!-- <div class="bubble bubble-bottom-left" style="position:absolute; width:; top:30%; left:20vw; display:flex; justify-content:center;backdrop-filter: blur(6px);">AH SHIT Bob! She's definitely <span style="font-size:120%; font-weight:bold;"> &nbsp; NOT &nbsp; </span> gonna be happy about this <span style="font-size:160%; font-weight:bold;"> &nbsp;!!!</span></div> -->
 
 
-<div class="bubble bubble-bottom-right" style="position:absolute; width:50vw; top:50%; right:20vw; display:block; justify-content:center; font-size:110%;backdrop-filter: blur(6px);
-animation: bubbleBop1 10s ease-in;
-animation-delay:8s;
-animation-direction: forwards;
-animation-iteration-count:1;
-opacity:0;
-">Yeah well... you know... <br />you can put <span style="font-weight:bold;">vasoline on sandpaper</span> too,<br /> but in the end <span style="font-weight:bold;">it will still rub you raw!</span></div>
+<!-- <div class="bubble bubble-bottom-right" style="position:absolute; width:50vw; top:50%; right:20vw; display:block; justify-content:center; font-size:110%;backdrop-filter: blur(6px);">Yeah well... you know... <br />you can put <span style="font-weight:bold;">vasoline on sandpaper</span> too,<br /> but in the end <span style="font-weight:bold;">it will still rub you raw!</span></div> -->
 </div>
 
 
-<div class="contentbody" style="text-align:left !important; margin-top:0;">
 
+
+<div class="contentbody" style="text-align:left !important; margin-top:0;">
 
 Kari Lake is an American journalist who has gained notoriety for her coverage of election fraud in Arizona. Lake is the chief anchor and investigative reporter for Fox 10 News in Phoenix, Arizona. She has spent years covering the issue of election fraud and has been at the forefront of efforts to uncover the truth about the 2020 US Presidential Election.
 

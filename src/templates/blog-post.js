@@ -101,16 +101,22 @@ const Pagination = props => (
         <li style={{display:'flex', justifyContent:'flex-start',}}>
 <Link style={{}}  to= {props.previous.frontmatter.slug + "/"} rel="prev">
  <button className="" style={{display:'flex', justifyContent:'',}}><AiFillCaretLeft />&nbsp; <span className="page-title">
-{/* {props.previous.frontmatter.title} */}Previous</span>
+{props.previous.frontmatter.title}
+{/* Previous */}
+</span>
 </button>
           </Link>
         </li>
       )}
+      <div style={{fontSize:'15px', marginTop:'-5px'}}>|</div>
       {props.next && props.next.frontmatter.template === "blog-post" && (
         <li style={{display:'flex', justifyContent:'flex-end',}}>
 <Link to={props.next.frontmatter.slug + "/"} rel="next">
 <button className="" style={{display:'flex', justifyContent:'', }}>
-<span className="page-title">{/* {props.next.frontmatter.title} */}Newer</span> &nbsp; <AiFillCaretRight />
+<span className="page-title">
+  {props.next.frontmatter.title}
+{/* Newer */}
+</span> &nbsp; <AiFillCaretRight />
 </button>
 </Link>
         </li>
@@ -491,33 +497,29 @@ const YouTube = frontmatter.youtuber
 <div id="top"></div>
 
 
-<div className="pagemenu" style={{position:'fixed', bottom:'0px', zIndex:'2',  left:'0px', right:'', display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'5vw',
-textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', padding:'12px 10px 10px 10px', borderTop:'1px solid #666', borderRight:'1px solid #666', borderRadius:'0 12px 0 0',
+<div className="pagemenu" style={{position:'fixed', bottom:'0px', zIndex:'2',  left:'0px', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80%', margin:'0 auto', gap:'5vw',
+textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', padding:'2.5vh 2vw', borderTop:'1px solid #666', borderRight:'1px solid #666', borderRadius:'0 12px 0 0', textShadow:'0 1px 1px rgba(0, 0, 0, .7)'
 
  }}>
 <div>
-  {/* <AnchorLink to="#top" style={{}} onClick={resizeMobile}>
-  <button onClick={resizeMobile}><RxDoubleArrowUp /></button>
-        </AnchorLink> */}
-
 
     {isMobile ? 
-      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeDesk} aria-label="Return To Top"><RxDoubleArrowDown /></button></AnchorLink> :
-      <AnchorLink to="#top" style={{cursor:'pointer', padding:'5px'}}><button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 5px 5px 5px'}}><RxDoubleArrowUp /></button></AnchorLink>
+      <AnchorLink to="#top" style={{cursor:'pointer', padding:'15px'}}><button onClick={resizeDesk} aria-label="Return To Top" style={{cursor:'pointer',}}><RxDoubleArrowUp /></button></AnchorLink> :
+      <AnchorLink to="#top" style={{cursor:'pointer', padding:'15px'}}><button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer',}}><RxDoubleArrowUp /></button></AnchorLink>
     }
 
 </div>
 
-        <label aria-label="open menu" id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer', color:'#fff', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,3))'}}><ImMenu style={{cursor:'pointer', padding:'', width:'5vw', height:'20px'}} /></label>
+        {/* <label aria-label="open menu" id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer', color:'#fff', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,3))'}}><ImMenu style={{cursor:'pointer', padding:'', width:'5vw', height:'20px'}} /></label> */}
 
-<div className="menusnapp" style={{ display:'flex', justifyContent:'center', width:'auto', margin:'0 auto', gap:'5vw',}}>
+<div className="menusnapp" style={{ display:'', justifyContent:'', width:'auto', margin:'0 auto', gap:'',}}>
   
    
 
 
   
 
-{Comments ? (
+{/* {Comments ? (
           <AnchorLink to="#comments"  style={{cursor:'pointer', padding:''}}>
   <BsFillChatLeftTextFill style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} />
         </AnchorLink>
@@ -549,11 +551,11 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
             <AnchorLink to="#original"  style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}}>
             <FaInfoCircle style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} />
                   </AnchorLink>
-          )}
+          )} */}
 
 
 
-<div  style={{cursor:'pointer', padding:'0 10px', borderLeft:'1px solid #666'}}>{(previous || next) && <Pagination {...props} />}</div>
+<div  style={{cursor:'pointer', padding:'0 0', borderLeft:'0px solid #666'}}>{(previous || next) && <Pagination {...props} />}</div>
 
 
 {/* <AnchorLink to="#footer" style={{border:'0px solid', }}>
@@ -599,7 +601,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
               image={FrontImage}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{ width:'100vw', height:'90%',  top:'0', zIndex:'-2', border:'0px solid red !important', paddingBottom:'',}}
+              style={{ width:'100vw', height:'100%',  top:'0', zIndex:'-2', border:'0px solid red !important', paddingBottom:'',}}
             />
 
           ) : (
@@ -696,11 +698,11 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
 
 
 
-
+{/*  SPECIAL CONTENT */}
 
 {ContentinVideo ? (
   <div id="contentvideo"
-        className="blog-post-content" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'0px solid transparent', position:'absolute', bottom:'', left:'0', top:'0', right:'0', zindex:'-1', maxHeight:'100vh', borderBottom:'0px solid', }}
+        className="blog-post-content effects" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'0px solid transparent', position:'absolute', bottom:'', left:'0', top:'0', right:'0', zindex:'-1', maxHeight:'100vh', borderBottom:'0px solid', }}
         dangerouslySetInnerHTML={{ __html: html }}
       ></div>
  ) : (
@@ -738,18 +740,10 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
           )}
 
 
-{ShareThis ? (
 
-<section id="sharethis" style={{width:'auto', height:'', padding:'0', display:'grid', placeContent:'center', border:'0px solid'}}>
-<ShareSocial style={{}} />
-<GoBack />
-</section>
-          ) : (
-            ""
-          )}
 
       
-{!ContentinVideo ? (
+
 <article className="blog-post" style={{marginTop:'0'}}>
         <header style={{height:'', display:'grid', placeContent:'center'}}>
           <section className="article-header1" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
@@ -766,17 +760,29 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .8)', paddi
             ""
           )}
 
+{ShareThis ? (
 
+<div id="sharethis" style={{width:'auto', height:'', padding:'0', display:'grid', placeContent:'center', border:'0px solid'}}>
+<ShareSocial style={{}} />
+<GoBack />
+</div>
+          ) : (
+            ""
+          )}
+
+
+
+
+
+{/* ((((((((((body content)))))))))) */}
 <div style={{padding:'0 0', borderTop:'0px solid', margin:'vh 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
       <div
-        className="blog-post-content" style={{ fontSize:'clamp(1.2rem, 2.8vw, 1.8rem)', textAlign:'center', width:'100%', maxWidth:'', padding:'2vh 6% 10vh 6%', margin:'0 auto', color:'inherit !important'}}
+        className="blog-post-content bodycontent" style={{ fontSize:'clamp(1.2rem, 2.8vw, 1.8rem)', textAlign:'center', width:'100%', maxWidth:'', padding:'2vh 6% 10vh 6%', margin:'0 auto', color:'inherit !important'}}
         dangerouslySetInnerHTML={{ __html: html }}
       />    
 </div>
  </article>
-        ) : (
-          ""
-        )}
+
 
 
 
@@ -809,15 +815,15 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 {Comments ? (
 
-<section id="comments" style={{height:'', paddingBottom:'10vh',   display:'grid', placeContent:'center',}}>
+<div id="comments" style={{height:'', paddingBottom:'0',   display:'grid', placeContent:'center', maxWidth:'100vw', padding:'0', margin:'0'}}>
 
 <CommentBox />
 <GoBack />
 
 
-</section>
+</div>
           ) : (
-            <section id="comments" style={{height:'', paddingBottom:'10vh',   display:'grid', placeContent:'center',}}>
+            <div id="comments" style={{height:'', paddingBottom:'0',   display:'grid', placeContent:'center', maxWidth:'90vw'}}>
 
 {/* <CommentBox /> */}
 Comments have been disabled for this post.
@@ -825,7 +831,7 @@ Comments have been disabled for this post.
 
 <GoBack />
 
-</section>
+</div>
           )}
          
 
@@ -837,11 +843,11 @@ Comments have been disabled for this post.
 
 
 
-      <section id="original" style={{height:'', marginTop:'', paddingTop:'10%',   display:'grid', placeContent:'center'}}>
+      <section id="original" style={{height:'', marginTop:'', paddingTop:'',   display:'grid', placeContent:'center'}}>
 
       {ShowOriginal ? (
           <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
-<div style={{maxWidth:'60vw', width:'100%', height:'', maxHeight:'', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
+<div style={{maxWidth:'90vw', width:'100%', height:'', maxHeight:'', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
 
                     {/* <Iframer2 /> */}
 <a href={OriginalUrl} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
@@ -861,7 +867,7 @@ Click to play original video
           
           <br />
 
-          <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none', maxWidth:'70vw'}}>
+          <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none', maxWidth:'90vw'}}>
             Legal:<br />
             <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link>
       <br /> <br />
