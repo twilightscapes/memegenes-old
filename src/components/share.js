@@ -19,7 +19,7 @@ const style = {
     flexDirection:'column',
     padding:'0',
     width:'100%',
-    minWidth: '400px',
+    minWidth: '300px',
   },
 
 

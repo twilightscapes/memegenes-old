@@ -735,7 +735,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
 
 
 
-     <div className="panel" style={{width:'100%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', borderRadius:'0 0 12px 12px', }}>
+     <div className="panel" style={{width:'100%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', borderRadius:'0 0 12px 12px', overflow:'hidden' }}>
 
 
      {Suggestion1 ? (
@@ -829,15 +829,10 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 </div>
           ) : (
-            <div id="comments" style={{height:'', paddingBottom:'0',   display:'grid', placeContent:'center', maxWidth:'90vw'}}>
-
-{/* <CommentBox /> */}
-Comments have been disabled for this post.
 
 
-<GoBack />
+""
 
-</div>
           )}
          
 
@@ -848,10 +843,10 @@ Comments have been disabled for this post.
 
 
 
-
+ {ShowOriginal ? (
       <section id="original" style={{height:'', marginTop:'', paddingTop:'',   display:'grid', placeContent:'center'}}>
 
-      {ShowOriginal ? (
+     
           <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
 <div style={{maxWidth:'90vw', width:'100%', height:'', maxHeight:'', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
 
@@ -867,9 +862,7 @@ Click to play original video
  
        </div>
        
-          ) : (
-            ""
-          )}
+      
           
           <br />
 
@@ -892,7 +885,9 @@ Click to play original video
 
   <GoBack />
 </section>
-
+    ) : (
+            ""
+          )}
 
 
       

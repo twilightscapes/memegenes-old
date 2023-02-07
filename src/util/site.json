@@ -11,7 +11,7 @@
     "titleTemplate": "%s",
     "comments": "5639031584980992-proj",
     "title": "Meme Genes",
-    "showfooter": true,
+    "showfooter": false,
     "image": "/assets/default-og-image.jpg",
     "description": "Your butt will look great in these Meme Genes",
     "icon512": "/assets/logo.png"
