@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Well that's certainly a dumpster fire.
+title: Ex-President Trump's administration ranked worst ever - a total and complete dumpster fire!
 slug: /dumpster-fire
 date: 2023-02-09 10:43
 description: Aw Snap! What was that? Skari Lake's face literally just slid off her head.
@@ -24,8 +24,8 @@ isnftforsale: false
 svgzindex: "0"
 comments: true
 shareable: true
-underlayImage: /assets/trump-bs.webp
-featuredImage: /assets/kari-no-filter.webp
+underlayImage: /assets/trump-dumpfire.webp
+featuredImage: /assets/trump-fire-promo.webp
 svgImage: 
 scrollable: true
 nftdrop: ""
@@ -45,25 +45,143 @@ animation-iteration-count:infinite;
 <!-- <div class="bubble bubble-bottom-right" style="position:absolute; width:50vw; top:50%; right:20vw; display:block; justify-content:center; font-size:110%;backdrop-filter: blur(6px);">Yeah well... you know... <br />you can put <span style="font-weight:bold;">vasoline on sandpaper</span> too,<br /> but in the end <span style="font-weight:bold;">it will still rub you raw!</span></div> -->
 </div>
 
+<style>
 
+
+
+
+.numblist {
+  clear: both;
+  list-style: none;
+}
+.numblist li {
+  margin: 0 0;
+  padding-top: 2em;
+  padding-left: 1rem;
+  display: block;
+  position: relative;
+  counter-increment: inst;
+}
+.numblist li::before {
+  content: counter(inst);
+  background: rgb(27, 42, 98);
+  color: #fff;
+  font-size:clamp(3rem, 10vw, 5rem);
+  font-weight: 700;
+  font-style: italic;
+  border-radius: 0 0.675em 0.675em 0;
+  text-align: center;
+  left: -8vw;
+  top: -4%;
+  width: 15vw;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  text-shadow: .5vw -.5vh .3vw #000,0 8px 20px rgb(40, 8, 202),0px 12px 10px rgb(139, 142, 167),0 2px rgb(39, 67, 227),0 5px 2px rgb(39, 61, 227),0 0 2px rgb(39, 52, 227),0 0 2px rgb(39, 42, 227),0 0 1px rgb(39, 73, 227);
+  /* z-index: -1; */
+}
+@media (min-width: 33em) {
+  .numblist li:before {
+    border-radius: 50%;
+    width: 8vw;
+    margin-top:5vh;
+  }
+}
+li h2{
+    background: rgba(0, 0, 0, 0.7);
+    padding:1px 1vw 1px 3vw;
+    margin:-2.6vh auto 2vh auto;
+    border-radius: 12px;
+    font-size:clamp(3rem, 4.5vw, 5.8rem) !important;
+    color: #ddd;
+    		text-shadow: 0 20px 7px #000,0 8px 20px rgb(40, 8, 202),0px 12px 10px rgb(139, 142, 167),0 2px rgb(39, 67, 227),0 5px 2px rgb(39, 61, 227),0 0 2px rgb(39, 52, 227),0 0 2px rgb(39, 42, 227),0 0 1px rgb(39, 73, 227);
+}
+
+
+/* li:nth-child(even) {
+  border-left: 2px dashed;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: 30px; 
+  padding-right: 0;
+}
+
+li:nth-child(odd) {
+  border-right: 2px dashed;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 30px; 
+  padding-left: 0;
+} */
+
+/* li:first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+
+li:last-child {
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+} */
+    </style>
 
 
 <div class="contentbody" style="text-align:left !important; margin-top:0;">
 
-Kari Lake is an American journalist who has gained notoriety for her coverage of election fraud in Arizona. Lake is the chief anchor and investigative reporter for Fox 10 News in Phoenix, Arizona. She has spent years covering the issue of election fraud and has been at the forefront of efforts to uncover the truth about the 2020 US Presidential Election.
+Donald J. Trump served as the President of the United States from January 20, 2017, to January 20, 2021. During his time in office, he was known for his controversial policies, tweets, and public statements.
 
-Lake's coverage of election fraud began in the lead up to the 2020 election, when she started to receive reports of irregularities from concerned citizens and election observers. She quickly became a vocal advocate for election transparency and began to investigate the claims of fraud that were circulating. Her reporting was some of the first to bring attention to the issue in Arizona and helped to spur a broader national conversation about the integrity of the election.
+<div class="headline" style="font-size:clamp(2rem, 2.8vw, 3.8rem); padding:0; text-align:center; width:80%; height:; overflow:visible; margin:5vh auto; border-radius:12px;">10 Major Failures<br />of the Trump Presidency:</div>
 
-In the aftermath of the election, Lake continued to cover the issue, reporting on claims of irregularities, voter suppression, and other forms of fraud that were being made. She interviewed witnesses, analyzed data, and conducted her own independent investigations, all in an effort to get to the bottom of the claims being made.
+<ol class="numblist" style="">
+<li>
 
-Her reporting soon drew the attention of the state's political establishment, and Lake became a target of criticism and attacks from those who disagreed with her stance on election fraud. Despite the backlash, she refused to back down and continued to report on the issue, even as it became increasingly politicized.
+## Racist immigration policies
+During his time in office, Trump implemented several policies affecting immigration, such as the "zero tolerance" policy that led to family separations at the US-Mexico border, the travel ban on citizens of several Muslim-majority countries, and the reduction of the number of refugees admitted to the United States.</li>
 
-One of the most notable instances of Lake's coverage of election fraud was her reporting on the Maricopa County audit, which was conducted in 2021. The audit was initiated after allegations of fraud were made and Lake covered the process from start to finish, reporting on the findings and the controversy surrounding the audit. Her reporting on the issue helped to bring national attention to the issue of election fraud in Arizona and helped to build support for further investigations into the matter.
+<li>
 
-Despite the controversies that surrounded her coverage of election fraud, Lake remained steadfast in her commitment to uncovering the truth. She faced criticism and attacks from those who disagreed with her stance on the issue, but she refused to be intimidated and continued to report on the matter, even as it became more politically charged.
+## Relations with North Korea
+During his presidency, Trump engaged in high-stakes diplomacy with North Korean leader Kim Jong-un, including a summit in Singapore in 2018 and another in Vietnam in 2019. However, despite Trump's claims of progress in negotiations with North Korea, the country continued to advance its nuclear weapons program.</li>
 
-Today, Lake remains one of the most prominent voices in the fight against election fraud. She continues to report on the issue and is widely regarded as a leading expert on the matter. Her reporting has helped to shed light on the issue and has contributed to the larger national conversation about the integrity of our elections.
+<li>
 
-In conclusion, Kari Lake is an accomplished journalist who has become a leading voice in the fight against election fraud in Arizona. Her tireless reporting and commitment to uncovering the truth have made her a respected voice in the media and a powerful advocate for election transparency. Her reporting has helped to bring national attention to the issue of election fraud and has contributed to the larger conversation about the integrity of our elections. Lake's work serves as an example of the important role that journalists play in our democracy and demonstrates the power of journalism to bring light to important issues and hold those in power accountable.
+## Climate Change
+During his presidency, Trump took several actions that were criticized as being detrimental to efforts to address climate change, such as withdrawing the United States from the Paris Agreement, rolling back environmental regulations, and promoting the use of fossil fuels.</li>
+
+<li>
+
+## COVID-19 response
+During the COVID-19 pandemic, Trump faced criticism for his handling of the crisis, including his downplaying of the severity of the virus, his initial slow response to the crisis, and his promotion of unproven treatments.</li>
+
+<li>
+
+## Protests and racial justice
+In 2020, following the death of George Floyd, there were widespread protests against police brutality and systemic racism in the United States. Trump faced criticism for his handling of these protests, including his use of federal forces in response to peaceful protests in Portland, Oregon, and his statements about the protests and racial justice.</li>
+
+<li>
+
+## Failure to concede election
+After losing the 2020 presidential election to Joe Biden, Trump and his allies made false claims of widespread voter fraud and irregularities, without providing any evidence to support these claims. These claims were thoroughly investigated and found to be baseless Nevertheless, Trump refused to concede the election, and his efforts to overturn the election results led to the storming of the US Capitol on January 6, 2021, which was a violent and unprecedented attack on American democracy.</li>
+
+<li>
+
+## Attacks on the free press
+Throughout his presidency, Trump was known for his frequent attacks on the media, including calling journalists "enemies of the people" and regularly making false or misleading statements. This rhetoric was widely criticized as being harmful to the freedom of the press and a threat to democratic norms.</li>
+
+<li>
+
+## Lack of ethical standards
+During his presidency, Trump faced numerous ethics and conflict of interest concerns, including the use of his position for personal financial gain and the use of government resources for his own benefit. For example, he regularly hosted foreign dignitaries and government officials at his hotels and golf courses, which was widely criticized as an abuse of his position for personal financial gain.</li>
+
+<li>
+
+## Polarizing and divisive
+Throughout his presidency, Trump was known for using polarizing and divisive language, including making controversial statements about race, religion, and immigration. His language was widely criticized as being harmful and fueling division and hatred in the country.</li>
+
+<li>
+
+## Natural disaster response
+During his presidency, Donald Trump faced criticism for his response to several natural disasters, including hurricanes and wildfires. Some criticized his response as being slow and inadequate, and accused him of using disaster relief efforts for political gain. For example, in the aftermath of Hurricane Maria in Puerto Rico in 2017, Trump faced widespread criticism for his response, which was seen as slow and inadequate, and for his controversial statements about the disaster, which were widely criticized as insensitive and lacking empathy.</li>
+</ol>
 
 </div>
