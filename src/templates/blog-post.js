@@ -593,7 +593,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
   overflow:'hidden',
   // height:'clamp(30vh, 80vh, 100vh)',
   aspectRatio:'16/9',
-maxHeight:'90vh'
+
   }}>
 
 
