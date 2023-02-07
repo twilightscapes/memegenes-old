@@ -230,10 +230,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Meme Genes`,
-        short_name: `Meme Genes`,
+        name: `MemeGenes`,
+        short_name: `MemeGenes`,
         start_url: `/?user_mode=app`,
-        description: `Meme Genes`,
+        description: `MemeGenes`,
         background_color: `#111`,
         lang: `en`,
         theme_color: `#111`,

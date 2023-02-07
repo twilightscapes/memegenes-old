@@ -95,34 +95,43 @@ const CustomBox = styled.div`
 
 const Pagination = props => (
   <div className="pagination -post1" style={{position:'', bottom:'',}}>
-    <ul className="" style={{display:'flex', gap:'2vw', paddingTop:'5px'}}>
-      {props.previous && props.previous.frontmatter.template === "blog-post" && (
-        // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
-        <li style={{display:'flex', justifyContent:'flex-start',}}>
-<Link style={{}}  to= {props.previous.frontmatter.slug + "/"} rel="prev">
- <button className="" style={{display:'flex', justifyContent:'',}}><span className="page-title">
-{props.previous.frontmatter.title}
-{/* Previous */}
-</span>
-&nbsp;&nbsp;<AiFillCaretLeft />
-</button>
-          </Link>
-        </li>
-      )}
-      <div style={{fontSize:'15px', marginTop:'-5px'}}>GO TO:</div>
-      {props.next && props.next.frontmatter.template === "blog-post" && (
-        <li style={{display:'flex', justifyContent:'flex-end',}}>
+    <ul className="" style={{display:'flex', gap:'2vw', justifyContent:'space-around', paddingTop:'5px'}}>
+      
+    {props.next && props.next.frontmatter.template === "blog-post" && (
+        <li style={{display:'flex', justifyContent:'space-between', width:'50%'}}>
 <Link to={props.next.frontmatter.slug + "/"} rel="next">
 <button className="" style={{display:'flex', justifyContent:'', }}>
-  <AiFillCaretRight />&nbsp;&nbsp;
 <span className="page-title">
   {props.next.frontmatter.title}
 {/* Newer */}
 </span>
+&nbsp;&nbsp;<AiFillCaretLeft />
 </button>
 </Link>
         </li>
       )}
+
+
+      <div style={{fontSize:'15px', marginTop:'-5px'}}>GO TO:</div>
+
+      {props.previous && props.previous.frontmatter.template === "blog-post" && (
+        // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
+        <li style={{display:'flex', justifyContent:'space-between', width:'50%'}}>
+<Link style={{}}  to= {props.previous.frontmatter.slug + "/"} rel="prev">
+ <button className="" style={{display:'flex', justifyContent:'',}}>
+ <AiFillCaretRight />&nbsp;&nbsp;
+  <span className="page-title">
+{props.previous.frontmatter.title}
+{/* Previous */}
+</span>
+</button>
+          </Link>
+        </li>
+      )}
+      
+
+
+
     </ul>
   </div>
 )

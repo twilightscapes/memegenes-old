@@ -363,7 +363,7 @@ animation-iteration-count:infinite;
 
 
 
-     body.homepage #intro::before{
+     body.homepage .effects::before{
 		content: "Where great memes go to die";
 	  position:absolute;
 	  display: flex;

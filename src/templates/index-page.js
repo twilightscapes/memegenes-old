@@ -374,134 +374,38 @@ function Iframer() {
 
 {ShowFeature ? (
 <>
-{/* <div className="RArrow"><span></span></div> */}
-<div className="horizontal-holder allin60panel" style={{position:'relative',  overflow:'hidden', color:'#ccc', border:'1px solid transparent'}}>
+{/* end show Posts */}
+{ShowPosts ? (
 
 
 
-<div className="horizontal-scroll panels" style={{}}>
-
-
-
-
-<div className="panelspacer" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'', height:'50%', paddingTop:'50%', background:''}}></div>
-
-{/* <div id="" className="wrap-element " style={{overflow:'', width:'100vw', height:'85vh', position:'relative', top:'0', zIndex:'', marginBottom:''}}> */}
-
-
-{/* <div style={{position:'absolute', objectFit:'', top:'0', zIndex:'-1', placeContent:'', background:'#111', width:'100vw', height:'100vh'}}>
-          {Image ? (
-            <GatsbyImage
-              image={Image}
-              loading="eager"
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image1 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'', position:'fixed', top:'0', zIndex:'', objectFit:'cover', overflow:'', backgroundSize:'cover', border:'0px solid red !important', background:'#111', aspectRatio:'none'}}
-            />
-            
-          ) : (
-
-   
-            <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
-  
-          )}
-</div> */}
- 
-
-{/* <ReactPlayer
-            ref={playerRef}
-            width="100%"
-            height="100%"
-            style={{position:'absolute', zIndex:'-1'}}
-            url={YouTube}
-            playing={playing}
-            controls={controls}
-            light={light}
-            loop={loop}
-            muted={muted}
-            config={{
-              file: {
-                attributes: {
-                  crossorigin: "anonymous",
-                },
-              },
-              youtube: {
-                playerVars: { showinfo:0, autoplay:1, controls:0, start:10, end:2000, mute:1  }
-              },
-            }}
-
-            playsinline
-            playIcon={
-              <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'5', top:'0', border:'1px solid transparent', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'', justifyContent:'center', alignItem:'center', paddingTop:''}}>
-
-            
-  
-            <div style={{position:'absolute', width:'100vw', height:'', top:'5px', margin:'0', zIndex:'1', display:'flex', justifyContent:'center', background:'transparent !important',}}>
-
-            <StaticImage className=""
-alt="Todd Lambert Web development for photographers" src="../../static/assets/allin60seconds.jpg" style={{height:'', position:'', top:'', zIndex:'-1'}}  />
-  </div> 
-
-            <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'50% 0 0 0', fontSize:'clamp(1rem, 3vw, 3rem)', textShadow:'2px 2px 0 #111', width:'100%', position:'absolute', zIndex:'2', top:'', height:'100%', border:'1px solid transparent',}}>
-              
-            <div style={{fontWeight:'bold', padding:'2rem', backdropFilter:'blur(4px)', background:'rgba(0, 0, 0, .5)', borderRadius:'12px', }}>Click To Play
-
-    <ImPlay style={{margin:'0 auto', width:'', fontSize:'40px'}} /></div>
-    </div>
-            </button>}
-        //  light="../assets/transparent.png"
-          />
-
-          </div> */}
+<div className="horizontal-holder effects" style={{position:'relative', background:'none', maxHeight:'90vh'}}>
 
 
 
 
-        
-<div>
-  <a aria-label="View Tron In 60 Seconds" title="View Tron In 60 Seconds" className="" rel="noreferrer" href="https://tron.allin60.com" >
-<StaticImage className="" placeholder="blurred" layout="constrained" 
-alt="Tron In 60 Seconds" src="../../static/assets/tronin60.jpg" />
-</a>
+ <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
+
+
+ <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
+
+
+
+
+
+        <BlogListHome data={posts} />
+
+        <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
+        </div>
+
 </div>
 
-<div>
-  <Link aria-label="View Mystery Science Theater 3021 in 60 Seconds" title="View Mystery Science Theater 3021 in 60 Seconds" className="" to="/mystery-science-theater-3022/" >
-<StaticImage className="" placeholder="blurred" layout="constrained" 
-alt="Mystery Science Theater In 60 Seconds" src="../../static/assets/mystery-science.jpg" />
-</Link>
 </div>
 
-<div>
-  <Link aria-label="View They Live In 60 Seconds" title="View They Live In 60 Seconds" className="" to="/they-live/" >
-<StaticImage className="" placeholder="blurred" layout="constrained" 
-alt="They Live In 60 Seconds" src="../../static/assets/TheyLive-Header.jpg" />
-</Link>
-</div>
-
-{/* <Panel1 /> */}
-
-
-
-{/* {ShowPosts ? (
-        <BlogListHome data={posts} style={{}} />
    ) : (
     ""
-  )} */}
-
-<div>
-</div>
-
-{/* <div className="allin60panel" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'100%', margin:'0', background:''}}>
-<div style={{ width:'90vw', position:'relative', top:'', margin:'20px auto', padding:'4% 5%', zIndex:'3', textAlign:'', borderRadius:'12px', textDecoration:'none', color:'#cccc'}}>
-  <Newsignup />
-  </div>
-</div> */}
-
-</div>
-
-
-</div>
+  )}
+{/* end show Posts */}
 </>
 ) : (
   ""
@@ -863,38 +767,7 @@ Through NFT
 
 
 
-{/* end show Posts */}
-{ShowPosts ? (
 
-
-
-<div className="horizontal-holder allin60panel" style={{position:'relative', background:'none'}}>
-
-
-
-
- <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
-
-
- <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
-
-
-
-
-
-        <BlogListHome data={posts} />
-
-        <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
-        </div>
-
-</div>
-
-</div>
-
-   ) : (
-    ""
-  )}
-{/* end show Posts */}
 
 
  </div>{/* end scooch */}

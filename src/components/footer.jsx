@@ -230,8 +230,8 @@ export default function Footer() {
       <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link state={{modal: true}} to="/disclaimer/">Disclaimer</Link>  |  <Link state={{modal: true}} to="/privacy/">Privacy Policy</Link>  |  <Link state={{modal: true}} to="/terms/">Terms of Service</Link></div>
   
 
-<div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; 2023&nbsp;
-{/* {(new Date().getFullYear())} commented out to fix react 18 bug with date  */}
+<div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; &nbsp;
+{(new Date().getFullYear())} &nbsp;
  {companyname}
 </div>
 
@@ -241,7 +241,7 @@ export default function Footer() {
 <br />
 <br /> */}
 
-<a href="https://mysresume.site" target="_blank" rel="noreferrer">Web App by MyResume</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Site Report Card</a>
+<a href="https://mysresume.site" target="_blank" rel="noreferrer">Web App by MemeGenes</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Site Report Card</a>
 </div>
 <br />
 <br />
