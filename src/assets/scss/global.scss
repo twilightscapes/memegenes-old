@@ -322,7 +322,7 @@ animation-iteration-count:infinite;
 	}
 
 
-     body.blogpost::before{
+     body.blogpost .effects::before{
           content: "MemeGenes.com";
 		  position:absolute;
 		  display: flex;
@@ -336,7 +336,10 @@ animation-iteration-count:infinite;
 		  width:100vw;
 		  height:200vh;
 		  z-index: 1;
-	
+		top:0;
+		left:0;
+		right:0;
+
 		  font-size:clamp(1.8rem, 7.5vw, 5.8rem); 
 		  color:#f8f8fc;
 		  text-shadow: 12px 7px 15px 2px black;
