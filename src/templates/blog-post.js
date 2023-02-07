@@ -506,8 +506,8 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
 <div>
 
     {isMobile ? 
-      <AnchorLink to="#top" style={{cursor:'pointer',}}><button onClick={resizeDesk} aria-label="Return To Top" style={{cursor:'pointer', padding:'5px 5px'}}>x</button></AnchorLink> :
-      <AnchorLink to="#top" style={{cursor:'pointer'}}><button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'5px 5px'}}>x</button></AnchorLink>
+      <AnchorLink to="#top" style={{cursor:'pointer'}}><button onClick={resizeDesk} aria-label="Return To Top" style={{cursor:'pointer', padding:'5px 5px'}}><RxDoubleArrowUp /></button></AnchorLink> :
+      <button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'5px 5px'}}>x</button>
     }
 
 </div>
