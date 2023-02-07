@@ -106,7 +106,9 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .i
 .bug{
 	max-width:100px !important;
 	height: auto !important;
-	opacity:.2;
+	opacity:.4;
+	filter: drop-shadow(1px 0px 4px rgba(0,0,0,.9));
+	// var(--theme-ui-colors-textShadow);
 }
 .bug:hover{
 	opacity:.6 !important;
@@ -1274,10 +1276,11 @@ footer{
 	color:#fff !important;
 	position:relative;
 	bottom:0 !important ;
-	// z-index: 2;
+	z-index: 2;
 	opacity: .8;
 	background: linear-gradient(0deg,#111,#222,#000,#111);
 	background-size: 300% 300%;
+	padding-bottom: 20vh !important;
 	/* animation: gradient 12s ease infinite;
 	*/
 }
@@ -1896,7 +1899,8 @@ body.homepage .horizontal-holder{height:inherit !important}
 	background: var(--theme-ui-colors-cardBg);
 	color: var(--theme-ui-colors-text);
 	// color:rgba(27, 25, 29, 0.7);
-	margin-top: 1vh !important;
+	margin-top: 0 !important;
+	overflow: visible !important;
 	text-shadow: var(--theme-ui-colors-textShadow);
 }
 
@@ -1912,7 +1916,7 @@ body.homepage .horizontal-holder{height:inherit !important}
 		position:absolute !important;
 		right:10px;
 		bottom:inherit !important;
-		top:32vh !important;
+		top:36vh !important;
 		width:inherit !important;
 		margin:0 auto !important;
    }

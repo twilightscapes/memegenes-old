@@ -359,7 +359,7 @@ const OriginalUrl = frontmatter.youtuber
           playIcon={
             <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', height:'0', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
           
-        <div className="" style={{position:'absolute', top:'-500px', right:'10px', zIndex:'3', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
+        <div className="" style={{position:'absolute', top:'-300px', right:'', zIndex:'3', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
           
       
           {/* <div className="" style={{fontSize:'14px', fontWeight:'', padding:'0 0 0 .3rem',}}>Click For Audio</div> */}
@@ -736,7 +736,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
 
 
 
-     <div className="panel" style={{width:'100%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', borderRadius:'12px', overflow:'hidden' }}>
+     <div className="panel" style={{width:'100%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', borderRadius:'0 0 12p 12px', }}>
 
 
      {Suggestion1 ? (
@@ -751,7 +751,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
 
       
 
-<article className="blog-post" style={{marginTop:'-3vh',}}>
+<article className="blog-post" style={{marginTop:'0',}}>
         
 
         {YouTube2 ? (
@@ -781,7 +781,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
   <ShareSocial style={{}} />
   </div>
 
-  <div className="article-header1" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
+  <div className="article-header" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
             <h1 className="tronText" style={{fontSize:'4vw'}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
             {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
@@ -792,7 +792,7 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
             )}
 
 
-  <div style={{padding:'0 0', borderTop:'0px solid', margin:'vh 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
+  <div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
       <div
         className="blog-post-content bodycontent" style={{ fontSize:'clamp(1.2rem, 2.8vw, 1.8rem)', textAlign:'center', width:'100%', maxWidth:'', padding:'2vh 6% 10vh 6%', margin:'0 auto', color:'inherit !important'}}
         dangerouslySetInnerHTML={{ __html: html }}
