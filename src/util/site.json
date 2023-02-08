@@ -11,13 +11,13 @@
     "twitterUsername": "memegenesx",
     "titleDefault": "MemeGenes",
     "showSocial": true,
-    "showResume": true,
+    "showResume": false,
     "showInfo": true,
-    "showNav2": true,
+    "showNav2": false,
     "postcount": "1",
     "showPopup": false,
     "icon192": "/assets/icon.svg",
-    "menu1": "Profile",
+    "menu1": "Get Your Own Meme Blog",
     "titleTemplate": "%s",
     "menu2": "Archive",
     "comments": "5678907739078656-proj",
@@ -25,13 +25,13 @@
     "menu4": "Skills",
     "showPosts": true,
     "title": "MemeGenes",
-    "showfooter": true,
+    "showfooter": false,
     "showFeature": true,
     "showCover": true,
     "image": "/assets/newspaper.webp",
-    "description": "Independent artist, photographer, designer/developer",
+    "description": "Do these memes make my ass look fat?!?!?!?!",
     "icon512": "/assets/icon.svg",
-    "showSkills": true
+    "showSkills": false
   },
   "ga": "UA-89654528-2"
 }
