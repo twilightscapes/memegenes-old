@@ -98,21 +98,21 @@ const Controls = forwardRef(
                   onClick={onPlayPause}
                   className="controls" 
                   style={{
-                    // animation:'fade1',
-                    // animationDuration:'1s',
-                    // animationDelay:'5s',
-                    // opacity:'1',
-                    // animationFillMode:'forwards',
-                    // position:'relative',
-                    // zIndex:'',
-                    // right:'',
-                    // bottom:'',
-                    // border:'2px solid ',
-                    // display:'grid',
-                    // placeContent:'center',
-                    // width:'60px',
-                    // height:'60px',
-                    // fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'1rem',  borderRadius:'8px', border:'1px solid #666', cursor:'pointer',
+                    animation:'fade1',
+                    animationDuration:'1s',
+                    animationDelay:'5s',
+                    opacity:'1',
+                    animationFillMode:'forwards',
+                    position:'relative',
+                    zIndex:'',
+                    right:'',
+                    bottom:'',
+                    border:'2px solid ',
+                    display:'grid',
+                    placeContent:'center',
+                    width:'60px',
+                    height:'60px',
+                    fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'1rem',  borderRadius:'8px', border:'1px solid #666', cursor:'pointer',
                 }}
                 >
                   {/* <MdPlayArrow style={{fontSize:'50px', position:'absolute'}}  /> */}

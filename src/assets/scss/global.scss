@@ -323,9 +323,12 @@ animation-iteration-count:infinite;
 	  }
 	}
 
+	body.bloglist::before{content:"Where great memes go to die";}
+	
+	body.blogpost .effects::before{content:"MemeGenes.com";}
+
 
      body.blogpost .effects::before,  body.bloglist::before{
-          content: "MemeGenes.com";
 		  position:absolute;
 		  display: flex;
 		  align-items: flex-start;
@@ -342,7 +345,7 @@ animation-iteration-count:infinite;
 		left:0;
 		right:0;
 
-		  font-size:clamp(1.8rem, 7.5vw, 5.8rem); 
+		  font-size:clamp(1.8rem, 5.5vw, 5.8rem); 
 		  color:#f8f8fc;
 		  text-shadow: 12px 7px 15px 2px black;
 		  text-shadow:0 0 7px #bca3c8,0 0 10px rgb(194, 186, 192),0 0 21px rgb(145, 135, 143),0 0 22px #70686e,0 0 32px #726a70,0 0 42px #ccc,0 0 42px #ada7ab,0 0 31px #99989c;
@@ -358,8 +361,10 @@ animation-iteration-count:infinite;
 
 
 
+
+
      body.homepage .effects::before{
-		content: "Where great memes go to die";
+		content: "Does this meme make my butt look fat?";
 	  position:absolute;
 	  display: flex;
 	  align-items: flex-start;
@@ -373,7 +378,7 @@ animation-iteration-count:infinite;
 	  height:200vh;
 	  z-index: 1;
 
-	  font-size:clamp(1.5rem, 6.5vw, 5.8rem); 
+	  font-size:clamp(1.5rem, 5vw, 5.8rem); 
 	  color:#f8f8fc;
 	  text-shadow: 12px 7px 15px 2px black;
 	  text-shadow:0 0 7px #bca3c8,0 0 10px rgb(194, 186, 192),0 0 21px rgb(145, 135, 143),0 0 22px #70686e,0 0 32px #726a70,0 0 42px #ccc,0 0 42px #ada7ab,0 0 31px #99989c;
@@ -1931,6 +1936,8 @@ body.homepage .horizontal-holder{height:inherit !important}
 	overflow: visible !important;
 	// text-shadow: var(--theme-ui-colors-textShadow);
 }
+
+#menu li{color:#eee; text-shadow: 2px 2px 0 #000; font-size:clamp(1rem, 3.5vw, 5.8rem); backdrop-filter: blur(30px);filter:drop-shadow((0px 15px 15px) rgba(0,0,0,1));}
 
 
 

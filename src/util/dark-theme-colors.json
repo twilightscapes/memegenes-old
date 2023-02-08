@@ -3,5 +3,5 @@
   "bodyBg": "yellow",
   "bodyColor": "blue",
   "fontFamily": "Racing Sans One",
-  "cardBg": "rgba(0, 0, 0, .9)"
+  "cardBg": "rgba(0, 0, 0, .3)"
 }

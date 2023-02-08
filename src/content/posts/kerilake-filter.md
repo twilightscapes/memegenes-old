@@ -16,9 +16,10 @@ youtubemute: true
 audiostart: "20"
 audioend: "5000"
 audiotitle: "Liar Liar!"
+bumpertext: "Oh No, Ma Face!"
 liarliar: true
 youtubecontrols: false
-youtubeautostart: true
+youtubeautostart: false
 youtubeloop: true
 isnftforsale: false
 svgzindex: "0"

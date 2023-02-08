@@ -177,7 +177,7 @@ date={Date.now() + 60000} className="countdown">
     
 
 
-<div className="posticons" style={{fontWeight:'bold', padding:'1rem 2vw', fontSize:'clamp(1rem, 4vw, 2rem)', width:'40vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px',}}>
+<div className="posticons" style={{fontWeight:'bold', padding:'1rem 2vw', width:'20vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px',}}>
 
   
 
@@ -186,13 +186,13 @@ date={Date.now() + 60000} className="countdown">
 
 <div style={{display:'flex', justifyContent:'space-around'}}>
 
-<FaImage className="posticon" style={{margin:'0 auto', width:'100%', height:'10vh', fontSize:''}} />
+<FaImage className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
 
 
-    <ImPlay className="posticon" style={{margin:'0 auto', width:'100%', height:'10vh', fontSize:'60px'}} />
+    <ImPlay className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
 
     
-    <AiOutlinePicLeft className="posticon" style={{margin:'0 auto', width:'100%', height:'10vh', fontSize:''}} />
+    <AiOutlinePicLeft className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
 
 
 {/* {data ? (

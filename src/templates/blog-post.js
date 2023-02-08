@@ -1,9 +1,18 @@
 /** @jsx jsx */
 // import * as React from "react"
 
-import { useState, useRef } from "react";
+import { useState, useRef,forwardRef } from "react";
 
-import Controls from "../components/Controls";
+// import Controls from "../components/Controls";
+
+import PropTypes from "prop-types";
+import { MdPlayArrow } from "react-icons/md"
+import { MdPause } from "react-icons/md"
+import { MdVolumeOff } from "react-icons/md"
+// import { MdVolumeDown } from "react-icons/md"
+import { MdVolumeUp } from "react-icons/md"
+
+
 
 import { IoArrowRedoSharp, IoArrowUndoSharp, IoCloseOutline } from "react-icons/io5"
 import { jsx } from "theme-ui"
@@ -105,21 +114,21 @@ const Pagination = props => (
   {props.next.frontmatter.title}
 {/* Newer */}
 </span>
-&nbsp;&nbsp;<AiFillCaretLeft />
+{/* &nbsp;&nbsp;<AiFillCaretLeft /> */}
 </button>
 </Link>
         </li>
       )}
 
 
-      <div style={{fontSize:'15px', marginTop:'-5px'}}>GO TO:</div>
+      <div className="specialfont" style={{fontSize:'40px', marginTop:'-5px', width:'100px', fontWeight:'bold'}}>GO TO</div>
 
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
         <li style={{display:'flex', justifyContent:'space-between', width:'50%'}}>
 <Link style={{}}  to= {props.previous.frontmatter.slug + "/"} rel="prev">
  <button className="" style={{display:'flex', justifyContent:'',}}>
- <AiFillCaretRight />&nbsp;&nbsp;
+ {/* <AiFillCaretRight />&nbsp;&nbsp; */}
   <span className="page-title">
 {props.previous.frontmatter.title}
 {/* Previous */}
@@ -419,7 +428,6 @@ const YouTube = frontmatter.youtuber
   const YouTube2 = frontmatter.youtuber2
   const AudioStart = frontmatter.audiostart
   const AudioEnd = frontmatter.audioend
-
   
 
   const { previous, next } = pageContext
@@ -436,6 +444,7 @@ const YouTube = frontmatter.youtuber
 
 
   const { showNav } = useSiteMetadata()
+
 
 
   // const [showControls, setShowControls] = useState(false);
@@ -469,6 +478,172 @@ const YouTube = frontmatter.youtuber
     setState({ ...state, muted: !state.muted });
   };
 
+
+
+
+  const Controls = forwardRef(
+    (
+      {
+        // onSeek,
+        // onSeekMouseDown,
+        // onSeekMouseUp,
+        // onDuration,
+        // onRewind,
+        onPlayPause,
+        // onFastForward,
+        playing,
+        // played,
+        // elapsedTime,
+        // totalDuration,
+        onMute,
+        muted,
+        // onVolumeSeekDown,
+        // onChangeDispayFormat,
+        // playbackRate,
+        // onPlaybackRateChange,
+        // onToggleFullScreen,
+        volume,
+        // onVolumeChange,
+        // onBookmark,
+      },
+      ref
+    ) => {
+      // const classes = useStyles();
+      // const [anchorEl, setAnchorEl] = React.useState(null);
+      // const handleClick = (event) => {
+      //   setAnchorEl(event.currentTarget);
+      // };
+  
+      // const handleClose = () => {
+      //   setAnchorEl(null);
+      // };
+  
+      // const open = Boolean(anchorEl);
+      // const id = open ? "simple-popover" : undefined;
+  
+      const { iconimage } = useSiteMetadata()
+  
+  
+      return (
+  
+  <div>
+  
+  
+  
+        {playing ? (
+""
+        ) : (
+
+  
+  
+    <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'1', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'center', color:'#fff' }}>
+   
+    <img className="homepage-bg" src={iconimage} width="350px" height="150px" alt="MemeGenes" style={{ width:'', margin:'70px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />presents:
+<br />
+<br />
+   {frontmatter.bumpertext ? (
+  <h3 style={{fontSize:'clamp(1.8rem, 5.5vw, 5.8rem)'}}>{frontmatter.bumpertext}</h3>
+        ) : (
+  <h3>{frontmatter.title}</h3>
+    )}
+<br /><br /><br /><br />
+    </div>
+ )}  {/* end playing check */}
+  
+ 
+  
+  
+        
+  
+  
+  <div ref={ref} className="controlsbox" style={{width:'', height:'', border:'0px solid red', }}>
+  
+        {/* <div className="contact" style={{position:'', bottom:'', zIndex:'',  left:'0', right:'0', display:'flex', justifyContent:'center', width:'200px', margin:'0 auto'}}>
+    <Link state={{modal: true}}  to="/contact/" className="navbar-item  button fire" style={{margin:'', textDecoration:'none'}}>Contact Me</Link>
+  </div> */}
+                  <button
+                    onClick={onPlayPause}
+                    className="controls" 
+                    style={{
+                      animation:'fade1',
+                      animationDuration:'1s',
+                      animationDelay:'5s',
+                      opacity:'1',
+                      animationFillMode:'forwards',
+                      position:'relative',
+                      zIndex:'',
+                      right:'',
+                      bottom:'',
+                      border:'2px solid ',
+                      display:'grid',
+                      placeContent:'center',
+                      width:'60px',
+                      height:'60px',
+                      fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'1rem',  borderRadius:'8px', border:'1px solid #666', cursor:'pointer',
+                  }}
+                  >
+                    {/* <MdPlayArrow style={{fontSize:'50px', position:'absolute'}}  /> */}
+                    {playing ? (
+                      
+                      <MdPause className="hudicon" style={{}} />
+                      
+                    ) : (
+                
+                <MdPlayArrow className="hudicon" style={{}}  />
+                
+                    )}
+                  </button>
+  
+  
+  
+        
+  
+  
+  
+  
+                  <button
+                    // onClick={() => setState({ ...state, muted: !state.muted })}
+                    onClick={onMute}
+                    className="controls "
+                    style={{
+                  }}
+                  >
+                    {muted ? (
+                      <MdVolumeOff className="hudicon" fontSize="" style={{}}  />
+                    ) : volume > 0.5 ? (
+                      <MdVolumeUp className="hudicon" fontSize="" style={{}}  />
+                    ) : (
+                      <MdVolumeUp className="hudicon" fontSize="" style={{}}  />
+                    )}
+                  </button>
+  
+        </div>
+        
+        </div>
+      );
+    }
+  );
+  
+  Controls.propTypes = {
+    onSeek: PropTypes.func,
+    onSeekMouseDown: PropTypes.func,
+    onSeekMouseUp: PropTypes.func,
+    onDuration: PropTypes.func,
+    onRewind: PropTypes.func,
+    onPlayPause: PropTypes.func,
+    onFastForward: PropTypes.func,
+    onVolumeSeekDown: PropTypes.func,
+    onChangeDispayFormat: PropTypes.func,
+    onPlaybackRateChange: PropTypes.func,
+    onToggleFullScreen: PropTypes.func,
+    onMute: PropTypes.func,
+    playing: PropTypes.bool,
+    played: PropTypes.number,
+    elapsedTime: PropTypes.string,
+    totalDuration: PropTypes.string,
+    muted: PropTypes.bool,
+    playbackRate: PropTypes.number,
+  };
   
 
   return (
@@ -1047,6 +1222,7 @@ export const pageQuery = graphql`
         comments
         shareable
         isnftforsale
+        bumpertext
         nftdrop
         svgzindex
         scrollable
