@@ -31,22 +31,22 @@ const themeStyles = {
       fontSize: "28px",
       bg: "transparent",
       border: "none",
+      color:"var(--theme-ui-colors-text)",
       cursor: "pointer",
       mt: "-2px",
       p: "0 0 0 0",
-      "&:hover": {
-        color: "var(--primary-color)",
-      },
+      // "&:hover": {
+      //   color: "var(--theme-ui-colors-background)",
+      // },
     },
   },
   modeIcons: {
     display: "flex",
     alignItems: "center",
-    color: "#ccc",
     mt: "10px",
-    "&:hover": {
-      color: "color:var(--primary-color)",
-    },
+    // "&:hover": {
+    //   color: "color:var(--theme-ui-colors-text)",
+    // },
   },
   modeText: {
     fontSize: "14px",

@@ -5,16 +5,32 @@ import { useStaticQuery, graphql } from "gatsby"
       query SiteMetaData {
         site {
           siteMetadata {
-            title
-            titleDefault
-            siteUrl
-            description
-            image
-            twitterUsername
-            iconimage
-            companyname
-            comments
-            showfooter
+          title
+          titleDefault
+          siteUrl
+          description
+          image
+          twitterUsername
+          iconimage
+          companyname
+          comments
+          showfooter
+          showInfo
+          showCover
+          showFeature
+          showPosts
+          showResume
+          showSocial
+          showSkills
+          showNav
+          showNav2
+          showPopup
+          showDates
+          menu1
+          menu2
+          menu3
+          menu4
+          font1
           }
         }
       }

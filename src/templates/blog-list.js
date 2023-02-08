@@ -23,6 +23,7 @@ import Layout from "../components/siteLayout"
 
 
 
+
 const styles = {
   pagination: {
     a: {
@@ -108,6 +109,7 @@ const Pagination = props => (
     </ul>
   </div>
 )
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -136,7 +138,7 @@ class BlogIndex extends React.Component {
 
 
     
-    
+
 
 
     return (
@@ -151,6 +153,8 @@ class BlogIndex extends React.Component {
           }
         />
         
+
+  <div className="spacer" style={{height:'70px', border:'0px solid yellow'}}></div>
 
 
         {/* <div id="" className="wrap-element1 " style={{overflow:'hidden', width:'100vw', height:'100vh', position:'fixed', top:'0'}}>

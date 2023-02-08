@@ -69,7 +69,7 @@ const PostCard = ({ data }) => (
           placeholder="blurred"
               // loading="eager"
               layout="constrained"
-              style={{position:'relative', zIndex:'1', maxHeight:'80vh'}}
+              style={{position:'relative', zIndex:'1', maxHeight:'65vh'}}
         />
         <div
               style={{

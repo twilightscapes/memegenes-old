@@ -1,3 +1,7 @@
 {
-  "siteColor": "#111"
+  "siteColor": "#222",
+  "bodyBg": "yellow",
+  "bodyColor": "blue",
+  "fontFamily": "Racing Sans One",
+  "cardBg": "rgba(0, 0, 0, .9)"
 }

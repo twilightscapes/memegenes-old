@@ -6,38 +6,77 @@ import { Link } from 'gatsby'
 import "../assets/scss/reset.scss"
 import "../assets/scss/global.scss"
 import "../assets/scss/styles.css"
-// import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { StoreContext } from "../context/store-context"
 // import { Toast } from "./toast"
-import Bug from "../../static/assets/logo.svg"
-import SiteLogo from "../../static/assets/logo.svg"
-// import Install from './install-discount'
+// import Bug from "../../static/assets/logo.svg"
+// import SiteLogo from "../../static/assets/logo.svg"
+import { Helmet } from "react-helmet"
 import Theme from "./theme"
 // import { CartButton } from "./cart-button"
 // import SearchIcon from "../../static/assets/search"
-
+import useSiteMetadata from "../hooks/SiteMetadata"
 // import ss from "../../static/assets/pagebg.webp"
 // import { Link } from "gatsby-plugin-anchor-links"
 import { StaticImage } from "gatsby-plugin-image"
-
+import styled from "styled-components"
+import SignUp from "../components/newssign"
 // import Install from './install-discount'
 // import { navigate } from "gatsby";
-const TemplateWrapper = ({ children }) => {
+const Layout = ({ children }) => {
 
   
-  // const { iconimage } = useSiteMetadata()
-  // const { checkout, loading, didJustAddToCart } = React.useContext(StoreContext)
 
-  // const items = checkout ? checkout.lineItems : []
 
-  // const quantity = items.reduce((total, item) => {
-  //   return total + item.quantity
-  // }, 0)
+const { companyname } = useSiteMetadata()
+const { iconimage } = useSiteMetadata()
+
+const { image } = useSiteMetadata()
+
+const { showNav } = useSiteMetadata()
+const { showNav2 } = useSiteMetadata()
+const { showInfo } = useSiteMetadata()
+// const { showFeature } = useSiteMetadata()
+const { showPosts } = useSiteMetadata()
+const { showResume } = useSiteMetadata()
+// const { showSocial } = useSiteMetadata()
+const { showSkills } = useSiteMetadata()
+// const { showCover } = useSiteMetadata()
+// const { showfooter } = useSiteMetadata()
+const { showPopup } = useSiteMetadata()
+const { menu1 } = useSiteMetadata()
+const { menu2 } = useSiteMetadata()
+const { menu3 } = useSiteMetadata()
+const { menu4 } = useSiteMetadata()
+const { font1 } = useSiteMetadata()
+
+const navStyle = {
+  bg: "",
+}
+
+const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=swap"
+
 
   return (
     <div style={{display:''}}> 
 <>
+
+
+
+
+<Helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" /> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+{ !font1 ? (
+''
+  ) : (
+    <link id="yyy" rel="stylesheet"
+          href={fontUrl} />
+  )} 
+</Helmet>
+
 <Seo />
+
 
 {/* <ModalRoutingContext.Consumer >
 {({ modal, closeTo }) => (
@@ -62,71 +101,144 @@ const TemplateWrapper = ({ children }) => {
 
 
 
+{showNav ? (
+
+<ul sx={navStyle} id="menu" className="menu print" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center',  color:'', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center', minHeight:'70px', background:'', }}>
+      
+      <li className="grad logo" style={{position:'relative', maxHeight:'60px', width:'auto', display:'flex', justifyContent:'center'}}>
+            <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
+            {iconimage ? (
+      <img id="toplogo" className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none', color:'var(--theme-ui-colors-cardBg)'}} />
+                ) : (
+                  <div style={{fontWeight:'bold',}}>{companyname}</div>
+                )}
+            </AnchorLink>
+          </li>
+      
+      
+{/* <li>
+   <ul className="has-app" style={{position:'', right:'1rem', top:'80px', display:'flex', flexDirection:'column', gap:'4px'}}>
+            <li className="has-app1" style={{position:'relative', display:''}}>
+            <Link to="/login" className="" style={{color:'#fff',fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)',  width:'', justifyContent:'center', fontWeight:'', }}>Admin</Link>
+              </li>
 
 
+
+
+      <li className="has-app" order="5" style={{display:'',}}>
+ <Link state={{modal: true}} to="/notes" className="" style={{fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)',}}>Notes</Link>
+ </li>
+</ul>
+</li>     */}
+
+
+
+
+
+      
+
+
+
+
+
+{/* <li className="has-app" order="5" style={{display:'none',}}>
+ <Link state={{modal: true}} to="/posts" className="navbar-item" style={{paddingRight:'',}}>{menu2}</Link>
+ </li> */}
+
+
+      {showPosts ? (
+            <li className="" style={{position:'relative',}}>
+            <AnchorLink ariaLabel="Menu 2" className="navbar-item" to="/archive/2" style={{paddingRight:'',}}>
+            {menu2}
+            </AnchorLink>
+            </li>
+            ) : (
+  ""
+)}
+
+
+
+{showInfo ? (
+            <li className="" style={{position:'relative',}}>
+              <AnchorLink aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>
+              {menu1}
+              </AnchorLink>
+              </li>
+) : (
+  ""
+)}
+
+
+
+       
+{showResume ? (
+            <li className="" style={{position:'relative',}}>
+              <AnchorLink ariaLabel="Menu 3" className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
+              {menu3}
+              </AnchorLink>
+              </li>
+            ) : (
+              ""
+            )}
+
+
+
+{showSkills ? (
+              <li className="" style={{position:'relative',}}>
+              {/* <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
+                Contact <span className="mobilehide">Me</span>
+              </AnchorLink> */}
+      
+              <AnchorLink className="navbar-item" to="/#skills" style={{paddingRight:'',}}>{menu4}</AnchorLink>
+              </li>
+
+              ) : (
+  ""
+)}
+
+
+<li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
+  
+  <Theme  style={{padding:'0'}} />
+  </li>
+            
+           
+      
+            </ul>
+
+
+) : (
+  ""
+)}
 
 
 
 <header id="top" name="pagetop" style={{}} >
 
-{/* <ul id="menu" className="menu" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center', background:'radial-gradient(#111 14%,#222 140%)', color:'#ccc', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center'}}>
-<li className="grad" style={{position:'relative',}}>
-        <AnchorLink className="navbar-item" to="/#about" style={{paddingRight:'',}}>
-          About <span className="mobilehide">Us</span> 
-        </AnchorLink>
-        </li>
-      <li className="grad" style={{position:'relative',}}>
-      <AnchorLink className="navbar-item" to="/#capabilities" style={{paddingRight:'',}}>
-      <span className="mobilehide">Our</span> Capabilities 
-      </AnchorLink>
-      </li>
-      <li className="grad" style={{position:'relative', maxHeight:'60px'}}>
-      <AnchorLink to="/#top" name="homereturn" style={{position:'absolute', display:'block', width:'180px', height:'60px', border:'1px solid'}}  aria-label="Link to Home" title="Back to Home">
-      <SiteLogo style={{maxHeight:'60px'}} />
-      </AnchorLink>
-    </li>
-      <li className="grad" style={{position:'relative',}}>
-        <AnchorLink className="navbar-item" to="/#industries" style={{paddingRight:'',}}>
-          Industries <span className="mobilehide">Served</span> 
-        </AnchorLink>
-        </li>
-        <li className="grad" style={{position:'relative',}}>
-        <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
-          Contact <span className="mobilehide">Us</span>
-        </AnchorLink>
-        </li>
-      </ul> */}
 
 
+{showNav2 ? (
 
-      <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
-
-{/* <div id="secondMenu" className="" style={{marginTop:'5rem'}}>
-<ul className="sidebarMenuInner post-card" style={{}}>
-<Install />
-<li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
-Woot
-</li>
-<li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
-This is 2nd menu
-</li>
-
-</ul>
-</div> */}
+<>
+<input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
 <>{ /* eslint-disable-next-line jsx-a11y/label-has-associated-control */ }</>
-  <label htmlFor="openSidebarMenu" className="backdrop1" ><input type="checkbox" /></label>
+  <label htmlFor="openSidebarMenu" className="backdrop1" ></label>
 
 <label id="menuicon" htmlFor="openSidebarMenu" className="sidebarIconToggle">
-<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', border:'0px solid blue'}}>
-{/* <img className="" src={iconimage} alt="Logo" style={{borderRadius:'12px'}} /> */}
-<Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'1', margin:'0 0 0 0', width:'100%', display:'' }}/> 
-<div style={{fontSize:'80%'}}>memegenes.com</div>
-{/* <object className="" id="logo" data={iconimage} type="image/svg+xml" style={{  overflow:'hidden', border:'0px solid red', zIndex:'0', width:'100%', maxWidth:'', height:'', background:'transparent'  }} alt="Animated Logo" title="Animated Logo" >Animated Logo</object> */}
+<div style={{textAlign:'center', opacity:'1', textShadow:'2px 2px 10px 2px #000', maxWidth:'500px', color:'#fff', fontWeight:'bold', border:'0px solid blue'}}>
+
+{/* <Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'1', margin:'0 0 0 0', width:'100%', display:'none' }}/>  */}
+{iconimage ? (
+      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', maxWidth:'120px', border:'none'}} />
+                ) : (
+                  <div style={{fontWeight:'bold', color:'yellow'}}>companyname</div>
+                )}
+
 </div>
   </label>
 
   
-  {/* <Install /> */}
+
 
 
 
@@ -139,97 +251,111 @@ This is 2nd menu
 
   
 
-<ul className="sidebarMenuInner" style={{maxWidth:'400px', position:'absolute', right:'0', display:'', justifyContent:''}}>
+    <ul className="sidebarMenuInner post-card" style={{maxWidth:'400px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
-<li className="carto" style={{border:'none', margin:' 0', textAlign:'center'}}>
-<Link to="/" name="homereturn" title="return to home" style={{position:'absolute', display:'block', width:'180px', height:'180px', border:'0px solid'}}></Link>
-<SiteLogo />
-</li>
+    <li className="grad" style={{position:'relative', maxHeight:'100px', width:'auto', display:'flex', justifyContent:'center'}}>
+            <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
+            {iconimage ? (
+      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} />
+                ) : (
+                  <div style={{fontWeight:'bold'}}>companyname</div>
+                )}
+            </AnchorLink>
+          </li>
+      
+      
 
+   
+            
 
-{/* <li className="carto" style={{textAlign:''}}>
-              <Link className="navbar-item txtshadow" to="/projects">
-      <div style={{display:'flex', gap:'10px'}}>
- 
-        View By Project
-        </div>
-              </Link>
-      </li>  */}
-
-
-<li className="carto"  style={{textAlign:'center', marginBottom:'2vh'}}>
-      <Link className="navbar-item txtshadow" to="/archive/2/">
-      <div style={{display:'block', gap:'10px',}}>
-      View All Posts
-      </div>
-        </Link>
-</li>
-
-{/* <li className="carto" style={{textAlign:'center'}}>
-      <Link className="navbar-item txtshadow" to="/minutes/">
-      <div style={{display:'flex', gap:'10px'}}>
-      Current Minutes
-      </div>
-        </Link>
-</li> */}
+      {showPosts ? (
+            <li className="" style={{position:'relative',}}>
+            <AnchorLink className="navbar-item" to="/archive/2" style={{paddingRight:'',}}>
+            {menu2}
+            </AnchorLink>
+            </li>
+            ) : (
+  ""
+)}
 
 
 
 
-{/* <li className="carto" style={{textAlign:'', pointerEvents:''}}>
-          <Link className="navbar-item txtshadow" to="/about/">
-
-          About This Site
-
-          </Link>
-  </li>  */}
-
-
-  {/* <li className="grad" style={{position:'relative',}}>
-        <Link to="/contact" className="navbar-item" style={{paddingRight:'',}}>
-          Contact
-        </Link>
-        </li> */}
-
-  <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
-
-  <Theme  style={{padding:'0'}} />
-{/* <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
-<span className="carto"><SearchIcon /></span>
-</Link>
-
-<CartButton quantity={quantity} /> */}
+          
+          {showInfo ? (
+            <li className="no-app" style={{position:'relative',}}>
+              <AnchorLink className="navbar-item" to="/#info" style={{paddingRight:'',}}>
+              {menu1}
+              </AnchorLink>
+              </li>
+) : (
+  ""
+)}
+      
 
 
-    </li>
 
-</ul>
+
+       
+{showResume ? (
+            <li className="" style={{position:'relative',}}>
+              <AnchorLink className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
+              {menu3}
+              </AnchorLink>
+              </li>
+            ) : (
+              ""
+            )}
+
+
+
+{showSkills ? (
+              <li className="" style={{position:'relative',}}>
+              {/* <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
+                Contact <span className="mobilehide">Me</span>
+              </AnchorLink> */}
+      
+              <AnchorLink className="navbar-item" to="/#skills" style={{paddingRight:'',}}>{menu4}</AnchorLink>
+              </li>
+
+              ) : (
+  ""
+)}
+
+
+
+<li className="has-app" order="5" style={{display:'none',}}>
+ <Link state={{modal: true}} to="/notes" className="navbar-item" style={{paddingRight:'',}}>Notes</Link>
+ </li>
+
+ <li className="has-app" style={{position:'relative', display:'none'}}>
+            <Link to="/login" className="navbar-item" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
+              </li>
+
+
+      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'center', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
+      <Theme  style={{color:'red !important'}} />
+   {/* <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
+    <span className="carto"><SearchIcon /></span>
+   </Link>
+   <CartButton quantity={quantity} /> */}
+        </li>
+
+    </ul>
 
   </div>
+  </>
 
-      {/* <Toast show={loading || didJustAddToCart} >
-        {!didJustAddToCart ? (
-          "Updating…"
-        ) : (
-          <>
-            Added to cart{" "}
-            <div style={{fontSize:'30px', marginLeft:'10px'}}><ImArrowRight /></div>
-          </>
-        )}
-      </Toast> */}
- 
-      {/* <Link to="/search" style={{display:'flex', verticalAlign:'center', marginTop:'12px', marginRight:'20px'}}>
-    <span><SearchIcon /></span>
-   </Link>
-
-  <div style={{marginTop:'5px'}}><CartButton quantity={quantity} /></div> */}
+) : (
+  ""
+)}
      
 
 </header>
 {children}
 
       
-<StaticImage className="backimage" src="../../static/assets/newspaper.webp" alt="Twilightscapes Default Image" style={{height:'100vh', maxHeight:'100vh', position:'fixed', zIndex:'-2', top:'0', border:'0px solid !important', objectFit:'contain',}} />
+<img className="backimage" src={image} alt="Twilightscapes Default Image" style={{height:'100vh', width:'100vw', position:'fixed', zIndex:'-2', top:'0', border:'0px solid !important', objectFit:'cover',}} />
       
       {/* <Consent /> */}
      {/* <Install /> */}
@@ -241,4 +367,4 @@ This is 2nd menu
     );
   };
   
-  export default TemplateWrapper;
+  export default Layout;
