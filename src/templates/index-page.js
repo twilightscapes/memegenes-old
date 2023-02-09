@@ -5,7 +5,7 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { AiOutlineAudioMuted } from "react-icons/ai"
-// import Footer from "../components/footer"
+import Footer from "../components/footer"
 import ScrollAnimation from 'react-animate-on-scroll'
 import { IoShareOutline } from 'react-icons/io5'
 import { Helmet } from "react-helmet"
@@ -196,7 +196,7 @@ const HomePage = ({ data }) => {
     const { showSocial } = useSiteMetadata()
     const { showSkills } = useSiteMetadata()
     const { showCover } = useSiteMetadata()
-    // const { showfooter } = useSiteMetadata()
+    const { showfooter } = useSiteMetadata()
     
 
 
@@ -800,11 +800,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 <br/><br/><br/>
 
 {/* show footer */}
-{/* {showfooter ? (
+{showfooter ? (
 <Footer className="vertical" />
 ) : (
   ""
-)} */}
+)}
 {/* end show footer */}
 
     </Layout>
