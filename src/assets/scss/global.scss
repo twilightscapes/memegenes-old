@@ -2103,15 +2103,15 @@ body.homepage .horizontal-holder{height:inherit !important}
     /* transition: box-shadow 0.3s linear; */
 	color:#ccc;
   }
-    .featured-image img {
-        display: block;
-        margin: 0;
-        border-radius: 12px;
-		object-fit: scale-down !important;
-		margin:2vh auto 0 auto;
-		max-height: 60vh;
-		background-size: contain;
-      }
+    // .featured-image img {
+    //     display: block;
+    //     margin: 0;
+    //     border-radius: 12px;
+	// 	object-fit: scale-down !important;
+	// 	margin:2vh auto 0 auto;
+	// 	max-height: 60vh;
+	// 	background-size: contain;
+    //   }
 
 	  .featured-image1 img {
   max-height: 70vh;
@@ -2120,7 +2120,7 @@ body.homepage .horizontal-holder{height:inherit !important}
   background-position: bottom;
   object-fit: scale-down !important;
   border-radius: 8px !important;
-  width:auto !important;
+  width:100% !important;
   margin:2vh auto 0 auto;
   overflow: hidden;
 //   border:1px solid #666;

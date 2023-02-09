@@ -473,7 +473,7 @@ const YouTube = frontmatter.youtuber
     setState({ ...state, playing: !state.playing });
   };
 
-  const hanldeMute = () => {
+  const handleMute = () => {
     setState({ ...state, muted: !state.muted });
   };
 
@@ -544,9 +544,9 @@ const YouTube = frontmatter.youtuber
 <br />
 
    {frontmatter.bumpertext ? (
-  <h3 style={{fontSize:'clamp(1.8rem, 5.5vw, 5.8rem)'}}>{frontmatter.bumpertext}</h3>
+  <h3 style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)'}}>{frontmatter.bumpertext}</h3>
         ) : (
-  <h3 style={{fontSize:'clamp(1.4rem, 3.5vw, 4.8rem)'}}>{frontmatter.title}</h3>
+  <h3 style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)'}}>{frontmatter.title}</h3>
     )}
 
 
@@ -680,57 +680,13 @@ const YouTube = frontmatter.youtuber
 
 
 <div className="pagemenu" style={{position:'fixed', top:'90vh', zIndex:'2',  left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7), color:#999', fontSize:'clamp(2rem, 3vw, 3rem)' }}>
-{/* 
-clamp(2rem, 3vw, 3rem);
-clamp(4vw, 100%, 1.5vw)
- */}
-
-        {/* <label aria-label="open menu" id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer', color:'#fff', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,3))'}}><ImMenu style={{cursor:'pointer', padding:'', width:'5vw', height:'20px'}} /></label> */}
 
 <div className="menusnapp" style={{display:'flex', gap:'1vw', padding:'1vh 1vw', color:'#999'}}>
-  
-{/* {Comments ? (
-          <AnchorLink to="#comments"  style={{cursor:'pointer', padding:''}}>
-  <BsFillChatLeftTextFill style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} />
-        </AnchorLink>
-       
-          ) : (
-            <AnchorLink to="#comments"  style={{cursor:'pointer', padding:''}}>
-            <BsFillChatLeftTextFill style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} />
-                  </AnchorLink>
-          )}
-
-
-
-
-{ShareThis ? (
-<AnchorLink to="#sharethis"  style={{cursor:'pointer', padding:'5px'}}>
-<FaShareAlt style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}}/>
-        </AnchorLink>
- ) : (
-  ""
-)}
-
-
-{ShowOriginal ? (
-          <AnchorLink to="#original"  style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}}>
-  <FaInfoCircle style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} />
-        </AnchorLink>
-       
-          ) : (
-            <AnchorLink to="#original"  style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}}>
-            <FaInfoCircle style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} />
-                  </AnchorLink>
-          )} */}
-
 {frontmatter.scrollable ? (
   <AnchorLink to="#top" style={{cursor:'pointer', height:'2vh'}}><RiArrowUpFill style={{cursor:'pointer', color:'#999'}} /></AnchorLink>
 ) : (
 ""
   )}
-
-
-
 {(previous || next) && <Pagination {...props} />}
 </div>
 
@@ -743,7 +699,6 @@ clamp(4vw, 100%, 1.5vw)
 ) : (
 ""
   )}
-
         <button onClick={resizeDesk} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 0 0 0', color:'#999'}}><RiMenuUnfoldFill />
         </button>
         </div>
@@ -754,10 +709,7 @@ clamp(4vw, 100%, 1.5vw)
         <button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0', color:'#999'}}><RiCloseCircleFill /> 
         </button>
         </div>
-        
     }
-
-
 </div>
 
 
@@ -771,7 +723,7 @@ clamp(4vw, 100%, 1.5vw)
             onPlayPause={handlePlayPause}
             playing={playing}
             played={played}
-            onMute={hanldeMute}
+            onMute={handleMute}
             muted={muted}
           />
           )}
@@ -797,7 +749,7 @@ clamp(4vw, 100%, 1.5vw)
 
 
 
-<div style={{ width:'auto', height:'',  top:'0', zIndex:'-2', border:'0px solid red', paddingBottom:'', margin:'0 auto', display:'flex', flexDirection:'column', justifyContent:'center'}}>
+<div style={{ width:'100vw', height:'',  top:'0', zIndex:'-2', border:'0px solid red', paddingBottom:'', margin:'0 auto', display:'flex', flexDirection:'column', justifyContent:'center'}}>
 {FrontImage ? (
             <GatsbyImage
               image={FrontImage}
