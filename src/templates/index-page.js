@@ -90,6 +90,7 @@ query HomeQuery($id: String!) {
       skillsTitle
       skillsText
       svgzindex
+      scrollable
       tagline
       featuredImage {
         publicURL
@@ -187,6 +188,7 @@ const HomePage = ({ data }) => {
     const YouTubeAutostart = frontmatter.youtubeautostart
     const SkillsText = frontmatter.skillsText
     const coverText = frontmatter.coverletter.coverText
+    const Scroll = frontmatter.scrollable
     const { showNav } = useSiteMetadata()
     const { showInfo } = useSiteMetadata()
     const { showFeature } = useSiteMetadata()
@@ -196,6 +198,7 @@ const HomePage = ({ data }) => {
     const { showSkills } = useSiteMetadata()
     const { showCover } = useSiteMetadata()
     const { showfooter } = useSiteMetadata()
+    
 
 
 
@@ -370,9 +373,20 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
     // TOP OF HOME
     <CustomBox style={{}}>
     <Layout>
-    <Helmet>
-  <body className="homepage" />
+
+
+
+{frontmatter.scrollable ? (
+  <Helmet>
+  <body id="body" className="homepage scroll" style={{}} />
 </Helmet>
+) : (
+  <Helmet>
+  <body id="body" className="homepage" style={{}} />
+</Helmet>
+  )}
+
+
        <Seo
         title={frontmatter.title}
         description={
@@ -788,11 +802,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 <br/><br/><br/>
 
 {/* show footer */}
-{showfooter ? (
+{/* {showfooter ? (
 <Footer className="vertical" />
 ) : (
   ""
-)}
+)} */}
 {/* end show footer */}
 
     </Layout>

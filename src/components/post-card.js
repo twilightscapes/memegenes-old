@@ -71,7 +71,7 @@ const PostCard = ({ data }) => (
               layout="constrained"
               style={{position:'relative', zIndex:'1', maxHeight:'65vh'}}
         />
-        <div
+        {/* <div
               style={{
                 alignItems: "center",
                 backgroundColor: "",
@@ -83,8 +83,6 @@ const PostCard = ({ data }) => (
                 top:'50%',
                 left:'50%',
                 zIndex:'-2'
-                
-          
               }}
            >
 
@@ -104,7 +102,7 @@ const PostCard = ({ data }) => (
         </g>
     </g>
 </svg>
-        </div>
+        </div> */}
       </Link>
       
     ) : (

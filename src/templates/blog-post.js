@@ -121,7 +121,7 @@ const Pagination = props => (
       )}
 
 
-      <div className="specialfont" style={{fontSize:'40px', marginTop:'-5px', width:'100px', fontWeight:'bold'}}>GO TO</div>
+      <div className="specialfont" style={{fontSize:'clamp(1.5rem, 2.5vw, 5.8rem)', marginTop:'-5px', width:'10vw', fontWeight:'bold', border:'0px solid', display:'grid', placeContent:'center'}}>GO TO</div>
 
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
