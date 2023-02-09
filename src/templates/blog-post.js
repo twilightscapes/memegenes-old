@@ -671,13 +671,17 @@ const YouTube = frontmatter.youtuber
       ) : (
         ""
       )}
-<div className="pagemenu" style={{position:'fixed', top:'90vh', zIndex:'2',  left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7), color:#fff'
- }}>
 
+
+<div className="pagemenu" style={{position:'fixed', top:'90vh', zIndex:'2',  left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7), color:#fff', fontSize:'clamp(2rem, 3vw, 3rem)' }}>
+{/* 
+clamp(2rem, 3vw, 3rem);
+clamp(4vw, 100%, 1.5vw)
+ */}
 
         {/* <label aria-label="open menu" id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer', color:'#fff', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,3))'}}><ImMenu style={{cursor:'pointer', padding:'', width:'5vw', height:'20px'}} /></label> */}
 
-<div className="menusnapp" style={{display:'flex', gap:'2vw', padding:'1vh 1vw'}}>
+<div className="menusnapp" style={{display:'flex', gap:'1vw', padding:'1vh 1vw'}}>
   
 {/* {Comments ? (
           <AnchorLink to="#comments"  style={{cursor:'pointer', padding:''}}>
@@ -714,7 +718,7 @@ const YouTube = frontmatter.youtuber
           )} */}
 
 {frontmatter.scrollable ? (
-  <AnchorLink to="#top" style={{cursor:'pointer', height:'2vh'}}><RiArrowUpFill style={{cursor:'pointer', fontSize:'3vw'}} /></AnchorLink>
+  <AnchorLink to="#top" style={{cursor:'pointer', height:'2vh'}}><RiArrowUpFill style={{cursor:'pointer'}} /></AnchorLink>
 ) : (
 ""
   )}
@@ -729,19 +733,19 @@ const YouTube = frontmatter.youtuber
       <div style={{display:'flex', gap:'2vw', padding:'1vh 1vw'}}>
 
 {frontmatter.scrollable ? (
-  <AnchorLink to="#top" aria-label="Return To TOP" style={{cursor:'pointer', height:'2vh'}}><RiArrowUpFill style={{cursor:'pointer', fontSize:'3vw'}} /></AnchorLink>
+  <AnchorLink to="#top" aria-label="Return To TOP" style={{cursor:'pointer', height:''}}><RiArrowUpFill style={{cursor:'pointer'}} /></AnchorLink>
 ) : (
 ""
   )}
 
-        <button onClick={resizeDesk} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 0 0 0', color:'#fff', fontSize:'2.5vw'}}><RiMenuUnfoldFill />
+        <button onClick={resizeDesk} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 0 0 0', color:'#fff'}}><RiMenuUnfoldFill />
         </button>
         </div>
 
        :
 
       <div style={{display:'flex', gap:'2vw', padding:'1vh 1vw'}}>
-        <button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0', color:'#fff', fontSize:'2.5vw'}}><RiCloseCircleFill /> 
+        <button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0', color:'#fff'}}><RiCloseCircleFill /> 
         </button>
         </div>
         

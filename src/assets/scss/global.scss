@@ -1275,7 +1275,7 @@ input[type=checkbox] {
 footer{
 	background-color: #111;
 	padding:.1rem 0rem;
-	margin:0;
+	margin:50vh auto 0 auto !important;
 	display:flex;
 	justify-content: center;
 	color:#fff !important;
@@ -1954,7 +1954,7 @@ body.homepage .horizontal-holder{height:inherit !important}
    }
 
 
-.pagemenu{position:fixed !important; top:80vh; max-width: 100% !important;}
+.pagemenu{position:fixed !important; top:70vh; max-width: 100% !important;}
 
 	.pagination li {
 		width:100% !important;
