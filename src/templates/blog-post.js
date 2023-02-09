@@ -29,7 +29,7 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 
 import { ImCross } from "react-icons/im"
 import { RxDoubleArrowUp } from "react-icons/rx"
-import { RiCloseCircleFill } from "react-icons/ri"
+import { RiCloseCircleFill, RiMenuUnfoldFill, RiArrowUpFill } from "react-icons/ri"
 
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { AiOutlineAudioMuted } from "react-icons/ai"
@@ -120,7 +120,7 @@ const Pagination = props => (
       )}
 
 
-      <div className="specialfont" style={{fontSize:'clamp(1.5rem, 2.5vw, 5.8rem)', marginTop:'-5px', width:'10vw', fontWeight:'bold', border:'0px solid', display:'grid', placeContent:'center'}}>GO TO</div>
+      <div className="specialfont" style={{fontSize:'clamp(1.5rem, 2vw, 5.8rem)', marginTop:'-5px', width:'10vw', fontWeight:'bold', border:'0px solid', display:'grid', placeContent:'center'}}>GO TO</div>
 
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
@@ -671,32 +671,14 @@ const YouTube = frontmatter.youtuber
       ) : (
         ""
       )}
-<div className="pagemenu" style={{position:'absolute', top:'89vh', zIndex:'2',  left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80%', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'1vh 1vw', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7), color:#fff'
+<div className="pagemenu" style={{position:'fixed', top:'90vh', zIndex:'2',  left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80%', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7), color:#fff'
  }}>
-<div>
 
-    {isMobile ? 
-      // <AnchorLink to="#top" style={{cursor:'pointer'}}>
-        <button onClick={resizeDesk} aria-label="Return To Top" style={{cursor:'pointer', padding:'1vh 0 0 0', color:'#fff', fontSize:'2.5vw'}}><RxDoubleArrowUp />
-        </button>
-      // </AnchorLink> 
-       :
-      // <AnchorLink to="#top" style={{cursor:'pointer'}}>
-        <button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'1vh 0 0 0', color:'#fff', fontSize:'2.5vw'}}><RiCloseCircleFill /></button>
-        // </AnchorLink>
-    }
-
-</div>
 
         {/* <label aria-label="open menu" id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer', color:'#fff', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,3))'}}><ImMenu style={{cursor:'pointer', padding:'', width:'5vw', height:'20px'}} /></label> */}
 
-<div className="menusnapp" style={{ display:'', justifyContent:'', width:'auto', margin:'0 auto', gap:'', color:'#fff'}}>
+<div className="menusnapp" style={{display:'flex', gap:'2vw', padding:'1vh 1vw'}}>
   
-   
-
-
-  
-
 {/* {Comments ? (
           <AnchorLink to="#comments"  style={{cursor:'pointer', padding:''}}>
   <BsFillChatLeftTextFill style={{cursor:'pointer', padding:'', width:'20px', height:'20px'}} />
@@ -731,16 +713,42 @@ const YouTube = frontmatter.youtuber
                   </AnchorLink>
           )} */}
 
+{frontmatter.scrollable ? (
+  <AnchorLink to="#top" style={{cursor:'pointer', height:'2vh'}}><RiArrowUpFill style={{cursor:'pointer', fontSize:'3vw'}} /></AnchorLink>
+) : (
+""
+  )}
 
 
-<div  style={{cursor:'pointer', padding:'1vh 0', borderLeft:'0px solid #666'}}>{(previous || next) && <Pagination {...props} />}</div>
 
-
-{/* <AnchorLink to="#footer" style={{border:'0px solid', }}>
-  Footer
-        </AnchorLink> */}
-
+{(previous || next) && <Pagination {...props} />}
 </div>
+
+{isMobile ? 
+      // <AnchorLink to="#top" style={{cursor:'pointer'}}>
+      <div style={{display:'flex', gap:'2vw', padding:'1vh 1vw'}}>
+
+{frontmatter.scrollable ? (
+  <AnchorLink to="#top" style={{cursor:'pointer', height:'2vh'}}><RiArrowUpFill style={{cursor:'pointer', fontSize:'3vw'}} /></AnchorLink>
+) : (
+""
+  )}
+
+        <button onClick={resizeDesk} aria-label="Return To Top" style={{cursor:'pointer', padding:'0 0 0 0', color:'#fff', fontSize:'2.5vw'}}><RiMenuUnfoldFill />
+        </button>
+        </div>
+      // </AnchorLink> 
+       :
+      // <AnchorLink to="#top" style={{cursor:'pointer'}}>
+      <div style={{display:'flex', gap:'2vw', padding:'1vh 1vw'}}>
+        <button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0', color:'#fff', fontSize:'2.5vw'}}><RiCloseCircleFill /> 
+        </button>
+        
+        </div>
+        
+    }
+
+
 </div>
 
 
