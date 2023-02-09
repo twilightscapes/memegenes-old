@@ -105,10 +105,10 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 <ul sx={navStyle} id="menu" className="menu print" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center',  color:'', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center', minHeight:'70px', background:'', }}>
       
-      <li className="grad logo" style={{position:'relative', maxHeight:'60px', width:'auto', display:'flex', justifyContent:'center', opacity:'.8'}}>
-            <AnchorLink to="/" name="homereturn" style={{position:'', display:'block', maxWidth:'', height:'', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
+<li className="grad logo" style={{position:'relative', maxHeight:'60px', width:'auto', display:'flex', justifyContent:'center'}}>
+            <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
-      <img id="toplogo" className="" src={iconimage} alt={companyname} width="auto" height="60px" style={{maxHeight:'60px', border:'none', color:'var(--theme-ui-colors-cardBg)'}} />
+      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} />
                 ) : (
                   <div style={{fontWeight:'bold',}}>{companyname}</div>
                 )}
