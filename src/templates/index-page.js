@@ -5,14 +5,14 @@ import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { AiOutlineAudioMuted } from "react-icons/ai"
-import Footer from "../components/footer"
+// import Footer from "../components/footer"
 import ScrollAnimation from 'react-animate-on-scroll'
 import { IoShareOutline } from 'react-icons/io5'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import useSiteMetadata from "../hooks/SiteMetadata"
 import ReactPlayer from 'react-player/lazy'
-import { ImPlay, ImDisplay, ImMobile2 } from "react-icons/im"
+import { ImPlay,  } from "react-icons/im"
 
 // import Popup from '../components/Popup'
 // import GoogleMap from '../components/GoogleMap'
@@ -169,8 +169,8 @@ const HomePage = ({ data }) => {
     ? frontmatter.secondaryImage.childImageSharp.gatsbyImageData
     : ""
 
-    const SvgUrl = frontmatter.svgImage
-    const SvgZindex = frontmatter.svgzindex
+    // const SvgUrl = frontmatter.svgImage
+    // const SvgZindex = frontmatter.svgzindex
 
     const UnderlayImage = frontmatter.underlayImage
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
@@ -188,16 +188,15 @@ const HomePage = ({ data }) => {
     const YouTubeAutostart = frontmatter.youtubeautostart
     const SkillsText = frontmatter.skillsText
     const coverText = frontmatter.coverletter.coverText
-    const Scroll = frontmatter.scrollable
     const { showNav } = useSiteMetadata()
     const { showInfo } = useSiteMetadata()
     const { showFeature } = useSiteMetadata()
-    const { showPosts } = useSiteMetadata()
+    // const { showPosts } = useSiteMetadata()
     const { showResume } = useSiteMetadata()
     const { showSocial } = useSiteMetadata()
     const { showSkills } = useSiteMetadata()
     const { showCover } = useSiteMetadata()
-    const { showfooter } = useSiteMetadata()
+    // const { showfooter } = useSiteMetadata()
     
 
 
@@ -210,19 +209,19 @@ const HomePage = ({ data }) => {
     const ProfText = frontmatter.profText
  
 
-    const openQuote = frontmatter.portfolio.openText
-    const closeQuote = frontmatter.portfolio.closeText
+    // const openQuote = frontmatter.portfolio.openText
+    // const closeQuote = frontmatter.portfolio.closeText
     
 
-    const resizeMobile = () => {
-      const elements = document.querySelectorAll('.boom');
-      elements.forEach(el => el.style.width = '400px');
-    }
+  //   const resizeMobile = () => {
+  //     const elements = document.querySelectorAll('.boom');
+  //     elements.forEach(el => el.style.width = '400px');
+  //   }
 
-  const resizeDesk = () => {
-    const elements = document.querySelectorAll('.boom');
-    elements.forEach(el => el.style.width = '80%');
-  }
+  // const resizeDesk = () => {
+  //   const elements = document.querySelectorAll('.boom');
+  //   elements.forEach(el => el.style.width = '80%');
+  // }
 
 
   const Svg = frontmatter.svgImage

@@ -107,7 +107,6 @@ const Controls = forwardRef(
                     zIndex:'',
                     right:'',
                     bottom:'',
-                    border:'2px solid ',
                     display:'grid',
                     placeContent:'center',
                     width:'60px',

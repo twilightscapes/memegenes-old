@@ -18,8 +18,8 @@ import Theme from "./theme"
 import useSiteMetadata from "../hooks/SiteMetadata"
 // import ss from "../../static/assets/pagebg.webp"
 // import { Link } from "gatsby-plugin-anchor-links"
-import { StaticImage } from "gatsby-plugin-image"
-import styled from "styled-components"
+// import { StaticImage } from "gatsby-plugin-image"
+// import styled from "styled-components"
 import SignUp from "../components/newssign"
 // import Install from './install-discount'
 // import { navigate } from "gatsby";
@@ -349,13 +349,44 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 ) : (
   ""
 )}
+
+
+
+
+{showPopup ? (
+//  <ScrollAnimation className="signup" animateIn="bounceInDown" delay={5000} initiallyVisible={false} animateOnce={true} animatePreScroll={true} style={{position:'absolute', top:'15vh', zIndex:'1', margin:'0 auto', padding:'',  width:'100vw', textAlign:'',}}>
+//  <div style={{position:'relative', bottom:'', margin:'70px auto 0 auto', padding:' 0',  maxWidth:'500px', zIndex:'', textAlign:'', borderRadius:'12px',}}>
+//  <SignUp />
+//    </div>
+//  </ScrollAnimation>
+
+<div className="signup popper"
+  style={{
+  position:'fixed',
+  top:'15vh',
+  left:'20vw',
+  right:'20vw',
+  zIndex:'1',
+  margin:'70px auto 0 auto',
+  padding:' 0',
+  maxWidth:'500px',
+  borderRadius:'12px',
+  // display:'grid',
+  // placeSelf:'center',
+  }}>
+<SignUp />
+  </div>
+
+      ) : (
+        ""
+      )}
      
 
 </header>
 {children}
 
       
-<img className="backimage" src={image} alt="Twilightscapes Default Image" style={{height:'100vh', width:'100vw', position:'fixed', zIndex:'-2', top:'0', border:'0px solid !important', objectFit:'cover',}} />
+<img className="backimage" src={image} alt="Default Background" style={{height:'100vh', width:'100vw', position:'fixed', zIndex:'-2', top:'0', objectFit:'cover',}} width="10" height="10" />
       
       {/* <Consent /> */}
      {/* <Install /> */}

@@ -14,7 +14,7 @@ import { MdVolumeUp } from "react-icons/md"
 
 
 
-import { IoArrowRedoSharp, IoArrowUndoSharp, IoCloseOutline } from "react-icons/io5"
+import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { jsx } from "theme-ui"
 import { Link, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
@@ -28,13 +28,10 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 
 
 import { ImCross } from "react-icons/im"
-import { RxDoubleArrowUp, RxDoubleArrowDown } from "react-icons/rx"
+import { RxDoubleArrowUp } from "react-icons/rx"
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
-import { AiOutlineAudioMuted, AiFillCaretRight, AiFillCaretLeft, AiOutlineMenu, AiFillCloseCircle } from "react-icons/ai"
-import { FaShareAlt, FaInfoCircle } from "react-icons/fa"
-import { ImMenu } from "react-icons/im"
+import { AiOutlineAudioMuted } from "react-icons/ai"
 
-import { BsFillChatLeftTextFill } from "react-icons/bs"
 
 import Footer from "../components/footer"
 // import { SRLWrapper } from "simple-react-lightbox"
@@ -574,7 +571,6 @@ const YouTube = frontmatter.youtuber
                       zIndex:'',
                       right:'',
                       bottom:'',
-                      border:'2px solid ',
                       display:'grid',
                       placeContent:'center',
                       width:'60px',
@@ -687,8 +683,7 @@ const YouTube = frontmatter.youtuber
       ) : (
         ""
       )}
-<div className="pagemenu" style={{position:'fixed', bottom:'0px', zIndex:'2',  left:'0px', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80%', margin:'0 auto', gap:'5vw',
-textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', padding:'1.5vh 2vw', borderTop:'1px solid #666', borderRight:'1px solid #666', borderRadius:'0 12px 0 0', textShadow:'0 1px 1px rgba(0, 0, 0, .7)'
+<div className="pagemenu" style={{position:'fixed', bottom:'0px', zIndex:'2',  left:'0px', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80%', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'1.5vh 2vw', borderTop:'1px solid #666', borderRight:'1px solid #666', borderRadius:'0 12px 0 0', textShadow:'0 1px 1px rgba(0, 0, 0, .7)'
 
  }}>
 <div>
@@ -774,7 +769,13 @@ textShadow:'2px 2px 0 #222', color:'#fff',	background:'rgba(0, 0, 0, .9)', paddi
         
 
 
-
+{frontmatter.scrollable ? (
+<div style={{width:'100vw', height:'10vh', position:'absolute', zindex:'', top:'85vh', border:'0px solid yellow', textAlign:'center', animation:'poof 1.4s forwards', animationDelay:'4s'}}>
+  <div style={{marginTop:'', background:'rgba(9, 9, 10, 0.866)', width:'20vw', padding:'1vh 2vw', margin:'0 auto', borderRadius:'10px', color:'#fff'}}>SCROLL DOWN</div>
+</div>
+) : (
+""
+  )}
 
       
 
