@@ -191,7 +191,7 @@ const HomePage = ({ data }) => {
     const { showNav } = useSiteMetadata()
     const { showInfo } = useSiteMetadata()
     const { showFeature } = useSiteMetadata()
-    // const { showPosts } = useSiteMetadata()
+    const { showPosts } = useSiteMetadata()
     const { showResume } = useSiteMetadata()
     const { showSocial } = useSiteMetadata()
     const { showSkills } = useSiteMetadata()
@@ -402,14 +402,14 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 }}> */}
 
 {showNav ? (
-  <div className="spacer" style={{height:'70px', border:'0px solid yellow'}}></div>
+  <div id="top" className="spacer" style={{height:'70px', border:'0px solid yellow'}}></div>
       ) : (
         ""
       )}
 
-<div id="top" className="container24 horizontal-holder effects" style={{position:'relative', background:'none', maxHeight:'77vh', overflow:'hidden'}}>
 
-
+{showPosts ? (
+  <div className="container24 horizontal-holder effects" style={{position:'relative', background:'none', maxHeight:'77vh', overflow:'hidden'}}>
 
 <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
     <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
@@ -419,6 +419,12 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 </div>
 
 </div>
+      ) : (
+        ""
+      )}
+
+
+
 
 
 

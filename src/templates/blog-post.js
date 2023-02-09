@@ -768,12 +768,7 @@ const YouTube = frontmatter.youtuber
 
 
     {YouTube ? (
-<div
-          // onMouseMove={handleMouseMove}
-          // onMouseLeave={hanldeMouseLeave}
-          // ref={playerContainerRef}
-          // className={classes.playerWrapper}
-        >
+<div>
           <ReactPlayer
             allow="autoplay"
             ref={playerRef}
