@@ -16,7 +16,6 @@ liarliar: false
 audiotitle: Alternate Soundtrack
 youtuber2: https://youtu.be/CWf5FYSK7Yc
 audioend: "5000"
-nftdrop: ""
 audiostart: "20"
 date: 2023-02-03 10:43
 youtuber: https://youtu.be/SD0EKkyuakY
@@ -29,6 +28,7 @@ svgImage: /assets/lindell2.svg
 svgzindex: "0"
 youtubestart: "0"
 youtubersuggestion2: https://youtu.be/iiZnOlRPiE0
+nftdrop: "2023-02-09T09:23:00"
 ---
 <div style="text-align:left !important;">
 

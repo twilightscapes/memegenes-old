@@ -7,13 +7,13 @@ import TimeAgo from 'react-timeago'
 import { ImPlay } from "react-icons/im"
 import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
-
+import { StaticImage } from "gatsby-plugin-image"
 // import SiteLogo from "../../static/assets/logo.svg"
-// import Countdown from 'react-countdown'
+import Countdown from 'react-countdown'
 
 // const Completionist = () => ""
 
-// const Completionist = () => <span>Meme Genes</span>
+const Completionist = () => <span></span>
 // const renderer = ({ hours, minutes, seconds, completed }) => {
 //   if (completed) {
 
@@ -60,6 +60,9 @@ const PostCard = ({ data }) => (
 
 
 
+
+
+
     {data.frontmatter.featuredImage ? (
       <Link to={data.frontmatter.slug}>
         <GatsbyImage
@@ -68,47 +71,23 @@ const PostCard = ({ data }) => (
           className="featured-image1"
           placeholder="blurred"
               // loading="eager"
-              layout="constrained"
+    
               style={{position:'relative', zIndex:'1', maxHeight:'58vh', margin:'0 auto'}}
         />
-        {/* <div
-              style={{
-                alignItems: "center",
-                backgroundColor: "",
-                display: "flex",
-                flexDirection:'column',
-                justifyContent: "center",
-                justifySelf:'center',
-                position: "absolute",
-                top:'50%',
-                left:'50%',
-                zIndex:'-2'
-              }}
-           >
-
-           <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
-    <g fill="none" fillRule="evenodd">
-        <g transform="translate(1 1)" strokeWidth="2">
-            <circle strokeOpacity=".5" cx="18" cy="18" r="18"/>
-            <path d="M36 18c0-9.94-8.06-18-18-18">
-                <animateTransform
-                    attributeName="transform"
-                    type="rotate"
-                    from="0 18 18"
-                    to="360 18 18"
-                    dur="1s"
-                    repeatCount="indefinite"/>
-            </path>
-        </g>
-    </g>
-</svg>
-        </div> */}
       </Link>
       
     ) : (
-      // <Link  to={data.frontmatter.slug}><StaticImage className="featured-image" src="assets/default-og-image.jpg" alt="VidSock Default Image" style={{position:'relative', zIndex:''}} /></Link>
-      ''
+      <Link  to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{position:'relative', zIndex:''}} /></Link>
     )}
+
+
+
+
+
+
+
+
+
 
 
 <div className="post-content" style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'0', margin:'0 auto'}}>
@@ -117,15 +96,16 @@ const PostCard = ({ data }) => (
 
 { data.frontmatter.nftdrop ? (
             
-<div className="" style={{display:'flex', alignSelf:'center',  position:'absolute', bottom:'66px', width:'100vw', margin:'0 auto'}}>
+<div className="" style={{display:'flex', alignSelf:'center',  position:'absolute', bottom:'80px', width:'auto', margin:'0 auto', border:'0px solid blue', zIndex:'1', background:'rgba(0,0,0,0.6)', borderRadius:'12px' }}>
 
-<div className="countdown" style={{display:'flex', justifyContent:'center', maxWidth:'600px',  margin:'0 auto', color:'#fff', textAlign:'center', padding:'1rem', fontSize:'200%', borderRadius:'12px', border:'0px solid #111', textShadow:'1px 2px 0px #000'}}>
-{/* <Countdown date={data.frontmatter.nftdrop}> */}
+<div className="countdown" style={{display:'flex', justifyContent:'center', maxWidth:'600px',  margin:'0 auto', color:'#fff', textAlign:'center', padding:'0 2vw', fontSize:'200%', borderRadius:'12px', border:'0px solid #111', textShadow:'1px 2px 0px #000'}}>
+  
+<Countdown date={data.frontmatter.nftdrop}>
 {/* <Countdown
-date={Date.now() + 60000} className="countdown">
+date={Date.now() + 6000} className="countdown"> */}
 
 <Completionist />
-</Countdown> */}
+</Countdown>
 
 {/* <Countdown date={Date.now() + 60000} renderer={renderer} /> */}
 </div>
@@ -161,6 +141,7 @@ date={Date.now() + 60000} className="countdown">
   </Link>
 </h2>
 
+
 <p style={{minWidth:'', position:'', textAlign:'center', border:'0px solid red', fontSize:'70%'}}>
   <TimeAgo date={data.frontmatter.date}/>
 </p>
@@ -176,7 +157,7 @@ date={Date.now() + 60000} className="countdown">
     
 
 
-<div className="posticons" style={{fontWeight:'bold', padding:'1vh 2vw', width:'34vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px', position:'absolute', bottom:'10vh', left:'30vw', right:'30vw', margin:'0 auto'}}>
+<div className="posticons" style={{fontWeight:'bold', padding:'1vh 2vw', width:'34vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px', position:'absolute', bottom:'15vh', left:'30vw', right:'30vw', margin:'0 auto'}}>
 
   
 

@@ -28,7 +28,7 @@ underlayImage:
 featuredImage: /assets/m-16-columbine.webp
 svgImage:
 scrollable: false
-nftdrop: ""
+nftdrop: "2023-02-09T10:00:00"
 contentinvideo: false
 ---
 NRA and GOP Approved!

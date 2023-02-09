@@ -28,8 +28,7 @@ underlayImage:
 featuredImage: /assets/roofies-ad.webp
 svgImage:
 scrollable: false
-nftdrop: ""
-
+nftdrop: "2023-02-09T10:00:00"
 contentinvideo: false
 ---
 

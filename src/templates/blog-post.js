@@ -11,7 +11,7 @@ import { MdPause } from "react-icons/md"
 import { MdVolumeOff } from "react-icons/md"
 // import { MdVolumeDown } from "react-icons/md"
 import { MdVolumeUp } from "react-icons/md"
-
+import { StaticImage } from "gatsby-plugin-image"
 
 
 import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
@@ -24,7 +24,7 @@ import { RiArrowRightDownFill } from "react-icons/ri"
 import CommentBox from "../components/commentbox"
 // import { StaticImage } from "gatsby-plugin-image"
 import useSiteMetadata from "../hooks/SiteMetadata"
-// import Countdown from 'react-countdown'
+import Countdown from 'react-countdown'
 
 
 import { ImCross } from "react-icons/im"
@@ -46,7 +46,7 @@ import Layout from "../components/siteLayout"
 import ShareSocial from '../components/share' 
 import GoBack from "../components/goBack"
 import { ImPlay } from "react-icons/im"
-// import TimeAgo from 'react-timeago'
+import TimeAgo from 'react-timeago'
 import styled from "styled-components"
 const CustomBox = styled.div`
 
@@ -166,7 +166,7 @@ const Post = ({ data, pageContext }) => {
 
   //   const scrollable = frontmatter.scrollable
 
-  //   const NftDrop = frontmatter.nftdrop
+    const NftDrop = frontmatter.nftdrop
 
 
 
@@ -636,6 +636,28 @@ const YouTube = frontmatter.youtuber
   };
   
 
+
+
+
+  const Completionist = () => <div style={{}}>
+   {FrontImage ? (
+            <GatsbyImage
+              image={FrontImage}
+              alt={frontmatter.title + " - Featured image"}
+              className="featured-image1 layer1"
+              placeholder="blurred"
+              loading="eager"
+              layout="constrained"
+              style={{position:'', zIndex:'', maxHeight:'', margin:''}}
+            />
+
+          ) : (
+            <StaticImage className="featured-image" src="../../static/assets/default-og-image.jpg" alt="Default Image" style={{position:'relative', zIndex:'', maxHeight:'58vh',}} />
+          )}
+
+  </div>
+
+  
   return (
     
     <Layout className="page">
@@ -714,6 +736,8 @@ const YouTube = frontmatter.youtuber
 
 
 
+
+
 {YouTubeControls ? (
 ""
        
@@ -741,143 +765,143 @@ const YouTube = frontmatter.youtuber
 
       
 
-<div className="wrap-element effects" style={{
- 
-  // height:'clamp(30vh, 80vh, 100vh)',
-  aspectRatio:'16/9',
-  }}>
+<div className="wrap-element effects" style={{aspectRatio:'16/9',}}>
 
 
-
+{ NftDrop ? (
+  
 <div style={{ width:'100vw', height:'',  top:'0', zIndex:'-2', border:'0px solid red', paddingBottom:'', margin:'0 auto', display:'flex', flexDirection:'column', justifyContent:'center'}}>
-{FrontImage ? (
-            <GatsbyImage
-              image={FrontImage}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image1 layer1"
-              placeholder="blurred"
-              loading="eager"
-              layout="constrained"
-              style={{position:'', zIndex:'', maxHeight:'', margin:''}}
-            />
 
-          ) : (
-          ""
-          )}
-    </div>
-
-
-    {YouTube ? (
-<div>
-          <ReactPlayer
-            allow="autoplay"
-            ref={playerRef}
-            style={{position:'', zIndex:'0'}}
-            width="100%"
-            height="100%"
-          //       url={[
-          //   iframeUrl,
-          //   Suggestion1,
-          //   Suggestion2,
-          //   Suggestion3
-          // ]}
-          // url={[
-          //   iframeUrl,
-          //   YoutuberSuggestion1,
-          //   YoutuberSuggestion2,
-          //   YoutuberSuggestion3
-          // ]}
-            // url={[YoutubePlaylist, IfSuggestion1, IfSuggestion2, IfSuggestion3]}
-            // url="https://youtu.be/lZzai6at_xA"
-            url={iframeUrl}
-            playing={playing}
-            controls={controls}
-            light={light}
-            loop={loop}
-            muted={muted}
-            playsinline
-            config={{
-              file: {
-                attributes: {
-                  crossorigin: "anonymous",
-                },
-              },
-              youtube: {
-                playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:YoutubeLoop }
-              },
-            }}
-          
-          />
-          <div className="youtubeblockertop" style={{position:'absolute', display:'block', background:'#000', height:'', width:'100%', zIndex:'4', top:'0', right:'0', textAlign:'center', padding:'12px',
-          animation:'fadeout 1s forwards', animationDelay:'4s'
-        
-        }}>MemeGenes.com</div>
+<div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
+<Countdown date={NftDrop} >
+{/* <Countdown date={Date.now() + 10000}> */}
+<Completionist />
+</Countdown>
 </div>
 
-) : (
-  ""
-  )}
 
-
-
-
-
-{UnderlayImage ? (
-            <GatsbyImage
-              image={UnderlayImage}
-              alt={frontmatter.title + " - image"}
-              className="mcboaty1"
-              style={{height:'auto', width:'100%', maxHeight:'100%', overflow:'hidden', position:'absolute', left:'0', right:'0', bottom:'0', top:'0', zIndex:'0',
-             objectFit:'cover', border:'0px solid red !important', background:'transparent',}}
-            />
+{YouTube ? (
+  <div>
+            <ReactPlayer
+              allow="autoplay"
+              ref={playerRef}
+              style={{position:'', zIndex:'0'}}
+              width="100%"
+              height="100%"
+            //       url={[
+            //   iframeUrl,
+            //   Suggestion1,
+            //   Suggestion2,
+            //   Suggestion3
+            // ]}
+            // url={[
+            //   iframeUrl,
+            //   YoutuberSuggestion1,
+            //   YoutuberSuggestion2,
+            //   YoutuberSuggestion3
+            // ]}
+              // url={[YoutubePlaylist, IfSuggestion1, IfSuggestion2, IfSuggestion3]}
+              // url="https://youtu.be/lZzai6at_xA"
+              url={iframeUrl}
+              playing={playing}
+              controls={controls}
+              light={light}
+              loop={loop}
+              muted={muted}
+              playsinline
+              config={{
+                file: {
+                  attributes: {
+                    crossorigin: "anonymous",
+                  },
+                },
+                youtube: {
+                  playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:YoutubeLoop }
+                },
+              }}
             
-          ) : (
-            ""
-          )}
+            />
+            <div className="youtubeblockertop" style={{position:'absolute', display:'block', background:'#000', height:'', width:'100%', zIndex:'4', top:'0', right:'0', textAlign:'center', padding:'12px',
+            animation:'fadeout 1s forwards', animationDelay:'4s'
+          
+          }}>MemeGenes.com</div>
+  </div>
+  
+  ) : (
+    ""
+    )}
+  
+  
+  
+  
+  
+  {UnderlayImage ? (
+              <GatsbyImage
+                image={UnderlayImage}
+                alt={frontmatter.title + " - image"}
+                className="mcboaty1"
+                style={{height:'auto', width:'100%', maxHeight:'100%', overflow:'hidden', position:'absolute', left:'0', right:'0', bottom:'0', top:'0', zIndex:'0',
+               objectFit:'cover', border:'0px solid red !important', background:'transparent',}}
+              />
+              
+            ) : (
+              ""
+            )}
+  
+            
+  
+  
+  
+  
+   {Suggestion1 ? (
+              <div style={{position:'absolute', top:'0', left:'', bottom:'', zIndex:'', maxWidth:'100vw', height:''}}>
+              <YouTubed />
+              </div>
+         
+            ) : (
+              ""
+            )}
+  
+  
+  
+  
+  
+  
+  {/*  SPECIAL CONTENT */}
+  
+  {ContentinVideo ? (
+    <div id="contentvideo"
+          className="blog-post-content effects" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'0px solid transparent', position:'absolute', bottom:'', left:'0', top:'0', right:'0', zindex:'-1', maxHeight:'100vh', borderBottom:'0px solid', }}
+          dangerouslySetInnerHTML={{ __html: html }}
+        ></div>
+   ) : (
+    ""
+  )}
+  
+  
+          
+  {Svg ? (
+    <AddSvg />
+       ) : (
+         ""
+         )}
+  
+  
+  
+  
+  
+          </div>
+
 
           
+) : (
+<StaticImage className="featured-image" src="../../static/assets/default-og-image.jpg" alt="Default Image" style={{position:'relative', zIndex:'', maxHeight:'58vh',}} />
 
-
-
-
- {Suggestion1 ? (
-            <div style={{position:'absolute', top:'0', left:'', bottom:'', zIndex:'', maxWidth:'100vw', height:''}}>
-            <YouTubed />
-            </div>
-       
-          ) : (
-            ""
-          )}
-
-
-
-
-
-
-{/*  SPECIAL CONTENT */}
-
-{ContentinVideo ? (
-  <div id="contentvideo"
-        className="blog-post-content effects" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'0px solid transparent', position:'absolute', bottom:'', left:'0', top:'0', right:'0', zindex:'-1', maxHeight:'100vh', borderBottom:'0px solid', }}
-        dangerouslySetInnerHTML={{ __html: html }}
-      ></div>
- ) : (
-  ""
 )}
+    
+    </div>
 
-
-        
-{Svg ? (
-  <AddSvg />
-     ) : (
-       ""
-       )}
-
-
-
-
-
-        </div>
+    
 
 
 
@@ -933,7 +957,7 @@ const YouTube = frontmatter.youtuber
   <div className="article-header" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
             <h1 className="headline" style={{fontSize:''}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
-            {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
+           Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
           </div>
   </header>
             ) : (

@@ -29,7 +29,7 @@ underlayImage: /assets/tv-crew.webp
 featuredImage: /assets/kari-no-filter.webp
 svgImage: 
 scrollable: true
-nftdrop: ""
+nftdrop: "2023-02-09T10:00:00"
 contentinvideo: true
 ---
 <div class="contentinside lake1" style="">

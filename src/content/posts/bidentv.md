@@ -28,8 +28,7 @@ underlayImage:
 featuredImage: /assets/yourmemegoeshere.webp
 svgImage:
 scrollable: false
-nftdrop: ""
-
+nftdrop: "2023-02-09T07:00:00"
 contentinvideo: false
 ---
 Your Meme Goes Here Dipshit!

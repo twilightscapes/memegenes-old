@@ -26,7 +26,7 @@ underlayImage: "/assets/transparent.png"
 featuredImage: /assets/murica-promo.png
 svgImage: /assets/murica.svg
 scrollable: false
-nftdrop: ""
+nftdrop: "2023-02-09T10:00:00"
 
 contentinvideo: true
 ---

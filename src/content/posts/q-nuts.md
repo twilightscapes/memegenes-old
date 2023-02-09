@@ -28,8 +28,7 @@ underlayImage:
 featuredImage: /assets/q-nuts.webp
 svgImage:
 scrollable: false
-nftdrop: ""
-
+nftdrop: "2023-02-09T10:00:00"
 contentinvideo: false
 ---
 Where they go one, they go all!

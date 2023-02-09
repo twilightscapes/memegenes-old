@@ -28,8 +28,7 @@ underlayImage:
 featuredImage: /assets/vitamin-meth.webp
 svgImage:
 scrollable: false
-nftdrop: ""
-
+nftdrop: "2023-02-09T10:00:00"
 contentinvideo: false
 ---
 Your kids will love it!

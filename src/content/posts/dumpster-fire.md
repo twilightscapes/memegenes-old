@@ -28,7 +28,7 @@ underlayImage: /assets/trump-dumpfire.webp
 featuredImage: /assets/trump-fire-promo.webp
 svgImage: 
 scrollable: true
-nftdrop: 
+nftdrop: "2023-02-09T10:00:00"
 contentinvideo: false
 ---
 <div class="contentinside">

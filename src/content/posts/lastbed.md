@@ -28,7 +28,7 @@ underlayImage:
 featuredImage: /assets/MyLastBed.webp
 svgImage:
 scrollable: true
-nftdrop: ""
+nftdrop: "2023-02-09T07:00:00"
 contentinvideo: false
 ---
 America's Favorite Pillow Guy has a brand product out, called My Last Bed! 

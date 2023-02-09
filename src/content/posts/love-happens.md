@@ -28,8 +28,7 @@ underlayImage:
 featuredImage: /assets/love-happens.webp
 svgImage:
 scrollable: false
-nftdrop: ""
-
+nftdrop: "2023-02-09T07:00:00"
 contentinvideo: false
 ---
 When good love goes bad.
