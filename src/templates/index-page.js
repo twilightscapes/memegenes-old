@@ -438,7 +438,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 {showFeature ? (
-<>
+<div>
 {Image ? (
   <GatsbyImage
     image={Image}
@@ -456,7 +456,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'70vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
 
 )}
-</>
+</div>
       ) : (
         ""
       )}
@@ -729,7 +729,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   <div className="keyboard" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'auto !important', margin:'0 auto', lineHeight:'calc(2em + .4vw)',}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Install:</span> &nbsp;<IoShareOutline style={{fontSize:'38px',}} />&nbsp;+&nbsp; 'Add to Home Screen'</div>
   </div>
 <br />
-<article className="hasapp"  style={{ display:'', height:'', overflow:'', padding:'1.6rem', margin:'0', position:'relative', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}}>
+<article className="hasapp"  style={{ display:'', height:'', overflow:'', padding:'1.6rem', margin:'0', position:'relative', fontSize:'clamp(1rem, 1.4vw, 3.2rem)',  background:'rgba(24, 29, 31, 0.7)',  backdropFilter:'blur(12px)', padding:'4%', borderRadius:'12px', color:'#fff'}}>
 
 <div id="resumename" style={{display:'none', position:'relative', top:'', fontSize:'160%', padding:'0 0 2rem 0', textAlign:'left', width:'100%',}}>{companyname}<br />
 {frontmatter.addressText}
@@ -773,7 +773,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 <section className="print vertical" id="skills" order="5" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'0 auto', textAlign:'center', borderRadius:'8px', minHeight:'', maxWidth:'', padding:'1rem', display:'', placeContent:'', border:'0px solid green', }}>
 <br />
 <ScrollAnimation animateIn="bounceInUp" animateOut="BounceOutDown" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
-<div className="flexbutt" style={{display:'flex', justifyContent:'center', width:'', padding:'0 2%', columnGap:'50px', border:'0px solid blue' }} dangerouslySetInnerHTML={{ __html: SkillsText }}>
+<div className="flexbutt" style={{display:'flex', justifyContent:'center', width:'', padding:'0 2%', columnGap:'50px', border:'0px solid blue',  background:'rgba(24, 29, 31, 0.7)',  backdropFilter:'blur(12px)', padding:'4%', borderRadius:'12px', color:'#fff' }} dangerouslySetInnerHTML={{ __html: SkillsText }}>
 </div>
 </ScrollAnimation>
   </section>

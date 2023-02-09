@@ -69,7 +69,7 @@ const PostCard = ({ data }) => (
           placeholder="blurred"
               // loading="eager"
               layout="constrained"
-              style={{position:'relative', zIndex:'1', maxHeight:'65vh'}}
+              style={{position:'relative', zIndex:'1', maxHeight:'65vh', margin:'0 auto'}}
         />
         {/* <div
               style={{
@@ -142,7 +142,7 @@ date={Date.now() + 60000} className="countdown">
 
 <div className="" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'10px auto', height:'100%', textAlign:'left', padding:'1vh 1vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'8px', color:'#fff' }}>
 
-<h2 className="title" style={{fontSize:'clamp(1.3rem, 2.8vw, 3.8rem)', }}>
+<h2 className="title" style={{fontSize:'clamp(1rem, 2.4vw, 3.8rem)', }}>
   <Link 
     to={data.frontmatter.slug}
   >
@@ -176,7 +176,7 @@ date={Date.now() + 60000} className="countdown">
     
 
 
-<div className="posticons" style={{fontWeight:'bold', padding:'1vh 2vw', width:'20vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px', position:'absolute', bottom:'4vh', left:'30vw', right:'30vw', margin:'0 auto'}}>
+<div className="posticons" style={{fontWeight:'bold', padding:'1vh 2vw', width:'34vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px', position:'absolute', bottom:'4vh', left:'30vw', right:'30vw', margin:'0 auto'}}>
 
   
 

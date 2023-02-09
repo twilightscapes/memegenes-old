@@ -118,7 +118,7 @@ li h2{
     padding:1px 1vw 1px 3vw;
     margin:-2.6vh auto 2vh auto;
     border-radius: 12px;
-    font-size:clamp(2rem, 4.5vw, 5.8rem) !important;
+    font-size:clamp(1.2rem, 3.5vw, 4.8rem) !important;
     color: #ddd;
       text-align:center;
     		/* text-shadow: 0 20px 7px #000,0 8px 20px rgb(40, 8, 202),0px 12px 10px rgb(139, 142, 167),0 2px rgb(39, 67, 227),0 5px 2px rgb(39, 61, 227),0 0 2px rgb(39, 52, 227),0 0 2px rgb(39, 42, 227),0 0 1px rgb(39, 73, 227); */
@@ -131,7 +131,7 @@ li h2{
 
 Donald J. Trump served as the President of the United States from January 20, 2017, to January 20, 2021. During his time in office, he was known for his controversial policies, tweets, and public statements.
 
-<div class="" style="font-size:clamp(3rem, 3.8vw, 3.8rem); padding:0; text-align:center; width:80%; height:; overflow:visible; margin:5vh auto; border-radius:12px;">10 Major Failures<br />of the Trump Presidency:</div>
+<div class="" style="font-size:clamp(2rem, 3vw, 3.8rem); padding:0; text-align:center; width:80%; height:; overflow:visible; margin:5vh auto; border-radius:12px;">10 Major Failures<br />of the Trump Presidency:</div>
 
 <ol class="numblist" style="">
 <li>

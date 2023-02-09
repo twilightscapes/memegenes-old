@@ -979,7 +979,7 @@ clamp(4vw, 100%, 1.5vw)
   </div>
 
   <div className="article-header" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
-            <h1 className="headline" style={{fontSize:'4vw'}}>{frontmatter.title}</h1>
+            <h1 className="headline" style={{fontSize:''}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
             {/* <TimeAgo date={frontmatter.date} style={{color:'#fff !important'}} /> */}
           </div>
