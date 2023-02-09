@@ -1944,7 +1944,7 @@ body.homepage .horizontal-holder{height:inherit !important}
 		position:absolute !important;
 		right:10px;
 		bottom:inherit !important;
-		top:36vh !important;
+		top:42vh !important;
 		width:inherit !important;
 		margin:0 auto !important;
    }
@@ -1953,13 +1953,9 @@ body.homepage .horizontal-holder{height:inherit !important}
 	height:40px;
    }
 
-	// .pagination{
-	// 	position:absolute;
-	// 	top:50vh !important;
-	// 	border:0px solid yellow !important;
-	// 	width:90% !important;
-	// 	margin:0 auto !important;
-	// }
+
+.pagemenu{position:fixed !important; top:70vh;}
+
 	.pagination li {
 		width:100% !important;
 	}

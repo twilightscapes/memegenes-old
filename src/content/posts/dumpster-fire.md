@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Ex-President Trump's administration ranked worst ever - a total and complete dumpster fire!
+title: Ex-President Trump's administration ranked worst ever!
 slug: /dumpster-fire
 date: 2023-02-09 10:43
 description: Aw Snap! What was that? Skari Lake's face literally just slid off her head.

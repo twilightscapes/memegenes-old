@@ -29,6 +29,8 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 
 import { ImCross } from "react-icons/im"
 import { RxDoubleArrowUp } from "react-icons/rx"
+import { RiCloseCircleFill } from "react-icons/ri"
+
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { AiOutlineAudioMuted } from "react-icons/ai"
 
@@ -562,20 +564,6 @@ const YouTube = frontmatter.youtuber
                     onClick={onPlayPause}
                     className="controls" 
                     style={{
-                      animation:'fade1',
-                      animationDuration:'1s',
-                      animationDelay:'5s',
-                      opacity:'1',
-                      animationFillMode:'forwards',
-                      position:'relative',
-                      zIndex:'',
-                      right:'',
-                      bottom:'',
-                      display:'grid',
-                      placeContent:'center',
-                      width:'60px',
-                      height:'60px',
-                      fontWeight:'bold', padding:'.3rem', color:'#999', fontSize:'1rem',  borderRadius:'8px', border:'1px solid #666', cursor:'pointer',
                   }}
                   >
                     {/* <MdPlayArrow style={{fontSize:'50px', position:'absolute'}}  /> */}
@@ -683,21 +671,26 @@ const YouTube = frontmatter.youtuber
       ) : (
         ""
       )}
-<div className="pagemenu" style={{position:'fixed', bottom:'0px', zIndex:'2',  left:'0px', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80%', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'1.5vh 2vw', borderTop:'1px solid #666', borderRight:'1px solid #666', borderRadius:'0 12px 0 0', textShadow:'0 1px 1px rgba(0, 0, 0, .7)'
-
+<div className="pagemenu" style={{position:'absolute', top:'89vh', zIndex:'2',  left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80%', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'1vh 1vw', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7), color:#fff'
  }}>
 <div>
 
     {isMobile ? 
-      <AnchorLink to="#top" style={{cursor:'pointer'}}><button onClick={resizeDesk} aria-label="Return To Top" style={{cursor:'pointer', padding:'5px 5px'}}><RxDoubleArrowUp /></button></AnchorLink> :
-      <button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'5px 5px'}}>x</button>
+      // <AnchorLink to="#top" style={{cursor:'pointer'}}>
+        <button onClick={resizeDesk} aria-label="Return To Top" style={{cursor:'pointer', padding:'1vh 0 0 0', color:'#fff', fontSize:'2.5vw'}}><RxDoubleArrowUp />
+        </button>
+      // </AnchorLink> 
+       :
+      // <AnchorLink to="#top" style={{cursor:'pointer'}}>
+        <button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'1vh 0 0 0', color:'#fff', fontSize:'2.5vw'}}><RiCloseCircleFill /></button>
+        // </AnchorLink>
     }
 
 </div>
 
         {/* <label aria-label="open menu" id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer', color:'#fff', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,3))'}}><ImMenu style={{cursor:'pointer', padding:'', width:'5vw', height:'20px'}} /></label> */}
 
-<div className="menusnapp" style={{ display:'', justifyContent:'', width:'auto', margin:'0 auto', gap:'',}}>
+<div className="menusnapp" style={{ display:'', justifyContent:'', width:'auto', margin:'0 auto', gap:'', color:'#fff'}}>
   
    
 
