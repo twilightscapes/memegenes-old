@@ -52,7 +52,7 @@ const PostCard = ({ data }) => (
 
   <article
     className="post-card1"
-    style={{display:'flex', flexDirection:'column', alignItems:'', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'0' }}
+    style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'0' }}
   >
 
 
@@ -111,7 +111,7 @@ const PostCard = ({ data }) => (
     )}
 
 
-<div className="post-content" style={{display:'flex'}}>
+<div className="post-content" style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'0', margin:'0 auto'}}>
 
 
 
@@ -183,7 +183,7 @@ date={Date.now() + 60000} className="countdown">
 
 {/* <SiteLogo className="posticon" style={{margin:'0 auto', height:'20vh', width:'100%',}}/> */}
 
-<div style={{display:'flex', justifyContent:'space-around'}}>
+<div style={{display:'flex', justifyContent:'space-around', gap:'2vw'}}>
 
 <FaImage className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
 
