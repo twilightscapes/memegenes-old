@@ -28,7 +28,7 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 
 
 import { ImCross } from "react-icons/im"
-import { RxDoubleArrowUp } from "react-icons/rx"
+
 import { RiCloseCircleFill, RiMenuUnfoldFill, RiArrowUpFill } from "react-icons/ri"
 
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
@@ -673,7 +673,7 @@ const YouTube = frontmatter.youtuber
       )}
 
 
-<div className="pagemenu" style={{position:'fixed', top:'90vh', zIndex:'2',  left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7), color:#fff', fontSize:'clamp(2rem, 3vw, 3rem)' }}>
+<div className="pagemenu" style={{position:'fixed', top:'90vh', zIndex:'2',  left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7), color:#999', fontSize:'clamp(2rem, 3vw, 3rem)' }}>
 {/* 
 clamp(2rem, 3vw, 3rem);
 clamp(4vw, 100%, 1.5vw)
@@ -681,7 +681,7 @@ clamp(4vw, 100%, 1.5vw)
 
         {/* <label aria-label="open menu" id="menuicon1" htmlFor="openSidebarMenu" className="sidebarIconToggle1" style={{cursor:'pointer', color:'#fff', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,3))'}}><ImMenu style={{cursor:'pointer', padding:'', width:'5vw', height:'20px'}} /></label> */}
 
-<div className="menusnapp" style={{display:'flex', gap:'1vw', padding:'1vh 1vw'}}>
+<div className="menusnapp" style={{display:'flex', gap:'1vw', padding:'1vh 1vw', color:'#999'}}>
   
 {/* {Comments ? (
           <AnchorLink to="#comments"  style={{cursor:'pointer', padding:''}}>
@@ -718,7 +718,7 @@ clamp(4vw, 100%, 1.5vw)
           )} */}
 
 {frontmatter.scrollable ? (
-  <AnchorLink to="#top" style={{cursor:'pointer', height:'2vh'}}><RiArrowUpFill style={{cursor:'pointer'}} /></AnchorLink>
+  <AnchorLink to="#top" style={{cursor:'pointer', height:'2vh'}}><RiArrowUpFill style={{cursor:'pointer', color:'#999'}} /></AnchorLink>
 ) : (
 ""
   )}
@@ -733,19 +733,19 @@ clamp(4vw, 100%, 1.5vw)
       <div style={{display:'flex', gap:'2vw', padding:'1vh 1vw'}}>
 
 {frontmatter.scrollable ? (
-  <AnchorLink to="#top" aria-label="Return To TOP" style={{cursor:'pointer', height:''}}><RiArrowUpFill style={{cursor:'pointer'}} /></AnchorLink>
+  <AnchorLink to="#top" aria-label="Return To TOP" style={{cursor:'pointer', height:''}}><RiArrowUpFill style={{cursor:'pointer', color:'#999'}} /></AnchorLink>
 ) : (
 ""
   )}
 
-        <button onClick={resizeDesk} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 0 0 0', color:'#fff'}}><RiMenuUnfoldFill />
+        <button onClick={resizeDesk} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 0 0 0', color:'#999'}}><RiMenuUnfoldFill />
         </button>
         </div>
 
        :
 
       <div style={{display:'flex', gap:'2vw', padding:'1vh 1vw'}}>
-        <button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0', color:'#fff'}}><RiCloseCircleFill /> 
+        <button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0', color:'#999'}}><RiCloseCircleFill /> 
         </button>
         </div>
         
