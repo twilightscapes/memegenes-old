@@ -3,7 +3,7 @@ template: blog-post
 title: Ex-President Trump's administration ranked worst ever!
 slug: /dumpster-fire
 date: 2023-02-09 10:43
-description: Aw Snap! What was that? Skari Lake's face literally just slid off her head.
+description: The worst presidency, evar! It is amazing that we ever survived it at all. Now we're finding out just how awful it was.
 youtuber: "https://youtu.be/7g7kH671BVA"
 youtuber2: 
 youtubeshoworiginal: true
@@ -64,26 +64,51 @@ animation-iteration-count:infinite;
 }
 .numblist li::before {
   content: counter(inst);
-  background: rgb(27, 42, 98);
-  color: #fff;
+  background: rgba(0, 0, 0, .2);
+  backdrop-filter: blur(12px);
+  color: #999;
   font-size:clamp(3rem, 10vw, 5rem);
   font-weight: 700;
   font-style: italic;
   border-radius: 0 0.675em 0.675em 0;
-  text-align: center;
-  left: -8vw;
-  top: -4%;
-  width: 15vw;
+  text-align: right;
+  left: -40%;
+top:0;
+  width: 240px;
   position: absolute;
   transition: all 0.2s ease-in-out;
-  text-shadow: .5vw -.5vh .3vw #000,0 8px 20px rgb(40, 8, 202),0px 12px 10px rgb(139, 142, 167),0 2px rgb(39, 67, 227),0 5px 2px rgb(39, 61, 227),0 0 2px rgb(39, 52, 227),0 0 2px rgb(39, 42, 227),0 0 1px rgb(39, 73, 227);
-  /* z-index: -1; */
+  text-shadow: .5vw -.5vh .3vw #000,0 8px 20px rgb(40, 8, 202),0px 12px 10px rgb(139, 142, 167),0 2px rgb(39, 67, 227),0 5px 2px rgb(39, 61, 227),0 0 2px rgb(39, 52, 227),0 0 2px rgb(39, 42, 227),0 0 1px rgb(39, 73, 227); */
 }
-@media (min-width: 33em) {
+
+.numblist li::after {
+  content: counter(inst);
+  background: rgba(0, 0, 0, .2);
+  backdrop-filter: blur(12px);
+  color: #999;
+  font-size:clamp(3rem, 10vw, 5rem);
+  font-weight: 700;
+  font-style: italic;
+  border-radius: 0.675em 0   0 0.675em;
+  text-align: left;
+  right: -40%;
+top:0;
+  width: 240px;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  text-shadow: .5vw -.5vh .3vw #000,0 8px 20px rgb(40, 8, 202),0px 12px 10px rgb(139, 142, 167),0 2px rgb(39, 67, 227),0 5px 2px rgb(39, 61, 227),0 0 2px rgb(39, 52, 227),0 0 2px rgb(39, 42, 227),0 0 1px rgb(39, 73, 227); */
+}
+
+@media (min-width:50em) {
   .numblist li:before {
-    border-radius: 50%;
-    width: 8vw;
-    margin-top:5vh;
+    width: 350px;
+    left: -30%;
+    top:1vh;
+  }
+  
+    .numblist li::after {
+    width: 350px;
+    right: -30%;
+    top:1vh;
   }
 }
 li h2{
@@ -91,9 +116,10 @@ li h2{
     padding:1px 1vw 1px 3vw;
     margin:-2.6vh auto 2vh auto;
     border-radius: 12px;
-    font-size:clamp(2.5rem, 4.5vw, 5.8rem) !important;
+    font-size:clamp(2rem, 4.5vw, 5.8rem) !important;
     color: #ddd;
-    		text-shadow: 0 20px 7px #000,0 8px 20px rgb(40, 8, 202),0px 12px 10px rgb(139, 142, 167),0 2px rgb(39, 67, 227),0 5px 2px rgb(39, 61, 227),0 0 2px rgb(39, 52, 227),0 0 2px rgb(39, 42, 227),0 0 1px rgb(39, 73, 227);
+      text-align:center;
+    		/* text-shadow: 0 20px 7px #000,0 8px 20px rgb(40, 8, 202),0px 12px 10px rgb(139, 142, 167),0 2px rgb(39, 67, 227),0 5px 2px rgb(39, 61, 227),0 0 2px rgb(39, 52, 227),0 0 2px rgb(39, 42, 227),0 0 1px rgb(39, 73, 227); */
 }
 
     </style>
@@ -103,7 +129,7 @@ li h2{
 
 Donald J. Trump served as the President of the United States from January 20, 2017, to January 20, 2021. During his time in office, he was known for his controversial policies, tweets, and public statements.
 
-<div class="headline" style="font-size:clamp(2rem, 2.8vw, 3.8rem); padding:0; text-align:center; width:80%; height:; overflow:visible; margin:5vh auto; border-radius:12px;">10 Major Failures<br />of the Trump Presidency:</div>
+<div class="" style="font-size:clamp(3rem, 3.8vw, 3.8rem); padding:0; text-align:center; width:80%; height:; overflow:visible; margin:5vh auto; border-radius:12px;">10 Major Failures<br />of the Trump Presidency:</div>
 
 <ol class="numblist" style="">
 <li>

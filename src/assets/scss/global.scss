@@ -599,11 +599,12 @@ p{
 }
 .headline{
 		color: #fff;
-		text-shadow: 0 20px 7px #000,0 8px 20px rgb(40, 8, 202),0px 12px 10px rgb(139, 142, 167),0 2px rgb(39, 67, 227),0 5px 2px rgb(39, 61, 227),0 0 2px rgb(39, 52, 227),0 0 2px rgb(39, 42, 227),0 0 1px rgb(39, 73, 227);
+		// text-shadow: 0 20px 7px #000,0 8px 20px rgb(40, 8, 202),0px 12px 10px rgb(139, 142, 167),0 2px rgb(39, 67, 227),0 5px 2px rgb(39, 61, 227),0 0 2px rgb(39, 52, 227),0 0 2px rgb(39, 42, 227),0 0 1px rgb(39, 73, 227);
 		font-size:clamp(1.5rem, 3.5vw, 3.8rem);
 		max-width: 1024px;
 		padding:1vh 8vw;
 		background: rgba(0, 0, 0, 0.7);
+		border-radius: 12px;
 }
 
 
@@ -1046,7 +1047,7 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 
 a[aria-current] {
 	cursor: default !important;
-	color:rgb(227, 39, 45) !important;
+	// color:rgb(227, 39, 45) !important;
 	pointer-events: none !important;
 	box-shadow: none;
 	filter: none !important;
