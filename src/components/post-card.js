@@ -172,11 +172,11 @@ date={Date.now() + 60000} className="countdown">
 <Link to={data.frontmatter.slug} style={{}}>
   <div className="spotlight">
 
-  <div style={{display:'grid', placeContent:'center'}}>
+  <div style={{display:'grid', placeContent:'center', position:'relative'}}>
     
 
 
-<div className="posticons" style={{fontWeight:'bold', padding:'1rem 2vw', width:'20vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px',}}>
+<div className="posticons" style={{fontWeight:'bold', padding:'1vh 2vw', width:'20vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px', position:'absolute', bottom:'4vh', left:'30vw', right:'30vw', margin:'0 auto'}}>
 
   
 
