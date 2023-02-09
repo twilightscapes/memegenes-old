@@ -318,12 +318,12 @@ animation-iteration-count:infinite;
 	  }
 	}
 
-	body.bloglist::before{content:"Where great memes go to die";}
+	body.bloglist .effects::before{content:"Where great memes go to die";}
 	
 	body.blogpost .effects::before{content:"MemeGenes.com";}
 
 
-     body.blogpost .effects::before,  body.bloglist::before{
+     body.blogpost .effects::before,  body.bloglist .effects::before{
 		  position:absolute;
 		  display: flex;
 		  align-items: flex-start;
