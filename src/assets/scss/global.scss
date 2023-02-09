@@ -2066,6 +2066,22 @@ body.homepage .horizontal-holder{height:inherit !important}
 
 
 
+.avatar-frame img {
+	width: 100%;
+	/* clip-path: circle();
+	border-radius: 58%; */
+	background: transparent !important;
+	margin: 1% auto;
+	background-position: top;
+	opacity: 0;
+	transition: opacity 1200ms ease-in-out;
+	// max-height: 100px;
+	max-width: 250px;
+}
+.avatar-frame {
+	filter: drop-shadow(0px 0px 4px #999);
+}
+
 
 
 

@@ -547,8 +547,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 
-
-           {secondaryImage ? (
+{secondaryImage ? (
             <GatsbyImage
               image={secondaryImage}
               alt={frontmatter.title + " - Featured image"}

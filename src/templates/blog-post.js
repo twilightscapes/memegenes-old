@@ -801,7 +801,7 @@ clamp(4vw, 100%, 1.5vw)
               image={FrontImage}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{ width:'100vw', height:'100%',  top:'0', zIndex:'-2', border:'0px solid red !important', paddingBottom:'',}}
+              style={{ width:'100vw', height:'100%',  top:'0', zIndex:'-2', border:'0px solid red !important', paddingBottom:'', margin:'0 auto',}}
             />
 
           ) : (

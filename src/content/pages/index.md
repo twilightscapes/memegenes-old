@@ -57,7 +57,7 @@ cta:
   ctaText: Contact Me
   ctaLink: ""
 svgImage: /assets/null.svg
-secondaryImage: /assets/brookswasherebg.jpg
+secondaryImage: /assets/default-user.webp
 title: Digital Product Designer
 youtubeend: "90"
 sharethis: false
