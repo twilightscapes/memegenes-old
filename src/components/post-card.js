@@ -52,7 +52,7 @@ const PostCard = ({ data }) => (
 
   <article
     className="post-card1"
-    style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'0' }}
+    style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'2vh 0' }}
   >
 
 

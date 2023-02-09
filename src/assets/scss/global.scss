@@ -9,7 +9,7 @@ body {
 	font-family: var(--font-body);
 	// color:#eee;
 	// background:#111;
-	// overflow-x: hidden !important;
+	overflow-x: hidden !important;
 	/* overflow-y: hidden !important;
 	*/
 	width:100vw;
@@ -833,9 +833,9 @@ body.homepage .resp-sharing-button__icon svg{ width: 5vw; height: 5vh;}
 
 /* Safari Desktop NO SNAP */
 @supports(font:-apple-system-body) and (not(-webkit-touch-callout:default)){
-	.horizontal-scroll-wrapper, .horizontal-scroll {
-		scroll-snap-type:none !important;
-	}
+	// .horizontal-scroll-wrapper, .horizontal-scroll {
+	// 	scroll-snap-type:inherit !important;
+	// }
 	
 }
 /* iOS ONLY browsers */

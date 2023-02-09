@@ -383,8 +383,10 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
      
 
 </header>
-{children}
 
+<div style={{maxWidth:'100vw', overflowX:'hidden', position:'relative'}}>
+{children}
+</div>
       
 <img className="backimage" src={image} alt="Default Background" style={{height:'100vh', width:'100vw', position:'fixed', zIndex:'-2', top:'0', objectFit:'cover',}} width="10" height="10" />
       
