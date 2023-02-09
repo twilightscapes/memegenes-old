@@ -65,11 +65,11 @@ const PostCard = ({ data }) => (
         <GatsbyImage
           image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
           alt={data.frontmatter.title + " - Featured image"}
-          className="featured-image1"
+          className="featured-image"
           placeholder="blurred"
               // loading="eager"
               layout="constrained"
-              style={{position:'relative', zIndex:'1', maxHeight:'65vh', margin:'0 auto'}}
+              style={{position:'relative', zIndex:'1', maxHeight:'58vh', margin:'0 auto'}}
         />
         {/* <div
               style={{
@@ -176,7 +176,7 @@ date={Date.now() + 60000} className="countdown">
     
 
 
-<div className="posticons" style={{fontWeight:'bold', padding:'1vh 2vw', width:'34vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px', position:'absolute', bottom:'4vh', left:'30vw', right:'30vw', margin:'0 auto'}}>
+<div className="posticons" style={{fontWeight:'bold', padding:'1vh 2vw', width:'34vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px', position:'absolute', bottom:'10vh', left:'30vw', right:'30vw', margin:'0 auto'}}>
 
   
 
