@@ -541,7 +541,7 @@ const YouTube = frontmatter.youtuber
    {frontmatter.bumpertext ? (
   <h3 style={{fontSize:'clamp(1.8rem, 5.5vw, 5.8rem)'}}>{frontmatter.bumpertext}</h3>
         ) : (
-  <h3>{frontmatter.title}</h3>
+  <h3 style={{fontSize:'clamp(1.4rem, 3.5vw, 4.8rem)'}}>{frontmatter.title}</h3>
     )}
 <br /><br /><br /><br />
     </div>
