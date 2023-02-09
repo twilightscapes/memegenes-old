@@ -537,9 +537,12 @@ const YouTube = frontmatter.youtuber
   
     <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'1', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
    
-    <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /><div style={{position:'', right:'', bottom:'', display:'flex', fontSize:'3vw'}}>Press the  play button!<RiArrowRightDownFill style={{fontSize:'50px'}} /></div>
+    <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
+    <div style={{position:'relative', right:'0', top:'-5vh', display:'', fontSize:'3vw'}}>
+      Press the  play button!<RiArrowRightDownFill style={{fontSize:'50px', position:'absolute', right:'0'}} />
+    </div>
 <br />
-<br />
+
    {frontmatter.bumpertext ? (
   <h3 style={{fontSize:'clamp(1.8rem, 5.5vw, 5.8rem)'}}>{frontmatter.bumpertext}</h3>
         ) : (

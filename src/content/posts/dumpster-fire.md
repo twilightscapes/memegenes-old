@@ -134,10 +134,12 @@ Donald J. Trump served as the President of the United States from January 20, 20
 <div class="" style="font-size:clamp(2rem, 3vw, 3.8rem); padding:0; text-align:center; width:80%; height:; overflow:visible; margin:5vh auto; border-radius:12px;">10 Major Failures<br />of the Trump Presidency:</div>
 
 <ol class="numblist" style="">
+
+
 <li>
 
-## Racist immigration policies
-During his time in office, Trump implemented several policies affecting immigration, such as the "zero tolerance" policy that led to family separations at the US-Mexico border, the travel ban on citizens of several Muslim-majority countries, and the reduction of the number of refugees admitted to the United States.</li>
+## Natural disaster response
+During his presidency, Donald Trump faced criticism for his response to several natural disasters, including hurricanes and wildfires. Some criticized his response as being slow and inadequate, and accused him of using disaster relief efforts for political gain. For example, in the aftermath of Hurricane Maria in Puerto Rico in 2017, Trump faced widespread criticism for his response, which was seen as slow and inadequate, and for his controversial statements about the disaster, which were widely criticized as insensitive and lacking empathy.</li>
 
 <li>
 
@@ -149,25 +151,25 @@ During his presidency, Trump engaged in high-stakes diplomacy with North Korean 
 ## Climate Change
 During his presidency, Trump took several actions that were criticized as being detrimental to efforts to address climate change, such as withdrawing the United States from the Paris Agreement, rolling back environmental regulations, and promoting the use of fossil fuels.</li>
 
-<li>
 
-## COVID-19 response
-During the COVID-19 pandemic, Trump faced criticism for his handling of the crisis, including his downplaying of the severity of the virus, his initial slow response to the crisis, and his promotion of unproven treatments.</li>
 
 <li>
 
 ## Protests and racial justice
 In 2020, following the death of George Floyd, there were widespread protests against police brutality and systemic racism in the United States. Trump faced criticism for his handling of these protests, including his use of federal forces in response to peaceful protests in Portland, Oregon, and his statements about the protests and racial justice.</li>
 
-<li>
-
-## Failure to concede election
-After losing the 2020 presidential election to Joe Biden, Trump and his allies made false claims of widespread voter fraud and irregularities, without providing any evidence to support these claims. These claims were thoroughly investigated and found to be baseless Nevertheless, Trump refused to concede the election, and his efforts to overturn the election results led to the storming of the US Capitol on January 6, 2021, which was a violent and unprecedented attack on American democracy.</li>
 
 <li>
 
 ## Attacks on the free press
 Throughout his presidency, Trump was known for his frequent attacks on the media, including calling journalists "enemies of the people" and regularly making false or misleading statements. This rhetoric was widely criticized as being harmful to the freedom of the press and a threat to democratic norms.</li>
+
+
+
+<li>
+
+## Racist immigration policies
+During his time in office, Trump implemented several policies affecting immigration, such as the "zero tolerance" policy that led to family separations at the US-Mexico border, the travel ban on citizens of several Muslim-majority countries, and the reduction of the number of refugees admitted to the United States.</li>
 
 <li>
 
@@ -176,13 +178,20 @@ During his presidency, Trump faced numerous ethics and conflict of interest conc
 
 <li>
 
+## Failure to concede election
+After losing the 2020 presidential election to Joe Biden, Trump and his allies made false claims of widespread voter fraud and irregularities, without providing any evidence to support these claims. These claims were thoroughly investigated and found to be baseless Nevertheless, Trump refused to concede the election, and his efforts to overturn the election results led to the storming of the US Capitol on January 6, 2021, which was a violent and unprecedented attack on American democracy.</li>
+
+<li>
+
 ## Polarizing and divisive
 Throughout his presidency, Trump was known for using polarizing and divisive language, including making controversial statements about race, religion, and immigration. His language was widely criticized as being harmful and fueling division and hatred in the country.</li>
 
 <li>
 
-## Natural disaster response
-During his presidency, Donald Trump faced criticism for his response to several natural disasters, including hurricanes and wildfires. Some criticized his response as being slow and inadequate, and accused him of using disaster relief efforts for political gain. For example, in the aftermath of Hurricane Maria in Puerto Rico in 2017, Trump faced widespread criticism for his response, which was seen as slow and inadequate, and for his controversial statements about the disaster, which were widely criticized as insensitive and lacking empathy.</li>
+## COVID-19 response
+During the COVID-19 pandemic, Trump faced criticism for his handling of the crisis, including his downplaying of the severity of the virus, his initial slow response to the crisis, and his promotion of unproven treatments.</li>
+
+
 </ol>
 
 </div>
