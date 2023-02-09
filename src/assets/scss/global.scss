@@ -1683,12 +1683,12 @@ body.homepage .horizontal-holder{
 @media (max-width: 48rem) {
 body::before{
 	content:" \21BB  PLEASE ROTATE YOUR DEVICE \21BB ";
-	z-index: 1;
-	animation: fadeout 4s forwards;
+	z-index: 3;
+	animation: fadeout 2s forwards;
 	animation-delay:4s;
 	position:fixed;
 	display: inline-block;
-	margin:70vh 0 0 15%;
+	margin:40vh 0 0 15%;
 	padding:10px 10px;
 	background:rgba(0, 0, 0, .9);
 	opacity:1;

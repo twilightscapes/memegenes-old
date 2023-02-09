@@ -20,9 +20,9 @@ const NotFound = () => (
         textAlign:'center'
           }}
         /> */}
- <div style={{display:'flex', justifyContent:'center', gap:'30px', width:'100vw', position:'absolute', zIndex:'1', top:'60vh', border:'0px solid'}}>
+ <div style={{display:'flex', justifyContent:'center', gap:'30px', width:'100vw', position:'absolute', zIndex:'1', top:'70vh', border:'0px solid'}}>
 
-<StaticImage src="../img/moose.webp" alt="Todd builds Web Apps" style={{height:'auto', position:'fixed', top:'0', left:'0', zIndex:'-1', width:'100vw', maxHeight:'60vh',  objectFit:'cover', overflow:'', border:'0px solid red !important'}}  />
+<StaticImage src="../img/moose.webp" alt="Todd builds Web Apps" style={{height:'auto', position:'fixed', top:'100px', left:'0', zIndex:'-1', width:'100vw', maxHeight:'60vh',  objectFit:'cover', overflow:'', border:'0px solid red !important'}}  />
 
 
         {/* <h1 className="headline1" style={{fontSize:'200%'}}>Well, Darn.</h1>
