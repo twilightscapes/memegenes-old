@@ -787,27 +787,26 @@ clamp(4vw, 100%, 1.5vw)
       
 
 <div className="wrap-element effects" style={{
-  overflow:'hidden',
+ 
   // height:'clamp(30vh, 80vh, 100vh)',
   aspectRatio:'16/9',
-  display:'flex', justifyContent:'center'
   }}>
 
 
 
-
+<div style={{ width:'auto', height:'',  top:'0', zIndex:'-2', border:'0px solid red', paddingBottom:'', margin:'0 auto', display:'flex', flexDirection:'column', justifyContent:'center'}}>
 {FrontImage ? (
             <GatsbyImage
               image={FrontImage}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              style={{ width:'100vw', height:'100%',  top:'0', zIndex:'-2', border:'0px solid red !important', paddingBottom:'', margin:'0 auto', display:'flex', justifyContent:'center'}}
+              
             />
 
           ) : (
           ""
           )}
-    
+    </div>
 
 
     {YouTube ? (
