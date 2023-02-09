@@ -755,7 +755,10 @@ const YouTube = frontmatter.youtuber
               image={FrontImage}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image1 layer1"
-              
+              placeholder="blurred"
+              loading="eager"
+              layout="constrained"
+              style={{position:'', zIndex:'', maxHeight:'', margin:''}}
             />
 
           ) : (
