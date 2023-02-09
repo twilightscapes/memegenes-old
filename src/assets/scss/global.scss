@@ -1688,7 +1688,7 @@ body::before{
 	animation-delay:4s;
 	position:fixed;
 	display: inline-block;
-	margin:40vh 0 0 15%;
+	margin:60vh 0 0 15%;
 	padding:10px 10px;
 	background:rgba(0, 0, 0, .9);
 	opacity:1;
@@ -1918,7 +1918,7 @@ body.homepage .horizontal-holder{height:inherit !important}
 	color:var(--theme-ui-colors-cardBg) !important;
 	backdrop-filter: blur(6px);
 	text-shadow:2px 2px 0 #222;
-    filter:drop-shadow((0px 20px 25px) rgba(0,0,0,1));
+    filter:drop-shadow((0px 1px 1px) rgba(0,0,0,2));
 }
 
 #menu{
@@ -1933,7 +1933,7 @@ body.homepage .horizontal-holder{height:inherit !important}
 	// text-shadow: var(--theme-ui-colors-textShadow);
 }
 
-#menu li{color:#eee; text-shadow: 2px 2px 0 #000; font-size:clamp(1rem, 3.5vw, 5.8rem); backdrop-filter: blur(30px);filter:drop-shadow((0px 15px 15px) rgba(0,0,0,1));}
+#menu li{color:#eee; text-shadow: 2px 2px 0 #000; font-size:clamp(1rem, 3.5vw, 5.8rem); backdrop-filter: blur(30px); filter:drop-shadow((0px 15px 15px) rgba(0,0,0,7));}
 
 
 

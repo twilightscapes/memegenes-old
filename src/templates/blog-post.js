@@ -20,7 +20,7 @@ import { Link, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
-// import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
+import { RiArrowRightLine, RiArrowLeftLine, RiArrowRightDownFill } from "react-icons/ri"
 import CommentBox from "../components/commentbox"
 // import { StaticImage } from "gatsby-plugin-image"
 import useSiteMetadata from "../hooks/SiteMetadata"
@@ -535,9 +535,9 @@ const YouTube = frontmatter.youtuber
 
   
   
-    <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'1', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'center', color:'#fff' }}>
+    <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'1', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
    
-    <img className="homepage-bg" src={iconimage} width="350px" height="150px" alt="MemeGenes" style={{ width:'', margin:'70px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />presents:
+    <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /><div style={{position:'', right:'', bottom:'', display:'flex', fontSize:'3vw'}}>Press the  play button!<RiArrowRightDownFill style={{fontSize:'50px'}} /></div>
 <br />
 <br />
    {frontmatter.bumpertext ? (
@@ -545,6 +545,9 @@ const YouTube = frontmatter.youtuber
         ) : (
   <h3 style={{fontSize:'clamp(1.4rem, 3.5vw, 4.8rem)'}}>{frontmatter.title}</h3>
     )}
+
+
+
 <br /><br /><br /><br />
     </div>
  )}  {/* end playing check */}

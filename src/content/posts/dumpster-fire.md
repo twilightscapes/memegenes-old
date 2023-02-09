@@ -53,6 +53,7 @@ animation-iteration-count:infinite;
 .numblist {
   clear: both;
   list-style: none;
+counter-reset:item 11;
 }
 .numblist li {
   margin: 0 0;
@@ -60,10 +61,11 @@ animation-iteration-count:infinite;
   padding-left: 1rem;
   display: block;
   position: relative;
-  counter-increment: inst;
+  /* counter-increment: inst; */
+counter-increment:item -1;
 }
 .numblist li::before {
-  content: counter(inst);
+content:counter(item) " ";
   background: rgba(0, 0, 0, .2);
   backdrop-filter: blur(12px);
   color: #999;
@@ -81,7 +83,7 @@ top:0;
 }
 
 .numblist li::after {
-  content: counter(inst);
+content:counter(item) " ";
   background: rgba(0, 0, 0, .2);
   backdrop-filter: blur(12px);
   color: #999;
