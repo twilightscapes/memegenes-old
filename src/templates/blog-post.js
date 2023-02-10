@@ -909,7 +909,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-     <div className="panel" style={{width:'100%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', borderRadius:'0 0 12p 12px', }}>
+     <div className="" style={{width:'100%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', }}>
 
 
      {Suggestion1 ? (
@@ -965,7 +965,7 @@ const YouTube = frontmatter.youtuber
             )}
 
 
-  <div style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow'}}>
+  <div className="panel" style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow', borderRadius:'12px'}}>
       <div
         className="blog-post-content bodycontent" style={{ fontSize:'clamp(1.2rem, 2.8vw, 1.8rem)', textAlign:'center', width:'100%', maxWidth:'', padding:'2vh 6% 10vh 6%', margin:'0 auto', color:'inherit !important'}}
         dangerouslySetInnerHTML={{ __html: html }}
@@ -1020,7 +1020,7 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 <GoBack />
 {Comments ? (
 
-<div id="comments" style={{height:'', paddingBottom:'0',   display:'grid', placeContent:'center', maxWidth:'100vw', padding:'0', margin:'0'}}>
+<div id="comments" style={{height:'', paddingBottom:'0',   display:'grid', placeContent:'center', maxWidth:'100vw', padding:'0', margin:'10vh auto'}}>
 
 <CommentBox />
 
@@ -1043,7 +1043,7 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 
  {ShowOriginal ? (
-      <div id="original" style={{height:'', marginTop:'10vh', paddingTop:'',   display:'grid', placeContent:'center'}}>
+      <div id="original" className="panel" style={{height:'', marginTop:'20vh', paddingTop:'5vh',   display:'grid', placeContent:'center'}}>
 
 {YouTube ? (
           <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
@@ -1064,35 +1064,42 @@ Click to play original video
             ""
           )}
        
-      
+     
           
-          <br />
-
-          <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none', maxWidth:'90vw'}}>
-            Legal:<br />
-            <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link>
-      <br /> <br />
-            <p style={{textAlign:'left'}}>
-              <strong>*This is a parody website meant for education and entertainment purposes.</strong> <br /><br />
-              
-              All characters, and events portrayed in this production are fictitious or are being portrayed in a satirical manner.<br /><br />There is no identification with actual persons (living or deceased), <br />places, buildings, and/or products. There is no harm/insult intended or and none should be inferred. 
-            <br /><br /> No celebrities were harmed.
-
-          <br /><br />
-          Video footage public youtube.com | Some imagery provided from <a rel="noopener noreferrer" href="https://www.flickr.com/photos/donkeyhotey/" target="_blank" >DonkeyHotey</a>
-          <br />
-</p>
-            </div>
+          
+<br />
 
 
-  <GoBack />
+
+
+
+
+
+ 
 </div>
     ) : (
             ""
           )}
 
 
-      
+<div className="panel" style={{textAlign: 'center', padding:'1rem', margin: '10vh auto 1rem auto', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none', maxWidth:''}}>
+            Legal Crap:<br />
+            <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link>
+      <br /> <br />
+    <div style={{display:'grid', placeContent:'center'}}>
+      <p style={{textAlign:'left'}}>
+        <strong>*This is a parody website meant for education and entertainment purposes.</strong> <br /><br />
+        All characters, and events portrayed in this production are fictitious or are being portrayed in a satirical manner.<br /><br />There is no identification with actual persons (living or deceased), <br />places, buildings, and/or products. There is no harm/insult intended or and none should be inferred. 
+        <br /><br /> No celebrities were harmed.
+
+        <br /><br />
+        Video footage public youtube.com | Some imagery provided from <a rel="noopener noreferrer" href="https://www.flickr.com/photos/donkeyhotey/" target="_blank" >DonkeyHotey</a>
+        </p>
+    </div>
+</div>
+
+
+<GoBack />
 
 
 
@@ -1145,8 +1152,7 @@ Click to play original video
       
 
 <br/><br/><br/><br/><br/><br/>
-   <br />
-   <br />
+
    </CustomBox>
 
   

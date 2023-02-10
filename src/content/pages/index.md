@@ -8,7 +8,7 @@ youtuber2: "https://youtu.be/2q-tpDxJ-MI"
 audiostart: "20"
 audioend: "5000"
 audiotitle: "Pillowfight - Get Your Sh*t Together"
-underlayImage: /assets/newspaper.webp
+underlayImage: /assets/transparent.png
 profText: 
  <div class="" style="text-align:left;">Memes are a way of life for many and this site is meant to be an outlet for that. This site was created to make it easy to post new memes and have somewhere to archive all of them.</div><br />
   <p>Please enjoy(and share) the memes! <br /><br />Stay tuned for really big news about the platform that we're building and that we'll soon be offering to everyone. </p>

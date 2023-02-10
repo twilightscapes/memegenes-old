@@ -7,6 +7,7 @@ import "../assets/scss/reset.scss"
 import "../assets/scss/global.scss"
 import "../assets/scss/styles.css"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { BsArrowsFullscreen } from "react-icons/bs"
 // import { StoreContext } from "../context/store-context"
 // import { Toast } from "./toast"
 // import Bug from "../../static/assets/logo.svg"
@@ -16,6 +17,7 @@ import Theme from "./theme"
 // import { CartButton } from "./cart-button"
 // import SearchIcon from "../../static/assets/search"
 import useSiteMetadata from "../hooks/SiteMetadata"
+// import Fullscreen from "../components/FullScreen"
 // import ss from "../../static/assets/pagebg.webp"
 // import { Link } from "gatsby-plugin-anchor-links"
 // import { StaticImage } from "gatsby-plugin-image"
@@ -55,6 +57,28 @@ const navStyle = {
 }
 
 const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=swap"
+
+
+function toggleFullScreen() {
+  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
+   (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+    if (document.documentElement.requestFullScreen) {  
+      document.documentElement.requestFullScreen();  
+    } else if (document.documentElement.mozRequestFullScreen) {  
+      document.documentElement.mozRequestFullScreen();  
+    } else if (document.documentElement.webkitRequestFullScreen) {  
+      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
+    }  
+  } else {  
+    if (document.cancelFullScreen) {  
+      document.cancelFullScreen();  
+    } else if (document.mozCancelFullScreen) {  
+      document.mozCancelFullScreen();  
+    } else if (document.webkitCancelFullScreen) {  
+      document.webkitCancelFullScreen();  
+    }  
+  }  
+}
 
 
   return (
@@ -98,12 +122,16 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 </ModalRoutingContext.Consumer> */}
 
 
+<div style={{position:'fixed', top:'1vh', right:'25px', zIndex:'100', display:'flex', gap:'2vw'}}>
+<Theme />
+<button title="Go Full-Screen" className="fullscreenButt" onClick={toggleFullScreen} style={{fontSize:'clamp(1.5rem, 3.5vw, 2.2rem)',}}><span className="" style={{}}><BsArrowsFullscreen /></span> {" "}</button>
+</div>
 
 
 
 {showNav ? (
 
-<ul sx={navStyle} id="menu" className="menu print" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center',  color:'', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center', minHeight:'70px', background:'', }}>
+<ul sx={navStyle} id="menu" className="menu print" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center',  color:'', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 25vw 0 0', alignItems:'center', minHeight:'70px', background:'', }}>
       
 <li className="grad logo" style={{position:'relative', maxHeight:'60px', width:'auto', display:'flex', justifyContent:'center'}}>
             <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
@@ -197,10 +225,13 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 )}
 
 
-<li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
+{/* <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', flexDirection:'row', verticalAlign:'center', padding:'0 0 0 0' , background:'rgba(0,0,0,0)' }}>
   
   <Theme  style={{padding:'0'}} />
-  </li>
+
+  </li> */}
+
+  {/* <li className="carto crypto" style={{border:'none',  padding:'0 0 0 0' , background:'rgba(0,0,0,0)' }}> </li> */}
             
            
       
@@ -333,13 +364,13 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
               </li>
 
 
-      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'center', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
+      {/* <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'center', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
       <Theme  style={{color:'red !important'}} />
-   {/* <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
+   <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
     <span className="carto"><SearchIcon /></span>
    </Link>
-   <CartButton quantity={quantity} /> */}
-        </li>
+   <CartButton quantity={quantity} />
+        </li> */}
 
     </ul>
 

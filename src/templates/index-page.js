@@ -128,7 +128,7 @@ query HomeQuery($id: String!) {
   posts: allMarkdownRemark(
     sort: {frontmatter: {date: DESC}}
     filter: {frontmatter: {template: {eq: "blog-post"}}}
-    limit: 5
+    limit: 16
   ) {
     edges {
       node {
@@ -165,7 +165,7 @@ const HomePage = ({ data }) => {
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
 
-    const secondaryImage = frontmatter.secondaryImage
+    const SecondaryImage = frontmatter.secondaryImage
     ? frontmatter.secondaryImage.childImageSharp.gatsbyImageData
     : ""
 
@@ -408,6 +408,76 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
       )}
 
 
+
+{/* show feature */}
+{showFeature ? (   
+
+<section id="feature" order="1" name="feature" className="print" style={{ display:'', margin:'0', padding:'0', position:'relative'}}>
+
+
+  <article>
+
+  <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'100vh', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+
+
+
+{Image ? (
+            <GatsbyImage
+              image={Image}
+              alt={frontmatter.title + " - Featured image"}
+              className="featured-image12 layer1"
+              style={{height:'auto', width:'100vw', maxHeight:'', position:'absolute', top:'', zIndex:'-1', objectFit:'contain', overflow:'', border:'0px solid red !important'}}
+            />
+
+
+
+
+
+          ) : (
+
+   
+            <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
+  
+          )}
+
+
+
+
+
+
+
+
+ 
+
+
+
+{YouTube ? (
+            <Iframer />
+       
+          ) : (
+            ""
+          )}
+
+         
+
+        
+
+
+      </div>
+  </article>
+
+</section>
+
+
+) : (
+  ""
+)}
+{/* end show feature */}
+
+
+
+
+
 {showPosts ? (
   <div className="container24 horizontal-holder effects" style={{position:'relative', background:'none', maxHeight:'77vh', overflow:'hidden'}}>
 
@@ -443,7 +513,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 <div id="intro" name="container21" className="container21" style={{position:'relative', zIndex:'1', paddingTop:'0', marginTop:'0'}}>
 
 
-{showFeature ? (
+{/* {showFeature ? (
 <div>
 {Image ? (
   <GatsbyImage
@@ -465,7 +535,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 </div>
       ) : (
         ""
-      )}
+      )} */}
 
 
 
@@ -489,30 +559,37 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 
-<section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'', position:'relative', zIndex:'0', overflow:'visible', marginTop:'15vh', padding:'0 0 9 0', border:'0px solid blue'}}>
+<section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'visible', margin:'15vh 0 0 0', padding:'0 0 10vh 0', border:'0px solid blue',}}>
+
+
+
   <article style={{ margin:'0 0 0 0'}}>
-
-
-
-
-
-             
 <div id="profiletop" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 0',
   padding:'0 4% 0 4%', borderRadius:'0 0 10px 10px',}}>
 
-
-
-
+{UnderlayImage ? (
+            <GatsbyImage
+            image={UnderlayImage}
+            alt={frontmatter.title + " - image"}
+            className="backimage"
+            placeholder="blurred" loading="eager"
+              style={{height:'auto', width:'100vw', maxHeight:'100vh',  objectFit:'cover', overflow:'visible',position:'absolute', top:'0', zIndex:'-1', border:'0px solid red !important'}}
+          />
+       
+          
+          ) : (
+            ""
+          )}
 
 {UnderlayImage ? (
   // custom image in effect //
 
-  <div className="flexcheek mob print nameblock" style={{marginTop:'', padding:'0 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
+  <div className="flexcheek mob print nameblock" style={{marginTop:'', padding:'1rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
   background:'rgba(0,0,0,0.50)', 
   backdropFilter:'blur(12px)',
   borderRadius:'10px'}}>
-  <ScrollAnimation animateIn="bounceInUp" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={false} style={{}}> 
-  <h1 className="title1" style={{fontSize:'clamp(1.8rem, 2.8vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
+  <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
+  <h1 className="title1" style={{fontSize:'clamp(2.5rem, 3.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
             {/* <h2 className="tagline1">
               {frontmatter.tagline}
             </h2> */}
@@ -528,7 +605,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
           
             <div className="flexcheek mob print" style={{padding:'0', maxHeight:'', fontSize:'clamp(1rem, 1.5vw, 3.2rem)',}}>
   
-              <h1 className="title1" style={{fontSize:'clamp(1rem, 2.8vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
+              <h1 className="title1" style={{fontSize:'clamp(2rem, 4.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
             {/* <h2 className="tagline1">
               {frontmatter.tagline}
             </h2> */}
@@ -547,18 +624,19 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
         
 
 
-      <div className="flexcheek mob2 print" style={{position:'', maxHeight:'', overflow:'', marginBottom:'', paddingTop:'0', borderRadius:'0 0 10px 10px',
+      <div className="flexcheek mob2 print" style={{position:'', maxHeight:'', overflow:'', marginBottom:'', paddingTop:'2vh', borderRadius:'0 0 10px 10px',
       }}>
 
 
 
 
-{secondaryImage ? (
+
+{SecondaryImage ? (
             <GatsbyImage
-              image={secondaryImage}
+              image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="drop-shadow avatar-frame"
-              style={{ maxWidth:'', height:'55vh', maxHeight:'55vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', marginBottom:'0', border:'2rem'}}
+              style={{ maxWidth:'', height:'45vh', maxHeight:'45vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', marginBottom:'0', border:'2rem'}}
             />
           ) : (
             ""
@@ -664,7 +742,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 {showCover? (
 
-<Link state={{modal: true}} to={frontmatter.coverletter.coverLink} className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</Link>
+<Link state={{modal: true}} to="/about-todd" className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</Link>
 
 ) : (
   

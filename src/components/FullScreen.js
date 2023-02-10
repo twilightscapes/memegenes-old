@@ -1,16 +1,11 @@
 
 import * as React from "react"
-import styled from "styled-components"
+
 
 import { BsArrowsFullscreen } from "react-icons/bs"
-import { navigate } from "gatsby";
+// import { navigate } from "gatsby";
 
-const CustomBox = styled.div`
 
-.themed{margin-top:20px;}
-=
-
-`
 
 
 function toggleFullScreen() {
@@ -36,18 +31,18 @@ function toggleFullScreen() {
 
    
 const FullScreen = () => (
-<CustomBox style={{}}>
 
 
 
 
 
-<button title="Go Full-Screen" className="fullscreenButt" onClick={toggleFullScreen} style={{}}><span className="" style={{paddingRight:'1rem'}}><BsArrowsFullscreen /></span> {" "}</button>
+
+<button title="Go Full-Screen" className="fullscreenButt" onClick={toggleFullScreen} style={{position:'', top:'', right:'', fontSize:'5vh',padding:'', zIndex:'55', border:'0px solid blue'}}><span className="" style={{padding:''}}><BsArrowsFullscreen /></span> {" "}</button>
 
 
 
 
-</CustomBox>
+
   
 )
 
