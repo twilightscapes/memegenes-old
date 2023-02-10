@@ -4,8 +4,9 @@ import { graphql } from "gatsby"
 // import { RiSendPlane2Line } from "react-icons/ri"
 import Seo from "../components/seo"
 import Layout from "../components/siteLayout"
+import useSiteMetadata from "../hooks/SiteMetadata"
 import { Helmet } from "react-helmet"
-// import { Footer } from "../components/footer"
+import Footer from "../components/footer"
 export const pageQuery = graphql`
   query ContactQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -25,6 +26,7 @@ export const pageQuery = graphql`
 `
 
 const Contact = ({ data }) => {
+  const { showNav } = useSiteMetadata()
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
 
@@ -33,7 +35,7 @@ const Contact = ({ data }) => {
 
     <Layout className="contact-page">
       <Helmet>
-  <body className="contactpage" />
+  <body className="contactpage utilitypage scroll" />
 </Helmet>
       <Seo
         title={frontmatter.title}
@@ -44,14 +46,21 @@ const Contact = ({ data }) => {
 
 
 
-      <div className="wrapper fluff">
-      <br />
-        <h1 style={{fontSize:'4vw', padding:'3%, 8%', textAlign:'center'}}>{frontmatter.title}</h1>
-        <div
-          className="description"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-        </div>
+{showNav ? (
+    <div className="spacer" style={{height:'60px', border:'0px solid yellow'}}></div>
+        ) : (
+          ""
+        )}
+      <div className="container panel" style={{ maxWidth:'1024px', margin:'0 auto',
+    paddingTop:'20px'}}>
+
+
+
+
+
+
+     
+      <h1 className="headline">{frontmatter.title}</h1>
 
         <div className="wrapper" style={{padding:'0 10%', maxWidth:'900px', margin:'0 auto' }}>
         <form
@@ -97,9 +106,16 @@ const Contact = ({ data }) => {
           </p>
         </form>
       </div>
-      <br />
-      {/* <Footer /> */}
-    </Layout>
+      </div>
+
+
+
+
+
+<br />
+<br />
+<Footer />
+</Layout>
   )
 }
 

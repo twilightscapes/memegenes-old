@@ -2,6 +2,7 @@
 template: contact-page
 slug: /contact
 title: Contact
+scrollable: true
 ---
 
-Please note, all information provided is secure your information will never be divulged or sold
+

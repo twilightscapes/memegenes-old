@@ -5,10 +5,17 @@ import { RiArrowLeftSLine, RiCheckboxCircleLine } from "react-icons/ri"
 import Seo from "../components/seo"
 import Layout from "../components/siteLayout"
 
+
 const Thanks = () => (
   <Layout className="thanks-page">
     <Seo title="Thank you" />
-    <div className="panel" style={{width:'90%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', padding:'2vh 10vw', borderRadius:'0 0 12px 12px', }}>
+
+
+    <div className="spacer" style={{height:'60px', border:'0px solid yellow'}}></div>
+
+
+
+    <div className="panel" style={{width:'90%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', padding:'2vh 10vw', borderRadius:'0 0 12px 12px', textAlign:'center' }}>
 <div className="spacer33"></div> 
       <RiCheckboxCircleLine className="neonText" 
         style={{

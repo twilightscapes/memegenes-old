@@ -331,7 +331,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
           playIcon={
             <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'0', top:'', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
           
-        <div className="" style={{position:'absolute', top:'-40px', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
+        <div className="" style={{position:'', top:'', zIndex:'0', textAlign:'center', animation:'fadeIn 3s', display:'flex', justifyContent:'center', width:'auto', marginBottom:''}}>
           
     
 
@@ -489,7 +489,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 
-<section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'', position:'relative', zIndex:'0', overflow:'visible', margin:'0', padding:'0 0 10vh 0', border:'0px solid blue'}}>
+<section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'', position:'relative', zIndex:'0', overflow:'visible', marginTop:'15vh', padding:'0 0 10vh 0', border:'0px solid blue'}}>
   <article style={{ margin:'0 0 0 0'}}>
 
 
@@ -511,8 +511,8 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   background:'rgba(0,0,0,0.50)', 
   backdropFilter:'blur(12px)',
   borderRadius:'10px'}}>
-  <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
-  <h1 className="title1" style={{fontSize:'clamp(2.5rem, 3.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
+  <ScrollAnimation animateIn="bounceInUp" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={false} style={{}}> 
+  <h1 className="title1" style={{fontSize:'clamp(1.8rem, 2.8vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
             {/* <h2 className="tagline1">
               {frontmatter.tagline}
             </h2> */}
@@ -528,7 +528,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
           
             <div className="flexcheek mob print" style={{padding:'0', maxHeight:'', fontSize:'clamp(1rem, 1.5vw, 3.2rem)',}}>
   
-              <h1 className="title1" style={{fontSize:'clamp(2rem, 4.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
+              <h1 className="title1" style={{fontSize:'clamp(1rem, 2.8vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
             {/* <h2 className="tagline1">
               {frontmatter.tagline}
             </h2> */}
@@ -558,7 +558,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
               image={secondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="drop-shadow avatar-frame"
-              style={{ maxWidth:'', height:'25vh', maxHeight:'25vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', marginBottom:'10px'}}
+              style={{ maxWidth:'', height:'55vh', maxHeight:'35vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', marginBottom:'0', border:'2rem'}}
             />
           ) : (
             ""
@@ -579,8 +579,10 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   borderRadius:'10px',
   textShadow:'0 2px 7px #000',
   }} >
-<ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutRight" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{marginTop:'10px'}}> 
-<span style={{marginTop:'10px', fontSize:'160%'}}>{companyname}</span>
+<ScrollAnimation animateIn="bounceInUp" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={false} style={{marginTop:'10px'}}> 
+<span style={{marginTop:'10px', fontSize:'160%'}}>
+  {/* {companyname}  */}
+  Meme Gene</span>
 <br />
 {frontmatter.addressText}
 <br />
@@ -590,7 +592,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 <br />
 {showCover ? (
-  <Link state={{modal: true}} to="/about-todd/" className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{coverText}</Link>
+  <Link to={frontmatter.coverletter.coverLink} className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{coverText}</Link>
 ) : (
   ""
 )}
@@ -662,7 +664,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 {showCover? (
 
-<Link state={{modal: true}} to="/about-todd" className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</Link>
+<Link state={{modal: true}} to={frontmatter.coverletter.coverLink} className="print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</Link>
 
 ) : (
   
@@ -743,7 +745,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 </div>
 
 <div id="" className="">
-<ScrollAnimation animateIn="rotateIn" animateOut="rotateOut" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
+<ScrollAnimation animateIn="bounceInUp" animateOut="bounceInDown" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
 <span
           style={{  columnCount:'2',
             columnGap:'40px',

@@ -1017,13 +1017,13 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 
           
-
+<GoBack />
 {Comments ? (
 
 <div id="comments" style={{height:'', paddingBottom:'0',   display:'grid', placeContent:'center', maxWidth:'100vw', padding:'0', margin:'0'}}>
 
 <CommentBox />
-<GoBack />
+
 
 
 </div>

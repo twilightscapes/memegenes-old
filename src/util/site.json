@@ -12,7 +12,7 @@
     "titleDefault": "MemeGenes",
     "showSocial": true,
     "showResume": false,
-    "showInfo": false,
+    "showInfo": true,
     "showNav2": false,
     "postcount": "1",
     "showPopup": false,

@@ -237,6 +237,9 @@ class BlogIndex extends React.Component {
 </div>
 
 
+
+
+
 <Footer />
       </Layout>
     )

@@ -10,18 +10,9 @@ audioend: "5000"
 audiotitle: "Pillowfight - Get Your Sh*t Together"
 underlayImage: /assets/newspaper.webp
 profText: 
- <div class="" style="text-align:center;">An artist, photographer, designer and developer<br />
-  Todd imagines things & makes them come to life.</div><br />
-  <p>Todd Lambert is an award-winning web designer and photographer that
-  trained in Southern California and has traveled and lived in over 16 Western
-  states.</p> <p>Todd's skills include all facets of online and multimedia
-  creation including HTML emails, online ads, user interface design, information
-  architecture, web navigation, branding, web graphics, cross-platform and
-  cross-browser web applications, web template creation & CMS
-  implementations.</p><p>When Todd is not online, he is often found pushing the
-  boundaries of night photography. You can usually find him in the middle of the
-  night shooting astrophotography which is his favorite subject.</p>
-addressText: Gulf Coast, USA
+ <div class="" style="text-align:left;">Memes are a way of life for many and this site is meant to be an outlet for that. This site was created to make it easy to post new memes and have somewhere to archive all of them.</div><br />
+  <p>Please enjoy(and share) the memes! <br /><br />Stay tuned for really big news about the platform that we're building and that we'll soon be offering to everyone. </p>
+addressText: ""
 portfolio:
   openText: "Thank you for visiting, please swipe to view my portfolio"
   closeText: Experience has taught me that good design is not created on a spur of
@@ -58,18 +49,18 @@ cta:
   ctaLink: ""
 svgImage: /assets/null.svg
 secondaryImage: /assets/default-user.webp
-title: Digital Product Designer
+title: Do these memes make my butt look fat?
 youtubeend: "90"
 sharethis: false
 youtubecontrols: true
 template: index-page
 youtubemute: true
-description: Todd Lambert - Independent artist, photographer, designer/developer
+description: A rogue one, out there to change the world, one meme at a time. 
 svgzindex: ""
-profTitle: digital product designer
+profTitle: Meme Genes
 coverletter:
-  coverText: More about Todd
-  coverLink: ""
+  coverText: About Meme Genes
+  coverLink: /about
 youtubestart: "42"
 scrollable: false
 ---

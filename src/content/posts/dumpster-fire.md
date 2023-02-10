@@ -119,7 +119,7 @@ li h2{
     padding:1px 1vw 1px 3vw;
     margin:-2.6vh auto 2vh auto;
     border-radius: 12px;
-    font-size:clamp(1.2rem, 3.5vw, 4.8rem) !important;
+    font-size:clamp(1.2rem, 2.8vw, 3.8rem) !important;
     color: #ddd;
       text-align:center;
     		/* text-shadow: 0 20px 7px #000,0 8px 20px rgb(40, 8, 202),0px 12px 10px rgb(139, 142, 167),0 2px rgb(39, 67, 227),0 5px 2px rgb(39, 61, 227),0 0 2px rgb(39, 52, 227),0 0 2px rgb(39, 42, 227),0 0 1px rgb(39, 73, 227); */
