@@ -1,5 +1,6 @@
 @import "theme-variables";
 @import "user.scss";
+@import "animate.css";
 // html{  
 // 	width:100vw;
 // 	overflow-x: hidden !important;
@@ -51,7 +52,7 @@ margin:20vh !important;
   body.scroll section:first-child{
 	margin:0 !important;
   }
-  body.scroll .back{display: none !important;}
+//   body.scroll .back{display: none !important;}
 
   @media (max-width: 48rem) {
 // body.blogpost {overflow-y: scroll !important;}

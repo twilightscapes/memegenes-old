@@ -7,6 +7,7 @@ import Controls from "../components/Controls";
 // import {Link} from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/siteLayout"
+// import Chatbot from "../components/Chatbot";
 const CustomBox = styled.div`
 
 
@@ -54,10 +55,15 @@ function Double() {
 
 
 
+<div style={{width:'50vw', overflow:'hidden', height:'40vh', margin:'20vh auto 0 auto', border:'1px solid red'}}>
+  Hello world!
+{/* <Chatbot /> */}
+</div>
 
 
 
-      <Controls
+
+      {/* <Controls
             ref={controlsRef}
             onPlayPause={handlePlayPause}
             playing={playing}
@@ -88,7 +94,7 @@ function Double() {
                 playerVars: { showinfo:0, autoplay:1, controls:0, start:0, end:5000, mute:1  }
               },
             }}
-          />
+          /> */}
 
 
 
