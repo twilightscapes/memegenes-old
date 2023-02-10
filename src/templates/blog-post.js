@@ -120,7 +120,7 @@ const Pagination = props => (
       )}
 
 
-      <div className="specialfont" style={{fontSize:'clamp(1.5rem, 2vw, 5.8rem)', marginTop:'-5px', width:'10vw', fontWeight:'bold', border:'0px solid', display:'grid', placeContent:'center'}}>GO TO</div>
+      <div className="specialfont" style={{fontSize:'clamp(1.5rem, 2vw, 2.8rem)', marginTop:'-5px', width:'10vw', fontWeight:'bold', border:'0px solid', display:'grid', placeContent:'center'}}>GO TO</div>
 
       {props.previous && props.previous.frontmatter.template === "blog-post" && (
         // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
@@ -701,7 +701,7 @@ const YouTube = frontmatter.youtuber
       )}
 
 
-<div className="pagemenu" style={{position:'fixed', top:'90vh', zIndex:'2',  left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7), color:#999', fontSize:'clamp(2rem, 3vw, 3rem)' }}>
+<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'2',  left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7), color:#999', fontSize:'clamp(2rem, 3vw, 3rem)' }}>
 
 <div className="menusnapp" style={{display:'flex', gap:'1vw', padding:'1vh 1vw', color:'#999'}}>
 {frontmatter.scrollable ? (
@@ -756,7 +756,7 @@ const YouTube = frontmatter.youtuber
 
 
 {frontmatter.scrollable ? (
-<div style={{width:'100vw', height:'10vh', position:'absolute', zindex:'', top:'85vh', border:'0px solid yellow', textAlign:'center', animation:'poof 1.4s forwards', animationDelay:'4s'}}>
+<div style={{width:'100vw', height:'10vh', position:'absolute', zindex:'', top:'82vh', border:'0px solid yellow', textAlign:'center', animation:'poof 1.4s forwards', animationDelay:'4s'}}>
   <div style={{marginTop:'', background:'rgba(9, 9, 10, 0.866)', width:'20vw', padding:'1vh 2vw', margin:'0 auto', borderRadius:'10px', color:'#fff'}}>SCROLL DOWN</div>
 </div>
 ) : (
