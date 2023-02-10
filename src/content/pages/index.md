@@ -45,7 +45,7 @@ skillsText: <dl>
 
   </dl>
 cta:
-  ctaText: Contact Me
+  ctaText: Contact Gene
   ctaLink: ""
 svgImage: /assets/null.svg
 secondaryImage: /assets/default-user.webp
