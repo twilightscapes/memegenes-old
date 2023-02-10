@@ -30,6 +30,7 @@ svgImage:
 scrollable: true
 nftdrop: "2023-02-09T10:00:00"
 contentinvideo: false
+bumpertext: ""
 ---
 <div class="contentinside">
 <!-- <img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;

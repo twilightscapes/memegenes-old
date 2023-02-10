@@ -61,7 +61,7 @@ const AboutPage = ({ data }) => {
 
 
 
-      <GoBack />
+
       <br />
       <br />
       <Footer />
