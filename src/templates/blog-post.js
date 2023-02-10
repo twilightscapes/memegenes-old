@@ -1043,10 +1043,10 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 
  {ShowOriginal ? (
-      <div id="original" className="panel" style={{height:'', margin:'10vh auto', paddingTop:'5vh',   display:'grid', placeContent:'center'}}>
+      <div id="original" style={{height:'', margin:'10vh auto', paddingTop:'5vh',   display:'grid', placeContent:'center'}}>
 
 {YouTube ? (
-          <div style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
+          <div  className="panel" style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
 <div style={{maxWidth:'90vw', width:'100%', height:'', maxHeight:'', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
 
                     {/* <Iframer2 /> */}
