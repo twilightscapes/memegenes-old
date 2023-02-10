@@ -103,7 +103,7 @@ const CustomBox = styled.div`
 
 const Pagination = props => (
   <div className="pagination -post1" style={{position:'', bottom:'',}}>
-    <ul className="" style={{display:'flex', gap:'2vw', justifyContent:'space-around', paddingTop:'5px'}}>
+    <ul className="" style={{display:'flex', gap:'2vw', justifyContent:'space-around', paddingTop:'5px', alignItems:'center'}}>
       
     {props.next && props.next.frontmatter.template === "blog-post" && (
         <li style={{display:'flex', justifyContent:'space-between', width:'50%'}}>
@@ -701,9 +701,9 @@ const YouTube = frontmatter.youtuber
       )}
 
 
-<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'2',  left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7), color:#999', fontSize:'clamp(2rem, 3vw, 3rem)' }}>
+<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'2',  left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7), color:#999', fontSize:'clamp(2rem, 3vw, 3rem)', verticalAlign:'center' }}>
 
-<div className="menusnapp" style={{display:'flex', gap:'1vw', padding:'1vh 1vw', color:'#999'}}>
+<div className="menusnapp" style={{display:'flex', gap:'10px', padding:'1vh 1vw', color:'#999', alignItems:'center'}}>
 {frontmatter.scrollable ? (
   <AnchorLink to="#top" style={{cursor:'pointer', height:'2vh'}}><RiArrowUpFill style={{cursor:'pointer', color:'#999'}} /></AnchorLink>
 ) : (
@@ -714,10 +714,10 @@ const YouTube = frontmatter.youtuber
 
 {isMobile ? 
 
-      <div style={{display:'flex', gap:'2vw', padding:'1vh 1vw'}}>
+      <div style={{display:'flex', gap:'10px', padding:'1vh 1vw'}}>
 
 {frontmatter.scrollable ? (
-  <AnchorLink to="#top" aria-label="Return To TOP" style={{cursor:'pointer', height:''}}><RiArrowUpFill style={{cursor:'pointer', color:'#999'}} /></AnchorLink>
+  <AnchorLink to="#top" aria-label="Return To TOP" style={{cursor:'pointer', marginTop:'2vh'}}><RiArrowUpFill style={{cursor:'pointer', color:'#999',}} /></AnchorLink>
 ) : (
 ""
   )}
