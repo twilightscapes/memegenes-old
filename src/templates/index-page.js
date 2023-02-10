@@ -558,7 +558,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
               image={secondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="drop-shadow avatar-frame"
-              style={{ maxWidth:'', height:'55vh', maxHeight:'35vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', marginBottom:'0', border:'2rem'}}
+              style={{ maxWidth:'', height:'55vh', maxHeight:'55vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', marginBottom:'0', border:'2rem'}}
             />
           ) : (
             ""

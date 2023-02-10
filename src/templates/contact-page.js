@@ -28,7 +28,7 @@ export const pageQuery = graphql`
 const Contact = ({ data }) => {
   const { showNav } = useSiteMetadata()
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter } = markdownRemark
 
   return (
 
