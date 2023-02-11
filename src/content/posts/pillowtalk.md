@@ -8,7 +8,7 @@ youtubecontrols: false
 youtubeend: "0"
 youtubeloop: true
 youtubersuggestion1: ""
-youtubersuggestion3: https://youtu.be/24nttG5Lnio
+youtubersuggestion3: ""
 shareable: true
 scrollable: true
 contentinvideo: false

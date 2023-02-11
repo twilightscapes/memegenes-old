@@ -7,9 +7,9 @@ description: The worst presidency, evar! It is amazing that we ever survived it 
 youtuber: "https://youtu.be/7g7kH671BVA"
 youtuber2: 
 youtubeshoworiginal: true
-youtubersuggestion1: 
-youtubersuggestion2: "https://youtu.be/iiZnOlRPiE0"
-youtubersuggestion3: "https://youtu.be/24nttG5Lnio"
+youtubersuggestion1:
+youtubersuggestion2:
+youtubersuggestion3:
 youtubestart: "0"
 youtubeend: 
 youtubemute: true

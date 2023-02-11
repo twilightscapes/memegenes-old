@@ -4,18 +4,18 @@ title: RIP Roseanne | 1952 - 2023
 slug: /rip-roseanne
 date: 2023-02-02 22:43
 description: Roseanne's career finally sputters out in 2023
-youtuber: ""
-youtuber2: ""
+youtuber: 
+youtuber2: 
 youtubeshoworiginal: false
-youtubersuggestion1: ""
-youtubersuggestion2: ""
-youtubersuggestion3: ""
+youtubersuggestion1:
+youtubersuggestion2:
+youtubersuggestion3:
 youtubestart: "0"
-youtubeend: "0"
+youtubeend: 
 youtubemute: true
-audiostart: ""
-audioend: ""
-audiotitle: ""
+audiostart: "0"
+audioend: 
+audiotitle: 
 liarliar: false
 youtubecontrols: true
 youtubeautostart: true

@@ -4,18 +4,18 @@ title: When it's a special night, choose Roofies
 slug: /roofies-tonight
 date: 2023-02-01 17:43
 description: Why leave it up to chance when you can get the sure thing?
-youtuber: ""
-youtuber2: ""
+youtuber: 
+youtuber2: 
 youtubeshoworiginal: false
 youtubersuggestion1: ""
 youtubersuggestion2: ""
 youtubersuggestion3: ""
 youtubestart: "0"
-youtubeend: "0"
+youtubeend: 
 youtubemute: true
-audiostart: ""
-audioend: ""
-audiotitle: ""
+audiostart: "0"
+audioend: 
+audiotitle: 
 liarliar: false
 youtubecontrols: true
 youtubeautostart: true

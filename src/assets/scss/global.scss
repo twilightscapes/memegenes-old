@@ -741,6 +741,12 @@ border:0px solid red !important;
 		color: inherit !important;
 		text-shadow: none !important;
 		}
+
+		.panel.legal{
+			margin:40vh auto 1rem auto !important; border:0px solid red !important;
+		}
+
+	
 	}
 	
 
@@ -1347,7 +1353,7 @@ input[type=checkbox] {
 footer{
 	background-color: #111;
 	padding:.1rem 0rem;
-	margin:50vh auto 0 auto !important;
+	margin:5vh auto 0 auto !important;
 	display:flex;
 	justify-content: center;
 	color:#fff !important;
@@ -1985,6 +1991,10 @@ body.homepage .horizontal-holder{height:inherit !important}
 
 }
 
+.panel.legal{
+	margin:10vh auto 1rem auto; border:0px solid red !important;
+}
+
 #toplogo{
 	color:var(--theme-ui-colors-cardBg) !important;
 	backdrop-filter: blur(6px);
@@ -2024,6 +2034,8 @@ body.homepage .horizontal-holder{height:inherit !important}
 	width:40px;
 	height:40px;
    }
+
+//    .wrap-element.effects{max-height: 40vh !important;}
 
 
 .pagemenu{max-width: 99% !important;}

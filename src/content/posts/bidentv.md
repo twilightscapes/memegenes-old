@@ -7,9 +7,9 @@ description: Biden just makes meming too easy!
 youtuber: ""
 youtuber2: ""
 youtubeshoworiginal: false
-youtubersuggestion1: ""
-youtubersuggestion2: ""
-youtubersuggestion3: ""
+youtubersuggestion1:
+youtubersuggestion2:
+youtubersuggestion3:
 youtubestart: "0"
 youtubeend: "0"
 youtubemute: true

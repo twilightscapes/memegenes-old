@@ -4,18 +4,18 @@ title: Q Nut Jobs that should be in jail.
 slug: /q-nuts
 date: 2023-02-02 20:43
 description: All of these people are criminals
-youtuber: ""
-youtuber2: ""
+youtuber: 
+youtuber2: 
 youtubeshoworiginal: false
-youtubersuggestion1: ""
-youtubersuggestion2: ""
-youtubersuggestion3: ""
+youtubersuggestion1:
+youtubersuggestion2:
+youtubersuggestion3:
 youtubestart: "0"
-youtubeend: "0"
+youtubeend: 
 youtubemute: true
-audiostart: ""
-audioend: ""
-audiotitle: ""
+audiostart: "0"
+audioend: 
+audiotitle: 
 liarliar: false
 youtubecontrols: true
 youtubeautostart: true

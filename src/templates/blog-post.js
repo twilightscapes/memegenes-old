@@ -215,13 +215,13 @@ const YoutubeLoop = frontmatter.youtubeloop
 const ContentinVideo = frontmatter.contentinvideo
 const LiarLiar = frontmatter.liarliar
 
-if (Suggestion1) {
-  <ShowSuggestion />
-}
-else{
+// if (Suggestion1) {
+//   <ShowSuggestion />
+// }
+// else{
 
   
-}
+// }
 
 function ShowSuggestion() {
 
@@ -780,25 +780,24 @@ const YouTube = frontmatter.youtuber
 </div>
 
 
+
+{/* url={[iframeUrl, Suggestion2, Suggestion3]} */}
+
+
 {YouTube ? (
   <div>
+
+
+{ Suggestion1 ? (
+<div>
+
             <ReactPlayer
               allow="autoplay"
               ref={playerRef}
               style={{position:'', zIndex:'0'}}
               width="100%"
               height="100%"
-                  url={[
-              iframeUrl, Suggestion2, Suggestion3
-            ]}
-            // url={[
-            //   iframeUrl,
-            //   YoutuberSuggestion1,
-            //   YoutuberSuggestion2,
-            //   YoutuberSuggestion3
-            // ]}
-              // url={[YoutubePlaylist, IfSuggestion1, IfSuggestion2, IfSuggestion3]}
-              // url="https://youtu.be/lZzai6at_xA"
+                url={[iframeUrl, Suggestion1, Suggestion2, Suggestion3]}
               // url={iframeUrl}
               playing={playing}
               controls={controls}
@@ -823,12 +822,46 @@ const YouTube = frontmatter.youtuber
           
           }}>MemeGenes.com</div>
   </div>
-  
   ) : (
-    ""
+    <div>
+  <ReactPlayer
+    allow="autoplay"
+    ref={playerRef}
+    style={{position:'', zIndex:'0'}}
+    width="100%"
+    height="100%"
+      // url={[iframeUrl, Suggestion2, Suggestion3]}
+    url={iframeUrl}
+    playing={playing}
+    controls={controls}
+    light={light}
+    loop={loop}
+    muted={muted}
+    playsinline
+    config={{
+      file: {
+        attributes: {
+          crossorigin: "anonymous",
+        },
+      },
+      youtube: {
+        playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:YoutubeLoop }
+      },
+    }}
+  
+  />
+  <div className="youtubeblockertop" style={{position:'absolute', display:'block', background:'#000', height:'', width:'100%', zIndex:'4', top:'0', right:'0', textAlign:'center', padding:'12px',
+  animation:'fadeout 1s forwards', animationDelay:'4s'
+
+}}>MemeGenes.com</div>
+</div>
     )}
-  
-  
+
+
+  </div>
+ ) : (
+  ""
+)}
   
   
   
@@ -849,7 +882,7 @@ const YouTube = frontmatter.youtuber
   
   
   
-  
+{/*   
    {Suggestion1 ? (
               <div style={{position:'absolute', top:'0', left:'', bottom:'', zIndex:'', maxWidth:'100vw', height:''}}>
               <YouTubed />
@@ -857,7 +890,7 @@ const YouTube = frontmatter.youtuber
          
             ) : (
               ""
-            )}
+            )} */}
   
   
   
@@ -909,12 +942,12 @@ const YouTube = frontmatter.youtuber
      <div className="" style={{width:'100%', height:'', maxWidth:'1024px', margin:'0 auto 0 auto', }}>
 
 
-     {Suggestion1 ? (
+     {/* {Suggestion1 ? (
             <ShowSuggestion style={{position:'relative', top:'', zIndex:'0',}} />
        
           ) : (
             ""
-          )}
+          )} */}
 
 
 
@@ -1040,7 +1073,7 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 
  {ShowOriginal ? (
-      <div id="original" style={{height:'', margin:'10vh auto', paddingTop:'5vh',   display:'grid', placeContent:'center'}}>
+      <div id="original" style={{height:'', margin:'10vh auto', paddingTop:'5vh',   display:'grid', placeContent:'center', border:'0px solid blue'}}>
 
 {YouTube ? (
           <div  className="panel" style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
@@ -1048,7 +1081,7 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
                     {/* <Iframer2 /> */}
 <a href={OriginalUrl} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
- <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'1rem', fontSize:'2rem', width:'100%', height:'', border:'1px solid', borderRadius:'12px'}}>Support Our Video Sponsors
+ <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'1rem', fontSize:'2rem', width:'100%', height:'', border:'0px solid', borderRadius:'12px'}}>Support Our Video Sponsors
 
 <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
 Click to play original video
@@ -1060,26 +1093,14 @@ Click to play original video
            ) : (
             ""
           )}
-       
-     
-          
-          
 <br />
-
-
-
-
-
-
-
- 
 </div>
     ) : (
             ""
           )}
 
 
-<div className="panel" style={{textAlign: 'center', padding:'1rem', margin: '10vh auto 1rem auto', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none', maxWidth:''}}>
+<div className="panel legal" style={{textAlign: 'center', padding:'1rem',  justifyContent: 'center', fontSize: '.95rem', textDecoration:'none', maxWidth:'90vw'}}>
             Legal Crap:<br />
             <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link>
       <br /> <br />
