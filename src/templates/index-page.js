@@ -484,8 +484,8 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
     <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
                          <BlogListHome data={posts} />
-      <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
-      </div>
+      {/* <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
+      </div> */}
 </div>
 
 </div>

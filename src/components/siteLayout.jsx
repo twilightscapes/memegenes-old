@@ -174,7 +174,7 @@ function toggleFullScreen() {
  </li> */}
 
 
-      {showPosts ? (
+      {/* {showPosts ? (
             <li className="" style={{position:'relative',}}>
             <AnchorLink ariaLabel="Menu 2" className="navbar-item" to="/archive/2" style={{paddingRight:'',}}>
             {menu2}
@@ -182,7 +182,7 @@ function toggleFullScreen() {
             </li>
             ) : (
   ""
-)}
+)} */}
 
 
 
