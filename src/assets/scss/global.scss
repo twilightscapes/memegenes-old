@@ -58,7 +58,7 @@ margin:20vh !important;
 // body.blogpost {overflow-y: scroll !important;}
 
 	body.blogpost .featured-image1 {border:0px solid #ff0000 !important; max-height: 70vh !important; max-width: 100vw !important; }
-	body.blogpost .effects {aspect-ratio: inherit !important; max-height: 75vh !important; padding:2vh 0 !important;}
+	body.blogpost .effects {aspect-ratio: inherit !important; max-height: 95vh !important; padding:2vh 0 !important; overflow:hidden !important;}
 	body.blogpost section .back{display:none !important;}
 	body.blogpost section{margin:10vh 0 !important;}
 
@@ -1968,6 +1968,52 @@ body.homepage .horizontal-holder{height:inherit !important}
 // }
 
 
+
+
+svg .text1{animation: textfader  5000ms linear infinite normal forwards;transform:matrix(.675684 0 0 0.675684 40 615.936513);}
+svg .text2{animation: textfader2  5000ms linear infinite normal forwards;transform:matrix(.675684 0 0 0.675684 253.532472 615.7275);}
+svg .text3{animation: textfader3  5000ms linear infinite normal forwards;
+	transform:matrix(.675684 0 0 0.675684 360 615.399067);}
+svg .text4{animation: textfader4  5000ms linear infinite normal forwards;
+	transform:matrix(.675684 0 0 0.675684 210.587334 615.789355);}
+
+@keyframes textfader { 
+	0% {opacity: 0} 
+	73% {opacity: 0} 
+	75% {opacity: 1} 
+	88% {opacity: 1} 
+	90% {opacity: 0} 
+	100% {opacity: 0}
+}
+
+@keyframes textfader2 { 
+    0% {opacity: 0} 
+    28% {opacity: 0} 
+    30% {opacity: 1} 
+    43% {opacity: 1} 
+    45% {opacity: 0} 
+    100% {opacity: 0}
+    } 
+
+	@keyframes textfader3 { 
+		0% {opacity: 0} 
+		50% {opacity: 0} 
+		52% {opacity: 1} 
+		65% {opacity: 1} 
+		67% {opacity: 0} 
+		100% {opacity: 0}
+		} 
+
+		@keyframes textfader4 { 
+			0% {opacity: 0} 
+			73% {opacity: 0} 
+			75% {opacity: 1} 
+			88% {opacity: 1} 
+			90% {opacity: 0} 
+			100% {opacity: 0}
+			}
+
+
 .wrap-element iframe {
 	position: absolute;
 	top: 0;
@@ -2015,6 +2061,7 @@ body.homepage .horizontal-holder{height:inherit !important}
 }
 
 #menu li{color:#eee; text-shadow: 2px 2px 0 #000; font-size:clamp(1rem, 2vw, 5.8rem); backdrop-filter: blur(30px); filter:drop-shadow((0px 15px 15px) rgba(0,0,0,7));}
+
 
 
 

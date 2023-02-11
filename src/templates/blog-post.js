@@ -50,51 +50,10 @@ import TimeAgo from 'react-timeago'
 import styled from "styled-components"
 const CustomBox = styled.div`
 
-.controlsWrapper: {
-  visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-},
-
-
-
-// .pagination{ position:relative; top:-205px;}
-
-
-@media (max-width: 48em) {
-
-  .pagination{maxWidth:'100vw'}
-}
 
 
 
 
-  // .sidebarIconToggle{bottom:40% !important;}
-
-
-
-  #vert {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    height:100vh;
-  }
-  #vert section {
-    height:100vh;
-    scroll-snap-align: center;
-    overflow:hidden;
-    background:tranparent !important;
-  }
-
-
-}
 
 
 `
@@ -539,16 +498,18 @@ const YouTube = frontmatter.youtuber
    
     <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
     <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>
-      Press the  play button<RiArrowRightDownFill style={{fontSize:'50px', position:'absolute', right:'25vw'}} />
+      Press the  play button
     </div>
 
+<RiArrowRightDownFill style={{fontSize:'50px', position:'absolute', right:'40%', top:'40vh', transform:'rotate(350deg)' }} />
 
+<div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'0', padding:'0 5%', maxWidth:'800px'}}>
    {frontmatter.bumpertext ? (
-  <h3 style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'0 8%'}}>{frontmatter.bumpertext}</h3>
+  <h3>{frontmatter.bumpertext}</h3>
         ) : (
-  <h3 style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'0 8%'}}>{frontmatter.title}</h3>
+  <h3>{frontmatter.title}</h3>
     )}
-
+</div>
 
 
 <br /><br /><br /><br />
@@ -647,12 +608,12 @@ const YouTube = frontmatter.youtuber
               className="featured-image1 layer1"
               placeholder="blurred"
               loading="eager"
-              layout="constrained"
+              // layout="constrained"
               style={{position:'', zIndex:'', maxHeight:'', margin:''}}
             />
 
           ) : (
-            <StaticImage className="featured-image" src="../../static/assets/default-og-image.jpg" alt="Default Image" style={{position:'relative', zIndex:'', maxHeight:'58vh',}} />
+            <StaticImage className="featured-image1" src="../../static/assets/default-og-image.jpg" alt="Default Image" style={{position:'relative', zIndex:'',}} />
           )}
 
   </div>
@@ -903,7 +864,10 @@ const YouTube = frontmatter.youtuber
     <div id="contentvideo"
           className="blog-post-content effects" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'0px solid transparent', position:'absolute', bottom:'', left:'0', top:'0', right:'0', zindex:'-1', maxHeight:'100vh', borderBottom:'0px solid', }}
           dangerouslySetInnerHTML={{ __html: html }}
-        ></div>
+          
+        >
+          
+        </div>
    ) : (
     ""
   )}
@@ -925,7 +889,7 @@ const YouTube = frontmatter.youtuber
 
           
 ) : (
-<StaticImage className="featured-image" src="../../static/assets/default-og-image.jpg" alt="Default Image" style={{position:'relative', zIndex:'', maxHeight:'58vh',}} />
+<StaticImage className="featured-image" src="../../static/assets/default-og-image.jpg" alt="Default Image" style={{position:'relative', zIndex:'', }} />
 
 )}
     
@@ -955,31 +919,18 @@ const YouTube = frontmatter.youtuber
       
 
 <article className="blog-post" style={{marginTop:'0',}}>
-        
-
         {YouTube2 ? (
             <Iframer3 />
        
           ) : (
             ""
           )}
-
-
-
-
-
-
-
 {/* ((((((((((body content)))))))))) */}
 {frontmatter.scrollable ? (
 
 <div>
 {ShareThis ? (
 <header style={{ height:'', display:'grid', placeContent:'center'}}>
-
-       
-
-
   <div id="sharethis" style={{width:'auto', height:'', padding:'0', display:'grid', placeContent:'center', border:'0px solid'}}>
   <ShareSocial style={{}} />
   </div>
@@ -991,7 +942,13 @@ const YouTube = frontmatter.youtuber
           </div>
   </header>
             ) : (
-              ""
+              <header style={{ height:'', display:'grid', placeContent:'center'}}>
+                <div className="article-header" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
+            <h1 className="headline" style={{fontSize:''}}>{frontmatter.title}</h1>
+            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
+           Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
+          </div>
+                </header>
             )}
 
 
@@ -1004,14 +961,27 @@ const YouTube = frontmatter.youtuber
 </div>
 
 ) : (
+
   <div>
   {ShareThis ? (
-
+    <header style={{ height:'', display:'grid', placeContent:'center'}}>
     <div id="sharethis" style={{width:'auto', height:'', padding:'0', display:'grid', placeContent:'center', border:'0px solid'}}>
     <ShareSocial style={{}} />
     </div>
+    <div className="article-header" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
+            <h1 className="headline" style={{fontSize:''}}>{frontmatter.title}</h1>
+            {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
+           Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
+          </div>
+  </header>
               ) : (
-                ""
+                <header style={{ height:'', display:'grid', placeContent:'center'}}>
+                <div className="article-header" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
+                <h1 className="headline" style={{fontSize:''}}>{frontmatter.title}</h1>
+                {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
+               Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
+              </div>
+      </header>
               )}
 </div>
           )}

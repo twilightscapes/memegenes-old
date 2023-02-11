@@ -1,40 +1,48 @@
 ---
 template: blog-post
-title: Welcome to Pillow Talk - I'm Mike Lindell!
-slug: /pillowtalk
-description: Let's Find Mike A Woman
-youtubemute: true
-youtubecontrols: false
-youtubeend: "0"
-youtubeloop: true
-youtubersuggestion1: ""
-youtubersuggestion3: ""
-shareable: true
-scrollable: true
-contentinvideo: false
-liarliar: false
-audiotitle: Alternate Soundtrack
-youtuber2: https://youtu.be/CWf5FYSK7Yc
-audioend: "5000"
-audiostart: "20"
-date: 2023-02-03 10:43
-youtuber: https://youtu.be/SD0EKkyuakY
-youtubeautostart: true
+title: 2020 Election Fraud Network
+slug: /lindell
+date: 2023-02-11 03:00
+description: Mike is working hard to find any election fraud. 
+youtuber: "https://youtu.be/MQyJmHlNGIQ"
+youtuber2: 
 youtubeshoworiginal: true
-comments: true
-featuredImage: /assets/Experiences-Header-8.jpg
-underlayImage: /assets/PillowTalkBG.png
-svgImage: /assets/MyPillowTalk.svg
+youtubersuggestion1:
+youtubersuggestion2:
+youtubersuggestion3:
+youtubestart: "48"
+youtubeend: "68"
+youtubemute: true
+audiostart: "20"
+audioend: "5000"
+audiotitle: 
+bumpertext: "Mikey gets his feelings hurt"
+liarliar: true
+youtubecontrols: false
+youtubeautostart: true
+youtubeloop: true
+isnftforsale: false
 svgzindex: "0"
-youtubestart: "0"
-youtubersuggestion2: https://youtu.be/iiZnOlRPiE0
-nftdrop: "2023-02-09T09:23:00"
+comments: true
+shareable: true
+underlayImage: /assets/mypillow-stage.webp
+featuredImage: /assets/election-fraud-promo.webp
+svgImage: /assets/election-fraud-central.svg
+scrollable: true
+nftdrop: "2023-02-11T10:00:00"
+contentinvideo: true
+
 ---
-<div style="text-align:left !important;">
 
-<!-- ### America's Favorite Pillow Guy has a brand new show out, called PillowTalk! Let's hope Mike find True Love™ and a great night's sleep. 
+<div class="contentinside" style="position:relative; z-index:4; min-width:50%; height:auto;  padding:0; left:0; border:0px solid yellow; text-align:center;">
+<object class="" style="height:auto; border:0px solid red; margin-top:-15px" class="" id="svg1" data="/assets/MyPillowGuyEdit.svg" type="image/svg+xml" alt="animated content" title="animated content" ></object>
+</div>
 
-<br /> -->
+
+
+
+<div class="contentbody" style="position:relative; top:; z-index:0; border:px solid blue; height:100%; margin-top:1%; text-align:left">
+
 Mike Lindell is the founder and CEO of MyPillow, a pillow manufacturing company based in Chaska, Minnesota. He is known for his colorful personality and aggressive marketing tactics, which have made MyPillow one of the most recognizable brands in the bedding industry.
 <br /><br />
 MyPillow was founded in 2004 and has since grown into a multi-million dollar company. The company is known for its patented interlocking fill, which is designed to adjust to the user's individual needs and provide a comfortable sleeping experience. MyPillow also offers a variety of pillows in different shapes, sizes, and firmness levels to meet the needs of a wide range of customers.
@@ -53,9 +61,3 @@ In conclusion, Mike Lindell and MyPillow have become household names in the bedd
 Love to hear about it in the comments below!
 
 </div>
-
-<!-- https://youtu.be/zQB-_N7CIYY  -->
-
-<!-- https://youtu.be/VgdB9QYKeyM -->
-
-<!-- XjuLZwlDxh8 -->
