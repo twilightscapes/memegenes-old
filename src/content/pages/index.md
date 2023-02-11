@@ -4,10 +4,10 @@ tagline:  an artist, photographer, designer and developer;
   todd imagines things & makes them come to life.
 featuredImage: /assets/allin60seconds.jpg
 youtuber: "https://youtu.be/ESGJ42zshL8"
-youtuber2: "https://youtu.be/2q-tpDxJ-MI"
+youtuber2: "https://youtu.be/QeWBS0JBNzQ"
 audiostart: "20"
 audioend: "5000"
-audiotitle: "Pillowfight - Get Your Sh*t Together"
+audiotitle: "Lady Gaga - The Edge Of Glory"
 underlayImage: /assets/transparent.png
 profText: 
  <div class="" style="text-align:left;">Memes are a way of life for many and this site is meant to be an outlet for that. This site was created to make it easy to post new memes and have somewhere to archive all of them.</div><br />

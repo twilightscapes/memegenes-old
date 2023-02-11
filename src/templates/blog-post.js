@@ -538,15 +538,15 @@ const YouTube = frontmatter.youtuber
     <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'1', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
    
     <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
-    <div style={{position:'relative', right:'0', top:'-5vh', display:'', fontSize:'3vw'}}>
-      Press the  play button!<RiArrowRightDownFill style={{fontSize:'50px', position:'absolute', right:'0'}} />
+    <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>
+      Press the  play button<RiArrowRightDownFill style={{fontSize:'50px', position:'absolute', right:'25vw'}} />
     </div>
-<br />
+
 
    {frontmatter.bumpertext ? (
-  <h3 style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)'}}>{frontmatter.bumpertext}</h3>
+  <h3 style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'0 8%'}}>{frontmatter.bumpertext}</h3>
         ) : (
-  <h3 style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)'}}>{frontmatter.title}</h3>
+  <h3 style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'0 8%'}}>{frontmatter.title}</h3>
     )}
 
 
@@ -788,12 +788,9 @@ const YouTube = frontmatter.youtuber
               style={{position:'', zIndex:'0'}}
               width="100%"
               height="100%"
-            //       url={[
-            //   iframeUrl,
-            //   Suggestion1,
-            //   Suggestion2,
-            //   Suggestion3
-            // ]}
+                  url={[
+              iframeUrl, Suggestion2, Suggestion3
+            ]}
             // url={[
             //   iframeUrl,
             //   YoutuberSuggestion1,
@@ -802,7 +799,7 @@ const YouTube = frontmatter.youtuber
             // ]}
               // url={[YoutubePlaylist, IfSuggestion1, IfSuggestion2, IfSuggestion3]}
               // url="https://youtu.be/lZzai6at_xA"
-              url={iframeUrl}
+              // url={iframeUrl}
               playing={playing}
               controls={controls}
               light={light}
