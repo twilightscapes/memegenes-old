@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: 2020 Election Fraud Network
-slug: /lindell
+slug: /election-fraud-central
 date: 2023-02-11 03:00
 description: Mike is working hard to find any election fraud. 
 youtuber: "https://youtu.be/MQyJmHlNGIQ"

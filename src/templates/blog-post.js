@@ -600,23 +600,23 @@ const YouTube = frontmatter.youtuber
 
 
 
-  const Completionist = () => <div style={{}}>
-   {FrontImage ? (
-            <GatsbyImage
-              image={FrontImage}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image1 layer1"
-              placeholder="blurred"
-              loading="eager"
-              // layout="constrained"
-              style={{position:'', zIndex:'', maxHeight:'', margin:''}}
-            />
+  // const Completionist = () => <div style={{}}>
+  //  {FrontImage ? (
+  //           <GatsbyImage
+  //             image={FrontImage}
+  //             alt={frontmatter.title + " - Featured image"}
+  //             className="featured-image1 layer1"
+  //             placeholder="blurred"
+  //             loading="eager"
+  //             // layout="constrained"
+  //             style={{}}
+  //           />
 
-          ) : (
-            <StaticImage className="featured-image1" src="../../static/assets/default-og-image.jpg" alt="Default Image" style={{position:'relative', zIndex:'',}} />
-          )}
+  //         ) : (
+  //           <StaticImage className="featured-image1 layer1" src="../../static/assets/default-og-image.jpg" alt="Default Image" style={{position:'relative', zIndex:'',}} />
+  //         )}
 
-  </div>
+  // </div>
 
   
   return (
@@ -724,21 +724,41 @@ const YouTube = frontmatter.youtuber
 ""
   )}
 
-      
+
 
 <div className="wrap-element effects" style={{aspectRatio:'16/9',}}>
 
 
-{ NftDrop ? (
+
+
+{FrontImage ? (
+
+<div style={{position:'', top:'', zIndex:''}}>
+      <GatsbyImage
+        image={FrontImage}
+        alt={frontmatter.title + " - Featured image"}
+        className="featured-image1 layer1"
+        placeholder="blurred"
+        loading="eager"
+        // layout="constrained"
+        style={{}}
+      />
+</div>
+    ) : (
+      ""
+    )}
+
+
+
+{/* { NftDrop ? (
   
 <div style={{ width:'100vw', height:'',  top:'0', zIndex:'-2', border:'0px solid red', paddingBottom:'', margin:'0 auto', display:'flex', flexDirection:'column', justifyContent:'center'}}>
 
 <div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
 <Countdown date={NftDrop} >
-{/* <Countdown date={Date.now() + 10000}> */}
 <Completionist />
 </Countdown>
-</div>
+</div> */}
 
 
 
@@ -888,12 +908,9 @@ const YouTube = frontmatter.youtuber
 
 
           
-) : (
-<StaticImage className="featured-image" src="../../static/assets/default-og-image.jpg" alt="Default Image" style={{position:'relative', zIndex:'', }} />
 
-)}
     
-    </div>
+
 
     
 

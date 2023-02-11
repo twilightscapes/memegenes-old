@@ -77,7 +77,7 @@ const PostCard = ({ data }) => (
       </Link>
       
     ) : (
-      <Link  to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{position:'relative', zIndex:''}} /></Link>
+      <Link  to={data.frontmatter.slug}><StaticImage className="featured-image1" src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{position:'relative', zIndex:''}} /></Link>
     )}
 
 
