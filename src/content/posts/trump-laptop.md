@@ -2,7 +2,7 @@
 template: blog-post
 title: The Trump laptop proves to be worse than Hunter's
 slug: /trump-laptop
-date: 2023-02-12 17:43
+date: 2023-02-11 17:43
 description: More disregard for our Country and it's secrets. Trump was out of control and now we're all going to pay for it.
 youtuber: 
 youtuber2: 
