@@ -1,16 +1,16 @@
 ---
 template: blog-post
-title: YellowStone is just Broke Back Mountain but for Conservatives
-slug: /yellowbackmtn
-date: 2023-02-10 10:43
-description: The Bro Love in this show is what gets conservative guys up in the morning.
-youtuber: 
+title: 2 Billion Payoff for Trump's Kids
+slug: /javanka
+date: 2023-02-12 05:59
+description: Live footage of Jared getting paid for his crimes against our Country
+youtuber: https://youtu.be/EXkT06MtW1M
 youtuber2: 
-youtubeshoworiginal: false
+youtubeshoworiginal: true
 youtubersuggestion1:
 youtubersuggestion2:
 youtubersuggestion3:
-youtubestart: "0"
+youtubestart: "15"
 youtubeend: 
 youtubemute: true
 audiostart: "20"
@@ -24,10 +24,10 @@ isnftforsale: false
 svgzindex: "0"
 comments: true
 shareable: true
-underlayImage: 
-featuredImage: /assets/yellowbackmountain.webp
+underlayImage: /assets/jared-saudi-money-underlay.webp
+featuredImage: /assets/jared-2billion-promo.webp
 svgImage: 
-scrollable: true
+scrollable: false
 nftdrop: "2023-02-11T10:00:00"
 contentinvideo: true
 bumpertext: ""
@@ -39,7 +39,7 @@ animation: bubbleBop 12s ease-in;
 animation-delay: 6s;
 animation-direction: forwards;
 animation-iteration-count:2;
-opacity:0;">I'm worried about dying, and not becoming a good guy. </div>
+opacity:0;">Thanks for the Intel, J-Dawg! </div>
 
 
 <div class="bubble bubble-bottom-right" style="position:absolute; width:50vw; top:30%; right:20vw; display:block; justify-content:center; font-size:110%;backdrop-filter: blur(6px);
@@ -47,8 +47,7 @@ animation: bubbleBop1 11s ease-in;
 animation-delay:7.5s;
 animation-direction: forwards;
 animation-iteration-count:2;
-opacity:0;">Well, the good guy ALWAYS gets it in the
-end... </div>
+opacity:0;">Anytime! Just glad the Big Guy could be of some use! </div>
 
 </div>
 
