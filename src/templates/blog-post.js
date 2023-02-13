@@ -728,9 +728,9 @@ const YouTube = frontmatter.youtuber
 
 <div className="wrap-element effects" style={{aspectRatio:'16/9',}}>
 
+{!YouTube ? (
 
-
-
+<div>
 {FrontImage ? (
 
 <div style={{position:'', top:'', zIndex:''}}>
@@ -748,6 +748,20 @@ const YouTube = frontmatter.youtuber
       ""
     )}
 
+</div>
+    ) : (
+      <div className="imageonly" style={{position:'', top:'', zIndex:''}}>
+      <GatsbyImage
+        image={FrontImage}
+        alt={frontmatter.title + " - Featured image"}
+        className="featured-image1 layer1"
+        placeholder="blurred"
+        loading="eager"
+        // layout="constrained"
+        style={{}}
+      />
+</div>
+    )}
 
 
 {/* { NftDrop ? (
