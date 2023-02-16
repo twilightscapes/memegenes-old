@@ -95,6 +95,7 @@ query HomeQuery($id: String!) {
       youtubersuggestion1
       youtubersuggestion2
       youtubersuggestion3
+      clicktoplay
       bumpertext
       profTitle
       profText
@@ -153,6 +154,8 @@ query HomeQuery($id: String!) {
           title
           youtubemute
           youtubeloop
+          youtubecontrols
+          customcontrols
           youtuber
           featuredImage {
             publicURL
@@ -213,9 +216,9 @@ const HomePage = ({ data }) => {
     
 // const CustomControls = frontmatter.customcontrols
 
-const ShowOriginal = frontmatter.youtubeshoworiginal
-const ShareThis = frontmatter.shareable
-const Comments = frontmatter.comments
+// const ShowOriginal = frontmatter.youtubeshoworiginal
+// const ShareThis = frontmatter.shareable
+// const Comments = frontmatter.comments
 
 
 const CustomControls = frontmatter.customcontrols
@@ -231,7 +234,7 @@ const iframeUrl = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtub
 
 
 const ContentinVideo = frontmatter.contentinvideo
-const LiarLiar = frontmatter.liarliar
+// const LiarLiar = frontmatter.liarliar
 
     const CtaLink = frontmatter.cta.ctaLink
 
@@ -270,7 +273,7 @@ const LiarLiar = frontmatter.liarliar
   function AddSvg(){
     const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
     return (
-      <object title="Animation" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'100vw', height:'auto',  }} alt="Animation" ></object>
+      <object title="Animation" className={svgZindex + " " + svgZindex} id="svg1" data={svgUrl} type="image/svg+xml" style={{position:'absolute', top:'', left:'0', right:'0', bottom:'0', overflow:'hidden', border:'0px solid red', zIndex:'2', width:'', height:'auto',  }} alt="Animation" ></object>
     )
   }
 
@@ -293,7 +296,7 @@ function Iframer() {
 
     // const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
-      <div className="wrap-element effects" style={{aspectRatio:'16/9', minHeight:'300px'}}>
+      <div className="wrap-element effects" style={{aspectRatio:'16/9', minHeight:'300px', width:'100vw'}}>
 
 
 {/* <GatsbyImage
@@ -400,7 +403,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                   }
               }}
               playIcon={
-                <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'5', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
+                <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'5', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
              
                 {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'80px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
                 <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>
@@ -455,21 +458,25 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
       },
     }}
     playIcon={
-      <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'2', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
+      <div style={{position:'absolute', background:'', height:'100vh', width:'100vw', zIndex:'2', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
    
-      <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'80px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
-      <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>
+   <div style={{fontSize:'clamp(1rem, 2vw, 2.5rem)', margin:'0', padding:'0 ', maxWidth:'80vw', border:'0px solid yellow',display:'grid', placeContent:'start',}}>
+    
+      <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'100%', maxWidth:'150px',maxHeight:'100px', margin:'80px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
+
+      <div style={{position:'relative', right:'0', top:'10%', display:'flex', flexDirection:'column', justifyContent:'center', fontSize:'clamp(1.3rem, 2vw, 3rem)', background:'#111', textAlign:'center', padding:'2vh 5vw', borderRadius:'12px', maxWidth:'80vw' }}>
         Click to play
-      </div>
-  
+      
+        <ImPlay style={{fontSize:'200%', margin:'0 auto'}} />
 
   
-  <div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'0', padding:'0 5%', maxWidth:'800px'}}>
-     {frontmatter.bumpertext ? (
+ 
+     {/* {frontmatter.bumpertext ? (
     <h3>{frontmatter.bumpertext}</h3>
           ) : (
     <h3>{frontmatter.title}</h3>
-      )}
+      )} */}
+      </div>
   </div>
   
   
@@ -478,9 +485,9 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
   }
   
   />
-  <div className="youtubeblockertop" style={{position:'absolute', display:'block', background:'#000', height:'58px', width:'100%', zIndex:'0', top:'0', right:'0', textAlign:'center', padding:'12px',
+  {/* <div className="youtubeblockertop" style={{position:'absolute', display:'block', background:'#000', height:'58px', width:'100%', zIndex:'0', top:'0', right:'0', textAlign:'center', padding:'12px',
             animation:'fadeout 1s forwards', animationDelay:'4s', border:'0px solid yellow'
-}}>MemeGenes.com</div>
+}}>MemeGenes.com</div> */}
 </div>
     )}
 
@@ -497,7 +504,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                 image={UnderlayImage}
                 alt={frontmatter.title + " - image"}
                 className="mcboaty1"
-                style={{height:'auto', width:'100%', maxHeight:'100%', overflow:'hidden', position:'absolute', left:'0', right:'0', bottom:'0', top:'0', zIndex:'0',
+                style={{height:'auto', width:'', maxHeight:'100vh', overflow:'hidden', position:'absolute', left:'0', right:'0', bottom:'0', top:'', zIndex:'0',
                objectFit:'cover', border:'0px solid red !important', background:'transparent',}}
               />
               
@@ -632,7 +639,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   const [state, setState] = useState({
     playing: YouTubeAutostart,
     controls: YouTubeControls,
-    light: true,
+    light: ClickToPlay,
     muted: YouTubeMute,
     loop: YoutubeLoop,
   });
@@ -711,7 +718,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   
   <div>
   
-  
+
 
 
 
@@ -906,7 +913,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
   <article>
 
-  <div className='stack-layout' style={{ display:'', position:'relative', top:'0', zIndex:'0', height:'100vh', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+  <div className='stack-layout' style={{ display:'flex',justifyContent:'center', position:'relative', top:'0', zIndex:'0', height:'100vh', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -915,7 +922,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
               image={FrontImage}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image12 layer1"
-              style={{height:'auto', width:'100vw', maxWidth:'300px', maxHeight:'', position:'absolute', top:'', zIndex:'-1', objectFit:'contain', overflow:'', border:'0px solid red !important'}}
+              style={{height:'100vh', maxHeight:'100vh', width:'', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}}
             />
 
 
@@ -1063,7 +1070,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 <div id="profiletop" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 0',
   padding:'0 4% 0 4%', borderRadius:'0 0 10px 10px',}}>
 
-{UnderlayImage ? (
+{/* {UnderlayImage ? (
             <GatsbyImage
             image={UnderlayImage}
             alt={frontmatter.title + " - image"}
@@ -1075,7 +1082,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
           
           ) : (
             ""
-          )}
+          )} */}
 
 {UnderlayImage ? (
   // custom image in effect //

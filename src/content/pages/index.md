@@ -1,13 +1,13 @@
 ---
 slug: /
 tagline:  Memes are life
-featuredImage: /assets/allin60seconds.jpg
-youtuber: "https://youtu.be/ESGJ42zshL8"
+featuredImage: /assets/twilight-promo.webp
+youtuber: "https://youtu.be/iHxmNzMfDj4"
 youtuber2: "https://youtu.be/QeWBS0JBNzQ"
 audiostart: "20"
 audioend: "5000"
 audiotitle: "Lady Gaga - The Edge Of Glory"
-underlayImage: /assets/transparent.png
+underlayImage: /assets/swd-foreground.png
 profText: 
  <div class="" style="text-align:left;">Memes are a way of life for many and this site is meant to be an outlet for that. This site was created to make it easy to post new memes and have somewhere to archive all of them.</div><br />
   <p>Please enjoy(and share) the memes! <br /><br />Stay tuned for really big news about the platform that we're building and that we'll soon be offering to everyone. </p>
@@ -46,14 +46,15 @@ skillsText:
 cta:
   ctaText: Contact Gene
   ctaLink: ""
-svgImage: 
+svgImage: /assets/campfire.svg
 secondaryImage: /assets/default-user.webp
 title: Do these memes make my butt look fat?
-youtubeend: "90"
+youtubeend: 
 sharethis: false
+youtubeloop: true
 youtubecontrols: false
 customcontrols: false
-import Layout from clicktoplay: false
+clicktoplay: true
 liarliar: false
 bumpertext: ""
 template: index-page
@@ -64,7 +65,7 @@ profTitle: Meme Genes
 coverletter:
   coverText: About Meme Genes
   coverLink: /about
-youtubestart: "42"
+youtubestart: "0"
 scrollable: false
 contentinvideo: false
 nftdrop: "2023-02-11T10:00:00"
