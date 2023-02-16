@@ -1,7 +1,8 @@
 /** @jsx jsx */
-// import * as React from "react"
+import { useState, useRef,forwardRef } from "react";
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
+import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { AiOutlineAudioMuted } from "react-icons/ai"
@@ -13,7 +14,12 @@ import { StaticImage } from "gatsby-plugin-image"
 import useSiteMetadata from "../hooks/SiteMetadata"
 import ReactPlayer from 'react-player/lazy'
 import { ImPlay,  } from "react-icons/im"
-
+import { MdPlayArrow } from "react-icons/md"
+import { MdPause } from "react-icons/md"
+import { MdVolumeOff } from "react-icons/md"
+// import { MdVolumeDown } from "react-icons/md"
+import { MdVolumeUp } from "react-icons/md"
+import { RiArrowRightDownFill } from "react-icons/ri"
 // import Popup from '../components/Popup'
 // import GoogleMap from '../components/GoogleMap'
 // import ContactInc from '../components/newssign'
@@ -82,7 +88,14 @@ query HomeQuery($id: String!) {
       audioend
       youtubemute
       youtubecontrols
+      customcontrols
       youtubeautostart
+      contentinvideo
+      youtubeshoworiginal
+      youtubersuggestion1
+      youtubersuggestion2
+      youtubersuggestion3
+      bumpertext
       profTitle
       profText
       addressText
@@ -161,7 +174,7 @@ const HomePage = ({ data }) => {
   // const { postcount } = useSiteMetadata()
   const { markdownRemark, posts } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
-  const Image = frontmatter.featuredImage
+  const FrontImage = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
 
@@ -200,11 +213,29 @@ const HomePage = ({ data }) => {
     
 // const CustomControls = frontmatter.customcontrols
 
+const ShowOriginal = frontmatter.youtubeshoworiginal
+const ShareThis = frontmatter.shareable
+const Comments = frontmatter.comments
 
+
+const CustomControls = frontmatter.customcontrols
+const Suggestion1 = frontmatter.youtubersuggestion1
+const Suggestion2 = frontmatter.youtubersuggestion2
+const Suggestion3 = frontmatter.youtubersuggestion3
+
+const YoutubeLoop = frontmatter.youtubeloop
+
+const ClickToPlay = frontmatter.clicktoplay
+
+const iframeUrl = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=" + frontmatter.youtubeautostart + "&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=" + frontmatter.youtubeloop + "&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+
+
+const ContentinVideo = frontmatter.contentinvideo
+const LiarLiar = frontmatter.liarliar
 
     const CtaLink = frontmatter.cta.ctaLink
 
-    
+    const { iconimage } = useSiteMetadata()
     
     const ProfText = frontmatter.profText
  
@@ -260,41 +291,266 @@ const YouTube = frontmatter.youtuber
 function Iframer() {
     
 
-    const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+    // const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
-      <ReactPlayer
-      className='react-player66'
-      url={Url}
-      width="100%"
-      height="100%"
-  style={{zIndex:'1'}}
-      config={{
-        youtube: {
-          playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:true  }
-        },
-      }}
-      playing
-      playsinline
-      playIcon={
-        <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'1', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column',  paddingTop:'100px'}}>
+      <div className="wrap-element effects" style={{aspectRatio:'16/9', minHeight:'300px'}}>
+
+
+{/* <GatsbyImage
+        image={FrontImage}
+        alt={frontmatter.title + " - Featured image"}
+        className="featured-image1 layer1"
+        placeholder="blurred"
+        loading="eager"
+        // layout="constrained"
+        style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300px'}}
+      /> */}
 
 
 
-    <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', height:'90vh', margin:'5vh auto', border:'0px solid red', display:'flex', justifyContent:'center', alignContent:'center', alignItems:'center', flexDirection:'column'}}>
-    
+{YouTube ? (
+
+<div>
+{/* {FrontImage ? (
+
+
+<GatsbyImage
+image={FrontImage}
+alt={frontmatter.title + " - Featured image"}
+className="featured-image1 layer1"
+placeholder="blurred"
+loading="eager"
+// layout="constrained"
+style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300px'}}
+/>
+
+    ) : (
+      ""
+    )} */}
+
+</div>
+    ) : (
+
+<div className="imageonly">
+{/* {FrontImage ? (
+
+
+      <GatsbyImage
+        image={FrontImage}
+        alt={frontmatter.title + " - Featured image"}
+        className="featured-image1 layer1"
+        placeholder="blurred"
+        loading="eager"
+        // layout="constrained"
+        style={{position:'relative', top:'0', zIndex:'0', minHeight:'300px'}}
+      />
+
+    ) : (
+      ""
+    )} */}
+
+</div>
+
+    )}
+
+
+{/* { NftDrop ? (
+  
+<div style={{ width:'100vw', height:'',  top:'0', zIndex:'-2', border:'0px solid red', paddingBottom:'', margin:'0 auto', display:'flex', flexDirection:'column', justifyContent:'center'}}>
+
+<div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
+<Countdown date={NftDrop} >
+<Completionist />
+</Countdown>
+</div> */}
 
 
 
-<div style={{display:'flex', justifyContent:'center', height:'', margin:'0 auto 0 auto', width:'100%', border:'0px solid yellow'}}>
-<div style={{ fontWeight:'bold', padding:'0 1rem', margin:'0 auto', fontSize:'clamp(1.2rem, 2.8vw, 3.4rem)',  borderRadius:'12px', border:'0px solid #333', filter:'drop-shadow(2px 2px 2px #000)', opacity:'.7' }}><ImPlay style={{margin:'0 auto', width:'100px', fontSize:'60px'}} />Play</div>
-                
+
+{YouTube ? (
+  <div>
+
+
+{ Suggestion1 ? (
+<div>
+
+            <ReactPlayer
+              allow="autoplay"
+              ref={playerRef}
+              style={{position:'asbolute', zIndex:'1'}}
+              width="100%"
+              height="100%"
+                url={[iframeUrl, Suggestion1, Suggestion2, Suggestion3]}
+              // url={iframeUrl}
+              playing={playing}
+              controls={controls}
+              light={light}
+              loop={loop}
+              muted={muted}
+              playsinline
+              config={{
+                file: {
+                  attributes: {
+                    sameSite: "none",
+                    crossorigin: "anonymous",
+                  },
+                },
+                  youtube: {
+                    playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:YoutubeLoop }
+                  }
+              }}
+              playIcon={
+                <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'5', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
+             
+                {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'80px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
+                <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>
+                  Click to play
+                </div>
+            
+          
+            
+            <div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'0', padding:'0 5%', maxWidth:'800px'}}>
+               {frontmatter.bumpertext ? (
+              <h3>{frontmatter.bumpertext}</h3>
+                    ) : (
+              <h3>{frontmatter.title}</h3>
+                )}
             </div>
-
-
+            
+            
+            <br /><br /><br /><br />
+                </div>
+            }
+            
+            />
+            <div className="youtubeblockertop" style={{position:'absolute', display:'block', background:'', height:'58px', width:'100%', zIndex:'0', top:'0', right:'0', textAlign:'center', padding:'12px',
+            animation:'fadeout 1s forwards', animationDelay:'4s', border:'0px solid yellow'
+          }}>MemeGenes.com</div>
+  </div>
+  ) : (
+    <div>
+  <ReactPlayer
+    allow="autoplay"
+    ref={playerRef}
+    style={{position:'absolute', top:'0', zIndex:'', minHeight:'300px',}}
+    width="100%"
+    height="100%"
+      // url={[iframeUrl, Suggestion2, Suggestion3]}
+    url={iframeUrl}
+    playing={playing}
+    controls={controls}
+    light={light}
+    loop={loop}
+    muted={muted}
+    playsinline
+    config={{
+      file: {
+        attributes: {
+          sameSite: "none",
+          crossorigin: "anonymous",
+        },
+      },
+      youtube: {
+        playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:YoutubeLoop }
+      },
+    }}
+    playIcon={
+      <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'2', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
+   
+      <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'80px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
+      <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>
+        Click to play
       </div>
-      </button>}
-        light="../assets/transparent.png"
-    />
+  
+
+  
+  <div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'0', padding:'0 5%', maxWidth:'800px'}}>
+     {frontmatter.bumpertext ? (
+    <h3>{frontmatter.bumpertext}</h3>
+          ) : (
+    <h3>{frontmatter.title}</h3>
+      )}
+  </div>
+  
+  
+  <br /><br /><br /><br />
+      </div>
+  }
+  
+  />
+  <div className="youtubeblockertop" style={{position:'absolute', display:'block', background:'#000', height:'58px', width:'100%', zIndex:'0', top:'0', right:'0', textAlign:'center', padding:'12px',
+            animation:'fadeout 1s forwards', animationDelay:'4s', border:'0px solid yellow'
+}}>MemeGenes.com</div>
+</div>
+    )}
+
+
+  </div>
+ ) : (
+  ""
+)}
+  
+  
+  
+  {UnderlayImage ? (
+              <GatsbyImage
+                image={UnderlayImage}
+                alt={frontmatter.title + " - image"}
+                className="mcboaty1"
+                style={{height:'auto', width:'100%', maxHeight:'100%', overflow:'hidden', position:'absolute', left:'0', right:'0', bottom:'0', top:'0', zIndex:'0',
+               objectFit:'cover', border:'0px solid red !important', background:'transparent',}}
+              />
+              
+            ) : (
+              ""
+            )}
+  
+            
+  
+  
+  
+{/*   
+   {Suggestion1 ? (
+              <div style={{position:'absolute', top:'0', left:'', bottom:'', zIndex:'', maxWidth:'100vw', height:''}}>
+              <YouTubed />
+              </div>
+         
+            ) : (
+              ""
+            )} */}
+  
+  
+  
+  
+  
+  
+  {/*  SPECIAL CONTENT */}
+  
+  {ContentinVideo ? (
+    <div id="contentvideo"
+          className="blog-post-content effects" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'0px solid transparent', position:'absolute', bottom:'0', left:'0', top:'0', right:'0', zindex:'-1', maxHeight:'100vh', borderBottom:'0px solid', }}
+          dangerouslySetInnerHTML={{ __html: html }}
+          
+        >
+          
+        </div>
+   ) : (
+    ""
+  )}
+  
+  
+          
+  {Svg ? (
+    <AddSvg />
+       ) : (
+         ""
+         )}
+  
+  
+  
+  
+  
+          </div>
     )
   }
 
@@ -312,6 +568,11 @@ function Iframer() {
 <div style={{marginTop:'10px', position:'relative', zIndex:'1',
 display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'150px', border:'0px solid yellow', width:'100%'
 }}>
+
+
+
+
+
 <ReactPlayer
           className='react-player67'
           url={iframeUrl3}
@@ -366,7 +627,210 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   }
 
 
+
+
+  const [state, setState] = useState({
+    playing: YouTubeAutostart,
+    controls: YouTubeControls,
+    light: true,
+    muted: YouTubeMute,
+    loop: YoutubeLoop,
+  });
+
+  const playerRef = useRef(null);
+  const controlsRef = useRef(null);
+
+  const {
+    playing,
+    controls,
+    light,
+    muted,
+    loop,
+    played,
+  } = state;
+
+  const handlePlayPause = () => {
+    setState({ ...state, playing: !state.playing });
+  };
+
+  const handleMute = () => {
+    setState({ ...state, muted: !state.muted });
+  };
+
+
+
+
+
+
+  const Controls = forwardRef(
+    (
+      {
+        // onSeek,
+        // onSeekMouseDown,
+        // onSeekMouseUp,
+        // onDuration,
+        // onRewind,
+        onPlayPause,
+        // onFastForward,
+        playing,
+        // played,
+        // elapsedTime,
+        // totalDuration,
+        onMute,
+        muted,
+        // onVolumeSeekDown,
+        // onChangeDispayFormat,
+        // playbackRate,
+        // onPlaybackRateChange,
+        // onToggleFullScreen,
+        volume,
+        // onVolumeChange,
+        // onBookmark,
+      },
+      ref
+    ) => {
+      // const classes = useStyles();
+      // const [anchorEl, setAnchorEl] = React.useState(null);
+      // const handleClick = (event) => {
+      //   setAnchorEl(event.currentTarget);
+      // };
   
+      // const handleClose = () => {
+      //   setAnchorEl(null);
+      // };
+  
+      // const open = Boolean(anchorEl);
+      // const id = open ? "simple-popover" : undefined;
+  
+      const { iconimage } = useSiteMetadata()
+  
+
+      
+  
+      return (
+  
+  <div>
+  
+  
+
+
+
+
+  
+        {playing ? (
+""
+        ) : (
+
+  
+  
+    <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
+   
+    <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
+    <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>
+      Press the  play button
+    </div>
+
+<RiArrowRightDownFill style={{fontSize:'50px', position:'absolute', right:'40%', top:'40vh', transform:'rotate(350deg)' }} />
+
+<div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'0', padding:'0 5%', maxWidth:'800px'}}>
+   {frontmatter.bumpertext ? (
+  <h3>{frontmatter.bumpertext}</h3>
+        ) : (
+  <h3>{frontmatter.title}</h3>
+    )}
+</div>
+
+
+<br /><br /><br /><br />
+    </div>
+
+ )}  {/* end playing check */}
+  
+ 
+  
+  
+        
+  
+  
+  <div ref={ref} className="controlsbox" style={{width:'', height:'', border:'0px solid red', }}>
+  
+        {/* <div className="contact" style={{position:'', bottom:'', zIndex:'',  left:'0', right:'0', display:'flex', justifyContent:'center', width:'200px', margin:'0 auto'}}>
+    <Link state={{modal: true}}  to="/contact/" className="navbar-item  button fire" style={{margin:'', textDecoration:'none'}}>Contact Me</Link>
+  </div> */}
+                  <button
+                    onClick={onPlayPause}
+                    className="controls" 
+                    style={{
+                  }}
+                  >
+                    {/* <MdPlayArrow style={{fontSize:'50px', position:'absolute'}}  /> */}
+                    {playing ? (
+                      
+                      <MdPause className="hudicon" style={{}} />
+                      
+                    ) : (
+                
+                <MdPlayArrow className="hudicon" style={{}}  />
+                
+                    )}
+                  </button>
+  
+  
+  
+        
+  
+  
+  
+  
+                  <button
+                    // onClick={() => setState({ ...state, muted: !state.muted })}
+                    onClick={onMute}
+                    className="controls "
+                    style={{
+                  }}
+                  >
+                    {muted ? (
+                      <MdVolumeOff className="hudicon" fontSize="" style={{}}  />
+                    ) : volume > 0.5 ? (
+                      <MdVolumeUp className="hudicon" fontSize="" style={{}}  />
+                    ) : (
+                      <MdVolumeUp className="hudicon" fontSize="" style={{}}  />
+                    )}
+                  </button>
+  
+        </div>
+        
+        </div>
+      );
+    }
+  );
+  
+  Controls.propTypes = {
+    onSeek: PropTypes.func,
+    onSeekMouseDown: PropTypes.func,
+    onSeekMouseUp: PropTypes.func,
+    onDuration: PropTypes.func,
+    onRewind: PropTypes.func,
+    onPlayPause: PropTypes.func,
+    onFastForward: PropTypes.func,
+    onVolumeSeekDown: PropTypes.func,
+    onChangeDispayFormat: PropTypes.func,
+    onPlaybackRateChange: PropTypes.func,
+    onToggleFullScreen: PropTypes.func,
+    onMute: PropTypes.func,
+    playing: PropTypes.bool,
+    light: PropTypes.bool,
+    played: PropTypes.number,
+    elapsedTime: PropTypes.string,
+    totalDuration: PropTypes.string,
+    muted: PropTypes.bool,
+    playbackRate: PropTypes.number,
+  };
+
+  
+
+
+     
   return (
 
     // TOP OF HOME
@@ -401,6 +865,10 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   width:'100vw'
 }}> */}
 
+
+
+
+
 {showNav ? (
   <div id="top" className="spacer" style={{height:'70px', border:'0px solid yellow'}}></div>
       ) : (
@@ -408,11 +876,32 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
       )}
 
 
+{CustomControls ? (
+    <Controls
+    ref={controlsRef}
+    onPlayPause={handlePlayPause}
+    playing={playing}
+    played={played}
+    onMute={handleMute}
+    muted={muted}
+    style={{positon:'absolute', zIndex:'-1'}}
+  />
+  
+     ) : (
+""
+     )}
+
+
 
 {/* show feature */}
 {showFeature ? (   
 
+
+
 <section id="feature" order="1" name="feature" className="print" style={{ display:'', margin:'0', padding:'0', position:'relative'}}>
+
+
+
 
 
   <article>
@@ -421,9 +910,9 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 
-{Image ? (
+{FrontImage ? (
             <GatsbyImage
-              image={Image}
+              image={FrontImage}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image12 layer1"
               style={{height:'auto', width:'100vw', maxHeight:'', position:'absolute', top:'', zIndex:'-1', objectFit:'contain', overflow:'', border:'0px solid red !important'}}
@@ -466,7 +955,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
       </div>
   </article>
 
+
+
+
 </section>
+
 
 
 ) : (
@@ -479,7 +972,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 {showPosts ? (
-  <div className="container24 horizontal-holder effects" style={{position:'relative', background:'none', maxHeight:'77vh', overflow:'hidden'}}>
+  <div id="showPosts" className="container24 horizontal-holder effects" style={{position:'relative', background:'none', maxHeight:'77vh', overflow:'hidden'}}>
 
 <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
     <div className="" style={{height:'50%', paddingTop:'50%'}}></div>

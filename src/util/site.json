@@ -20,7 +20,7 @@
     "menu3": "Resume",
     "menu4": "Skills",
     "showNav": true,
-    "showNav2": false,
+    "showNav2": true,
     "showFeature": false,
     "showPosts": true,
     "showInfo": true,

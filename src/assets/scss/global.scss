@@ -949,7 +949,7 @@ blockquote:after {
 	width:100vw;
 	height:100%;
 	position:fixed;
-	z-index: 3;
+	z-index: 4;
 	opacity: 1 ;
 	margin:0 auto;
 	padding:0;
@@ -1935,6 +1935,9 @@ svg .text4{animation: textfader4  5000ms linear infinite normal forwards;
 #menu li{color:#eee; text-shadow: 2px 2px 0 #000; font-size:clamp(1rem, 2vw, 5.8rem); backdrop-filter: blur(30px); filter:drop-shadow((0px 15px 15px) rgba(0,0,0,7));}
 
 
+body.blogpost #menu, body.blogpost .spacer{
+	display:none !important;
+}
 
 
 

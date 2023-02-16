@@ -1,7 +1,6 @@
 ---
 slug: /
-tagline:  an artist, photographer, designer and developer; 
-  todd imagines things & makes them come to life.
+tagline:  Memes are life
 featuredImage: /assets/allin60seconds.jpg
 youtuber: "https://youtu.be/ESGJ42zshL8"
 youtuber2: "https://youtu.be/QeWBS0JBNzQ"
@@ -22,7 +21,8 @@ portfolio:
 youtubeautostart: true
 addressText2: ""
 skillsTitle: "Mad Skills Yo!"
-skillsText: <dl>
+skillsText: 
+  <!-- <dl>
   <dt>
   <h2>Overall Skills</h2><div>100%</div>
   </dt>
@@ -42,19 +42,18 @@ skillsText: <dl>
   <dd class="percentage percentage-85"><span class="text">CSS</span> <span class="percent">85%</span></dd>
   <dd class="percentage percentage-75"><span class="text">Gatsby</span> <span class="percent">75%</span></dd>
   <dd class="percentage percentage-65"><span class="text">React</span> <span class="percent">65%</span></dd>
-
-  </dl>
+  </dl> -->
 cta:
   ctaText: Contact Gene
   ctaLink: ""
-svgImage: /assets/null.svg
+svgImage: 
 secondaryImage: /assets/default-user.webp
 title: Do these memes make my butt look fat?
 youtubeend: "90"
 sharethis: false
-youtubecontrols: true
-customcontrols: true
-clicktoplay: false
+youtubecontrols: false
+customcontrols: false
+clicktoplay: true
 liarliar: false
 bumpertext: ""
 template: index-page
@@ -67,15 +66,20 @@ coverletter:
   coverLink: /about
 youtubestart: "42"
 scrollable: false
+contentinvideo: false
+nftdrop: "2023-02-11T10:00:00"
+youtubersuggestion1: ""
+youtubersuggestion2: ""
+youtubersuggestion3: ""
 ---
 <!-- Do not delete -->
 
-<div>
+<!-- <div> -->
 <!-- Do not delete -->
 
-## **Highlights**
+<!-- ## **Highlights**
 
-**Product Designer - Skilled web designer/developer with 21 years of professional experience.**
+ **Product Designer - Skilled web designer/developer with 21 years of professional experience.**
 
 Successful product designer able to integrate both technical and creative skills to create cross-browser and cross-platform solutions with modern web architecture and navigation systems.
 
@@ -103,15 +107,15 @@ Quality Assurance - Degree
 * Golden West College
 Business Management - Degree
 * Huntington Beach High School
-High School General Courses - Diploma
+High School General Courses - Diploma -->
 
 <!-- Do not delete -->
 
-</div>
-<div>
+<!-- </div>
+<div> -->
 <!-- Do not delete -->
 
-## **Experience**
+<!-- ## **Experience**
 
 **Todd Lambert Enterprises, 1999 - Present**
 <br />Sole Proprietor / Photographer
@@ -137,11 +141,33 @@ Solely responsible for all design and development aspects of web department. Int
 **TeleVox Software, 2004 - 2007**
 <br />Director of Web Development
 
-Responsible for site architecture, design, graphics, programming, copywriting/editing, project management of all TeleVox websites and online marketing campaigns. Supervised 25 designers and developers.
+Responsible for site architecture, design, graphics, programming, copywriting/editing, project management of all TeleVox websites and online marketing campaigns. Supervised 25 designers and developers. -->
 
 <!-- Do not delete -->
 
-</div>
+<!-- </div> -->
 <!-- Do not delete -->
 
 <!-- RGT4V6JmINA MUSIC: CURE -->
+
+<!-- <dl>
+  <dt>
+  <h2>Overall Skills</h2><div>100%</div>
+  </dt>
+  <dd class="percentage percentage-90"><span class="text">Front End</span> <span class="percent">90%</span></dd>
+  <dd class="percentage percentage-65"><span class="text">Back End</span> <span class="percent">65%</span></dd>
+  <dd class="percentage percentage-85"><span class="text">WordPress</span> <span class="percent">85%</span></dd>
+  <dd class="percentage percentage-75"><span class="text">Javascript</span> <span class="percent">75%</span></dd>
+  <dd class="percentage percentage-80"><span class="text">UI Design</span> <span class="percent">80%</span></dd>
+  <dd class="percentage percentage-85"><span class="text">UX Design</span> <span class="percent">85%</span></dd>
+  </dl>
+
+  <dl>
+  <dt>
+  <h2>Detailed Skills</h2><div>100%</div>
+  </dt>
+  <dd class="percentage percentage-90"><span class="text">HTML</span> <span class="percent">90%</span></dd>
+  <dd class="percentage percentage-85"><span class="text">CSS</span> <span class="percent">85%</span></dd>
+  <dd class="percentage percentage-75"><span class="text">Gatsby</span> <span class="percent">75%</span></dd>
+  <dd class="percentage percentage-65"><span class="text">React</span> <span class="percent">65%</span></dd>
+</dl> -->
