@@ -15,7 +15,7 @@ const Theme = () => {
       >
         <div sx={themeStyles.modeIcons}>
           <div>{colorMode === "default" ? <FiMoon /> : <FiSun />}</div>
-          <div sx={themeStyles.modeText}>
+          <div className="freak" sx={themeStyles.modeText}>
             {colorMode === "default" ? "Dark Mode" : "Light Mode"}
           </div>
         </div>
@@ -28,7 +28,7 @@ export default Theme
 const themeStyles = {
   modeOption: {
     button: {
-      fontSize: "28px",
+      fontSize: "clamp(1.2rem, 2.8vw, 1.8rem)",
       bg: "transparent",
       border: "none",
       // color:"var(--theme-ui-colors-text)",
@@ -50,7 +50,7 @@ const themeStyles = {
     // },
   },
   modeText: {
-    fontSize: "14px",
+    fontSize: "1vw",
     display: ["block", "block", "block", "block"],
     p: " 0 10px",
     mt: "-5px",

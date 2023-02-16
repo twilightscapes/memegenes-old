@@ -114,15 +114,18 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 <ul sx={navStyle} id="menu" className="menu print" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center',  color:'', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center', minHeight:'70px', background:'', }}>
       
+
+
+
 {prefersReducedMotion ? (
             <li className="nomo" style={{position:'relative',}}>
-            <Link to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
+            <button className="">
             {iconimage ? (
       <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} width="100px" height="70px" />
                 ) : (
                   <div style={{fontWeight:'bold',}}>{companyname}</div>
                 )}
-            </Link>
+            </button>
           </li>
           ) : (
             <li className="momo" style={{position:'relative',}}>
@@ -133,6 +136,14 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
                   <div style={{fontWeight:'bold',}}>{companyname}</div>
                 )}
             </AnchorLink>
+            {/* <button className="" onClick={() => { navigate(-1) }}>
+            {iconimage ? (
+      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} width="100px" height="70px" />
+                ) : (
+                  <div style={{fontWeight:'bold',}}>{companyname}</div>
+                )}
+            </button> */}
+            {/* <a onClick={() => window.history.back()}>Go back</a> */}
                         </li>
           )}
       
@@ -302,7 +313,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
     <ul className="sidebarMenuInner post-card" style={{maxWidth:'400px', position:'absolute', right:'0', display:'', justifyContent:''}}>
 
     <li className="grad logo" style={{position:'relative', maxHeight:'100px', width:'auto', display:'flex', justifyContent:'center'}}>
-            <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
+            <AnchorLink to="/" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
       <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} />
                 ) : (
