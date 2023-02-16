@@ -327,16 +327,18 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
    
             
 
-      {showPosts ? (
-            <li className="" style={{position:'relative',}}>
-            <AnchorLink className="navbar-item" to="/archive/2" style={{paddingRight:'',}}>
-            {menu2}
-            </AnchorLink>
-            </li>
-            ) : (
+          {showPosts ? (
+<li style={{position:'relative',}}>
+      {prefersReducedMotion ? (
+       <Link aria-label="Menu 2" className="navbar-item" to="/#showPosts" style={{paddingRight:'',}}>{menu2}</Link>    
+   ) : (
+      <AnchorLink aria-label="Menu 2" className="navbar-item" to="/#showPosts" style={{paddingRight:'',}}>
+      {menu2}</AnchorLink>         
+    )}
+</li>
+      ) : (
   ""
 )}
-
 
 
 

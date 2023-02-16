@@ -296,7 +296,7 @@ function Iframer() {
 
     // const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
-      <div className="wrap-element effects" style={{aspectRatio:'16/9', minHeight:'300px', width:'100vw'}}>
+      <div className="wrap-element effects" style={{aspectRatio:'16/9', minHeight:'300px', width:'100vw', maxHeight:'', overFlow:'hidden'}}>
 
 
 {/* <GatsbyImage
@@ -905,7 +905,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} > 
 
-<section id="feature" order="1" name="feature" className="print" style={{ display:'', margin:'0', padding:'0', position:'relative'}}>
+<section id="feature" order="1" name="feature" className="print" style={{ display:'', margin:'0 0 10vh 0', padding:'0', position:'relative'}}>
 
 
 
