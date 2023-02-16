@@ -26,7 +26,7 @@ isnftforsale: false
 svgzindex: "0"
 comments: true
 shareable: true
-underlayImage: /assets/jared-saudi-money-underlay.webp
+underlayImage: 
 featuredImage: /assets/jared-2billion-promo.webp
 svgImage: 
 scrollable: true
@@ -34,7 +34,10 @@ nftdrop: "2023-02-11T10:00:00"
 contentinvideo: true
 bumpertext: ""
 ---
+
 <div class="contentinside" style="position:relative; aspect-ratio:16/9;  width:100%; border:0px solid white; display:flex; flex-direction:column; justify-content:center;">
+
+<img src="/assets/jared-saudi-money-underlay.webp" alt="decorative image" style="position:absolute; bottom:-70px;" />
 
 <div class="bubble bubble-bottom-left" style="position:absolute; width:; top:45%; left:15vw; display:flex; justify-content:center;backdrop-filter: blur(6px); font-size:110%;
 animation: bubbleBop 12s ease-in;
