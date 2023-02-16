@@ -5,6 +5,7 @@ import PropTypes from "prop-types"
 export default function HTML(props) {
   // const { siteColor } = useSiteMetadata()
 
+  
   return (
     <html {...props.htmlAttributes}>
       <head>
@@ -15,6 +16,7 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
+        
       </head>
 
       <body {...props.bodyAttributes}>

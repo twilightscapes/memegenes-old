@@ -16,6 +16,7 @@ export const onInitialClientRender = () => {
 }
 
 
+
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(
     `This website has been updated since your last visit. ` +

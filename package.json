@@ -24,6 +24,7 @@
     "@sindresorhus/slugify": "^2.1.1",
     "@staticcms/app": "1.2.6",
     "@theme-ui/color": "^0.15.4",
+    "browser-monads": "^1.0.0",
     "commentbox.io": "^2.1.0",
     "gatsby": "^5.5.0",
     "gatsby-background-image": "^1.6.0",
