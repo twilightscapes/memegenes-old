@@ -178,25 +178,35 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 )} */}
 
 
-
-{showInfo & prefersReducedMotion ? (
-            <li className="nomo" style={{position:'relative',}}>
-              <Link aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>
-              {menu1}
-              </Link>
-              </li>
+{showInfo ? (
+<>
+{prefersReducedMotion ? (
+  <li className="nomo" style={{position:'relative',}}>
+    <Link aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>
+    {menu1}
+    </Link>
+    </li>
 ) : (
-  <li className="momo" style={{position:'relative',}}>
-              <AnchorLink aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>
-              {menu1}
-              </AnchorLink>
-              </li>
+<li className="momo" style={{position:'relative',}}>
+    <AnchorLink aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>
+    {menu1}
+    </AnchorLink>
+    </li>
+)}
+</>
+            ) : (
+  ""
 )}
 
 
 
-       
-{showResume & prefersReducedMotion ? (
+
+
+
+
+{showResume ? (
+<> 
+{prefersReducedMotion ? (
             <li className="nomo" style={{position:'relative',}}>
               <Link ariaLabel="Menu 3" className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
               {menu3}
@@ -209,10 +219,14 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
                 </AnchorLink>
                 </li>
   )}
-  
+  </>
+            ) : (
+  ""
+)}
 
-
-{showSkills & prefersReducedMotion ? (
+{showSkills ? (
+<> 
+{prefersReducedMotion ? (
             <li className="nomo" style={{position:'relative',}}>
               <Link className="navbar-item" to="/#skills" style={{paddingRight:'',}}>{menu4}</Link>
               </li>
@@ -223,7 +237,10 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
                 </AnchorLink>
                 </li>
   )}
-
+</>
+            ) : (
+  ""
+)}
 
 
 
