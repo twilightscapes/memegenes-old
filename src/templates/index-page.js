@@ -407,9 +407,9 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
              
              <div style={{fontSize:'clamp(1rem, 2vw, 2.5rem)', margin:'0', padding:'0 ', maxWidth:'80vw', border:'0px solid yellow',display:'grid', placeContent:'start',}}>
               
-                <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'100%', maxWidth:'150px',maxHeight:'100px', margin:'80px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
+                {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'100%', maxWidth:'150px',maxHeight:'100px', margin:'80px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
           
-                <div style={{position:'relative', right:'0', top:'10%', display:'flex', flexDirection:'column', justifyContent:'center', fontSize:'clamp(1.3rem, 2vw, 3rem)', background:'rgba(0,0,0,0.50)', textAlign:'center', padding:'2vh 5vw', borderRadius:'12px', maxWidth:'80vw' }}>
+                <div style={{position:'relative', right:'0', top:'20vh', display:'flex', flexDirection:'column', justifyContent:'center', fontSize:'clamp(1.3rem, 2vw, 3rem)', background:'rgba(0,0,0,0.50)', textAlign:'center', padding:'2vh 5vw', borderRadius:'12px', maxWidth:'80vw' }}>
                   Click to play
                 
                   <ImPlay style={{fontSize:'200%', margin:'0 auto'}} />
