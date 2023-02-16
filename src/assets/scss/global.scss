@@ -229,7 +229,7 @@ animation-iteration-count:infinite;
 	0% {
 	  transform: translateY(0);
 	  display: none;
-	  z-index: 1;	
+	//   z-index: 1;	
 	  }
 
 	  59% {
@@ -238,7 +238,7 @@ animation-iteration-count:infinite;
 		height:0;
 		  filter: blur(60px);
 		  opacity: 0;   
-		  z-index: 1;	
+		//   z-index: 1;	
 		}
 
 		99% {

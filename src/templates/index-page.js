@@ -915,7 +915,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
               image={FrontImage}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image12 layer1"
-              style={{height:'auto', width:'100vw', maxHeight:'', position:'absolute', top:'', zIndex:'-1', objectFit:'contain', overflow:'', border:'0px solid red !important'}}
+              style={{height:'auto', width:'100vw', maxWidth:'300px', maxHeight:'', position:'absolute', top:'', zIndex:'-1', objectFit:'contain', overflow:'', border:'0px solid red !important'}}
             />
 
 
