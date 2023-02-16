@@ -37,6 +37,29 @@
 
 
 
+
+.tvscreen {
+  background-color: #222;
+  position: fixed;
+  z-index: -15;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  content: " ";
+  overflow: hidden;
+  background: -webkit-linear-gradient(to left, #16222A , #3A6073);
+  background: linear-gradient(to left, #16222A , #3A6073);
+  background-size: cover;
+  background-image: url(https://cldup.com/gn3s3Fg75t.gif);
+   color: #fff;
+}
+
+
+
+
+
     
 .font{
 	font-family:var(--theme-ui-colors-fontFamily-meta-font1);

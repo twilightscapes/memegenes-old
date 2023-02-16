@@ -4,7 +4,7 @@
 import { useState, useRef,forwardRef } from "react";
 
 // import Controls from "../components/Controls";
-
+import { window, document } from "browser-monads"
 import PropTypes from "prop-types";
 import { MdPlayArrow } from "react-icons/md"
 import { MdPause } from "react-icons/md"
@@ -634,6 +634,32 @@ const YouTube = frontmatter.youtuber
 
   // </div>
 
+
+  (function() {
+    const SELECTOR_SCREEN_ELEMENT = '.screen';
+    const SELECTOR_SWITCHER_TV = '#switcher-tv';
+    
+    const isTurnedOn = true;
+    
+
+    
+
+    
+    function toggleSwitcherTV() {
+      if (isTurnedOn) {
+      }
+      
+      if (!isTurnedOn) {
+      }
+      
+      isTurnedOn = !isTurnedOn;
+    }
+    
+
+    
+    // Bindings
+
+  })();
   
   return (
     

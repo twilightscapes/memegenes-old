@@ -32,6 +32,9 @@ nftdrop: "2023-02-09T10:00:00"
 contentinvideo: true
 ---
 
+
+<!-- <button id="switcher-tv">Turn on/off</button> -->
+
 <div class="contentinside" style="position:relative; z-index:0; min-width:50%; height:auto; margin-top:10%;  padding:1rem; font-size:clamp(1rem, 2.3vw, 3rem); left:0;, top:4vh; line-height:90%; text-shadow:0 2px 7px #000; background:rgba(0,0,0,0.8); border-radius:12px; border:0px solid yellow; text-align:center;">
 TRUMP IS A RACIST
 </div>
@@ -40,8 +43,11 @@ TRUMP IS A RACIST
 
 
 
+<div class="crt"></div>
 
 
+
+  
 
 
 ## Ex-President Donald Trump's stance on law enforcement during his presidency was complex and at times controversial.
