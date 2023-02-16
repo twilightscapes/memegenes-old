@@ -296,7 +296,7 @@ function Iframer() {
 
     // const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
     return (
-      <div className="wrap-element effects" style={{aspectRatio:'16/9', minHeight:'300px', width:'100vw', maxHeight:'', overFlow:'hidden'}}>
+      <div className="wrap-element effects" style={{aspectRatio:'', minHeight:'300px', width:'100vw', maxHeight:'90vh', overFlow:'hidden'}}>
 
 
 {/* <GatsbyImage
@@ -380,8 +380,8 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
             <ReactPlayer
               allow="autoplay"
               ref={playerRef}
-              style={{position:'absolute', top:'', zIndex:'', minHeight:'300px',}}
-              width="100%"
+              style={{position:'absolute', top:'0', zIndex:'', minHeight:'300px',}}
+              width="100vw"
               height="100%"
                 url={[iframeUrl, Suggestion1, Suggestion2, Suggestion3]}
               // url={iframeUrl}
