@@ -1339,6 +1339,21 @@ footer{
 }
 
 
+body.homepage #info .gatsby-image-wrapper img {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	margin: 0 auto;
+	max-width: 320px;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	object-fit: cover;
+}
+
+
 
 .react-tabs__tab{
 	display: inline-block;
