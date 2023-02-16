@@ -19,6 +19,8 @@ audiotitle:
 bumpertext: "Rated CH for CrackHeads"
 liarliar: true
 youtubecontrols: false
+clicktoplay: true
+customcontrols: true
 youtubeautostart: true
 youtubeloop: true
 isnftforsale: false

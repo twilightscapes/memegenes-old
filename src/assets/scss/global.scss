@@ -101,7 +101,7 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .i
 
 
 .bug{
-	max-width:100px !important;
+	max-width:150px !important;
 	height: auto !important;
 	opacity:.4;
 	filter: drop-shadow(1px 0px 4px rgba(0,0,0,.9));
@@ -252,74 +252,7 @@ animation-iteration-count:infinite;
 	  }
 	}
 
-	body.bloglist .effects::before{content:"Where great memes go to die";}
 	
-	body.blogpost .effects::before{content:"MemeGenes.com";}
-
-
-     body.blogpost .effects::before,  body.bloglist .effects::before{
-		  position:absolute;
-		  display: flex;
-		  align-items: flex-start;
-		  justify-content: center;
-		  align-self:center;
-		  padding:20% 2% 0 2%;
-		  animation: poof 1.4s forwards;
-		  animation-delay: 1.4s;
-		  overflow: hidden;
-		  width:100vw;
-		  height:200vh;
-		  z-index: 1;
-		top:0;
-		left:0;
-		right:0;
-
-		font-family:  var(--theme-ui-colors-fontFamily);
-		  font-size:clamp(1.4rem, 4.5vw, 5.8rem); 
-		  color:#f8f8fc;
-		  text-shadow: 12px 7px 15px 2px black;
-		  text-shadow:0 0 7px #bca3c8,0 0 10px rgb(194, 186, 192),0 0 21px rgb(145, 135, 143),0 0 22px #70686e,0 0 32px #726a70,0 0 42px #ccc,0 0 42px #ada7ab,0 0 31px #99989c;
-		  outline:0px solid rgba(0, 0, 0, 1) ;
-		  filter: drop-shadow(1px 0px 4px rgba(0,0,0,.9));
-		  background-color: rgb(148, 146, 158) ;
-		  background-color:rgba(9, 9, 10, 0.866);
-		  background-color:rgba(9, 9, 10, 0.866);
-		//   background-image: url(../../../static/assets/newspaper.webp);
-	
-	 }
-
-
-
-
-
-
-     body.homepage .effects::before{
-		content: "Do these memes make my butt look fat?";
-	  position:absolute;
-	  display: flex;
-	  align-items: flex-start;
-	  justify-content: center;
-	  align-self:center;
-	  padding:20% 2% 0 2%;
-	  animation: poof 1.9s forwards;
-	  animation-delay: 1.4s;
-	  overflow: hidden;
-	  width:100vw;
-	  height:200vh;
-	  z-index: 1;
-
-	  font-family:  var(--theme-ui-colors-fontFamily);
-	  font-size:clamp(1.5rem, 3vw, 4.8rem); 
-	  color:#f8f8fc;
-	  text-shadow: 12px 7px 15px 2px black;
-	  text-shadow:0 0 7px #bca3c8,0 0 10px rgb(194, 186, 192),0 0 21px rgb(145, 135, 143),0 0 22px #70686e,0 0 32px #726a70,0 0 42px #ccc,0 0 42px #ada7ab,0 0 31px #99989c;
-	  outline:0px solid rgba(0, 0, 0, 1) ;
-	  filter: drop-shadow(1px 0px 4px rgba(0,0,0,.9));
-	  background-color: rgb(148, 146, 158) ;
-	  background-color:rgba(9, 9, 10, 0.866);
-	//   background-image: url(../../../static/assets/newspaper.webp);
-
-   }
 
 
 
@@ -497,6 +430,7 @@ p{
 		display: none !important;
 		border:10px solid yellow !important;
 	}
+  .fullscreenButt{display:none;}
 }
 
 
@@ -776,13 +710,18 @@ body.homepage .resp-sharing-button__icon svg{ width: 5vw; height: 5vh;}
 	// .horizontal-scroll-wrapper, .horizontal-scroll {
 	// 	scroll-snap-type:inherit !important;
 	// }
+
 	
 }
 /* iOS ONLY browsers */
-@supports(font:-apple-system-body) and (-webkit-touch-callout:default){
+// @supports(font:-apple-system-body) and (-webkit-touch-callout:default){
+
+// }
+
+
+@media (max-width:48rem){
+  .fullscreenButt{display:none;}
 }
-
-
 
 
 .spacer33{
@@ -1780,7 +1719,7 @@ body.homepage .horizontal-holder{height:inherit !important}
 	.featured-image1{max-height: 36vh !important; margin-top:1rem !important
 		;}
 
-		.imageonly featured-image1{max-height: inherit !important;}	
+		.imageonly featured-image1{max-height: inherit !important; min-height:300px !important;}	
 
 
 	.flexbutt{
@@ -1845,7 +1784,7 @@ body.homepage .horizontal-holder{height:inherit !important}
 	 position:fixed;
 	 right:30px;
 	 gap:20px;
-	z-index: 1;
+	z-index: 3;
 	bottom:20px !important;
 
 }
@@ -1865,12 +1804,12 @@ body.homepage .horizontal-holder{height:inherit !important}
 	height:60px;
 	font-weight:bold;
 	padding:2px;
-	color:#ddd;
+	color:#999;
 	font-size:1rem;
 	border-radius:12px;
 	border:1px solid #666;
 	cursor:pointer;
-	background:rgba(0, 0, 0, .5);
+	background:rgba(0, 0, 0, .9);
 
 }
 .hudicon{
@@ -1882,11 +1821,7 @@ body.homepage .horizontal-holder{height:inherit !important}
 	position: relative;
 	display:block;
 	top:0;
-	color:#fff !important;
-	// background:rgba(0, 0, 0, .7);
-	z-index: -3;
-	// height:110vh;
-	// backdrop-filter: blur(6px);
+	color:#fff;
 }
 
 // .wrap-element::before {

@@ -16,20 +16,22 @@ youtubemute: true
 audiostart: "20"
 audioend: "5000"
 audiotitle: 
-bumpertext: "Wow, check out all the ACTION packed DRAMA coming this Summer!"
+bumpertext: ""
 liarliar: true
 youtubecontrols: false
-youtubeautostart: false
+clicktoplay: false
+customcontrols: true
+youtubeautostart: true
 youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: true
 shareable: true
-underlayImage: 
+underlayImage: /assets/transparent.png
 featuredImage: /assets/yellowstone-promo.webp
 svgImage: 
 scrollable: true
-nftdrop: "2023-02-09T07:00:00"
+nftdrop: "2023-02-11T10:00:00"
 contentinvideo: false
 ---
 <!-- <div class="contentinside lake1" style=""> -->

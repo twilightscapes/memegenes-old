@@ -53,6 +53,10 @@ title: Do these memes make my butt look fat?
 youtubeend: "90"
 sharethis: false
 youtubecontrols: true
+customcontrols: true
+clicktoplay: false
+liarliar: false
+bumpertext: ""
 template: index-page
 youtubemute: true
 description: A rogue one, out there to change the world, one meme at a time. 

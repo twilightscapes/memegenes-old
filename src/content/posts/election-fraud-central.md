@@ -19,6 +19,8 @@ audiotitle:
 bumpertext: "Mikey gets his feelings hurt"
 liarliar: true
 youtubecontrols: false
+clicktoplay: true
+customcontrols: true
 youtubeautostart: true
 youtubeloop: true
 isnftforsale: false
@@ -34,14 +36,14 @@ contentinvideo: true
 
 ---
 
-<div class="contentinside" style="position:relative; z-index:4; min-width:50%; height:auto;  padding:0; left:0; border:0px solid yellow; text-align:center;">
+<div class="contentinside" style="position:relative; z-index:1; min-width:50%; height:auto;  padding:0; left:0; border:0px solid yellow; text-align:center;">
 <object class="" style="height:auto; border:0px solid red; margin-top:-15px" class="" id="svg1" data="/assets/MyPillowGuyEdit.svg" type="image/svg+xml" alt="animated content" title="animated content" ></object>
 </div>
 
 
 
 
-<div class="contentbody" style="position:relative; top:; z-index:0; border:px solid blue; height:100%; margin-top:1%; text-align:left">
+<div class="contentbody" style="position:relative; top:; z-index:; border:px solid blue; height:100%; margin-top:1%; text-align:left">
 
 Mike Lindell is the founder and CEO of MyPillow, a pillow manufacturing company based in Chaska, Minnesota. He is known for his colorful personality and aggressive marketing tactics, which have made MyPillow one of the most recognizable brands in the bedding industry.
 <br /><br />

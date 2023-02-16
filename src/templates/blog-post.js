@@ -11,7 +11,7 @@ import { MdPause } from "react-icons/md"
 import { MdVolumeOff } from "react-icons/md"
 // import { MdVolumeDown } from "react-icons/md"
 import { MdVolumeUp } from "react-icons/md"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 
 
 import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
@@ -22,9 +22,9 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { RiArrowRightDownFill } from "react-icons/ri"
 import CommentBox from "../components/commentbox"
-// import { StaticImage } from "gatsby-plugin-image"
+
 import useSiteMetadata from "../hooks/SiteMetadata"
-import Countdown from 'react-countdown'
+// import Countdown from 'react-countdown'
 
 
 import { ImCross } from "react-icons/im"
@@ -40,7 +40,7 @@ import Footer from "../components/footer"
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-import YouTubed from "../components/youtube"
+// import YouTubed from "../components/youtube"
 import Seo from "../components/seo"
 import Layout from "../components/siteLayout"
 import ShareSocial from '../components/share' 
@@ -64,6 +64,7 @@ const Pagination = props => (
   <div className="pagination -post1" style={{position:'', bottom:'',}}>
     <ul className="" style={{display:'flex', gap:'2vw', justifyContent:'space-around', paddingTop:'5px', alignItems:'center'}}>
       
+
     {props.next && props.next.frontmatter.template === "blog-post" && (
         <li style={{display:'flex', justifyContent:'space-between', width:'50%'}}>
 <Link to={props.next.frontmatter.slug + "/"} rel="next">
@@ -78,10 +79,10 @@ const Pagination = props => (
         </li>
       )}
 
+      <div className="specialfont" style={{fontSize:'clamp(1.5rem, 2vw, 2.8rem)', marginTop:'-5px', width:'10vw', fontWeight:'bold', border:'0px solid', display:'grid', color:'#999', placeContent:'center'}}>GO TO</div>
 
-      <div className="specialfont" style={{fontSize:'clamp(1.5rem, 2vw, 2.8rem)', marginTop:'-5px', width:'10vw', fontWeight:'bold', border:'0px solid', display:'grid', placeContent:'center'}}>GO TO</div>
-
-      {props.previous && props.previous.frontmatter.template === "blog-post" && (
+      
+{props.previous && props.previous.frontmatter.template === "blog-post" && (
         // <li style={{border:'1px solid', borderRadius:'12px', filter:'drop-shadow(0 0px 6px rgba(0, 0, 0, 1))'}}>
         <li style={{display:'flex', justifyContent:'space-between', width:'50%'}}>
 <Link style={{}}  to= {props.previous.frontmatter.slug + "/"} rel="prev">
@@ -95,12 +96,29 @@ const Pagination = props => (
           </Link>
         </li>
       )}
-      
 
 
 
     </ul>
+
+    
   </div>
+
+
+
+  
+
+  
+    
+  
+  
+  
+  
+  
+    
+
+
+
 )
 
 
@@ -123,9 +141,14 @@ const Post = ({ data, pageContext }) => {
     : ""
 
 
+
+
+
+
+
   //   const scrollable = frontmatter.scrollable
 
-    const NftDrop = frontmatter.nftdrop
+    // const NftDrop = frontmatter.nftdrop
 
 
 
@@ -164,23 +187,33 @@ const YouTubeEnd = frontmatter.youtubeend
 const YouTubeMute = frontmatter.youtubemute
 const YouTubeControls = frontmatter.youtubecontrols
 const YouTubeAutostart = frontmatter.youtubeautostart
-
+const CustomControls = frontmatter.customcontrols
 const Suggestion1 = frontmatter.youtubersuggestion1
 const Suggestion2 = frontmatter.youtubersuggestion2
 const Suggestion3 = frontmatter.youtubersuggestion3
 
 const YoutubeLoop = frontmatter.youtubeloop
 
+const ClickToPlay = frontmatter.clicktoplay
+
+// const CustomControlBinary = frontmatter.customcontrols
+// const iframeUrl = frontmatter.youtuber
+
+
+
+const iframeUrl = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=" + frontmatter.youtubeautostart + "&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=" + frontmatter.youtubeloop + "&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+
+
 const ContentinVideo = frontmatter.contentinvideo
 const LiarLiar = frontmatter.liarliar
 
-// if (Suggestion1) {
-//   <ShowSuggestion />
-// }
-// else{
+if (Suggestion1) {
+  <ShowSuggestion />
+}
+else{
 
   
-// }
+}
 
 function ShowSuggestion() {
 
@@ -227,7 +260,7 @@ Add your own in the comments below!
 const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
 // const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
 // const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
-const iframeUrl = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber + ""
+
   // const YouTube = frontmatter.youtuber
 
 const OriginalUrl = frontmatter.youtuber 
@@ -259,21 +292,6 @@ const OriginalUrl = frontmatter.youtuber
             width="100%"
             height="1000px"
             className='react repo'
-          //       url={[
-          //   iframeUrl,
-          //   Suggestion1,
-          //   Suggestion2,
-          //   Suggestion3
-          // ]}
-          // url={[
-          //   iframeUrl,
-          //   YoutuberSuggestion1,
-          //   YoutuberSuggestion2,
-          //   YoutuberSuggestion3
-          // ]}
-            // url={[YoutubePlaylist, IfSuggestion1, IfSuggestion2, IfSuggestion3]}
-            // url="https://youtu.be/lZzai6at_xA"
-            // url={iframeUrl}
             playing={playing}
             controls={controls}
             light={light}
@@ -313,12 +331,6 @@ const OriginalUrl = frontmatter.youtuber
 <ReactPlayer
           className='audioframe'
           url={iframeUrl3}
-          // url={[
-          //   iframeUrl,
-          //   Suggestion1,
-          //   Suggestion2,
-          //   Suggestion3
-          // ]}
           width="100%"
           height="250px"
           style={{margin:'0 auto', position:'relative', left:'', right:'', zIndex:'0', maxWidth:'80vw', display:'flex', justifyContent:'center', border:'0px solid blue'}}
@@ -398,7 +410,8 @@ const YouTube = frontmatter.youtuber
 
 
   const { siteUrl } = useSiteMetadata()
-  // const { iconimage } = useSiteMetadata()
+  // const { companyname } = useSiteMetadata()
+  const { iconimage } = useSiteMetadata()
 
 
   const { showNav } = useSiteMetadata()
@@ -411,7 +424,7 @@ const YouTube = frontmatter.youtuber
   const [state, setState] = useState({
     playing: YouTubeAutostart,
     controls: YouTubeControls,
-    light: false,
+    light: ClickToPlay,
     muted: YouTubeMute,
     loop: YoutubeLoop,
   });
@@ -435,6 +448,8 @@ const YouTube = frontmatter.youtuber
   const handleMute = () => {
     setState({ ...state, muted: !state.muted });
   };
+
+
 
 
 
@@ -494,7 +509,7 @@ const YouTube = frontmatter.youtuber
 
   
   
-    <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'1', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
+    <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
    
     <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
     <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>
@@ -589,6 +604,7 @@ const YouTube = frontmatter.youtuber
     onToggleFullScreen: PropTypes.func,
     onMute: PropTypes.func,
     playing: PropTypes.bool,
+    light: PropTypes.bool,
     played: PropTypes.number,
     elapsedTime: PropTypes.string,
     totalDuration: PropTypes.string,
@@ -662,9 +678,9 @@ const YouTube = frontmatter.youtuber
       )}
 
 
-<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'2',  left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7), color:#999', fontSize:'clamp(2rem, 3vw, 3rem)', verticalAlign:'center' }}>
+<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'3',  left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7)', fontSize:'clamp(2rem, 3vw, 3rem)', verticalAlign:'center' }}>
 
-<div className="menusnapp" style={{display:'flex', gap:'10px', padding:'1vh 1vw', color:'#999', alignItems:'center'}}>
+<div className="menusnapp" style={{display:'flex', gap:'10px', padding:'1vh 1vw', alignItems:'center'}}>
 {frontmatter.scrollable ? (
   <AnchorLink to="#top" style={{cursor:'pointer', height:'2vh'}}><RiArrowUpFill style={{cursor:'pointer', color:'#999'}} /></AnchorLink>
 ) : (
@@ -699,18 +715,18 @@ const YouTube = frontmatter.youtuber
 
 
 
-{YouTubeControls ? (
-""
+{CustomControls ? (
+         <Controls
+         ref={controlsRef}
+         onPlayPause={handlePlayPause}
+         playing={playing}
+         played={played}
+         onMute={handleMute}
+         muted={muted}
+       />
        
           ) : (
-            <Controls
-            ref={controlsRef}
-            onPlayPause={handlePlayPause}
-            playing={playing}
-            played={played}
-            onMute={handleMute}
-            muted={muted}
-          />
+   ""
           )}
 
         
@@ -726,31 +742,48 @@ const YouTube = frontmatter.youtuber
 
 
 
-<div className="wrap-element effects" style={{aspectRatio:'16/9',}}>
+<div className="wrap-element effects" style={{aspectRatio:'16/9', minHeight:'300px'}}>
 
-{!YouTube ? (
 
-<div>
-{FrontImage ? (
-
-<div style={{position:'', top:'', zIndex:''}}>
-      <GatsbyImage
+{/* <GatsbyImage
         image={FrontImage}
         alt={frontmatter.title + " - Featured image"}
         className="featured-image1 layer1"
         placeholder="blurred"
         loading="eager"
         // layout="constrained"
-        style={{}}
-      />
-</div>
+        style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300px'}}
+      /> */}
+
+
+
+{YouTube ? (
+
+<div>
+{FrontImage ? (
+
+
+<GatsbyImage
+image={FrontImage}
+alt={frontmatter.title + " - Featured image"}
+className="featured-image1 layer1"
+placeholder="blurred"
+loading="eager"
+// layout="constrained"
+style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300px'}}
+/>
+
     ) : (
       ""
     )}
 
 </div>
     ) : (
-      <div className="imageonly" style={{position:'', top:'', zIndex:''}}>
+
+<div className="imageonly">
+{FrontImage ? (
+
+
       <GatsbyImage
         image={FrontImage}
         alt={frontmatter.title + " - Featured image"}
@@ -758,9 +791,15 @@ const YouTube = frontmatter.youtuber
         placeholder="blurred"
         loading="eager"
         // layout="constrained"
-        style={{}}
+        style={{position:'relative', top:'0', zIndex:'0', minHeight:'300px'}}
       />
+
+    ) : (
+      ""
+    )}
+
 </div>
+
     )}
 
 
@@ -776,8 +815,6 @@ const YouTube = frontmatter.youtuber
 
 
 
-{/* url={[iframeUrl, Suggestion2, Suggestion3]} */}
-
 
 {YouTube ? (
   <div>
@@ -789,7 +826,7 @@ const YouTube = frontmatter.youtuber
             <ReactPlayer
               allow="autoplay"
               ref={playerRef}
-              style={{position:'', zIndex:'0'}}
+              style={{position:'asbolute', zIndex:'1'}}
               width="100%"
               height="100%"
                 url={[iframeUrl, Suggestion1, Suggestion2, Suggestion3]}
@@ -803,18 +840,40 @@ const YouTube = frontmatter.youtuber
               config={{
                 file: {
                   attributes: {
+                    sameSite: "none",
                     crossorigin: "anonymous",
                   },
                 },
-                youtube: {
-                  playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:YoutubeLoop }
-                },
+                  youtube: {
+                    playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:YoutubeLoop }
+                  }
               }}
+              playIcon={
+                <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'5', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
+             
+                <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'80px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
+                <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>
+                  Click to play
+                </div>
+            
+          
+            
+            <div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'0', padding:'0 5%', maxWidth:'800px'}}>
+               {frontmatter.bumpertext ? (
+              <h3>{frontmatter.bumpertext}</h3>
+                    ) : (
+              <h3>{frontmatter.title}</h3>
+                )}
+            </div>
+            
+            
+            <br /><br /><br /><br />
+                </div>
+            }
             
             />
-            <div className="youtubeblockertop" style={{position:'absolute', display:'block', background:'#000', height:'', width:'100%', zIndex:'4', top:'0', right:'0', textAlign:'center', padding:'12px',
-            animation:'fadeout 1s forwards', animationDelay:'4s'
-          
+            <div className="youtubeblockertop" style={{position:'absolute', display:'block', background:'', height:'58px', width:'100%', zIndex:'0', top:'0', right:'0', textAlign:'center', padding:'12px',
+            animation:'fadeout 1s forwards', animationDelay:'4s', border:'0px solid yellow'
           }}>MemeGenes.com</div>
   </div>
   ) : (
@@ -822,7 +881,7 @@ const YouTube = frontmatter.youtuber
   <ReactPlayer
     allow="autoplay"
     ref={playerRef}
-    style={{position:'', zIndex:'0'}}
+    style={{position:'', top:'0', zIndex:'', minHeight:'300px',}}
     width="100%"
     height="100%"
       // url={[iframeUrl, Suggestion2, Suggestion3]}
@@ -836,6 +895,7 @@ const YouTube = frontmatter.youtuber
     config={{
       file: {
         attributes: {
+          sameSite: "none",
           crossorigin: "anonymous",
         },
       },
@@ -843,11 +903,32 @@ const YouTube = frontmatter.youtuber
         playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:YoutubeLoop }
       },
     }}
+    playIcon={
+      <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'2', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
+   
+      <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'80px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
+      <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>
+        Click to play
+      </div>
+  
+
+  
+  <div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'0', padding:'0 5%', maxWidth:'800px'}}>
+     {frontmatter.bumpertext ? (
+    <h3>{frontmatter.bumpertext}</h3>
+          ) : (
+    <h3>{frontmatter.title}</h3>
+      )}
+  </div>
+  
+  
+  <br /><br /><br /><br />
+      </div>
+  }
   
   />
-  <div className="youtubeblockertop" style={{position:'absolute', display:'block', background:'#000', height:'', width:'100%', zIndex:'4', top:'0', right:'0', textAlign:'center', padding:'12px',
-  animation:'fadeout 1s forwards', animationDelay:'4s'
-
+  <div className="youtubeblockertop" style={{position:'absolute', display:'block', background:'#000', height:'58px', width:'100%', zIndex:'0', top:'0', right:'0', textAlign:'center', padding:'12px',
+            animation:'fadeout 1s forwards', animationDelay:'4s', border:'0px solid yellow'
 }}>MemeGenes.com</div>
 </div>
     )}
@@ -896,7 +977,7 @@ const YouTube = frontmatter.youtuber
   
   {ContentinVideo ? (
     <div id="contentvideo"
-          className="blog-post-content effects" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'0px solid transparent', position:'absolute', bottom:'', left:'0', top:'0', right:'0', zindex:'-1', maxHeight:'100vh', borderBottom:'0px solid', }}
+          className="blog-post-content effects" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'0px solid transparent', position:'absolute', bottom:'0', left:'0', top:'0', right:'0', zindex:'-1', maxHeight:'100vh', borderBottom:'0px solid', }}
           dangerouslySetInnerHTML={{ __html: html }}
           
         >
@@ -989,7 +1070,9 @@ const YouTube = frontmatter.youtuber
         dangerouslySetInnerHTML={{ __html: html }}
       />    
 </div>
+<GoBack />
 </div>
+
 
 ) : (
 
@@ -1012,6 +1095,7 @@ const YouTube = frontmatter.youtuber
                 {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
                Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
               </div>
+              <GoBack />
       </header>
               )}
 </div>
@@ -1048,11 +1132,10 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 
           
-<GoBack />
+
 {Comments ? (
 
 <div id="comments" style={{height:'', paddingBottom:'0',   display:'grid', placeContent:'center', maxWidth:'100vw', padding:'0', margin:'10vh auto'}}>
-
 <CommentBox />
 
 
@@ -1101,11 +1184,11 @@ Click to play original video
           )}
 
 
-<div className="panel legal" style={{textAlign: 'center', padding:'1rem',  justifyContent: 'center', fontSize: '.95rem', textDecoration:'none', maxWidth:'90vw'}}>
-            Legal Crap:<br />
+{/* <div className="panel legal" style={{textAlign: 'center', padding:'1rem',  justifyContent: 'center', fontSize: '.95rem', textDecoration:'none', maxWidth:'90vw'}}>
+            Legal:<br />
             <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link>
       <br /> <br />
-    <div style={{display:'grid', placeContent:'center'}}>
+    <div style={{display:'none', placeContent:'center'}}>
       <p style={{textAlign:'left'}}>
         <strong>*This is a parody website meant for education and entertainment purposes.</strong> <br /><br />
         All characters, and events portrayed in this production are fictitious or are being portrayed in a satirical manner.<br /><br />There is no identification with actual persons (living or deceased), <br />places, buildings, and/or products. There is no harm/insult intended or and none should be inferred. 
@@ -1115,10 +1198,10 @@ Click to play original video
         Video footage public youtube.com | Some imagery provided from <a rel="noopener noreferrer" href="https://www.flickr.com/photos/donkeyhotey/" target="_blank" >DonkeyHotey</a>
         </p>
     </div>
-</div>
+</div> */}
 
 
-<GoBack />
+
 
 
 
@@ -1164,7 +1247,7 @@ Click to play original video
 
 
 
-
+<GoBack />
 
       
 
@@ -1226,6 +1309,8 @@ export const pageQuery = graphql`
         youtubemute
         youtubeloop
         youtubecontrols
+        customcontrols
+        clicktoplay
         youtubeautostart
         contentinvideo
         comments

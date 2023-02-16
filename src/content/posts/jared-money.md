@@ -17,7 +17,9 @@ audiostart: "20"
 audioend: "5000"
 audiotitle: "Liar Liar!"
 liarliar: false
-youtubecontrols: true
+youtubecontrols: false
+clicktoplay: true
+customcontrols: false
 youtubeautostart: true
 youtubeloop: true
 isnftforsale: false

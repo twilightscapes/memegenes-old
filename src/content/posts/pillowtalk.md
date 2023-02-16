@@ -4,7 +4,6 @@ title: Welcome to Pillow Talk - I'm Mike Lindell!
 slug: /pillowtalk
 description: Let's Find Mike A Woman
 youtubemute: true
-youtubecontrols: false
 youtubeend: "0"
 youtubeloop: true
 youtubersuggestion1: ""
@@ -13,13 +12,18 @@ shareable: true
 scrollable: true
 contentinvideo: false
 liarliar: false
+
+youtubecontrols: false
+clicktoplay: true
+customcontrols: true
+youtubeautostart: true
+
 audiotitle: Alternate Soundtrack
 youtuber2: https://youtu.be/CWf5FYSK7Yc
 audioend: "5000"
 audiostart: "20"
 date: 2023-02-03 10:43
 youtuber: https://youtu.be/SD0EKkyuakY
-youtubeautostart: true
 youtubeshoworiginal: true
 comments: true
 featuredImage: /assets/Experiences-Header-8.jpg
@@ -28,7 +32,8 @@ svgImage: /assets/MyPillowTalk.svg
 svgzindex: "0"
 youtubestart: "0"
 youtubersuggestion2: https://youtu.be/iiZnOlRPiE0
-nftdrop: "2023-02-09T09:23:00"
+nftdrop: "2023-02-11T10:00:00"
+bumpertext: ""
 ---
 <div style="text-align:left !important;">
 

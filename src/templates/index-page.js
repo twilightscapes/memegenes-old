@@ -128,7 +128,7 @@ query HomeQuery($id: String!) {
   posts: allMarkdownRemark(
     sort: {frontmatter: {date: DESC}}
     filter: {frontmatter: {template: {eq: "blog-post"}}}
-    limit: 16
+    limit: 20
   ) {
     edges {
       node {
@@ -198,7 +198,7 @@ const HomePage = ({ data }) => {
     const { showCover } = useSiteMetadata()
     const { showfooter } = useSiteMetadata()
     
-
+// const CustomControls = frontmatter.customcontrols
 
 
 
@@ -636,7 +636,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="drop-shadow avatar-frame"
-              style={{ maxWidth:'300px', height:'45vh', maxHeight:'45vh', position:'relative',  margin:'1vh auto 0 auto', objectFit:'contain', backgroundSize:'contain', border:'2rem'}}
+              style={{ maxWidth:'', height:'45vh', maxHeight:'45vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', marginBottom:'0', border:'2rem'}}
             />
           ) : (
             ""

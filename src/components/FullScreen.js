@@ -37,7 +37,7 @@ const FullScreen = () => (
 
 
 
-<button title="Go Full-Screen" className="fullscreenButt" onClick={toggleFullScreen} style={{position:'', top:'', right:'', fontSize:'5vh',padding:'', zIndex:'55', border:'0px solid blue'}}><span className="" style={{padding:''}}><BsArrowsFullscreen /></span> {" "}</button>
+<button title="Go Full-Screen" className="fullscreenButt" onClick={toggleFullScreen} style={{position:'absolute', top:'20px', right:'20px', fontSize:'3vh', color:'#999', padding:'', zIndex:'55', border:'0px solid blue'}}><span className="" style={{padding:''}}><BsArrowsFullscreen /></span> {" "}</button>
 
 
 
