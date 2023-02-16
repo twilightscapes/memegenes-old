@@ -681,7 +681,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'3',  left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7)', fontSize:'clamp(2rem, 3vw, 3rem)', verticalAlign:'center' }}>
+<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'10', left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7)', fontSize:'clamp(2rem, 3vw, 3rem)', verticalAlign:'center' }}>
 
 <div className="menusnapp" style={{display:'flex', gap:'10px', padding:'1vh 1vw', alignItems:'center'}}>
 {frontmatter.scrollable ? (
@@ -829,7 +829,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
             <ReactPlayer
               allow="autoplay"
               ref={playerRef}
-              style={{position:'asbolute', zIndex:'1'}}
+              style={{position:'asbolute', zIndex:''}}
               width="100%"
               height="100%"
                 url={[iframeUrl, Suggestion1, Suggestion2, Suggestion3]}
@@ -852,7 +852,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                   }
               }}
               playIcon={
-                <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'5', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
+                <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
              
                 <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'80px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
                 <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>
@@ -885,7 +885,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
   <ReactPlayer
     allow="autoplay"
     ref={playerRef}
-    style={{position:'', top:'0', zIndex:'', minHeight:'300px',}}
+    style={{position:'absolute', top:'0', zIndex:'', minHeight:'300px',}}
     width="100%"
     height="100%"
       // url={[iframeUrl, Suggestion2, Suggestion3]}
@@ -908,7 +908,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
       },
     }}
     playIcon={
-      <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'2', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
+      <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
    
       <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'80px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
       <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>

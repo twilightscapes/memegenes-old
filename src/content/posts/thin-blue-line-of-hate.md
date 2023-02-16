@@ -14,7 +14,7 @@ youtubestart: "0"
 youtubeend: "39"
 youtubemute: true
 youtubecontrols: false
-clicktoplay: true
+import Layout from clicktoplay: false
 customcontrols: true
 youtubeautostart: true
 youtubeloop: true

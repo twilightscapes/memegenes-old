@@ -19,7 +19,7 @@ audiotitle:
 bumpertext: "Mikey gets his feelings hurt"
 liarliar: true
 youtubecontrols: false
-clicktoplay: true
+import Layout from clicktoplay: false
 customcontrols: true
 youtubeautostart: true
 youtubeloop: true

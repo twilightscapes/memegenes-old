@@ -53,7 +53,7 @@ youtubeend: "90"
 sharethis: false
 youtubecontrols: false
 customcontrols: false
-clicktoplay: true
+import Layout from clicktoplay: false
 liarliar: false
 bumpertext: ""
 template: index-page
