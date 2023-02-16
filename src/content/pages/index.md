@@ -22,7 +22,7 @@ youtubeautostart: true
 addressText2: ""
 skillsTitle: "Mad Skills Yo!"
 skillsText: 
-  <!-- <dl>
+  <dl>
   <dt>
   <h2>Overall Skills</h2><div>100%</div>
   </dt>
@@ -42,7 +42,7 @@ skillsText:
   <dd class="percentage percentage-85"><span class="text">CSS</span> <span class="percent">85%</span></dd>
   <dd class="percentage percentage-75"><span class="text">Gatsby</span> <span class="percent">75%</span></dd>
   <dd class="percentage percentage-65"><span class="text">React</span> <span class="percent">65%</span></dd>
-  </dl> -->
+  </dl>
 cta:
   ctaText: Contact Gene
   ctaLink: ""
@@ -74,10 +74,10 @@ youtubersuggestion3: ""
 ---
 <!-- Do not delete -->
 
-<!-- <div> -->
+<div>
 <!-- Do not delete -->
 
-<!-- ## **Highlights**
+## **Highlights**
 
  **Product Designer - Skilled web designer/developer with 21 years of professional experience.**
 
@@ -107,15 +107,15 @@ Quality Assurance - Degree
 * Golden West College
 Business Management - Degree
 * Huntington Beach High School
-High School General Courses - Diploma -->
+High School General Courses - Diploma
 
 <!-- Do not delete -->
 
-<!-- </div>
-<div> -->
+</div>
+<div>
 <!-- Do not delete -->
 
-<!-- ## **Experience**
+## **Experience**
 
 **Todd Lambert Enterprises, 1999 - Present**
 <br />Sole Proprietor / Photographer
@@ -141,11 +141,11 @@ Solely responsible for all design and development aspects of web department. Int
 **TeleVox Software, 2004 - 2007**
 <br />Director of Web Development
 
-Responsible for site architecture, design, graphics, programming, copywriting/editing, project management of all TeleVox websites and online marketing campaigns. Supervised 25 designers and developers. -->
+Responsible for site architecture, design, graphics, programming, copywriting/editing, project management of all TeleVox websites and online marketing campaigns. Supervised 25 designers and developers.
 
 <!-- Do not delete -->
 
-<!-- </div> -->
+</div>
 <!-- Do not delete -->
 
 <!-- RGT4V6JmINA MUSIC: CURE -->

@@ -51,6 +51,13 @@ const { menu3 } = useSiteMetadata()
 const { menu4 } = useSiteMetadata()
 const { font1 } = useSiteMetadata()
 
+
+  const QUERY = '(prefers-reduced-motion: no-preference)';
+  const mediaQueryList = window.matchMedia(QUERY);
+  const prefersReducedMotion = !mediaQueryList.matches;
+
+
+
 const navStyle = {
   bg: "",
 }
@@ -106,15 +113,27 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 <ul sx={navStyle} id="menu" className="menu print" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center',  color:'', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center', minHeight:'70px', background:'', }}>
       
-<li className="grad logo" style={{position:'relative', maxHeight:'60px', width:'auto', display:'flex', justifyContent:'center'}}>
-            <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
+{prefersReducedMotion ? (
+            <li className="nomo" style={{position:'relative',}}>
+            <Link to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
+            {iconimage ? (
+      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} width="100px" height="70px" />
+                ) : (
+                  <div style={{fontWeight:'bold',}}>{companyname}</div>
+                )}
+            </Link>
+          </li>
+          ) : (
+            <li className="momo" style={{position:'relative',}}>
+                        <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
       <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} width="100px" height="70px" />
                 ) : (
                   <div style={{fontWeight:'bold',}}>{companyname}</div>
                 )}
             </AnchorLink>
-          </li>
+                        </li>
+          )}
       
       
 {/* <li>
@@ -159,43 +178,52 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 
-{showInfo ? (
-            <li className="" style={{position:'relative',}}>
+{showInfo & prefersReducedMotion ? (
+            <li className="nomo" style={{position:'relative',}}>
+              <Link aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>
+              {menu1}
+              </Link>
+              </li>
+) : (
+  <li className="momo" style={{position:'relative',}}>
               <AnchorLink aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>
               {menu1}
               </AnchorLink>
               </li>
-) : (
-  ""
 )}
 
 
 
        
-{showResume ? (
-            <li className="" style={{position:'relative',}}>
-              <AnchorLink ariaLabel="Menu 3" className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
+{showResume & prefersReducedMotion ? (
+            <li className="nomo" style={{position:'relative',}}>
+              <Link ariaLabel="Menu 3" className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
               {menu3}
-              </AnchorLink>
+              </Link>
               </li>
-            ) : (
-              ""
-            )}
+   ) : (
+    <li className="momo" style={{position:'relative',}}>
+                <AnchorLink aria-label="Menu 3" className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
+                {menu3}
+                </AnchorLink>
+                </li>
+  )}
+  
 
 
-
-{showSkills ? (
-              <li className="" style={{position:'relative',}}>
-              {/* <AnchorLink to="/#contact" className="navbar-item" style={{paddingRight:'',}}>
-                Contact <span className="mobilehide">Me</span>
-              </AnchorLink> */}
-      
-              <AnchorLink className="navbar-item" to="/#skills" style={{paddingRight:'',}}>{menu4}</AnchorLink>
+{showSkills & prefersReducedMotion ? (
+            <li className="nomo" style={{position:'relative',}}>
+              <Link className="navbar-item" to="/#skills" style={{paddingRight:'',}}>{menu4}</Link>
               </li>
+   ) : (
+    <li className="momo" style={{position:'relative',}}>
+                <AnchorLink aria-label="Menu 4" className="navbar-item" to="/#skills" style={{paddingRight:'',}}>
+                {menu4}
+                </AnchorLink>
+                </li>
+  )}
 
-              ) : (
-  ""
-)}
+
 
 
 <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>

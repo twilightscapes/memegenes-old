@@ -896,7 +896,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 {/* show feature */}
 {showFeature ? (   
 
-
+<ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} > 
 
 <section id="feature" order="1" name="feature" className="print" style={{ display:'', margin:'0', padding:'0', position:'relative'}}>
 
@@ -961,10 +961,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 </section>
 
 
-
+</ScrollAnimation>
 ) : (
   ""
 )}
+
 {/* end show feature */}
 
 
@@ -972,16 +973,18 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 {showPosts ? (
+  
   <div id="showPosts" className="container24 horizontal-holder effects" style={{position:'relative', background:'none', maxHeight:'77vh', overflow:'hidden'}}>
-
+<ScrollAnimation className="animate" animateIn="bounceInDown" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={false} > 
 <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
     <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
                          <BlogListHome data={posts} />
       {/* <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
       </div> */}
 </div>
-
+</ScrollAnimation>
 </div>
+
       ) : (
         ""
       )}
@@ -1051,7 +1054,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 {showInfo ? (
 
 
-
+<ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={false} > 
 <section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'visible', margin:'15vh 0 0 0', padding:'0 0 10vh 0', border:'0px solid blue',}}>
 
 
@@ -1081,7 +1084,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   background:'rgba(0,0,0,0.50)', 
   backdropFilter:'blur(12px)',
   borderRadius:'10px'}}>
-  <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
+  <ScrollAnimation className="animate" animateIn="fadeIn" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={false} style={{}}> 
   <h1 className="title1" style={{fontSize:'clamp(2.5rem, 3.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
             {/* <h2 className="tagline1">
               {frontmatter.tagline}
@@ -1150,7 +1153,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   borderRadius:'10px',
   textShadow:'0 2px 7px #000',
   }} >
-<ScrollAnimation animateIn="bounceInUp" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={false} style={{marginTop:'10px'}}> 
+<ScrollAnimation className="animate" animateIn="fadeIn" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={false} > 
 <span style={{marginTop:'10px', fontSize:'160%'}}>
   {/* {companyname}  */}
   Meme Gene</span>
@@ -1266,6 +1269,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 </div> 
 </article>
 </section>
+</ScrollAnimation>
 ) : (
   ""
 )}
@@ -1299,7 +1303,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 {/*  show Resume */}
 {showResume ? (
-  <ScrollAnimation animateIn="bounceInUp" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={false} style={{marginTop:'10px'}}> 
+  
 <section className="vertical" id="resume" order="4" style={{ display:'', minHeight:'', overflow:'', margin:'5vh 0 0 0', position:'relative', border:'0px solid blue'}}>
 
 
@@ -1315,9 +1319,9 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 <br />
 {frontmatter.addressText2}
 </div>
-
+<ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={false} > 
 <div id="" className="">
-<ScrollAnimation animateIn="bounceInUp" animateOut="bounceInDown" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
+
 <span
           style={{  columnCount:'2',
             columnGap:'40px',
@@ -1325,9 +1329,9 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
             className=""
             dangerouslySetInnerHTML={{ __html: html }}
           />
-          </ScrollAnimation>
+  
 </div>
-
+</ScrollAnimation>
 <br />
 <div className="toolbar noapp print" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px solid #777', borderBottom:'1px solid #777', justifyContent:'start', background:'rgba(24, 29, 31, 0.2)', borderRadius:'12px', padding:'5px 0 5px 0', }}>
 <div className="keyboard" order="" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto', padding:'4px 0 0 0', lineHeight:'calc(2em + .4vw)'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Print:</span> &nbsp;<kbd>⌘</kbd> + <kbd>p</kbd> &nbsp;OR&nbsp; <kbd>Ctrl</kbd> + <kbd>p</kbd></div>
@@ -1340,7 +1344,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 
-</section></ScrollAnimation>
+</section>
 ) : (
   ""
 )}
@@ -1349,10 +1353,10 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 {/*  show Skills */}
 {showSkills ? (
-
+   
 <section className="print vertical" id="skills" order="5" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'0 auto', textAlign:'center', borderRadius:'8px', minHeight:'', maxWidth:'', padding:'1rem', display:'', placeContent:'', border:'0px solid green', }}>
 <br />
-<ScrollAnimation animateIn="bounceInUp" animateOut="BounceOutDown" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
+<ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={false} >
 <div className="flexbutt" style={{display:'flex', justifyContent:'center', width:'', columnGap:'50px', border:'0px solid blue',  background:'rgba(24, 29, 31, 0.7)',  backdropFilter:'blur(12px)', padding:'4%', borderRadius:'12px', color:'#fff' }} dangerouslySetInnerHTML={{ __html: SkillsText }}>
 </div>
 </ScrollAnimation>
@@ -1382,7 +1386,9 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 {/* show footer */}
 {showfooter ? (
+  <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={false} > 
 <Footer className="vertical" />
+</ScrollAnimation>
 ) : (
   ""
 )}
