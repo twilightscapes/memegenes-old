@@ -19,7 +19,7 @@ audiotitle:
 bumpertext: "Rated CH for CrackHeads"
 liarliar: true
 youtubecontrols: false
-clicktoplay: false
+clicktoplay: true
 customcontrols: true
 youtubeautostart: true
 youtubeloop: true
