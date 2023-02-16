@@ -177,27 +177,37 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   ""
 )} */}
 
-
-{showInfo ? (
-<>
-{prefersReducedMotion ? (
-  <li className="nomo" style={{position:'relative',}}>
-    <Link aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>
-    {menu1}
-    </Link>
-    </li>
-) : (
-<li className="momo" style={{position:'relative',}}>
-    <AnchorLink aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>
-    {menu1}
-    </AnchorLink>
-    </li>
-)}
-</>
-            ) : (
+{showPosts ? (
+<li style={{position:'relative',}}>
+      {prefersReducedMotion ? (
+       <Link aria-label="Menu 2" className="navbar-item" to="/#showPosts" style={{paddingRight:'',}}>{menu2}</Link>    
+   ) : (
+      <AnchorLink aria-label="Menu 2" className="navbar-item" to="/#showPosts" style={{paddingRight:'',}}>
+      {menu2}</AnchorLink>         
+    )}
+</li>
+      ) : (
   ""
 )}
 
+
+
+
+
+
+
+{showInfo ? (
+<li style={{position:'relative',}}>
+      {prefersReducedMotion ? (
+       <Link aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>{menu1}</Link>    
+   ) : (
+      <AnchorLink aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>
+      {menu1}</AnchorLink>         
+    )}
+</li>
+      ) : (
+  ""
+)}
 
 
 
@@ -205,40 +215,31 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 {showResume ? (
-<> 
-{prefersReducedMotion ? (
-            <li className="nomo" style={{position:'relative',}}>
-              <Link ariaLabel="Menu 3" className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
-              {menu3}
-              </Link>
-              </li>
+<li style={{position:'relative',}}>
+      {prefersReducedMotion ? (
+       <Link aria-label="Menu 3" className="navbar-item" to="/#resume" style={{paddingRight:'',}}>{menu3}</Link>    
    ) : (
-    <li className="momo" style={{position:'relative',}}>
-                <AnchorLink aria-label="Menu 3" className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
-                {menu3}
-                </AnchorLink>
-                </li>
-  )}
-  </>
-            ) : (
+      <AnchorLink aria-label="Menu 3" className="navbar-item" to="/#resume" style={{paddingRight:'',}}>
+      {menu3}</AnchorLink>         
+    )}
+</li>
+      ) : (
   ""
 )}
 
+
+
+
 {showSkills ? (
-<> 
-{prefersReducedMotion ? (
-            <li className="nomo" style={{position:'relative',}}>
-              <Link className="navbar-item" to="/#skills" style={{paddingRight:'',}}>{menu4}</Link>
-              </li>
+<li style={{position:'relative',}}>
+      {prefersReducedMotion ? (
+       <Link className="navbar-item" to="/#skills" style={{paddingRight:'',}}>{menu4}</Link>    
    ) : (
-    <li className="momo" style={{position:'relative',}}>
-                <AnchorLink aria-label="Menu 4" className="navbar-item" to="/#skills" style={{paddingRight:'',}}>
-                {menu4}
-                </AnchorLink>
-                </li>
-  )}
-</>
-            ) : (
+      <AnchorLink aria-label="Menu 4" className="navbar-item" to="/#skills" style={{paddingRight:'',}}>
+      {menu4}</AnchorLink>         
+    )}
+</li>
+      ) : (
   ""
 )}
 
