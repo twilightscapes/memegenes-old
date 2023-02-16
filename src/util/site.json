@@ -29,7 +29,7 @@
     "showCover": false,
     "showResume": true,
     "showSkills": true,
-    "showfooter": true,
+    "showfooter": false,
     "showPopup": false,
     "comments": "5639031584980992-proj"
   },
