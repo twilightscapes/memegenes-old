@@ -1299,6 +1299,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 {/*  show Resume */}
 {showResume ? (
+  <ScrollAnimation animateIn="bounceInUp" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={false} style={{marginTop:'10px'}}> 
 <section className="vertical" id="resume" order="4" style={{ display:'', minHeight:'', overflow:'', margin:'5vh 0 0 0', position:'relative', border:'0px solid blue'}}>
 
 
@@ -1339,10 +1340,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 
-</section>
+</section></ScrollAnimation>
 ) : (
   ""
 )}
+
 {/* end show Resume */}
 
 {/*  show Skills */}
