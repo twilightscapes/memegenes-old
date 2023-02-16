@@ -913,7 +913,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
   <article>
 
-  <div className='stack-layout' style={{ display:'flex',justifyContent:'center', position:'relative', top:'0', zIndex:'0', height:'100vh', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
+  <div className='stack-layout' style={{ display:'flex',justifyContent:'center', position:'relative', top:'0', zIndex:'0', height:'85vh', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 
 
 
@@ -922,7 +922,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
               image={FrontImage}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image12 layer1"
-              style={{height:'100vh', maxHeight:'100vh', width:'', position:'absolute', zIndex:'0', bottom:'0',border:'0px solid !important', objectFit:'contain',}}
+              style={{height:'100vh', maxHeight:'100vh', width:'', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain', paddingTop:'20px', overflow:'hidden',}}
             />
 
 
