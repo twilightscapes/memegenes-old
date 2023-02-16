@@ -2,7 +2,7 @@
 slug: /
 tagline:  Memes are life
 featuredImage: /assets/twilight-promo.webp
-youtuber: "https://youtu.be/iHxmNzMfDj4"
+youtuber: "https://youtu.be/8HqvE0rgLQY"
 youtuber2: "https://youtu.be/QeWBS0JBNzQ"
 audiostart: "20"
 audioend: "5000"
@@ -49,7 +49,7 @@ cta:
 svgImage: /assets/campfire.svg
 secondaryImage: /assets/default-user.webp
 title: Do these memes make my butt look fat?
-youtubeend: 
+youtubeend: "14"
 sharethis: false
 youtubeloop: true
 youtubecontrols: false
@@ -69,9 +69,9 @@ youtubestart: "0"
 scrollable: false
 contentinvideo: false
 nftdrop: "2023-02-11T10:00:00"
-youtubersuggestion1: ""
-youtubersuggestion2: ""
-youtubersuggestion3: ""
+youtubersuggestion1: https://youtu.be/iHxmNzMfDj4
+youtubersuggestion2: https://youtu.be/1kIihY252eE
+youtubersuggestion3: https://youtu.be/8HqvE0rgLQY
 ---
 <!-- Do not delete -->
 
