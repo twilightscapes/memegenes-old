@@ -544,8 +544,11 @@ const YouTube = frontmatter.youtuber
   </div> */}
                   <button
                     onClick={onPlayPause}
-                    className="controls" 
+                    className="controls panel" 
                     style={{
+                      backgroundColor:'rgba(0,0,0, 0.6)',
+                      color:'#999',
+                      borderRadius:'8px', overFlow:'hidden'
                   }}
                   >
                     {/* <MdPlayArrow style={{fontSize:'50px', position:'absolute'}}  /> */}
@@ -570,8 +573,11 @@ const YouTube = frontmatter.youtuber
                   <button
                     // onClick={() => setState({ ...state, muted: !state.muted })}
                     onClick={onMute}
-                    className="controls "
+                    className="controls panel"
                     style={{
+                      backgroundColor:'rgba(0,0,0, 0.6)',
+                      color:'#999',
+                      borderRadius:'8px', overFlow:'hidden'
                   }}
                   >
                     {muted ? (
@@ -707,7 +713,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<div className="pagemenu" style={{position:'fixed', bottom:'20px', zIndex:'10', left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7)', fontSize:'clamp(2rem, 3vw, 3rem)', verticalAlign:'center' }}>
+<div className="pagemenu panel" style={{position:'fixed', bottom:'20px', zIndex:'10', left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .5)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7)', fontSize:'clamp(2rem, 3vw, 3rem)', verticalAlign:'center' }}>
 
 <div className="menusnapp" style={{display:'flex', gap:'10px', padding:'1vh 1vw', alignItems:'center'}}>
 {frontmatter.scrollable ? (
