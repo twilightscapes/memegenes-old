@@ -1189,11 +1189,11 @@ Click to play original video
           )}
 
 
-{/* <div className="panel legal" style={{textAlign: 'center', padding:'1rem',  justifyContent: 'center', fontSize: '.95rem', textDecoration:'none', maxWidth:'90vw'}}>
+<div className="panel legal" style={{textAlign: 'center', padding:'1rem',  justifyContent: 'center', fontSize: '.95rem', textDecoration:'none', maxWidth:'90vw'}}>
             Legal:<br />
             <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link>
       <br /> <br />
-    <div style={{display:'none', placeContent:'center'}}>
+    <div style={{display:'flex', placeContent:'center'}}>
       <p style={{textAlign:'left'}}>
         <strong>*This is a parody website meant for education and entertainment purposes.</strong> <br /><br />
         All characters, and events portrayed in this production are fictitious or are being portrayed in a satirical manner.<br /><br />There is no identification with actual persons (living or deceased), <br />places, buildings, and/or products. There is no harm/insult intended or and none should be inferred. 
@@ -1203,7 +1203,7 @@ Click to play original video
         Video footage public youtube.com | Some imagery provided from <a rel="noopener noreferrer" href="https://www.flickr.com/photos/donkeyhotey/" target="_blank" >DonkeyHotey</a>
         </p>
     </div>
-</div> */}
+</div>
 
 
 
