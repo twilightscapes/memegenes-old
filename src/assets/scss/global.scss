@@ -55,7 +55,7 @@ margin:20vh !important;
 //   body.scroll .back{display: none !important;}
 
 
-body.homepage .wrap-element iframe {
+body.homepage .wrap-element iframe, body.blogpost .wrap-element iframe {
 	position: absolute;
 	top: -100px;
 	left: 0;
