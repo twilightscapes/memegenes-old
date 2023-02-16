@@ -18,7 +18,7 @@ audioend: "5000"
 audiotitle: "Liar Liar!"
 liarliar: false
 youtubecontrols: false
-import Layout from clicktoplay: false
+clicktoplay: false
 customcontrols: false
 youtubeautostart: true
 youtubeloop: true

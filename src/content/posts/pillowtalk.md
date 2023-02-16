@@ -14,7 +14,7 @@ contentinvideo: false
 liarliar: false
 
 youtubecontrols: false
-import Layout from clicktoplay: false
+clicktoplay: false
 customcontrols: true
 youtubeautostart: true
 
