@@ -286,7 +286,8 @@ const OriginalUrl = frontmatter.youtuber
       <div>
 
 <ReactPlayer
-            allow="autoplay"
+            
+            allow="web-share"
             ref={playerRef}
             style={{position:'absolute', top:'0', zIndex:''}}
             width="100%"
@@ -329,6 +330,7 @@ const OriginalUrl = frontmatter.youtuber
 
 
 <ReactPlayer
+          allow="web-share"
           className='audioframe'
           url={iframeUrl3}
           width="100%"
@@ -899,7 +901,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
 <div>
 
             <ReactPlayer
-              allow="autoplay"
+              allow="web-share"
               ref={playerRef}
               style={{position:'asbolute', zIndex:''}}
               width="100%"
@@ -988,7 +990,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
   ) : (
     <div>
   <ReactPlayer
-    allow="autoplay"
+    allow="web-share"
     ref={playerRef}
     style={{position:'absolute', top:'0', zIndex:'', minHeight:'300px',}}
     width="100%"
@@ -1090,8 +1092,8 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                 image={UnderlayImage}
                 alt={frontmatter.title + " - image"}
                 className="mcboaty1"
-                style={{height:'auto', width:'100vw', maxHeight:'100%', overflow:'hidden', position:'fixed', left:'0', right:'0', bottom:'0', top:'', zIndex:'0',
-               objectFit:'cover', border:'0px solid red !important', background:'transparent',}}
+                style={{height:'100vh', width:'100vw', maxHeight:'100%', overflow:'hidden', position:'relative', left:'0', right:'', bottom:'', top:'', zIndex:'0',
+               objectFit:'cover', border:'0px solid red !important', background:'transparent', backgroundSize:'cover',}}
               />
               
             ) : (

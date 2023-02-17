@@ -585,6 +585,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 <ReactPlayer
+          allow="web-share"
           className='react-player67'
           url={iframeUrl3}
           width="250px"

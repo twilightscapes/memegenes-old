@@ -108,6 +108,7 @@ import ReactPlayer from 'react-player/lazy'
               return (
         
                 <ReactPlayer
+  allow="web-share"
   className='react-player'
   style={{position: '', top: '0',}}
       url={FinalUrl}

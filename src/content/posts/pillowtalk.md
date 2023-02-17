@@ -3,7 +3,7 @@ template: blog-post
 title: Welcome to Pillow Talk - I'm Mike Lindell!
 slug: /pillowtalk
 description: Let's Find Mike A Woman
-youtubemute: true
+youtubemute: false
 youtubeend: "0"
 youtubeloop: true
 youtubersuggestion1: ""
