@@ -75,9 +75,9 @@ content:counter(item) " ";
   font-style: italic;
   border-radius: 0 0.675em 0.675em 0;
   text-align: right;
-  left: -40%;
+  left: -20%;
 top:0;
-  width: 240px;
+  width: 150px;
   position: absolute;
   transition: all 0.2s ease-in-out;
   text-shadow: .5vw -.5vh .3vw #000,0 8px 20px rgb(40, 8, 202),0px 12px 10px rgb(139, 142, 167),0 2px rgb(39, 67, 227),0 5px 2px rgb(39, 61, 227),0 0 2px rgb(39, 52, 227),0 0 2px rgb(39, 42, 227),0 0 1px rgb(39, 73, 227); */
@@ -93,9 +93,9 @@ content:counter(item) " ";
   font-style: italic;
   border-radius: 0.675em 0   0 0.675em;
   text-align: left;
-  right: -40%;
+  right: -20%;
 top:0;
-  width: 240px;
+  width: 140px;
   position: absolute;
   transition: all 0.2s ease-in-out;
   text-shadow: .5vw -.5vh .3vw #000,0 8px 20px rgb(40, 8, 202),0px 12px 10px rgb(139, 142, 167),0 2px rgb(39, 67, 227),0 5px 2px rgb(39, 61, 227),0 0 2px rgb(39, 52, 227),0 0 2px rgb(39, 42, 227),0 0 1px rgb(39, 73, 227); */
@@ -103,13 +103,13 @@ top:0;
 
 @media (min-width:50em) {
   .numblist li:before {
-    width: 350px;
+    width: 250px;
     left: -30%;
     top:1vh;
   }
   
     .numblist li::after {
-    width: 350px;
+    width: 250px;
     right: -30%;
     top:1vh;
   }

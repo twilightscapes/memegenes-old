@@ -1085,14 +1085,14 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
   </div>
 
   <div className="article-header" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
-            <h1 className="headline" style={{fontSize:''}}>{frontmatter.title}</h1>
+            <h1 className="headline panel" style={{fontSize:''}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
            Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
           </div>
   </header>
             ) : (
               <header style={{ height:'', display:'grid', placeContent:'center'}}>
-                <div className="article-header" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
+                <div className="article-header panel" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
             <h1 className="headline" style={{fontSize:''}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
            Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
@@ -1119,7 +1119,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
     <div id="sharethis" style={{width:'auto', height:'', padding:'0', display:'grid', placeContent:'center', border:'0px solid'}}>
     <ShareSocial style={{}} />
     </div>
-    <div className="article-header" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
+    <div className="article-header panel" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
             <h1 className="headline" style={{fontSize:''}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
            Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
