@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Marjorie Three Toes becomes month's top performing seller on OnlyFans.
+title: Guess whos is this month's top performing seller on OnlyFans?
 slug: /large-marge
 date: 2023-02-16 10:43
 description: How does she find the time to be constantly across the country AND running a successful business front for PPV loans scams? 
@@ -25,7 +25,7 @@ svgzindex: "0"
 comments: true
 shareable: true
 underlayImage: /assets/marge-trash-bg.webp
-featuredImage: /assets/trump-fire-promo.webp
+featuredImage: /assets/marg-dumpster-promo.webp
 svgImage: 
 scrollable: true
 nftdrop: "2023-02-09T10:00:00"
@@ -167,12 +167,12 @@ She has ties to extremist groups like the Proud Boys and the Oath Keepers.
 <li>
 
 ## Conspiracy Theories:
-Marjorie Taylor Greene has a history of promoting and spreading baseless conspiracy theories such as QAnon, which is associated with far-right extremism and has been linked to numerous instances of violence.</li>
+Marjorie Taylor Greene has a history of promoting and spreading baseless conspiracy theories such as QAnon, which is associated with far-right extremism and has been linked to numerous instances of violence and mental illness.</li>
 
 <li>
 
 ## Anti-Semitic Views:
-Greene has made multiple anti-Semitic remarks, including suggesting that Jewish people were responsible for recent wildfires in California, and claiming that Jewish billionaire George Soros was a Nazi collaborator during World War II.</li>
+Greene has made multiple anti-Semitic remarks, including suggesting that Jewish people were responsible for recent wildfires in California using Jewish-made space lasers, and claiming that Jewish billionaire George Soros was a Nazi collaborator during World War II.</li>
 
 <li>
 
@@ -202,17 +202,17 @@ Greene has not sponsored or co-sponsored any legislation that has become law dur
 <li>
 
 ## Inflammatory Rhetoric:
-Greene has a history of using inflammatory rhetoric that has been widely criticized by both Democrats and Republicans, including comparing COVID-19 safety measures to Nazi Germany.</li>
+Greene has a history of using inflammatory rhetoric that has been widely criticized by both Democrats and Republicans, including comparing COVID-19 safety measures to Nazi Germany. Her idol is Donald Trump and she often uses his tactics and methods to get what she wants.</li>
 
 <li>
 
 ## Disrespectful Behavior:
-Greene has been criticized for her behavior towards her colleagues in Congress, including shouting at and insulting fellow members of Congress in public.</li>
+Greene has been criticized for her behavior towards her colleagues in Congress, including shouting at and insulting fellow members of Congress in public. Most recently she embarassed herself and the entire House of Congress by yelling during the SOTU Address, while dressed in a Hooker costume apparently as some sort of "statement".</li>
 
 <li>
 
 ## Ties to Extremist Groups:
-Greene has been linked to extremist groups, including the Proud Boys and the Oath Keepers, which have been associated with violence and domestic terrorism.</li>
+Greene has been linked to extremist groups, including the Proud Boys and the Oath Keepers, which have been associated with violence and domestic terrorism.  She is very well known among White Power groups and was even nicknamed "Fire Hole" by other Gym-goers. She often jokes that all the guys will make fun of her when she walks by. Calling out "Fire in the Hole!", she just laughs like an innocent school girl, but the truth is that she has a proven track record of effectively servicing leading small militia groups.</li>
 
 
 </ol>

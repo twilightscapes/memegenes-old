@@ -833,7 +833,9 @@ flex-direction: column;
 	}
 
 	 .spotlight:hover{
-		background:rgba(0, 0, 0, 0);
+		background:rgba(0, 0, 0, .6);
+		color:#fff !important;
+		fill:#fff !important;
 		backdrop-filter: none;
 		.posticons{animation: move 1.5s forwards; animation-delay: .5s;}
 	 }

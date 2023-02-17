@@ -72,7 +72,7 @@ const PostCard = ({ data }) => (
           placeholder="blurred"
               // loading="eager"
     
-              style={{position:'relative', zIndex:'1', maxHeight:'58vh', margin:'0 auto'}}
+              style={{position:'relative', zIndex:'1', maxHeight:'65vh', margin:'0 auto'}}
         />
       </Link>
       
@@ -157,14 +157,14 @@ date={Date.now() + 60000} className="countdown">
     
 
 
-<div className="posticons panel" style={{fontWeight:'bold', padding:'1vh 2vw', width:'34vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px', position:'absolute', bottom:'15vh', left:'30vw', right:'30vw', margin:'0 auto'}}>
+<div className="posticons panel" style={{fontWeight:'bold', padding:'1vh 2vw', width:'34vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px', position:'absolute', bottom:'15vh', left:'30vw', right:'30vw', margin:'0 auto', color:'#ccc'}}>
 
   
 
 
 {/* <SiteLogo className="posticon" style={{margin:'0 auto', height:'20vh', width:'100%',}}/> */}
 
-<div style={{display:'flex', justifyContent:'space-around', gap:'2vw'}}>
+<div style={{display:'flex', justifyContent:'space-around', gap:'2vw', color:'fff',}}>
 
 <FaImage className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
 
