@@ -16,7 +16,7 @@ youtubemute: true
 audiostart: "20"
 audioend: "5000"
 audiotitle: 
-bumpertext: "Rated CH for CrackHeads"
+bumpertext: "Rated HB for CrackHead"
 liarliar: true
 youtubecontrols: false
 clicktoplay: true
@@ -33,6 +33,14 @@ svgImage:
 scrollable: true
 nftdrop: "2023-02-11T10:00:00"
 contentinvideo: false
+marating1: VL
+marating2: SS
+marating3: DV
+marating4: HB
+maratingtx1: Vile Language
+maratingtx2: Sexual Situations
+maratingtx3: Deranged Violence
+maratingtx4: Hunter Biden levels
 ---
 <!-- <div class="contentinside lake1" style=""> -->
 <!-- <img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;
@@ -60,7 +68,11 @@ opacity:0;
 "><span style="font-weight:bold;"></span></div>
 </div> -->
 
+<style>
 
+
+
+</style>
 <div class="contentbody" style="text-align:left !important; margin-top:0;">
 
 ## About Hunter Biden

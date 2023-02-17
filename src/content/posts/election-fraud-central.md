@@ -33,7 +33,14 @@ svgImage: /assets/election-fraud-central.svg
 scrollable: true
 nftdrop: "2023-02-11T10:00:00"
 contentinvideo: true
-
+marating1: YB
+marating2: SS
+marating3: LH
+marating4: AL
+maratingtx1: Use your brain please
+maratingtx2: Spontaneous & Sporadic
+maratingtx3: It's Humor - laugh
+maratingtx4: Adult Language
 ---
 
 <div class="contentinside" style="position:relative; z-index:1; min-width:50%; height:auto;  padding:0; left:0; border:0px solid yellow; text-align:center;">

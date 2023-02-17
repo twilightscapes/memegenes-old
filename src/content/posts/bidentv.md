@@ -30,6 +30,14 @@ svgImage:
 scrollable: false
 nftdrop: "2023-02-09T07:00:00"
 contentinvideo: false
+marating1: YB
+marating2: SS
+marating3: LH
+marating4: AL
+maratingtx1: Use your brain please
+maratingtx2: Spontaneous & Sporadic
+maratingtx3: It's Humor - laugh
+maratingtx4: Adult Language
 ---
 Your Meme Goes Here Dipshit!
 

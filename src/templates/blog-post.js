@@ -509,27 +509,67 @@ const YouTube = frontmatter.youtuber
 
   
   
-    <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
+
    
-    <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
-    <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>
-      Press the  play button
-    </div>
-
-<RiArrowRightDownFill style={{fontSize:'50px', position:'absolute', right:'40%', top:'40vh', transform:'rotate(350deg)' }} />
-
-<div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'0', padding:'0 5%', maxWidth:'800px'}}>
-   {frontmatter.bumpertext ? (
-  <h3>{frontmatter.bumpertext}</h3>
-        ) : (
-  <h3>{frontmatter.title}</h3>
-    )}
-</div>
+   <div style={{position:'fixed', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}>
 
 
-<br /><br /><br /><br />
-    </div>
- )}  {/* end playing check */}
+<button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'40vh', border:'0px  solid red', width:'100vw', height:'0', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+          {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
+
+          {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
+      
+          <div className="flex-container" style={{display:'flex', flexDirection:'column', gap:'10px', justifyContent:'center',  textAlign:'center', marginTop:'4vh', position:'relative', border:'0px solid' }}>
+      
+      <div className="flex-items" style={{fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 4vh auto', textTransform:'uppercase',}}>The following content is rated: </div>
+      
+      <div className="flex-items" style={{display:'grid', placeContent:'center', width:'180px', height:'180px', border:'6.5px solid #fff', margin:'0 0 0 -10%', fontSize:'clamp(4.5rem, 13vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}><strong style={{}}>MA</strong></div>
+      
+      <div style={{display:'flex', flexDirection:'column', position:'relative', left:'155px', top:'-190px', gap:'30px', justifyContent:'space-around', alignContent:'start', alignItems:'start'}}>
+      
+      <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating1}</strong> {frontmatter.maratingtx1}</div>
+
+      <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating2}</strong> {frontmatter.maratingtx2} </div>
+
+      <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating3}</strong> {frontmatter.maratingtx3} </div>
+
+      <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating4}</strong> {frontmatter.maratingtx4} </div>
+      
+      </div>
+      
+      <div className="flex-items" style={{position:'relative', right:'', top:'-30%', display:'', fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>Viewer Discretion Strongly Advised</div>
+      </div>
+      
+      
+      
+      
+          {/* <div style={{position:'relative', right:'0', top:'3vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)', fontWeight:'bold'}}>
+            Press the  play button
+            <RiArrowRightDownFill style={{fontSize:'50px', position:'relative', right:'-70%', top:'-10%', transform:'rotate(350deg)' }} />
+      </div> */}
+      
+      
+      
+      
+      
+      <div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'-5% 0 0 0', padding:'0 ', maxWidth:'1000px'}}>
+         {frontmatter.bumpertext ? (
+        <h3>{frontmatter.bumpertext}</h3>
+              ) : (
+        <h3>{frontmatter.title}</h3>
+          )}
+      </div>
+      
+      
+      
+      </button>
+      </div>
+
+
+
+
+ )}
+ {/* end playing check */}
   
  
   
@@ -884,16 +924,48 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                   }
               }}
               playIcon={
-                <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
-             
-                <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'80px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
-                <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>
-                  Click to play
-                </div>
+                <div style={{position:'fixed', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}>
+
+
+      <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'40vh', border:'0px  solid red', width:'100vw', height:'0', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+                {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
+   
+                {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
             
-          
+                <div className="flex-container" style={{display:'flex', flexDirection:'column', gap:'10px', justifyContent:'center',  textAlign:'center', marginTop:'4vh', position:'relative', border:'0px solid' }}>
             
-            <div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'0', padding:'0 5%', maxWidth:'800px'}}>
+            <div className="flex-items" style={{fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 4vh auto', textTransform:'uppercase',}}>The following content is rated: </div>
+            
+            <div className="flex-items" style={{display:'grid', placeContent:'center', width:'180px', height:'180px', border:'6.5px solid #fff', margin:'0 0 0 -10%', fontSize:'clamp(4.5rem, 13vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}><strong style={{}}>MA</strong></div>
+            
+            <div style={{display:'flex', flexDirection:'column', position:'relative', left:'155px', top:'-190px', gap:'30px', justifyContent:'space-around', alignContent:'start', alignItems:'start'}}>
+            
+            <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating1}</strong> {frontmatter.maratingtx1}</div>
+
+            <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating2}</strong> {frontmatter.maratingtx2} </div>
+
+            <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating3}</strong> {frontmatter.maratingtx3} </div>
+
+            <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating4}</strong> {frontmatter.maratingtx4} </div>
+            
+            </div>
+            
+            <div className="flex-items" style={{position:'relative', right:'', top:'-30%', display:'', fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>Viewer Discretion Strongly Advised</div>
+            </div>
+            
+            
+            
+            
+                {/* <div style={{position:'relative', right:'0', top:'3vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)', fontWeight:'bold'}}>
+                  Press the  play button
+                  <RiArrowRightDownFill style={{fontSize:'50px', position:'relative', right:'-70%', top:'-10%', transform:'rotate(350deg)' }} />
+            </div> */}
+            
+            
+            
+            
+            
+            <div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'-5% 0 0 0', padding:'0 ', maxWidth:'1000px'}}>
                {frontmatter.bumpertext ? (
               <h3>{frontmatter.bumpertext}</h3>
                     ) : (
@@ -902,8 +974,9 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
             </div>
             
             
-            <br /><br /><br /><br />
-                </div>
+            
+            </button>
+            </div>
             }
             
             />
@@ -940,26 +1013,60 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
       },
     }}
     playIcon={
-      <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
-   
-      <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'80px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
-      <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>
-        Click to play
-      </div>
-  
 
-  
-  <div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'0', padding:'0 5%', maxWidth:'800px'}}>
-     {frontmatter.bumpertext ? (
-    <h3>{frontmatter.bumpertext}</h3>
-          ) : (
-    <h3>{frontmatter.title}</h3>
-      )}
-  </div>
-  
-  
-  <br /><br /><br /><br />
-      </div>
+      <div style={{position:'fixed', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}>
+
+
+      <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'40vh', border:'0px  solid red', width:'100vw', height:'0', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+                {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
+   
+                {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
+            
+                <div className="flex-container" style={{display:'flex', flexDirection:'column', gap:'10px', justifyContent:'center',  textAlign:'center', marginTop:'4vh', position:'relative', border:'0px solid' }}>
+            
+            <div className="flex-items" style={{fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 4vh auto', textTransform:'uppercase',}}>The following content is rated: </div>
+            
+            <div className="flex-items" style={{display:'grid', placeContent:'center', width:'180px', height:'180px', border:'6.5px solid #fff', margin:'0 0 0 -10%', fontSize:'clamp(4.5rem, 13vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}><strong style={{}}>MA</strong></div>
+            
+            <div style={{display:'flex', flexDirection:'column', position:'relative', left:'155px', top:'-190px', gap:'30px', justifyContent:'space-around', alignContent:'start', alignItems:'start'}}>
+            
+            <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating1}</strong> {frontmatter.maratingtx1}</div>
+
+            <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating2}</strong> {frontmatter.maratingtx2} </div>
+
+            <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating3}</strong> {frontmatter.maratingtx3} </div>
+
+            <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating4}</strong> {frontmatter.maratingtx4} </div>
+            
+            </div>
+            
+            <div className="flex-items" style={{position:'relative', right:'', top:'-30%', display:'', fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>Viewer Discretion Strongly Advised</div>
+            </div>
+            
+            
+            
+            
+                {/* <div style={{position:'relative', right:'0', top:'3vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)', fontWeight:'bold'}}>
+                  Press the  play button
+                  <RiArrowRightDownFill style={{fontSize:'50px', position:'relative', right:'-70%', top:'-10%', transform:'rotate(350deg)' }} />
+            </div> */}
+            
+            
+            
+            
+            
+            <div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'-5% 0 0 0', padding:'0 ', maxWidth:'1000px'}}>
+               {frontmatter.bumpertext ? (
+              <h3>{frontmatter.bumpertext}</h3>
+                    ) : (
+              <h3>{frontmatter.title}</h3>
+                )}
+            </div>
+            
+            
+            
+            </button>
+            </div>
   }
   
   />
@@ -1354,6 +1461,14 @@ export const pageQuery = graphql`
         shareable
         isnftforsale
         bumpertext
+        marating1
+        marating2
+        marating3
+        marating4
+        maratingtx1
+        maratingtx2
+        maratingtx3
+        maratingtx4
         nftdrop
         svgzindex
         scrollable

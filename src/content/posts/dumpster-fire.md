@@ -30,7 +30,16 @@ svgImage:
 scrollable: true
 nftdrop: "2023-02-09T10:00:00"
 contentinvideo: false
+clicktoplay: true
 bumpertext: ""
+marating1: YB
+marating2: SS
+marating3: LH
+marating4: AL
+maratingtx1: Use your brain please
+maratingtx2: Spontaneous & Sporadic
+maratingtx3: It's Humor - laugh
+maratingtx4: Adult Language
 ---
 <div class="contentinside">
 <!-- <img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;

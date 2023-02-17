@@ -34,6 +34,14 @@ youtubestart: "0"
 youtubersuggestion2: https://youtu.be/iiZnOlRPiE0
 nftdrop: "2023-02-11T10:00:00"
 bumpertext: ""
+marating1: YB
+marating2: SS
+marating3: LH
+marating4: AL
+maratingtx1: Use your brain please
+maratingtx2: Spontaneous & Sporadic
+maratingtx3: It's Humor - laugh
+maratingtx4: Adult Language
 ---
 <div style="text-align:left !important;">
 
