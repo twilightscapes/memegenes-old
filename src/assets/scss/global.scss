@@ -57,7 +57,7 @@ margin:20vh !important;
 
 body.homepage .wrap-element iframe, body.blogpost .wrap-element iframe {
 	position: absolute;
-	top: -10px;
+	top: 0;
 	left: 0;
 	// height:280px !important;
 	width:100vw !important;
@@ -833,7 +833,6 @@ flex-direction: column;
 	}
 
 	 .spotlight:hover{
-		background:rgba(0, 0, 0, .6);
 		color:#fff !important;
 		fill:#fff !important;
 		backdrop-filter: none;

@@ -248,12 +248,12 @@ Greene has repeatedly denied the scientific consensus on climate change, calling
 
 <li>
 
-## Opposition to LGBTQ+ Rights:
+## Opposes LGBTQ+ Rights:
 Greene has a history of opposing LGBTQ+ rights, including co-sponsoring a bill that would have prohibited same-sex marriage.</li>
 
 <li>
 
-## Lack of Legislative Accomplishments:
+## Lack of Accomplishments:
 Greene has not sponsored or co-sponsored any legislation that has become law during her time in office, despite being in office since January 2021.</li>
 
 <li>
