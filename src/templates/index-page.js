@@ -1070,7 +1070,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 
-  <article className="panel" style={{ margin:'0 0 0 0'}}>
+  <article className="" style={{ margin:'0 0 0 0'}}>
 <div id="profiletop" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 0',
   padding:'0 4% 0 4%', borderRadius:'0 0 10px 10px',}}>
 
@@ -1092,7 +1092,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   // custom image in effect //
 
   <div className="flexcheek mob print nameblock " style={{marginTop:'', padding:'1rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
-  background:'rgba(0,0,0,0.50)', 
+  background:'rgba(0,0,0,0.70)', 
   backdropFilter:'blur(12px)',
   borderRadius:'10px'}}>
   <ScrollAnimation className="animate" animateIn="fadeIn" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={false} style={{}}> 
@@ -1159,7 +1159,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   border:'0px solid red', 
   maxWidth:'80%', paddingTop:'', 
   fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
-  background:'rgba(0,0,0,0.50)',
+  background:'rgba(0,0,0,0.70)',
   backdropFilter:'blur(8px)',
   borderRadius:'10px',
   textShadow:'0 2px 7px #000',
