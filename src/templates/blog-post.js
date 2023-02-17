@@ -817,7 +817,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<div className="wrap-element effects" style={{aspectRatio:'16/9', minHeight:'300px'}}>
+<div className="wrap-element effects" style={{aspectRatio:'16/9', minHeight:'300px', maxHeight:'90vh', overFlow:'hidden'}}>
 
 
 {/* <GatsbyImage
@@ -924,7 +924,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                   }
               }}
               playIcon={
-                <div style={{position:'fixed', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}>
+                <div style={{position:'fixed', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', bottom:'0', left:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}>
 
 
       <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'40vh', border:'0px  solid red', width:'100vw', height:'0', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
@@ -1017,7 +1017,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
       <div style={{position:'fixed', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}>
 
 
-      <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'40vh', border:'0px  solid red', width:'100vw', height:'0', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+      <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'0', border:'0px  solid red', width:'100vw', height:'', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
                 {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
    
                 {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
@@ -1090,7 +1090,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                 image={UnderlayImage}
                 alt={frontmatter.title + " - image"}
                 className="mcboaty1"
-                style={{height:'auto', width:'100%', maxHeight:'100%', overflow:'hidden', position:'absolute', left:'0', right:'0', bottom:'0', top:'0', zIndex:'0',
+                style={{height:'auto', width:'100vw', maxHeight:'100%', overflow:'hidden', position:'fixed', left:'0', right:'0', bottom:'0', top:'', zIndex:'0',
                objectFit:'cover', border:'0px solid red !important', background:'transparent',}}
               />
               
