@@ -41,7 +41,7 @@ maratingtx2: Sexually Grotesque
 maratingtx3: Dumb as Rocks
 maratingtx4: Trash to the T
 ---
-<div class="contentinside" style="position:relative; aspect-ratio:16/9;  width:100%; border:2px solid white; display:flex; flex-direction:column; justify-content:center;">
+<div class="contentinside" style="position:relative; aspect-ratio:16/9;  width:100%; border:0px solid white; display:flex; flex-direction:column; justify-content:center;">
 
 <!-- <div class="bubble bubble-bottom-left" style="position:absolute; width:; top:45%; left:15vw; display:flex; justify-content:center;backdrop-filter: blur(6px); font-size:110%;
 animation: bubbleBop 12s ease-in;
