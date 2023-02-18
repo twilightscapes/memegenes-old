@@ -1092,7 +1092,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                 image={UnderlayImage}
                 alt={frontmatter.title + " - image"}
                 className="mcboaty1"
-                style={{height:'100vh', width:'100vw', maxHeight:'100%', overflow:'hidden', position:'relative', left:'0', right:'', bottom:'', top:'', zIndex:'0',
+                style={{height:'', width:'100vw', maxWidth:'100vw', maxHeight:'100vh', overFlow:'', position:'absolute', left:'', right:'', bottom:'', top:'', zIndex:'0',
                objectFit:'cover', border:'0px solid red !important', background:'transparent', backgroundSize:'cover',}}
               />
               
