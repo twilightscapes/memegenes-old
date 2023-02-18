@@ -570,8 +570,8 @@ const YouTube = frontmatter.youtuber
 <div className="flex-items" style={{position:'relative', right:'', top:'', display:'', fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>Viewer Discretion Strongly Advised</div>
 
 
-         <div style={{display:'grid', placeContent:'center', position:'relative', zindex:'1', fontWeight:'bold', padding:'1rem', fontSize:'1.4rem', width:'40vw', height:'', border:'0px solid', borderRadius:'12px', background:'linear-gradient(180deg, rgba(24, 23, 30, 0.2) 1%, rgba(0, 0, 0, .7) 99%)', margin:'0 auto 0 auto', opacity:'.99',textShadow:'2px 2px 2px black', }}>
-<ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+         <div style={{display:'grid', placeContent:'center', position:'relative', zindex:'1', fontWeight:'bold', padding:'1rem', fontSize:'1.4rem', width:'40vw', height:'', border:'0px solid', borderRadius:'12px', background:'linear-gradient(180deg, rgba(24, 23, 30, 0.2) 1%, rgba(0, 0, 0, .7) 99%)', margin:'0 auto 0 auto', opacity:'.99', textShadow:'2px 2px 2px black', color:'#fff' }}>
+<ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px', filter:'drop-shadow(0px 0px 12px #fff',}} />
 Click to play
 </div>
 
@@ -1154,16 +1154,16 @@ Click to play
   <ShareSocial style={{}} />
   </div>
 
-  <div className="article-header" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
-            <h1 className="headline panel" style={{fontSize:''}}>{frontmatter.title}</h1>
+  <div className="article-header" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:'', borderRadius:'12px'}}>
+            <h1 className="headline panel" style={{color:'#ddd', borderRadius:'12px'}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
            Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
           </div>
   </header>
             ) : (
               <header style={{ height:'', display:'grid', placeContent:'center'}}>
-                <div className="article-header panel" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
-            <h1 className="headline" style={{fontSize:''}}>{frontmatter.title}</h1>
+                <div className="article-header panel" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:'', borderRadius:'12px'}}>
+            <h1 className="headline" style={{color:'#ddd', borderRadius:'12px'}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
            Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
           </div>

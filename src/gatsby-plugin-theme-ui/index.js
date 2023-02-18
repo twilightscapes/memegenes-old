@@ -29,7 +29,7 @@ const theme = {
         muted: "rgba(0, 0, 0, 0.2)",
         // cardBg: "linear-gradient(180deg, rgba(13, 11, 11, 0.8) 12%, rgba(19, 20, 22, 0.9) 80%)",
         cardBg: "rgba(0, 0, 0, 0.5)",
-        textShadow: "rgba(27, 25, 29, 0.99)",
+        textShadow: "rgba(0, 0, 0, 0.99)",
         borderColor: "#888",
         labelText: "#777",
         inputBorder: "#777",

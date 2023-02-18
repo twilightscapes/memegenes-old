@@ -1,9 +1,11 @@
 // CUSTOM PAGE COMPONENT COLORS 
-// .controls{
-//   color:#ff0000 !important;
-//   border:1px solid #ff0000 !important;
-//   background:rgba(0, 0, 0, .5);
-// }
+.controls{
+  color:#ddd !important;
+  // border:1px solid #ff0000 !important;
+  background:rgba(0, 0, 0, .5);
+  transition: all .3s ease-in-out;
+}
+.controls:hover {color:#fff !important;transition: all .3s ease-in-out;}
 
 // .pagination ul li a{
 //   color:#ff0000 !important;
@@ -12,13 +14,14 @@
 // .fullscreenButt{color:#ff0000;}
 
 
-// .pagemenu {
-//   background:rgba(0, 0, 0, .5);
-//   border:1px solid #ff0000 !important;
-// }
+.pagemenu {
+  background:rgba(0, 0, 0, .5);
+  // border:1px solid #ff0000 !important;
+  transition: all .3s ease-in-out;
+}
 
-// .pagemenu, .pagemenu svg{color:#ff0000; fill:#ff0000}
-
+.pagemenu, .pagemenu svg{color:#ddd; fill:#ddd}
+.pagemenu:hover, .pagemenu svg:hover{color:#fff; fill:#fff;	}
 
 // body::before{
 //   color:#ff0000 !important;
