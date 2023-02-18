@@ -73,7 +73,7 @@ body.homepage .wrap-element iframe, body.blogpost .wrap-element iframe {
 	max-width: 100vw !important; }
 
 
-	body.blogpost .effects {aspect-ratio: inherit !important; max-height: 95vh !important; padding:2vh 0 !important; overflow:hidden !important;}
+	body.blogpost .effects {aspect-ratio: inherit !important;  overflow:hidden !important;}
 	
 	body.blogpost section .back{display:none !important;}
 
@@ -369,7 +369,8 @@ p{
 }
 @media (max-width: 48rem) {
 	.button {
-		font-size:92% !important
+		font-size:92% !important;
+		background:linear-gradient(180deg, rgba(23, 23, 24, 0.5) 1%, rgba(0, 0, 0, .7) 99%);
 }
 }
 .button:hover{
@@ -1954,14 +1955,13 @@ svg .text4{animation: textfader4  5000ms linear infinite normal forwards;
 
 .panel {
 	backdrop-filter: blur(14px);
-	background: var(--theme-ui-colors-cardBg);
+	// background: var(--theme-ui-colors-cardBg);
 	// background: var(--theme-ui-colors-background);
 	color: var(--theme-ui-colors-text);
 	// color:rgba(123, 22, 225, 0.7);
 	margin-top: 0;
 	overflow: hidden;
 	// text-shadow: var(--theme-ui-colors-textShadow);
-	border-radius: 12px !important;
 	text-shadow: 0 2px 1px var(--theme-ui-colors-textShadow) !important;
 }
 

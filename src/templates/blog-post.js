@@ -526,50 +526,56 @@ const YouTube = frontmatter.youtuber
   
 
    
-   <div style={{position:'fixed', backgroundColor:'var(--theme-ui-colors-bodyBg)', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'inherit', fontFamily:'Verdana, Sans-Serif, System' }}>
 
 
-<button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'40vh', border:'0px  solid red', width:'100vw', height:'0', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', paddingTop:'0', borderRadius:'12px'}}>
+<div style={{position:'fixed', height:'', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', color:'var(--theme-ui-colors-text)', fontFamily:'Verdana, Sans-Serif, System' }}>
+
+
+
+
+<button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'70px', border:'0px  solid red', width:'100vw', height:'100vh', backgroundColor:'var(--theme-ui-colors-bodyBg)', color:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:'2vh 0 0 0'}}>
+
+
+
+
+
+
           {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
 
           {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
-      
-          <div className="flex-container" style={{display:'flex', flexDirection:'column', gap:'10px', justifyContent:'center',  textAlign:'center', marginTop:'4vh', position:'relative', border:'0px solid' }}>
-      
-      <div className="flex-items" style={{fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 4vh auto', textTransform:'uppercase',}}>The following content is rated: </div>
-      
-      <div className="flex-items" style={{display:'grid', placeContent:'center', width:'180px', height:'180px', border:'6.5px solid', margin:'0 0 0 -10%', fontSize:'clamp(4.5rem, 13vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}><strong style={{}}>MA</strong></div>
-      
-      <div style={{display:'flex', flexDirection:'column', position:'relative', left:'155px', top:'-190px', gap:'30px', justifyContent:'space-around', alignContent:'start', alignItems:'start'}}>
-      
-      <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating1}</strong> {frontmatter.maratingtx1}</div>
 
-      <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating2}</strong> {frontmatter.maratingtx2} </div>
 
-      <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating3}</strong> {frontmatter.maratingtx3} </div>
 
-      <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating4}</strong> {frontmatter.maratingtx4} </div>
-      
-      </div>
-      
-      <div className="flex-items" style={{position:'relative', right:'', top:'-30%', display:'', fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>Viewer Discretion Strongly Advised</div>
-      </div>
-      
-      
-      
-      
-          {/* <div style={{position:'relative', right:'0', top:'3vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)', fontWeight:'bold'}}>
-            Press the  play button
-            <RiArrowRightDownFill style={{fontSize:'50px', position:'relative', right:'-70%', top:'-10%', transform:'rotate(350deg)' }} />
-      </div> */}
-      
-      
-      
+          <div className="flex-items" style={{fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following content is Xrated: </div>
+
+          <ul className="flex-container" style={{display:'flex', flexDirection:'row', gap:'3vh', justifyContent:'center', alignItems:'center',  textAlign:'left', margin:'2vh auto', color:'#ddd', background:'rgba(0, 0, 0, .8)', width:'auto', maxWidth:'650px', height:'', border:'1px solid #222', borderRadius:'12px', padding:'30px 5vw' }}>
+
+
+<li className="flex-items" style={{display:'grid', placeContent:'center', width:'230px', height:'210px', border:'6.5px solid #fff', margin:'0 auto 0 auto 0', fontSize:'clamp(4.5rem, 13vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}><strong style={{}}>MA</strong></li>
+
+
+<li style={{display:'flex', flexDirection:'column', position:'relative', left:'', top:'', gap:'2vh', justifyContent:'space-around', alignContent:'', alignItems:'start', border:'0px solid red'}}>
+
+<li className="flex-items" style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}><strong style={{border:'2px solid', padding:'1vh .8vw', minWidth:'50px', maxWidth:'50px',minHeight:'50px', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>{frontmatter.marating1}</strong> {frontmatter.maratingtx1}</li>
+
+<li className="flex-items" style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}><strong style={{border:'2px solid', padding:'1vh .8vw', minWidth:'50px', maxWidth:'50px',minHeight:'50px', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>{frontmatter.marating2}</strong> {frontmatter.maratingtx2} </li>
+
+<li className="flex-items" style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}><strong style={{border:'2px solid', padding:'1vh .8vw', minWidth:'50px', maxWidth:'50px', minHeight:'50px', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>{frontmatter.marating3}</strong> {frontmatter.maratingtx3} </li>
+
+<li className="flex-items" style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}><strong style={{border:'2px solid', padding:'1vh .8vw', minWidth:'50px', maxWidth:'50px', minHeight:'50px', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>{frontmatter.marating4}</strong> {frontmatter.maratingtx4} </li>
+
+</li>
+
+</ul>
+<div className="flex-items" style={{position:'relative', right:'', top:'', display:'', fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>Viewer Discretion Strongly Advised</div>
+
+
+
+
       <button
         onClick={onPlayPause}
         className="" 
         style={{
-        //  backgroundColor:'rgba(0,0,0, 0.6)',
          color:'#ddd',
          width:'100vw', 
          height:'100vh',
@@ -577,25 +583,22 @@ const YouTube = frontmatter.youtuber
          placeContent:'center',
          position:'fixed',
          top:'0',left:'0',right:'0',bottom:'0',
-        //  border:'1px solid rgba(255,255,255,)',
-        // opacity:'.5',
-        zIndex:'25',
         }}
-      >
-         <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'1rem', fontSize:'1.4rem', width:'40vw', height:'', border:'0px solid', borderRadius:'12px',backgroundColor:'var(--theme-ui-colors-cardBg)', margin:'50vh auto 0 auto'}}>
-
+      ></button>
+         <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'1rem', fontSize:'1.4rem', width:'40vw', height:'', border:'0px solid', borderRadius:'12px', background:'linear-gradient(180deg, rgba(24, 23, 30, 0.2) 1%, rgba(0, 0, 0, .7) 99%)', margin:'0 auto 0 auto', opacity:'.99',textShadow:'2px 2px 2px black', filter:'drop-shadow(2px 10px 30px var(--theme-ui-colors-textShadow))'}}>
 <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
 Click to play
 </div>
-      </button>
       
-      <div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'-5% 0 0 0', padding:'0 ', maxWidth:'1000px'}}>
-         {frontmatter.bumpertext ? (
-        <h3>{frontmatter.bumpertext}</h3>
-              ) : (
-        <h3>{frontmatter.title}</h3>
-          )}
-      </div>
+
+<div style={{fontSize:'clamp(1rem, 2vw, 2.5rem)', margin:'5vh 0 0 0', padding:'0 10px', maxWidth:'1000px'}}>
+{frontmatter.bumpertext ? (
+<h3>{frontmatter.bumpertext}</h3>
+    ) : (
+<h3>{frontmatter.title}</h3>
+)}
+</div>
+
       
       
       
@@ -854,7 +857,7 @@ Click to play
 
 
 
-<div className="wrap-element effects" style={{aspectRatio:'16/9', minHeight:'300px', maxHeight:'90vh', overFlow:'hidden'}}>
+<div className="wrap-element effects" style={{aspectRatio:'16/9', minHeight:'280px', maxHeight:'90vh', overFlow:'hidden'}}>
 
 
 {/* <GatsbyImage
@@ -959,49 +962,72 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                   }
               }}
               playIcon={
-                <div style={{position:'fixed', backgroundColor:'var(--theme-ui-colors-bodyBg)', height:'100vh', width:'100vw', zIndex:'0', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'var(--theme-ui-colors-text)', fontFamily:'Verdana, Sans-Serif, System' }}>
+                <div style={{position:'fixed', backgroundColor:'var(--theme-ui-colors-bodyBg)', height:'', width:'100vw', zIndex:'0', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', color:'var(--theme-ui-colors-text)', fontFamily:'Verdana, Sans-Serif, System' }}>
 
 
-      <button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'20vh', border:'0px  solid red', width:'100vw', height:'0', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
+
+<button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'50px', border:'0px  solid red', width:'100vw', height:'100vh', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
                 {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
    
                 {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
 
 
-            <div className="flex-items" style={{fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'40vh auto 0 auto', textTransform:'uppercase',}}>The following content is rated: </div>
+            <div className="flex-items" style={{fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following content is Xrated: </div>
 
-                <div className="flex-container" style={{display:'flex', flexDirection:'row', gap:'10px', justifyContent:'center',  textAlign:'center', margin:'2vh auto', color:'#ddd', background:'#111', width:'', maxWidth:'', height:'', border:'0px solid blue', borderRadius:'12px', padding:'30px 10px' }}>
-            
-            
-            <div className="flex-items" style={{display:'grid', placeContent:'center', width:'180px', height:'180px', border:'6.5px solid #fff', margin:'0 auto 0 auto 0', fontSize:'clamp(4.5rem, 13vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}><strong style={{}}>MA</strong></div>
+            <ul className="flex-container" style={{display:'flex', flexDirection:'row', gap:'3vh', justifyContent:'center', alignItems:'center',  textAlign:'left', margin:'2vh auto', color:'#ddd', background:'rgba(0, 0, 0, .8)', width:'auto', maxWidth:'650px', height:'', border:'1px solid #222', borderRadius:'12px', padding:'30px 5vw' }}>
 
 
-            <div style={{display:'flex', flexDirection:'column', position:'relative', left:'', top:'', gap:'30px', justifyContent:'space-around', alignContent:'', alignItems:'start', border:'0px solid red'}}>
-            
-            <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating1}</strong> {frontmatter.maratingtx1}</div>
+<li className="flex-items" style={{display:'grid', placeContent:'center', width:'230px', height:'210px', border:'6.5px solid #fff', margin:'0 auto 0 auto 0', fontSize:'clamp(4.5rem, 13vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}><strong style={{}}>MA</strong></li>
 
-            <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating2}</strong> {frontmatter.maratingtx2} </div>
 
-            <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating3}</strong> {frontmatter.maratingtx3} </div>
+<li style={{display:'flex', flexDirection:'column', position:'relative', left:'', top:'', gap:'2vh', justifyContent:'space-around', alignContent:'', alignItems:'start', border:'0px solid red'}}>
 
-            <div className="flex-items"><strong style={{border:'2px solid', padding:'8px', width:'30px', height:'30px', overFlow:'hidden', marginRight:'8px'}}>{frontmatter.marating4}</strong> {frontmatter.maratingtx4} </div>
-            
-            </div>
-            
-            </div>
+<li className="flex-items" style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}><strong style={{border:'2px solid', padding:'1vh .8vw', minWidth:'50px', maxWidth:'50px',minHeight:'50px', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>{frontmatter.marating1}</strong> {frontmatter.maratingtx1}</li>
+
+<li className="flex-items" style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}><strong style={{border:'2px solid', padding:'1vh .8vw', minWidth:'50px', maxWidth:'50px',minHeight:'50px', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>{frontmatter.marating2}</strong> {frontmatter.maratingtx2} </li>
+
+<li className="flex-items" style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}><strong style={{border:'2px solid', padding:'1vh .8vw', minWidth:'50px', maxWidth:'50px', minHeight:'50px', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>{frontmatter.marating3}</strong> {frontmatter.maratingtx3} </li>
+
+<li className="flex-items" style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}><strong style={{border:'2px solid', padding:'1vh .8vw', minWidth:'50px', maxWidth:'50px', minHeight:'50px', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>{frontmatter.marating4}</strong> {frontmatter.maratingtx4} </li>
+
+</li>
+
+</ul>
             <div className="flex-items" style={{position:'relative', right:'', top:'', display:'', fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>Viewer Discretion Strongly Advised</div>
 
             
             
-            <div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'10vh 0 0 0', padding:'0 ', maxWidth:'1000px'}}>
-               {frontmatter.bumpertext ? (
-              <h3>{frontmatter.bumpertext}</h3>
-                    ) : (
-              <h3>{frontmatter.title}</h3>
-                )}
-            </div>
+            <button
+    
+        className="" 
+        style={{
+         color:'#ddd',
+         margin:'3vh auto 0 auto',
+        //  width:'100vw', 
+        //  height:'100vh',
+        //  display:'grid',
+        //  placeContent:'center',
+        //  position:'fixed',
+        //  top:'0',left:'0',right:'0',bottom:'0',
+        }}
+      >
+         <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'1rem', fontSize:'1.4rem', width:'40vw', height:'', border:'0px solid', borderRadius:'12px', background:'linear-gradient(180deg, rgba(24, 23, 30, 0.2) 1%, rgba(0, 0, 0, .7) 99%)', margin:'0 auto 0 auto', opacity:'.99',textShadow:'2px 2px 2px black', filter:'drop-shadow(2px 10px 30px var(--theme-ui-colors-textShadow))'}}>
+<ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+Click to play
+</div>
+      </button>
+
+      
+            <div style={{fontSize:'clamp(1rem, 2vw, 2.5rem)', margin:'5vh 0 0 0', padding:'0 8%', maxWidth:'1000px'}}>
+{frontmatter.bumpertext ? (
+<h3>{frontmatter.bumpertext}</h3>
+    ) : (
+<h3>{frontmatter.title}</h3>
+)}
+</div>
             
             
+
             
             </button>
             </div>
