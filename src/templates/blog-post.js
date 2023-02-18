@@ -546,7 +546,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-          <div className="flex-items" style={{fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following content is Xrated: </div>
+          <div className="flex-items" style={{fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following content is rated: </div>
 
           <ul className="flex-container" style={{display:'flex', flexDirection:'row', gap:'3vh', justifyContent:'center', alignItems:'center',  textAlign:'left', margin:'2vh auto', color:'#ddd', background:'rgba(0, 0, 0, .8)', width:'auto', maxWidth:'650px', height:'', border:'1px solid #222', borderRadius:'12px', padding:'30px 5vw' }}>
 
@@ -570,7 +570,10 @@ const YouTube = frontmatter.youtuber
 <div className="flex-items" style={{position:'relative', right:'', top:'', display:'', fontSize:'clamp(1rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>Viewer Discretion Strongly Advised</div>
 
 
-
+         <div style={{display:'grid', placeContent:'center', position:'relative', zindex:'1', fontWeight:'bold', padding:'1rem', fontSize:'1.4rem', width:'40vw', height:'', border:'0px solid', borderRadius:'12px', background:'linear-gradient(180deg, rgba(24, 23, 30, 0.2) 1%, rgba(0, 0, 0, .7) 99%)', margin:'0 auto 0 auto', opacity:'.99',textShadow:'2px 2px 2px black', }}>
+<ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
+Click to play
+</div>
 
       <button
         onClick={onPlayPause}
@@ -583,12 +586,11 @@ const YouTube = frontmatter.youtuber
          placeContent:'center',
          position:'fixed',
          top:'0',left:'0',right:'0',bottom:'0',
+         zindex:'1'
         }}
       ></button>
-         <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'1rem', fontSize:'1.4rem', width:'40vw', height:'', border:'0px solid', borderRadius:'12px', background:'linear-gradient(180deg, rgba(24, 23, 30, 0.2) 1%, rgba(0, 0, 0, .7) 99%)', margin:'0 auto 0 auto', opacity:'.99',textShadow:'2px 2px 2px black', filter:'drop-shadow(2px 10px 30px var(--theme-ui-colors-textShadow))'}}>
-<ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
-Click to play
-</div>
+
+
       
 
 <div style={{fontSize:'clamp(1rem, 2vw, 2.5rem)', margin:'5vh 0 0 0', padding:'0 10px', maxWidth:'1000px'}}>
