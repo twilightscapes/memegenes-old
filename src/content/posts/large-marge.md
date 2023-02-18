@@ -7,9 +7,9 @@ description: How does she find the time to be constantly across the country AND 
 youtuber: "https://youtu.be/7g7kH671BVA"
 youtuber2: 
 youtubeshoworiginal: true
-youtubersuggestion1:
-youtubersuggestion2:
-youtubersuggestion3:
+youtubersuggestion1: ""
+youtubersuggestion2: ""
+youtubersuggestion3: ""
 youtubestart: "0"
 youtubeend: 
 youtubemute: true

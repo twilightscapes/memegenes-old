@@ -1,6 +1,6 @@
 {
   "siteColor": "#000",
-  "bodyBg": "rgba(255, 255, 255, 0.6)",
+  "bodyBg": "#eee",
   "bodyColor": "blue",
   "fontFamily": "Titan One",
   "cardBg": "rgba(255, 255, 255, .1)"

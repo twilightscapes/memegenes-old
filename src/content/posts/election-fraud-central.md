@@ -4,15 +4,15 @@ title: 2020 Election Fraud Network
 slug: /election-fraud-central
 date: 2023-02-11 03:00
 description: Mike is working hard to find any election fraud. 
-youtuber: "https://youtu.be/MQyJmHlNGIQ"
+youtuber: "https://www.youtube.com/watch?v=oUFJJNQGwhk"
 youtuber2: 
 youtubeshoworiginal: true
-youtubersuggestion1:
-youtubersuggestion2:
-youtubersuggestion3:
+youtubersuggestion1: "https://www.youtube.com/watch?v=jNgP6d9HraI"
+youtubersuggestion2: "https://www.youtube.com/watch?v=jNgP6d9HraI"
+youtubersuggestion3: "https://www.youtube.com/watch?v=jNgP6d9HraI"
 youtubestart: "48"
 youtubeend: "68"
-youtubemute: true
+youtubemute: false
 audiostart: "20"
 audioend: "5000"
 audiotitle: 
@@ -22,12 +22,12 @@ youtubecontrols: false
 clicktoplay: false
 customcontrols: true
 youtubeautostart: true
-youtubeloop: true
+youtubeloop: false
 isnftforsale: false
 svgzindex: "0"
 comments: true
 shareable: true
-underlayImage: /assets/mypillow-stage.webp
+underlayImage: 
 featuredImage: /assets/election-fraud-promo.webp
 svgImage: /assets/election-fraud-central.svg
 scrollable: true
@@ -42,6 +42,9 @@ maratingtx2: Spontaneous & Sporadic
 maratingtx3: It's Humor - laugh
 maratingtx4: Adult Language
 ---
+
+<!-- https://youtu.be/MQyJmHlNGIQ -->
+
 
 <div class="contentinside" style="position:relative; z-index:1; min-width:50%; height:auto;  padding:0; left:0; border:0px solid yellow; text-align:center;">
 <object class="" style="height:auto; border:0px solid red; margin-top:-15px" class="" id="svg1" data="/assets/MyPillowGuyEdit.svg" type="image/svg+xml" alt="animated content" title="animated content" ></object>

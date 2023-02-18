@@ -12,7 +12,7 @@ youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
 youtubersuggestion3: "https://youtu.be/7vz43MYaCA0"
 youtubestart: "0"
 youtubeend: "39"
-youtubemute: true
+youtubemute: false
 youtubecontrols: false
 clicktoplay: true
 customcontrols: true
