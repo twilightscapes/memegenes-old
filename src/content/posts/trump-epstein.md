@@ -1,22 +1,21 @@
 ---
 template: blog-post
-title: Just another player trying to make stacks and slap backs 
-slug: /hunter-rockstar
-date: 2023-02-12 03:00
-description: Party with Hunter Biden and try to keep up!
-youtuber: "https://youtu.be/Yq5OBekqY6A"
+title: Trump and Jeffrey Epstein sitting in a tree, r a p i n g...
+slug: /trump-epstein
+date: 2023-02-18 04:43
+description: These guys were best friends and spent lots of time together.
+youtuber: "https://youtu.be/i_Xm26DikxE"
 youtuber2: 
 youtubeshoworiginal: true
 youtubersuggestion1: 
 youtubersuggestion2: 
 youtubersuggestion3: 
-youtubestart: "0"
-youtubeend: ""
+youtubestart: "20"
+youtubeend: "40"
 youtubemute: false
 audiostart: "20"
 audioend: "5000"
 audiotitle: 
-bumpertext: "Rated HB for CrackHead"
 liarliar: true
 youtubecontrols: false
 clicktoplay: true
@@ -27,21 +26,27 @@ isnftforsale: false
 svgzindex: "0"
 comments: true
 shareable: true
-underlayImage: /assets/hunter-party-underlay.webp
+underlayImage: 
 featuredImage: /assets/hunter-rockstar-promo.webp
 svgImage: 
 scrollable: true
 nftdrop: "2023-02-11T10:00:00"
-contentinvideo: false
-marating1: VL
+contentinvideo: true
+bumpertext: "These guys were bros"
+marating1: YB
 marating2: SS
-marating3: DV
-marating4: HB
-maratingtx1: Vile Language
-maratingtx2: Sexual Situations
-maratingtx3: Deranged Violence
-maratingtx4: Hunter Biden levels
+marating3: LH
+marating4: AL
+maratingtx1: Use your brain please
+maratingtx2: Spontaneous & Sporadic
+maratingtx3: It's Humor - laugh
+maratingtx4: Adult Language
 ---
+
+
+<!-- https://youtu.be/8EPEkk6qWkg IVANKA/TRUMP -->
+
+
 <!-- <div class="contentinside lake1" style=""> -->
 <!-- <img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;
 animation: kariFilter 6s ease-in-out;

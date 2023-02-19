@@ -436,6 +436,9 @@ const YouTube = frontmatter.youtuber
   // const [showControls, setShowControls] = useState(false);
   // const [count, setCount] = useState(0);
   // const [anchorEl, setAnchorEl] = React.useState(null);
+
+    const Playing  = useState(true);
+
   const [state, setState] = useState({
     playing: YouTubeAutostart,
     controls: YouTubeControls,
@@ -628,6 +631,24 @@ Click to play
         {/* <div className="contact" style={{position:'', bottom:'', zIndex:'',  left:'0', right:'0', display:'flex', justifyContent:'center', width:'200px', margin:'0 auto'}}>
     <Link state={{modal: true}}  to="/contact/" className="navbar-item  button fire" style={{margin:'', textDecoration:'none'}}>Contact Me</Link>
   </div> */}
+
+
+<button
+        onClick={onPlayPause}
+        className="" 
+        style={{
+         color:'#ddd',
+         width:'100vw', 
+         height:'85vh',
+         display:'grid',
+         placeContent:'center',
+         position:'fixed',
+         top:'0',left:'0',right:'0',bottom:'0',
+         zindex:'1'
+        }}
+      ></button>
+
+
                   <button
                     onClick={onPlayPause}
                     className="controls panel" 
@@ -727,31 +748,7 @@ Click to play
   // </div>
 
 
-  (function() {
-    const SELECTOR_SCREEN_ELEMENT = '.screen';
-    const SELECTOR_SWITCHER_TV = '#switcher-tv';
-    
-    const isTurnedOn = true;
-    
 
-    
-
-    
-    function toggleSwitcherTV() {
-      if (isTurnedOn) {
-      }
-      
-      if (!isTurnedOn) {
-      }
-      
-      isTurnedOn = !isTurnedOn;
-    }
-    
-
-    
-    // Bindings
-
-  })();
   
   return (
     
