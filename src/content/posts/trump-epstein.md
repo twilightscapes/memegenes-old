@@ -27,7 +27,7 @@ svgzindex: "0"
 comments: true
 shareable: true
 underlayImage: 
-featuredImage: /assets/hunter-rockstar-promo.webp
+featuredImage: /assets/trump-epstein-promo.webp
 svgImage: 
 scrollable: true
 nftdrop: "2023-02-11T10:00:00"
