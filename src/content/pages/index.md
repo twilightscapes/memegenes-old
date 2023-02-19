@@ -7,7 +7,7 @@ youtuber2:
 audiostart: "20"
 audioend: "5000"
 audiotitle: "Lady Gaga - The Edge Of Glory"
-underlayImage: 
+underlayImage: /assets/transparent.png
 profText: 
  <div class="" style="text-align:left;">Memes are a way of life for many and this site is meant to be an outlet for that. This site was created to make it easy to post new memes and have somewhere to archive all of them.</div><br />
   <p>Please enjoy(and share) the memes! <br /><br />Stay tuned for really big news about the platform that we're building and that we'll soon be offering to everyone. </p>
@@ -74,7 +74,7 @@ coverletter:
   coverText: About Meme Genes
   coverLink: /about
 youtubestart: "18"
-scrollable: true
+scrollable: false
 contentinvideo: false
 nftdrop: "2023-02-11T10:00:00"
 youtubersuggestion1: 
