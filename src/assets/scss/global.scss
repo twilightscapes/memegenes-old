@@ -2004,14 +2004,17 @@ svg .text4{animation: textfader4  5000ms linear infinite normal forwards;
 #menu li{color:#eee; text-shadow: 2px 2px 0 #000; font-size:clamp(1rem, 2vw, 5.8rem); filter:drop-shadow((0px 15px 15px) rgba(0,0,0,7));}
 
 
-.themetext{display:none;}
-.sidebarMenuInner .themetext{display:flex !important;}
 
 
 // body.blogpost #menu, body.blogpost .spacer{
 // 	display:none !important;
 // }
 
+
+
+
+.themetext{display:none !important;}
+.sidebarMenuInner .themetext{display:flex !important;}
 
 
 @media (max-width: 48em) {
