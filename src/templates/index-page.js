@@ -425,14 +425,14 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                 <div style={{position:'fixed',
                 // backgroundColor:'var(--theme-ui-colors-bodyBg)',
                 backgroundColor:'rgba(0,0,0,0.6)',
-                height:'', width:'100vw', zIndex:'0', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', 
+                 width:'100vw', height:'100%', minHeight:'40vh', maxHeight:'85vh', zIndex:'0', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'center', justifyContent:'center', 
                 color:'var(--theme-ui-colors-text)', 
                 color:'#ddd',
                 fontFamily:'Verdana, Sans-Serif, System' }}>
 
 
 
-<button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'50px', border:'0px  solid red', width:'100vw', height:'100vh', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
+<button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'50px', border:'0px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
                 {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
    
                 {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
@@ -1090,7 +1090,7 @@ Click to play
 
 
 {showPosts ? (
-  <section id="showPosts">
+  <section id="showPosts" style={{marginBottom:'50vh'}}>
   <div style={{position:'relative', background:'none', maxHeight:'77vh', overflow:'', width:'100vwye'}}>
 <ScrollAnimation className="animate" animateIn="bounceInDown" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={false} > 
 <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
