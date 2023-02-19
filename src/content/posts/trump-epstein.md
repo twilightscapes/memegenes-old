@@ -80,7 +80,7 @@ opacity:0;
 </style>
 <div class="contentbody" style="text-align:left !important; margin-top:0;">
 
-## About Hunter Biden
+<!-- ## About Hunter Biden
 
 Hunter Biden is an American lawyer and businessman who is the son of President Joe Biden. He was born on February 4, 1970, in Wilmington, Delaware.
 
@@ -90,7 +90,7 @@ In addition to his business dealings, Hunter Biden has faced personal challenges
 
 Despite these challenges, Hunter Biden has remained active in political and civic life. He has worked on various initiatives and campaigns, and has been involved in advocacy efforts on issues such as addiction and recovery.
 
-As the son of the President of the United States, Hunter Biden continues to be a subject of public interest and media scrutiny. However, it's worth noting that he is not a government official or an employee of the federal government, and his business dealings and personal life are his own and separate from those of his father.
+As the son of the President of the United States, Hunter Biden continues to be a subject of public interest and media scrutiny. However, it's worth noting that he is not a government official or an employee of the federal government, and his business dealings and personal life are his own and separate from those of his father. -->
 
 
 </div>

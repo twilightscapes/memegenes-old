@@ -1,13 +1,13 @@
 ---
 slug: /
 tagline:  Memes are life
-featuredImage: /assets/twilight-promo.webp
-youtuber: "https://youtu.be/iHxmNzMfDj4"
-youtuber2: "https://youtu.be/QeWBS0JBNzQ"
+featuredImage: /assets/trump-epstein-promo.webp
+youtuber: "https://youtu.be/i_Xm26DikxE"
+youtuber2: 
 audiostart: "20"
 audioend: "5000"
 audiotitle: "Lady Gaga - The Edge Of Glory"
-underlayImage: /assets/swd-foreground.png
+underlayImage: 
 profText: 
  <div class="" style="text-align:left;">Memes are a way of life for many and this site is meant to be an outlet for that. This site was created to make it easy to post new memes and have somewhere to archive all of them.</div><br />
   <p>Please enjoy(and share) the memes! <br /><br />Stay tuned for really big news about the platform that we're building and that we'll soon be offering to everyone. </p>
@@ -46,17 +46,25 @@ skillsText:
 cta:
   ctaText: Contact Gene
   ctaLink: ""
-svgImage: /assets/campfire.svg
+svgImage: 
 secondaryImage: /assets/default-user.webp
 title: Do these memes make my butt look fat?
-youtubeend: "9"
+youtubeend: "60"
 sharethis: false
 youtubeloop: true
 youtubecontrols: false
 customcontrols: false
 clicktoplay: true
 liarliar: false
-bumpertext: ""
+bumpertext: "These guys were bros"
+marating1: YB
+marating2: SS
+marating3: LH
+marating4: AL
+maratingtx1: Use your brain please
+maratingtx2: Spontaneous & Sporadic
+maratingtx3: It's Humor - laugh
+maratingtx4: Adult Language
 template: index-page
 youtubemute: true
 description: A rogue one, out there to change the world, one meme at a time. 
@@ -65,13 +73,13 @@ profTitle: Meme Genes
 coverletter:
   coverText: About Meme Genes
   coverLink: /about
-youtubestart: "0"
-scrollable: false
+youtubestart: "18"
+scrollable: true
 contentinvideo: false
 nftdrop: "2023-02-11T10:00:00"
-youtubersuggestion1: https://youtu.be/8HqvE0rgLQY
-youtubersuggestion2: https://youtu.be/1kIihY252eE
-youtubersuggestion3: https://youtu.be/iHxmNzMfDj4
+youtubersuggestion1: 
+youtubersuggestion2: 
+youtubersuggestion3: 
 ---
 <!-- Do not delete -->
 

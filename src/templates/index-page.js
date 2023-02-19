@@ -97,6 +97,14 @@ query HomeQuery($id: String!) {
       youtubersuggestion3
       clicktoplay
       bumpertext
+      marating1
+      marating2
+      marating3
+      marating4
+      maratingtx1
+      maratingtx2
+      maratingtx3
+      maratingtx4
       profTitle
       profText
       addressText
@@ -258,6 +266,19 @@ const ContentinVideo = frontmatter.contentinvideo
   // }
 
 
+  let iframeFiltered;
+if (Suggestion1) {
+  iframeFiltered = [
+    frontmatter.youtuber,
+    frontmatter.youtubersuggestion1,
+    frontmatter.youtubersuggestion2,
+    frontmatter.youtubersuggestion3,
+  ];
+} else {
+  iframeFiltered = frontmatter.youtuber;
+}
+
+
   const Svg = frontmatter.svgImage
   const svgZindex = frontmatter.svgzindex
   if (!Svg) {
@@ -374,17 +395,15 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
   <div>
 
 
-{ Suggestion1 ? (
-<div>
-
+{/* PURPLE */}
             <ReactPlayer
-              allow="autoplay"
+              allow="web-share"
               ref={playerRef}
-              style={{position:'absolute', top:'0', zIndex:'', minHeight:'300px',}}
-              width="100vw"
+              style={{position:'asbolute', zIndex:''}}
+              width="100%"
               height="100%"
-                url={[iframeUrl, Suggestion1, Suggestion2, Suggestion3]}
-              // url={iframeUrl}
+                // url={[iframeUrl, Suggestion1, Suggestion2, Suggestion3]}
+              url={iframeFiltered}
               playing={playing}
               controls={controls}
               light={light}
@@ -403,102 +422,96 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                   }
               }}
               playIcon={
-                <div style={{position:'absolute', background:'', height:'100vh', width:'100vw', zIndex:'2', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
-             
-             <div style={{fontSize:'clamp(1rem, 2vw, 2.5rem)', margin:'0', padding:'0 ', maxWidth:'80vw', border:'0px solid yellow',display:'grid', placeContent:'start',}}>
-              
-                {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'100%', maxWidth:'150px',maxHeight:'100px', margin:'80px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
-          
-                <div className="panel" style={{position:'relative', right:'0', top:'20vh', display:'flex', flexDirection:'column', justifyContent:'center', fontSize:'clamp(1.3rem, 2vw, 3rem)', background:'rgba(0,0,0,0.50)', textAlign:'center', padding:'2vh 5vw', borderRadius:'12px', maxWidth:'80vw', color:'#ccc'}}>
-                  Click to play
-                
-                  <ImPlay style={{fontSize:'200%', margin:'0 auto'}} />
-          
-            
-           
-               {/* {frontmatter.bumpertext ? (
-              <h3>{frontmatter.bumpertext}</h3>
-                    ) : (
-              <h3>{frontmatter.title}</h3>
-                )} */}
-                </div>
+                <div style={{position:'fixed',
+                // backgroundColor:'var(--theme-ui-colors-bodyBg)',
+                backgroundColor:'rgba(0,0,0,0.6)',
+                height:'', width:'100vw', zIndex:'0', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', 
+                color:'var(--theme-ui-colors-text)', 
+                color:'#ddd',
+                fontFamily:'Verdana, Sans-Serif, System' }}>
+
+
+
+<button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'50px', border:'0px  solid red', width:'100vw', height:'100vh', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
+                {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
+   
+                {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
+
+
+                <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following content is rated: </div>
+
+<ul className="flex-container" style={{display:'flex', flexDirection:'row', gap:'1vh', justifyContent:'center', alignItems:'center',  textAlign:'left', margin:'0 auto', color:'#ddd', background:'rgba(0, 0, 0, .8)', width:'auto', maxWidth:'800px', height:'', border:'1px solid #222', borderRadius:'12px', padding:'2vh 5vw' }}>
+
+
+<li className="flex-items" style={{display:'grid', placeContent:'center', width:'', height:'', aspectRatio:'1/1', padding:'0 1vw', border:'6.5px solid #fff', margin:'0 auto 0 auto 0', fontSize:'clamp(3.5rem, 13vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}><strong style={{}}>MA</strong></li>
+
+
+<li style={{display:'flex', flexDirection:'column', position:'relative', left:'', top:'', gap:'.8vh', justifyContent:'space-around', alignContent:'', alignItems:'start', border:'0px solid red', fontSize:'clamp(.5rem, 1.2vw, 2rem)'}}>
+
+<li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
+{frontmatter.marating1}</strong> {frontmatter.maratingtx1}</li>
+
+<li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
+{frontmatter.marating2}</strong> {frontmatter.maratingtx2} </li>
+
+<li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
+{frontmatter.marating3}</strong> {frontmatter.maratingtx3} </li>
+
+<li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
+{frontmatter.marating4}</strong> {frontmatter.maratingtx4} </li>
+
+</li>
+
+</ul>
+<div className="flex-items" style={{position:'relative', right:'', top:'', display:'', fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>Viewer Discretion Strongly Advised</div>
+
+
+<div style={{display:'grid', placeContent:'center', position:'relative', zindex:'1', fontWeight:'bold', padding:'1vh 0', fontSize:'clamp(.6rem, 1.4vw, 2rem)', width:'100%', maxWidth:'25vw', height:'', border:'0px solid', borderRadius:'12px', background:'linear-gradient(180deg, rgba(24, 23, 30, 0.2) 1%, rgba(0, 0, 0, .7) 99%)', margin:'0 auto 0 auto', opacity:'.99', textShadow:'2px 2px 2px black', color:'#fff' }}>
+<ImPlay style={{margin:'0 auto', width:'50%', fontSize:'clamp(2rem, 4.4vw, 3rem)', filter:'drop-shadow(0px 0px 12px #fff',}} />
+Click to play
+</div>
+
+<button
+className="" 
+style={{
+color:'#ddd',
+width:'100vw', 
+height:'100vh',
+display:'grid',
+placeContent:'center',
+position:'fixed',
+top:'0',left:'0',right:'0',bottom:'0',
+zindex:'1'
+}}
+></button>
+
+
+
+
+<div style={{fontSize:'clamp(1rem, 2vw, 2.5rem)', margin:'5vh 0 0 0', padding:'0 10px', maxWidth:'1000px'}}>
+{frontmatter.bumpertext ? (
+<h3>{frontmatter.bumpertext}</h3>
+) : (
+<h3>{frontmatter.title}</h3>
+)}
+</div>
+
+
+
+
+</button>
             </div>
-            
-            
-            <br /><br /><br /><br />
-                </div>
             }
             
             />
-            <div className="youtubeblockertop" style={{position:'absolute', display:'block', background:'', height:'58px', width:'100%', zIndex:'0', top:'0', right:'0', textAlign:'center', padding:'12px',
-            animation:'fadeout 1s forwards', animationDelay:'4s', border:'0px solid yellow'
-          }}>MemeGenes.com</div>
+      {/* <div className="youtubeblockertop" style={{position:'absolute', display:'block', height:'58px', width:'100%', zIndex:'0', top:'0', right:'0', textAlign:'center', padding:'12px',
+            background:'#000',
+            animation:'fadeout 4s forwards', animationDelay:'6s', border:'0px solid yellow'
+          }}>MemeGenes.com</div> */}
   </div>
   ) : (
-    <div>
-  <ReactPlayer
-    allow="autoplay"
-    ref={playerRef}
-    style={{position:'absolute', top:'0', zIndex:'', minHeight:'300px',}}
-    width="100%"
-    height="100%"
-      // url={[iframeUrl, Suggestion2, Suggestion3]}
-    url={iframeUrl}
-    playing={playing}
-    controls={controls}
-    light={light}
-    loop={loop}
-    muted={muted}
-    playsinline
-    config={{
-      file: {
-        attributes: {
-          sameSite: "none",
-          crossorigin: "anonymous",
-        },
-      },
-      youtube: {
-        playerVars: { showinfo:0, autoplay:YouTubeAutostart, controls:YouTubeControls, start:YouTubeStart, end:YouTubeEnd, mute:YouTubeMute, loop:YoutubeLoop }
-      },
-    }}
-    playIcon={
-      <div style={{position:'absolute', background:'', height:'100vh', width:'100vw', zIndex:'2', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
-   
-   <div style={{fontSize:'clamp(1rem, 2vw, 2.5rem)', margin:'0', padding:'0 ', maxWidth:'80vw', border:'0px solid yellow',display:'grid', placeContent:'start',}}>
-    
-      {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'100%', maxWidth:'150px',maxHeight:'100px', margin:'80px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
-
-      <div className="panel" style={{position:'relative', right:'0', top:'20vh', display:'flex', flexDirection:'column', justifyContent:'center', fontSize:'clamp(1.3rem, 2vw, 3rem)', background:'rgba(0,0,0,0.50)', textAlign:'center', padding:'2vh 5vw', borderRadius:'12px', maxWidth:'80vw' }}>
-        Click to play
-      
-        <ImPlay style={{fontSize:'200%', margin:'0 auto'}} />
-
+    ""
   
- 
-     {/* {frontmatter.bumpertext ? (
-    <h3>{frontmatter.bumpertext}</h3>
-          ) : (
-    <h3>{frontmatter.title}</h3>
-      )} */}
-      </div>
-  </div>
-  
-  
-  <br /><br /><br /><br />
-      </div>
-  }
-  
-  />
-  {/* <div className="youtubeblockertop" style={{position:'absolute', display:'block', background:'#000', height:'58px', width:'100%', zIndex:'0', top:'0', right:'0', textAlign:'center', padding:'12px',
-            animation:'fadeout 1s forwards', animationDelay:'4s', border:'0px solid yellow'
-}}>MemeGenes.com</div> */}
-</div>
-    )}
-
-
-  </div>
- ) : (
-  ""
 )}
   
   
@@ -641,6 +654,8 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 
+  const Playing  = useState(true);
+
   const [state, setState] = useState({
     playing: YouTubeAutostart,
     controls: YouTubeControls,
@@ -716,18 +731,12 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   
       const { iconimage } = useSiteMetadata()
   
-
-      
   
       return (
   
   <div>
   
-
-
-
-
-
+  
   
         {playing ? (
 ""
@@ -735,28 +744,100 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
   
   
-    <div style={{position:'absolute', background:'#111', height:'100vh', width:'100%', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'top', justifyContent:'center', color:'#fff' }}>
+
    
-    <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} />
-    <div style={{position:'relative', right:'0', top:'-8vh', display:'', fontSize:'clamp(1.3rem, 2vw, 3rem)'}}>
-      Press the  play button
-    </div>
 
-<RiArrowRightDownFill style={{fontSize:'50px', position:'absolute', right:'40%', top:'40vh', transform:'rotate(350deg)' }} />
 
-<div style={{fontSize:'clamp(1rem, 2.8vw, 3.8rem)', margin:'0', padding:'0 5%', maxWidth:'800px'}}>
-   {frontmatter.bumpertext ? (
-  <h3>{frontmatter.bumpertext}</h3>
-        ) : (
-  <h3>{frontmatter.title}</h3>
-    )}
+<div style={{position:'fixed', height:'', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', color:'var(--theme-ui-colors-text)', fontFamily:'Verdana, Sans-Serif, System' }}>
+
+
+
+
+<button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'70px', border:'0px  solid red', width:'100vw', height:'100vh', backgroundColor:'var(--theme-ui-colors-bodyBg)', color:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:'2vh 0 0 0'}}>
+
+
+
+
+
+
+          {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
+
+          {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
+
+
+
+          <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following content is rated: </div>
+
+          <ul className="flex-container" style={{display:'flex', flexDirection:'row', gap:'1vh', justifyContent:'center', alignItems:'center',  textAlign:'left', margin:'0 auto', color:'#ddd', background:'rgba(0, 0, 0, .8)', width:'auto', maxWidth:'800px', height:'', border:'1px solid #222', borderRadius:'12px', padding:'2vh 5vw' }}>
+
+
+<li className="flex-items" style={{display:'grid', placeContent:'center', width:'', height:'', aspectRatio:'1/1', padding:'0 1vw', border:'6.5px solid #fff', margin:'0 auto 0 auto 0', fontSize:'clamp(3.5rem, 13vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}><strong style={{}}>MA</strong></li>
+
+
+<li style={{display:'flex', flexDirection:'column', position:'relative', left:'', top:'', gap:'.8vh', justifyContent:'space-around', alignContent:'', alignItems:'start', border:'0px solid red', fontSize:'clamp(.5rem, 1.2vw, 2rem)'}}>
+
+<li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
+  {frontmatter.marating1}</strong> {frontmatter.maratingtx1}</li>
+
+  <li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
+  {frontmatter.marating2}</strong> {frontmatter.maratingtx2} </li>
+
+  <li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
+  {frontmatter.marating3}</strong> {frontmatter.maratingtx3} </li>
+
+  <li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
+  {frontmatter.marating4}</strong> {frontmatter.maratingtx4} </li>
+
+</li>
+
+</ul>
+<div className="flex-items" style={{position:'relative', right:'', top:'', display:'', fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>Viewer Discretion Strongly Advised</div>
+
+
+         <div style={{display:'grid', placeContent:'center', position:'relative', zindex:'1', fontWeight:'bold', padding:'1vh 0', fontSize:'clamp(.6rem, 1.4vw, 2rem)', width:'100%', maxWidth:'25vw', height:'', border:'0px solid', borderRadius:'12px', background:'linear-gradient(180deg, rgba(24, 23, 30, 0.2) 1%, rgba(0, 0, 0, .7) 99%)', margin:'0 auto 0 auto', opacity:'.99', textShadow:'2px 2px 2px black', color:'#fff' }}>
+<ImPlay style={{margin:'0 auto', width:'50%', fontSize:'clamp(2rem, 4.4vw, 3rem)', filter:'drop-shadow(0px 0px 12px #fff',}} />
+Click to play
 </div>
 
 
-<br /><br /><br /><br />
-    </div>
 
- )}  {/* end playing check */}
+
+      
+
+<div style={{fontSize:'clamp(1rem, 2vw, 2.5rem)', margin:'5vh 0 0 0', padding:'0 10px', maxWidth:'1000px'}}>
+{frontmatter.bumpertext ? (
+<h3>{frontmatter.bumpertext}</h3>
+    ) : (
+<h3>{frontmatter.title}</h3>
+)}
+</div>
+
+
+      
+      </button>
+
+      <button
+        onClick={onPlayPause}
+        className="" 
+        style={{
+         color:'#ddd',
+         width:'100vw', 
+         height:'100vh',
+         display:'grid',
+         placeContent:'center',
+         position:'fixed',
+         top:'0',left:'0',right:'0',bottom:'0',
+         zindex:'1'
+        }}
+      ></button>
+
+      </div>
+
+
+
+
+ )}
+ {/* end playing check */}
   
  
   
@@ -769,10 +850,31 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
         {/* <div className="contact" style={{position:'', bottom:'', zIndex:'',  left:'0', right:'0', display:'flex', justifyContent:'center', width:'200px', margin:'0 auto'}}>
     <Link state={{modal: true}}  to="/contact/" className="navbar-item  button fire" style={{margin:'', textDecoration:'none'}}>Contact Me</Link>
   </div> */}
+
+
+<button
+        onClick={onPlayPause}
+        className="" 
+        style={{
+         color:'#ddd',
+         width:'100vw', 
+         height:'85vh',
+         display:'grid',
+         placeContent:'center',
+         position:'absolute',
+         top:'0',left:'0',right:'0',bottom:'0',
+         zindex:'1'
+        }}
+      ></button>
+
+
                   <button
                     onClick={onPlayPause}
-                    className="controls" 
+                    className="controls panel" 
                     style={{
+                      backgroundColor:'rgba(0,0,0, 0.6)',
+                      color:'#999',
+                      borderRadius:'8px', overFlow:'hidden'
                   }}
                   >
                     {/* <MdPlayArrow style={{fontSize:'50px', position:'absolute'}}  /> */}
@@ -797,8 +899,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
                   <button
                     // onClick={() => setState({ ...state, muted: !state.muted })}
                     onClick={onMute}
-                    className="controls "
+                    className="controls panel"
                     style={{
+                      backgroundColor:'rgba(0,0,0, 0.6)',
+                      color:'#999',
+                      borderRadius:'8px', overFlow:'hidden'
                   }}
                   >
                     {muted ? (
@@ -985,8 +1090,8 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 {showPosts ? (
-  
-  <div id="showPosts" className="container24 horizontal-holder effects" style={{position:'relative', background:'none', maxHeight:'77vh', overflow:'hidden'}}>
+  <section id="showPosts">
+  <div style={{position:'relative', background:'none', maxHeight:'77vh', overflow:'', width:'100vwye'}}>
 <ScrollAnimation className="animate" animateIn="bounceInDown" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={false} > 
 <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
     <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
@@ -996,7 +1101,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 </div>
 </ScrollAnimation>
 </div>
-
+</section>
       ) : (
         ""
       )}
@@ -1067,7 +1172,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={false} > 
-<section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'visible', margin:'15vh 0 0 0', padding:'0 0 10vh 0', border:'0px solid blue',}}>
+<section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'visible', padding:'0 0 10vh 0', border:'0px solid blue',}}>
 
 
 
@@ -1089,7 +1194,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
             ""
           )} */}
 
-{UnderlayImage ? (
+{!UnderlayImage ? (
   // custom image in effect //
 
   <div className="flexcheek mob print nameblock " style={{marginTop:'', padding:'1rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
@@ -1153,7 +1258,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 
-{UnderlayImage ? (
+{!UnderlayImage ? (
 
   <div className="nameblock panel" style={{margin:'0 auto 0 auto', padding:'0 0 10px 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
   color:'#fff',
