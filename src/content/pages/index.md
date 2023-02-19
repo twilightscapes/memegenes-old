@@ -57,14 +57,16 @@ customcontrols: false
 clicktoplay: true
 liarliar: false
 bumpertext: "These guys were bros"
-marating1: YB
-marating2: SS
-marating3: LH
-marating4: AL
-maratingtx1: Use your brain please
-maratingtx2: Spontaneous & Sporadic
-maratingtx3: It's Humor - laugh
-maratingtx4: Adult Language
+marate: SICK
+viewerwarning: You may lose brain cells after viewing this
+marating1: SP
+marating2: LS
+marating3: PH
+marating4: 
+maratingtx1: Souless Perverts
+maratingtx2: Love Story
+maratingtx3: Political Humor
+maratingtx4: 
 template: index-page
 youtubemute: true
 description: A rogue one, out there to change the world, one meme at a time. 

@@ -33,13 +33,15 @@ scrollable: true
 nftdrop: "2023-02-11T10:00:00"
 contentinvideo: true
 bumpertext: "These guys were bros"
-marating1: YB
-marating2: SS
-marating3: LH
+marate: SICK
+viewerwarning: You may lose brain cells after viewing this
+marating1: SP
+marating2: LS
+marating3: PH
 marating4: AL
-maratingtx1: Use your brain please
-maratingtx2: Spontaneous & Sporadic
-maratingtx3: It's Humor - laugh
+maratingtx1: Souless Perverts
+maratingtx2: Love Story
+maratingtx3: Political Humor
 maratingtx4: Adult Language
 ---
 

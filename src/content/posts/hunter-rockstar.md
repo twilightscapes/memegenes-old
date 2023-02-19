@@ -33,6 +33,8 @@ svgImage:
 scrollable: true
 nftdrop: "2023-02-11T10:00:00"
 contentinvideo: false
+viewerwarning: Warning
+marate: MA
 marating1: VL
 marating2: SS
 marating3: DV

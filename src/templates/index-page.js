@@ -97,6 +97,8 @@ query HomeQuery($id: String!) {
       youtubersuggestion3
       clicktoplay
       bumpertext
+      viewerwarning
+      marate
       marating1
       marating2
       marating3
@@ -438,38 +440,81 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                 {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
 
 
-                <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following content is rated: </div>
+                <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following is rated: <strong>{frontmatter.marate}</strong></div>
 
 <ul className="flex-container" style={{display:'flex', flexDirection:'row', gap:'1vh', justifyContent:'center', alignItems:'center',  textAlign:'left', margin:'0 auto', color:'#ddd', background:'rgba(0, 0, 0, .8)', width:'auto', maxWidth:'800px', height:'', border:'1px solid #222', borderRadius:'12px', padding:'2vh 5vw' }}>
 
 
-<li className="flex-items" style={{display:'grid', placeContent:'center', width:'', height:'', aspectRatio:'1/1', padding:'0 1vw', border:'6.5px solid #fff', margin:'0 auto 0 auto 0', fontSize:'clamp(3.5rem, 13vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}><strong style={{}}>MA</strong></li>
+{frontmatter.marate ? (
+            <li className="flex-items" style={{display:'grid', placeContent:'center', width:'', height:'', aspectRatio:'1/1', padding:'0 20px', border:'6.5px solid #fff', margin:'0 auto 0 auto 0', fontSize:'clamp(4rem, 15vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}>{frontmatter.marate}</li>
+            ) : (
+              <li className="flex-items" style={{display:'grid', placeContent:'center', width:'', height:'', aspectRatio:'1/1', padding:'0 20px', border:'6.5px solid #fff', margin:'0 auto 0 auto 0', fontSize:'clamp(4rem, 15vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}>PG</li>
+            )}
+
+
+
 
 
 <li style={{display:'flex', flexDirection:'column', position:'relative', left:'', top:'', gap:'.8vh', justifyContent:'space-around', alignContent:'', alignItems:'start', border:'0px solid red', fontSize:'clamp(.5rem, 1.2vw, 2rem)'}}>
 
-<li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
-{frontmatter.marating1}</strong> {frontmatter.maratingtx1}</li>
 
-<li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
+{frontmatter.maratingtx1 ? (
+            <li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{ }}>
+            {frontmatter.marating1}</strong> {frontmatter.maratingtx1}</li>
+            ) : (
+              ""
+            )}
+
+
+{frontmatter.maratingtx2 ? (
+            <li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{ }}>
 {frontmatter.marating2}</strong> {frontmatter.maratingtx2} </li>
+            ) : (
+              ""
+            )}
 
-<li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
-{frontmatter.marating3}</strong> {frontmatter.maratingtx3} </li>
 
-<li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
-{frontmatter.marating4}</strong> {frontmatter.maratingtx4} </li>
+{frontmatter.maratingtx3 ? (
+         <li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{ }}>
+{frontmatter.marating3}</strong> {frontmatter.maratingtx3} </li>   
+            ) : (
+              ""
+            )} 
+
+
+{frontmatter.maratingtx4 ? (
+       <li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{ }}>
+{frontmatter.marating4}</strong> {frontmatter.maratingtx4} </li>           
+            ) : (
+              ""
+            )} 
+
+
 
 </li>
 
 </ul>
-<div className="flex-items" style={{position:'relative', right:'', top:'', display:'', fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>Viewer Discretion Strongly Advised</div>
+<div className="flex-items" style={{position:'relative', right:'', top:'', display:'', fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>{frontmatter.viewerwarning}</div>
 
 
 <div style={{display:'grid', placeContent:'center', position:'relative', zindex:'1', fontWeight:'bold', padding:'1vh 0', fontSize:'clamp(.6rem, 1.4vw, 2rem)', width:'100%', maxWidth:'25vw', height:'', border:'0px solid', borderRadius:'12px', background:'linear-gradient(180deg, rgba(24, 23, 30, 0.2) 1%, rgba(0, 0, 0, .7) 99%)', margin:'0 auto 0 auto', opacity:'.99', textShadow:'2px 2px 2px black', color:'#fff' }}>
 <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'clamp(2rem, 4.4vw, 3rem)', filter:'drop-shadow(0px 0px 12px #fff',}} />
 Click to play
 </div>
+
+
+
+
+
+
+<div style={{fontSize:'clamp(1rem, 2vw, 2.5rem)', margin:'5vh 0 0 0', padding:'0 10px', maxWidth:'1000px'}}>
+{frontmatter.bumpertext ? (
+<h3>{frontmatter.bumpertext}</h3>
+) : (
+<h3>{frontmatter.title}</h3>
+)}
+</div>
+</button>
 
 <button
 className="" 
@@ -485,21 +530,6 @@ zindex:'1'
 }}
 ></button>
 
-
-
-
-<div style={{fontSize:'clamp(1rem, 2vw, 2.5rem)', margin:'5vh 0 0 0', padding:'0 10px', maxWidth:'1000px'}}>
-{frontmatter.bumpertext ? (
-<h3>{frontmatter.bumpertext}</h3>
-) : (
-<h3>{frontmatter.title}</h3>
-)}
-</div>
-
-
-
-
-</button>
             </div>
             }
             
@@ -514,6 +544,7 @@ zindex:'1'
   
 )}
   
+
   
   
   {UnderlayImage ? (
@@ -776,16 +807,16 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 <li style={{display:'flex', flexDirection:'column', position:'relative', left:'', top:'', gap:'.8vh', justifyContent:'space-around', alignContent:'', alignItems:'start', border:'0px solid red', fontSize:'clamp(.5rem, 1.2vw, 2rem)'}}>
 
-<li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
+<li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.8em', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
   {frontmatter.marating1}</strong> {frontmatter.maratingtx1}</li>
 
-  <li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
+  <li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.8em', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
   {frontmatter.marating2}</strong> {frontmatter.maratingtx2} </li>
 
-  <li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
+  <li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.8em', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
   {frontmatter.marating3}</strong> {frontmatter.maratingtx3} </li>
 
-  <li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.5vh .8vw', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
+  <li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.8em', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
   {frontmatter.marating4}</strong> {frontmatter.maratingtx4} </li>
 
 </li>

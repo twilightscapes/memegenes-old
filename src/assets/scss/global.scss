@@ -75,6 +75,19 @@ body.homepage .wrap-element iframe, body.blogpost .wrap-element iframe {
 }
 
 
+
+.flex-container li strong{
+	border:2px solid;
+	padding:.8em; 
+	aspect-ratio:1/1;
+	margin-right:1.5vw;
+	text-align:center;
+}
+
+// .flex-container li strong:first-child{
+// 	border:6px solid;
+// }
+
   @media (max-width: 48rem) {
 
 
