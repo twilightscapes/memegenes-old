@@ -17,7 +17,7 @@ audiostart: "20"
 audioend: "5000"
 audiotitle: "Liar Liar!"
 liarliar: false
-youtubecontrols: true
+youtubecontrols: false
 youtubeautostart: true
 youtubeloop: true
 isnftforsale: false
@@ -30,7 +30,7 @@ svgImage:
 scrollable: true
 nftdrop: "2023-02-09T10:00:00"
 contentinvideo: false
-clicktoplay: true
+clicktoplay: false
 bumpertext: ""
 marating1: YB
 marating2: SS

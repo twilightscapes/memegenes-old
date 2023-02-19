@@ -14,9 +14,9 @@ youtubestart: "0"
 youtubeend: "39"
 youtubemute: false
 youtubecontrols: false
-clicktoplay: true
+clicktoplay: false
 customcontrols: true
-youtubeautostart: true
+youtubeautostart: false
 youtubeloop: true
 audiotitle: "Fuckin' Liar!"
 liarliar: false

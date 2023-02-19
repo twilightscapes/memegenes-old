@@ -18,9 +18,9 @@ audioend: "5000"
 audiotitle: 
 liarliar: true
 youtubecontrols: false
-clicktoplay: true
+clicktoplay: false
 customcontrols: true
-youtubeautostart: true
+youtubeautostart: false
 youtubeloop: true
 isnftforsale: false
 svgzindex: "0"

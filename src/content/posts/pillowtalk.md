@@ -12,12 +12,10 @@ shareable: true
 scrollable: true
 contentinvideo: false
 liarliar: false
-
 youtubecontrols: false
 clicktoplay: false
 customcontrols: true
-youtubeautostart: true
-
+youtubeautostart: false
 audiotitle: Alternate Soundtrack
 youtuber2: https://youtu.be/CWf5FYSK7Yc
 audioend: "5000"
