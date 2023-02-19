@@ -1048,7 +1048,7 @@ Click to play
 
 
 {showPosts ? (
-  <section id="showPosts" style={{marginBottom:'50vh'}}>
+  <section id="showPosts" style={{marginBottom:'0'}}>
   <div style={{position:'relative', background:'none', maxHeight:'77vh', overflow:'', width:'100vwye'}}>
 <ScrollAnimation className="animate" animateIn="bounceInDown" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={false} > 
 <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
@@ -1084,7 +1084,7 @@ Click to play
 
 <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} > 
 
-<section id="feature" order="1" name="feature" className="print" style={{ display:'', margin:'0 0 10vh 0', padding:'0', position:'relative'}}>
+<section id="feature" order="1" name="feature" className="print" style={{ display:'', margin:'0 0 0 0', padding:'0', position:'relative'}}>
 
 
 
