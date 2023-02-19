@@ -1213,7 +1213,7 @@ Click to play
 
 
 
-  <div className="flexcheek mob print nameblock " style={{marginTop:'', padding:'1rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
+  {/* <div className="flexcheek mob print nameblock " style={{marginTop:'', padding:'1rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
   background:'rgba(0,0,0,0.70)', 
   backdropFilter:'blur(12px)',
   borderRadius:'10px'}}>
@@ -1221,60 +1221,19 @@ Click to play
 
   <h1 className="title1" style={{fontSize:'clamp(2rem, 2.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
 
-            {/* <h2 className="tagline1">
+            <h2 className="tagline1">
               {frontmatter.tagline}
-            </h2> */}
+            </h2>
             
             <div
             style={{paddingBottom:'2rem'}}
               className="description"
               dangerouslySetInnerHTML={{ __html: ProfText }}
             />
-            </div>
+            </div> */}
        
   
     
-
-            <div className="flexcheek mob2 print" style={{position:'', maxHeight:'', overflow:'', marginBottom:'', paddingTop:'2vh', borderRadius:'0 0 10px 10px',
-      }}>
-
-
-
-
-
-{SecondaryImage ? (
-            <GatsbyImage
-              image={SecondaryImage}
-              alt={frontmatter.title + " - Featured image"}
-              className="drop-shadow avatar-frame"
-              style={{ maxWidth:'', height:'45vh', maxHeight:'45vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', marginBottom:'0', border:'2rem'}}
-            />
-          ) : (
-            ""
-          )}
-
-
-
-
-
-  <div className="nameblock panel" style={{margin:'0 auto 0 auto', padding:'0 0 10px 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
-  color:'#fff',
-  border:'0px solid red', 
-  maxWidth:'80%', paddingTop:'', 
-  fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
-  background:'rgba(0,0,0,0.70)',
-  backdropFilter:'blur(8px)',
-  borderRadius:'10px',
-  textShadow:'0 2px 7px #000',
-  }} >
-
-<span style={{marginTop:'10px', fontSize:'160%'}}>
-  {/* {companyname}  */}
-  Meme Gene</span>
-
-</div>
-</div>
-
 
 
           
@@ -1328,6 +1287,47 @@ Click to play
             </div>
 
 
+
+
+            <div className="flexcheek mob2 print" style={{position:'', maxHeight:'', overflow:'', marginBottom:'', paddingTop:'2vh', borderRadius:'0 0 10px 10px',
+      }}>
+
+
+
+
+
+{SecondaryImage ? (
+            <GatsbyImage
+              image={SecondaryImage}
+              alt={frontmatter.title + " - Featured image"}
+              className="drop-shadow avatar-frame"
+              style={{ maxWidth:'', height:'45vh', maxHeight:'45vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', marginBottom:'0', border:'2rem'}}
+            />
+          ) : (
+            ""
+          )}
+
+
+
+
+
+  <div className="nameblock panel" style={{margin:'0 auto 0 auto', padding:'0 0 10px 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
+  color:'#fff',
+  border:'0px solid red', 
+  maxWidth:'80%', paddingTop:'', 
+  fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
+  background:'rgba(0,0,0,0.70)',
+  backdropFilter:'blur(8px)',
+  borderRadius:'10px',
+  textShadow:'0 2px 7px #000',
+  }} >
+
+<span style={{marginTop:'10px', fontSize:'160%'}}>
+  {/* {companyname}  */}
+  Meme Gene</span>
+
+</div>
+</div> 
             
   
 
