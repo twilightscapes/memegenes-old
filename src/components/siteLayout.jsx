@@ -188,7 +188,11 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   ""
 )} */}
 
-{showPosts ? (
+
+
+
+
+{/* {showPosts ? (
 <li style={{position:'relative',}}>
       {prefersReducedMotion ? (
        <Link aria-label="Menu 2" className="navbar-item" to="/#showPosts" style={{paddingRight:'',}}>{menu2}</Link>    
@@ -199,11 +203,23 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 </li>
       ) : (
   ""
+)} */}
+
+
+
+
+{showPosts ? (
+<li style={{position:'relative',}}>
+      {prefersReducedMotion ? (
+       <Link aria-label="Featured" className="navbar-item" to="/#feature" style={{paddingRight:'',}}>{menu2}</Link>    
+   ) : (
+      <AnchorLink aria-label="Featured" className="navbar-item" to="/#feature" style={{paddingRight:'',}}>
+      {menu2}</AnchorLink>         
+    )}
+</li>
+      ) : (
+  ""
 )}
-
-
-
-
 
 
 
@@ -342,17 +358,23 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 
-          
-          {showInfo ? (
-            <li className="no-app" style={{position:'relative',}}>
-              <AnchorLink className="navbar-item" to="/#info" style={{paddingRight:'',}}>
-              {menu1}
-              </AnchorLink>
-              </li>
-) : (
+
+{showInfo ? (
+  <li className="no-app" style={{position:'relative',}}>
+      {prefersReducedMotion ? (
+       <Link aria-label={menu1} className="navbar-item" to="/#info" style={{paddingRight:'',}}>{menu1}</Link>    
+   ) : (
+      <AnchorLink aria-label={menu1} className="navbar-item" to="/#info" style={{paddingRight:'',}}>
+      {menu1}</AnchorLink>         
+    )}
+</li>
+      ) : (
   ""
 )}
-      
+
+
+          
+
 
 
 

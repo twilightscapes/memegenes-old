@@ -1041,6 +1041,44 @@ Click to play
 
 
 
+
+
+
+
+
+
+{showPosts ? (
+  <section id="showPosts" style={{marginBottom:'50vh'}}>
+  <div style={{position:'relative', background:'none', maxHeight:'77vh', overflow:'', width:'100vwye'}}>
+<ScrollAnimation className="animate" animateIn="bounceInDown" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={false} > 
+<div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
+    <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
+                         <BlogListHome data={posts} />
+      {/* <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
+      </div> */}
+</div>
+</ScrollAnimation>
+</div>
+</section>
+      ) : (
+        ""
+      )}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {/* show feature */}
 {showFeature ? (   
 
@@ -1120,22 +1158,6 @@ Click to play
 
 
 
-{showPosts ? (
-  <section id="showPosts" style={{marginBottom:'50vh'}}>
-  <div style={{position:'relative', background:'none', maxHeight:'77vh', overflow:'', width:'100vwye'}}>
-<ScrollAnimation className="animate" animateIn="bounceInDown" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={false} > 
-<div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
-    <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
-                         <BlogListHome data={posts} />
-      {/* <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
-      </div> */}
-</div>
-</ScrollAnimation>
-</div>
-</section>
-      ) : (
-        ""
-      )}
 
 
 
