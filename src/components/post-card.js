@@ -52,7 +52,7 @@ const PostCard = ({ data }) => (
 
   <article
     className="post-card1"
-    style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'2vh 0' }}
+    style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'0 0' }}
   >
 
 
@@ -120,7 +120,7 @@ date={Date.now() + 6000} className="countdown"> */}
           )}
 
 
-<div className="panel" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'10px auto', height:'100%', textAlign:'left', padding:'1vh 1vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'8px', color:'#fff' }}>
+<div className="panel" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'10px auto', maxWidth:'80vw', gap:'.4vw', height:'100%', textAlign:'left', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', padding:'2vh 3vw', borderRadius:'8px', color:'#fff' }}>
 
 <h2 className="title" style={{fontSize:'clamp(1rem, 2vw, 3rem)', }}>
   <Link 
@@ -142,7 +142,7 @@ date={Date.now() + 60000} className="countdown">
 </h2>
 
 
-<p style={{minWidth:'', position:'', textAlign:'center', border:'0px solid red', fontSize:'70%'}}>
+<p style={{minWidth:'', position:'', textAlign:'center', border:'0px solid red', fontSize:'70%', minWidth:'100px'}}>
   <TimeAgo date={data.frontmatter.date}/>
 </p>
 

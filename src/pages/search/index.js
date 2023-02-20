@@ -103,18 +103,35 @@ Play Multimedia
 )}
 
 
+
+
+
+
+
+
+
+
             <GatsbyImage
               image={node.frontmatter.featuredImage?.childImageSharp?.gatsbyImageData}
               alt={node.frontmatter.title}
             />
-            <div className="panel" style={{display:'flex', justifyContent:'space-around', alignItems:'center', margin:'10px auto', width:'auto', maxWidth:'90vw', minWidth:'50vw', height:'100%', textAlign:'left', padding:'1vh 1vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'8px', color:'#fff' }}>
 
-            
-            <h2 className="title" style={{fontSize:'clamp(1rem, 2vw, 3rem)', }}>{node.frontmatter.title}</h2><p style={{minWidth:'', position:'', textAlign:'center', border:'0px solid red', fontSize:'70%'}}>
-  <TimeAgo date={node.frontmatter.date}/>
-</p>
+<div className="panel" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'10px auto', maxWidth:'80vw', gap:'.4vw', height:'100%', textAlign:'left', padding:'2vh 3vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'8px', color:'#fff' }}>
+
+<h2 className="title" style={{fontSize:'clamp(1rem, 2vw, 3rem)', }}>
+{node.frontmatter.title}
+</h2>
+
+<p style={{minWidth:'', position:'', textAlign:'center', border:'0px solid red', fontSize:'70%'}}>
+              <TimeAgo date={node.frontmatter.date}/>
+            </p>
             {/* <p>{node.excerpt}</p> */}
             </div>
+
+
+
+
+            
           </Link>
         ))}
       </div>
