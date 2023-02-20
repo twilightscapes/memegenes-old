@@ -964,6 +964,8 @@ Click to play
 
 {showInfo ? (
 
+<ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} >
+
 
 
 <section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'visible', padding:'0 0 0 0', border:'0px solid blue',}}>
@@ -1070,7 +1072,7 @@ Click to play
 </div> 
 </article>
 </section>
-
+</ScrollAnimation>
 ) : (
   ""
 )}
@@ -1087,6 +1089,9 @@ Click to play
 
 {/*  show Resume */}
 {showResume ? (
+  
+  <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} >
+
   
 <section className="vertical" id="resume" order="4" style={{ display:'', minHeight:'', overflow:'', margin:'5vh 0 0 0', position:'relative', border:'0px solid blue'}}>
 
@@ -1124,6 +1129,7 @@ Click to play
 
 </article>
 </section>
+</ScrollAnimation>
 ) : (
   ""
 )}
@@ -1134,6 +1140,9 @@ Click to play
 {/*  show Skills */}
 {showSkills ? (
    
+   <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} >
+
+   
 <section className="print vertical" id="skills" order="5" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'0 auto', textAlign:'center', borderRadius:'8px', minHeight:'', maxWidth:'', padding:'1rem', display:'', placeContent:'', border:'0px solid green', }}>
 <br />
 <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={false} >
@@ -1141,7 +1150,7 @@ Click to play
 </div>
 </ScrollAnimation>
   </section>
-
+</ScrollAnimation>
           ) : (
             ""
           )}

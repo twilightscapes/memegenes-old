@@ -108,7 +108,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 )}
 </ModalRoutingContext.Consumer> */}
 
-<Fullscreen />
+
 
 
 
@@ -280,15 +280,27 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   <SearchIcon />
   </li> */}
 
-
-  <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'2.5vw', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
+<li style={{display:'flex', justifyContent:'space-between', gap:'2vw', verticalAlign:'center',}}>
+  <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important', alignItems:'center', }}>
       <Theme  style={{color:'red !important'}} />
-   <Link className="sherlock" to="/search/" style={{display:'flex',justifyContent:'space-around', marginTop:'5px'}}>
-    <SearchIcon />
+
+        </li>
+
+  <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
+   <Link className="sherlock" to="/search/" style={{display:'flex',justifyContent:'center', alignItems:'center', marginTop:'0px'}}>
+    <SearchIcon style={{width:'3vh', height:'3vw'}} />
    </Link>
         </li>
 
-            
+    <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'center', gap:'', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
+   <Link className="sherlock" to="/search/" style={{display:'flex',justifyContent:'center', alignItems:'center', marginTop:'5px', cursor:'pointer'}}>
+   <Fullscreen />
+   </Link>
+        </li>
+
+</li>            
+
+        
            
       
             </ul>
@@ -428,13 +440,36 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
               </li>
 
 
-      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
-      {/* <Theme  style={{color:'red !important'}} /> */}
+
+              <li style={{display:'flex', justifyContent:'space-between', gap:'2vw', verticalAlign:'center',}}>
+  <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
+      <Theme  style={{color:'red !important'}} />
+
+        </li>
+
+  <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
    <Link className="sherlock" to="/search/" style={{display:'flex',justifyContent:'space-around', marginTop:'5px'}}>
     <SearchIcon />
    </Link>
-   {/* <CartButton quantity={quantity} /> */}
         </li>
+
+    <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
+   <Link className="sherlock" to="/search/" style={{display:'flex',justifyContent:'space-around', marginTop:'5px'}}>
+   <Fullscreen />
+   </Link>
+        </li>
+
+</li>    
+
+
+
+      {/* <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
+      <Theme  style={{color:'red !important'}} />
+   <Link className="sherlock" to="/search/" style={{display:'flex',justifyContent:'space-around', marginTop:'5px'}}>
+    <SearchIcon />
+   </Link>
+   <CartButton quantity={quantity} />
+        </li> */}
 
     </ul>
 

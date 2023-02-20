@@ -37,7 +37,7 @@ const FullScreen = () => (
 
 
 
-<button  aria-label="Full Screen Mode" title="Go Full-Screen" className="fullscreenButt txtshadow" onClick={toggleFullScreen} style={{position:'fixed', top:'1.6vw', right:'1.6vw', fontSize:'3vh', color:'', textShadow:'2px 2px 2px, #000', padding:'0 1vw', zIndex:'11', border:'0px solid blue', filter:'dropShadow((px 15px 15px) rgba(0,0,0, .99))'}}><BsArrowsFullscreen /></button>
+<button  aria-label="Full Screen Mode" title="Go Full-Screen" className="fullscreenButt txtshadow" onClick={toggleFullScreen} style={{position:'relative', top:'', right:'', fontSize:'3vh', color:'', textShadow:'2px 2px 2px, #000', padding:'0 1vw', zIndex:'11', border:'0px solid blue', filter:'dropShadow((px 15px 15px) rgba(0,0,0, .99))'}}><BsArrowsFullscreen /></button>
 
 
 

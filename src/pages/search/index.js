@@ -39,20 +39,15 @@ const SearchPage = ({ data }) => {
 
 
 
-      <div className="contact-form searchform" style={{position:'absolute', top:'64px', right:'0', left:'0', maxWidth:'65vw', margin:'0 auto', zIndex:'3'}}>
-      
+      <div className="searchform" style={{position:'relative', maxWidth:'450px', margin:'8.5vh auto 0 auto', padding:'0 1vw', zIndex:'3'}}>
       <label>
         <input id="clearme" type="text" placeholder="Type here to filter by keyword" onChange={handleSearch} autoFocus />
       </label>
-      <button type="reset" value="reset" onClick={() => clearfield()} style={{position:'absolute', right:'2vw', top:'2vh'}}>clear</button>
-
-
-
-
+      <button type="reset" value="reset" onClick={() => clearfield()} style={{position:'absolute', right:'2vw', top:'1.5vh'}}>clear</button>
       </div>
 
 
-<div className="horizontal-scroll panels sitegrad movingBG" style={{marginTop:'120px', paddingTop:''}}>
+<div className="horizontal-scroll panels sitegrad movingBG" style={{marginTop:'1vh', paddingTop:''}}>
     <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
 
