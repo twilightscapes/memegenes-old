@@ -341,7 +341,7 @@ function Iframer() {
 
 
 
-<button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
+<button  aria-label="Click To Play" name="Click to play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
 
 
                 <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'2vh auto 0 auto', textTransform:'uppercase',}}>The following is rated: <strong>{frontmatter.marate}</strong></div>
@@ -928,7 +928,7 @@ Click to play
 
 
 
-<section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'visible', padding:'0 0 0 0', border:'0px solid blue',}}>
+<section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'visible', padding:'0 0 0 0', border:'0px solid blue',background:'rgba(0,0,0,0.70)',}}>
 
 
 
