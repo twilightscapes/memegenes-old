@@ -118,6 +118,7 @@ query HomeQuery($id: String!) {
       tagline
       featuredImage {
         publicURL
+        relativePath
         childImageSharp {
           gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
         }
@@ -168,6 +169,7 @@ query HomeQuery($id: String!) {
           customcontrols
           youtuber
           featuredImage {
+            relativePath
             publicURL
             childImageSharp {
               gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
@@ -424,10 +426,10 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                   }
               }}
               playIcon={
-                <div style={{position:'fixed',
+                <div style={{position:'absolute',
                 // backgroundColor:'var(--theme-ui-colors-bodyBg)',
                 backgroundColor:'rgba(0,0,0,0.6)',
-                 width:'100vw', height:'100%', minHeight:'40vh', maxHeight:'85vh', zIndex:'0', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'center', justifyContent:'center', 
+                 width:'100vw', height:'100%', minHeight:'40vh', maxHeight:'85vh', zIndex:'0', top:'0', right:'0', textAlign:'center', display:'', placeContent:'center', justifyContent:'center', 
                 color:'var(--theme-ui-colors-text)', 
                 color:'#ddd',
                 fontFamily:'Verdana, Sans-Serif, System' }}>
@@ -1049,7 +1051,7 @@ Click to play
 
 {showPosts ? (
   <section id="showPosts" style={{marginBottom:'0'}}>
-  <div style={{position:'relative', background:'none', maxHeight:'77vh', overflow:'', width:'100vwye'}}>
+  <div style={{position:'relative', background:'none', maxHeight:'', overflow:'', width:'100vw'}}>
 <ScrollAnimation className="animate" animateIn="bounceInDown" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={false} > 
 <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
     <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
@@ -1085,17 +1087,9 @@ Click to play
 <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} > 
 
 <section id="feature" order="1" name="feature" className="print" style={{ display:'', margin:'0 0 0 0', padding:'0', position:'relative'}}>
-
-
-
-
-
   <article>
 
   <div className='stack-layout' style={{ display:'flex',justifyContent:'center', position:'relative', top:'0', zIndex:'0', height:'85vh', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
-
-
-
 {FrontImage ? (
             <GatsbyImage
               image={FrontImage}
@@ -1110,21 +1104,9 @@ Click to play
 
           ) : (
 
-   
             <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
-
-
-
-
-
-
-
-
- 
-
-
 
 {YouTube ? (
             <Iframer />
@@ -1132,21 +1114,9 @@ Click to play
           ) : (
             ""
           )}
-
-         
-
-        
-
-
       </div>
   </article>
-
-
-
-
 </section>
-
-
 </ScrollAnimation>
 ) : (
   ""
@@ -1225,7 +1195,7 @@ Click to play
 
 
 
-<section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'visible', padding:'0 0 10vh 0', border:'0px solid blue',}}>
+<section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'visible', padding:'0 0 0 0', border:'0px solid blue',}}>
 
 
 

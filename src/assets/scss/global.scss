@@ -33,6 +33,11 @@ body.scroll{
 
 
 
+  .searchresults{background:#080808; padding:2vh 4vw;}
+
+  .searchitem{}
+
+
 
 body.blogpost .backimage{z-index:-5 !important;}
 
@@ -48,7 +53,8 @@ body.blogpost .backimage{z-index:-5 !important;}
 
 body.homepage section{
 	height:100vh !important;
-	margin-bottom:0 ;
+	margin-bottom:0 !important;
+	margin-top:0 !important;
 	border:0px solid yellow !important;
 	}
 
@@ -84,12 +90,14 @@ body.homepage .wrap-element iframe, body.blogpost .wrap-element iframe {
 	text-align:center;
 }
 
-// .flex-container li strong:first-child{
-// 	border:6px solid;
-// }
 
   @media (max-width: 48rem) {
 
+	.videohide{
+		max-height:350px !important;
+		overflow:hidden !important;
+		border:0px solid red !important;
+	}
 
 	body.blogpost .featured-image1 {border:0px solid #ff0000 !important; max-height: 70vh !important; 
 	max-width: 100vw !important; }
@@ -1032,6 +1040,8 @@ input[type="checkbox"]:checked ~ .backdrop1 {
 	.signbox {
 		flex-direction: row;
 	}
+
+
 }
 
 

@@ -15,7 +15,8 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { Helmet } from "react-helmet"
 import Theme from "./theme"
 // import { CartButton } from "./cart-button"
-// import SearchIcon from "../../static/assets/search"
+import SearchIcon from "../../static/assets/search"
+import SearchForm from "./searchbox"
 import useSiteMetadata from "../hooks/SiteMetadata"
 import Fullscreen from "../components/FullScreen"
 // import ss from "../../static/assets/pagebg.webp"
@@ -416,12 +417,12 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
               </li>
 
 
-      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'center', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
-      <Theme  style={{color:'red !important'}} />
-   {/* <Link className="sherlock" to="/search/" style={{marginRight:'0', marginTop:'5px'}}>
-    <span className="carto"><SearchIcon /></span>
+      <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
+      {/* <Theme  style={{color:'red !important'}} /> */}
+   <Link className="sherlock" to="/search/" style={{display:'flex',justifyContent:'space-around', marginTop:'5px'}}>
+    <SearchForm /><SearchIcon />
    </Link>
-   <CartButton quantity={quantity} /> */}
+   {/* <CartButton quantity={quantity} /> */}
         </li>
 
     </ul>

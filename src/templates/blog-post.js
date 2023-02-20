@@ -531,12 +531,12 @@ const YouTube = frontmatter.youtuber
    
 
 
-<div style={{position:'fixed', height:'', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', color:'var(--theme-ui-colors-text)', fontFamily:'Verdana, Sans-Serif, System' }}>
+<div className="videohide" style={{position:'absolute', height:'', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', color:'var(--theme-ui-colors-text)', fontFamily:'Verdana, Sans-Serif, System' }}>
 
 
 
 
-<button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'70px', border:'0px  solid red', width:'100vw', height:'100vh', backgroundColor:'var(--theme-ui-colors-bodyBg)', color:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:'2vh 0 0 0'}}>
+<button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'70px', border:'0px  solid red', width:'100vw', height:'100vh', maxHeight:'', backgroundColor:'var(--theme-ui-colors-bodyBg)', color:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:'2vh 0 0 0'}}>
 
 
 
@@ -625,7 +625,7 @@ Click to play
 
 <button
         onClick={onPlayPause}
-        className="" 
+        className="videohide" 
         style={{
          color:'#ddd',
          width:'100vw', 
@@ -663,7 +663,7 @@ Click to play
 
 <button
         onClick={onPlayPause}
-        className="" 
+        className="videohide" 
         style={{
          color:'#ddd',
          width:'100vw', 
@@ -993,7 +993,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                   }
               }}
               playIcon={
-                <div style={{position:'fixed',
+                <div style={{position:'absolute',
                 // backgroundColor:'var(--theme-ui-colors-bodyBg)',
                 backgroundColor:'rgba(0,0,0,0.6)',
                  width:'100vw', height:'100%', minHeight:'40vh', maxHeight:'85vh', zIndex:'0', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'center', justifyContent:'center', 
@@ -1003,7 +1003,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
 
 
 
-<button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'50px', border:'0px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
+<button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'50px', border:'0px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
                 {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
    
                 {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
@@ -1505,6 +1505,7 @@ export const pageQuery = graphql`
         svgzindex
         scrollable
         featuredImage {
+          relativePath
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
           }

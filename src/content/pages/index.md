@@ -76,7 +76,7 @@ coverletter:
   coverText: About Meme Genes
   coverLink: /about
 youtubestart: "18"
-scrollable: false
+scrollable: true
 contentinvideo: false
 nftdrop: "2023-02-11T10:00:00"
 youtubersuggestion1: 
