@@ -280,7 +280,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   <SearchIcon />
   </li> */}
 
-<ul><li style={{display:'flex', justifyContent:'space-between', gap:'2vw', verticalAlign:'center',}}>
+<li><ul><li style={{display:'flex', justifyContent:'space-between', gap:'2vw', verticalAlign:'center',}}>
   <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'0 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important', alignItems:'center', }}>
       <Theme  style={{color:'red !important'}} />
 
@@ -299,7 +299,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
         </li>
 
 </li>            
-</ul>
+</ul></li>
         
            
       
@@ -440,6 +440,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
               </li>
 
 
+<li>
 <ul>
   <li style={{display:'flex', justifyContent:'space-between', gap:'2vw', verticalAlign:'center',}}>
   <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
@@ -462,6 +463,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 </li>    
 
 </ul>
+</li>
 
       {/* <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
       <Theme  style={{color:'red !important'}} />
