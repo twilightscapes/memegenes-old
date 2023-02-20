@@ -123,7 +123,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
             <li className="nomo" style={{position:'relative',}}>
             <button className="">
             {iconimage ? (
-      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} width="100px" height="70px" />
+      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} width="100" height="70" />
                 ) : (
                   <div style={{fontWeight:'bold',}}>{companyname}</div>
                 )}
@@ -133,7 +133,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
             <li className="momo" style={{position:'relative',}}>
                         <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
-      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} width="100px" height="70px" />
+      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} width="100" height="70" />
                 ) : (
                   <div style={{fontWeight:'bold',}}>{companyname}</div>
                 )}

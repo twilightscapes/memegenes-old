@@ -341,7 +341,7 @@ function Iframer() {
 
 
 
-<button  aria-label="Click To Play" name="Click to play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
+<button aria-label="Click To Play" name="Click to play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
 
 
                 <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'2vh auto 0 auto', textTransform:'uppercase',}}>The following is rated: <strong>{frontmatter.marate}</strong></div>
@@ -409,6 +409,7 @@ Click to play
 
 <button
 className="videohide" 
+aria-label="Click To Play" name="Click to play" 
 style={{
 color:'#ddd',
 width:'100vw', 
@@ -617,7 +618,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 <div style={{position:'fixed', height:'', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', color:'var(--theme-ui-colors-text)', fontFamily:'Verdana, Sans-Serif, System' }}>
 
-<button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'70px', border:'0px  solid red', width:'100vw', height:'', backgroundColor:'var(--theme-ui-colors-bodyBg)', color:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:'2vh 0 0 0'}}>
+<button aria-label="Click To Play" name="Click to play"  className="clickplays videohide" style={{position:'relative', zIndex:'', top:'70px', border:'0px  solid red', width:'100vw', height:'', backgroundColor:'var(--theme-ui-colors-bodyBg)', color:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:'2vh 0 0 0'}}>
 
 
           <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following content is rated: </div>
@@ -663,6 +664,7 @@ Click to play
       <button
         onClick={onPlayPause}
         className="videohide" 
+        aria-label="Click To Play" name="Click to play" 
         style={{
          color:'#ddd',
          width:'100vw', 
@@ -686,6 +688,7 @@ Click to play
 <button
         onClick={onPlayPause}
         className="videohide" 
+        aria-label="Click To Play" name="Click to play" 
         style={{
          color:'#ddd',
          width:'100vw', 
@@ -943,9 +946,9 @@ Click to play
   borderRadius:'10px'}}>
   
      
-            <h2 className="tagline1">
+            {/* <h2 className="tagline1">
               {frontmatter.tagline}
-            </h2>
+            </h2> */}
 
 
             
