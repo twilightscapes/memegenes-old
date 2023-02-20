@@ -429,20 +429,20 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                 <div style={{position:'absolute',
                 // backgroundColor:'var(--theme-ui-colors-bodyBg)',
                 backgroundColor:'rgba(0,0,0,0.6)',
-                 width:'100vw', height:'100%', minHeight:'40vh', maxHeight:'85vh', zIndex:'0', top:'0', right:'0', textAlign:'center', display:'', placeContent:'center', justifyContent:'center', 
+                 width:'100vw', height:'100vh', minHeight:'40vh', maxHeight:'', zIndex:'0', top:'0', right:'0', textAlign:'center', display:'', placeContent:'center', justifyContent:'', 
                 color:'var(--theme-ui-colors-text)', 
                 color:'#ddd',
                 fontFamily:'Verdana, Sans-Serif, System' }}>
 
 
 
-<button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'50px', border:'0px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
+<button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
                 {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
    
                 {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
 
 
-                <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following is rated: <strong>{frontmatter.marate}</strong></div>
+                <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'2vh auto 0 auto', textTransform:'uppercase',}}>The following is rated: <strong>{frontmatter.marate}</strong></div>
 
 <ul className="flex-container" style={{display:'flex', flexDirection:'row', gap:'1vh', justifyContent:'center', alignItems:'center',  textAlign:'left', margin:'0 auto', color:'#ddd', background:'rgba(0, 0, 0, .8)', width:'auto', maxWidth:'800px', height:'', border:'1px solid #222', borderRadius:'12px', padding:'2vh 5vw' }}>
 
@@ -519,7 +519,7 @@ Click to play
 </button>
 
 <button
-className="" 
+className="videohide" 
 style={{
 color:'#ddd',
 width:'100vw', 
@@ -786,7 +786,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 
 
-<button aria-label="Click To Play" className="clickplays" style={{position:'relative', zIndex:'', top:'70px', border:'0px  solid red', width:'100vw', height:'100vh', backgroundColor:'var(--theme-ui-colors-bodyBg)', color:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:'2vh 0 0 0'}}>
+<button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'70px', border:'0px  solid red', width:'100vw', height:'', backgroundColor:'var(--theme-ui-colors-bodyBg)', color:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:'2vh 0 0 0'}}>
 
 
 
@@ -851,7 +851,7 @@ Click to play
 
       <button
         onClick={onPlayPause}
-        className="" 
+        className="videohide" 
         style={{
          color:'#ddd',
          width:'100vw', 
@@ -887,7 +887,7 @@ Click to play
 
 <button
         onClick={onPlayPause}
-        className="" 
+        className="videohide" 
         style={{
          color:'#ddd',
          width:'100vw', 
