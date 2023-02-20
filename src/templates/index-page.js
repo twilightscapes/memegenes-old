@@ -920,46 +920,6 @@ Click to play
 <div id="intro" name="container21" className="container21" style={{position:'relative', zIndex:'1', paddingTop:'0', marginTop:'0'}}>
 
 
-{showFeature ? (
-<div>
-{Image ? (
-  <GatsbyImage
-    image={Image}
-    alt={frontmatter.title + " - Featured image"}
-    className=""
-    placeholder="blurred"
-    loading="eager"
-    layout="constrained"
-    style={{height:'auto', width:'100vw', maxHeight:'70vh', position:'relative', top:'', zIndex:'0', objectFit:'', overflow:'', border:'0px solid red !important'}}
-  />
-  
-) : (
-
-
-  <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'70vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
-
-)}
-</div>
-      ) : (
-        ""
-      )}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {/* show Info */}
 
 {showInfo ? (
