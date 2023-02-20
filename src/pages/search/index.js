@@ -39,11 +39,14 @@ const SearchPage = ({ data }) => {
 
 
 
-      <div className="searchform" style={{position:'relative', maxWidth:'450px', margin:'8.5vh auto 0 auto', padding:'0 1vw', zIndex:'3'}}>
-      <label>
-        <input id="clearme" type="text" placeholder="Type here to filter by keyword" onChange={handleSearch} autoFocus />
-      </label>
+      <div className="searchform" style={{position:'relative', maxWidth:'450px', margin:'8.5vh auto 0 auto', padding:'0 1vw', zIndex:'3',}}>
+
+      <label style={{border:'1px solid #fff', outline:'#fff', display:'block', borderRadius:'10px'}}>
+
+        <input id="clearme" type="text" placeholder="Type here to filter by keyword" onChange={handleSearch} autoFocus style={{}} />
+      
       <button type="reset" value="reset" onClick={() => clearfield()} style={{position:'absolute', right:'2vw', top:'1.5vh'}}>clear</button>
+      </label>
       </div>
 
 
