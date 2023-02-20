@@ -328,7 +328,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 {/* <Bug className="bug" style={{fontSize:'38px', maxWidth:'', opacity:'1', margin:'0 0 0 0', width:'100%', display:'none' }}/>  */}
 {iconimage ? (
-      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', maxWidth:'120px', border:'none'}} />
+      <img className="" src={iconimage} alt={companyname} width="120" height="60" style={{maxHeight:'60px', maxWidth:'120px', border:'none'}} />
                 ) : (
                   <div style={{fontWeight:'bold', color:'yellow'}}>companyname</div>
                 )}
@@ -355,7 +355,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
     <li className="grad logo" style={{position:'relative', maxHeight:'100px', width:'auto', display:'flex', justifyContent:'center'}}>
             <AnchorLink to="/" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
-      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} />
+      <img className="" src={iconimage} alt={companyname} width="120" height="60" style={{maxHeight:'60px', border:'none'}} />
                 ) : (
                   <div style={{fontWeight:'bold'}}>companyname</div>
                 )}
