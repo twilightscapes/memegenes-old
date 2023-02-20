@@ -280,7 +280,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   <SearchIcon />
   </li> */}
 
-<li><ul><li style={{display:'flex', justifyContent:'space-between', gap:'2vw', verticalAlign:'center',}}>
+<div style={{display:'flex', justifyContent:'space-between', gap:'2vw', verticalAlign:'center',}}>
   <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'0 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important', alignItems:'center', }}>
       <Theme  style={{color:'red !important'}} />
 
@@ -298,8 +298,8 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
    </Link>
         </li>
 
-</li>            
-</ul></li>
+</div>            
+
         
            
       
@@ -431,18 +431,17 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 
-<li className="has-app" order="5" style={{display:'none',}}>
+{/* <li className="has-app" order="5" style={{display:'none',}}>
  <Link state={{modal: true}} to="/notes" className="navbar-item" style={{paddingRight:'',}}>Notes</Link>
  </li>
 
  <li className="has-app" style={{position:'relative', display:'none'}}>
             <Link to="/login" className="navbar-item" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', width:'', justifyContent:'center',fontWeight:'bold', }}>Admin</Link>
-              </li>
+              </li> */}
 
 
-<li>
-<ul>
-  <li style={{display:'flex', justifyContent:'space-between', gap:'2vw', verticalAlign:'center',}}>
+
+  <div style={{display:'flex', justifyContent:'space-between', gap:'2vw', verticalAlign:'center', padding:'0 1vw'}}>
   <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
       <Theme  style={{color:'red !important'}} />
 
@@ -460,10 +459,9 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
    </Link>
         </li>
 
-</li>    
+</div>    
 
-</ul>
-</li>
+
 
       {/* <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
       <Theme  style={{color:'red !important'}} />
