@@ -8,8 +8,10 @@ import Layout from "../../components/siteLayout"
 import TimeAgo from 'react-timeago'
 
 function clearfield() {  
-  document.querySelector('#clearme').value = '';
+  document.querySelector('#clearme').value = ''
 }
+
+
 
 
 const SearchPage = ({ data }) => {
@@ -37,14 +39,14 @@ const SearchPage = ({ data }) => {
 
 
       <div className="contact-form searchform" style={{position:'absolute', top:'64px', right:'0', left:'0', maxWidth:'65vw', margin:'0 auto', zIndex:'3'}}>
-      <form>
+      
       <label>
-        <input id="clearme" type="text" placeholder="Type here to filter by keyword" onChange={handleSearch} />
+        <input onload="focusInput()" id="clearme" type="text" placeholder="Type here to filter by keyword" onChange={handleSearch} />
       </label>
       <button type="reset" value="reset" onClick={() => clearfield()} style={{position:'absolute', right:'2vw', top:'2vh'}}>clear</button>
 
 
-</form>
+
       </div>
 
 
@@ -127,33 +129,30 @@ Play Multimedia
 }
 
 export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { template: { eq: "blog-post" } } }
-    ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            title
-            date(formatString: "YYYY-MM-DD-HH-MM-SS")
-            youtuber
-            featuredImage {
-              childImageSharp {
-                gatsbyImageData(
-                  placeholder: BLURRED
-                  layout: CONSTRAINED
-                )
-              }
+query pageUserstoddlambertSitesmemegenessrcpagessearchindexJs3773404046 {
+  allMarkdownRemark(
+    sort: {frontmatter: {date: DESC}}
+    filter: {frontmatter: {template: {eq: "blog-post"}}}
+  ) {
+    edges {
+      node {
+        id
+        excerpt(pruneLength: 250)
+        frontmatter {
+          title
+          date(formatString: "YYYY-MM-DD-HH-MM-SS")
+          youtuber
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)
             }
-            slug
           }
+          slug
         }
       }
     }
   }
+}
 `
 
 
