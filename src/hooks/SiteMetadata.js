@@ -1,36 +1,37 @@
-import { useStaticQuery, graphql } from "gatsby"
- const useSiteMetadata = () => {
+const { useStaticQuery, graphql } = require("gatsby")
+
+const useSiteMetadata = () => {
   const { site } = useStaticQuery(
     graphql`
       query SiteMetaData {
         site {
           siteMetadata {
-          title
-          titleDefault
-          siteUrl
-          description
-          image
-          twitterUsername
-          iconimage
-          companyname
-          comments
-          showfooter
-          showInfo
-          showCover
-          showFeature
-          showPosts
-          showResume
-          showSocial
-          showSkills
-          showNav
-          showNav2
-          showPopup
-          showDates
-          menu1
-          menu2
-          menu3
-          menu4
-          font1
+            title
+            titleDefault
+            siteUrl
+            description
+            image
+            twitterUsername
+            iconimage
+            companyname
+            comments
+            showfooter
+            showInfo
+            showCover
+            showFeature
+            showPosts
+            showResume
+            showSocial
+            showSkills
+            showNav
+            showNav2
+            showPopup
+            showDates
+            menu1
+            menu2
+            menu3
+            menu4
+            font1
           }
         }
       }
@@ -38,4 +39,5 @@ import { useStaticQuery, graphql } from "gatsby"
   )
   return site.siteMetadata
 }
-export default useSiteMetadata
+
+module.exports = useSiteMetadata;

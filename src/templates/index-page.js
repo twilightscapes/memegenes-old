@@ -19,12 +19,9 @@ import { MdPause } from "react-icons/md"
 import { MdVolumeOff } from "react-icons/md"
 // import { MdVolumeDown } from "react-icons/md"
 import { MdVolumeUp } from "react-icons/md"
-import { RiArrowRightDownFill } from "react-icons/ri"
-// import Popup from '../components/Popup'
-// import GoogleMap from '../components/GoogleMap'
-// import ContactInc from '../components/newssign'
-// import Newsignup from "../components/newssign"
-// import Section1 from "../pages/test2"
+// import { RiArrowRightDownFill } from "react-icons/ri"
+
+// import SearchSlider from "../components/search1"
 
 import styled from "styled-components"
 import Social from "../components/social"
@@ -47,6 +44,7 @@ const CustomBox = styled.div`
 
 export const pageQuery = graphql`
 query HomeQuery($id: String!) {
+
   site {
     siteMetadata {
       title
@@ -70,6 +68,8 @@ query HomeQuery($id: String!) {
       showSkills
     }
   }
+
+
   markdownRemark(id: {eq: $id}) {
     id
     html
@@ -150,6 +150,9 @@ query HomeQuery($id: String!) {
       }
     }
   }
+
+
+
   posts: allMarkdownRemark(
     sort: {frontmatter: {date: DESC}}
     filter: {frontmatter: {template: {eq: "blog-post"}}}
@@ -197,9 +200,6 @@ const HomePage = ({ data }) => {
     ? frontmatter.secondaryImage.childImageSharp.gatsbyImageData
     : ""
 
-    // const SvgUrl = frontmatter.svgImage
-    // const SvgZindex = frontmatter.svgzindex
-
     const UnderlayImage = frontmatter.underlayImage
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
     : ""
@@ -225,13 +225,6 @@ const HomePage = ({ data }) => {
     const { showSkills } = useSiteMetadata()
     const { showCover } = useSiteMetadata()
     const { showfooter } = useSiteMetadata()
-    
-// const CustomControls = frontmatter.customcontrols
-
-// const ShowOriginal = frontmatter.youtubeshoworiginal
-// const ShareThis = frontmatter.shareable
-// const Comments = frontmatter.comments
-
 
 const CustomControls = frontmatter.customcontrols
 const Suggestion1 = frontmatter.youtubersuggestion1
@@ -254,21 +247,6 @@ const ContentinVideo = frontmatter.contentinvideo
     
     const ProfText = frontmatter.profText
  
-
-    // const openQuote = frontmatter.portfolio.openText
-    // const closeQuote = frontmatter.portfolio.closeText
-    
-
-  //   const resizeMobile = () => {
-  //     const elements = document.querySelectorAll('.boom');
-  //     elements.forEach(el => el.style.width = '400px');
-  //   }
-
-  // const resizeDesk = () => {
-  //   const elements = document.querySelectorAll('.boom');
-  //   elements.forEach(el => el.style.width = '80%');
-  // }
-
 
   let iframeFiltered;
 if (Suggestion1) {
@@ -317,82 +295,9 @@ const YouTube = frontmatter.youtuber
   }
 
 function Iframer() {
-    
-
-    // const Url = "https://www.youtube.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=1&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+  
     return (
       <div className="wrap-element effects" style={{aspectRatio:'', minHeight:'300px', width:'100vw', maxHeight:'90vh', overFlow:'hidden'}}>
-
-
-{/* <GatsbyImage
-        image={FrontImage}
-        alt={frontmatter.title + " - Featured image"}
-        className="featured-image1 layer1"
-        placeholder="blurred"
-        loading="eager"
-        // layout="constrained"
-        style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300px'}}
-      /> */}
-
-
-
-{YouTube ? (
-
-<div>
-{/* {FrontImage ? (
-
-
-<GatsbyImage
-image={FrontImage}
-alt={frontmatter.title + " - Featured image"}
-className="featured-image1 layer1"
-placeholder="blurred"
-loading="eager"
-// layout="constrained"
-style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300px'}}
-/>
-
-    ) : (
-      ""
-    )} */}
-
-</div>
-    ) : (
-
-<div className="imageonly">
-{/* {FrontImage ? (
-
-
-      <GatsbyImage
-        image={FrontImage}
-        alt={frontmatter.title + " - Featured image"}
-        className="featured-image1 layer1"
-        placeholder="blurred"
-        loading="eager"
-        // layout="constrained"
-        style={{position:'relative', top:'0', zIndex:'0', minHeight:'300px'}}
-      />
-
-    ) : (
-      ""
-    )} */}
-
-</div>
-
-    )}
-
-
-{/* { NftDrop ? (
-  
-<div style={{ width:'100vw', height:'',  top:'0', zIndex:'-2', border:'0px solid red', paddingBottom:'', margin:'0 auto', display:'flex', flexDirection:'column', justifyContent:'center'}}>
-
-<div className="countdown" style={{display:'flex', alignSelf:'center', fontSize:'540%', textAlign:'center', filter: 'drop-shadow(10px 0px 10px #000)', textShadow:'1px 1px 0px #000', border:'0px solid', width:'100%', height:'', padding:'0 0', borderRadius:'12px', flexDirection:'column' }}>
-<Countdown date={NftDrop} >
-<Completionist />
-</Countdown>
-</div> */}
-
-
 
 
 {YouTube ? (
@@ -437,9 +342,6 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
 
 
 <button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'', border:'0px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
-                {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
-   
-                {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
 
 
                 <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'2vh auto 0 auto', textTransform:'uppercase',}}>The following is rated: <strong>{frontmatter.marate}</strong></div>
@@ -452,10 +354,6 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
             ) : (
               <li className="flex-items" style={{display:'grid', placeContent:'center', width:'', height:'', aspectRatio:'1/1', padding:'0 20px', border:'6.5px solid #fff', margin:'0 auto 0 auto 0', fontSize:'clamp(4rem, 15vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}>PG</li>
             )}
-
-
-
-
 
 <li style={{display:'flex', flexDirection:'column', position:'relative', left:'', top:'', gap:'.8vh', justifyContent:'space-around', alignContent:'', alignItems:'start', border:'0px solid red', fontSize:'clamp(.5rem, 1.2vw, 2rem)'}}>
 
@@ -490,24 +388,15 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
             ) : (
               ""
             )} 
-
-
-
 </li>
 
 </ul>
 <div className="flex-items" style={{position:'relative', right:'', top:'', display:'', fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>{frontmatter.viewerwarning}</div>
 
-
 <div style={{display:'grid', placeContent:'center', position:'relative', zindex:'1', fontWeight:'bold', padding:'1vh 0', fontSize:'clamp(.6rem, 1.4vw, 2rem)', width:'100%', maxWidth:'25vw', height:'', border:'0px solid', borderRadius:'12px', background:'linear-gradient(180deg, rgba(24, 23, 30, 0.2) 1%, rgba(0, 0, 0, .7) 99%)', margin:'0 auto 0 auto', opacity:'.99', textShadow:'2px 2px 2px black', color:'#fff' }}>
 <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'clamp(2rem, 4.4vw, 3rem)', filter:'drop-shadow(0px 0px 12px #fff',}} />
 Click to play
 </div>
-
-
-
-
-
 
 <div style={{fontSize:'clamp(1rem, 2vw, 2.5rem)', margin:'5vh 0 0 0', padding:'0 10px', maxWidth:'1000px'}}>
 {frontmatter.bumpertext ? (
@@ -562,24 +451,7 @@ zindex:'1'
               ""
             )}
   
-            
-  
-  
-  
-{/*   
-   {Suggestion1 ? (
-              <div style={{position:'absolute', top:'0', left:'', bottom:'', zIndex:'', maxWidth:'100vw', height:''}}>
-              <YouTubed />
-              </div>
-         
-            ) : (
-              ""
-            )} */}
-  
-  
-  
-  
-  
+
   
   {/*  SPECIAL CONTENT */}
   
@@ -587,7 +459,6 @@ zindex:'1'
     <div id="contentvideo"
           className="blog-post-content effects" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'0px solid transparent', position:'absolute', bottom:'0', left:'0', top:'0', right:'0', zindex:'-1', maxHeight:'100vh', borderBottom:'0px solid', }}
           dangerouslySetInnerHTML={{ __html: html }}
-          
         >
           
         </div>
@@ -602,11 +473,6 @@ zindex:'1'
        ) : (
          ""
          )}
-  
-  
-  
-  
-  
           </div>
     )
   }
@@ -625,10 +491,6 @@ zindex:'1'
 <div style={{marginTop:'10px', position:'relative', zIndex:'1',
 display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'150px', border:'0px solid yellow', width:'100%'
 }}>
-
-
-
-
 
 <ReactPlayer
           allow="web-share"
@@ -678,14 +540,8 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
           />
      </div>
 
-
-
-
     )
   }
-
-
-
 
   const Playing  = useState(true);
 
@@ -717,11 +573,6 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
     setState({ ...state, muted: !state.muted });
   };
 
-
-
-
-
-
   const Controls = forwardRef(
     (
       {
@@ -749,18 +600,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
       },
       ref
     ) => {
-      // const classes = useStyles();
-      // const [anchorEl, setAnchorEl] = React.useState(null);
-      // const handleClick = (event) => {
-      //   setAnchorEl(event.currentTarget);
-      // };
-  
-      // const handleClose = () => {
-      //   setAnchorEl(null);
-      // };
-  
-      // const open = Boolean(anchorEl);
-      // const id = open ? "simple-popover" : undefined;
+
   
       const { iconimage } = useSiteMetadata()
   
@@ -775,28 +615,9 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 ""
         ) : (
 
-  
-  
-
-   
-
-
 <div style={{position:'fixed', height:'', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', color:'var(--theme-ui-colors-text)', fontFamily:'Verdana, Sans-Serif, System' }}>
 
-
-
-
 <button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'70px', border:'0px  solid red', width:'100vw', height:'', backgroundColor:'var(--theme-ui-colors-bodyBg)', color:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:'2vh 0 0 0'}}>
-
-
-
-
-
-
-          {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
-
-          {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
-
 
 
           <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following content is rated: </div>
@@ -825,17 +646,10 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 </ul>
 <div className="flex-items" style={{position:'relative', right:'', top:'', display:'', fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>Viewer Discretion Strongly Advised</div>
-
-
          <div style={{display:'grid', placeContent:'center', position:'relative', zindex:'1', fontWeight:'bold', padding:'1vh 0', fontSize:'clamp(.6rem, 1.4vw, 2rem)', width:'100%', maxWidth:'25vw', height:'', border:'0px solid', borderRadius:'12px', background:'linear-gradient(180deg, rgba(24, 23, 30, 0.2) 1%, rgba(0, 0, 0, .7) 99%)', margin:'0 auto 0 auto', opacity:'.99', textShadow:'2px 2px 2px black', color:'#fff' }}>
 <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'clamp(2rem, 4.4vw, 3rem)', filter:'drop-shadow(0px 0px 12px #fff',}} />
 Click to play
 </div>
-
-
-
-
-      
 
 <div style={{fontSize:'clamp(1rem, 2vw, 2.5rem)', margin:'5vh 0 0 0', padding:'0 10px', maxWidth:'1000px'}}>
 {frontmatter.bumpertext ? (
@@ -844,9 +658,6 @@ Click to play
 <h3>{frontmatter.title}</h3>
 )}
 </div>
-
-
-      
       </button>
 
       <button
@@ -866,25 +677,12 @@ Click to play
 
       </div>
 
-
-
-
  )}
  {/* end playing check */}
   
  
-  
-  
-        
-  
-  
+
   <div ref={ref} className="controlsbox" style={{width:'', height:'', border:'0px solid red', }}>
-  
-        {/* <div className="contact" style={{position:'', bottom:'', zIndex:'',  left:'0', right:'0', display:'flex', justifyContent:'center', width:'200px', margin:'0 auto'}}>
-    <Link state={{modal: true}}  to="/contact/" className="navbar-item  button fire" style={{margin:'', textDecoration:'none'}}>Contact Me</Link>
-  </div> */}
-
-
 <button
         onClick={onPlayPause}
         className="videohide" 
@@ -900,17 +698,14 @@ Click to play
         }}
       ></button>
 
-
-                  <button
-                    onClick={onPlayPause}
-                    className="controls panel" 
-                    style={{
-                      backgroundColor:'rgba(0,0,0, 0.6)',
-                      color:'#999',
-                      borderRadius:'8px', overFlow:'hidden'
-                  }}
-                  >
-                    {/* <MdPlayArrow style={{fontSize:'50px', position:'absolute'}}  /> */}
+   <button
+      onClick={onPlayPause}
+      className="controls panel" 
+       style={{
+      backgroundColor:'rgba(0,0,0, 0.6)',
+      color:'#999',
+      borderRadius:'8px', overFlow:'hidden'
+      }}>
                     {playing ? (
                       
                       <MdPause className="hudicon" style={{}} />
@@ -921,13 +716,6 @@ Click to play
                 
                     )}
                   </button>
-  
-  
-  
-        
-  
-  
-  
   
                   <button
                     // onClick={() => setState({ ...state, muted: !state.muted })}
@@ -977,18 +765,11 @@ Click to play
     playbackRate: PropTypes.number,
   };
 
-  
-
-
-     
   return (
 
     // TOP OF HOME
     <CustomBox style={{}}>
     <Layout>
-
-
-
 {frontmatter.scrollable ? (
   <Helmet>
   <body id="body" className="homepage scroll" style={{}} />
@@ -998,8 +779,6 @@ Click to play
   <body id="body" className="homepage" style={{}} />
 </Helmet>
   )}
-
-
        <Seo
         title={frontmatter.title}
         description={
@@ -1009,22 +788,11 @@ Click to play
       />
 
 
-{/* <div id="top" className="container22" style={{
- 	overflowY: 'scroll',
-   overflowX: 'hidden',
-  width:'100vw'
-}}> */}
-
-
-
-
-
 {showNav ? (
   <div id="top" className="spacer" style={{height:'70px', border:'0px solid yellow'}}></div>
       ) : (
         ""
       )}
-
 
 {CustomControls ? (
     <Controls
@@ -1044,7 +812,7 @@ Click to play
 
 
 
-
+{/* <SearchSlider /> */}
 
 
 
@@ -1056,8 +824,8 @@ Click to play
 <div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
     <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
                          <BlogListHome data={posts} />
-      {/* <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
-      </div> */}
+      <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
+      </div>
 </div>
 </ScrollAnimation>
 </div>
@@ -1065,6 +833,9 @@ Click to play
       ) : (
         ""
       )}
+
+
+
 
 
 
@@ -1149,7 +920,7 @@ Click to play
 <div id="intro" name="container21" className="container21" style={{position:'relative', zIndex:'1', paddingTop:'0', marginTop:'0'}}>
 
 
-{/* {showFeature ? (
+{showFeature ? (
 <div>
 {Image ? (
   <GatsbyImage
@@ -1171,7 +942,7 @@ Click to play
 </div>
       ) : (
         ""
-      )} */}
+      )}
 
 
 
@@ -1202,31 +973,6 @@ Click to play
   <article className="" style={{ margin:'0 0 0 0'}}>
 <div id="profiletop" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 0',
   padding:'0 4% 0 4%', borderRadius:'0 0 10px 10px',}}>
-
-
-
-  {/* <div className="flexcheek mob print nameblock " style={{marginTop:'', padding:'1rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
-  background:'rgba(0,0,0,0.70)', 
-  backdropFilter:'blur(12px)',
-  borderRadius:'10px'}}>
-
-
-  <h1 className="title1" style={{fontSize:'clamp(2rem, 2.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
-
-            <h2 className="tagline1">
-              {frontmatter.tagline}
-            </h2>
-            
-            <div
-            style={{paddingBottom:'2rem'}}
-              className="description"
-              dangerouslySetInnerHTML={{ __html: ProfText }}
-            />
-            </div> */}
-       
-  
-    
-
 
           
             <div className="flexcheek mob print" style={{marginTop:'', padding:'1rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
@@ -1320,42 +1066,15 @@ Click to play
 
 </div>
 </div> 
-            
-  
-
-        
-
-
-      
 
 </div> 
 </article>
 </section>
 
-
 ) : (
   ""
 )}
-
-
 {/* end show Info */}
-
-
-
-
-
-
-
-
-
-     
-     
-{/* <Popup>
- <Section1 />
-</Popup>
-<br /> */}
-
-
 
 
 
@@ -1404,17 +1123,13 @@ Click to play
   </div>
 
 </article>
-
-
-
-
-
 </section>
 ) : (
   ""
 )}
-
 {/* end show Resume */}
+
+
 
 {/*  show Skills */}
 {showSkills ? (
@@ -1442,8 +1157,6 @@ Click to play
 
 
  {/* <GoogleMap /> */}
-
-
 <div id="bottom" className="usability" style={{position:'relative', zIndex:'', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'0 auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
 <div id="branding" style={{position:'relative', left:'0', bottom:'5px', fontSize:'90%'}}><a href="https://memegenes.com" target="_blank" rel="noreferrer">MemeGenes.com</a></div>
 </div>

@@ -33,9 +33,9 @@ body.scroll{
 
 
 
-  .searchresults{background:#080808; padding:2vh 4vw;}
+//   .searchresults{background:#080808; padding:2vh 4vw;}
 
-  .searchitem{}
+  .searchitem{background:#080808; padding:2vh 4vw; width:100%; text-align: right; display:flex; gap:2vw; align-items:center; }
 
 
 
@@ -799,7 +799,7 @@ body.homepage .resp-sharing-button__icon svg{ width: 5vw; height: 5vh;}
 	background:#333;
 	color:#fff !important;
 	border:1px solid #666 !important;
-	padding:10px !important;
+	padding:1vh !important;
 	border-radius:8px;
 	opacity: .8;
 }
@@ -812,9 +812,12 @@ body.homepage .resp-sharing-button__icon svg{ width: 5vw; height: 5vh;}
 	background:#333;
 	color:#fff !important;
 	border:1px solid #666 !important;
-	padding:10px !important;
+	padding:1vh !important;
     }
 
+	.searchform ::placeholder {
+		color: #fff;
+	  }
 
 textarea {
 	min-height: 200px;

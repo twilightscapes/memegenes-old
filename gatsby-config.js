@@ -62,27 +62,63 @@ module.exports = {
     }
   },
 
-
+  
 
   {
     resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
     options: {
       // Fields to index
-      fields: [`title`, `template`, `slug`, `featuredImage` ],
-      // How to resolve each field`s value for a supported node type
+      fields: [`title`, `template`, `slug`, `featuredImage`, `gatsbyImageData` ],
+      // How to resolve each field's value for a supported node type
       resolvers: {
-        // For any node of type MarkdownRemark, list how to resolve the fields` values
+        // For any node of type MarkdownRemark, list how to resolve the fields' values
         MarkdownRemark: {
           template: node => node.frontmatter.template,
           title: node => node.frontmatter.title,
           slug: node => node.frontmatter.slug,
           featuredImage: node => node.frontmatter.featuredImage,
+          gatsbyImageData: node =>
+            node.frontmatter.featuredImage?.childImageSharp?.gatsbyImageData,
         },
       },
+      fields: [
+        {
+          name: 'template',
+          indexed: true,
+          resolver: 'frontmatter.template',
+        },
+        {
+          name: 'title',
+          indexed: true,
+          resolver: 'frontmatter.title',
+        },
+        {
+          name: 'slug',
+          indexed: true,
+          resolver: 'frontmatter.slug',
+        },
+        {
+          name: 'featuredImage',
+          indexed: true,
+          resolver: 'frontmatter.featuredImage.publicURL',
+        },
+        {
+          name: 'gatsbyImageData',
+          indexed: true,
+          resolver: 'frontmatter.featuredImage.childImageSharp.gatsbyImageData',
+        },
+      ],
       // Optional filter to limit indexed nodes
       // filter: (node, getNode) => node.frontmatter.tags !== "exempt",
     },
   },
+  
+  
+
+
+
+
+
 
   
     {

@@ -16,8 +16,9 @@ import { Helmet } from "react-helmet"
 import Theme from "./theme"
 // import { CartButton } from "./cart-button"
 import SearchIcon from "../../static/assets/search"
-import SearchForm from "./searchbox"
+// import SearchForm from "./searchbox"
 import useSiteMetadata from "../hooks/SiteMetadata"
+
 import Fullscreen from "../components/FullScreen"
 // import ss from "../../static/assets/pagebg.webp"
 // import { Link } from "gatsby-plugin-anchor-links"
@@ -273,10 +274,20 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 
-<li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
+{/* <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
   
   <Theme  style={{padding:'0'}} />
-  </li>
+  <SearchIcon />
+  </li> */}
+
+
+  <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'2.5vw', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
+      <Theme  style={{color:'red !important'}} />
+   <Link className="sherlock" to="/search/" style={{display:'flex',justifyContent:'space-around', marginTop:'5px'}}>
+    <SearchIcon />
+   </Link>
+        </li>
+
             
            
       
@@ -420,7 +431,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
       <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
       {/* <Theme  style={{color:'red !important'}} /> */}
    <Link className="sherlock" to="/search/" style={{display:'flex',justifyContent:'space-around', marginTop:'5px'}}>
-    <SearchForm /><SearchIcon />
+    <SearchIcon />
    </Link>
    {/* <CartButton quantity={quantity} /> */}
         </li>
