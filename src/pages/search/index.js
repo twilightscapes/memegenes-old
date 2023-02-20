@@ -45,7 +45,7 @@ const SearchPage = ({ data }) => {
 
         <input id="clearme" type="text" placeholder="Type here to filter by keyword" onChange={handleSearch} autoFocus style={{}} />
       
-      <button type="reset" value="reset" onClick={() => clearfield()} style={{position:'absolute', right:'2vw', top:'1.5vh'}}>clear</button>
+      <button type="reset" value="reset" onClick={() => clearfield()} style={{position:'absolute', right:'2vw', top:'1.5vh', color:'#fff'}}>clear</button>
       </label>
       </div>
 
