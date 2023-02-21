@@ -39,7 +39,7 @@ const SearchPage = ({ data }) => {
 
 
 
-      <div className="searchform" style={{position:'relative', maxWidth:'450px', margin:'8.5vh auto 0 auto', padding:'0 1vw', zIndex:'3',}}>
+      <div className="searchform" style={{position:'relative', maxWidth:'450px', margin:'10vh auto 0 auto', padding:'0 1vw', zIndex:'3',}}>
 
       <label style={{border:'1px solid #fff', outline:'#fff', display:'block', borderRadius:'10px'}}>
 
