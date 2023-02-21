@@ -931,7 +931,7 @@ Click to play
 
 
 
-<section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'visible', padding:'0 0 0 0', border:'0px solid blue',background:'rgba(0,0,0,0.70)',}}>
+<section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'visible', padding:'0 0 0 0', border:'0px solid blue',background:'rgba(0,0,0,0.1)',}}>
 
 
 
@@ -941,7 +941,7 @@ Click to play
 
           
             <div className="flexcheek mob print" style={{marginTop:'', padding:'1rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
-  background:'rgba(0,0,0,0.70)', 
+  background:'rgba(0,0,0,0.40)', 
   backdropFilter:'blur(12px)',
   borderRadius:'10px'}}>
   
@@ -1020,7 +1020,7 @@ Click to play
   border:'0px solid red', 
   maxWidth:'80%', paddingTop:'', 
   fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
-  background:'rgba(0,0,0,0.70)',
+  background:'rgba(0,0,0,0.5)',
   backdropFilter:'blur(8px)',
   borderRadius:'10px',
   textShadow:'0 2px 7px #000',
@@ -1035,7 +1035,10 @@ Click to play
 
 
 
-<div className="flexcheek mob print" style={{padding:'0', maxHeight:'', fontSize:'clamp(1rem, 1.5vw, 3.2rem)',}}>
+<div className="flexcheek mob print" style={{padding:'1rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
+  background:'rgba(0,0,0,0.5)', 
+  backdropFilter:'blur(15px)',
+  borderRadius:'10px'}}>
   
   <h1 className="title1" style={{fontSize:'clamp(1.8rem, 3.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
 {/* <h2 className="tagline1">
@@ -1148,7 +1151,7 @@ style={{}}
 
 
  {/* <GoogleMap /> */}
-<div id="bottom" className="usability" style={{position:'relative', zIndex:'', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'0 auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
+<div id="bottom" className="usability" style={{position:'relative', zIndex:'', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'2vh auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
 <div id="branding" style={{position:'relative', left:'0', bottom:'5px', fontSize:'90%'}}><a href="https://memegenes.com" target="_blank" rel="noreferrer">MemeGenes.com</a></div>
 </div>
 <br/><br/><br/>
