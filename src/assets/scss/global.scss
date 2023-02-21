@@ -772,7 +772,7 @@ body.homepage .resp-sharing-button__icon svg{ width: 5vw; height: 5vh;}
 
 
 @media (max-width:48rem){
-  .fullscreenButt{display:none;}
+  .fullscreenButt{display:none !important;}
 }
 
 
@@ -2042,6 +2042,8 @@ svg .text4{animation: textfader4  5000ms linear infinite normal forwards;
 	fill:var(--theme-ui-colors-text) !important; 
 	filter:dropShadow(2px 2px 2px #000) !important;
 	display:none;
+	width:4vh !important;
+	height:3vw !important;
 }
 body.blogpost #menu li .fullscreenButt {display:flex;}
 

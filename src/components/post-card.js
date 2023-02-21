@@ -157,7 +157,7 @@ date={Date.now() + 60000} className="countdown">
     
 
 
-<div className="posticons panel" style={{fontWeight:'bold', padding:'1vh 1vw', width:'34vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px', position:'absolute', bottom:'12vh', left:'30vw', right:'30vw', margin:'0 auto', color:'#ccc', zIndex:'0', border:'1px solid'}}>
+<div className="posticons panel" style={{fontWeight:'bold', padding:'1vh 1vw', width:'34vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px', position:'absolute', bottom:'18vh', left:'30vw', right:'30vw', margin:'0 auto', color:'#ccc', zIndex:'0', border:'1px solid'}}>
 
   
 

@@ -999,6 +999,7 @@ Click to play
 
 
 
+
 {SecondaryImage ? (
             <GatsbyImage
               image={SecondaryImage}
@@ -1031,6 +1032,24 @@ Click to play
 
 </div>
 </div> 
+
+
+
+<div className="flexcheek mob print" style={{padding:'0', maxHeight:'', fontSize:'clamp(1rem, 1.5vw, 3.2rem)',}}>
+  
+  <h1 className="title1" style={{fontSize:'clamp(1.8rem, 3.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
+{/* <h2 className="tagline1">
+  {frontmatter.tagline}
+</h2> */}
+
+<div
+style={{}}
+  className="description"
+  dangerouslySetInnerHTML={{ __html: ProfText }}
+/>
+</div>
+
+
 
 </div> 
 </article>
