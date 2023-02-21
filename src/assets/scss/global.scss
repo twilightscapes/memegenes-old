@@ -109,7 +109,11 @@ body.homepage .wrap-element iframe, body.blogpost .wrap-element iframe {
 
 	// body.blogpost section{margin:10vh 0 !important;}
 
-	body.homepage .effects { height: 300px !important; padding:2vh 0 !important; top:0 !important; overflow:hidden !important;}
+	body.homepage .effects { 
+		height: 400px !important; 
+		padding:0 0 !important; 
+		top:0 !important; 
+		overflow:hidden !important;}
 
 	body.homepage .wrap-element iframe, body.blogpost .wrap-element iframe {
 		position: absolute;

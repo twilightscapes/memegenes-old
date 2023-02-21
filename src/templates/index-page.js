@@ -350,7 +350,7 @@ function Iframer() {
 
 
 {frontmatter.marate ? (
-            <li className="flex-items" style={{display:'grid', placeContent:'center', width:'', height:'', aspectRatio:'1/1', padding:'0 20px', border:'6.5px solid #fff', margin:'0 auto 0 auto 0', fontSize:'clamp(4rem, 15vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}>{frontmatter.marate}</li>
+            <li className="flex-items" style={{display:'grid', placeContent:'center', width:'', height:'', aspectRatio:'1/1', padding:'0 20px', border:'6.5px solid #fff', margin:'0 auto 0 auto 0', fontSize:'clamp(4rem, 12vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}>{frontmatter.marate}</li>
             ) : (
               <li className="flex-items" style={{display:'grid', placeContent:'center', width:'', height:'', aspectRatio:'1/1', padding:'0 20px', border:'6.5px solid #fff', margin:'0 auto 0 auto 0', fontSize:'clamp(4rem, 15vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}>PG</li>
             )}
@@ -629,7 +629,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 <li className="flex-items" style={{display:'grid', placeContent:'center', width:'', height:'', aspectRatio:'1/1', padding:'0 1vw', border:'6.5px solid #fff', margin:'0 auto 0 auto 0', fontSize:'clamp(3.5rem, 13vw, 5rem)', fontFamily:'Verdana, Sans-Serif, System', fontWeight:'800'}}><strong style={{}}>MA</strong></li>
 
 
-<li style={{display:'flex', flexDirection:'column', position:'relative', left:'', top:'', gap:'.8vh', justifyContent:'space-around', alignContent:'', alignItems:'start', border:'0px solid red', fontSize:'clamp(.5rem, 1.2vw, 2rem)'}}>
+
 
 <li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.8em', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
   {frontmatter.marating1}</strong> {frontmatter.maratingtx1}</li>
@@ -643,7 +643,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
   <li className="flex-items" style={{display:'flex', justifyContent:'center', alignItems:'center', alignContent:'end'}}><strong style={{border:'2px solid', padding:'.8em', aspectRatio:'1/1', overFlow:'', marginRight:'1.5vw', textAlign:'center'}}>
   {frontmatter.marating4}</strong> {frontmatter.maratingtx4} </li>
 
-</li>
+
 
 </ul>
 <div className="flex-items" style={{position:'relative', right:'', top:'', display:'', fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', textTransform:'uppercase', textAlign:'center'}}>Viewer Discretion Strongly Advised</div>
@@ -869,7 +869,7 @@ Click to play
               image={FrontImage}
               alt={frontmatter.title + " - Featured image"}
               className="featured-image12 layer1"
-              style={{height:'100vh', maxHeight:'100vh', width:'', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain', paddingTop:'20px', overflow:'hidden',}}
+              style={{height:'100vh', maxHeight:'100vh', width:'', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain', paddingTop:'0', overflow:'hidden',}}
             />
 
 
@@ -931,7 +931,7 @@ Click to play
 
 
 
-<section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'visible', padding:'0 0 0 0', border:'0px solid blue',background:'rgba(0,0,0,0.1)',}}>
+<section className="vertical" id="info" order="2" name="info" style={{ display:'', height:'100%',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'visible', padding:'0 0 0 0', border:'0px solid blue',background:'rgba(0,0,0,0.3)',}}>
 
 
 
@@ -1040,13 +1040,13 @@ Click to play
   backdropFilter:'blur(15px)',
   borderRadius:'10px'}}>
   
-  <h1 className="title1" style={{fontSize:'clamp(1.8rem, 3.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
+  <h1 className="title1" style={{fontSize:'clamp(1.5rem, 2.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
 {/* <h2 className="tagline1">
   {frontmatter.tagline}
 </h2> */}
 
 <div
-style={{}}
+style={{fontSize:'clamp(1.2rem, 1.3vw, 2.2rem)'}}
   className="description"
   dangerouslySetInnerHTML={{ __html: ProfText }}
 />
