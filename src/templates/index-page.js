@@ -821,10 +821,10 @@ Click to play
 
 
 {showPosts ? (
-  <section id="showPosts" style={{marginBottom:'0'}}>
+  <section id="showPosts" style={{marginTop:'1vh'}}>
   <div style={{position:'relative', background:'none', maxHeight:'', overflow:'', width:'100vw'}}>
 <ScrollAnimation className="animate" animateIn="bounceInDown" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={false} > 
-<div className="horizontal-scroll panels sitegrad movingBG" style={{}}>
+<div className="horizontal-scroll panels sitegrad movingBG" style={{marginTop:'1vh'}}>
     <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
                          <BlogListHome data={posts} />
       <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
