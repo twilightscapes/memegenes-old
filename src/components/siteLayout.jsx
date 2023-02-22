@@ -287,7 +287,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
    </Link>
         </li>
 
-        
+
 
   <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'0 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important', alignItems:'center', }}>
       <Theme  style={{color:'red !important'}} />
@@ -368,6 +368,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
       
       
 
+
    
             
 
@@ -432,6 +433,13 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
               ) : (
   ""
 )}
+
+
+
+<li style={{position:'relative',}}>
+       <Link aria-label="Menu 2" className="navbar-item" to="/archive/2" style={{paddingRight:'',}}>Archive</Link>    
+</li>
+
 
 
 

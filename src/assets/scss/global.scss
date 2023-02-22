@@ -1211,13 +1211,13 @@ input[type="checkbox"]:checked ~ #sidebarMenu {
 input[type="checkbox"]:checked ~ #secondMenu {
 	transform: translateX(0);
 }
-input[type=checkbox]:checked ~ .sidebarIconToggle {
+#sidebarMenu input[type=checkbox]:checked ~ .sidebarIconToggle {
 	display:none !important;
 }
 input[type=checkbox] {
 	transition: all 0.3s;
 	box-sizing: border-box;
-	display: none;
+	// display: none;
 }
 .sidebarIconToggle {
 	transition: all 0.3s;

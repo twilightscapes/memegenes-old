@@ -21,7 +21,7 @@
     "menu4": "Skills",
     "showNav": true,
     "showNav2": true,
-    "showFeature": false,
+    "showFeature": true,
     "showPosts": true,
     "showInfo": true,
     "showDates": true,

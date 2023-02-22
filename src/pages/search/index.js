@@ -39,20 +39,25 @@ const SearchPage = ({ data }) => {
 
 
 
-      <div className="searchform" style={{position:'relative', maxWidth:'450px', margin:'10vh auto 0 auto', padding:'0 1vw', zIndex:'3',}}>
+      <div className="searchform" style={{position:'relative', maxWidth:'400px', margin:'8.5vh auto 0 auto', padding:'0 1vw', zIndex:'3', display:'grid', placeSelf:'center'}}>
 
       <label style={{border:'1px solid #fff', outline:'#fff', display:'block', borderRadius:'10px'}}>
+        <input id="clearme" type="text" placeholder="Type here to filter by keyword" onChange={handleSearch} autoFocus style={{}} /> 
+<button type="reset" value="reset" onClick={() => clearfield()} style={{position:'absolute', right:'2.5vw', top:'1.5vh', color:'#fff'}}>clear</button>
 
-        <input id="clearme" type="text" placeholder="Type here to filter by keyword" onChange={handleSearch} autoFocus style={{}} />
-      
-      <button type="reset" value="reset" onClick={() => clearfield()} style={{position:'absolute', right:'2vw', top:'1.5vh', color:'#fff'}}>clear</button>
+              <div style={{position:'absolute', right:'-50px', top:'.1vh', textAlign:'center'}}>{filteredPosts.length} <br />result{filteredPosts.length !== 1 && 's'}</div>
       </label>
+              
+
       </div>
 
 
 <div className="horizontal-scroll panels sitegrad movingBG" style={{marginTop:'1vh', paddingTop:''}}>
     <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
+    <div style={{ color: '#fff', margin: '1rem 0' }}>
+  {filteredPosts.length} result{filteredPosts.length !== 1 && 's'}
+</div>
 
         {filteredPosts.map(({ node }) => (
           <Link key={node.id} to={node.frontmatter.slug}>
