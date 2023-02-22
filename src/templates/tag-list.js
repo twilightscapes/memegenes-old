@@ -10,7 +10,7 @@ const TagList = ({ data }) => {
       <ul>
         {tags.map((tag) => (
           <li key={tag.fieldValue}>
-            <a href={`/tags/${tag.fieldValue}`}>{tag.fieldValue}</a> ({tag.totalCount})
+            <a href={`/tag/${tag.fieldValue}`}>{tag.fieldValue}</a> ({tag.totalCount})
           </li>
         ))}
       </ul>
@@ -19,14 +19,27 @@ const TagList = ({ data }) => {
 }
 
 export const query = graphql`
-  query {
-    allMarkdownRemark {
-      group(field: frontmatter___tags) {
-        fieldValue
-        totalCount
+  query ($tag: String!) {
+    allMarkdownRemark(
+      sort: { fields: frontmatter___date, order: DESC }
+      filter: { frontmatter: { tags: { in: [$tag] } } }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "MMMM DD, YYYY")
+            tags
+          }
+          fields {
+            slug
+          }
+        }
       }
     }
   }
-`
+`;
+
 
 export default TagList

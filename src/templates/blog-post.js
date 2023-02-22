@@ -1254,7 +1254,7 @@ zindex:'1'
         <div>
           <h4>Tags:</h4>
           {tags.map((tag) => (
-            <Link to={`/tags/${tag}`} key={tag}>
+            <Link to={`/tag/${tag}`} key={tag}>
               {tag},&nbsp;
             </Link>
           ))}
