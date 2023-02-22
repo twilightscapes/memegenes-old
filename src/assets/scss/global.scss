@@ -1861,14 +1861,19 @@ body.homepage .horizontal-holder{height:inherit !important}
 .controlsbox{
 	display:flex;
 	 justify-content:center;
-	 position:fixed;
-	 right:30px;
+	 position:absolute;
 	 gap:20px;
 	z-index: 3;
-	bottom:20px !important;
-
+	top:0 !important;
 }
 
+.vidcontrols{
+display:flex; 
+gap:2vw;
+position:fixed;
+bottom: 20px;
+right:3vw;
+}
 
 .controls{
 	animation:fade1;
@@ -1892,6 +1897,7 @@ body.homepage .horizontal-holder{height:inherit !important}
 	background:rgba(0, 0, 0, .9);
 
 }
+
 .hudicon{
 	font-size: 60px;
 	position:absolute;
@@ -2063,14 +2069,29 @@ body.blogpost #menu li .fullscreenButt {display:flex;}
 @media (max-width: 48em) {
 
 
-	.controlsbox{
-		position:absolute !important;
-		right:10px;
-		bottom:inherit !important;
-		top:42vh !important;
-		width:inherit !important;
-		margin:0 auto !important;
-   }
+// 	.controlsbox{
+// 		width:inherit !important;
+// 		margin:0 auto !important;
+//    }
+
+//    .controlsbox{
+// 	display:flex;
+// 	 justify-content:center;
+// 	 position:absolute;
+// 	 gap:20px;
+// 	z-index: 3;
+// 	top:0 !important;
+// }
+
+.vidcontrols{
+display:flex; 
+gap:2vw;
+position:fixed;
+top: 380px;
+right:3vw;
+}
+
+
    .controls, .controls svg{
 	width:40px;
 	height:40px;

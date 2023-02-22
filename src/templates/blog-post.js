@@ -667,16 +667,20 @@ Click to play
         style={{
          color:'#ddd',
          width:'100vw', 
-         height:'85vh',
-         display:'grid',
-         placeContent:'center',
-         position:'fixed',
-         top:'0',left:'0',right:'0',bottom:'0',
+         height:'80vh',
+         display:'block',
+         placeContent:'',
+         position:'absolute',
+         top:'0',
+         left:'0',
+         right:'0',
+         border:'0px solid yellow',
          zindex:'1'
         }}
       ></button>
 
 
+  <div className="vidcontrols">
                   <button
                     onClick={onPlayPause}
                     className="controls panel" 
@@ -698,13 +702,6 @@ Click to play
                     )}
                   </button>
   
-  
-  
-        
-  
-  
-  
-  
                   <button
                     // onClick={() => setState({ ...state, muted: !state.muted })}
                     onClick={onMute}
@@ -723,9 +720,9 @@ Click to play
                       <MdVolumeUp className="hudicon" fontSize="" style={{}}  />
                     )}
                   </button>
-  
+                  </div>
+
         </div>
-        
         </div>
       );
     }
