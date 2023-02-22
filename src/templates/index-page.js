@@ -166,6 +166,8 @@ query HomeQuery($id: String!) {
           date(formatString: "YYYY-MM-DD-HH-MM-SS")
           slug
           title
+          tags
+          category
           youtubemute
           youtubeloop
           youtubecontrols

@@ -21,7 +21,7 @@ const readMarkdownFile = (filePath) => {
 
   return {
     title: data.title,
-    tags: data.tags,
+    tags: [humor] data.tags,
     content,
     slug,
   };

@@ -41,6 +41,8 @@ maratingtx1: Use your brain please
 maratingtx2: Spontaneous & Sporadic
 maratingtx3: It's Humor - laugh
 maratingtx4: Adult Language
+category: memes
+tags: [humor]
 ---
 
 <div class="contentinside" style="position:relative; z-index:1; min-width:50%; height:auto;  padding:0; left:0; border:0px solid yellow; text-align:center;">

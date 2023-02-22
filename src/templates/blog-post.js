@@ -131,6 +131,9 @@ const Post = ({ data, pageContext }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
 
+  const post = data.markdownRemark
+  const tags = post.frontmatter.tags
+  const categories = post.frontmatter.categories
 
   const FrontImage = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
@@ -195,6 +198,10 @@ const Suggestion3 = frontmatter.youtubersuggestion3
 const YoutubeLoop = frontmatter.youtubeloop
 
 const ClickToPlay = frontmatter.clicktoplay
+
+
+
+
 
 // const CustomControlBinary = frontmatter.customcontrols
 const iframeUrl = frontmatter.youtuber
@@ -1222,6 +1229,47 @@ zindex:'1'
             <h1 className="headline panel" style={{color:'#ddd', borderRadius:'12px'}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
            Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
+           <br />
+           {/* <Link to={`/category/${frontmatter.category}`}>Category:{frontmatter.category}</Link>
+
+           <p>Tags: {frontmatter.tags.join(", ")}</p> */}
+
+
+
+      {/* Render categories if they exist */}
+      {categories && categories.length > 0 && (
+        <div>
+          <h4>Categories:</h4>
+          {categories.map((category) => (
+            <Link to={`/categories/${category}`} key={category}>
+              {category}
+            </Link>
+          ))}
+        </div>
+      )}
+
+      
+      {/* Render tags if they exist */}
+      {tags && tags.length > 0 && (
+        <div>
+          <h4>Tags:</h4>
+          {tags.map((tag) => (
+            <Link to={`/tags/${tag}`} key={tag}>
+              {tag},&nbsp;
+            </Link>
+          ))}
+        </div>
+      )}
+
+
+
+
+           <div>
+
+
+
+    </div>
+
           </div>
   </header>
             ) : (
@@ -1230,7 +1278,7 @@ zindex:'1'
             <h1 className="headline" style={{color:'#ddd', borderRadius:'12px'}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
            Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
-          </div>
+          {frontmatter.category} {frontmatter.tags}</div>
                 </header>
             )}
 
@@ -1464,6 +1512,8 @@ export const pageQuery = graphql`
         date(formatString: "YYYY-MM-DD-HH-MM-SS")
         slug
         title
+        tags
+        category
         description
         youtuber
         youtuber2

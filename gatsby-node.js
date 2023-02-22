@@ -1,5 +1,3 @@
-// import useSiteMetadata from "../hooks/SiteMetadata"
-
 const path = require("path")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
@@ -9,20 +7,22 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const blogList = path.resolve(`./src/templates/blog-list.js`)
 
   const result = await graphql(`
-  {
-    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
-      edges {
-        node {
-          id
-          frontmatter {
-            slug
-            template
-            title
+    {
+      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+        edges {
+          node {
+            id
+            frontmatter {
+              slug
+              template
+              title
+              category
+              tags
+            }
           }
         }
       }
     }
-  }
   `)
 
   // Handle errors
@@ -34,6 +34,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   // Create markdown pages
   const posts = result.data.allMarkdownRemark.edges
   let blogPostsCount = 0
+  const category = new Set()
+  const tags = new Set()
 
   posts.forEach((post, index) => {
     const id = post.node.id
@@ -57,6 +59,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     if (post.node.frontmatter.template === "blog-post") {
       blogPostsCount++
     }
+
+    // Collect categories and tags
+    if (post.node.frontmatter.category) {
+      category.add(post.node.frontmatter.category)
+    }
+    if (post.node.frontmatter.tags) {
+      post.node.frontmatter.tags.forEach((tag) => tags.add(tag))
+    }
   })
 
   // Create blog-list pages
@@ -75,16 +85,41 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+
+  // Create category pages
+  const categoryTemplate = path.resolve(`./src/templates/category.js`)
+  category.forEach((category) => {
+    createPage({
+      path: `/category/${category}`,
+      component: categoryTemplate,
+      context: {
+        category,
+      },
+    })
+  })
+
+  // Create tag pages
+  const tagTemplate = path.resolve(`./src/templates/tag.js`)
+  tags.forEach((tag) => {
+    createPage({
+      path: `/tag/${tag}`,
+      component: tagTemplate,
+      context: {
+        tag,
+      },
+    })
+  })
 }
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode, basePath: `pages` })
+    const slugWithoutPrefix = slug.replace(/^\/posts/, '')
     createNodeField({
       node,
       name: `slug`,
-      value: slug,
+      value: slugWithoutPrefix,
     })
   }
 }
