@@ -10,8 +10,8 @@ youtubeshoworiginal: true
 youtubersuggestion1: 
 youtubersuggestion2: 
 youtubersuggestion3: 
-youtubestart: "20"
-youtubeend: "40"
+youtubestart: "25"
+youtubeend: "62"
 youtubemute: false
 audiostart: "20"
 audioend: "5000"
