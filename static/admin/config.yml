@@ -121,7 +121,6 @@ collections:
               default: "index-page",
             }
           - { label: "Slug", name: "slug", widget: "hidden", default: "/" }
-          - { label: "Slug", name: "slug", widget: "hidden", default: "/" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "string" }
           - { label: "Google Font", name: "font1", widget: "string", hint: "Type the name of your font with Capitalizationa and spacing like: Titan One", }
