@@ -289,6 +289,77 @@ collections:
                 name: showFeature 
                 label: Show Feature 
                 required: false
+
+              - widget: boolean
+                name: showInfo 
+                label: Show Info 
+                required: false
+
+              - widget: boolean
+                name: showPosts 
+                label: Show Info 
+                required: false
+
+              - widget: boolean
+                name: showNav 
+                label: Show Top Nav
+                required: false
+
+              - widget: boolean
+                name: showNav2 
+                label: Show Side Nav
+                required: false
+
+              - widget: boolean
+                name: showSocial 
+                label: Show Social Links
+                required: false
+
+
+
+              - widget: boolean
+                name: showCover
+                label: Show Cover Link
+                required: false
+
+              - widget: boolean
+                name: showResume
+                label: Show Resume
+                required: false
+
+              - widget: boolean
+                name: showSkills
+                label: Show Skills
+                required: false
+
+              - widget: string
+                name: font1
+                label: Google Font
+                required: false
+
+              - widget: string
+                name: menu1
+                label: Menu Title 1
+                required: false
+                default: Info
+
+              - widget: string
+                name: menu2
+                label: Menu Title 
+                required: false
+                default: Posts
+
+              - widget: string
+                name: menu3 
+                label: Menu Title 3
+                required: false
+                default: Resume
+
+              - widget: string
+                name: menu4
+                label: Menu Title 4
+                required: false
+                default: Skills
                 
               
 
