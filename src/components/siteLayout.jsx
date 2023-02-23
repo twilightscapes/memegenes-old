@@ -40,7 +40,7 @@ const { image } = useSiteMetadata()
 const { showNav } = useSiteMetadata()
 const { showNav2 } = useSiteMetadata()
 const { showInfo } = useSiteMetadata()
-// const { showFeature } = useSiteMetadata()
+const { showFeature } = useSiteMetadata()
 const { showPosts } = useSiteMetadata()
 const { showResume } = useSiteMetadata()
 // const { showSocial } = useSiteMetadata()
@@ -210,7 +210,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 
-{showPosts ? (
+{showFeature ? (
 <li style={{position:'relative',}}>
       {prefersReducedMotion ? (
        <Link aria-label="Featured" className="navbar-item" to="/#feature" style={{paddingRight:'',}}>{menu2}</Link>    
