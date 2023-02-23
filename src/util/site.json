@@ -26,9 +26,9 @@
     "showInfo": true,
     "showDates": true,
     "showSocial": true,
-    "showCover": false,
-    "showResume": false,
-    "showSkills": false,
+    "showCover": true,
+    "showResume": true,
+    "showSkills": true,
     "showfooter": false,
     "showPopup": false,
     "comments": "5639031584980992-proj"

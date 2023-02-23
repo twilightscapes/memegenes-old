@@ -26,9 +26,9 @@ skillsText:
   <dt>
   <h2>Overall Skills</h2><div>100%</div>
   </dt>
-  <dd class="percentage percentage-90"><span class="text">Front End</span> <span class="percent">90%</span></dd>
-  <dd class="percentage percentage-65"><span class="text">Back End</span> <span class="percent">65%</span></dd>
-  <dd class="percentage percentage-85"><span class="text">WordPress</span> <span class="percent">85%</span></dd>
+  <dd class="percentage percentage-90"><span class="text">Organization</span> <span class="percent">90%</span></dd>
+  <dd class="percentage percentage-75"><span class="text">Problem Solving</span> <span class="percent">75%</span></dd>
+  <dd class="percentage percentage-85"><span class="text">Outgoing</span> <span class="percent">85%</span></dd>
   <dd class="percentage percentage-75"><span class="text">Javascript</span> <span class="percent">75%</span></dd>
   <dd class="percentage percentage-80"><span class="text">UI Design</span> <span class="percent">80%</span></dd>
   <dd class="percentage percentage-85"><span class="text">UX Design</span> <span class="percent">85%</span></dd>
@@ -38,10 +38,10 @@ skillsText:
   <dt>
   <h2>Detailed Skills</h2><div>100%</div>
   </dt>
-  <dd class="percentage percentage-90"><span class="text">HTML</span> <span class="percent">90%</span></dd>
-  <dd class="percentage percentage-85"><span class="text">CSS</span> <span class="percent">85%</span></dd>
-  <dd class="percentage percentage-75"><span class="text">Gatsby</span> <span class="percent">75%</span></dd>
-  <dd class="percentage percentage-65"><span class="text">React</span> <span class="percent">65%</span></dd>
+  <dd class="percentage percentage-90"><span class="text">Word Perfect</span> <span class="percent">90%</span></dd>
+  <dd class="percentage percentage-85"><span class="text">MS Paint</span> <span class="percent">85%</span></dd>
+  <dd class="percentage percentage-75"><span class="text">Photoshop</span> <span class="percent">75%</span></dd>
+  <dd class="percentage percentage-99"><span class="text">Hacking</span> <span class="percent">99%</span></dd>
   </dl>
 cta:
   ctaText: Contact Gene
@@ -84,101 +84,78 @@ youtubersuggestion2:
 youtubersuggestion3: 
 ---
 <!-- Do not delete -->
-
 <div>
 <!-- Do not delete -->
 
-## **Highlights**
+## Highlights
 
- **Product Designer - Skilled web designer/developer with 21 years of professional experience.**
+Social Media Marketing - specialized experience leading PPC and SEO marketing strategies.
 
-Successful product designer able to integrate both technical and creative skills to create cross-browser and cross-platform solutions with modern web architecture and navigation systems.
+An MBA with 5 years of experience developing and managing marketing campaigns and specialized working knowledge of Google Analytics and AdWords, seeks the role of Social Media Marketing Manager with XYZ Inc. to implement successful digital marketing campaigns and provide exceptional thought leadership.</p><p>Three years of specialized experience leading PPC and SEO marketing strategies
 
-Proven record of completing bold, clean, and effective designs with consistent performance ahead of schedule and under budget.
+Managed social media accounts for four businesses with yearly sales over $500,000
 
-Industry experience including semiconductor, hospitality, entertainment, health, publishing, finance, insurance, construction, computer software, and direct marketing.
+Certified Digital Marketer 2016, Udacity
 
-## **Proficiency**
+Received Employee of the Year Award at ABC Company 2018 and 2019
 
-* Veteran WordPress Theme/Plugin Developer
-* React JS Frontend Designer/Developer
+## Proficiency
 
-Responsive, Reactive, Adaptive Design, progressive enhancement, PWA development, object oriented CSS animation.
+Implement paid search media plans and effectively build strong relationships with internal and external (vendor) teams
 
-Analytics, SEO, UI design, Information Architecture & Content Management System integrations. Photo and Video production.
+Outstanding verbal and written skills in English and German or Spanish or French
 
-**I prefer JAM stack, React, Gatsby, Canon, Subaru and my Mac.**
+Proven experience driving SEM strategy and execution
 
-## **Education**
+Experience with common Adobe Analytics (Site Catalyst), Tableau, Adobe Experience Cloud and marketing data warehouse platforms
 
-* Cal State University Fullerton
-Web Design and Development - Degree
-* Coastline Community College
-Quality Assurance - Degree
-* Golden West College
-Business Management - Degree
-* Huntington Beach High School
-High School General Courses - Diploma
+Looking for a thrilling entrepreneurial experience and willing to learn in a fast-moving environment
+
+Closing collaboration with other marketing channel managers for smooth 360 experiences
+      
+
+## Education
+
+<ul className="edu">
+    <li><strong>University of Michigan</strong>Business - Degree</li>
+    <li><strong>Community College</strong>Quality Assurance - Degree</li>
+    <li><strong>High School</strong>High School General Courses - Diploma</li>
+    </ul>
+
+
 
 <!-- Do not delete -->
-
 </div>
 <div>
 <!-- Do not delete -->
 
-## **Experience**
+## Experience
 
-**Todd Lambert Enterprises, 1999 - Present**
-<br />Sole Proprietor / Photographer
+**ABC Company, Nashville, TN, 2017-2020**
 
-Conducted all facets of web development business including meeting with clients, selling web services, and developing methods for improved customer support. 
-I also like to travel all over the country and photograph spooky and abandoned places at night. View @ TwilightScapes.com
+Social Media Marketing Associate
 
-**Primal Health, 2013 - 2014**
-<br />Creative Director / Associate Developer
+Built a 15k Facebook following and 20k Instagram following for new startup, increasing leads by 160%.
+Developed compelling CTAs for website and social media copy, producing a 60% increase in sales.
 
-Responsible for all graphic components and direct marketing efforts. Worked with various departments to advance reach through social marketing, engineering and analytics. Also performed SEO and conducted extensive AB testing.
+Formulated Instagram strategy and collaborated with influencers in our market to promote top-selling products, resulting in $200,000 net sales in three months.
 
-**Texas Instruments, 2010 - 2013**
-<br />Style Architect / Front End Developer / Senior UI Designer
+**123 Company, Austin, TX, 2014-2017**
 
-Worked on all aspects of TIs website, from new ad campaigns and interactive widgets to the core infrastructure including a new re-design and replacement of site navigation site-wide. Championed responsive design techniques and other modern architecture for use on corporate site. Utilized Jquery animation for replacing all of TIs legacy Flash files.
+Website Manager
 
-**AGJ Systems & Networks, 2008 - 2010**
-<br />Web Director / Lead Developer / Senior Designer
+Team leader for the design and development of new mobile application.
 
-Solely responsible for all design and development aspects of web department. Interacted with customers and other departments to integrate designs into modern websites catered to customer needs.
+Conducted A/B testing on paid Facebook and Instagram campaigns, resulting in a boost in conversion from 70% to 90%.
 
-**TeleVox Software, 2004 - 2007**
-<br />Director of Web Development
+Implemented innovative SEO strategy to increase organic website traffic 200% in five months.
 
-Responsible for site architecture, design, graphics, programming, copywriting/editing, project management of all TeleVox websites and online marketing campaigns. Supervised 25 designers and developers.
+**Anonymous Corporation, Los Angeles, TN, 2015-2017**
+
+Social Media Intern
+
+Experience in search engine marketing, Experience with bid monitoring and adjustment of search media campaigns across multiple sites.
 
 <!-- Do not delete -->
-
 </div>
 <!-- Do not delete -->
-
-<!-- RGT4V6JmINA MUSIC: CURE -->
-
-<!-- <dl>
-  <dt>
-  <h2>Overall Skills</h2><div>100%</div>
-  </dt>
-  <dd class="percentage percentage-90"><span class="text">Front End</span> <span class="percent">90%</span></dd>
-  <dd class="percentage percentage-65"><span class="text">Back End</span> <span class="percent">65%</span></dd>
-  <dd class="percentage percentage-85"><span class="text">WordPress</span> <span class="percent">85%</span></dd>
-  <dd class="percentage percentage-75"><span class="text">Javascript</span> <span class="percent">75%</span></dd>
-  <dd class="percentage percentage-80"><span class="text">UI Design</span> <span class="percent">80%</span></dd>
-  <dd class="percentage percentage-85"><span class="text">UX Design</span> <span class="percent">85%</span></dd>
-  </dl>
-
-  <dl>
-  <dt>
-  <h2>Detailed Skills</h2><div>100%</div>
-  </dt>
-  <dd class="percentage percentage-90"><span class="text">HTML</span> <span class="percent">90%</span></dd>
-  <dd class="percentage percentage-85"><span class="text">CSS</span> <span class="percent">85%</span></dd>
-  <dd class="percentage percentage-75"><span class="text">Gatsby</span> <span class="percent">75%</span></dd>
-  <dd class="percentage percentage-65"><span class="text">React</span> <span class="percent">65%</span></dd>
-</dl> -->
