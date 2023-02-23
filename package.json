@@ -17,18 +17,17 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "build-search-index": "node build-search-index.js"
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^3.0.2",
     "@mdx-js/runtime": "^1.6.22",
     "@sindresorhus/slugify": "^2.1.1",
-    "@staticcms/app": "1.2.6",
+    "@staticcms/app": "1.2.8",
     "@theme-ui/color": "^0.15.4",
     "browser-monads": "^1.0.0",
     "commentbox.io": "^2.1.0",
-    "gatsby": "^5.5.0",
+    "gatsby": "^5.7.0",
     "gatsby-background-image": "^1.6.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-anchor-links": "^1.2.1",
