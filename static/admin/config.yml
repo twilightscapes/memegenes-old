@@ -285,7 +285,11 @@ collections:
                 name: showfooter
                 label: Show the Footer
                 required: false
-              - label: "Show Feature" name: "showFeature" widget: "boolean"
+              - widget: boolean
+                name: showFeature 
+                label: Show Feature 
+                required: false
+                
               
 
           - label: "Commenting – Go to: https://commentbox.io - sign up for free account "
