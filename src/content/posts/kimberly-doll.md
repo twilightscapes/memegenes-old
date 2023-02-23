@@ -2,7 +2,7 @@
 template: blog-post
 title: Kimberly talks about her Daddy and plastic recycling.
 slug: /kimberly-doll
-date: 2023-02-22 03:00
+date: 2023-02-22 22:00
 description: Bad plastic surgery, being ridden hard and put away wet, and having no soul, really does a number on ya.
 youtuber: https://youtu.be/ErSd_YiRCAs
 youtuber2: 
@@ -31,7 +31,7 @@ underlayImage: /assets/kimberly-makeup-bg.webp
 featuredImage: /assets/kimberly-makeup-promo.webp
 svgImage: 
 scrollable: true
-nftdrop: "2023-02-11T10:00:00"
+nftdrop: "2023-02-22T10:00:00"
 contentinvideo: true
 viewerwarning: Viewer Discretion Strongly Advised
 marate: MA
