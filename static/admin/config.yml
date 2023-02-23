@@ -132,17 +132,7 @@ collections:
           - { label: "Show Posts", name: "showPosts", widget: "boolean" }
           - { label: "Google Font", name: "font1", widget: "string", hint: "Type the name of your font with Capitalizationa and spacing like: Titan One", }
 
-          - { label: "Show Top Nav", name: "showNav", widget: "boolean", default: "true" }
-          - { label: "Show Side Nav", name: "showNav2", widget: "boolean", default: "true" }
-          - { label: "Show Social Links", name: "showSocial", widget: "boolean", default: "false" }
-          - { label: "Show Cover Link", name: "showCover", widget: "boolean", default: "false" }
-          - { label: "Show Resume", name: "showResume", widget: "boolean", default: "false" }
-          - { label: "Show Skills", name: "showSkills", widget: "boolean", default: "false" }
 
-          - { label: "Menu Title 1", name: "menu1", widget: "string", default: "Info" }
-          - { label: "Menu Title 2", name: "menu2", widget: "string", default: "Posts" }
-          - { label: "Menu Title 3", name: "menu3", widget: "string", default: "Resume" }
-          - { label: "Menu Title 4", name: "menu4", widget: "string", default: "Skills" }
 
           - { label: "YouTube Url", name: "youtuber", widget: "string",required: false }
           - { label: "YouTube Start", name: "youtubestart", widget: "string", required: false } 
@@ -176,6 +166,19 @@ collections:
           - { label: "Content Sub Rating", name: "marating4", widget: "string", default: "NC" }
           - { label: "Content Sub Rating Desc", name: "maratingtx4", widget: "string", default: "Sub Rating description" }
           
+          - { label: "Cover Letter Text", name: "coverText", widget: "string", default: "" }
+          - { label: "Cover Letter Link", name: "coverLink", widget: "string", default: "" }
+
+          - { label: "Turn Page Scroll On", name: "scrollable", widget: "boolean", default: "true", hint: "Allows page to be scrolled vertically", required: false }
+
+          - { label: "Address Text", name: "addressText", widget: "string", default: "" }
+          - { label: "Address Text2", name: "addressText2", widget: "string", default: "" }
+
+          - { label: "Profile Title", name: "profTitle", widget: "string", default: "" }
+          - { label: "Profile Text", name: "profText", widget: "string", default: "" }
+
+          - { label: "Skills Title", name: "skillsTitle", widget: "string", default: "" }
+          - { label: "Skills Text", name: "skillsText", widget: "string", default: "" }
           
 
 
@@ -190,7 +193,7 @@ collections:
               - name: "ctaLink"
                 label: "CTA Link"
                 widget: "string"
-                
+
           - label: "Cover Letter"
           name: "coverletter"
           widget: "object"
@@ -302,6 +305,23 @@ collections:
                 name: showfooter
                 label: Show the Footer
                 required: false
+                
+              - label: "Show Top Nav", name: "showNav", widget: "boolean", default: "true"
+              - label: "Show Side Nav", name: "showNav2", widget: "boolean", default: "true"
+              - label: "Show Social Links", name: "showSocial", widget: "boolean", default: "false"
+              - label: "Show Cover Link", name: "showCover", widget: "boolean", default: "false"
+              - label: "Show Resume", name: "showResume", widget: "boolean", default: "false"
+              - label: "Show Skills", name: "showSkills", widget: "boolean", default: "false"
+              - label: "Menu Title 1", name: "menu1", widget: "string", default: "Info"
+              - label: "Menu Title 2", name: "menu2", widget: "string", default: "Posts"
+              - label: "Menu Title 3", name: "menu3", widget: "string", default: "Resume"
+              - label: "Menu Title 4", name: "menu4", widget: "string", default: "Skills"
+
+
+
+
+
+
           - label: "Commenting – Go to: https://commentbox.io - sign up for free account "
             name: comments
             widget: string
