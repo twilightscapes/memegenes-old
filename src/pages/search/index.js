@@ -39,7 +39,7 @@ const SearchPage = ({ data }) => {
 
 
 
-      <div className="searchform" style={{position:'relative', maxWidth:'400px', margin:'8.5vh auto 0 auto', padding:'0 1vw', zIndex:'3', display:'grid', placeSelf:'center'}}>
+      <div className="searchform" style={{position:'relative', maxWidth:'400px', margin:'10vh auto 0 auto', padding:'0 1vw', zIndex:'3', display:'grid', placeSelf:'center'}}>
 
       <label style={{border:'1px solid #fff', outline:'#fff', display:'block', borderRadius:'10px'}}>
         <input id="clearme" type="text" placeholder="Type here to filter by keyword" onChange={handleSearch} style={{}} /> 
@@ -98,7 +98,7 @@ Play Multimedia
 
 
 
-<div className="panel" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'10px auto', maxWidth:'80vw', gap:'.4vw', height:'100%', textAlign:'left', padding:'2vh 3vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'8px', color:'#fff' }}>
+<div className="panel" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'10px auto', maxWidth:'80vw', gap:'.4vw', height:'100%', textAlign:'left', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'8px', color:'#fff' }}>
 
 <h2 className="title" style={{fontSize:'clamp(1rem, 2vw, 3rem)', }}>
 {node.frontmatter.title}
