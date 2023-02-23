@@ -892,7 +892,7 @@ Click to play
 
 
 
-<div className="wrap-element effects" style={{aspectRatio:'16/9', minHeight:'280px', maxHeight:'90vh', overFlow:'hidden'}}>
+<div className="wrap-element effects" style={{aspectRatio:'16/9', minHeight:'280px', maxHeight:'', overFlow:'hidden'}}>
 
 
 {/* <GatsbyImage
@@ -1155,7 +1155,7 @@ zindex:'1'
   
   {ContentinVideo ? (
     <div id="contentvideo"
-          className="blog-post-content effects" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'0px solid transparent', position:'absolute', bottom:'0', left:'0', top:'0', right:'0', zindex:'-1', maxHeight:'100vh', borderBottom:'0px solid', }}
+          className="blog-post-content effects" style={{ fontSize:'1.1rem', textAlign:'left', padding:'', margin:'0 auto', color:'inherit !important', border:'0px solid green', position:'absolute', bottom:'0', left:'0', top:'0', right:'0', zindex:'-1', maxHeight:'100vh', borderBottom:'0px solid', overFlow:'hidden' }}
           dangerouslySetInnerHTML={{ __html: html }}
           
         >
@@ -1221,6 +1221,7 @@ zindex:'1'
 <div>
 {ShareThis ? (
 <header style={{ height:'', display:'grid', placeContent:'center'}}>
+
   <div id="sharethis" style={{width:'auto', height:'', padding:'0', display:'grid', placeContent:'center', border:'0px solid'}}>
   <ShareSocial style={{}} />
   </div>
@@ -1298,7 +1299,7 @@ zindex:'1'
   <div>
   {ShareThis ? (
     <header style={{ height:'', display:'grid', placeContent:'center'}}>
-    <div id="sharethis" style={{width:'auto', height:'', padding:'0', display:'grid', placeContent:'center', border:'0px solid'}}>
+    <div id="sharethis1" style={{width:'auto', height:'', padding:'0', display:'grid', placeContent:'center', border:'0px solid'}}>
     <ShareSocial style={{}} />
     </div>
     <div className="article-header panel" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>

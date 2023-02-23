@@ -83,7 +83,7 @@ const ProductDetails = () => (
            <h2 style={{fontSize:'clamp(1.3rem, 2.5vw, 2.8rem)', textAlign:'center', margin:'0 0 2rem 0'}}>Inspection Equipment</h2>
    <div className="" style={{display:'flex', flexDirection:'column', gap:'20px', justifyContent:'flex-start', alignItems:'center'}}>
 
- {/* <Image alt="Co-worker talks about Todd Lambert" filename="capabilities/capability1.jpg" style={{borderColor:'transparent', display:'inline-block'}} /> */}
+ {/* <Image alt="" filename="capabilities/capability1.jpg" style={{borderColor:'transparent', display:'inline-block'}} /> */}
  <ul className="splitRow" style={{background:'rgba(0, 0, 0, .1)', margin:'0', padding:'5%', borderRadius:'12px',}}>
 <li className="" style={{width:'50%', textAlign:''}}>Tesa Micro-Hite CMM</li>
 <li className="" style={{width:'50%', textAlign:''}}>Brown &amp; Sharpe Gage 2000 CMM</li>

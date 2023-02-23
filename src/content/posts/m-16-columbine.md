@@ -20,14 +20,14 @@ liarliar: false
 youtubecontrols: true
 youtubeautostart: true
 youtubeloop: true
-isnftforsale: true
+isnftforsale: false
 svgzindex: "0"
 comments: false
 shareable: true
 underlayImage: 
 featuredImage: /assets/m-16-columbine.webp
 svgImage:
-scrollable: true
+scrollable: false
 nftdrop: "2023-02-09T10:00:00"
 contentinvideo: false
 marating1: YB
@@ -43,11 +43,3 @@ tags: [nra, gop, guns]
 ---
 NRA and GOP Approved!
 
-
-
-
-
-
-<!-- https://youtu.be/VgdB9QYKeyM -->
-
-<!-- XjuLZwlDxh8 -->

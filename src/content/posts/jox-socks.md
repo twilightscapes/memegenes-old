@@ -42,12 +42,3 @@ category: memes
 tags: [humor]
 ---
 
-
-
-
-
-
-
-<!-- https://youtu.be/VgdB9QYKeyM -->
-
-<!-- XjuLZwlDxh8 -->

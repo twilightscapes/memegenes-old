@@ -46,7 +46,7 @@ tags: [lindell, mypillow, crackead, threetoes ]
 ---
 
 <div class="contentinside" style="position:relative; z-index:1; min-width:50%; height:auto;  padding:0; left:0; border:0px solid yellow; text-align:center;">
-<object class="" style="height:auto; border:0px solid red; margin-top:-15px" class="" id="svg1" data="/assets/MyPillowGuyEdit.svg" type="image/svg+xml" alt="animated content" title="animated content" ></object>
+<object class="" style="height:auto; border:0px solid red;" class="" id="svg1" data="/assets/MyPillowGuyEdit.svg" type="image/svg+xml" alt="animated content" title="animated content" ></object>
 </div>
 
 
