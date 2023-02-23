@@ -42,7 +42,7 @@ const SearchPage = ({ data }) => {
       <div className="searchform" style={{position:'relative', maxWidth:'400px', margin:'8.5vh auto 0 auto', padding:'0 1vw', zIndex:'3', display:'grid', placeSelf:'center'}}>
 
       <label style={{border:'1px solid #fff', outline:'#fff', display:'block', borderRadius:'10px'}}>
-        <input id="clearme" type="text" placeholder="Type here to filter by keyword" onChange={handleSearch} autoFocus style={{}} /> 
+        <input id="clearme" type="text" placeholder="Type here to filter by keyword" onChange={handleSearch} style={{}} /> 
 <button type="reset" value="reset" onClick={() => clearfield()} style={{position:'absolute', right:'2.5vw', top:'1.5vh', color:'#fff'}}>clear</button>
 
               <div style={{position:'absolute', right:'-50px', top:'.1vh', textAlign:'center'}}>{filteredPosts.length} <br />result{filteredPosts.length !== 1 && 's'}</div>
@@ -127,7 +127,7 @@ Play Multimedia
 }
 
 export const pageQuery = graphql`
-query pageUserstoddlambertSitesmemegenessrcpagessearchindexJs3773404046 {
+query pageUsersSitesmemegenessrcpagessearchindexJs3773404046 {
   allMarkdownRemark(
     sort: {frontmatter: {date: DESC}}
     filter: {frontmatter: {template: {eq: "blog-post"}}}

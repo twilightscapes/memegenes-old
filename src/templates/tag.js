@@ -85,8 +85,8 @@ Play Multimedia
 export const query = graphql`
   query($tag: String!) {
     allMarkdownRemark(
-      filter: { frontmatter: { tags: { in: [$tag] } } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      filter: {frontmatter: {tags: {in: [$tag]}}}
+      sort: {frontmatter: {date: DESC}}
     ) {
       edges {
         node {

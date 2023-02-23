@@ -3,9 +3,9 @@ import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/siteLayout"
 import useSiteMetadata from "../hooks/SiteMetadata"
-import { ImPlay } from "react-icons/im"
-import { FaImage } from "react-icons/fa"
-import { AiOutlinePicLeft } from "react-icons/ai"
+// import { ImPlay } from "react-icons/im"
+// import { FaImage } from "react-icons/fa"
+// import { AiOutlinePicLeft } from "react-icons/ai"
 import TimeAgo from 'react-timeago'
 
 const BlogList = ({ data, pageContext }) => {
@@ -13,7 +13,7 @@ const BlogList = ({ data, pageContext }) => {
   const { showNav } = useSiteMetadata()
 
   const posts = data.allMarkdownRemark.edges
-  const { currentPage, numPages } = pageContext
+  const { numPages } = pageContext
 
   return (
     <Layout>
@@ -32,9 +32,9 @@ const BlogList = ({ data, pageContext }) => {
 
 
         {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          const tags = node.frontmatter.tags || []
-          const excerpt = node.frontmatter.excerpt || node.excerpt
+          // const title = node.frontmatter.title || node.fields.slug
+          // const tags = node.frontmatter.tags || []
+          // const excerpt = node.frontmatter.excerpt || node.excerpt
           const featuredImg = node.frontmatter.featuredImage
 
           return (
@@ -111,11 +111,14 @@ Play Multimedia
   )
 }
 
+
+
+
 export const query = graphql`
   query($skip: Int!,) {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { template: { eq: "blog-post" } } }
+      sort: {frontmatter: {date: DESC}}
+      filter: {frontmatter: {template: {eq: "blog-post"}}}
       limit: 10
       skip: $skip
     ) {
@@ -129,7 +132,6 @@ export const query = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             tags
-
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 500) {
@@ -142,6 +144,7 @@ export const query = graphql`
       }
     }
   }
+  
 `
 
 export default BlogList

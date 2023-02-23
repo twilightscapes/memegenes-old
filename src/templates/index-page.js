@@ -230,22 +230,22 @@ const HomePage = ({ data }) => {
 
 const CustomControls = frontmatter.customcontrols
 const Suggestion1 = frontmatter.youtubersuggestion1
-const Suggestion2 = frontmatter.youtubersuggestion2
-const Suggestion3 = frontmatter.youtubersuggestion3
+// const Suggestion2 = frontmatter.youtubersuggestion2
+// const Suggestion3 = frontmatter.youtubersuggestion3
 
 const YoutubeLoop = frontmatter.youtubeloop
 
 const ClickToPlay = frontmatter.clicktoplay
 
-const iframeUrl = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=" + frontmatter.youtubeautostart + "&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=" + frontmatter.youtubeloop + "&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
+// const iframeUrl = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=" + frontmatter.youtubeautostart + "&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=" + frontmatter.youtubeloop + "&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
 
 
 const ContentinVideo = frontmatter.contentinvideo
 // const LiarLiar = frontmatter.liarliar
 
-    const CtaLink = frontmatter.cta.ctaLink
+    // const CtaLink = frontmatter.cta.ctaLink
 
-    const { iconimage } = useSiteMetadata()
+    // const { iconimage } = useSiteMetadata()
     
     const ProfText = frontmatter.profText
  
@@ -337,13 +337,12 @@ function Iframer() {
                 // backgroundColor:'var(--theme-ui-colors-bodyBg)',
                 backgroundColor:'rgba(0,0,0,0.6)',
                  width:'100vw', height:'100vh', minHeight:'40vh', maxHeight:'', zIndex:'0', top:'0', right:'0', textAlign:'center', display:'', placeContent:'center', justifyContent:'', 
-                color:'var(--theme-ui-colors-text)', 
                 color:'#ddd',
                 fontFamily:'Verdana, Sans-Serif, System' }}>
 
 
 
-<button aria-label="Click To Play" name="Click to play" className="clickplays videohide" style={{position:'relative', zIndex:'0', top:'', border:'0px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
+<button aria-label="Click To Play" name="Click to play" className="clickplays videohide" style={{position:'relative', zIndex:'0', top:'', border:'0px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center',}}>
 
 
                 <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'2vh auto 0 auto', textTransform:'uppercase',}}>The following is rated: <strong>{frontmatter.marate}</strong></div>
@@ -546,7 +545,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
     )
   }
 
-  const Playing  = useState(true);
+  // const Playing  = useState(true);
 
   const [state, setState] = useState({
     playing: YouTubeAutostart,
@@ -605,7 +604,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
     ) => {
 
   
-      const { iconimage } = useSiteMetadata()
+      // const { iconimage } = useSiteMetadata()
   
   
       return (
@@ -620,7 +619,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
 
 <div style={{position:'absolute', height:'', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', color:'var(--theme-ui-colors-text)', fontFamily:'Verdana, Sans-Serif, System' }}>
 
-<button aria-label="Click To Play" name="Click to play"  className="clickplays videohide" style={{position:'relative', zIndex:'', top:'70px', border:'0px  solid red', width:'100vw', height:'', backgroundColor:'var(--theme-ui-colors-bodyBg)', color:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:'2vh 0 0 0'}}>
+<button aria-label="Click To Play" name="Click to play"  className="clickplays videohide" style={{position:'relative', zIndex:'', top:'70px', border:'0px  solid red', width:'100vw', height:'', backgroundColor:'var(--theme-ui-colors-bodyBg)', color:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', padding:'2vh 0 0 0'}}>
 
 
           <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following content is rated: </div>
@@ -880,7 +879,7 @@ Click to play
 
           ) : (
 
-            <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
+            <StaticImage src="../../static/assets/default-og-image.jpg" alt="Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
 
@@ -1099,9 +1098,9 @@ style={{fontSize:'clamp(1.2rem, 1.3vw, 2.2rem)'}}
 <div id="" className="">
 
 <span
-          style={{  columnCount:'2',
-            columnGap:'40px',
-            columnWidth:'100%'}}
+          style={{  columnCount:'',
+            columnGap:'',
+            columnWidth:''}}
             className=""
             dangerouslySetInnerHTML={{ __html: html }}
           />

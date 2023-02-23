@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-// import LoaderSVG from './img/vidsock-logo.svg'
+// import LoaderSVG from './img/logo.svg'
 // import { useSiteMetadata } from "../src/hooks/use-site-metadata"
 export default function HTML(props) {
   // const { siteColor } = useSiteMetadata()

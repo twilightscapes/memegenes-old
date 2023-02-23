@@ -624,55 +624,47 @@ body.homepage .ReactModalPortal .nextbutt {
 
 #resume{border: 0px solid green; width: 100%; margin:0 auto; padding:0 4%;}
 
+#resume {
+	border: 0px solid yellow;
+	padding: 0 10px;
+}
+
+#resume span {
+	display: flex;
+	position: sticky;
+	top: 0;
+	gap: 40px;
+	flex-direction: row;
+}
+
 #resume span div {
-  border: 0px solid green;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  width: 48% !important;
+	border: 0px solid green;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
 
-  /* width: 1000px !important; */
-  /* column-count: 2;
-  column-gap: 20px;
-  column-width: 400px; */
-}
-#resume span div:first-of-type {
-border:0px solid red !important;
-/* float: left !important; */
-}
-#resume span div:last-of-type {
-  border:0px solid green !important;
-  /* float: right !important; */
-  position:absolute !important; top:0 !important; right:0 !important;
+@media (max-width: 48rem) {
+	#resume span div {
+	display: block !important;
+	width: 100% !important;
 	}
 
-	@media (max-width: 48rem) {
-		#resume span div {
-		display: block !important;
-		width: 100% !important;
-		}
-	
-		#resume span {
-		display: flex;
-		position: sticky;
-		top: 0;
-		gap: 20px;
-		flex-direction: column;
-		}
-	
-		.nameblock {
-		background: transparent !important;
-		color: inherit !important;
-		text-shadow: none !important;
-		}
-
-		.panel.legal{
-			margin:40vh auto 1rem auto !important; border:0px solid red !important;
-		}
-
-	
+	#resume span {
+	display: flex;
+	position: sticky;
+	top: 0;
+	gap: 20px;
+	flex-direction: column;
 	}
-	
+
+	.nameblock {
+	background: transparent !important;
+	color: inherit !important;
+	text-shadow: none !important;
+	}
+}
 
 	.nameblock {
 		-webkit-backdrop-filter: blur(10px);

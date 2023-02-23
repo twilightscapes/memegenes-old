@@ -77,7 +77,7 @@ const PostCard = ({ data }) => (
       </Link>
       
     ) : (
-      <Link  to={data.frontmatter.slug}><StaticImage className="featured-image1" src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{position:'relative', zIndex:''}} /></Link>
+      <Link  to={data.frontmatter.slug}><StaticImage className="featured-image1" src="../../static/assets/default-og-image.jpg" alt="Default Image" style={{position:'relative', zIndex:''}} /></Link>
     )}
 
 
@@ -142,7 +142,7 @@ date={Date.now() + 60000} className="countdown">
 </h2>
 
 
-<p style={{minWidth:'', position:'', textAlign:'center', border:'0px solid red', fontSize:'70%', minWidth:'100px'}}>
+<p style={{position:'', textAlign:'center', border:'0px solid red', fontSize:'70%', minWidth:'100px'}}>
   <TimeAgo date={data.frontmatter.date}/>
 </p>
 

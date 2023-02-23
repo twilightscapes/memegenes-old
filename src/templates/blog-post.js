@@ -4,7 +4,7 @@
 import { useState, useRef,forwardRef } from "react";
 
 // import Controls from "../components/Controls";
-import { window, document } from "browser-monads"
+import { document } from "browser-monads"
 import PropTypes from "prop-types";
 import { MdPlayArrow } from "react-icons/md"
 import { MdPause } from "react-icons/md"
@@ -20,7 +20,7 @@ import { Link, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
-import { RiArrowRightDownFill } from "react-icons/ri"
+// import { RiArrowRightDownFill } from "react-icons/ri"
 import CommentBox from "../components/commentbox"
 
 import useSiteMetadata from "../hooks/SiteMetadata"
@@ -204,7 +204,7 @@ const ClickToPlay = frontmatter.clicktoplay
 
 
 // const CustomControlBinary = frontmatter.customcontrols
-const iframeUrl = frontmatter.youtuber
+// const iframeUrl = frontmatter.youtuber
 
 
 
@@ -433,7 +433,7 @@ const YouTube = frontmatter.youtuber
 
   const { siteUrl } = useSiteMetadata()
   // const { companyname } = useSiteMetadata()
-  const { iconimage } = useSiteMetadata()
+  // const { iconimage } = useSiteMetadata()
 
 
   const { showNav } = useSiteMetadata()
@@ -444,7 +444,7 @@ const YouTube = frontmatter.youtuber
   // const [count, setCount] = useState(0);
   // const [anchorEl, setAnchorEl] = React.useState(null);
 
-    const Playing  = useState(true);
+    // const Playing  = useState(true);
 
   const [state, setState] = useState({
     playing: YouTubeAutostart,
@@ -519,7 +519,7 @@ const YouTube = frontmatter.youtuber
       // const open = Boolean(anchorEl);
       // const id = open ? "simple-popover" : undefined;
   
-      const { iconimage } = useSiteMetadata()
+      // const { iconimage } = useSiteMetadata()
   
   
       return (
@@ -543,7 +543,7 @@ const YouTube = frontmatter.youtuber
 
 
 
-<button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'70px', border:'0px  solid red', width:'100vw', height:'100vh', maxHeight:'', backgroundColor:'var(--theme-ui-colors-bodyBg)', color:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:'2vh 0 0 0'}}>
+<button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'70px', border:'0px  solid red', width:'100vw', height:'100vh', maxHeight:'', backgroundColor:'var(--theme-ui-colors-bodyBg)', color:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center',   padding:'2vh 0 0 0'}}>
 
 
 
@@ -630,7 +630,7 @@ Click to play
 )}
 </div>
 
-<button
+<button aria-label="Video Play/Pause Button"
         onClick={onPlayPause}
         className="videohide" 
         style={{
@@ -669,6 +669,7 @@ Click to play
 
 
 <button
+        aria-label="Video Play/Pause Button"
         onClick={onPlayPause}
         className="videohide" 
         style={{
@@ -1001,13 +1002,12 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
                 // backgroundColor:'var(--theme-ui-colors-bodyBg)',
                 backgroundColor:'rgba(0,0,0,0.6)',
                  width:'100vw', height:'100%', minHeight:'40vh', maxHeight:'85vh', zIndex:'0', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'center', justifyContent:'center', 
-                color:'var(--theme-ui-colors-text)', 
                 color:'#ddd',
                 fontFamily:'Verdana, Sans-Serif, System' }}>
 
 
 
-<button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'50px', border:'0px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', border:'0px solid', borderRadius:'', padding:''}}>
+<button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'50px', border:'0px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center',}}>
                 {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
    
                 {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
@@ -1090,6 +1090,7 @@ Click to play
 </button>
 
 <button
+ aria-label="Video Play/Pause Button"
 className="" 
 style={{
 color:'#ddd',
