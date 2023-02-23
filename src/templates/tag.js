@@ -45,8 +45,7 @@ const Tag = ({ data, pageContext }) => {
 {node.frontmatter.youtuber ? (
 <Link to={node.frontmatter.slug} style={{}}>
   <div className="spotlight" style={{maxHeight:''}}>
-<div className="posticons panel" style={{fontWeight:'bold', padding:'1vh 2vw', width:'34vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px', position:'absolute', bottom:'50px', left:'30vw', right:'30vw', margin:'0 auto', color:'#ccc'}}>
-
+<div className="posticons" style={{}}>
 <div style={{display:'flex', justifyContent:'space-around', gap:'2vw', color:'fff',}}>
 <FaImage className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
     <ImPlay className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
@@ -54,7 +53,6 @@ const Tag = ({ data, pageContext }) => {
 </div>
 Play Multimedia
 </div>
-
 </div>
 </Link>
 ) : (

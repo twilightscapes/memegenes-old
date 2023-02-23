@@ -3,9 +3,9 @@ import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/siteLayout"
 import useSiteMetadata from "../hooks/SiteMetadata"
-// import { ImPlay } from "react-icons/im"
-// import { FaImage } from "react-icons/fa"
-// import { AiOutlinePicLeft } from "react-icons/ai"
+import { ImPlay } from "react-icons/im"
+import { FaImage } from "react-icons/fa"
+import { AiOutlinePicLeft } from "react-icons/ai"
 import TimeAgo from 'react-timeago'
 
 const BlogList = ({ data, pageContext }) => {
@@ -45,6 +45,25 @@ const BlogList = ({ data, pageContext }) => {
                   <Img fluid={featuredImg.childImageSharp.fluid} alt="" />
                   
 
+
+                  {node.frontmatter.youtuber ? (
+<Link to={node.frontmatter.slug} style={{}}>
+  <div className="spotlight" style={{maxHeight:''}}>
+<div className="posticons" style={{}}>
+<div style={{display:'flex', justifyContent:'space-around', gap:'2vw', color:'fff',}}>
+<FaImage className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
+    <ImPlay className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
+    <AiOutlinePicLeft className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
+</div>
+Play Multimedia
+</div>
+</div>
+</Link>
+) : (
+  ""
+)}
+
+
                   <div className="panel" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'10px auto', maxWidth:'80vw', gap:'.4vw', height:'100%', textAlign:'left', padding:'2vh 3vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'8px', color:'#fff' }}>
 
 <h2 className="title" style={{fontSize:'clamp(1rem, 2vw, 3rem)', }}>
@@ -58,24 +77,7 @@ const BlogList = ({ data, pageContext }) => {
             </div>
 
             
-                  {/* {node.frontmatter.youtuber ? (
-<Link to={node.frontmatter.slug} style={{}}>
-  <div className="spotlight" style={{maxHeight:''}}>
-<div className="posticons panel" style={{fontWeight:'bold', padding:'1vh 2vw', width:'34vw', height:'', background:'rgba(0, 0, 0, 0.7)', borderRadius:'12px', position:'absolute', bottom:'50px', left:'30vw', right:'30vw', margin:'0 auto', color:'#ccc'}}>
 
-<div style={{display:'flex', justifyContent:'space-around', gap:'2vw', color:'fff',}}>
-<FaImage className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
-    <ImPlay className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
-    <AiOutlinePicLeft className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
-</div>
-Play Multimedia
-</div>
-
-</div>
-</Link>
-) : (
-  ""
-)} */}
 
                 </Link>
               )}
