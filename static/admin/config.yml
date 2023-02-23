@@ -285,6 +285,25 @@ collections:
                 name: showfooter
                 label: Show the Footer
                 required: false
+              - label: "Show Feature", name: "showFeature", widget: "boolean"
+              - label: "Show Info", name: "showInfo", widget: "boolean"
+              - label: "Show Posts", name: "showPosts", widget: "boolean"
+              - label: "Google Font", name: "font1", widget: "string",
+                hint: "Type the name of your font with Capitalizationa and spacing like: Titan One",
+
+              - label: "Show Top Nav", name: "showNav", widget: "boolean", default: "true"
+              - label: "Show Side Nav", name: "showNav2", widget: "boolean", default: "true"
+              - label: "Show Social Links", name: "showSocial", widget: "boolean",
+                default: "false"
+              - label: "Show Cover Link", name: "showCover", widget: "boolean", default: "false"
+              - label: "Show Resume", name: "showResume", widget: "boolean", default: "false"
+              - label: "Show Skills", name: "showSkills", widget: "boolean", default: "false"
+
+              - label: "Menu Title 1", name: "menu1", widget: "string", default: "Info"
+              - label: "Menu Title 2", name: "menu2", widget: "string", default: "Posts"
+              - label: "Menu Title 3", name: "menu3", widget: "string", default: "Resume"
+              - label: "Menu Title 4", name: "menu4", widget: "string", default: "Skills"
+
           - label: "Commenting – Go to: https://commentbox.io - sign up for free account "
             name: comments
             widget: string
