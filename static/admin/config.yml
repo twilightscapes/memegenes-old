@@ -60,8 +60,6 @@ collections:
       - { label: "YouTube - Suggestion 1", name: "youtubersuggestion1", widget: "string", required: false }
       - { label: "YouTube - Suggestion 2", name: "youtubersuggestion2", widget: "string", required: false }
       - { label: "YouTube - Suggestion 3", name: "youtubersuggestion3", widget: "string", required: false }
-
-
       - { label: "Make Comments Available?", name: "comments", widget: "boolean", default: "true", required: false }
       - { label: "Make Post Shareable?", name: "shareable", widget: "boolean", default: "true", required: false }
       - { label: "Turn Page Scroll On", name: "scrollable", widget: "boolean", default: "false", hint: "Allows post to be scrolled vertically", required: false }
@@ -123,15 +121,15 @@ collections:
           - { label: "Slug", name: "slug", widget: "hidden", default: "/" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "string" }
-          - { label: "Google Font", name: "font1", widget: "string", hint: "Type the name of your font with Capitalizationa and spacing like: Titan One", }
           - { label: "Featured Image", name: "featuredImage", widget: "image", required: false }
           - { label: "Secondary Image", name: "secondaryImage", widget: "image", hint: "this image is used for the background on the homepage", required: false }
           - { label: "Underlay Image", name: "underlayImage", widget: "image", required: false }
-          - { label: "SVG Image", name: "svgImage", widget: "image", required: false }
+          - { label: "SVG Image", name: "svgImage", widget: "image", required: false}
           - { label: "SVG Z-Index", name: "svgzindex", widget: "string", required: false }
-
-
-          
+          - { label: "Show Feature", name: "showFeature", widget: "boolean" }
+          - { label: "Show Info", name: "showInfo", widget: "boolean" }
+          - { label: "Show Posts", name: "showPosts", widget: "boolean" }
+          - { label: "YouTube Url", name: "youtuber", widget: "string",required: false }
           - { label: "Body", name: "body", widget: "markdown" }
           - label: "CTA"
             name: "cta"
@@ -143,17 +141,6 @@ collections:
               - name: "ctaLink"
                 label: "CTA Link"
                 widget: "string"
-        - label: "Cover Letter"
-          name: "coverletter"
-          widget: "object"
-          fields:
-            - name: "coverText"
-              label: "Custom Cover Letter Text"
-              widget: "string"
-            - name: "coverLink"
-              label: "Custom Cover Link"
-              widget: "string"
-
       - label: "About"
         name: "about"
         file: "src/content/pages/about.md"
