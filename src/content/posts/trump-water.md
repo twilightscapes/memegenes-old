@@ -1,21 +1,22 @@
 ---
 template: blog-post
-title: Sometimes, I doubt your commitment to SparkleMotion!
-slug: /sparklemotion
-date: 2023-02-18 04:43
-description: Tears, hysterics, manipulation and insanity! I often wonder how she makes it through each day
-youtuber: "https://youtu.be/accEKtBebaU"
+title: They proclaimed "help me, I need water". I said "What you need is Trump Water"!
+slug: /trump-water
+date: 2023-02-22 03:00
+description: Watch Trump make an ass of himself in Ohio, mocks the crowd about their water problems.
+youtuber: "https://youtu.be/s-s7eG2ckN4"
 youtuber2: 
 youtubeshoworiginal: true
 youtubersuggestion1: 
 youtubersuggestion2: 
 youtubersuggestion3: 
-youtubestart: "1"
-youtubeend: "5"
+youtubestart: "12"
+youtubeend: ""
 youtubemute: false
 audiostart: "20"
 audioend: "5000"
 audiotitle: 
+bumpertext: "Trump Water - the only thing Trump can make wet"
 liarliar: true
 youtubecontrols: false
 clicktoplay: false
@@ -26,29 +27,25 @@ isnftforsale: false
 svgzindex: "0"
 comments: true
 shareable: true
-underlayImage: /assets/sparklemotion.webp
-featuredImage: /assets/sparklemotion-promo.webp
+underlayImage: /assets/trump-water-bg.webp
+featuredImage: /assets/trump-water-promo.webp
 svgImage: 
 scrollable: true
 nftdrop: "2023-02-11T10:00:00"
-contentinvideo: true
-bumpertext: "Sometimes, I doubt your commitment to SparkleMotion!"
-marating1: YB
-marating2: SS
-marating3: LH
-marating4: AL
-maratingtx1: Use your brain please
-maratingtx2: Spontaneous & Sporadic
-maratingtx3: It's Humor - laugh
-maratingtx4: Adult Language
+contentinvideo: false
+viewerwarning: Warning this content is rated total bullshit
+marate: BS
+marating1: VG
+marating2: 
+marating3: DQ
+marating4: ME
+maratingtx1: Vile Grifter
+maratingtx2: 
+maratingtx3: Drama Queen
+maratingtx4: It's all about me
 category: memes
-tags: [humor, darko]
+tags: [trump, water, worst]
 ---
-
-
-<!-- https://youtu.be/8EPEkk6qWkg IVANKA/TRUMP -->
-
-
 <!-- <div class="contentinside lake1" style=""> -->
 <!-- <img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;
 animation: kariFilter 6s ease-in-out;
@@ -79,14 +76,15 @@ opacity:0;
 
 
 
-
 </style>
-
-
-
 <div class="contentbody" style="text-align:left !important; margin-top:0;">
 
-## Sometimes, I doubt your commitment to SparkleMotion!
+## Trump visiting Ohio is like a killer visiting the crime scene afterwards. 
+
+The mango tinged fool has done what he does best, and that is to show up, make everything about him and then whine about how he has been so misreated. 
+
+It's an exhaustingly tired routine, but if he's not on TV doing his infamous "Stroker Ace" dance moves to YMCA then he would wither away and die.
+
 
 
 

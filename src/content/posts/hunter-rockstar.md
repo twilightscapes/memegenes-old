@@ -44,7 +44,7 @@ maratingtx2: Sexual Situations
 maratingtx3: Deranged Violence
 maratingtx4: Hunter Biden levels
 category: memes
-tags: [humor]
+tags: [hunter, biden, crackhead]
 ---
 <!-- <div class="contentinside lake1" style=""> -->
 <!-- <img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;

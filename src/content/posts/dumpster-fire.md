@@ -41,7 +41,7 @@ maratingtx2: Spontaneous & Sporadic
 maratingtx3: It's Humor - laugh
 maratingtx4: Adult Language
 category: memes
-tags: [humor]
+tags: [trump, dumpster, president, worst, trash]
 ---
 <div class="contentinside">
 <!-- <img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;
@@ -59,8 +59,79 @@ animation-iteration-count:infinite;
 
 <style>
 
+	  @keyframes question1 {
+	0% {  opacity:0;}
+	5%{ opacity:1;}
+	50%{opacity:1;}
+	51% {  opacity:0; }
+	100% {  opacity:0;}
+  }
+  
+  @keyframes bubbleBop1 {
+	0% {  opacity:0;}
+	5%{ opacity:1;}
+	50%{opacity:1;}
+	51% {  opacity:0; }
+	100% {  opacity:0;}
+  }
 
 
+.bubble {
+	position: relative;
+	font-family: sans-serif;
+	font-size: clamp(.7rem, 1.8vw, 2.4rem);
+	line-height: 110%;
+	min-width: 50vw;
+	background: rgba(255, 255, 255, 1);
+	text-shadow: 0 0 2x rgba(0, 0, 0, 1);
+	border-radius: 40px;
+	padding: 2vh 2vw;
+	text-align: center;
+	color: #000;
+  animation:question1;
+  filter:drop-shadow(0 0px 16px rgba(0, 0, 0, 1));
+  }
+  
+  .bubble-bottom-left::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 34px solid #fff;
+	border-right: 8px solid transparent;
+	border-top: 5px solid #fff;
+	border-bottom: 40px solid transparent;
+	left: 32px;
+	bottom: -44px;
+	opacity:1;
+  }
+
+  .bubble-bottom-right::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-right: 34px solid #fff;
+	border-left: 8px solid transparent;
+	border-top: 5px solid #fff;
+	border-bottom: 40px solid transparent;
+	right: 32px;
+	bottom: -44px;
+	opacity:1;
+  }
+
+ 
+  @media (max-width: 48rem) {
+	.bubble{
+		top:10% !important;
+	}
+	.bubble-bottom-right{top:13vh !important;}
+  }
+
+  
+
+
+  
 
 .numblist {
   clear: both;
@@ -81,7 +152,7 @@ content:counter(item) " ";
   background: rgba(0, 0, 0, .2);
   backdrop-filter: blur(12px);
   color: #999;
-  font-size:clamp(3rem, 10vw, 5rem);
+  font-size:clamp(3rem, 6vw, 5rem);
   font-weight: 700;
   font-style: italic;
   border-radius: 0 0.675em 0.675em 0;
@@ -99,7 +170,7 @@ content:counter(item) " ";
   background: rgba(0, 0, 0, .2);
   backdrop-filter: blur(12px);
   color: #999;
-  font-size:clamp(3rem, 10vw, 5rem);
+  font-size:clamp(3rem, 6vw, 5rem);
   font-weight: 700;
   font-style: italic;
   border-radius: 0.675em 0   0 0.675em;
@@ -115,13 +186,13 @@ top:0;
 @media (min-width:50em) {
   .numblist li:before {
     width: 250px;
-    left: -30%;
+    left: -15vw;
     top:1vh;
   }
   
     .numblist li::after {
     width: 250px;
-    right: -30%;
+    right: -15vw;
     top:1vh;
   }
 }

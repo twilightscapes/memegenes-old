@@ -41,7 +41,7 @@ maratingtx2: Sexually Grotesque
 maratingtx3: Dumb as Rocks
 maratingtx4: Trash to the T
 category: memes
-tags: [humor]
+tags: [dumpster, qrazy, threetoes, trash]
 ---
 <div class="contentinside" style="position:relative; aspect-ratio:16/9;  width:100%; border:0px solid white; display:flex; flex-direction:column; justify-content:center;">
 
@@ -54,16 +54,38 @@ opacity:0;">I'm worried about dying, and not becoming a good guy. </div> -->
 
 
 <div class="bubble bubble-bottom-right" style="position:absolute; width:50vw; top:30%; right:10vw; display:block; justify-content:center; font-size:110%;backdrop-filter: blur(6px);
-animation: bubbleBop1 11s ease-in;
-animation-delay:7.5s;
+animation: bubbleBop1 5s ease-in;
+animation-delay:2.5s;
 animation-direction: forwards;
-animation-iteration-count:2;
-opacity:0;">Finally, Chlamydia FREE AGAIN! </div>
+animation-iteration-count:1;
+opacity:0;">Finally, I'm Chlamydia FREE AGAIN! </div>
+
+<div class="bubble bubble-bottom-right" style="position:absolute; z-index:4; width:50vw; top:30%; right:20vw; display:block; justify-content:center; font-size:110%;backdrop-filter: blur(6px);
+animation: bubbleBop1 8s ease-in-out;
+animation-delay:10.5s;
+animation-direction: forwards;
+animation-iteration-count:1;
+opacity:0;">Having the best health care helps (and for FREE)! </div>
 
 </div>
 
 <style>
 
+	  @keyframes question1 {
+	0% {  opacity:0;}
+	5%{ opacity:1;}
+	50%{opacity:1;}
+	51% {  opacity:0; }
+	100% {  opacity:0;}
+  }
+  
+  @keyframes bubbleBop1 {
+	0% {  opacity:0;}
+	5%{ opacity:1;}
+	50%{opacity:1;}
+	51% {  opacity:0; }
+	100% {  opacity:0;}
+  }
 
 
 .bubble {
@@ -72,13 +94,14 @@ opacity:0;">Finally, Chlamydia FREE AGAIN! </div>
 	font-size: clamp(.7rem, 1.8vw, 2.4rem);
 	line-height: 110%;
 	min-width: 50vw;
-	background: rgba(255, 255, 255, 0.7);
-	text-shadow: 0 0 2px rgba(255, 255, 255, 0.7);
+	background: rgba(255, 255, 255, 1);
+	text-shadow: 0 0 2x rgba(0, 0, 0, 1);
 	border-radius: 40px;
 	padding: 2vh 2vw;
 	text-align: center;
 	color: #000;
-  animation:bubbleBop;
+  animation:question1;
+  filter:drop-shadow(0 0px 16px rgba(0, 0, 0, 1));
   }
   
   .bubble-bottom-left::before {
@@ -86,13 +109,13 @@ opacity:0;">Finally, Chlamydia FREE AGAIN! </div>
 	width: 0px;
 	height: 0px;
 	position: absolute;
-	border-left: 24px solid #fff;
+	border-left: 34px solid #fff;
 	border-right: 8px solid transparent;
 	border-top: 5px solid #fff;
-	border-bottom: 20px solid transparent;
+	border-bottom: 40px solid transparent;
 	left: 32px;
-	bottom: -24px;
-	opacity:.7;
+	bottom: -44px;
+	opacity:1;
   }
 
   .bubble-bottom-right::before {
@@ -100,13 +123,13 @@ opacity:0;">Finally, Chlamydia FREE AGAIN! </div>
 	width: 0px;
 	height: 0px;
 	position: absolute;
-	border-right: 24px solid #fff;
+	border-right: 34px solid #fff;
 	border-left: 8px solid transparent;
 	border-top: 5px solid #fff;
-	border-bottom: 20px solid transparent;
+	border-bottom: 40px solid transparent;
 	right: 32px;
-	bottom: -24px;
-	opacity:.7;
+	bottom: -44px;
+	opacity:1;
   }
 
  
@@ -116,6 +139,9 @@ opacity:0;">Finally, Chlamydia FREE AGAIN! </div>
 	}
 	.bubble-bottom-right{top:13vh !important;}
   }
+
+  
+
 
   
 
@@ -138,7 +164,7 @@ content:counter(item) " ";
   background: rgba(0, 0, 0, .2);
   backdrop-filter: blur(12px);
   color: #999;
-  font-size:clamp(3rem, 10vw, 5rem);
+  font-size:clamp(3rem, 6vw, 5rem);
   font-weight: 700;
   font-style: italic;
   border-radius: 0 0.675em 0.675em 0;
@@ -156,7 +182,7 @@ content:counter(item) " ";
   background: rgba(0, 0, 0, .2);
   backdrop-filter: blur(12px);
   color: #999;
-  font-size:clamp(3rem, 10vw, 5rem);
+  font-size:clamp(3rem, 6vw, 5rem);
   font-weight: 700;
   font-style: italic;
   border-radius: 0.675em 0   0 0.675em;
@@ -172,13 +198,13 @@ top:0;
 @media (min-width:50em) {
   .numblist li:before {
     width: 250px;
-    left: -30%;
+    left: -15vw;
     top:1vh;
   }
   
     .numblist li::after {
     width: 250px;
-    right: -30%;
+    right: -15vw;
     top:1vh;
   }
 }
