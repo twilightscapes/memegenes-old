@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Secret Service has decided to stop forcing aging President Biden to travserse dangerous stairs.
+title: Secret Serviceto stop forcing aging President Biden to travserse dangerous stairs.
 slug: /joe-rides
 date: 2023-02-23 17:43
 description: After numberous stumbles, the Secret Service felt it was "just" time.
