@@ -127,6 +127,12 @@ collections:
           - { label: "SVG Image", name: "svgImage", widget: "image", required: false}
           - { label: "SVG Z-Index", name: "svgzindex", widget: "string", required: false }
 
+          - { label: "Show Feature", name: "showFeature", widget: "boolean" }
+          - { label: "Show Info", name: "showInfo", widget: "boolean" }
+          - { label: "Show Posts", name: "showPosts", widget: "boolean" }
+          - { label: "Google Font", name: "font1", widget: "string", hint: "Type the name of your font with Capitalizationa and spacing like: Titan One", }
+
+
 
           - { label: "YouTube Url", name: "youtuber", widget: "string",required: false }
           - { label: "YouTube Start", name: "youtubestart", widget: "string", required: false } 
@@ -299,14 +305,6 @@ collections:
                 name: showfooter
                 label: Show the Footer
                 required: false
-
-
-
-
-
-
-
-
           - label: "Commenting – Go to: https://commentbox.io - sign up for free account "
             name: comments
             widget: string
