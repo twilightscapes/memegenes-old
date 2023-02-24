@@ -44,6 +44,7 @@ module.exports = {
 
   
 
+
   // {
   //   resolve: "gatsby-plugin-web-font-loader",
   //   options: {
@@ -68,7 +69,7 @@ module.exports = {
     resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
     options: {
       // Fields to index
-      fields: [`title`, `template`, `slug`, `featuredImage`, `gatsbyImageData`, `tags`, `rawBody` ],
+      // fields: [`title`, `template`, `slug`, `featuredImage`, `gatsbyImageData`, `tags`, `rawBody` ],
       // How to resolve each field's value for a supported node type
       resolvers: {
         // For any node of type MarkdownRemark, list how to resolve the fields' values
@@ -76,7 +77,7 @@ module.exports = {
           template: node => node.frontmatter.template,
           title: node => node.frontmatter.title,
           slug: node => node.frontmatter.slug,
-          rawBody: node => node.frontmatter.rawBody,
+          body: node => node.frontmatter.rawBody,
           tags: node => node.frontmatter.tags,
           featuredImage: node => node.frontmatter.featuredImage,
           gatsbyImageData: node =>

@@ -2,11 +2,11 @@
 slug: /
 tagline:  Memes are life
 featuredImage: /assets/trump-epstein-promo.webp
-youtuber: "https://youtu.be/i_Xm26DikxE"
-youtuber2: 
+youtuber: https://youtu.be/i_Xm26DikxE
+youtuber2: https://youtu.be/tSRYvYN1ayw
 audiostart: "20"
 audioend: "5000"
-audiotitle: "Lady Gaga - The Edge Of Glory"
+audiotitle: "Lamb - Gorecki"
 underlayImage: /assets/transparent.png
 profText: 
  <div class="" style="text-align:left;">Memes are a way of life for many and this site is meant to be an outlet for that. This site was created to make it easy to post new memes and have somewhere to archive all of them.</div><br />
