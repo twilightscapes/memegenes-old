@@ -6,7 +6,7 @@ import { Link } from 'gatsby'
 import { window } from "browser-monads"
 import "../assets/scss/reset.scss"
 import "../assets/scss/global.scss"
-import "../assets/scss/styles.css"
+// import "../assets/scss/styles.css"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { StoreContext } from "../context/store-context"
 // import { Toast } from "./toast"
