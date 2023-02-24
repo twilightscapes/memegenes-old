@@ -490,9 +490,11 @@ zindex:'1'
   function Iframer3() {
     const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2
     return (
+      
 <div style={{marginTop:'10px', position:'relative', zIndex:'1',
 display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'150px', border:'0px solid yellow', width:'100%'
 }}>
+
 
 <ReactPlayer
           allow="web-share"
@@ -978,13 +980,10 @@ Click to play
 
 
 
-{ !YouTube2 ? (
-            ""
-       
+{ YouTube2 ? (
+       <Iframer3 />
           ) : (
-            
-            <Iframer3 />
-            
+            ""
           )}
 
           <br />
