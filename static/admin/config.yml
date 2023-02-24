@@ -119,7 +119,7 @@ collections:
           widget: "markdown",
           hint: "Main content goes here.",
         }
-    preview_template: "posts.js"
+    preview_template: "../../preview-templates/posts.js"
   - label: "Pages"
     name: "pages"
     files:
