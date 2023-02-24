@@ -2,8 +2,8 @@
 slug: /
 tagline:  Memes are life
 featuredImage: /assets/trump-epstein-promo.webp
-youtuber: https://youtu.be/i_Xm26DikxE
-youtuber2: https://youtu.be/tSRYvYN1ayw
+youtuber: 
+youtuber2: 
 audiostart: "20"
 audioend: "5000"
 audiotitle: "Lamb - Gorecki"
