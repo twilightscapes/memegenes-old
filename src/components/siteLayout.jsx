@@ -82,7 +82,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 ''
   ) : (
     <link id="yyy" rel="stylesheet"
-          href={fontUrl} />
+          href={fontUrl} crossorigin="anonymous" />
   )} 
 </Helmet>
 
