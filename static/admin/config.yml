@@ -119,8 +119,7 @@ collections:
           widget: "markdown",
           hint: "Main content goes here.",
         }
-    preview_path: "/posts/:year/:month/:day/:slug/"
-    preview_template: "../../../src/CMS/preview-templates/posts.js"
+    preview_template: "preview-templates/posts.js"
 
   - label: "Pages"
     name: "pages"
