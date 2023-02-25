@@ -76,8 +76,8 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 <Helmet>
-<link rel="preconnect" href="https://fonts.googleapis.com" /> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" /> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" /> 
 { !font1 ? (
 ''
   ) : (

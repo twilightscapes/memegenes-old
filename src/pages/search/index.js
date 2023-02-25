@@ -5,7 +5,7 @@ import { ImPlay } from "react-icons/im"
 import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
 import Layout from "../../components/siteLayout"
-import TimeAgo from 'react-timeago'
+// import TimeAgo from 'react-timeago'
 
 function clearfield() {  
   document.querySelector('#clearme').value = ''
@@ -101,12 +101,12 @@ Play Multimedia
 <div className="panel" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'10px auto', maxWidth:'80vw', gap:'.4vw', height:'100%', textAlign:'left', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'8px', color:'#fff' }}>
 
 <h2 className="title" style={{fontSize:'clamp(1rem, 2vw, 3rem)', }}>
-{node.frontmatter.title}
+{node.frontmatter.title} 
 </h2>
 
-<p style={{minWidth:'', position:'', textAlign:'center', border:'0px solid red', fontSize:'70%'}}>
+{/* <p style={{minWidth:'', position:'', textAlign:'center', border:'0px solid red', fontSize:'70%'}}>
               <TimeAgo date={node.frontmatter.date}/>
-            </p>
+            </p> */}
             {/* <p>{node.excerpt}</p> */}
             </div>
 

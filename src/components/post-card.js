@@ -3,7 +3,7 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
-import TimeAgo from 'react-timeago'
+// import TimeAgo from 'react-timeago'
 import { ImPlay } from "react-icons/im"
 import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
@@ -157,9 +157,9 @@ date={Date.now() + 60000} className="countdown">
 </h2>
 
 
-<p style={{position:'', textAlign:'center', border:'0px solid red', fontSize:'70%', minWidth:'100px'}}>
+{/* <p style={{position:'', textAlign:'center', border:'0px solid red', fontSize:'70%', minWidth:'100px'}}>
   <TimeAgo date={data.frontmatter.date}/>
-</p>
+</p> */}
 
 
 </div>
