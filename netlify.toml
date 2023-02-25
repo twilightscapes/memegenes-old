@@ -5,3 +5,9 @@
 [build.environment]
   NODE_VERSION = "18"
   NODE_OPTIONS = "--max_old_space_size=4096"
+
+[[headers]]
+  /*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, PUT, POST, DELETE
+  Access-Control-Allow-Headers: Content-Type
