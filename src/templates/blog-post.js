@@ -46,7 +46,7 @@ import Layout from "../components/siteLayout"
 import ShareSocial from '../components/share' 
 import GoBack from "../components/goBack"
 import { ImPlay } from "react-icons/im"
-import TimeAgo from 'react-timeago'
+// import TimeAgo from 'react-timeago'
 import styled from "styled-components"
 const CustomBox = styled.div`
 
@@ -1230,8 +1230,8 @@ zindex:'1'
   <div className="article-header" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:'', borderRadius:'12px'}}>
             <h1 className="headline panel" style={{color:'#ddd', borderRadius:'12px'}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
-           Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
-           <br />
+           {/* Posted: <TimeAgo date={frontmatter.date} style={{color:''}} /> */}
+           
            {/* <Link to={`/category/${frontmatter.category}`}>Category:{frontmatter.category}</Link>
 
            <p>Tags: {frontmatter.tags.join(", ")}</p> */}
@@ -1279,7 +1279,7 @@ zindex:'1'
                 <div className="article-header panel" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:'', borderRadius:'12px'}}>
             <h1 className="headline" style={{color:'#ddd', borderRadius:'12px'}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
-           Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
+           {/* Posted: <TimeAgo date={frontmatter.date} style={{color:''}} /> */}
           {frontmatter.category} {frontmatter.tags}</div>
                 </header>
             )}
@@ -1306,7 +1306,7 @@ zindex:'1'
     <div className="article-header panel" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
             <h1 className="headline" style={{fontSize:''}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
-           Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
+           {/* Posted: <TimeAgo date={frontmatter.date} style={{color:''}} /> */}
           </div>
   </header>
               ) : (
@@ -1314,7 +1314,7 @@ zindex:'1'
                 <div className="article-header" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:''}}>
                 <h1 className="headline" style={{fontSize:''}}>{frontmatter.title}</h1>
                 {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
-               Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
+               {/* Posted: <TimeAgo date={frontmatter.date} style={{color:''}} /> */}
               </div>
               <GoBack />
       </header>

@@ -6,7 +6,7 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 import { ImPlay } from "react-icons/im"
 import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
-import TimeAgo from 'react-timeago'
+// import TimeAgo from 'react-timeago'
 
 const Tag = ({ data, pageContext }) => {
   const { tag } = pageContext
@@ -65,9 +65,9 @@ Play Multimedia
 {node.frontmatter.title}
 </h2>
 
-<p style={{minWidth:'', position:'', textAlign:'center', border:'0px solid red', fontSize:'70%'}}>
+{/* <p style={{minWidth:'', position:'', textAlign:'center', border:'0px solid red', fontSize:'70%'}}>
               <TimeAgo date={node.frontmatter.date}/>
-            </p>
+            </p> */}
             {/* <p>{node.excerpt}</p> */}
             </div>
             

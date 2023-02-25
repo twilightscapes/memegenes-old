@@ -12,13 +12,14 @@ youtubersuggestion2: "https://youtu.be/iiZnOlRPiE0"
 youtubersuggestion3: "https://youtu.be/24nttG5Lnio"
 youtubestart: "120"
 youtubeend: "138"
-youtubemute: true
+youtubemute: false
 audiostart: "20"
 audioend: "5000"
 audiotitle: "Liar Liar!"
 bumpertext: "Oh No, Ma Face!"
 liarliar: true
 youtubecontrols: false
+customcontrols: true
 youtubeautostart: false
 youtubeloop: true
 isnftforsale: false
@@ -30,7 +31,20 @@ featuredImage: /assets/kari-no-filter.webp
 svgImage: 
 scrollable: true
 nftdrop: "2023-02-09T10:00:00"
+clicktoplay: false
 contentinvideo: true
+viewerwarning: Viewer Discretion Strongly Advised
+marate: MA
+marating1: EW
+marating2: QA
+marating3: DQ
+marating4: TT
+maratingtx1: Eww!
+maratingtx2: Qrazy
+maratingtx3: Drama Queen
+maratingtx4: Tramp to Trump
+category: memes
+tags: [grifter, liar]
 ---
 <div class="contentinside lake1" style="">
 <img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;
@@ -58,6 +72,100 @@ opacity:0;
 ">Yeah well... you know... <br />you can put <span style="font-weight:bold;">vasoline on sandpaper</span> too,<br /> but in the end <span style="font-weight:bold;">it will still rub you raw!</span></div>
 </div>
 
+
+
+<style>
+
+@keyframes kariFilter {
+0%{opacity:0}
+25%{-webkit-backdrop-filter:blur(15px);backdrop-filter:blur(15px);opacity:.3}
+50%{-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);opacity:.5;transform:translateY(1%)}
+75%{-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);opacity:.4;transform:translateY(-1%)}
+to{-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);opacity:.2;transform:translateY(1%)}
+}
+
+
+.lake:after{animation:kariFilter 6s ease-in-out;animation-delay:1s;animation-direction:alternate;animation-iteration-count:infinite;aspect-ratio:4/3!important;border:0 solid red;content:" ";display:block;display:grid;left:2.5vw;max-height:58vh;opacity:0;place-content:center;position:fixed;top:3vh;width:73vw;z-index:0}
+
+
+  @keyframes question1 {
+	0% {  opacity:0;}
+	5%{ opacity:1;}
+	45%{opacity:1;}
+	51% {  opacity:0; }
+	100% {  opacity:0;}
+  }
+  
+  @keyframes bubbleBop1 {
+	0% {  opacity:0;}
+	5%{ opacity:1;}
+	50%{opacity:1;}
+	51% {  opacity:0; }
+	100% {  opacity:0;}
+  }
+
+
+.bubble {
+	position: relative;
+	font-family: sans-serif;
+	font-size: clamp(.7rem, 1.8vw, 2.4rem);
+	line-height: 110%;
+	min-width: 50vw;
+	background: rgba(255, 255, 255, 1);
+	text-shadow: 0 0 2x rgba(0, 0, 0, 1);
+	border-radius: 40px;
+	padding: 2vh 2vw;
+	text-align: center;
+	color: #000;
+  animation:question1;
+  filter:drop-shadow(0 0px 16px rgba(0, 0, 0, 1));
+  }
+  
+  .bubble-bottom-left::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 34px solid #fff;
+	border-right: 8px solid transparent;
+	border-top: 5px solid #fff;
+	border-bottom: 40px solid transparent;
+	left: 32px;
+	bottom: -44px;
+	opacity:1;
+  }
+
+  .bubble-bottom-right::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-right: 34px solid #fff;
+	border-left: 8px solid transparent;
+	border-top: 5px solid #fff;
+	border-bottom: 40px solid transparent;
+	right: 32px;
+	bottom: -44px;
+	opacity:1;
+  }
+
+ 
+  @media (max-width: 48rem) {
+	.bubble{
+		top:10% !important;
+	}
+	.bubble-bottom-right{top:13vh !important;}
+  }
+
+  
+
+    @media(max-width:48rem) {
+.lake:after{height:190px}
+}
+@media(min-width:1144px) {
+.lake:after{max-height:74vh}
+}
+    </style>
 
 <div class="contentbody" style="text-align:left !important; margin-top:0;">
 

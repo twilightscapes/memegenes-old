@@ -23,7 +23,7 @@ import { MdVolumeUp } from "react-icons/md"
 
 // import SearchSlider from "../components/search1"
 
-import styled from "styled-components"
+// import styled from "styled-components"
 import Social from "../components/social"
 import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
@@ -32,13 +32,7 @@ import Layout from "../components/siteLayout"
 
 
 
-const CustomBox = styled.div`
 
-.container21 section{
-  border:0px solid blue;
-}
-
-`
 
 
 
@@ -774,7 +768,7 @@ Click to play
   return (
 
     // TOP OF HOME
-    <CustomBox style={{}}>
+
     <Layout>
 {frontmatter.scrollable ? (
   <Helmet>
@@ -1167,7 +1161,7 @@ style={{fontSize:'clamp(1.2rem, 1.3vw, 2.2rem)'}}
 {/* end show footer */}
 
     </Layout>
-    </CustomBox>
+
   )
 }
 
