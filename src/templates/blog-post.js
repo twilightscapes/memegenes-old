@@ -639,7 +639,7 @@ Click to play
          height:'',
          display:'grid',
          placeContent:'center',
-         position:'fixed',
+         position:'absolute',
          aspectRatio:'16/9',
          top:'0',left:'0',right:'0',bottom:'0',
          zindex:'1'
