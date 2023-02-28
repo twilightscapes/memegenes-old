@@ -33,6 +33,7 @@ const SearchPage = ({ data }) => {
     })
     setFilteredPosts(filteredPosts)
   }
+  
 
   return (
 <Layout>

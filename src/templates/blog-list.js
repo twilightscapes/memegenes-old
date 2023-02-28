@@ -1,12 +1,12 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+import { graphql, Link, navigate } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/siteLayout"
 import useSiteMetadata from "../hooks/SiteMetadata"
 import { ImPlay } from "react-icons/im"
 import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
-import TimeAgo from 'react-timeago'
+// import TimeAgo from 'react-timeago'
 
 const BlogList = ({ data, pageContext }) => {
 
@@ -24,10 +24,10 @@ const BlogList = ({ data, pageContext }) => {
         ""
       )}
 
-      <div>
+      <div style={{maxHeight:'80vh'}}>
         <h1 style={{textAlign:'center'}}>Archive</h1>
 
-        <div className="horizontal-scroll panels sitegrad movingBG" style={{marginTop:'1vh'}}>
+        <div className="horizontal-scroll panels sitegrad movingBG" style={{marginTop:'1vh', paddingTop:'',}}>
     <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
 
@@ -42,14 +42,16 @@ const BlogList = ({ data, pageContext }) => {
               {/* Render featured image thumbnail if it exists */}
               {featuredImg && (
                 <Link to={node.fields.slug}>
-                  <Img fluid={featuredImg.childImageSharp.fluid} alt="" />
+                  <GatsbyImage image={featuredImg.childImageSharp.gatsbyImageData} alt="" style={{maxHeight:'60vh'}} />
+
+                  
                   
 
 
                   {node.frontmatter.youtuber ? (
 <Link to={node.frontmatter.slug} style={{}}>
-  <div className="spotlight" style={{maxHeight:''}}>
-<div className="posticons" style={{}}>
+  <div className="spotlight" style={{position:'absolute'}}>
+<div className="posticons" style={{bottom:''}}>
 <div style={{display:'flex', justifyContent:'space-around', gap:'2vw', color:'fff',}}>
 <FaImage className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
     <ImPlay className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
@@ -70,9 +72,9 @@ Play Multimedia
 {node.frontmatter.title}
 </h2>
 
-<p style={{minWidth:'', position:'', textAlign:'center', border:'0px solid red', fontSize:'70%'}}>
+{/* <p style={{minWidth:'', position:'', textAlign:'center', border:'0px solid red', fontSize:'70%'}}>
               <TimeAgo date={node.frontmatter.date}/>
-            </p>
+            </p> */}
             {/* <p>{node.excerpt}</p> */}
             </div>
 
@@ -92,22 +94,30 @@ Play Multimedia
       </div>
 
       {/* Render pagination links */}
-      <div style={{position:'fixed', bottom:'20px', width:'100vw',  background:'rgba(0, 0, 0, 0.7)', padding:'2vh 2vw', textAlign:'center', color:'#fff'}}>
-          {Array.from({ length: numPages }, (_, i) => {
-            const page = i + 1
-            const path = page === 1 ? "/archive" : `/archive/${page}`
-            return (
-              <Link
-                key={`pagination-link-${page}`}
-                to={path}
-                activeClassName="active"
-                style={{padding:'20px'}}
-              >
-                {page}
-              </Link>
-            )
-          })}
-        </div>
+<div style={{position:'fixed', bottom:'20px', width:'100vw',  background:'rgba(0, 0, 0, 0.7)', padding:'2vh 2vw', textAlign:'center', color:'#fff'}}>
+  <button onClick={() => navigate(pageContext.currentPage > 2 ? `/archive/${pageContext.currentPage - 1}` : '/archive')} disabled={pageContext.currentPage === 1}>
+    Previous
+  </button>
+  {Array.from({ length: numPages }, (_, i) => {
+    const page = i + 1
+    const path = page === 1 ? "/archive" : `/archive/${page}`
+    return (
+      <Link
+        key={`pagination-link-${page}`}
+        to={path}
+        activeClassName="active"
+        style={{padding:'20px'}}
+      >
+        {page}
+      </Link>
+    )
+  })}
+  <button onClick={() => navigate(`/archive/${pageContext.currentPage + 1}`)} disabled={pageContext.currentPage === numPages}>
+    Next
+  </button>
+</div>
+
+
 
     </Layout>
   )
@@ -117,10 +127,10 @@ Play Multimedia
 
 
 export const query = graphql`
-  query($skip: Int!,) {
+  query($skip: Int!) {
     allMarkdownRemark(
-      sort: {frontmatter: {date: DESC}}
-      filter: {frontmatter: {template: {eq: "blog-post"}}}
+      sort: { frontmatter: { date: DESC } }
+      filter: { frontmatter: { template: { eq: "blog-post" } } }
       limit: 10
       skip: $skip
     ) {
@@ -134,11 +144,11 @@ export const query = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             tags
+            youtuber
+            slug
             featuredImage {
               childImageSharp {
-                fluid(maxWidth: 500) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
               }
             }
           }
@@ -146,7 +156,7 @@ export const query = graphql`
       }
     }
   }
-  
-`
+`;
+
 
 export default BlogList
