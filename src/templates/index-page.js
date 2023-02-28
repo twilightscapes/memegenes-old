@@ -940,7 +940,7 @@ Click to play
             <div className="flexcheek mob print" style={{marginTop:'', padding:'1rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
   background:'rgba(0,0,0,0.40)', 
   backdropFilter:'blur(12px)',
-  borderRadius:'10px'}}>
+  borderRadius:'10px', textAlign:'center'}}>
   
      
             {/* <h2 className="tagline1">
