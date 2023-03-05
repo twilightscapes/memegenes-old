@@ -11,7 +11,7 @@
     "twitterUsername": "memegenesx",
     "titleDefault": "MemeGenes",
     "showSocial": true,
-    "showResume": true,
+    "showResume": false,
     "showInfo": true,
     "showNav2": true,
     "postcount": "1",
@@ -31,7 +31,7 @@
     "image": "/assets/newspaper.webp",
     "description": "Do these memes make my ass look fat?!?!?!?!",
     "icon512": "/assets/icon.svg",
-    "showSkills": true
+    "showSkills": false
   },
   "ga": "UA-89654528-2",
   "comments": "5639031584980992-proj"
