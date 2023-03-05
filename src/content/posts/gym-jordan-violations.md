@@ -67,7 +67,7 @@ animation: question1 5s ease-in;
 animation-delay: 8s;
 animation-direction: forwards;
 animation-iteration-count:1;
-opacity:0;">I do like to watch</div>
+opacity:0;">I do like to watch!</div>
 
 
 </div>
