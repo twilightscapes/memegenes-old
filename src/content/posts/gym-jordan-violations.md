@@ -53,7 +53,7 @@ animation-delay: 4s;
 animation-iteration-count:infinite;
 " /> -->
 
-<div style="width:80%; height:30%; border:0px solid red; margin:0 auto; position:absolute; top:0; left:10vw; -webkit-backdrop-filter:blur(22px); backdrop-filter:blur(22px); background:rgba(0,0,0,0);"></div>
+<div style="width:80%; height:35%; border:0px solid red; margin:0 auto; position:absolute; top:0; left:10vw; -webkit-backdrop-filter:blur(22px); backdrop-filter:blur(22px); background:rgba(0,0,0,0);"></div>
 <div class="bubble bubble-bottom-left" style="position:absolute; width:; top:45%; left:15vw; display:flex; justify-content:center;backdrop-filter: blur(6px); font-size:110%;
 animation: question1 5s ease-in;
 animation-delay: 3s;
