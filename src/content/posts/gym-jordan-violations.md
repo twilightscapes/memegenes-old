@@ -59,7 +59,7 @@ animation: question1 5s ease-in;
 animation-delay: 3s;
 animation-direction: forwards;
 animation-iteration-count:1;
-opacity:0;">Thanks for the Intel, J-Dawg! </div>
+opacity:0;">I make shit up for a living while trying to get on TV as much as I can! </div>
 
 
 <div class="bubble bubble-bottom-left" style="position:absolute; width:; top:45%; left:15vw; display:flex; justify-content:center;backdrop-filter: blur(6px); font-size:110%;
@@ -67,7 +67,7 @@ animation: question1 5s ease-in;
 animation-delay: 8s;
 animation-direction: forwards;
 animation-iteration-count:1;
-opacity:0;">Yeah, he's my Little Bitch... </div>
+opacity:0;">I do like to watch</div>
 
 
 </div>
