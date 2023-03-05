@@ -1415,7 +1415,7 @@ Click to play original video
       <p style={{textAlign:'left'}}>
         <strong>*This is a parody website meant for education and entertainment purposes.</strong> <br /><br />
         All characters, and events portrayed in this production are fictitious or are being portrayed in a satirical manner.<br /><br />There is no identification with actual persons (living or deceased), <br />places, buildings, and/or products. There is no harm/insult intended and/or none should be inferred. 
-        <br /><br /> No celebrities were harmed.
+        <br /><br /> No Celebrities or Politicians were harmed.
 
         <br /><br />
         Video footage public youtube.com | Some imagery provided from <a rel="noopener noreferrer" href="https://www.flickr.com/photos/donkeyhotey/" target="_blank" >DonkeyHotey</a>, Wikipedia and other public sourced materials.

@@ -12,7 +12,7 @@ youtubersuggestion2:
 youtubersuggestion3: 
 youtubestart: "13"
 youtubeend: "48"
-youtubemute: false
+youtubemute: true
 audiostart: "20"
 audioend: "5000"
 audiotitle: 
@@ -20,8 +20,8 @@ bumpertext: "Like two catepillars fighting for a hole in the dirt"
 liarliar: true
 youtubecontrols: false
 clicktoplay: false
-customcontrols: true
-youtubeautostart: false
+customcontrols: false
+youtubeautostart: true
 youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
@@ -111,33 +111,33 @@ opacity:0;
 
 ## Kimberly launches her new makeup and makeup application lines 
 
-Kimberly Guilfoyle is a well-known political commentator, attorney, and television news personality who has been making headlines for years. Her career has taken her from working as a prosecutor to serving as a top Fox News anchor and contributor. However, Guilfoyle has also been the subject of criticism for her past relationships and some of her controversial comments.
+Kimberly is a well-known political commentator, attorney, and television news personality who has been making headlines for years. Her career has taken her from working as a prosecutor to serving as a top Fox News anchor and contributor. However, Kimberly has also been the subject of criticism for her past relationships and some of her controversial comments.
 
-## Guilfoyle's Career at Fox News
+## Kimberly's Career at Fox News
 
-Kimberly Guilfoyle began her career as a prosecutor in San Francisco in the late 1990s. After several years in the legal field, she began working in television news, first as a legal analyst for CNN and then as a host and correspondent for Court TV.
+Kimberly began her career as a prosecutor in San Francisco in the late 1990s. After several years in the legal field, she began working in television news, first as a legal analyst for CNN and then as a host and correspondent for Court TV.
 
-In 2006, Guilfoyle joined Fox News as a legal analyst and contributor. She quickly became a regular guest on several shows, including "The O'Reilly Factor" and "Hannity & Colmes." In 2011, she joined the cast of "The Five," a daytime talk show that covers politics and current events.
+In 2006, Kimberly joined Fox News as a legal analyst and contributor. She quickly became a regular guest on several shows, including "The O'Reilly Factor" and "Hannity & Colmes." In 2011, she joined the cast of "The Five," a daytime talk show that covers politics and current events.
 
-During her time at Fox News, Guilfoyle was known for her conservative political views and her staunch support of President Donald Trump. She frequently appeared on cable news shows and was a popular speaker at conservative events.
+During her time at Fox News, Kimberly was known for her conservative political views and her staunch support of President Donald Trump. She frequently appeared on cable news shows and was a popular speaker at conservative events.
 
-## Criticism of Guilfoyle's Past Relationships
+## Criticism of Kimberly's Past Relationships
 
-Guilfoyle has been married twice and has been in several high-profile relationships throughout her career. Her first marriage was to Gavin Newsom, the former mayor of San Francisco who is now the Governor of California. The couple divorced in 2006.
+Kimberly has been married twice and has been in several high-profile relationships throughout her career. Her first marriage was to Gavin Newsom, the former mayor of San Francisco who is now the Governor of California. The couple divorced in 2006.
 
-In 2018, Guilfoyle began dating Donald Trump Jr., the son of then-President Donald Trump. The couple's relationship drew criticism from some who felt that Guilfoyle's association with the Trump family was inappropriate for a journalist. Guilfoyle left Fox News in 2018 to work for America First Policies, a pro-Trump advocacy group.
+In 2018, Kimberly began dating Donald Trump Jr., the son of then-President Donald Trump. The couple's relationship drew criticism from some who felt that Kimberly's association with the Trump family was inappropriate for a journalist. Kimberly left Fox News in 2018 to work for America First Policies, a pro-Trump advocacy group.
 
-Critics have also pointed to Guilfoyle's past relationships as evidence of her controversial personal life. In 2004, she was accused of sexual harassment by a former assistant who claimed that Guilfoyle had repeatedly made inappropriate comments and shown her pictures of naked men. Guilfoyle denied the allegations, and the case was settled out of court.
+Critics have also pointed to Kimberly's past relationships as evidence of her controversial personal life. In 2004, she was accused of sexual harassment by a former assistant who claimed that Kimberly had repeatedly made inappropriate comments and shown her pictures of naked men. Kimberly denied the allegations, and the case was settled out of court.
 
-## Controversial Comments by Guilfoyle
+## Controversial Comments by Kimberly
 
-Guilfoyle has been criticized for several controversial comments she has made throughout her career. In 2018, she drew backlash for suggesting that immigrants are a danger to the United States. "They're not sending their best," she said during a speech at a rally. "They're sending people that have lots of problems, and they're bringing those problems with us. They're bringing drugs. They're bringing crime. They're rapists. And some, I assume, are good people."
+Kimberly has been criticized for several controversial comments she has made throughout her career. In 2018, she drew backlash for suggesting that immigrants are a danger to the United States. "They're not sending their best," she said during a speech at a rally. "They're sending people that have lots of problems, and they're bringing those problems with us. They're bringing drugs. They're bringing crime. They're rapists. And some, I assume, are good people."
 
-Guilfoyle's comments were widely condemned as racist and xenophobic. She later defended her remarks, saying that she was referring only to criminals who cross the border illegally.
+Kimberly's comments were widely condemned as racist and xenophobic. She later defended her remarks, saying that she was referring only to criminals who cross the border illegally.
 
-In 2020, Guilfoyle also made headlines for her speech at the Republican National Convention, where she delivered a fiery address that praised President Trump and criticized Democrats. Guilfoyle's speech was criticized by some as over-the-top and "unhinged," with many questioning her delivery and demeanor.
+In 2020, Kimberly also made headlines for her speech at the Republican National Convention, where she delivered a fiery address that praised President Trump and criticized Democrats. Kimberly's speech was criticized by some as over-the-top and "unhinged," with many questioning her delivery and demeanor.
 
-Kimberly Guilfoyle has had a long and varied career in politics and television news. While she has been praised for her conservative views and legal expertise, she has also been the subject of criticism for her past relationships and controversial comments. Despite the controversy surrounding her, Guilfoyle remains a popular figure in conservative circles and continues to be a prominent voice in the media.
+Kimberly has had a long and varied career in politics and television news. While she has been praised for her conservative views and legal expertise, she has also been the subject of criticism for her past relationships and controversial comments. Despite the controversy surrounding her, Kimberly remains a popular figure in conservative circles and continues to be a prominent voice in the media.
 
 
 
