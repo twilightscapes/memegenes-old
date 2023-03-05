@@ -26,7 +26,7 @@ comments: true
 shareable: true
 underlayImage: "/assets/transparent.png"
 featuredImage: /assets/murica-promo.png
-svgImage: /assets/murica-2.svg
+svgImage: /assets/murica.svg
 scrollable: true
 nftdrop: "2023-02-09T10:00:00"
 contentinvideo: true
