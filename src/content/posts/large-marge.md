@@ -225,7 +225,7 @@ li h2{
 <div class="contentbody" style="text-align:left !important; margin-top:0;">
 
 
-Marjorie Taylor Greene has a history of promoting conspiracy theories, making anti-Semitic and racist comments, supporting violence, denying climate change, opposing LGBTQ+ rights, lacking legislative accomplishments, using inflammatory rhetoric, being disrespectful to colleagues, and having ties to extremist groups, making her unsuitable for a vote.
+Ol' Three Toes has a history of promoting conspiracy theories, making anti-Semitic and racist comments, supporting violence, denying climate change, opposing LGBTQ+ rights, lacking legislative accomplishments, using inflammatory rhetoric, being disrespectful to colleagues, and having ties to extremist groups, making her unsuitable for a vote.
 
 <div class="" style="font-size:clamp(2rem, 3vw, 3.8rem); padding:0; text-align:center; width:80%; height:; overflow:visible; margin:5vh auto; border-radius:12px;">
 
@@ -252,52 +252,52 @@ She has ties to extremist groups like the Proud Boys and the Oath Keepers.
 <li>
 
 ## Conspiracy Theories:
-Marjorie Taylor Greene has a history of promoting and spreading baseless conspiracy theories such as QAnon, which is associated with far-right extremism and has been linked to numerous instances of violence and mental illness.</li>
+Ol' Three Toes has a history of promoting and spreading baseless conspiracy theories such as QAnon, which is associated with far-right extremism and has been linked to numerous instances of violence and mental illness.</li>
 
 <li>
 
 ## Anti-Semitic Views:
-Greene has made multiple anti-Semitic remarks, including suggesting that Jewish people were responsible for recent wildfires in California using Jewish-made space lasers, and claiming that Jewish billionaire George Soros was a Nazi collaborator during World War II.</li>
+Marge has made multiple anti-Semitic remarks, including suggesting that Jewish people were responsible for recent wildfires in California using Jewish-made space lasers, and claiming that Jewish billionaire George Soros was a Nazi collaborator during World War II.</li>
 
 <li>
 
 ## Racist Comments:
-Greene has made numerous racist comments, including claiming that African Americans "are held slaves to the Democratic Party," and stating that Muslim members of Congress should not be allowed to serve in the U.S. government.</li>
+Marge has made numerous racist comments, including claiming that African Americans "are held slaves to the Democratic Party," and stating that Muslim members of Congress should not be allowed to serve in the U.S. government.</li>
 
 <li>
 
 ## Support for Violence:
-Greene has expressed support for violence and harassment, including advocating for the execution of Democratic politicians, and harassing survivors of school shootings.</li>
+Marge has expressed support for violence and harassment, including advocating for the execution of Democratic politicians, and harassing survivors of school shootings.</li>
 
 <li>
 
 ## Climate Change Denial:
-Greene has repeatedly denied the scientific consensus on climate change, calling it a "hoax" and "fake news," despite overwhelming evidence to the contrary.</li>
+Marge has repeatedly denied the scientific consensus on climate change, calling it a "hoax" and "fake news," despite overwhelming evidence to the contrary.</li>
 
 <li>
 
 ## Opposes LGBTQ+ Rights:
-Greene has a history of opposing LGBTQ+ rights, including co-sponsoring a bill that would have prohibited same-sex marriage.</li>
+Marge has a history of opposing LGBTQ+ rights, including co-sponsoring a bill that would have prohibited same-sex marriage.</li>
 
 <li>
 
 ## Lack of Accomplishments:
-Greene has not sponsored or co-sponsored any legislation that has become law during her time in office, despite being in office since January 2021.</li>
+Marge has not sponsored or co-sponsored any legislation that has become law during her time in office, despite being in office since January 2021.</li>
 
 <li>
 
 ## Inflammatory Rhetoric:
-Greene has a history of using inflammatory rhetoric that has been widely criticized by both Democrats and Republicans, including comparing COVID-19 safety measures to Nazi Germany. Her idol is Donald Trump and she often uses his tactics and methods to get what she wants.</li>
+Marge has a history of using inflammatory rhetoric that has been widely criticized by both Democrats and Republicans, including comparing COVID-19 safety measures to Nazi Germany. Her idol is Donald Trump and she often uses his tactics and methods to get what she wants.</li>
 
 <li>
 
 ## Disrespectful Behavior:
-Greene has been criticized for her behavior towards her colleagues in Congress, including shouting at and insulting fellow members of Congress in public. Most recently she embarassed herself and the entire House of Congress by yelling during the SOTU Address, while dressed in a Hooker costume apparently as some sort of "statement".</li>
+Marge has been criticized for her behavior towards her colleagues in Congress, including shouting at and insulting fellow members of Congress in public. Most recently she embarassed herself and the entire House of Congress by yelling during the SOTU Address, while dressed in a Hooker costume apparently as some sort of "statement".</li>
 
 <li>
 
 ## Ties to Extremist Groups:
-Greene has been linked to extremist groups, including the Proud Boys and the Oath Keepers, which have been associated with violence and domestic terrorism.  She is very well known among White Power groups and was even nicknamed "Fire Hole" by other Gym-goers. She often jokes that all the guys will make fun of her when she walks by. Calling out "Fire in the Hole!", she just laughs like an innocent school girl, but the truth is that she has a proven track record of effectively servicing leading small militia groups.</li>
+Marge has been linked to extremist groups, including the Proud Boys and the Oath Keepers, which have been associated with violence and domestic terrorism.  She is very well known among White Power groups and was even nicknamed "Fire Hole" by other Gym-goers. She often jokes that all the guys will make fun of her when she walks by. Calling out "Fire in the Hole!", she just laughs like an innocent school girl, but the truth is that she has a proven track record of effectively servicing leading small militia groups.</li>
 
 
 </ol>
