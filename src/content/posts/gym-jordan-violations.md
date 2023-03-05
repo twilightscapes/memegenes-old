@@ -64,10 +64,18 @@ opacity:0;">I make shit up for a living while trying to get on TV as much as I c
 
 <div class="bubble bubble-bottom-left" style="position:absolute; width:; top:45%; left:15vw; display:flex; justify-content:center;backdrop-filter: blur(6px); font-size:110%;
 animation: question1 5s ease-in;
-animation-delay: 8s;
+animation-delay: 10s;
 animation-direction: forwards;
 animation-iteration-count:1;
 opacity:0;">I do like to watch!</div>
+
+
+<div class="bubble bubble-bottom-left" style="position:absolute; width:; top:45%; left:15vw; display:flex; justify-content:center;backdrop-filter: blur(6px); font-size:110%;
+animation: question1 6s ease-in;
+animation-delay: 15s;
+animation-direction: forwards;
+animation-iteration-count:1;
+opacity:0;">I've never passed one piece of useful leglislation - EVER!</div>
 
 
 </div>
