@@ -53,29 +53,98 @@ animation-delay: 4s;
 animation-iteration-count:infinite;
 " /> -->
 
-
-<!-- <div class="bubble bubble-bottom-left" style="position:absolute; width:; top:30%; left:20vw; display:flex; justify-content:center;backdrop-filter: blur(6px);
-animation: bubbleBop 9s ease-in;
-animation-delay: 6s;
+<div style="width:80%; height:30%; border:0px solid red; margin:0 auto; position:absolute; top:0; left:10vw; -webkit-backdrop-filter:blur(22px); backdrop-filter:blur(22px); background:rgba(0,0,0,0);"></div>
+<div class="bubble bubble-bottom-left" style="position:absolute; width:; top:45%; left:15vw; display:flex; justify-content:center;backdrop-filter: blur(6px); font-size:110%;
+animation: question1 5s ease-in;
+animation-delay: 3s;
 animation-direction: forwards;
 animation-iteration-count:1;
-opacity:0;
-"><span style="font-size:120%; font-weight:bold;"><span style="font-size:160%; font-weight:bold;"></span></div>
+opacity:0;">Thanks for the Intel, J-Dawg! </div>
 
 
-<div class="bubble bubble-bottom-right" style="position:absolute; width:50vw; top:50%; right:20vw; display:block; justify-content:center; font-size:110%;backdrop-filter: blur(6px);
-animation: bubbleBop1 10s ease-in;
-animation-delay:8s;
+<div class="bubble bubble-bottom-left" style="position:absolute; width:; top:45%; left:15vw; display:flex; justify-content:center;backdrop-filter: blur(6px); font-size:110%;
+animation: question1 5s ease-in;
+animation-delay: 8s;
 animation-direction: forwards;
 animation-iteration-count:1;
-opacity:0;
-"><span style="font-weight:bold;"></span></div> -->
+opacity:0;">Yeah, he's my Little Bitch... </div>
 
 
 </div>
 
 <style>
 
+
+ @keyframes question1 {
+	0% {  opacity:0;}
+	5%{ opacity:1;}
+	50%{opacity:1;}
+	51% {  opacity:0; }
+	100% {  opacity:0;}
+  }
+  
+  @keyframes bubbleBop1 {
+	0% {  opacity:0;}
+	5%{ opacity:1;}
+	50%{opacity:1;}
+	51% {  opacity:0; }
+	100% {  opacity:0;}
+  }
+
+
+.bubble {
+	position: relative;
+	font-family: sans-serif;
+	font-size: clamp(.7rem, 1.8vw, 2.4rem);
+	line-height: 110%;
+	min-width: 50vw;
+	background: rgba(255, 255, 255, 1);
+	text-shadow: 0 0 2x rgba(0, 0, 0, 1);
+	border-radius: 40px;
+	padding: 2vh 2vw;
+	text-align: center;
+	color: #000;
+  animation:question1;
+  filter:drop-shadow(0 0px 16px rgba(0, 0, 0, 1));
+  }
+  
+  .bubble-bottom-left::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 34px solid #fff;
+	border-right: 8px solid transparent;
+	border-top: 5px solid #fff;
+	border-bottom: 40px solid transparent;
+	left: 32px;
+	bottom: -44px;
+	opacity:1;
+  }
+
+  .bubble-bottom-right::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-right: 34px solid #fff;
+	border-left: 8px solid transparent;
+	border-top: 5px solid #fff;
+	border-bottom: 40px solid transparent;
+	right: 32px;
+	bottom: -44px;
+	opacity:1;
+  }
+
+ 
+  @media (max-width: 48rem) {
+	.bubble{
+		top:10% !important;
+	}
+	.bubble-bottom-right{top:13vh !important;}
+  }
+
+  
 @keyframes kariFilter1{
 	0% { 
 		opacity:0; }
