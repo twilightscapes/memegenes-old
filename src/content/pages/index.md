@@ -71,7 +71,7 @@ template: index-page
 youtubemute: true
 description: A rogue one, out there to change the world, one meme at a time. 
 svgzindex: ""
-profTitle: Meme Genes
+profTitle: MG Reports
 coverletter:
   coverText: About Meme Genes
   coverLink: /about
