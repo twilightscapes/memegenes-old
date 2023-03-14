@@ -12,7 +12,7 @@
     "titleDefault": "MG Reports",
     "showSocial": true,
     "showResume": false,
-    "showInfo": true,
+    "showInfo": false,
     "showNav2": true,
     "postcount": "1",
     "showPopup": false,

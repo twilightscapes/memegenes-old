@@ -137,7 +137,7 @@ date={Date.now() + 6000} className="countdown"> */}
 
 <div className="panel" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'10px auto', maxWidth:'80vw', gap:'.4vw', height:'100%', textAlign:'left', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', padding:'1vh 2vw', borderRadius:'8px', color:'#fff' }}>
 
-<h2 className="title" style={{fontSize:'clamp(1rem, 2vw, 3rem)', }}>
+<h2 className="title1" style={{ }}>
   <Link 
     to={data.frontmatter.slug}
   >

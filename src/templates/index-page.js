@@ -800,7 +800,7 @@ Click to play
 
 
 {showNav ? (
-  <div id="top" className="spacer" style={{height:'70px', border:'0px solid yellow'}}></div>
+  <div id="top" className="spacer" style={{height:'80px', border:'0px solid yellow'}}></div>
       ) : (
         ""
       )}
@@ -831,7 +831,7 @@ Click to play
 
 
 {showPosts ? (
-  <section id="showPosts" style={{marginTop:'1vh'}}>
+  <section id="showPosts" style={{marginTop:''}}>
   <div style={{position:'relative', background:'none', maxHeight:'', overflow:'', width:'100vw'}}>
 <ScrollAnimation className="animate" animateIn="bounceInDown" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={false} > 
 

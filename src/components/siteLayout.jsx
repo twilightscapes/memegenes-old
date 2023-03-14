@@ -20,7 +20,7 @@ import SearchIcon from "../../static/assets/search"
 import useSiteMetadata from "../hooks/SiteMetadata"
 
 
-import ScrollAnimation from 'react-animate-on-scroll'
+
 import { BiGridHorizontal } from "react-icons/bi"
 import { MdOutlineRectangle } from "react-icons/md"
 
@@ -138,7 +138,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
   return (
-    <div style={{display:''}}> 
+
 <>
 
 
@@ -310,6 +310,8 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 )}
 
 
+<Link aria-label="About" className="navbar-item" to="/about" style={{paddingRight:'',}}>{menu1}</Link> 
+
 
 
 
@@ -343,6 +345,8 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   ""
 )}
 
+<Link aria-label="Contact" className="navbar-item" to="/contact" style={{paddingRight:'',}}>Contact</Link> 
+
 
 
 {/* <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
@@ -352,21 +356,22 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   </li> */}
 
 
-<li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'0px 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
-   <Link aria-label="Search MemeGenes" className="sherlock" to="/search/" style={{display:'flex',justifyContent:'center', alignItems:'center', marginTop:'0px'}}>
+<li className="carto crypto" style={{border:'none', display:'flex', flexDirection:'column', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'0px 0 0 0' , background:'rgba(0,0,0,0)', color:'' }}>
+   <Link aria-label="Search MemeGenes"  className="themetext" to="/search/" style={{display:'flex',justifyContent:'center', alignItems:'center', marginTop:'0px'}}>
     <SearchIcon style={{width:'3vh', height:'3vw'}} />
+    search
    </Link>
         </li>
 
 
 
-  <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'0 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important', alignItems:'center', }}>
-      <Theme  style={{color:'red !important'}} />
-
+  <li className="carto crypto" style={{border:'none',}}>
+      <Theme  style={{}} />
         </li>
 
-        <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'0 0 0 0' , background:'rgba(0,0,0,0)', color:'inherit', alignItems:'center', }}>
-    <button onClick={toggleArchiveView}  style={{fontSize:'1rem', color:'inherit', fontFamily:'sans-serif'}}>
+  
+  <li className="carto crypto" style={{border:'none',  }}>
+    <button className="themetext" onClick={toggleArchiveView}>
       {archiveView === 'grid' ? <MdOutlineRectangle  style={{width:'3vh', height:'3vw'}} /> : <BiGridHorizontal  style={{width:'3vh', height:'3vw'}} /> }
       {archiveView === 'grid' ? 'swipe' : 'grid'}
     </button>
@@ -374,7 +379,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
  
 
-    <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'center', gap:'', verticalAlign:'center', padding:'0 0 0 0' , background:'rgba(0,0,0,0)', color:'red !important' }}>
+    <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'center', gap:'', verticalAlign:'center', padding:'0 0 0 0' , background:'rgba(0,0,0,0)', color:'' }}>
    <Link aria-label="Enter Full Screen Mode" className="sherlock" to="/search/" style={{display:'flex',justifyContent:'center', alignItems:'center', marginTop:'', cursor:'pointer'}}>
    <Fullscreen />
    </Link>
@@ -542,7 +547,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
    </Link>
     
 
-<Theme  style={{color:'red !important'}} />
+<Theme  style={{}} />
 
 
    <Link aria-label="Enter Full Screen Mode" className="sherlock" to="/search/" style={{display:'flex',justifyContent:'space-around', marginTop:'5px'}}>
@@ -616,7 +621,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
       {/* <Footer /> */}
       
       </>
-    </div>
+
     
     );
   };
