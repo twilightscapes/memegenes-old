@@ -49,43 +49,46 @@ body.scroll{overflow-x:hidden!important;overflow-y:scroll!important}
   .grid-container .posticons, .grid-container .spotlight{display:none !important;}
   
 
-  @media(max-width:48rem) {
-    .grid-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        grid-template-columns: none;
-        grid-gap: none;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-    //   .grid-container .panels > *{margin: 0 0 0 0 !important;}
-
-    }
+//   @media(max-width:48rem) {
+//     .grid-container {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//         text-align: center;
+//         grid-template-columns: none;
+//         grid-gap: none;
+//         list-style: none;
+//         padding: 0;
+//         margin: 0;
+//       }
 
 
 
+//     }
 
 
-.grid-container{column-gap:1.5em;margin:0 auto;max-width:90%}
-.magrid-containersonry *{border-radius:12px;display:inline-block;margin:0 0 1.5em;width:100%}
+
+
+
+
+
+.grid-container{column-gap:2em; margin:0 auto; max-width:96%; }
+.grid-container *{ display:inline-block; width:100%}
 
 @media only screen and (min-width:1024px) {
-.grid-container{column-count:3}
+.grid-container{column-count:3;}
 }
-@media only screen and (max-width:1023px)and (min-width:768px) {
+@media only screen and (max-width:1023px) and (min-width:768px) {
 .grid-container{column-count:2}
 }
-@media only screen and (max-width:767px)and (min-width:540px) {
+@media only screen and (max-width:767px) and (min-width:540px) {
 .grid-container{column-count:1}
 }
 
+.grid-container article{ flex-wrap: none; display: grid;}
 
-.spacer{display:block; height:12vh !important;}
+// .spacer{display:block; height:12vh !important;}
 
 .sliderSpacer{display:none;}
 .horizontal-scroll .sliderSpacer{display:block !important; height:50%; padding-top:50%; }
@@ -94,7 +97,7 @@ body.scroll{overflow-x:hidden!important;overflow-y:scroll!important}
 
 #menu,.font,.full-width-image:after,.h1,.h2,.h3,.h4,.header .menu-icon:before,.horizontal-scroll:before,.intro:after,.intro:before,.scrolldown,h1,h2,h3,h4,input.special{font-family:var(--theme-ui-colors-fontFamily),Sans-Serif!important}
 
-#posts article{color:rgba(238,208,254,.808);margin-bottom:4vh}
+
 
 
 

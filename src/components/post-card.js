@@ -52,16 +52,8 @@ const PostCard = ({ data }) => (
 
   <article
     className="post-card1"
-    style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'0 0' }}
+    style={{}}
   >
-
-
-
-
-
-
-
-
 
     {data.frontmatter.featuredImage ? (
       <Link to={data.frontmatter.slug}>
@@ -105,7 +97,7 @@ Play Multimedia
 
 
 
-<div className="post-content" style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'0', margin:'0 auto'}}>
+<div className="post-content" style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'0', margin:'0 auto 0 auto'}}>
 
 
 
@@ -135,7 +127,7 @@ date={Date.now() + 6000} className="countdown"> */}
           )}
 
 
-<div className="panel" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'10px auto', maxWidth:'80vw', gap:'.4vw', height:'100%', textAlign:'left', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', padding:'1vh 2vw', borderRadius:'8px', color:'#fff' }}>
+<div className="panel" style={{display:'flex', justifyContent:'space-around', alignItems:'center', margin:'0 auto 2vh auto', maxWidth:'80vw', gap:'', height:'', textAlign:'left', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', padding:'1vh 2vw', borderRadius:'8px', color:'#fff' }}>
 
 <h2 className="title1" style={{ }}>
   <Link 

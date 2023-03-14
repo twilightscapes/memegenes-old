@@ -800,7 +800,7 @@ Click to play
 
 
 {showNav ? (
-  <div id="top" className="spacer" style={{height:'80px', border:'0px solid yellow'}}></div>
+  <div id="top" className="spacer" style={{height:'70px', border:'0px solid yellow'}}></div>
       ) : (
         ""
       )}
