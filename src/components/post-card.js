@@ -50,7 +50,7 @@ const PostCard = ({ data }) => (
 
 
 
-  <article
+  <div
     className="post-card1"
     style={{}}
   >
@@ -127,13 +127,13 @@ date={Date.now() + 6000} className="countdown"> */}
           )}
 
 
-<div className="panel" style={{display:'flex', justifyContent:'space-around', alignItems:'center', margin:'0 auto 2vh auto', maxWidth:'80vw', gap:'', height:'', textAlign:'left', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', padding:'1vh 2vw', borderRadius:'8px', color:'#fff' }}>
-
-<h2 className="title1" style={{ }}>
-  <Link 
+<div className="panel" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'10px auto', maxWidth:'80vw', gap:'.4vw', height:'', textAlign:'left', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'8px', color:'#fff' }}>
+<Link 
     to={data.frontmatter.slug}
   >
-    {data.frontmatter.title}
+<h2 className="title1" style={{ }}>
+  
+    {data.frontmatter.title}postcard
      {/* - <Countdown date={Date.now() + 60000} renderer={renderer} precision={0} intervalDelay={0} zeroPadTime={0} />  */}
     {/* <Countdown
 date={Date.now() + 60000} className="countdown">
@@ -144,9 +144,9 @@ date={Date.now() + 60000} className="countdown">
     renderer={props => ({ hours, minutes, seconds })}
 <Completionist />
 </Countdown> */}
-
-  </Link>
 </h2>
+  </Link>
+
 
 
 {/* <p style={{position:'', textAlign:'center', border:'0px solid red', fontSize:'70%', minWidth:'100px'}}>
@@ -159,7 +159,7 @@ date={Date.now() + 60000} className="countdown">
 
 </div>
 
-  </article>
+  </div>
 
 )
 
