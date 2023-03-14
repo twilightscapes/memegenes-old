@@ -235,8 +235,7 @@ const YoutubeLoop = frontmatter.youtubeloop
 const ClickToPlay = frontmatter.clicktoplay
 
 
-  // Retrieve the selected option from local storage
-  const archiveView = localStorage.getItem('archiveView');
+
 
   useEffect(() => {
     // Apply the selected option on page load
@@ -269,6 +268,8 @@ const ClickToPlay = frontmatter.clicktoplay
     localStorage.setItem('archiveView', 'swipe');
   }
 
+    // Retrieve the selected option from local storage
+    const archiveView = localStorage.getItem('archiveView');
 
 
 // const iframeUrl = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=" + frontmatter.youtubeautostart + "&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=" + frontmatter.youtubeloop + "&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
