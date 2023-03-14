@@ -74,14 +74,7 @@ const Layout = ({ children }) => {
   localStorage.setItem('archiveView', 'swipe');
   };
 
-  const isFirefox = navigator.userAgent.includes('Firefox');
-  if (isFirefox) {
-    const elements = document.querySelectorAll('.contentpanel');
-    elements.forEach(el => {
-      el.classList.add('grid-container');
-      el.classList.remove('horizontal-scroll', 'panels');
-    });
-  }
+
 
 
   const toggleArchiveView = () => {
