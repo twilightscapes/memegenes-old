@@ -19,10 +19,12 @@ const Tag = ({ data, pageContext }) => {
 
   const { showNav } = useSiteMetadata()
 
-  const [archiveView, setArchiveView] = useState('');
+
 
 
   
+  const [archiveView, setArchiveView] = useState('');
+
   useEffect(() => {
     // Retrieve the selected option from local storage
     const archiveView = localStorage.getItem('archiveView');
@@ -55,6 +57,9 @@ const Tag = ({ data, pageContext }) => {
       el.classList.remove('grid-container');
       el.classList.add('horizontal-scroll', 'panels');
     });
+
+  // Scroll to the top of the page
+  window.scrollTo(0, 0);
 
     // Store the selected option in local storage
     localStorage.setItem('archiveView', 'swipe');

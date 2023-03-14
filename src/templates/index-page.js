@@ -273,6 +273,9 @@ const ClickToPlay = frontmatter.clicktoplay
       el.classList.add('horizontal-scroll', 'panels');
     });
 
+  // Scroll to the top of the page
+  window.scrollTo(0, 0);
+
     // Store the selected option in local storage
     localStorage.setItem('archiveView', 'swipe');
   };
