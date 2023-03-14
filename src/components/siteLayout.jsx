@@ -178,8 +178,9 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 {showNav ? (
+<div id="menu" className="menu print panel" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10',  color:'', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center', borderRadius:'0',  }}>
 
-<ul sx={navStyle} id="menu" className="menu print panel" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center',  color:'', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center', borderRadius:'0', minHeight:'70px' }}>
+<ul sx={navStyle} style={{display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center',maxHeight:'70px', alignItems:'center'}}>
       
 
 
@@ -350,42 +351,43 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   </li> */}
 
 
-<li className="carto crypto" style={{border:'none', display:'flex', flexDirection:'column', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'0px 0 0 0' , background:'rgba(0,0,0,0)', color:'' }}>
-   <Link aria-label="Search MemeGenes"  className="themetext" to="/search/" style={{display:'flex',justifyContent:'center', alignItems:'center', marginTop:'0px'}}>
+<div style={{display:'flex', justifyContent:'space-between', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'4vw', textAlign:'center', maxHeight:'70px', alignItems:'center'}}>
+<li>
+   <Link aria-label="Search MemeGenes" to="/search/" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'0px'}}>
     <SearchIcon style={{width:'3vh', height:'3vw'}} />
-    search
+    <span className="themetext">search</span>
    </Link>
         </li>
 
 
 
-  <li className="carto crypto" style={{border:'none',}}>
+  <li>
       <Theme  style={{}} />
         </li>
 
   
-  <li className="carto crypto" style={{border:'none',  }}>
-    <button className="themetext" onClick={toggleArchiveView}>
+  <li>
+    <button onClick={toggleArchiveView}>
       {archiveView === 'grid' ? <MdOutlineRectangle  style={{width:'3vh', height:'3vw'}} /> : <BiGridHorizontal  style={{width:'3vh', height:'3vw'}} /> }
-      {archiveView === 'grid' ? 'swipe' : 'grid'}
+      <span className="themetext">{archiveView === 'grid' ? 'swipe' : 'grid'}</span>
     </button>
 </li>
 
  
 
-    <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'center', gap:'', verticalAlign:'center', padding:'0 0 0 0' , background:'rgba(0,0,0,0)', color:'' }}>
+    <li>
    <Link aria-label="Enter Full Screen Mode" className="sherlock" to="/search/" style={{display:'flex',justifyContent:'center', alignItems:'center', marginTop:'', cursor:'pointer'}}>
    <Fullscreen />
    </Link>
         </li>
-
+</div>
       
 
         
            
       
             </ul>
-
+            </div>
 
 ) : (
   ""

@@ -46,7 +46,7 @@ const SearchPage = ({ data }) => {
 
 <div id="top" className="spacer" style={{height:'80px', border:'0px solid yellow'}}></div>
 
-      <div className="searchform" style={{position:'fixed', left:'10%', right:'10%', width:'400px', margin:'0 auto 0 auto', padding:'0 1vw', zIndex:'3', display:'grid', placeSelf:'center'}}>
+      <div className="searchform" style={{position:'fixed', left:'1%', right:'1%', width:'380px', margin:'0 auto 0 auto', padding:'0 1vw', zIndex:'3', display:'grid', placeSelf:'center'}}>
 
       <label style={{border:'1px solid #fff', outline:'#fff', display:'block', borderRadius:'10px'}}>
         <input id="clearme" type="text" placeholder="filter by keyword" onChange={handleSearch} style={{maxWidth:'80vw'}} /> 
