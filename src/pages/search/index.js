@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { ImPlay } from "react-icons/im"
@@ -39,39 +39,44 @@ const SearchPage = ({ data }) => {
   }
 
 
-// Retrieve the selected option from local storage
-const archiveView = localStorage.getItem('archiveView');
+  const [archiveView, setArchiveView] = useState('');
 
-useEffect(() => {
-  // Apply the selected option on page load
-  if (archiveView === 'grid') {
-    resizeGrid();
-  } else if (archiveView === 'swipe') {
-    resizeSwipe();
-  }
-}, []);
+  useEffect(() => {
+    // Retrieve the selected option from local storage
+    const archiveView = localStorage.getItem('archiveView');
+    setArchiveView(archiveView);
+  }, []);
 
-const resizeGrid = () => {
-  const elements = document.querySelectorAll('.contentpanel');
-  elements.forEach(el => {
-    el.classList.remove('horizontal-scroll', 'panels');
-    el.classList.add('grid-container');
-  });
+  useEffect(() => {
+    // Apply the selected option on page load
+    if (archiveView === 'grid') {
+      resizeGrid();
+    } else if (archiveView === 'swipe') {
+      resizeSwipe();
+    }
+  }, [archiveView]);
 
-  // Store the selected option in local storage
-  localStorage.setItem('archiveView', 'grid');
-}
+  const resizeGrid = () => {
+    const elements = document.querySelectorAll('.contentpanel');
+    elements.forEach(el => {
+      el.classList.remove('horizontal-scroll', 'panels');
+      el.classList.add('grid-container');
+    });
 
-const resizeSwipe = () => {
-  const elements = document.querySelectorAll('.contentpanel');
-  elements.forEach(el => {
-    el.classList.remove('grid-container');
-    el.classList.add('horizontal-scroll', 'panels');
-  });
+    // Store the selected option in local storage
+    localStorage.setItem('archiveView', 'grid');
+  };
 
-  // Store the selected option in local storage
-  localStorage.setItem('archiveView', 'swipe');
-}
+  const resizeSwipe = () => {
+    const elements = document.querySelectorAll('.contentpanel');
+    elements.forEach(el => {
+      el.classList.remove('grid-container');
+      el.classList.add('horizontal-scroll', 'panels');
+    });
+
+    // Store the selected option in local storage
+    localStorage.setItem('archiveView', 'swipe');
+  };
   
 
   return (

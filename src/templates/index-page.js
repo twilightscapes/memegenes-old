@@ -237,6 +237,15 @@ const ClickToPlay = frontmatter.clicktoplay
 
 
 
+
+  const [archiveView, setArchiveView] = useState('');
+
+  useEffect(() => {
+    // Retrieve the selected option from local storage
+    const archiveView = localStorage.getItem('archiveView');
+    setArchiveView(archiveView);
+  }, []);
+
   useEffect(() => {
     // Apply the selected option on page load
     if (archiveView === 'grid') {
@@ -244,7 +253,7 @@ const ClickToPlay = frontmatter.clicktoplay
     } else if (archiveView === 'swipe') {
       resizeSwipe();
     }
-  }, []);
+  }, [archiveView]);
 
   const resizeGrid = () => {
     const elements = document.querySelectorAll('.contentpanel');
@@ -252,24 +261,21 @@ const ClickToPlay = frontmatter.clicktoplay
       el.classList.remove('horizontal-scroll', 'panels');
       el.classList.add('grid-container');
     });
-  
+
     // Store the selected option in local storage
     localStorage.setItem('archiveView', 'grid');
-  }
-  
+  };
+
   const resizeSwipe = () => {
     const elements = document.querySelectorAll('.contentpanel');
     elements.forEach(el => {
       el.classList.remove('grid-container');
       el.classList.add('horizontal-scroll', 'panels');
     });
-  
+
     // Store the selected option in local storage
     localStorage.setItem('archiveView', 'swipe');
-  }
-
-    // Retrieve the selected option from local storage
-    const archiveView = localStorage.getItem('archiveView');
+  };
 
 
 // const iframeUrl = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=" + frontmatter.youtubeautostart + "&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=" + frontmatter.youtubeloop + "&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""

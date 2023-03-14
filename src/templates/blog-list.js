@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { graphql, Link, navigate } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/siteLayout"
@@ -16,8 +16,17 @@ const BlogList = ({ data, pageContext }) => {
 
   const { showNav } = useSiteMetadata()
 
-  // Retrieve the selected option from local storage
-  const archiveView = localStorage.getItem('archiveView');
+
+
+
+
+  const [archiveView, setArchiveView] = useState('');
+
+  useEffect(() => {
+    // Retrieve the selected option from local storage
+    const archiveView = localStorage.getItem('archiveView');
+    setArchiveView(archiveView);
+  }, []);
 
   useEffect(() => {
     // Apply the selected option on page load
@@ -26,7 +35,7 @@ const BlogList = ({ data, pageContext }) => {
     } else if (archiveView === 'swipe') {
       resizeSwipe();
     }
-  }, []);
+  }, [archiveView]);
 
   const resizeGrid = () => {
     const elements = document.querySelectorAll('.contentpanel');
@@ -34,21 +43,21 @@ const BlogList = ({ data, pageContext }) => {
       el.classList.remove('horizontal-scroll', 'panels');
       el.classList.add('grid-container');
     });
-  
+
     // Store the selected option in local storage
     localStorage.setItem('archiveView', 'grid');
-  }
-  
+  };
+
   const resizeSwipe = () => {
     const elements = document.querySelectorAll('.contentpanel');
     elements.forEach(el => {
       el.classList.remove('grid-container');
       el.classList.add('horizontal-scroll', 'panels');
     });
-  
+
     // Store the selected option in local storage
     localStorage.setItem('archiveView', 'swipe');
-  }
+  };
   
 
   
