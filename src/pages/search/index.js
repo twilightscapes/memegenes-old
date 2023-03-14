@@ -39,6 +39,15 @@ const SearchPage = ({ data }) => {
   }
 
 
+  const isFirefox = navigator.userAgent.includes('Firefox');
+  if (isFirefox) {
+    const elements = document.querySelectorAll('.contentpanel');
+    elements.forEach(el => {
+      el.classList.add('grid-container');
+      el.classList.remove('horizontal-scroll', 'panels');
+    });
+  }
+
   const [archiveView, setArchiveView] = useState('');
 
   useEffect(() => {
@@ -62,8 +71,6 @@ const SearchPage = ({ data }) => {
       el.classList.remove('horizontal-scroll', 'panels');
       el.classList.add('grid-container');
     });
-
-    // Store the selected option in local storage
     localStorage.setItem('archiveView', 'grid');
   };
 
@@ -73,12 +80,8 @@ const SearchPage = ({ data }) => {
       el.classList.remove('grid-container');
       el.classList.add('horizontal-scroll', 'panels');
     });
-
-  // Scroll to the top of the page
   window.scrollTo(0, 0);
-
-    // Store the selected option in local storage
-    localStorage.setItem('archiveView', 'swipe');
+  localStorage.setItem('archiveView', 'swipe');
   };
   
 

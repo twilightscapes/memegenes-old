@@ -236,7 +236,14 @@ const ClickToPlay = frontmatter.clicktoplay
 
 
 
-
+const isFirefox = navigator.userAgent.includes('Firefox');
+  if (isFirefox) {
+    const elements = document.querySelectorAll('.contentpanel');
+    elements.forEach(el => {
+      el.classList.add('grid-container');
+      el.classList.remove('horizontal-scroll', 'panels');
+    });
+  }
 
   const [archiveView, setArchiveView] = useState('');
 
@@ -261,8 +268,6 @@ const ClickToPlay = frontmatter.clicktoplay
       el.classList.remove('horizontal-scroll', 'panels');
       el.classList.add('grid-container');
     });
-
-    // Store the selected option in local storage
     localStorage.setItem('archiveView', 'grid');
   };
 
@@ -272,13 +277,12 @@ const ClickToPlay = frontmatter.clicktoplay
       el.classList.remove('grid-container');
       el.classList.add('horizontal-scroll', 'panels');
     });
-
-  // Scroll to the top of the page
   window.scrollTo(0, 0);
-
-    // Store the selected option in local storage
-    localStorage.setItem('archiveView', 'swipe');
+  localStorage.setItem('archiveView', 'swipe');
   };
+
+
+
 
 
 // const iframeUrl = "https://www.youtube-nocookie.com/embed/" + frontmatter.youtuber + "?controls=" + frontmatter.youtubecontrols + "&amp;showinfo=0&amp;rel=0&amp;autoplay=" + frontmatter.youtubeautostart + "&amp;start=" + frontmatter.youtubestart + "&amp;end=" + frontmatter.youtubeend + "&amp;loop=" + frontmatter.youtubeloop + "&amp;mute=" + frontmatter.youtubemute + "&amp;playsinline=1&amp;playlist=" + frontmatter.youtuber + ""
@@ -880,6 +884,11 @@ Click to play
   <section id="showPosts" style={{marginTop:'1vh'}}>
   <div style={{position:'relative', background:'none', maxHeight:'', overflow:'', width:'100vw'}}>
 <ScrollAnimation className="animate" animateIn="bounceInDown" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={false} > 
+
+
+
+
+
 
 <div className="contentpanel horizontal-scroll panels" style={{padding:''}}>
 
