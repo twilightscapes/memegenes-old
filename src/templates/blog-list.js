@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { graphql, Link, navigate } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/siteLayout"
@@ -6,9 +6,7 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 import { ImPlay } from "react-icons/im"
 import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
-import ScrollAnimation from 'react-animate-on-scroll'
-import { BiGridHorizontal } from "react-icons/bi"
-import { MdOutlineRectangle } from "react-icons/md"
+
 
 // import TimeAgo from 'react-timeago'
 
@@ -20,50 +18,7 @@ const BlogList = ({ data, pageContext }) => {
 
 
 
-  const isFirefox = navigator.userAgent.includes('Firefox');
-  if (isFirefox) {
-    const elements = document.querySelectorAll('.contentpanel');
-    elements.forEach(el => {
-      el.classList.add('grid-container');
-      el.classList.remove('horizontal-scroll', 'panels');
-    });
-  }
-
-  const [archiveView, setArchiveView] = useState('');
-
-  useEffect(() => {
-    // Retrieve the selected option from local storage
-    const archiveView = localStorage.getItem('archiveView');
-    setArchiveView(archiveView);
-  }, []);
-
-  useEffect(() => {
-    // Apply the selected option on page load
-    if (archiveView === 'grid') {
-      resizeGrid();
-    } else if (archiveView === 'swipe') {
-      resizeSwipe();
-    }
-  }, [archiveView]);
-
-  const resizeGrid = () => {
-    const elements = document.querySelectorAll('.contentpanel');
-    elements.forEach(el => {
-      el.classList.remove('horizontal-scroll', 'panels');
-      el.classList.add('grid-container');
-    });
-    localStorage.setItem('archiveView', 'grid');
-  };
-
-  const resizeSwipe = () => {
-    const elements = document.querySelectorAll('.contentpanel');
-    elements.forEach(el => {
-      el.classList.remove('grid-container');
-      el.classList.add('horizontal-scroll', 'panels');
-    });
-  window.scrollTo(0, 0);
-  localStorage.setItem('archiveView', 'swipe');
-  };
+  
   
 
   
@@ -83,14 +38,7 @@ const BlogList = ({ data, pageContext }) => {
         <h1 style={{textAlign:'center'}}>Archive</h1>
 
 
-        <ScrollAnimation animateIn="" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={true} style={{position:'fixed', left:'0', bottom:'5vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .6)', color:'#ccc', height:'', borderRadius:'0 12px 12px 0', borderLeft:'none !important',}}> 
-<div id="resizer" style={{display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
-  alignItems:'center', alignContent:'center', textAlign:'center',  padding:'1rem', textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeGrid}><BiGridHorizontal style={{fontSize:'24px', margin:'0 auto'}} />Grid </button><button onClick={resizeSwipe}><MdOutlineRectangle style={{fontSize:'24px', margin:'0 auto'}} />Swipe</button>
 
-
-
-</div>
-</ScrollAnimation>
 
 
         <div className="contentpanel horizontal-scroll panels" style={{padding:''}}>

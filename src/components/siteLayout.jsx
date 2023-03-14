@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from 'react';
 import Seo from "./seo"
 import { Link } from 'gatsby'
 // import { ModalRoutingContext } from '@decantyme/gatsby-plugin-modal-routing'
@@ -19,6 +19,12 @@ import SearchIcon from "../../static/assets/search"
 // import SearchForm from "./searchbox"
 import useSiteMetadata from "../hooks/SiteMetadata"
 
+
+import ScrollAnimation from 'react-animate-on-scroll'
+import { BiGridHorizontal } from "react-icons/bi"
+import { MdOutlineRectangle } from "react-icons/md"
+
+
 import Fullscreen from "../components/FullScreen"
 // import ss from "../../static/assets/pagebg.webp"
 // import { Link } from "gatsby-plugin-anchor-links"
@@ -30,6 +36,69 @@ import SignUp from "../components/newssign"
 const Layout = ({ children }) => {
 
   
+
+  const isFirefox = navigator.userAgent.includes('Firefox');
+  if (isFirefox) {
+    const elements = document.querySelectorAll('.contentpanel');
+    elements.forEach(el => {
+      el.classList.add('grid-container');
+      el.classList.remove('horizontal-scroll', 'panels');
+    });
+  }
+
+  const [archiveView, setArchiveView] = useState('');
+
+  useEffect(() => {
+    // Retrieve the selected option from local storage
+    const archiveView = localStorage.getItem('archiveView');
+    setArchiveView(archiveView);
+  }, []);
+
+  useEffect(() => {
+    // Apply the selected option on page load
+    if (archiveView === 'grid') {
+      resizeGrid();
+    } else if (archiveView === 'swipe') {
+      resizeSwipe();
+    }
+  }, [archiveView]);
+
+  const resizeGrid = () => {
+    const elements = document.querySelectorAll('.contentpanel');
+    elements.forEach(el => {
+      el.classList.remove('horizontal-scroll', 'panels');
+      el.classList.add('grid-container');
+    });
+    localStorage.setItem('archiveView', 'grid');
+  };
+
+  const resizeSwipe = () => {
+    const elements = document.querySelectorAll('.contentpanel');
+    elements.forEach(el => {
+      el.classList.remove('grid-container');
+      el.classList.add('horizontal-scroll', 'panels');
+    });
+  window.scrollTo(0, 0);
+  localStorage.setItem('archiveView', 'swipe');
+  };
+
+
+  const toggleArchiveView = () => {
+    const newArchiveView = archiveView === 'grid' ? 'swipe' : 'grid';
+    setArchiveView(newArchiveView);
+    if (newArchiveView === 'grid') {
+      resizeGrid();
+    } else if (newArchiveView === 'swipe') {
+      resizeSwipe();
+    }
+  };
+
+
+
+
+
+
+
 
 
 const { companyname } = useSiteMetadata()
@@ -108,6 +177,8 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 )}
 </ModalRoutingContext.Consumer> */}
 
+
+  
 
 
 
@@ -293,6 +364,13 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
       <Theme  style={{color:'red !important'}} />
 
         </li>
+
+        <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', gap:'', verticalAlign:'center', padding:'0 0 0 0' , background:'rgba(0,0,0,0)', color:'inherit', alignItems:'center', }}>
+    <button onClick={toggleArchiveView}  style={{fontSize:'1rem', color:'inherit', fontFamily:'sans-serif'}}>
+      {archiveView === 'grid' ? <MdOutlineRectangle  style={{width:'3vh', height:'3vw'}} /> : <BiGridHorizontal  style={{width:'3vh', height:'3vw'}} /> }
+      {archiveView === 'grid' ? 'swipe' : 'grid'}
+    </button>
+</li>
 
  
 

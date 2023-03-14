@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import * as React from "react"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { ImPlay } from "react-icons/im"
 import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
 import Layout from "../../components/siteLayout"
-import { BiGridHorizontal } from "react-icons/bi"
-import { MdOutlineRectangle } from "react-icons/md"
-import ScrollAnimation from 'react-animate-on-scroll'
 import { Helmet } from "react-helmet"
 // import TimeAgo from 'react-timeago'
 
@@ -37,85 +34,32 @@ const SearchPage = ({ data }) => {
     })
     setFilteredPosts(filteredPosts)
   }
-
-
-  const isFirefox = navigator.userAgent.includes('Firefox');
-  if (isFirefox) {
-    const elements = document.querySelectorAll('.contentpanel');
-    elements.forEach(el => {
-      el.classList.add('grid-container');
-      el.classList.remove('horizontal-scroll', 'panels');
-    });
-  }
-
-  const [archiveView, setArchiveView] = useState('');
-
-  useEffect(() => {
-    // Retrieve the selected option from local storage
-    const archiveView = localStorage.getItem('archiveView');
-    setArchiveView(archiveView);
-  }, []);
-
-  useEffect(() => {
-    // Apply the selected option on page load
-    if (archiveView === 'grid') {
-      resizeGrid();
-    } else if (archiveView === 'swipe') {
-      resizeSwipe();
-    }
-  }, [archiveView]);
-
-  const resizeGrid = () => {
-    const elements = document.querySelectorAll('.contentpanel');
-    elements.forEach(el => {
-      el.classList.remove('horizontal-scroll', 'panels');
-      el.classList.add('grid-container');
-    });
-    localStorage.setItem('archiveView', 'grid');
-  };
-
-  const resizeSwipe = () => {
-    const elements = document.querySelectorAll('.contentpanel');
-    elements.forEach(el => {
-      el.classList.remove('grid-container');
-      el.classList.add('horizontal-scroll', 'panels');
-    });
-  window.scrollTo(0, 0);
-  localStorage.setItem('archiveView', 'swipe');
-  };
   
 
   return (
 <Layout>
+
 <Helmet>
   <body id="body" className="search scroll" style={{}} />
 </Helmet>
 
 
-      <div className="searchform" style={{position:'relative', maxWidth:'400px', margin:'10vh auto 0 auto', padding:'0 1vw', zIndex:'3', display:'grid', placeSelf:'center'}}>
+<div id="top" className="spacer" style={{height:'80px', border:'0px solid yellow'}}></div>
+
+      <div className="searchform" style={{position:'fixed', left:'10%', right:'10%', width:'400px', margin:'0 auto 0 auto', padding:'0 1vw', zIndex:'3', display:'grid', placeSelf:'center'}}>
 
       <label style={{border:'1px solid #fff', outline:'#fff', display:'block', borderRadius:'10px'}}>
-        <input id="clearme" type="text" placeholder="Type here to filter by keyword" onChange={handleSearch} style={{}} /> 
+        <input id="clearme" type="text" placeholder="filter by keyword" onChange={handleSearch} style={{maxWidth:'80vw'}} /> 
 <button type="reset" value="reset" onClick={() => clearfield()} style={{position:'absolute', right:'2.5vw', top:'1.5vh', color:'#fff'}}>clear</button>
 
-              <div style={{position:'absolute', right:'-50px', top:'.1vh', textAlign:'center'}}>{filteredPosts.length} <br />result{filteredPosts.length !== 1 && 's'}</div>
+              <div style={{position:'absolute', right:'80px', top:'10px', textAlign:'center', fontSize:'10px', color:'#fff'}}>{filteredPosts.length} <br />result{filteredPosts.length !== 1 && 's'}</div>
       </label>
               
 
       </div>
 
 
-      <ScrollAnimation animateIn="" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={true} style={{position:'fixed', left:'0', bottom:'5vh', zIndex:'2', width:'', background:'rgba(0, 0, 0, .6)', color:'#ccc', height:'', borderRadius:'0 12px 12px 0', borderLeft:'none !important',}}> 
-<div id="resizer" style={{display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
-  alignItems:'center', alignContent:'center', textAlign:'center',  padding:'1rem', textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeGrid}><BiGridHorizontal style={{fontSize:'24px', margin:'0 auto'}} />Grid </button><button onClick={resizeSwipe}><MdOutlineRectangle style={{fontSize:'24px', margin:'0 auto'}} />Swipe</button>
-
-
-
-</div>
-</ScrollAnimation>
-
-
-<div className="contentpanel horizontal-scroll panels" style={{padding:''}}>
+      <div className="contentpanel horizontal-scroll panels" style={{padding:''}}>
 
 <div className="sliderSpacer" style={{height:'', paddingTop:'', display:'none'}}></div>
 
@@ -189,7 +133,7 @@ Play Multimedia
 }
 
 export const pageQuery = graphql`
-query pageUsersSitesmemegenessrcpagessearchindexJs3773404046 {
+query pageUsersSitesssrcpagessearchindexJs3773404046 {
   allMarkdownRemark(
     sort: {frontmatter: {date: DESC}}
     filter: {frontmatter: {template: {eq: "blog-post"}}}
