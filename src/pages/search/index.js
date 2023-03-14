@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useEffect } from 'react';
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { ImPlay } from "react-icons/im"
@@ -39,22 +39,39 @@ const SearchPage = ({ data }) => {
   }
 
 
-  const resizeGrid = () => {
-    const elements = document.querySelectorAll('.contentpanel');
-    elements.forEach(el => {
-      el.classList.remove('horizontal-scroll', 'panels');
-      el.classList.add('grid-container');
-    });
+// Retrieve the selected option from local storage
+const archiveView = localStorage.getItem('archiveView');
+
+useEffect(() => {
+  // Apply the selected option on page load
+  if (archiveView === 'grid') {
+    resizeGrid();
+  } else if (archiveView === 'swipe') {
+    resizeSwipe();
   }
-  
-  const resizeSwipe = () => {
-    const elements = document.querySelectorAll('.contentpanel');
-    elements.forEach(el => {
-      el.classList.remove('grid-container');
-      el.classList.add('horizontal-scroll', 'panels');
-  
-    });
-  }
+}, []);
+
+const resizeGrid = () => {
+  const elements = document.querySelectorAll('.contentpanel');
+  elements.forEach(el => {
+    el.classList.remove('horizontal-scroll', 'panels');
+    el.classList.add('grid-container');
+  });
+
+  // Store the selected option in local storage
+  localStorage.setItem('archiveView', 'grid');
+}
+
+const resizeSwipe = () => {
+  const elements = document.querySelectorAll('.contentpanel');
+  elements.forEach(el => {
+    el.classList.remove('grid-container');
+    el.classList.add('horizontal-scroll', 'panels');
+  });
+
+  // Store the selected option in local storage
+  localStorage.setItem('archiveView', 'swipe');
+}
   
 
   return (

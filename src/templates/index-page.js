@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { useState, useRef,forwardRef } from "react";
+import { useState, useRef,forwardRef, useEffect } from "react";
 import { jsx } from "theme-ui"
 import { graphql, Link } from "gatsby"
 import PropTypes from "prop-types";
@@ -235,22 +235,39 @@ const YoutubeLoop = frontmatter.youtubeloop
 const ClickToPlay = frontmatter.clicktoplay
 
 
-const resizeGrid = () => {
-  const elements = document.querySelectorAll('.contentpanel');
-  elements.forEach(el => {
-    el.classList.remove('horizontal-scroll', 'panels');
-    el.classList.add('grid-container');
-  });
-}
+  // Retrieve the selected option from local storage
+  const archiveView = localStorage.getItem('archiveView');
 
-const resizeSwipe = () => {
-  const elements = document.querySelectorAll('.contentpanel');
-  elements.forEach(el => {
-    el.classList.remove('grid-container');
-    el.classList.add('horizontal-scroll', 'panels');
+  useEffect(() => {
+    // Apply the selected option on page load
+    if (archiveView === 'grid') {
+      resizeGrid();
+    } else if (archiveView === 'swipe') {
+      resizeSwipe();
+    }
+  }, []);
 
-  });
-}
+  const resizeGrid = () => {
+    const elements = document.querySelectorAll('.contentpanel');
+    elements.forEach(el => {
+      el.classList.remove('horizontal-scroll', 'panels');
+      el.classList.add('grid-container');
+    });
+  
+    // Store the selected option in local storage
+    localStorage.setItem('archiveView', 'grid');
+  }
+  
+  const resizeSwipe = () => {
+    const elements = document.querySelectorAll('.contentpanel');
+    elements.forEach(el => {
+      el.classList.remove('grid-container');
+      el.classList.add('horizontal-scroll', 'panels');
+    });
+  
+    // Store the selected option in local storage
+    localStorage.setItem('archiveView', 'swipe');
+  }
 
 
 
