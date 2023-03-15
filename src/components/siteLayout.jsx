@@ -187,7 +187,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 {prefersReducedMotion ? (
             <li className="nomo" style={{position:'relative',}}>
-            <button className="">
+            <button className=""  aria-label="Return to Home">
             {iconimage ? (
       <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} width="100" height="70" />
                 ) : (
@@ -304,9 +304,9 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   ""
 )}
 
-
+<li>
 <Link aria-label="About" className="navbar-item" to="/about" style={{paddingRight:'',}}>{menu1}</Link> 
-
+</li>
 
 
 
@@ -340,8 +340,9 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   ""
 )}
 
+<li>
 <Link aria-label="Contact" className="navbar-item" to="/contact" style={{paddingRight:'',}}>Contact</Link> 
-
+</li>
 
 
 {/* <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
