@@ -178,9 +178,9 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 {showNav ? (
-<div id="menu" className="menu print panel" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10',  color:'', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center', borderRadius:'0',  }}>
+<div id="menu" className="menu print panel" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10',  color:'', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 3%', alignItems:'center', borderRadius:'0', display:'flex', justifyContent:'space-between', gap:'10px',  alignItems:'center'  }}>
 
-<ul sx={navStyle} style={{display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center',maxHeight:'70px', alignItems:'center'}}>
+<ul sx={navStyle} style={{ fontSize:'clamp(.8rem, 2.3vw, 2.5rem)',  textAlign:'center',maxHeight:'70px', display:'flex', justifyContent:'space-around', gap:'2vw',  alignItems:'center'}}>
       
 
 
@@ -349,44 +349,46 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   <Theme  style={{padding:'0'}} />
   <SearchIcon />
   </li> */}
+</ul>
 
+<div style={{display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'4vw', textAlign:'center', maxHeight:'70px', alignItems:'center'}}>
 
-<div style={{display:'flex', justifyContent:'space-between', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'4vw', textAlign:'center', maxHeight:'70px', alignItems:'center'}}>
-<li>
-   <Link aria-label="Search MemeGenes" to="/search/" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'0px'}}>
+<div>
+   <Link aria-label="Search MemeGenes" to="/search/" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'0px', textAlign:'center'}}>
     <SearchIcon style={{width:'3vh', height:'3vw'}} />
     <span className="themetext">search</span>
    </Link>
-        </li>
+        </div>
 
 
 
-  <li>
+  <div>
       <Theme  style={{}} />
-        </li>
+        </div>
 
   
-  <li>
-    <button onClick={toggleArchiveView}>
+  <div>
+    <button aria-label="Dark/Light Mode" onClick={toggleArchiveView} style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'0px', textAlign:'center'}}>
       {archiveView === 'grid' ? <MdOutlineRectangle  style={{width:'3vh', height:'3vw'}} /> : <BiGridHorizontal  style={{width:'3vh', height:'3vw'}} /> }
       <span className="themetext">{archiveView === 'grid' ? 'swipe' : 'grid'}</span>
     </button>
-</li>
+</div>
 
  
 
-    <li>
-   <Link aria-label="Enter Full Screen Mode" className="sherlock" to="/search/" style={{display:'flex',justifyContent:'center', alignItems:'center', marginTop:'', cursor:'pointer'}}>
-   <Fullscreen />
-   </Link>
-        </li>
+    <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'10px', textAlign:'center'}}>
+   
+   <Fullscreen style={{width:'3vh', height:'3vw'}} />
+   <span className="themetext">fullscreen</span>
+
+        </div>
 </div>
       
 
         
            
       
-            </ul>
+            
             </div>
 
 ) : (
