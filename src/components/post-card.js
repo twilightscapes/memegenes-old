@@ -133,7 +133,7 @@ date={Date.now() + 6000} className="countdown"> */}
   >
 <h2 className="title1" style={{ }}>
   
-    {data.frontmatter.title}postcard
+    {data.frontmatter.title}
      {/* - <Countdown date={Date.now() + 60000} renderer={renderer} precision={0} intervalDelay={0} zeroPadTime={0} />  */}
     {/* <Countdown
 date={Date.now() + 60000} className="countdown">

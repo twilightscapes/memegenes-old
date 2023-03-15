@@ -833,7 +833,7 @@ Click to play
 {showPosts ? (
   <section id="showPosts" style={{marginTop:''}}>
   <div style={{position:'relative', background:'none', maxHeight:'', overflow:'', width:'100vw'}}>
-<ScrollAnimation className="animate" animateIn="bounceInDown" animateOut="" initiallyVisible={true} animateOnce={false} animatePreScroll={false} > 
+
 
 
 
@@ -844,10 +844,10 @@ Click to play
 
 <div className="sliderSpacer" style={{height:'', paddingTop:'', display:'none'}}></div>
                          <BlogListHome data={posts} />
-      <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
-      </div>
+      {/* <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
+      </div> */}
 </div>
-</ScrollAnimation>
+
 </div>
 </section>
       ) : (
