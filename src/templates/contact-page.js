@@ -28,7 +28,7 @@ export const pageQuery = graphql`
 const Contact = ({ data }) => {
   const { showNav } = useSiteMetadata()
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
-  const { frontmatter } = markdownRemark
+  const { frontmatter, html } = markdownRemark
 
   return (
 
@@ -57,12 +57,19 @@ const Contact = ({ data }) => {
 
 
 
+  
+
 
 
      
       <h1 className="headline">{frontmatter.title}</h1>
 
-        <div className="wrapper" style={{padding:'0 10%', maxWidth:'900px', margin:'0 auto' }}>
+      <div
+          className="description" style={{padding:'2vh 6%'}}
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+
+        <div className="wrapper" style={{padding:'0 10%', maxWidth:'900px', margin:'0 auto', display:'flex', flexDirection:'column', justifyContent:'center' }}>
         <form
           className="contact-form"
           action="/thanks"
@@ -70,29 +77,30 @@ const Contact = ({ data }) => {
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          style={{ display:'flex', flexDirection:'column', justifyContent:'center'}}
         >
           <input type="hidden" name="form-name" value="contact" />
-          <p>
+          {/* <p>
             <label>
               <input type="text" name="name" placeholder="Name" required />
             </label>
-          </p>
+          </p> */}
           <p>
             <label>
               <input type="email" name="email" placeholder="your@email.com" required />
             </label>
           </p>
-          <p>
+          {/* <p>
             <label>
               <input type="text" name="subject" placeholder="Subject" required />
             </label>
-          </p>
+          </p> */}
           <p>
             <label>
               <textarea name="message" placeholder="Your Message" required></textarea>
             </label>
           </p>
-          <p className="text-align-right" style={{marginRight:'60px', color:'#fff'}}>
+          <p className="text-align-right1" style={{margin:'0 auto', color:'#fff'}}>
             <button
               className="button"
               

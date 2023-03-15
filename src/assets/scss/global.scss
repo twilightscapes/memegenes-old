@@ -88,7 +88,7 @@ body.scroll{overflow-x:hidden!important;overflow-y:scroll!important}
 
 .grid-container article{ flex-wrap: none; display: grid;}
 
-// .spacer{display:block; height:12vh !important;}
+.spacer{display:block; height:60px !important;}
 
 .sliderSpacer{display:none;}
 .horizontal-scroll .sliderSpacer{display:block !important; height:50%; padding-top:50%; }
@@ -280,7 +280,7 @@ to{opacity:0;z-index:-3}
 
 
 
-
+.videohide{border:0px solid yellow; margin-top:-10px;}
 
 .horizontal-scroll{margin:0;max-height:100vw;overflow-x:hidden;overflow-y:auto;position:relative;scroll-padding:0 5%;transform:rotate(-90deg) translateY(-100%);transform-origin:right top;transition:transform .2s;width:100%}
 .horizontal-scroll img{max-height:65vh;object-fit:contain!important}
