@@ -352,7 +352,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   </li> */}
 </ul>
 
-<div style={{display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'4vw', textAlign:'center', maxHeight:'70px', alignItems:'center'}}>
+<div style={{display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'3vw', textAlign:'center', maxHeight:'70px', alignItems:'center'}}>
 
 <div>
    <Link aria-label="Search MemeGenes" to="/search/" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'0px', textAlign:'center'}}>
@@ -371,7 +371,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   <div>
     <button aria-label="Dark/Light Mode" onClick={toggleArchiveView} style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'0px', textAlign:'center'}}>
       {archiveView === 'grid' ? <MdOutlineRectangle  style={{width:'3vh', height:'3vw'}} /> : <BiGridHorizontal  style={{width:'3vh', height:'3vw'}} /> }
-      <span className="themetext">{archiveView === 'grid' ? 'swipe' : 'grid'}</span>
+      <span className="themetext">{archiveView === 'grid' ? 'swipe' : ' grids '}</span>
     </button>
 </div>
 

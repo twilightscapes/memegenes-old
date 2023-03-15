@@ -328,7 +328,7 @@ to{opacity:0;z-index:-3}
     display:block;
     font-family: sans-serif;
     color:var(--theme-ui-colors-text);
-    font-size: 1rem;
+    font-size: clamp(.7rem,1vw,1rem);
     text-shadow:none !important;
     text-align:center;
 }
