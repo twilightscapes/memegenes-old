@@ -378,7 +378,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
     <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'10px', textAlign:'center'}}>
    
-   <Fullscreen style={{width:'3vh', height:'3vw'}} />
+   <Fullscreen style={{width:'2vh', height:'2vw'}} />
    <span className="themetext">fullscreen</span>
 
         </div>
