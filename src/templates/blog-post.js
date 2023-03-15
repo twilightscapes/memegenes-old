@@ -538,7 +538,7 @@ const YouTube = frontmatter.youtuber
    
 
 
-<div className="videohide" style={{position:'absolute', height:'', aspectRatio:'16/9', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', color:'var(--theme-ui-colors-text)', fontFamily:'Verdana, Sans-Serif, System' }}>
+<div className="videohide1" style={{position:'absolute', height:'', aspectRatio:'16/9', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', color:'var(--theme-ui-colors-text)', fontFamily:'Verdana, Sans-Serif, System' }}>
 
 
 
@@ -622,7 +622,7 @@ Click to play
 
       
 
-<div style={{fontSize:'clamp(1rem, 2vw, 2.5rem)', margin:'5vh 0 0 0', padding:'0 10px', maxWidth:'1000px'}}>
+<div className="bumper" style={{fontSize:'clamp(1rem, 2vw, 2.5rem)', margin:'5vh 0 0 0', padding:'0 10px', maxWidth:'1000px'}}>
 {frontmatter.bumpertext ? (
 <h3>{frontmatter.bumpertext}</h3>
     ) : (
@@ -664,11 +664,6 @@ Click to play
   
   <div ref={ref} className="controlsbox" style={{width:'', height:'', border:'0px solid red', }}>
   
-        {/* <div className="contact" style={{position:'', bottom:'', zIndex:'',  left:'0', right:'0', display:'flex', justifyContent:'center', width:'200px', margin:'0 auto'}}>
-    <Link state={{modal: true}}  to="/contact/" className="navbar-item  button fire" style={{margin:'', textDecoration:'none'}}>Contact Me</Link>
-  </div> */}
-
-
 <button
         aria-label="Video Play/Pause Button"
         onClick={onPlayPause}
@@ -681,7 +676,7 @@ Click to play
          placeContent:'',
          position:'absolute',
          aspectRatio:'16/9',
-         top:'0',
+         top:'70px',
          left:'0',
          right:'0',
          border:'0px solid yellow',
@@ -1009,7 +1004,7 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
 
 
 
-<button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'50px', border:'0px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', aspectRatio:'16/9'}}>
+<button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'50px', border:'1px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', aspectRatio:'16/9'}}>
                 {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
    
                 {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
