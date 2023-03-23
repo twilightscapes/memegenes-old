@@ -601,7 +601,7 @@ position:absolute !important; top:72vh ;
   #menu {flex-direction: column !important; min-height: 70px;}
   
   #missioncontrol {position:absolute; right:4vw; top:10px; gap:5vw !important;}
-  .cornerlogo{ left:18%; top:2px; width:117; height:60px;}
+  .cornerlogo{ left:18%; top:2px; width:117; height:60px; }
   
   .spacer{display:block; height:130px !important;}
   
@@ -616,6 +616,7 @@ position:absolute !important; top:72vh ;
   
   }
 
+  #missioncontrol{background:rgba(0, 0, 0, 0.2); padding:0 20px;}
 
   .cattags{
     border-radius: 3px;
