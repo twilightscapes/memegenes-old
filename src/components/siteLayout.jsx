@@ -81,7 +81,7 @@ const Layout = ({ children }) => {
       useEffect(() => {
         // Retrieve the selected option from local storage or default to 'grid'
         const storedArchiveView = localStorage.getItem('archiveView');
-        setArchiveView(storedArchiveView || 'swipe');
+        setArchiveView(storedArchiveView || 'grid');
       }, []);
     
       useEffect(() => {
@@ -232,7 +232,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
     
             <button className="cornerlogo" style={{position:'relative', top:'', left:'4%', border:'0px solid white', borderBottom:'0px solid transparent'}} aria-label="Return to Home">
             {iconimage ? (
-      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'', border:'none'}} width="120" height="60" />
+      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'', border:'none'}} width="117" height="60" />
                 ) : (
                   <div style={{fontWeight:'bold',}}>{companyname}</div>
                 )}
@@ -242,7 +242,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
           
                         <AnchorLink to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'block', maxWidth:'', height:'auto', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
-      <img className="cornerlogo" style={{position:'relative', top:'.5vh', left:'4%', border:'0px solid white', padding:'0 1%', maxHeight:''}} src={iconimage} alt={companyname} width="107" height="60" />
+      <img className="cornerlogo" style={{position:'relative', top:'.5vh', left:'4%', border:'0px solid white', padding:'0 1%', maxHeight:''}} src={iconimage} alt={companyname} width="117" height="60" />
                 ) : (
                   <div style={{fontWeight:'bold',}}>{companyname}</div>
                 )}

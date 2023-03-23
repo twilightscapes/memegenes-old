@@ -7,7 +7,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { AiOutlineAudioMuted } from "react-icons/ai"
 import Footer from "../components/footer"
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 import { IoShareOutline } from 'react-icons/io5'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
@@ -819,7 +819,7 @@ Click to play
 {/* show feature */}
 {showFeature ? (   
 
-<ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} > 
+
 
 <section id="feature" order="1" name="feature" className="print" style={{ display:'', height:'auto', maxHeight:'', margin:'0 0 0 0', padding:'0 0 10px 0', position:'relative'}}>
   <article>
@@ -852,7 +852,7 @@ Click to play
       </div>
   </article>
 </section>
-</ScrollAnimation>
+
 ) : (
   ""
 )}
@@ -977,7 +977,7 @@ Click to play
   background:'rgba(0,0,0,0.50)', 
   backdropFilter:'blur(12px)',
   borderRadius:'10px'}}>
-  <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}> 
+  {/* <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{}}>  */}
   <h1 className="title1" style={{fontSize:'clamp(2.5rem, 3.5vw, 3.2rem)'}}>{frontmatter.profTitle}</h1>
             <h2 className="tagline1">
               {frontmatter.tagline}
@@ -986,7 +986,8 @@ Click to play
             style={{paddingBottom:'2rem'}}
               className="description"
               dangerouslySetInnerHTML={{ __html: ProfText }}
-            /></ScrollAnimation>
+            />
+            {/* </ScrollAnimation> */}
             </div>
        
   
@@ -1057,7 +1058,7 @@ Click to play
   borderRadius:'10px',
   textShadow:'0 2px 7px #000',
   }} >
-<ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutRight" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{marginTop:'10px'}}> 
+{/* <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutRight" initiallyVisible={true} animateOnce={false} animatePreScroll={false} style={{marginTop:'10px'}}>  */}
 <span style={{marginTop:'10px', fontSize:'160%'}}>{companyname}</span>
 <br />
 {frontmatter.addressText}
@@ -1089,7 +1090,8 @@ Click to play
             <Iframer3 />
             
           )}
-          <br /></ScrollAnimation>
+          <br />
+          {/* </ScrollAnimation> */}
 </div>
 
 
@@ -1188,7 +1190,7 @@ Click to play
 {/*  show Resume */}
 {showResume ? (
   
-  <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} >
+  // <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} >
 
   
 <section className="vertical" id="resume" order="4" style={{ display:'', minHeight:'', overflow:'', margin:'5vh 0 0 0', position:'relative', border:'0px solid blue'}}>
@@ -1206,7 +1208,7 @@ Click to play
 <br />
 {frontmatter.addressText2}
 </div>
-<ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={false} > 
+{/* <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={false} >  */}
 <div id="" className="">
 
 <span
@@ -1218,7 +1220,7 @@ Click to play
           />
   
 </div>
-</ScrollAnimation>
+{/* </ScrollAnimation> */}
 <br />
 <div className="toolbar noapp print" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px solid #777', borderBottom:'1px solid #777', justifyContent:'start', background:'rgba(24, 29, 31, 0.2)', borderRadius:'12px', padding:'5px 0 5px 0', }}>
 <div className="keyboard" order="" style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto', padding:'4px 0 0 0', lineHeight:'calc(2em + .4vw)'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Print:</span> &nbsp;<kbd>⌘</kbd> + <kbd>p</kbd> &nbsp;OR&nbsp; <kbd>Ctrl</kbd> + <kbd>p</kbd></div>
@@ -1227,7 +1229,7 @@ Click to play
 
 </article>
 </section>
-</ScrollAnimation>
+// </ScrollAnimation>
 ) : (
   ""
 )}
@@ -1238,17 +1240,17 @@ Click to play
 {/*  show Skills */}
 {showSkills ? (
    
-   <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} >
+  //  <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} >
 
    
 <section className="print vertical" id="skills" order="5" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'0 auto', textAlign:'center', borderRadius:'8px', minHeight:'', maxWidth:'', padding:'1rem', display:'', placeContent:'', border:'0px solid green', }}>
 <br />
-<ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={false} >
+{/* <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={false} > */}
 <div className="flexbutt" style={{display:'flex', justifyContent:'center', width:'', columnGap:'50px', border:'0px solid blue',  background:'rgba(24, 29, 31, 0.7)',  backdropFilter:'blur(12px)', padding:'4%', borderRadius:'12px', color:'#fff' }} dangerouslySetInnerHTML={{ __html: SkillsText }}>
 </div>
-</ScrollAnimation>
+{/* </ScrollAnimation> */}
   </section>
-</ScrollAnimation>
+// </ScrollAnimation>
           ) : (
             ""
           )}
@@ -1272,9 +1274,9 @@ Click to play
 
 {/* show footer */}
 {showfooter ? (
-  <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={false} > 
+  // <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={true} animateOnce={true} animatePreScroll={false} > 
 <Footer className="vertical" />
-</ScrollAnimation>
+// </ScrollAnimation>
 ) : (
   ""
 )}
