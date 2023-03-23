@@ -23,13 +23,41 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }
     }
   }
-  `)
+`)
+
 
   // Handle errors
   if (result.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
+
+
+      // Create team pages
+const team = result.data.allMarkdownRemark.edges
+team.forEach((team) => {
+  createPage({
+    path: team.node.frontmatter.slug,
+    component: path.resolve(`src/templates/team.js`),
+    context: {
+      id: team.node.id,
+    },
+  })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // Create markdown pages
   const posts = result.data.allMarkdownRemark.edges
@@ -55,51 +83,88 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
 
+
     // Count blog posts.
     if (post.node.frontmatter.template === "blog-post") {
       blogPostsCount++
     }
 
-    // Collect categories and tags
-    if (post.node.frontmatter.category) {
-      category.add(post.node.frontmatter.category)
-    }
-    if (post.node.frontmatter.tags) {
-      post.node.frontmatter.tags.forEach((tag) => tags.add(tag))
-    }
+// Collect categories and tags
+if (post.node.frontmatter.category) {
+  category.add(post.node.frontmatter.category)
+}
+if (post.node.frontmatter.tags) {
+  post.node.frontmatter.tags.forEach((tag) => tags.add(tag))
+}
+})
+
+// Create blog-list pages
+const postsPerPage = 6
+const numPages = Math.ceil(blogPostsCount / postsPerPage)
+
+Array.from({ length: numPages }).forEach((_, i) => {
+  createPage({
+    path: i === 0 ? `/archive/` : `/archive/${i + 1}`,
+    component: blogList,
+    context: {
+      limit: postsPerPage,
+      skip: i * postsPerPage,
+      numPages,
+      currentPage: i + 1,
+    },
+  })
+})
+
+// Create category pages
+const categoryTemplate = path.resolve(`./src/templates/category.js`)
+category.forEach((category) => {
+  createPage({
+    path: `/category/${category}`,
+    component: categoryTemplate,
+    context: {
+      category,
+    },
   })
 
-  // Create blog-list pages
-  const postsPerPage = 6
-  const numPages = Math.ceil(blogPostsCount / postsPerPage)
+  // Create category index page
+  const posts = result.data.allMarkdownRemark.edges.filter(
+    ({ node }) => node.frontmatter.category === category
+  )
 
-  Array.from({ length: numPages }).forEach((_, i) => {
+  if (posts.length > 0) {
     createPage({
-      path: i === 0 ? `/archive/` : `/archive/${i + 1}`,
-      component: blogList,
-      context: {
-        limit: postsPerPage,
-        skip: i * postsPerPage,
-        numPages,
-        currentPage: i + 1,
-      },
-    })
-  })
-
-  // Create category pages
-  const categoryTemplate = path.resolve(`./src/templates/category.js`)
-  category.forEach((category) => {
-    createPage({
-      path: `/category/${category}`,
+      path: `/category/${category}/`,
       component: categoryTemplate,
       context: {
         category,
+        posts,
+        tags,
       },
     })
-  })
+  } else {
+    createPage({
+      path: `/category/${category}/`,
+      component: categoryTemplate,
+      context: {
+        category,
+        noPosts: true,
+      },
+    })
+  }
+})
+
+
+
+
+
+
+
+
+
+
 
   // Create tag pages
-  const tagTemplate = path.resolve(`./src/templates/tag.js`)
+  const tagTemplate = path.resolve(`./src/templates/tag-template.js`)
   tags.forEach((tag) => {
     createPage({
       path: `/tag/${tag}`,
@@ -121,5 +186,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: `slug`,
       value: slugWithoutPrefix,
     })
+
+    // Add document type field
+    createNodeField({
+      node,
+      name: `type`,
+      value: getNode(node.parent).sourceInstanceName,
+    })
   }
 }
+

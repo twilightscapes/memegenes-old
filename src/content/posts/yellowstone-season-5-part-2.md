@@ -42,7 +42,9 @@ maratingtx2: Spontaneous & Sporadic
 maratingtx3: It's Humor - laugh
 maratingtx4: Adult Language
 category: memes
-tags: [tv, yellowstone]
+tags:
+  - tv
+  - yellowstone
 ---
 <!-- <div class="contentinside lake1" style=""> -->
 <!-- <img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;

@@ -44,7 +44,9 @@ maratingtx2: Qrazy
 maratingtx3: Drama Queen
 maratingtx4: Tramp to Trump
 category: memes
-tags: [trump, water, worst]
+tags:
+  - kimberly
+  - fake
 ---
 <div class="contentinside" style="">
 <img class="" src="/assets/kimberly-mask.webp" width="100%" style=" z-index:-1; opacity:0;

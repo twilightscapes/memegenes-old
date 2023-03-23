@@ -39,7 +39,9 @@ maratingtx2: Spontaneous & Sporadic
 maratingtx3: It's Humor - laugh
 maratingtx4: Adult Language
 category: memes
-tags: [trump, laptop]
+tags:
+  - trump
+  - laptop
 ---
 Can't wait to see how he fucked us all over on this one. How this is some lowly aide and he never met them. 
 

@@ -44,7 +44,9 @@ maratingtx2: Qrazy
 maratingtx3: Drama Queen
 maratingtx4: Trump Slurper
 category: memes
-tags: [gymjordan, deviants]
+tags:
+  - gymjordan
+  - deviants
 ---
 <div class="contentinside" style="">
 <!-- <img class="" src="/assets/matt-floating-head.webp" width="100%" style=" z-index:-1; opacity:0;

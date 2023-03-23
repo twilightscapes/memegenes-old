@@ -39,7 +39,10 @@ maratingtx2: Systemic Racism
 maratingtx3: Deranged Violence
 maratingtx4: Definitely a Cult
 category: memes
-tags: [racist, acab, police, trump]
+tags:
+  - racist
+  - police
+  - trump
 ---
 
 

@@ -44,7 +44,10 @@ maratingtx2:
 maratingtx3: Drama Queen
 maratingtx4: It's all about me
 category: memes
-tags: [trump, water, worst]
+tags:
+  - trump
+  - water
+  - worst
 ---
 <!-- <div class="contentinside lake1" style=""> -->
 <!-- <img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;

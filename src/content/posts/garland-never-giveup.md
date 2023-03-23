@@ -43,7 +43,9 @@ maratingtx2:
 maratingtx3: It's Humor - laugh
 maratingtx4: Adult Language
 category: memes
-tags: [garland, giveup]
+tags:
+  - garland
+  - doj
 ---
 <!-- <div class="contentinside lake1" style=""> -->
 <!-- <img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;

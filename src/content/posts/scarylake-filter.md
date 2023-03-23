@@ -44,7 +44,10 @@ maratingtx2: Qrazy
 maratingtx3: Drama Queen
 maratingtx4: Tramp to Trump
 category: memes
-tags: [grifter, liar]
+tags:
+  - grift
+  - liar
+  - loser
 ---
 <div class="contentinside lake1" style="">
 <img class="" src="/assets/lakemouth.webp" width="100%" style=" z-index:-1; opacity:0;

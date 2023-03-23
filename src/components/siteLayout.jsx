@@ -19,7 +19,9 @@ import SearchIcon from "../../static/assets/search"
 // import SearchForm from "./searchbox"
 import useSiteMetadata from "../hooks/SiteMetadata"
 
+import { RiCloseCircleFill, RiMenuUnfoldFill, RiArrowUpFill } from "react-icons/ri"
 
+// import GoBack from "../components/goBack"
 
 import { BiGridHorizontal } from "react-icons/bi"
 import { MdOutlineRectangle } from "react-icons/md"
@@ -35,57 +37,88 @@ import SignUp from "../components/newssign"
 // import { navigate } from "gatsby";
 const Layout = ({ children }) => {
 
+     // useEffect(() => {
+    //   sessionStorage.setItem("scrollPos", window.pageYOffset)
+    // }, [])
   
+    // useEffect(() => {
+    //   if (window.history.scrollRestoration) {
+    //     const scrollPos = sessionStorage.getItem("scrollPos")
+    //     window.history.scrollRestoration = "manual"
+    //     window.scrollTo(0, scrollPos)
+    //     window.history.scrollRestoration = "auto"
+    //   }
+    // }, [])
 
 
-  const [archiveView, setArchiveView] = useState('');
+    useEffect(() => {
+      let prevScrollpos = window.pageYOffset;
+    
+      window.onscroll = function() {
+        const currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos && prevScrollpos - currentScrollPos > 75) {
+          document.querySelector('.header').style.transform = 'translateY(0)';
+          if (showNav2) {
+            document.querySelector('#menuicon').style.transform = 'translateX(0)';
+          }
+          document.querySelector('.pagemenu').style.transform = 'translateY(220%)';
+          // document.body.classList.remove('scroll');
+          // document.body.classList.add('scroll');
+        } else if (prevScrollpos < currentScrollPos && currentScrollPos - prevScrollpos > 75) {
+          document.querySelector('.header').style.transform = 'translateY(-100%)';
+          if (showNav2) {
+            document.querySelector('#menuicon').style.transform = 'translateX(110%)';
+          }
+          document.querySelector('.pagemenu').style.transform = 'translateY(-200%)';
+          document.body.classList.add('scroll');
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    }, []);
+  
+      const [archiveView, setArchiveView] = useState('');
+  
+      useEffect(() => {
+        // Retrieve the selected option from local storage or default to 'grid'
+        const storedArchiveView = localStorage.getItem('archiveView');
+        setArchiveView(storedArchiveView || 'swipe');
+      }, []);
+    
+      useEffect(() => {
+        // Apply the selected option on page load
+        applyArchiveView();
+      }, [archiveView]);
+    
+      const applyArchiveView = () => {
+        const elements = document.querySelectorAll('.contentpanel');
+        elements.forEach((el) => {
+          if (archiveView === 'grid') {
+            el.classList.remove('horizontal-scroll', 'panels');
+            el.classList.add('grid-container');
+            document.body.classList.add('scroll');
+          } else if (archiveView === 'swipe') {
+            el.classList.remove('grid-container');
+            el.classList.add('horizontal-scroll', 'panels');
+            document.body.classList.remove('scroll');
+            if (showNav2) {
+              document.querySelector('#menuicon').style.transform = 'translateX(110%)';
+            }
+          }
+        });
+        window.scrollTo(0, 0);
+        localStorage.setItem('archiveView', archiveView);
+      };
+    
+      const toggleArchiveView = () => {
+        const newArchiveView = archiveView === 'grid' ? 'swipe' : 'grid';
+        setArchiveView(newArchiveView);
+        applyArchiveView();
+      };
 
-  useEffect(() => {
-    // Retrieve the selected option from local storage
-    const archiveView = localStorage.getItem('archiveView');
-    setArchiveView(archiveView);
-  }, []);
-
-  useEffect(() => {
-    // Apply the selected option on page load
-    if (archiveView === 'grid') {
-      resizeGrid();
-    } else if (archiveView === 'swipe') {
-      resizeSwipe();
-    }
-  }, [archiveView]);
-
-  const resizeGrid = () => {
-    const elements = document.querySelectorAll('.contentpanel');
-    elements.forEach(el => {
-      el.classList.remove('horizontal-scroll', 'panels');
-      el.classList.add('grid-container');
-    });
-    localStorage.setItem('archiveView', 'grid');
-  };
-
-  const resizeSwipe = () => {
-    const elements = document.querySelectorAll('.contentpanel');
-    elements.forEach(el => {
-      el.classList.remove('grid-container');
-      el.classList.add('horizontal-scroll', 'panels');
-    });
-  window.scrollTo(0, 0);
-  localStorage.setItem('archiveView', 'swipe');
-  };
 
 
 
 
-  const toggleArchiveView = () => {
-    const newArchiveView = archiveView === 'grid' ? 'swipe' : 'grid';
-    setArchiveView(newArchiveView);
-    if (newArchiveView === 'grid') {
-      resizeGrid();
-    } else if (newArchiveView === 'swipe') {
-      resizeSwipe();
-    }
-  };
 
 
 
@@ -105,6 +138,7 @@ const { showNav2 } = useSiteMetadata()
 const { showInfo } = useSiteMetadata()
 const { showFeature } = useSiteMetadata()
 const { showPosts } = useSiteMetadata()
+const { showSearch } = useSiteMetadata()
 const { showResume } = useSiteMetadata()
 // const { showSocial } = useSiteMetadata()
 const { showSkills } = useSiteMetadata()
@@ -122,7 +156,7 @@ const { font1 } = useSiteMetadata()
   const mediaQueryList = window.matchMedia(QUERY);
   const prefersReducedMotion = !mediaQueryList.matches;
 
-
+  
 
 const navStyle = {
   bg: "",
@@ -147,6 +181,8 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
     <link id="yyy" rel="stylesheet"
           href={fontUrl} crossorigin="anonymous" />
   )} 
+
+  
 </Helmet>
 
 <Seo />
@@ -175,45 +211,59 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   
 
 
+<div className="pagemenu upbar panel" style={{position:'fixed', bottom:'20px', zIndex:'4', left:'', right:'1vw', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'', textShadow:'0 1px 1px rgba(0, 0, 0, .7)', fontSize:'', verticalAlign:'center', transform: 'translateY(200%)' }}>
+
+<div className="menusnapp" style={{display:'flex', gap:'10px', padding:'1vh 1vw', alignItems:'center', textAlign:'center'}}>
+  <AnchorLink to="#top" aria-label="Link to Top" style={{cursor:'pointer', height:'2vh', fontSize:'.2rem'}}><RiArrowUpFill style={{cursor:'pointer', color:'#999', fontSize:'2rem'}} />top</AnchorLink>
+</div>
+</div>
+
+
+
+
+
 
 
 {showNav ? (
-<div id="menu" className="menu print panel" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10',  color:'', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 1% 0 3%', alignItems:'center', borderRadius:'0', display:'flex', justifyContent:'space-between', gap:'10px',  }}>
-
-<ul sx={navStyle} style={{ fontSize:'clamp(.8rem, 2.3vw, 2.5rem)',  textAlign:'center',maxHeight:'70px', display:'flex', justifyContent:'space-around', gap:'2vw',  alignItems:'center'}}>
-      
-
+<div id="menu" className="menu print panel1 header" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', maxHeight:'', overFlow:'', boxShadow:'0 0 2px rgba(0,0,0,.7)', padding:'0 2%', alignItems:'start', borderRadius:'0', display:'flex', justifyContent:'space-around', gap:'10px', color:'#fff',  borderBottom:'1px solid #222', background:'#222'  }}>
 
 
 {prefersReducedMotion ? (
-            <li className="nomo" style={{position:'relative',}}>
-            <button className=""  aria-label="Return to Home">
+    
+            <button className="cornerlogo" style={{position:'relative', top:'', left:'4%', border:'0px solid white', borderBottom:'0px solid transparent'}} aria-label="Return to Home">
             {iconimage ? (
-      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} width="100" height="70" />
+      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'', border:'none'}} width="120" height="60" />
                 ) : (
                   <div style={{fontWeight:'bold',}}>{companyname}</div>
                 )}
             </button>
-          </li>
+          
           ) : (
-            <li className="momo" style={{position:'relative',}}>
-                        <AnchorLink to="/" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
+          
+                        <AnchorLink to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'block', maxWidth:'', height:'auto', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
-      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} width="100" height="70" />
+      <img className="cornerlogo" style={{position:'relative', top:'.5vh', left:'4%', border:'0px solid white', padding:'0 1%', maxHeight:''}} src={iconimage} alt={companyname} width="107" height="60" />
                 ) : (
                   <div style={{fontWeight:'bold',}}>{companyname}</div>
                 )}
             </AnchorLink>
-            {/* <button className="" onClick={() => { navigate(-1) }}>
-            {iconimage ? (
-      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'60px', border:'none'}} width="100px" height="70px" />
-                ) : (
-                  <div style={{fontWeight:'bold',}}>{companyname}</div>
-                )}
-            </button> */}
-            {/* <a onClick={() => window.history.back()}>Go back</a> */}
-                        </li>
+                        
           )}
+
+
+          
+
+
+
+
+
+<ul className="topmenu" sx={navStyle} style={{ fontSize:'clamp(.6rem, 1.6vw, 1.8rem)',  textAlign:'center',maxHeight:'', display:'flex', justifyContent:'space-between', gap:'4vw',  alignItems:'center', margin:'0 auto 0 auto', padding:'1.5vh 2% 0 2%', border:'0px solid white', textTransform:'uppercase'}}>
+      
+
+
+
+
+
       
       
 {/* <li>
@@ -274,14 +324,21 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 )} */}
 
 
+{/* <li style={{position:'relative',}}>
+
+      <AnchorLink aria-label="Menu 1" className="navbar-item" to="/category/" style={{paddingRight:'',}}>
+      Magazine</AnchorLink>         
+
+</li> */}
+
 
 
 {showFeature ? (
 <li style={{position:'relative',}}>
       {prefersReducedMotion ? (
-       <Link aria-label="Featured" className="navbar-item" to="/#feature" style={{paddingRight:'',}}>{menu2}</Link>    
+       <Link aria-label="Featured" className="navbar-item" to="/#showPosts" style={{paddingRight:'',}}>{menu2}</Link>    
    ) : (
-      <AnchorLink aria-label="Featured" className="navbar-item" to="/#feature" style={{paddingRight:'',}}>
+      <AnchorLink aria-label="Featured" className="navbar-item" to="/#showPosts" style={{paddingRight:'',}}>
       {menu2}</AnchorLink>         
     )}
 </li>
@@ -291,7 +348,13 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 
-{showInfo ? (
+
+
+
+
+
+
+{/* {showInfo ? (
 <li style={{position:'relative',}}>
       {prefersReducedMotion ? (
        <Link aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>{menu1}</Link>    
@@ -299,14 +362,28 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
       <AnchorLink aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>
       {menu1}</AnchorLink>         
     )}
+<AnchorLink aria-label="Menu 1" className="navbar-item" to="/about" style={{paddingRight:'',}}>
+      About</AnchorLink>   
+
 </li>
       ) : (
   ""
-)}
+)} */}
 
-<li>
-<Link aria-label="About" className="navbar-item" to="/about" style={{paddingRight:'',}}>{menu1}</Link> 
-</li>
+
+
+
+
+
+
+
+
+{/* <li style={{position:'relative',}}>
+
+      <AnchorLink aria-label="Menu 1" className="navbar-item" to="/contact" style={{paddingRight:'',}}>
+      Submissions</AnchorLink>         
+
+</li> */}
 
 
 
@@ -340,9 +417,9 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   ""
 )}
 
-<li>
-<Link aria-label="Contact" className="navbar-item" to="/contact" style={{paddingRight:'',}}>Contact</Link> 
-</li>
+{/* <li>
+<Link aria-label="Contact" className="navbar-item" to="/contact" style={{paddingRight:'',}}>Submissions</Link> 
+</li> */}
 
 
 {/* <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>
@@ -352,15 +429,18 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   </li> */}
 </ul>
 
-<div style={{display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'3vw', textAlign:'center', maxHeight:'70px', alignItems:'center'}}>
+<div id="missioncontrol" className="sitecontrols" style={{display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'3vw', textAlign:'center', maxHeight:'', alignItems:'center', padding:'.5% .5% 0 0'}}>
 
+{showSearch ? (
 <div>
-   <Link aria-label="Search MemeGenes" to="/search/" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'0px', textAlign:'center'}}>
-    <SearchIcon style={{width:'3vh', height:'3vw'}} />
+   <Link aria-label="Search UrbanFetish" to="/search/" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'0px', textAlign:'center'}}>
+    <SearchIcon style={{}} />
     <span className="themetext">search</span>
    </Link>
         </div>
-
+      ) : (
+        ""
+      )}
 
 
   <div>
@@ -369,33 +449,60 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
   
   <div>
-    <button aria-label="Dark/Light Mode" onClick={toggleArchiveView} style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'0px', textAlign:'center'}}>
-      {archiveView === 'grid' ? <MdOutlineRectangle  style={{width:'3vh', height:'3vw'}} /> : <BiGridHorizontal  style={{width:'3.8vh', height:'3vw'}} /> }
-      <span className="themetext">{archiveView === 'grid' ? 'swipe' : ' grids '}</span>
-    </button>
+
+  <button
+  aria-label="Grid/Swipe View"
+  onClick={toggleArchiveView}
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: "0px",
+    textAlign: "center",
+  }}
+>
+  {archiveView === "grid" ? (
+    <MdOutlineRectangle style={{ width: "30px", height: "30px" }} />
+  ) : (
+    <BiGridHorizontal style={{ width: "30px", height: "30px" }} />
+  )}
+  <span className="themetext">
+    {archiveView === "grid" ? "swipe" : "scroll"}
+  </span>
+</button>
+
+
+
+  {/* <button onClick={toggleArchiveView}>Toggle Archive View</button> */}
+    {/* <button aria-label="Dark/Light Mode" onClick={toggleArchiveView} style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'0px', textAlign:'center'}}>
+      {archiveView === 'grid' ? <MdOutlineRectangle  style={{width:'3vh', height:'3vw'}} /> : <BiGridHorizontal  style={{width:'4vh', height:'3vw'}} /> }
+      <span className="themetext">{archiveView === 'grid' ? 'swipe' : ' scroll '}</span>
+    </button> */}
 </div>
 
  
 
-    <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'10px', textAlign:'center'}}>
+    {/* <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'10px', textAlign:'center'}}>
    
-   <Fullscreen style={{width:'2vh', height:'2vw'}} />
+   <Fullscreen style={{width:'', height:''}} />
    <span className="themetext">fullscreen</span>
 
-        </div>
+        </div> */}
 </div>
       
 
         
            
       
-            
+
             </div>
 
 ) : (
   ""
 )}
 
+{/* <div id="gobacker" style={{position:'absolute', top:'50px', right:'3vw', zIndex:'2'}}><GoBack /></div> */}
 
 
 <header id="top" name="pagetop" style={{}} >
@@ -541,7 +648,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
       
 
-   <Link aria-label="Search MemeGenes" className="sherlock" to="/search/" style={{display:'flex',justifyContent:'space-around', marginTop:'5px'}}>
+   <Link aria-label="Search UrbanFetish" className="sherlock" to="/search/" style={{display:'flex',justifyContent:'space-around', marginTop:'5px'}}>
     <SearchIcon />
    </Link>
     
@@ -613,7 +720,11 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 {children}
 </div>
       
+
+
 <img className="backimage" src={image} alt="Default Background" style={{height:'100vh', width:'100vw', position:'fixed', zIndex:'-2', top:'0', objectFit:'cover',}} width="10" height="10" />
+
+
       
       {/* <Consent /> */}
      {/* <Install /> */}

@@ -39,6 +39,6 @@ maratingtx3: It's Humor - laugh
 maratingtx4: Adult Language
 contentinvideo: false
 category: memes
-tags: [humor]
+tags:
 ---
 

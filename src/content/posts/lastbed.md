@@ -39,7 +39,10 @@ maratingtx2: Spontaneous & Sporadic
 maratingtx3: It's Humor - laugh
 maratingtx4: Adult Language
 category: memes
-tags: [lindell, mypillow, advertisement]
+tags:
+  - lindell
+  - mypillow
+  - tv
 ---
 ## America's Favorite Pillow Guy has a brand NEW product out, called "My Last Bed"! 
 

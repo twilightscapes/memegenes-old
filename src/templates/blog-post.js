@@ -3,6 +3,15 @@
 
 import { useState, useRef,forwardRef } from "react";
 
+// import Zoom from 'react-medium-image-zoom'
+// import 'react-medium-image-zoom/dist/styles.css'
+
+
+import InnerImageZoom from 'react-inner-image-zoom'
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css'
+
+
+
 // import Controls from "../components/Controls";
 import { document } from "browser-monads"
 import PropTypes from "prop-types";
@@ -12,6 +21,7 @@ import { MdVolumeOff } from "react-icons/md"
 // import { MdVolumeDown } from "react-icons/md"
 import { MdVolumeUp } from "react-icons/md"
 // import { StaticImage } from "gatsby-plugin-image"
+
 
 
 import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
@@ -128,6 +138,8 @@ const Pagination = props => (
 
 const Post = ({ data, pageContext }) => {
 
+
+
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
 
@@ -143,7 +155,7 @@ const Post = ({ data, pageContext }) => {
     ? frontmatter.underlayImage.childImageSharp.gatsbyImageData
     : ""
 
-
+    
 
 
 
@@ -429,6 +441,7 @@ const YouTube = frontmatter.youtuber
     next,
   }
 
+  
 
 
   const { siteUrl } = useSiteMetadata()
@@ -538,12 +551,12 @@ const YouTube = frontmatter.youtuber
    
 
 
-<div className="videohide1" style={{position:'absolute', height:'', aspectRatio:'16/9', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', color:'var(--theme-ui-colors-text)', fontFamily:'Verdana, Sans-Serif, System' }}>
+<div className="videohide1 554 pane1" style={{position:'absolute', height:'', aspectRatio:'16/9', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', color:'var(--theme-ui-colors-text)', fontFamily:'Verdana, Sans-Serif, System' }}>
 
 
 
 
-<button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'70px', border:'0px  solid red', width:'100vw', height:'', aspectRatio:'16/9', maxHeight:'', backgroundColor:'var(--theme-ui-colors-bodyBg)', color:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center',   padding:'2vh 0 0 0'}}>
+<button aria-label="Click To Play" className="clickplays videohide 555" style={{position:'relative', zIndex:'', top:'70px', border:'0px  solid red', width:'100vw', height:'105%', minHeight:'300px', aspectRatio:'16/9', maxHeight:'', background:'rgba(0, 0, 0, .99)', color:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center',   padding:'2vh 0 0 0'}}>
 
 
 
@@ -552,7 +565,7 @@ const YouTube = frontmatter.youtuber
 
           {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
 
-          {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
+          {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="UrbanFetish" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
 
 
           <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following is rated: <strong>{frontmatter.marate}</strong></div>
@@ -632,7 +645,7 @@ Click to play
 
 <button aria-label="Video Play/Pause Button"
         onClick={onPlayPause}
-        className="videohide" 
+        className="videohide 644 pane2" 
         style={{
          color:'#ddd',
          width:'100vw', 
@@ -641,7 +654,8 @@ Click to play
          placeContent:'center',
          position:'absolute',
          aspectRatio:'16/9',
-         top:'0',left:'0',right:'0',bottom:'0',
+         top:'',left:'0',right:'0',bottom:'0',
+         border:'0px solid blue',
          zindex:'1'
         }}
       ></button>
@@ -662,16 +676,16 @@ Click to play
         
   
   
-  <div ref={ref} className="controlsbox" style={{width:'', height:'', border:'0px solid red', }}>
+  <div ref={ref} className="controlsbox" style={{width:'', height:'', border:'1px solid red', }}>
   
 <button
         aria-label="Video Play/Pause Button"
         onClick={onPlayPause}
-        className="videohide" 
+        className="videohide 679 pane3" 
         style={{
          color:'#ddd',
          width:'100vw', 
-         height:'',
+         height:'auto',
          display:'block',
          placeContent:'',
          position:'absolute',
@@ -692,7 +706,7 @@ Click to play
                     style={{
                       backgroundColor:'rgba(0,0,0, 0.6)',
                       color:'#999',
-                      borderRadius:'8px', overFlow:'hidden'
+                      borderRadius:'', overFlow:'hidden'
                   }}
                   >
                     {/* <MdPlayArrow style={{fontSize:'50px', position:'absolute'}}  /> */}
@@ -714,7 +728,7 @@ Click to play
                     style={{
                       backgroundColor:'rgba(0,0,0, 0.6)',
                       color:'#999',
-                      borderRadius:'8px', overFlow:'hidden'
+                      borderRadius:'', overFlow:'hidden'
                   }}
                   >
                     {muted ? (
@@ -772,7 +786,7 @@ Click to play
   //           />
 
   //         ) : (
-  //           <StaticImage className="featured-image1 layer1" src="../../static/assets/default-og-image.jpg" alt="Default Image" style={{position:'relative', zIndex:'',}} />
+  //           <StaticImage className="featured-image1 layer1" src="../../static/assets/default-og-image.webp" alt="Default Image" style={{position:'relative', zIndex:'',}} />
   //         )}
 
   // </div>
@@ -823,10 +837,10 @@ Click to play
       )}
 
 
+<div id="gobacker" style={{position:'absolute', top:'12vh', right:'1vw', zIndex:'5'}}><GoBack /></div>
 
 
-
-<div className="pagemenu panel" style={{position:'fixed', bottom:'20px', zIndex:'4', left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .5)', padding:'', border:'1px solid #666', borderRadius:'12px', textShadow:'0 1px 1px rgba(0, 0, 0, .7)', fontSize:'clamp(2rem, 3vw, 3rem)', verticalAlign:'center' }}>
+{/* <div className="pagemenu panel" style={{position:'fixed', bottom:'20px', zIndex:'4', left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .5)', padding:'', border:'1px solid #666', borderRadius:'', textShadow:'0 1px 1px rgba(0, 0, 0, .7)', fontSize:'clamp(2rem, 3vw, 3rem)', verticalAlign:'center' }}>
 
 <div className="menusnapp" style={{display:'flex', gap:'10px', padding:'1vh 1vw', alignItems:'center'}}>
 {frontmatter.scrollable ? (
@@ -857,7 +871,7 @@ Click to play
         </button>
         </div>
     }
-</div>
+</div> */}
 
 
 
@@ -879,18 +893,18 @@ Click to play
 
         
 
-{frontmatter.scrollable ? (
+{/* {frontmatter.scrollable ? (
 <div style={{width:'100vw', height:'10vh', position:'fixed', zIndex:'2', top:'82vh', border:'0px solid yellow', textAlign:'center', animation:'poof 1.4s forwards', animationDelay:'4s'}}>
   <div style={{marginTop:'', background:'rgba(9, 9, 10, 0.866)', width:'20vw', padding:'1vh 2vw', margin:'0 auto', borderRadius:'10px', color:'#fff',}}>SCROLL DOWN</div>
 </div>
 ) : (
 ""
-  )}
+  )} */}
 
 
 
 
-<div className="wrap-element effects" style={{aspectRatio:'16/9', minHeight:'280px', maxHeight:'', overFlow:'hidden'}}>
+<div className="wrap-element effects" style={{aspectRatio:'16/9', minHeight:'', maxHeight:'', overFlow:'', marginTop:''}}>
 
 
 {/* <GatsbyImage
@@ -918,7 +932,7 @@ className="featured-image1 layer1"
 placeholder="blurred"
 loading="eager"
 // layout="constrained"
-style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300px'}}
+style={{display:'none', position:'absolute', top:'0', zIndex:'0', width:'100vw', maxHeight:'300px'}}
 />
 
     ) : (
@@ -928,7 +942,23 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
 </div>
     ) : (
 
-<div className="imageonly">
+<div className="imageonly" style={{ display:'flex', justifyContent:'center', maxHeight:'',}}>
+{/* <InnerImageZoom src={getSrc(FrontImage)}  className="featured-imager"
+        placeholder="blurred"
+        loading="eager" layout="constrained" /> */}
+
+<InnerImageZoom
+            src={getSrc(FrontImage)}
+            // zoomSrc={getSrc(FrontImage)}
+            // fullscreenOnMobile={true}
+            // moveType="drag"
+            // zoomScale={0.9}
+            // zoomPreload={true}
+
+            // height={300}
+          />
+    
+{/* <Zoom>
 {FrontImage ? (
 
 
@@ -940,15 +970,20 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
         loading="eager"
         // layout="constrained"
         style={{position:'relative', top:'0', zIndex:'0', minHeight:'300px'}}
+
       />
 
     ) : (
       ""
     )}
-
+    </Zoom> */}
 </div>
 
     )}
+
+
+
+
 
 
 {/* { NftDrop ? (
@@ -1004,10 +1039,10 @@ style={{position:'absolute', top:'0', zIndex:'0', width:'100vw', minHeight:'300p
 
 
 
-<button aria-label="Click To Play" className="clickplays videohide" style={{position:'relative', zIndex:'', top:'50px', border:'1px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', aspectRatio:'16/9'}}>
+<button aria-label="Click To Play" className="clickplays videohide 1042" style={{position:'relative', zIndex:'', top:'50px', border:'1px  solid red', width:'100vw', background:'transparent', color:'', fontSize:'18px', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', aspectRatio:'16/9'}}>
                 {/* // <div style={{position:'absolute', background:'#111', height:'100vh', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'start', justifyContent:'center', color:'#fff', fontFamily:'Verdana, Sans-Serif, System' }}> */}
    
-                {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="MemeGenes" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
+                {/* <img className="homepage-bg" src={iconimage} width="250px" height="150px" alt="UrbanFetish" style={{ width:'', margin:'120px auto 0 auto', filter:'drop-shadow(2px 2px 2px #000)', background:'transparent !important', position:'relative', top:''}} /> */}
 
 
                 <div className="flex-items" style={{fontSize:'clamp(.6rem, 1.4vw, 2rem)', fontWeight:'bold', margin:'0 auto 0 auto', textTransform:'uppercase',}}>The following is rated: <strong>{frontmatter.marate}</strong></div>
@@ -1108,7 +1143,7 @@ zindex:'1'
       {/* <div className="youtubeblockertop" style={{position:'absolute', display:'block', height:'58px', width:'100%', zIndex:'0', top:'0', right:'0', textAlign:'center', padding:'12px',
             background:'#000',
             animation:'fadeout 4s forwards', animationDelay:'6s', border:'0px solid yellow'
-          }}>MemeGenes.com</div> */}
+          }}>UrbanFetish.com</div> */}
   </div>
   ) : (
     ""
@@ -1214,9 +1249,12 @@ zindex:'1'
             ""
           )}
 {/* ((((((((((body content)))))))))) */}
+
+
 {frontmatter.scrollable ? (
 
 <div>
+
 {ShareThis ? (
 <header style={{ height:'', display:'grid', placeContent:'center'}}>
 
@@ -1225,17 +1263,14 @@ zindex:'1'
   </div>
 
   <div className="article-header" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:'', borderRadius:'12px'}}>
-            <h1 className="headline panel" style={{color:'#ddd', borderRadius:'12px'}}>{frontmatter.title}</h1>
+    
+            <h1 className="headline panel" style={{color:'#ddd', borderRadius:''}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
            {/* Posted: <TimeAgo date={frontmatter.date} style={{color:''}} /> */}
            
            {/* <Link to={`/category/${frontmatter.category}`}>Category:{frontmatter.category}</Link>
 
            <p>Tags: {frontmatter.tags.join(", ")}</p> */}
-
-
-
-      {/* Render categories if they exist */}
       {categories && categories.length > 0 && (
         <div>
           <h4>Categories:</h4>
@@ -1246,34 +1281,25 @@ zindex:'1'
           ))}
         </div>
       )}
-
-      
-      {/* Render tags if they exist */}
       {tags && tags.length > 0 && (
-        <div>
+        <div style={{position:'relative', zindex:'2', margin:'1vh auto', width:'100%'}}>
           <h4>Tags:</h4>
           {tags.map((tag) => (
             <Link to={`/tag/${tag}`} key={tag}>
-              {tag},&nbsp;
+              {tag} &nbsp;
             </Link>
           ))}
         </div>
       )}
+  </div>
 
 
 
 
-           <div>
-
-
-
-    </div>
-
-          </div>
-  </header>
+</header>
             ) : (
               <header style={{ height:'', display:'grid', placeContent:'center'}}>
-                <div className="article-header panel" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:'', borderRadius:'12px'}}>
+                <div className="article-header panel" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:'', borderRadius:'', marginTop:'10vh'}}>
             <h1 className="headline" style={{color:'#ddd', borderRadius:'12px'}}>{frontmatter.title}</h1>
             {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
            {/* Posted: <TimeAgo date={frontmatter.date} style={{color:''}} /> */}
@@ -1282,13 +1308,14 @@ zindex:'1'
             )}
 
 
-  <div className="panel" style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow', borderRadius:'12px'}}>
+<br /><br /><br />
+
+  <div className="panel" style={{padding:'0 0', borderTop:'0px solid', margin:'0 0', textAlign:'center', fontSize:'1.5rem', minWidth:'50%', width:'100%', maxWidth:'', border:'0px solid yellow', borderRadius:''}}>
       <div
         className="blog-post-content bodycontent" style={{ fontSize:'clamp(1.2rem, 2.8vw, 1.8rem)', textAlign:'center', width:'100%', maxWidth:'', padding:'2vh 6% 10vh 6%', margin:'0 auto', color:'inherit !important'}}
         dangerouslySetInnerHTML={{ __html: html }}
       />    
 </div>
-<GoBack />
 </div>
 
 
@@ -1313,7 +1340,7 @@ zindex:'1'
                 {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
                {/* Posted: <TimeAgo date={frontmatter.date} style={{color:''}} /> */}
               </div>
-              <GoBack />
+              
       </header>
               )}
 </div>
@@ -1378,11 +1405,11 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
       <div id="original" style={{height:'', margin:'10vh auto', paddingTop:'5vh',   display:'grid', placeContent:'center', border:'0px solid blue'}}>
 
 {YouTube ? (
-          <div  className="panel" style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'12px' }}>
+          <div  className="panel" style={{position:'relative', width:'100%', maxWidth:'800px', margin:'0 auto', textAlign:'center', display:'flex', flexDirection:'column', fontSize:'100%', borderRadius:'' }}>
 <div style={{maxWidth:'90vw', width:'100%', height:'', maxHeight:'', padding:'0', position:'relative', bottom:'0', textAlign:'center', border:'0px solid blue', margin:'0 auto', borderRadius:'12px'}}>
 
                     {/* <Iframer2 /> */}
-<a href={OriginalUrl} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
+<a href={OriginalUrl} rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit'}}>
  <div style={{display:'grid', placeContent:'center', fontWeight:'bold', padding:'1rem', fontSize:'2rem', width:'100%', height:'', border:'0px solid', borderRadius:'12px'}}>Support Our Video Sponsors
 
 <ImPlay style={{margin:'0 auto', width:'50%', fontSize:'60px'}} />
@@ -1406,14 +1433,14 @@ Click to play original video
             Legal:<br />
             <Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link>
       <br /> <br />
-    <div style={{display:'flex', placeContent:'center'}}>
+    <div style={{display:'grid', placeContent:'center'}}>
       <p style={{textAlign:'left'}}>
         <strong>*This is a parody website meant for education and entertainment purposes.</strong> <br /><br />
         All characters, and events portrayed in this production are fictitious or are being portrayed in a satirical manner.<br /><br />There is no identification with actual persons (living or deceased), <br />places, buildings, and/or products. There is no harm/insult intended and/or none should be inferred. 
         <br /><br /> No Celebrities or Politicians were harmed.
 
         <br /><br />
-        Video footage public youtube.com | Some imagery provided from <a rel="noopener noreferrer" href="https://www.flickr.com/photos/donkeyhotey/" target="_blank" >DonkeyHotey</a>, Wikipedia and other public sourced materials.
+        Video footage public youtube.com | Some imagery provided from <a rel="noopener noreferrer" href="https://www.flickr.com/photos/donkeyhotey/" >DonkeyHotey</a>, Wikipedia and other public sourced materials.
         </p>
     </div>
 </div>
@@ -1465,7 +1492,7 @@ Click to play original video
 
 
 
-<GoBack />
+
 
       
 
@@ -1489,6 +1516,10 @@ Click to play original video
 
 
 export default Post
+
+
+
+
 
 export const pageQuery = graphql`
   query BlogPostQueryBlogPostQuery($id: String!) {

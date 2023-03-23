@@ -44,7 +44,9 @@ maratingtx2: Love Story
 maratingtx3: Political Humor
 maratingtx4: Adult Language
 category: memes
-tags: [trump, epstein, pedo]
+tags:
+  - trump
+  - epstein
 ---
 
 
