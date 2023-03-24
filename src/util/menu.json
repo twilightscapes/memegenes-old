@@ -1,12 +1,5 @@
 {
   "menuItems": [
-    {
-      "menutitle": "Magazine",
-      "url": "/category"
-    },
-    {
-      "menutitle": "Submissions",
-      "url": "/contact"
-    }
+
   ]
 }
