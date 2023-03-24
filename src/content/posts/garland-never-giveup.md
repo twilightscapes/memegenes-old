@@ -11,7 +11,7 @@ youtubersuggestion1: "https://youtu.be/dQw4w9WgXcQ"
 youtubersuggestion2: "https://youtu.be/dQw4w9WgXcQ"
 youtubersuggestion3: "https://youtu.be/dQw4w9WgXcQ"
 youtubestart: "240"
-youtubeend: "247"
+youtubeend: "243"
 youtubemute: false
 audiostart: "20"
 audioend: "5000"
