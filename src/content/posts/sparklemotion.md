@@ -4,24 +4,25 @@ title: Sometimes, I doubt your commitment to SparkleMotion!
 slug: /sparklemotion
 date: 2023-02-18 04:43
 description: Tears, hysterics, manipulation and insanity! I often wonder how she makes it through each day
-youtuber: "https://youtu.be/accEKtBebaU"
-youtuber2: 
-youtubeshoworiginal: true
-youtubersuggestion1: 
-youtubersuggestion2: 
-youtubersuggestion3: 
-youtubestart: "1"
-youtubeend: "5"
-youtubemute: false
+youtube:
+ youtuber: "https://youtu.be/accEKtBebaU"
+ youtuber2: 
+ youtubeshoworiginal: true
+ youtubersuggestion1: 
+ youtubersuggestion2: 
+ youtubersuggestion3: 
+ youtubestart: "1"
+ youtubeend: "5"
+ youtubemute: false
+ youtubecontrols: false
+ clicktoplay: false
+ customcontrols: true
+ youtubeautostart: false
+ youtubeloop: true
 audiostart: "20"
 audioend: "5000"
 audiotitle: 
 liarliar: true
-youtubecontrols: false
-clicktoplay: false
-customcontrols: true
-youtubeautostart: false
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: true

@@ -4,22 +4,25 @@ title: For the active teenager - Jox Socks
 slug: /jox-socks
 date: 2023-02-02 17:43
 description: We know...
-youtuber: 
-youtuber2: 
-youtubeshoworiginal: false
-youtubersuggestion1:
-youtubersuggestion2:
-youtubersuggestion3:
-youtubestart: "0"
-youtubeend: 
-youtubemute: true
+youtube:
+  youtuber: 
+  youtuber2: 
+  youtubeshoworiginal: true
+  youtubersuggestion1: 
+  youtubersuggestion2: 
+  youtubersuggestion3: 
+  youtubestart: "240"
+  youtubeend: "243"
+  youtubemute: false
+  youtubecontrols: false
+  clicktoplay: false
+  customcontrols: true
+  youtubeautostart: false
+  youtubeloop: true
 audiostart: "0"
 audioend: 
 audiotitle: 
 liarliar: false
-youtubecontrols: true
-youtubeautostart: true
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: false

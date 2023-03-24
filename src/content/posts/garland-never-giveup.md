@@ -4,25 +4,26 @@ title: Garland says Trump to be taken down in next two weeks
 slug: /garland-never-giveup
 date: 2023-08-11 03:00
 description: Exclusive! Watch Garland states that Trump will desert you...
-youtuber: https://youtu.be/nvBAuAD1Pac
-youtuber2: 
-youtubeshoworiginal: true
-youtubersuggestion1: "https://youtu.be/dQw4w9WgXcQ"
-youtubersuggestion2: "https://youtu.be/dQw4w9WgXcQ"
-youtubersuggestion3: "https://youtu.be/dQw4w9WgXcQ"
-youtubestart: "240"
-youtubeend: "243"
-youtubemute: false
+youtube:
+  youtuber: https://youtu.be/nvBAuAD1Pac
+  youtuber2: 
+  youtubeshoworiginal: true
+  youtubersuggestion1: "https://youtu.be/dQw4w9WgXcQ"
+  youtubersuggestion2: "https://youtu.be/dQw4w9WgXcQ"
+  youtubersuggestion3: "https://youtu.be/dQw4w9WgXcQ"
+  youtubestart: "240"
+  youtubeend: "243"
+  youtubemute: false
+  youtubecontrols: false
+  clicktoplay: false
+  customcontrols: true
+  youtubeautostart: false
+  youtubeloop: true
 audiostart: "20"
 audioend: "5000"
 audiotitle: 
 bumpertext: ""
 liarliar: true
-youtubecontrols: false
-clicktoplay: false
-customcontrols: true
-youtubeautostart: false
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: true

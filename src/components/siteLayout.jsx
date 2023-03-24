@@ -26,6 +26,7 @@ import { RiCloseCircleFill, RiMenuUnfoldFill, RiArrowUpFill } from "react-icons/
 import { BiGridHorizontal } from "react-icons/bi"
 import { MdOutlineRectangle } from "react-icons/md"
 
+import Menu from "../components/menu"
 
 import Fullscreen from "../components/FullScreen"
 // import ss from "../../static/assets/pagebg.webp"
@@ -263,7 +264,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 
-
+<Menu />
       
       
 {/* <li>
@@ -333,7 +334,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 
-{showFeature ? (
+{/* {showFeature ? (
 <li style={{position:'relative',}}>
       {prefersReducedMotion ? (
        <Link aria-label="Featured" className="navbar-item" to="/#showPosts" style={{paddingRight:'',}}>{menu2}</Link>    
@@ -344,7 +345,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 </li>
       ) : (
   ""
-)}
+)} */}
 
 
 

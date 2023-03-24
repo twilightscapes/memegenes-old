@@ -4,25 +4,26 @@ title: They proclaimed "help me, I need water". I said "What you need is Trump W
 slug: /trump-water
 date: 2023-02-22 03:00
 description: Watch Trump make an ass of himself in Ohio, mocks the crowd about their water problems.
-youtuber: "https://youtu.be/s-s7eG2ckN4"
-youtuber2: 
-youtubeshoworiginal: true
-youtubersuggestion1: 
-youtubersuggestion2: 
-youtubersuggestion3: 
-youtubestart: "12"
-youtubeend: ""
-youtubemute: false
+youtube:
+ youtuber: "https://youtu.be/s-s7eG2ckN4"
+ youtuber2: 
+ youtubeshoworiginal: true
+ youtubersuggestion1: 
+ youtubersuggestion2: 
+ youtubersuggestion3: 
+ youtubestart: "12"
+ youtubeend: ""
+ youtubemute: false
+ youtubecontrols: false
+ clicktoplay: false
+ customcontrols: true
+ youtubeautostart: false
+ youtubeloop: true
 audiostart: "20"
 audioend: "5000"
 audiotitle: 
 bumpertext: "Trump Water - the only thing Trump can make wet"
 liarliar: true
-youtubecontrols: false
-clicktoplay: false
-customcontrols: true
-youtubeautostart: false
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: true

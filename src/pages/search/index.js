@@ -6,7 +6,7 @@ import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
 import Layout from "../../components/siteLayout"
 import { Helmet } from "react-helmet"
-// import TwilightLogo from "../../../static/assets/logo.svg"
+import TwilightLogo from "../../../static/assets/logo.svg"
 import { StaticImage } from "gatsby-plugin-image"
 
 // import TimeAgo from 'react-timeago'
@@ -63,7 +63,7 @@ const SearchPage = ({ data }) => {
 
       </div>
 
-      {/* <TwilightLogo className="bglogo darkened" /> */}
+      <TwilightLogo className="bglogo darkened" />
       <div className="contentpanel horizontal-scroll panels" style={{justifyContent:'center', alignItems:'center', marginTop:'70px'}}>
 
 <div className="sliderSpacer" style={{height:'', paddingTop:'', display:'none'}}></div>
@@ -108,7 +108,7 @@ const SearchPage = ({ data }) => {
 
 <div className="post-content" style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'0', margin:'0 auto 0 auto', textAlign:'center', overFlow:'hidden'}}>
 
-{node.frontmatter.youtuber ? (
+{node.frontmatter.youtube.youtuber ? (
 <Link to={node.frontmatter.slug} style={{}}>
 
   <div className="spotlight" style={{marginLeft:'10%', marginTop:'-28%', margin:'-24% 10% 0 10%'}}>
@@ -171,7 +171,9 @@ query pageUsersSitesssrcpagessearchindexJs3773404046 {
         frontmatter {
           title
           date(formatString: "YYYY-MM-DD-HH-MM-SS")
-          youtuber
+          youtube{
+            youtuber
+          }
           featuredImage {
             childImageSharp {
               gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)

@@ -4,22 +4,23 @@ title: Try Vitamin Meth Today!
 slug: /vitamin-meth
 date: 2023-02-02 05:43
 description: Makes mornings fun again!
-youtuber: 
-youtuber2: 
-youtubeshoworiginal: false
-youtubersuggestion1:
-youtubersuggestion2:
-youtubersuggestion3:
-youtubestart: "0"
-youtubeend: 
-youtubemute: true
+youtube:
+ youtuber: 
+ youtuber2: 
+ youtubeshoworiginal: false
+ youtubersuggestion1:
+ youtubersuggestion2:
+ youtubersuggestion3:
+ youtubestart: "0"
+ youtubeend: 
+ youtubemute: true
+ youtubecontrols: true
+ youtubeautostart: true
+ youtubeloop: true
 audiostart: "0"
 audioend: 
 audiotitle: 
 liarliar: false
-youtubecontrols: true
-youtubeautostart: true
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: false

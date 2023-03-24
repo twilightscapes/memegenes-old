@@ -2,8 +2,21 @@
 slug: /
 tagline:  Memes are life
 featuredImage: /assets/trump-epstein-promo.webp
-youtuber: 
-youtuber2: 
+youtube:
+  youtuber: https://youtu.be/k8TjgvwoVgE
+  youtuber2: https://youtu.be/k8TjgvwoVgE
+  youtubeautostart: false
+  youtubemute: false
+  youtubecontrols: false
+  clicktoplay: false
+  customcontrols: false
+  youtubestart: "0"
+  youtubeend: "10"
+  youtubeloop: true
+  youtubeshoworiginal: false
+  youtubersuggestion1: ""
+  youtubersuggestion2: ""
+  youtubersuggestion3: ""
 audiostart: "20"
 audioend: "5000"
 audiotitle: "Lamb - Gorecki"
@@ -18,7 +31,6 @@ portfolio:
     the moment, nor does it come naturally. Good design is a thorough and
     interative process with site visitors in mind foremost. Good design is
     identifying a problem for those visitors and removing that problem.
-youtubeautostart: true
 addressText2: ""
 skillsTitle: "Mad Skills Yo!"
 skillsText: 
@@ -46,15 +58,10 @@ skillsText:
 cta:
   ctaText: Contact Gene
   ctaLink: ""
-svgImage: 
+svgImage: /assets/transparent.png
 secondaryImage: /assets/default-user.webp
 title: Do these memes make my butt look fat?
-youtubeend: "60"
 sharethis: false
-youtubeloop: true
-youtubecontrols: false
-customcontrols: false
-clicktoplay: true
 liarliar: false
 bumpertext: "These guys were bros"
 marate: SICK
@@ -68,20 +75,15 @@ maratingtx2: Love Story
 maratingtx3: Political Humor
 maratingtx4: 
 template: index-page
-youtubemute: true
 description: A rogue one, out there to change the world, one meme at a time. 
 svgzindex: ""
 profTitle: MG Reports
 coverletter:
   coverText: About Meme Genes
   coverLink: /about
-youtubestart: "18"
 scrollable: true
 contentinvideo: false
 nftdrop: "2023-02-11T10:00:00"
-youtubersuggestion1: 
-youtubersuggestion2: 
-youtubersuggestion3: 
 ---
 <!-- Do not delete -->
 <div>

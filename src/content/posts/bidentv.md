@@ -4,22 +4,25 @@ title: Your Biden meme goes here
 slug: /bidentv
 date: 2023-02-02 17:43
 description: Biden just makes meming too easy!
-youtuber: ""
-youtuber2: ""
-youtubeshoworiginal: false
-youtubersuggestion1:
-youtubersuggestion2:
-youtubersuggestion3:
-youtubestart: "0"
-youtubeend: "0"
-youtubemute: true
+youtube:
+  youtuber: null
+  youtuber2: null
+  youtubeautostart: false
+  youtubemute: false
+  youtubecontrols: false
+  clicktoplay: false
+  customcontrols: false
+  youtubestart: "0"
+  youtubeend: "10"
+  youtubeloop: true
+  youtubeshoworiginal: false
+  youtubersuggestion1: ""
+  youtubersuggestion2: ""
+  youtubersuggestion3: ""
 audiostart: ""
 audioend: ""
 audiotitle: ""
 liarliar: false
-youtubecontrols: true
-youtubeautostart: true
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: true
@@ -39,7 +42,9 @@ maratingtx2: Spontaneous & Sporadic
 maratingtx3: It's Humor - laugh
 maratingtx4: Adult Language
 category: memes
-tags: [biden, tv]
+tags:
+  - biden
+  - tv
 ---
 Your Meme Goes Here Dipshit!
 

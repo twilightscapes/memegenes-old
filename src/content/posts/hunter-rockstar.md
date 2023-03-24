@@ -4,25 +4,26 @@ title: Just another player trying to make stacks and slap backs
 slug: /hunter-rockstar
 date: 2023-02-12 03:00
 description: Party with Hunter Biden and try to keep up!
-youtuber: "https://youtu.be/Yq5OBekqY6A"
-youtuber2: 
-youtubeshoworiginal: true
-youtubersuggestion1: 
-youtubersuggestion2: 
-youtubersuggestion3: 
-youtubestart: "0"
-youtubeend: ""
-youtubemute: false
+youtube:
+  youtuber: "https://youtu.be/Yq5OBekqY6A"
+  youtuber2: 
+  youtubeshoworiginal: true
+  youtubersuggestion1: 
+  youtubersuggestion2: 
+  youtubersuggestion3: 
+  youtubestart: "0"
+  youtubeend: ""
+  youtubemute: false
+  youtubecontrols: false
+  clicktoplay: false
+  customcontrols: true
+  youtubeautostart: false
+  youtubeloop: true
 audiostart: "20"
 audioend: "5000"
 audiotitle: 
 bumpertext: "Rated HB for CrackHead"
 liarliar: true
-youtubecontrols: false
-clicktoplay: false
-customcontrols: true
-youtubeautostart: false
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: true

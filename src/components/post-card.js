@@ -16,14 +16,13 @@ const PostCard = ({ data }) => {
     <div className="post-card1">
       {data.frontmatter.featuredImage ? (
         <Link to={data.frontmatter.slug}>
- <GatsbyImage
-  image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
-  alt={data.frontmatter.title + " - Featured image"}
-  className="featured-image1"
-  placeholder="blurred"
-  style={{position:'relative', zIndex:'1', maxHeight:'', margin:'0 auto'}}
-  loading="eager"
-/>
+          <GatsbyImage
+            image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
+            alt={data.frontmatter.title + " - Featured image"}
+            className="featured-image1"
+            placeholder="blurred"
+            style={{position:'relative', zIndex:'1', maxHeight:'', margin:'0 auto'}}
+          />
         </Link>
       ) : (
         <Link to={data.frontmatter.slug}>
@@ -37,7 +36,7 @@ const PostCard = ({ data }) => {
       )}
 
       <div className="post-content" style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'0', margin:'0 auto 0 auto', textAlign:'center', overFlow:'hidden'}}>
-        {data.frontmatter.youtuber ? (
+        {data.frontmatter.youtube.youtuber ? (
           <Link to={data.frontmatter.slug} style={{}}>
             <div className="spotlight" style={{marginLeft:'10%', marginTop:'-24%', margin:'-24% 10% 0 10%'}}>
               <div className="posticons" style={{flexDirection:'column', margin:'0 auto'}}>

@@ -4,24 +4,26 @@ title: 2 Billion Payoff for Jared Kushner stinks
 slug: /kushner-money
 date: 2023-02-12 05:59
 description: Watch live footage of Jared getting paid for his crimes against our Country
-youtuber: https://youtu.be/EXkT06MtW1M
-youtuber2: 
-youtubeshoworiginal: true
-youtubersuggestion1:
-youtubersuggestion2:
-youtubersuggestion3:
-youtubestart: "15"
-youtubeend: 
-youtubemute: true
+youtube:
+ youtuber: https://youtu.be/EXkT06MtW1M
+ youtuber2: 
+ youtubeshoworiginal: true
+ youtubersuggestion1:
+ youtubersuggestion2:
+ youtubersuggestion3:
+ youtubestart: "15"
+ youtubeend: 
+ youtubemute: true
+ youtubecontrols: false
+ clicktoplay: false
+ customcontrols: false
+ youtubeautostart: true
+ youtubeloop: true
+
 audiostart: "20"
 audioend: "5000"
 audiotitle: "Liar Liar!"
 liarliar: false
-youtubecontrols: false
-clicktoplay: false
-customcontrols: false
-youtubeautostart: true
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: true

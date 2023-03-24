@@ -114,7 +114,9 @@ export const query = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             category
-            youtuber
+            youtube{
+              youtuber
+            }
             featuredImage {
               childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, layout: CONSTRAINED)

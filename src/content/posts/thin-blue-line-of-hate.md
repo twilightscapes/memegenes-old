@@ -4,20 +4,21 @@ title: Thin Blue Line Of Hate
 slug: /thin-blue-line-of-hate
 date: 2023-02-02 09:43
 description: The same that work forces are the same that burn crosses
-youtuber: "https://youtu.be/9nl00N6I5Ak"
-youtuber2: 
-youtubeshoworiginal: true
-youtubersuggestion1: ""
-youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
-youtubersuggestion3: "https://youtu.be/7vz43MYaCA0"
-youtubestart: "0"
-youtubeend: "39"
-youtubemute: false
-youtubecontrols: false
-clicktoplay: false
-customcontrols: true
-youtubeautostart: false
-youtubeloop: true
+youtube:
+ youtuber: "https://youtu.be/9nl00N6I5Ak"
+ youtuber2: 
+ youtubeshoworiginal: true
+ youtubersuggestion1: ""
+ youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
+ youtubersuggestion3: "https://youtu.be/7vz43MYaCA0"
+ youtubestart: "0"
+ youtubeend: "39"
+ youtubemute: false
+ youtubecontrols: false
+ clicktoplay: false
+ customcontrols: true
+ youtubeautostart: false
+ youtubeloop: true
 audiotitle: "Fuckin' Liar!"
 liarliar: false
 isnftforsale: false

@@ -4,24 +4,25 @@ title: Trump and Jeffrey Epstein sitting in a tree, r a p i n g...
 slug: /trump-epstein
 date: 2023-02-18 04:43
 description: These guys were best friends and spent lots of time together.
-youtuber: "https://youtu.be/i_Xm26DikxE"
-youtuber2: 
-youtubeshoworiginal: true
-youtubersuggestion1: 
-youtubersuggestion2: 
-youtubersuggestion3: 
-youtubestart: "25"
-youtubeend: "62"
-youtubemute: false
+youtube:
+ youtuber: "https://youtu.be/i_Xm26DikxE"
+ youtuber2: 
+ youtubeshoworiginal: true
+ youtubersuggestion1: 
+ youtubersuggestion2: 
+ youtubersuggestion3: 
+ youtubestart: "25"
+ youtubeend: "62"
+ youtubemute: false
+ youtubecontrols: false
+ clicktoplay: false
+ customcontrols: true
+ youtubeautostart: false
+ youtubeloop: true
 audiostart: "20"
 audioend: "5000"
 audiotitle: 
 liarliar: true
-youtubecontrols: false
-clicktoplay: false
-customcontrols: true
-youtubeautostart: false
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: true

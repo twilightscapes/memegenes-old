@@ -4,24 +4,26 @@ title: Skari Lake revealed as two-faced by filter glitch
 slug: /scarylake-filter
 date: 2023-02-04 10:43
 description: Aw Snap! What was that? Skari Lake's face literally just slid off her head.
-youtuber: "https://youtu.be/uJn3yxOPeGs"
-youtuber2: ""
-youtubeshoworiginal: true
-youtubersuggestion1: ""
-youtubersuggestion2: "https://youtu.be/iiZnOlRPiE0"
-youtubersuggestion3: "https://youtu.be/24nttG5Lnio"
-youtubestart: "120"
-youtubeend: "138"
-youtubemute: false
+youtube:
+ youtuber: "https://youtu.be/uJn3yxOPeGs"
+ youtuber2: ""
+ youtubeshoworiginal: true
+ youtubersuggestion1: ""
+ youtubersuggestion2: "https://youtu.be/iiZnOlRPiE0"
+ youtubersuggestion3: "https://youtu.be/24nttG5Lnio"
+ youtubestart: "120"
+ youtubeend: "138"
+ youtubemute: false
+ youtubecontrols: false
+ customcontrols: true
+ youtubeautostart: false
+ youtubeloop: true
+ clicktoplay: false
 audiostart: "20"
 audioend: "5000"
 audiotitle: "Liar Liar!"
 bumpertext: "Oh No, Ma Face!"
 liarliar: true
-youtubecontrols: false
-customcontrols: true
-youtubeautostart: false
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: true
@@ -31,7 +33,6 @@ featuredImage: /assets/Skari-no-filter.webp
 svgImage: 
 scrollable: true
 nftdrop: "2023-02-09T10:00:00"
-clicktoplay: false
 contentinvideo: true
 viewerwarning: Viewer Discretion Strongly Advised
 marate: MA

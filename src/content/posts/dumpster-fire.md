@@ -4,22 +4,25 @@ title: Ex-President Trump's administration ranked worst ever!
 slug: /dumpster-fire
 date: 2023-02-09 10:43
 description: The worst presidency, evar! It is amazing that we ever survived it at all. Now we're finding out just how awful it was.
-youtuber: "https://youtu.be/7g7kH671BVA"
-youtuber2: 
-youtubeshoworiginal: true
-youtubersuggestion1:
-youtubersuggestion2:
-youtubersuggestion3:
-youtubestart: "0"
-youtubeend: 
-youtubemute: true
+youtube:
+  youtuber: https://youtu.be/7g7kH671BVA
+  youtuber2: 
+  youtubeshoworiginal: true
+  youtubersuggestion1:
+  youtubersuggestion2:
+  youtubersuggestion3:
+  youtubestart: "0"
+  youtubeend: 
+  youtubemute: true
+  youtubecontrols: false
+  customcontrols: false
+  youtubeautostart: true
+  clicktoplay: false
+  youtubeloop: true
 audiostart: "20"
 audioend: "5000"
 audiotitle: "Liar Liar!"
 liarliar: false
-youtubecontrols: false
-youtubeautostart: true
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: true
@@ -30,7 +33,6 @@ svgImage:
 scrollable: true
 nftdrop: "2023-02-09T10:00:00"
 contentinvideo: false
-clicktoplay: false
 bumpertext: ""
 marating1: YB
 marating2: SS

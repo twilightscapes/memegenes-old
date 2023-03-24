@@ -4,22 +4,23 @@ title: My Last Bed
 slug: /mylastbed
 date: 2023-02-02 15:43
 description: When its that time and you want to go in compfort.
-youtuber: 
-youtuber2: 
-youtubeshoworiginal: true
-youtubersuggestion1:
-youtubersuggestion2:
-youtubersuggestion3:
-youtubestart: "0"
-youtubeend: 
-youtubemute: true
+youtube:
+ youtuber: 
+ youtuber2: 
+ youtubeshoworiginal: true
+ youtubersuggestion1:
+ youtubersuggestion2:
+ youtubersuggestion3:
+ youtubestart: "0"
+ youtubeend: 
+ youtubemute: true
+ youtubecontrols: true
+ youtubeautostart: true
+ youtubeloop: true
 audiostart: 0""
 audioend: 
 audiotitle: 
 liarliar: false
-youtubecontrols: true
-youtubeautostart: true
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: true

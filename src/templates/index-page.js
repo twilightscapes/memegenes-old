@@ -72,23 +72,25 @@ query HomeQuery($id: String!) {
       slug
       title
       description
-      youtuber
-      youtuber2
-      youtubestart
-      youtubeend
       audiostart
       audiotitle
       audioend
-      youtubemute
-      youtubecontrols
-      customcontrols
-      youtubeautostart
+      youtube{
+        youtuber
+        youtuber2
+        youtubestart
+        youtubeend
+        youtubeshoworiginal
+        youtubersuggestion1
+        youtubersuggestion2
+        youtubersuggestion3
+        clicktoplay
+        youtubemute
+        youtubecontrols
+        customcontrols
+        youtubeautostart
+      }
       contentinvideo
-      youtubeshoworiginal
-      youtubersuggestion1
-      youtubersuggestion2
-      youtubersuggestion3
-      clicktoplay
       bumpertext
       viewerwarning
       marate
@@ -158,11 +160,14 @@ query HomeQuery($id: String!) {
           title
           tags
           category
-          youtubemute
-          youtubeloop
-          youtubecontrols
-          customcontrols
-          youtuber
+          youtube{
+            youtubemute
+            youtubeloop
+            youtubecontrols
+            customcontrols
+            youtuber
+          }
+          
           featuredImage {
             relativePath
             publicURL

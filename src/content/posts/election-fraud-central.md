@@ -4,25 +4,26 @@ title: 2020 Election Fraud Network
 slug: /election-fraud-central
 date: 2023-02-11 03:00
 description: Mike is working hard to find any election fraud. 
-youtuber: "https://youtu.be/MQyJmHlNGIQ"
-youtuber2: 
-youtubeshoworiginal: true
-youtubersuggestion1:
-youtubersuggestion2:
-youtubersuggestion3:
-youtubestart: "48"
-youtubeend: "68"
-youtubemute: false
+youtube:
+  youtuber: https://youtu.be/MQyJmHlNGIQ
+  youtuber2: 
+  youtubeshoworiginal: true
+  youtubersuggestion1:
+  youtubersuggestion2:
+  youtubersuggestion3:
+  youtubestart: "48"
+  youtubeend: "68"
+  youtubemute: false
+  youtubecontrols: false
+  clicktoplay: false
+  customcontrols: true
+  youtubeautostart: false
+  youtubeloop: true
 audiostart: "20"
 audioend: "5000"
 audiotitle: 
 bumpertext: "Mikey gets his feelings hurt"
 liarliar: true
-youtubecontrols: false
-clicktoplay: false
-customcontrols: true
-youtubeautostart: false
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: true

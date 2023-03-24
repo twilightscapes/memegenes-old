@@ -4,25 +4,26 @@ title: Kimberly talks about her Daddy and plastic recycling.
 slug: /kimberly-doll
 date: 2023-02-22 22:00
 description: Bad plastic surgery, being ridden hard and put away wet, and having no soul, really does a number on ya.
-youtuber: https://youtu.be/ErSd_YiRCAs
-youtuber2: 
-youtubeshoworiginal: true
-youtubersuggestion1: 
-youtubersuggestion2: 
-youtubersuggestion3: 
-youtubestart: "13"
-youtubeend: "48"
-youtubemute: true
+youtube:
+ youtuber: https://youtu.be/ErSd_YiRCAs
+ youtuber2: 
+ youtubeshoworiginal: true
+ youtubersuggestion1: 
+ youtubersuggestion2: 
+ youtubersuggestion3: 
+ youtubestart: "13"
+ youtubeend: "48"
+ youtubemute: true
+ youtubecontrols: false
+ clicktoplay: false
+ customcontrols: false
+ youtubeautostart: true
+ youtubeloop: true
 audiostart: "20"
 audioend: "5000"
 audiotitle: 
 bumpertext: "Like two catepillars fighting for a hole in the dirt"
 liarliar: true
-youtubecontrols: false
-clicktoplay: false
-customcontrols: false
-youtubeautostart: true
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: true

@@ -193,30 +193,30 @@ const resizeDesk = () => {
 
 
 // const IsNft = frontmatter.isnftforsale
-const ShowOriginal = frontmatter.youtubeshoworiginal
+const ShowOriginal = frontmatter.youtube.youtubeshoworiginal
 const ShareThis = frontmatter.shareable
 const Comments = frontmatter.comments
 
-const YouTubeStart = frontmatter.youtubestart
-const YouTubeEnd = frontmatter.youtubeend
-const YouTubeMute = frontmatter.youtubemute
-const YouTubeControls = frontmatter.youtubecontrols
-const YouTubeAutostart = frontmatter.youtubeautostart
-const CustomControls = frontmatter.customcontrols
-const Suggestion1 = frontmatter.youtubersuggestion1
-const Suggestion2 = frontmatter.youtubersuggestion2
-const Suggestion3 = frontmatter.youtubersuggestion3
+const YouTubeStart = frontmatter.youtube.youtubestart
+const YouTubeEnd = frontmatter.youtube.youtubeend
+const YouTubeMute = frontmatter.youtube.youtubemute
+const YouTubeControls = frontmatter.youtube.youtubecontrols
+const YouTubeAutostart = frontmatter.youtube.youtubeautostart
+const CustomControls = frontmatter.youtube.customcontrols
+const Suggestion1 = frontmatter.youtube.youtubersuggestion1
+const Suggestion2 = frontmatter.youtube.youtubersuggestion2
+const Suggestion3 = frontmatter.youtube.youtubersuggestion3
 
-const YoutubeLoop = frontmatter.youtubeloop
+const YoutubeLoop = frontmatter.youtube.youtubeloop
 
-const ClickToPlay = frontmatter.clicktoplay
+const ClickToPlay = frontmatter.youtube.clicktoplay
 
 
 
 
 
 // const CustomControlBinary = frontmatter.customcontrols
-// const iframeUrl = frontmatter.youtuber
+// const iframeUrl = frontmatter.youtube.youtuber
 
 
 
@@ -224,13 +224,13 @@ const ClickToPlay = frontmatter.clicktoplay
 let iframeFiltered;
 if (Suggestion1) {
   iframeFiltered = [
-    frontmatter.youtuber,
-    frontmatter.youtubersuggestion1,
-    frontmatter.youtubersuggestion2,
-    frontmatter.youtubersuggestion3,
+    frontmatter.youtube.youtuber,
+    frontmatter.youtube.youtubersuggestion1,
+    frontmatter.youtube.youtubersuggestion2,
+    frontmatter.youtube.youtubersuggestion3,
   ];
 } else {
-  iframeFiltered = frontmatter.youtuber;
+  iframeFiltered = frontmatter.youtube.youtuber;
 }
 
 
@@ -289,13 +289,13 @@ Add your own in the comments below!
   )
 }
 
-const YoutuberSuggestion1 = frontmatter.youtubersuggestion1
-// const YoutuberSuggestion2 = frontmatter.youtubersuggestion2
-// const YoutuberSuggestion3 = frontmatter.youtubersuggestion3
+const YoutuberSuggestion1 = frontmatter.youtube.youtubersuggestion1
+// const YoutuberSuggestion2 = frontmatter.youtube.youtubersuggestion2
+// const YoutuberSuggestion3 = frontmatter.youtube.youtubersuggestion3
 
-  // const YouTube = frontmatter.youtuber
+  // const YouTube = frontmatter.youtube.youtuber
 
-const OriginalUrl = frontmatter.youtuber 
+const OriginalUrl = frontmatter.youtube.youtuber 
 
   if (!YoutuberSuggestion1) {
     <IframeSuggestions />
@@ -357,7 +357,7 @@ const OriginalUrl = frontmatter.youtuber
 
 
   function Iframer3() {
-    const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtuber2
+    const iframeUrl3 = "https://www.youtube.com/embed/" + frontmatter.youtube.youtuber2
     return (
 
 
@@ -428,8 +428,8 @@ const OriginalUrl = frontmatter.youtuber
 // const svgUrl = "../assets/" + frontmatter.svgImage.publicURL + ""
 // const svgUrl = "../assets/" + frontmatter.svgImage.relativePath + ""
 
-const YouTube = frontmatter.youtuber
-  const YouTube2 = frontmatter.youtuber2
+const YouTube = frontmatter.youtube.youtuber
+  const YouTube2 = frontmatter.youtube.youtuber2
   const AudioStart = frontmatter.audiostart
   const AudioEnd = frontmatter.audioend
   
@@ -1545,24 +1545,26 @@ export const pageQuery = graphql`
         tags
         category
         description
-        youtuber
-        youtuber2
-        youtubeshoworiginal
-        youtubersuggestion1
-        youtubersuggestion2
-        youtubersuggestion3
-        youtubestart
-        youtubeend
+        youtube {
+          youtuber
+          youtuber2
+          youtubeshoworiginal
+          youtubersuggestion1
+          youtubersuggestion2
+          youtubersuggestion3
+          youtubestart
+          youtubeend
+          youtubemute
+          youtubeloop
+          youtubecontrols
+          customcontrols
+          clicktoplay
+          youtubeautostart
+        }
         audiostart
         audioend
         audiotitle
         liarliar
-        youtubemute
-        youtubeloop
-        youtubecontrols
-        customcontrols
-        clicktoplay
-        youtubeautostart
         contentinvideo
         comments
         shareable
