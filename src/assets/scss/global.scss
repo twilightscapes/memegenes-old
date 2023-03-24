@@ -641,7 +641,7 @@ position:absolute !important; top:72vh ;
   }
 
 
-  #gobacker{position:fixed; top:178px !important; right:1vw; z-index:5;}
+  #gobacker{position:fixed; top:58px !important; right:1vw; z-index:5;}
 
 @media(display-mode:standalone) {
 #installer{border:10px solid #ff0!important}
@@ -653,7 +653,7 @@ position:absolute !important; top:72vh ;
 #resume span{display:flex;flex-direction:column;gap:20px;position:-webkit-sticky;position:sticky;top:0}
 #resume span div{display:block!important;width:100%!important}
 .nameblock{background:transparent!important;color:inherit!important;text-shadow:none!important}
-#gobacker{position:fixed; top:178px !important; right:1vw; z-index:5;}
+#gobacker{position:fixed; top:58px !important; right:1vw; z-index:5;}
 }
 @media(hover:none) {
 .horizontal-scroll{scroll-snap-type:y mandatory}
