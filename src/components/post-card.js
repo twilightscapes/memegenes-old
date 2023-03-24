@@ -16,13 +16,14 @@ const PostCard = ({ data }) => {
     <div className="post-card1">
       {data.frontmatter.featuredImage ? (
         <Link to={data.frontmatter.slug}>
-          <GatsbyImage
-            image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
-            alt={data.frontmatter.title + " - Featured image"}
-            className="featured-image1"
-            placeholder="blurred"
-            style={{position:'relative', zIndex:'1', maxHeight:'', margin:'0 auto'}}
-          />
+ <GatsbyImage
+  image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
+  alt={data.frontmatter.title + " - Featured image"}
+  className="featured-image1"
+  placeholder="blurred"
+  style={{position:'relative', zIndex:'1', maxHeight:'', margin:'0 auto'}}
+  loading="eager"
+/>
         </Link>
       ) : (
         <Link to={data.frontmatter.slug}>
