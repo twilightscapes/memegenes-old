@@ -21,11 +21,11 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 
 import { RiCloseCircleFill, RiMenuUnfoldFill, RiArrowUpFill } from "react-icons/ri"
 
-import GoBack from "../components/goBack"
+// import GoBack from "../components/goBack"
 import { BiLeftArrow } from "react-icons/bi"
 
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-4'
-import { AiOutlineClose } from "react-icons/ai"
+// import { AiOutlineClose } from "react-icons/ai"
 
 
 import { BiGridHorizontal } from "react-icons/bi"
