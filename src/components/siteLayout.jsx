@@ -43,20 +43,6 @@ import SignUp from "../components/newssign"
 // import { navigate } from "gatsby";
 const Layout = ({ children }) => {
 
-     // useEffect(() => {
-    //   sessionStorage.setItem("scrollPos", window.pageYOffset)
-    // }, [])
-  
-    // useEffect(() => {
-    //   if (window.history.scrollRestoration) {
-    //     const scrollPos = sessionStorage.getItem("scrollPos")
-    //     window.history.scrollRestoration = "manual"
-    //     window.scrollTo(0, scrollPos)
-    //     window.history.scrollRestoration = "auto"
-    //   }
-    // }, [])
-
-
     useEffect(() => {
       let prevScrollpos = window.pageYOffset;
     
@@ -82,6 +68,8 @@ const Layout = ({ children }) => {
       };
     }, []);
   
+
+
       const [archiveView, setArchiveView] = useState('');
   
       useEffect(() => {
@@ -111,7 +99,7 @@ const Layout = ({ children }) => {
             }
           }
         });
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
         localStorage.setItem('archiveView', archiveView);
       };
     
