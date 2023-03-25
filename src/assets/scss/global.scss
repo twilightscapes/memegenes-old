@@ -336,10 +336,12 @@ p{margin-bottom:1rem}
 
 
 
-.ReactModalPortal header, .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .headline, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after, .ReactModalPortal .usability{
+ .ReactModalPortal footer, .ReactModalPortal div.toppad, .ReactModalPortal .fluff, .ReactModalPortal .audio, .ReactModalPortal .intro:before, .ReactModalPortal .intro:after, .ReactModalPortal .usability{
   display: none !important;
   
   }
+  // .ReactModalPortal .headline,
+  // sharethis
   
   .ReactModal__Content #menu, .ReactModal__Content .spacer{display: none !important;}
 

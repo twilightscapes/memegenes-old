@@ -16,7 +16,7 @@ youtube:
   youtubemute: false
   youtubecontrols: false
   clicktoplay: false
-  customcontrols: true
+  customcontrols: false
   youtubeautostart: false
   youtubeloop: true
 audiostart: "0"
@@ -30,7 +30,7 @@ shareable: true
 underlayImage: 
 featuredImage: /assets/its-time-joe.webp
 svgImage:
-scrollable: false
+scrollable: true
 nftdrop: "2023-02-09T10:00:00"
 contentinvideo: false
 marating1: YB
