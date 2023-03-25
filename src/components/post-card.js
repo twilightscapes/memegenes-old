@@ -6,31 +6,30 @@ import { ImPlay } from "react-icons/im"
 import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
 import { StaticImage } from "gatsby-plugin-image"
-
+import useSiteMetadata from "../hooks/SiteMetadata"
 
 const PostCard = ({ data }) => {
+  const { showModals } = useSiteMetadata();
 
-  
   return (
-
     <div className="post-card1">
       {data.frontmatter.featuredImage ? (
-        <Link state={{modal: true}} to={data.frontmatter.slug}>
+        <Link state={showModals ? { modal: true } : {}} to={data.frontmatter.slug}>
           <GatsbyImage
             image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
             alt={data.frontmatter.title + " - Featured image"}
             className="featured-image1"
             placeholder="blurred"
-            style={{position:'relative', zIndex:'1', maxHeight:'', margin:'0 auto'}}
+            style={{ position: 'relative', zIndex: '1', maxHeight: '', margin: '0 auto' }}
           />
         </Link>
       ) : (
-        <Link state={{modal: true}} to={data.frontmatter.slug}>
+        <Link state={showModals ? { modal: true } : {}} to={data.frontmatter.slug}>
           <StaticImage
             className="featured-image1"
             src="../../static/assets/default-og-image.webp"
             alt="Default Image"
-            style={{position:'relative', zIndex:''}}
+            style={{ position: 'relative', zIndex: '' }}
           />
         </Link>
       )}

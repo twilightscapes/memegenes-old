@@ -139,6 +139,7 @@ const Pagination = props => (
 const Post = ({ data, pageContext }) => {
 
 
+  const { showModals } = useSiteMetadata()
 
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
@@ -836,6 +837,12 @@ Click to play
         ""
       )}
 
+
+  { showModals ? (
+    ""
+    ) : (
+      <div id="gobacker" style={{position:'absolute', top:'50px', right:'3vw', zIndex:'2'}}><GoBack /></div>
+      )} 
 
 {/* <div id="gobacker" style={{position:'absolute', top:'12vh', right:'1vw', zIndex:'5'}}><GoBack /></div> */}
 

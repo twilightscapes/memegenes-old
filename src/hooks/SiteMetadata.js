@@ -28,6 +28,7 @@ const useSiteMetadata = () => {
             showPopup
             showDates
             showSearch
+            showModals
             menu1
             menu2
             menu3

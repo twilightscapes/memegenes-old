@@ -183,14 +183,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 <Seo />
 
-{ showModals ? (
 
-
-""
-
-  ) : (
-""
-    )} 
 
 
 
@@ -504,7 +497,8 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   ""
 )}
 
-{/* <div id="gobacker" style={{position:'absolute', top:'50px', right:'3vw', zIndex:'2'}}><GoBack /></div> */}
+
+
 
 
 <header id="top" name="pagetop" style={{}} >
