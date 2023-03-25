@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Seo from "./seo"
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-plugin-modal-routing-4'
 // import { ModalRoutingContext } from '@decantyme/gatsby-plugin-modal-routing'
 // import { AiOutlineClose } from "react-icons/ai"
 import { window } from "browser-monads"
@@ -21,7 +21,12 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 
 import { RiCloseCircleFill, RiMenuUnfoldFill, RiArrowUpFill } from "react-icons/ri"
 
-// import GoBack from "../components/goBack"
+import GoBack from "../components/goBack"
+import { BiLeftArrow } from "react-icons/bi"
+
+import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-4'
+import { AiOutlineClose } from "react-icons/ai"
+
 
 import { BiGridHorizontal } from "react-icons/bi"
 import { MdOutlineRectangle } from "react-icons/md"
@@ -58,7 +63,7 @@ const Layout = ({ children }) => {
       window.onscroll = function() {
         const currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos && prevScrollpos - currentScrollPos > 75) {
-          document.querySelector('.header').style.transform = 'translateY(0)';
+          // document.querySelector('.header').style.transform = 'translateY(0)';
           if (showNav2) {
             document.querySelector('#menuicon').style.transform = 'translateX(0)';
           }
@@ -66,7 +71,7 @@ const Layout = ({ children }) => {
           // document.body.classList.remove('scroll');
           // document.body.classList.add('scroll');
         } else if (prevScrollpos < currentScrollPos && currentScrollPos - prevScrollpos > 75) {
-          document.querySelector('.header').style.transform = 'translateY(-100%)';
+          // document.querySelector('.header').style.transform = 'translateY(-100%)';
           if (showNav2) {
             document.querySelector('#menuicon').style.transform = 'translateX(110%)';
           }
@@ -134,6 +139,8 @@ const { iconimage } = useSiteMetadata()
 
 const { image } = useSiteMetadata()
 
+const { showModals } = useSiteMetadata()
+
 const { showNav } = useSiteMetadata()
 const { showNav2 } = useSiteMetadata()
 const { showInfo } = useSiteMetadata()
@@ -188,27 +195,33 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 <Seo />
 
+{ showModals ? (
 
-{/* <ModalRoutingContext.Consumer >
+
+""
+
+  ) : (
+""
+    )} 
+
+
+
+<ModalRoutingContext.Consumer >
 {({ modal, closeTo }) => (
 <div style={{overflow:''}}>
   {modal ? (
-
-    <div style={{display:'', position:'fixed', top:'10%', right:'3%', padding:'0px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'55 !important', filter:' drop-shadow(0px 4px 3px #000)', color:'#fff'}}>
-    <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'2rem',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'#fff', cursor:'pointer'}}>
-      <AiOutlineClose />
+    <div style={{display:'', position:'fixed', top:'100px', right:'3%', padding:'0px', fontSize:'', opacity:'1 !important', zIndex:'105', filter:' drop-shadow(0px 4px 3px #000)', color:'#fff', border:'1px solid red !important'}}>
+    <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'#fff', cursor:'pointer'}}>
+    <button className="button" style={{display:'flex', justifyContent:'center'}}><span className="icon -left" style={{paddingRight:''}}><BiLeftArrow /></span> {" "}Go Back</button>
     </Link>
+   
     </div>
-
   ) : (
 ''
   )}
-
 </div>
 )}
-</ModalRoutingContext.Consumer> */}
-
-
+</ModalRoutingContext.Consumer>
   
 
 
