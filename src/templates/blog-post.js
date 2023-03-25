@@ -551,7 +551,7 @@ const YouTube = frontmatter.youtube.youtuber
    
 
 
-<div className="videohide1 554 pane1" style={{position:'absolute', height:'102%', aspectRatio:'16/9', width:'100vw', zIndex:'3', top:'0', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', color:'var(--theme-ui-colors-text)', fontFamily:'Verdana, Sans-Serif, System' }}>
+<div className="videohide1 554 pane1" style={{position:'absolute', height:'auto', aspectRatio:'16/9', width:'100vw', zIndex:'3', top:'70px', right:'0', textAlign:'center', display:'grid', placeContent:'', justifyContent:'', color:'var(--theme-ui-colors-text)', fontFamily:'Verdana, Sans-Serif, System' }}>
 
 
 
