@@ -7,7 +7,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { AiOutlineAudioMuted } from "react-icons/ai"
 import Footer from "../components/footer"
-// import ScrollAnimation from 'react-animate-on-scroll'
+import ScrollAnimation from 'react-animate-on-scroll'
 import { IoShareOutline } from 'react-icons/io5'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
@@ -870,6 +870,7 @@ Click to play
 
 
 {showPosts ? (
+  <ScrollAnimation className="animate" animateIn="bounceInUp" animateOut="" initiallyVisible={false} animateOnce={false} animatePreScroll={true} > 
   <section id="showPosts" style={{marginTop:''}}>
   <div style={{position:'relative', background:'none', maxHeight:'', overflow:'', width:'100vw'}}>
 
@@ -882,6 +883,7 @@ Click to play
 <div className="contentpanel" style={{padding:''}}>
 
 <div className="sliderSpacer" style={{height:'', paddingTop:'', display:'none'}}></div>
+
                          <BlogListHome data={posts} />
       {/* <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
       </div> */}
@@ -889,6 +891,7 @@ Click to play
 
 </div>
 </section>
+</ScrollAnimation>
       ) : (
         ""
       )}

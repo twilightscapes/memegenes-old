@@ -841,7 +841,7 @@ Click to play
   { showModals ? (
     ""
     ) : (
-      <div id="gobacker" style={{position:'absolute', top:'50px', right:'3vw', zIndex:'2'}}><GoBack /></div>
+      <div id="gobacker" style={{position:'absolute', top:'50px', right:'3vw', zIndex:'5'}}><GoBack /></div>
       )} 
 
 {/* <div id="gobacker" style={{position:'absolute', top:'12vh', right:'1vw', zIndex:'5'}}><GoBack /></div> */}
