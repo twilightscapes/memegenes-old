@@ -16,7 +16,8 @@ media_folder: "static/assets"
 public_folder: "/assets"
 
 collections:
-  
+  editor:
+     preview: false
    
 
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
