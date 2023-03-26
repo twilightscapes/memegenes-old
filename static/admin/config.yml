@@ -16,8 +16,7 @@ media_folder: "static/assets"
 public_folder: "/assets"
 
 collections:
-  editor:
-     preview: false
+  
    
 
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -29,6 +28,8 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     summary: "{{title}} — {{year}}/{{month}}/{{day}}"
     create: true # Allow users to create new documents in this collection
+    editor:
+     preview: false
     fields: # The fields each document in this collection have
       - {
           label: "Template",
