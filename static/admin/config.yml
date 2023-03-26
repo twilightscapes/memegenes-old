@@ -560,8 +560,14 @@ collections:
             enableAlpha: true
             allowInput: true
           
-          - label: "bodyBg"
-            name: "bodyBg"
+          - label: "background"
+            name: "background"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+
+          - label: "bodyColor"
+            name: "bodyColor"
             widget: "color"
             enableAlpha: true
             allowInput: true
