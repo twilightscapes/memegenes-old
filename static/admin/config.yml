@@ -547,17 +547,91 @@ collections:
         name: "themescolors"
         file: "src/util/default-colors.json"
         fields:
-          - label: "Primary Color"
+          - label: "siteColor"
             name: "siteColor"
             widget: "color"
             enableAlpha: true
             allowInput: true
+
+          - label: "headerColor"
+            name: "headerColor"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+          
+          - label: "bodyBg"
+            name: "bodyBg"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+
+          - label: "text"
+            name: "text"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+
+          - label: "cardBg"
+            name: "cardBg"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+
+          - label: "textShadow"
+            name: "textShadow"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+
+          - label: "Google Font"
+            name: "fontFamily"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+
+
       - label: "Dark Theme"
         name: "darkthemescolors"
         file: "src/util/dark-theme-colors.json"
         fields:
-          - label: "Primary Color"
+          - label: "siteColor"
             name: "siteColor"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+
+          - label: "headerColor"
+            name: "headerColor"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+          
+          - label: "bodyBg"
+            name: "bodyBg"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+
+          - label: "text"
+            name: "text"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+
+          - label: "cardBg"
+            name: "cardBg"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+
+          - label: "textShadow"
+            name: "textShadow"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+
+          - label: "Google Font"
+            name: "fontFamily"
             widget: "color"
             enableAlpha: true
             allowInput: true
