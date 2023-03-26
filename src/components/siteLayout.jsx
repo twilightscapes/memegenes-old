@@ -104,7 +104,7 @@ const Layout = ({ children }) => {
             el.classList.remove('horizontal-scroll', 'panels');
             el.classList.add('grid-container');
             document.body.classList.add('scroll');
-            // window.scrollTo(0, 0);
+            window.scrollTo(0, 0);
           } else if (archiveView === 'swipe') {
             el.classList.remove('grid-container');
             el.classList.add('horizontal-scroll', 'panels');
