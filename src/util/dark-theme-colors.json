@@ -1,5 +1,6 @@
 {
   "siteColor": "rgba(0, 0, 0, .7)",
+  "headerColor": "rgba(0, 0, 0, .6)",
   "bodyBg": "rgba(0, 0, 0, .95)",
   "bodyColor": "#222",
   "fontFamily": "Titan One",
