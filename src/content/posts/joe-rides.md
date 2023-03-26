@@ -22,7 +22,7 @@ youtube:
   youtubersuggestion1: null
   youtubersuggestion2: null
   youtubestart: "240"
-bumpertext: ss
+bumpertext: ""
 marating1: YB
 maratingtx1: Use your brain please
 marating2: SS
