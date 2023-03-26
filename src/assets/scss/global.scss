@@ -367,7 +367,9 @@ p{margin-bottom:1rem}
   
   .ReactModalPortal {margin:70px 3% 0 3% !important; width:80% !important; z-index: 6;}
   
-  .ReactModal__Overlay{background-color:#222 !important;   background: rgba(0,0,0,0.90);
+  .ReactModal__Overlay{
+    background-color:#222 !important;
+    background: rgba(0,0,0,0.90);
     backdrop-filter: blur(22px); padding:0 !important;}
 
     .ReactModal__Overlay{position:fixed; top:0;display:block; width: 100%;
