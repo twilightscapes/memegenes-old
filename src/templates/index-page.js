@@ -35,7 +35,12 @@ import Layout from "../components/siteLayout"
 
 
 
-
+// export const Head = () => (
+//   <>
+//     <title>Hello World</title>
+//     <meta name="description" content="Hello World" />
+//   </>
+// )
 
 
 export const pageQuery = graphql`
@@ -774,6 +779,10 @@ Click to play
     playbackRate: PropTypes.number,
   };
 
+
+
+
+
   return (
 
     // TOP OF HOME
@@ -788,6 +797,10 @@ Click to play
   <body id="body" className="homepage" style={{}} />
 </Helmet>
   )}
+
+
+
+
        <Seo
         title={frontmatter.title}
         description={
@@ -795,6 +808,7 @@ Click to play
         }
    image={ siteUrl + getSrc(frontmatter.featuredImage) }
       />
+
 
 
 {showNav ? (
@@ -1293,3 +1307,8 @@ Click to play
 }
 
 export default HomePage
+
+
+export const Head = () => (
+  <body className="todd" />
+)
