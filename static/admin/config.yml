@@ -402,10 +402,10 @@ collections:
                 name: showSkills
                 label: Show Skills
                 required: false
-
+              
               - widget: boolean
-                name: showModals
-                label: Show Modals
+                name: showSkills
+                label: Show Skills
                 required: false
 
               - widget: string
