@@ -319,6 +319,8 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: settings
+    editor:
+      preview: false
     label: Settings
     files:
       - name: general
@@ -487,6 +489,8 @@ collections:
 
       - label: Social Icons
         name: socialIcons
+        editor:
+          preview: false
         file: "src/util/socialmedia.json"
         fields:
           - label: Social Icons
@@ -526,6 +530,8 @@ collections:
 
       - label: Menu Navigation
         name: menuNavigation
+        editor:
+          preview: false
         file: "src/util/menu.json"
         fields:
           - label: Menu Items
