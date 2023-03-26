@@ -242,8 +242,7 @@ collections:
           # - { label: "Content Sub Rating Desc", name: "maratingtx3", widget: "string", default: "Sub Rating description" }
           # - { label: "Content Sub Rating", name: "marating4", widget: "string", default: "NC" }
           # - { label: "Content Sub Rating Desc", name: "maratingtx4", widget: "string", default: "Sub Rating description" }
-          - { label: "Cover Letter Text", name: "coverText", widget: "string", default: "" }
-          - { label: "Cover Letter Link", name: "coverLink", widget: "string", default: "" }
+
 
           # - { label: "Turn Page Scroll On", name: "scrollable", widget: "boolean", default: "true", hint: "Allows page to be scrolled vertically", required: false }
 
