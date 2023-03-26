@@ -94,6 +94,7 @@ const Layout = ({ children }) => {
             el.classList.remove('grid-container');
             el.classList.add('horizontal-scroll', 'panels');
             document.body.classList.remove('scroll');
+            window.scrollTo(0, 0);
             if (showNav2) {
               document.querySelector('#menuicon').style.transform = 'translateX(110%)';
             }
@@ -220,7 +221,8 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 {showNav ? (
-<div id="menu" className="menu print panel1 header" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', maxHeight:'', overFlow:'', boxShadow:'0 0 2px rgba(0,0,0,.7)', padding:'0 2%', alignItems:'start', borderRadius:'0', display:'flex', justifyContent:'space-around', gap:'10px', color:'#fff',  borderBottom:'1px solid #222', background:'#111'  }}>
+<div id="menu" className="menu print panel1 header" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', maxHeight:'', overFlow:'', boxShadow:'0 0 2px rgba(0,0,0,.7)', padding:'0 2%', alignItems:'start', borderRadius:'0', display:'flex', justifyContent:'space-around', gap:'10px', color:'#fff',  borderBottom:'1px solid #222', background:'linear-gradient(180deg,#333 1%,#111 80%)',
+  backgroundColor:'#111'  }}>
 
 
 {prefersReducedMotion ? (

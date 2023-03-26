@@ -708,7 +708,10 @@ position:absolute !important; top:72vh ;
   
   }
 
-  #missioncontrol{background:rgba(0, 0, 0, 0.2); padding:0 20px;}
+  #missioncontrol{
+    // background:rgba(0, 0, 0, 0.2);
+    padding:0 20px;
+  }
 
   .cattags{
     border-radius: 3px;
