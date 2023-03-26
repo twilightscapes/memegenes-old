@@ -220,7 +220,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 {showNav ? (
-<div id="menu" className="menu print panel1 header" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', maxHeight:'', overFlow:'', boxShadow:'0 0 2px rgba(0,0,0,.7)', padding:'0 2%', alignItems:'start', borderRadius:'0', display:'flex', justifyContent:'space-around', gap:'10px', color:'#fff',  borderBottom:'1px solid #222',  }}>
+<div id="menu" className="menu print panel1 header" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', maxHeight:'', overFlow:'', boxShadow:'0 0 2px rgba(0,0,0,.7)', padding:'0 2%', alignItems:'start', borderRadius:'0', display:'flex', justifyContent:'space-around', gap:'10px', color:'#fff',  borderBottom:'1px solid #222', background:'#111'  }}>
 
 
 {prefersReducedMotion ? (
@@ -424,12 +424,12 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   </li> */}
 </ul>
 
-<div id="missioncontrol" className="sitecontrols" style={{display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'3vw', textAlign:'center', maxHeight:'', alignItems:'center',}}>
+<div id="missioncontrol" className="sitecontrols" style={{display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'3vw', textAlign:'center', maxHeight:'', alignItems:'center', paddingTop:'5px'}}>
 
 {showSearch ? (
 <div>
    <Link aria-label="Search UrbanFetish" to="/search/" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'0px', textAlign:'center'}}>
-    <SearchIcon style={{}} />
+    <SearchIcon style={{height:'30px'}} />
     <span className="themetext">search</span>
    </Link>
         </div>
@@ -458,9 +458,9 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   }}
 >
   {archiveView === "grid" ? (
-    <MdOutlineRectangle style={{ width: "30px", height: "30px" }} />
+    <MdOutlineRectangle style={{ width: "40px", height: "30px" }} />
   ) : (
-    <BiGridHorizontal style={{ width: "30px", height: "30px" }} />
+    <BiGridHorizontal style={{ width: "40px", height: "30px" }} />
   )}
   <span className="themetext">
     {archiveView === "grid" ? "swipe" : "scroll"}

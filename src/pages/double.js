@@ -54,10 +54,10 @@ function Double() {
 
 
 
+Todd
+<iframe loading="lazy" id="" style={{width:'80%', height:'80vh', margin:'0 auto', border:'2px solid red'}} title="iFrame" className="iframe boom" width="980" height="550" src="https://chat.openai.com/chat" frameBorder="0" allowFullScreen></iframe>
 
-
-
-      <Controls
+      {/* <Controls
             ref={controlsRef}
             onPlayPause={handlePlayPause}
             playing={playing}
@@ -88,7 +88,7 @@ function Double() {
                 playerVars: { showinfo:0, autoplay:1, controls:0, start:0, end:5000, mute:1  }
               },
             }}
-          />
+          /> */}
 
 
 
