@@ -296,9 +296,10 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "team"
-    label: "Team Member"
+    label: "Team Members"
+    label_singular: "Team Member"
     description: >
-      Team Member Pages
+      Team Members Pages
     folder: "src/content/team"
     create: true
     slug: "{{slug}}"
