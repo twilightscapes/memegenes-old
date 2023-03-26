@@ -36,7 +36,7 @@ const PostCard = ({ data }) => {
 
       <div className="post-content" style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'0', margin:'0 auto 0 auto', textAlign:'center', overFlow:'hidden'}}>
         {data.frontmatter.youtube.youtuber ? (
-          <Link state={{modal: true}} to={data.frontmatter.slug} style={{}}>
+          <Link state={showModals ? { modal: true } : {}} to={data.frontmatter.slug} style={{}}>
             <div className="spotlight" style={{marginLeft:'10%', marginTop:'-24%', margin:'-24% 10% 0 10%'}}>
               <div className="posticons" style={{flexDirection:'column', margin:'0 auto'}}>
                 <div style={{display:'flex', justifyContent:'space-around', gap:'2vw', color:'fff', }}>
@@ -53,7 +53,7 @@ const PostCard = ({ data }) => {
         )}
 
         <div className="panel" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'10px auto', maxWidth:'80vw', gap:'.4vw', height:'', textAlign:'center', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'', color:'#aaa' }}>
-          <Link state={{modal: true}} to={data.frontmatter.slug}>
+          <Link state={showModals ? { modal: true } : {}} to={data.frontmatter.slug}>
             <h2 className="title1" style={{ }}>
               {data.frontmatter.title}
             </h2>
