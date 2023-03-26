@@ -2,8 +2,8 @@
   "siteColor": "rgba(255, 255, 255, .7)",
   "headerColor": "rgba(0, 0, 0, .8)",
   "bodyBg": "rgba(255, 255, 255, .92)",
-  "bodyColor": "#ddd",
+  "text": "#222",
   "fontFamily": "Titan One",
-  "cardBg": "rgba(255, 255, 255, .1)",
+  "cardBg": "rgba(0, 0, 0,.7)",
   "textShadow": "#333"
 }
