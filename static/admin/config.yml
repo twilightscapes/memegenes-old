@@ -553,6 +553,8 @@ collections:
 
   - label: "Appearance"
     name: "appearance"
+    editor:
+      preview: false
     identifier_field: "name"
     files:
       - label: "Default Theme"
