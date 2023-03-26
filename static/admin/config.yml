@@ -16,21 +16,7 @@ media_folder: "static/assets"
 public_folder: "/assets"
 
 collections:
-  - name: "team"
-    label: "Team Member"
-    description: >
-      Team Member Pages
-    folder: "src/content/team"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "team"}
-      - {label: "Team Member Name", name: "name", widget: "string"}
-      - {label: "Job Title", name: "jobTitle", widget: "string"}
-      - {label: "Credentials", name: "credentials", widget: "string"}
-      - {label: "Page Order", name: "order", widget: "string"}
-      - {label: "Team Image", name: "profilePicture", widget: "image", required: false,}
-      - {label: "Body", name: "body", widget: "markdown"}
+  
    
 
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -85,22 +71,31 @@ collections:
           ],
         }
 
-      - { label: "Page Tags", name: "tags", widget: "list", default: "", required: false, field: {label: Tag, name: name, widget: string}}
+      - { label: "Page Tags", name: "tags", widget: "list", collapsed: true, default: "", required: false, add_to_top: true, field: {label: Tag, name: name, widget: string, add_to_top: true, collapsed: true,}}
 
-      - { label: "YouTube Url", name: "youtuber", widget: "string", required: false }
-      - { label: "Second YouTube Url", name: "youtuber2", widget: "string", required: false, hint: "You can use this to rebute things or show alternate content" }
-      - { label: "YouTube AutoPlay", name: "youtubeautostart", widget: "boolean", default: "false", required: false }
-      - { label: "YouTube Mute", name: "youtubemute", widget: "boolean", default: "false", required: false }
-      - { label: "YouTube Controls", name: "youtubecontrols", widget: "boolean", default: "false", required: false }
-      - { label: "YouTube Click To Play", name: "clicktoplay", widget: "boolean", default: "false", required: false }
-      - { label: "Show Custom Player Controls", name: "customcontrols", widget: "boolean", default: "false", required: false }
-      - { label: "YouTube Start", name: "youtubestart", widget: "string", hint: "This is measured in seconds - 32 would start the video at the 32-second mark", required: false }
-      - { label: "YouTube End", name: "youtubeend", widget: "string", hint: "This is measured in seconds - 102 would end the video at the 1-min  and 42-second mark", required: false }
-      - { label: "YouTube - Loop Video", name: "youtubeloop", widget: "boolean", hint: "Set video to loop", default: "true", required: false }
-      - { label: "YouTube - Show Original?", name: "youtubeshoworiginal", widget: "boolean", hint: "It's nice manners when using a video, you should link to the original", default: "true", required: false }
-      - { label: "YouTube - Suggestion 1", name: "youtubersuggestion1", widget: "string", required: false }
-      - { label: "YouTube - Suggestion 2", name: "youtubersuggestion2", widget: "string", required: false }
-      - { label: "YouTube - Suggestion 3", name: "youtubersuggestion3", widget: "string", required: false }
+      - {
+              label: "YouTube",
+              name: "youtube",
+              widget: "object",
+              collapsed: true, # Set to true to collapse panel by default
+            fields: [
+              { label: "YouTube Url", name: "youtuber", widget: "string",required: false },
+              { label: "YouTube Start", name: "youtubestart", widget: "string", required: false },
+              { label: "YouTube End", name: "youtubeend", widget: "string", required: false },
+              { label: "YouTube Audio", name: "youtuber2", widget: "string", required: false },
+              { label: "YouTube Audio Start", name: "audiostart", widget: "string", required: false },
+              { label: "YouTube Audio End", name: "audioend", widget: "string", required: false },
+              { label: "YouTube Audio Title", name: "audiotitle", widget: "string", required: false },
+              { label: "YouTube Mute", name: "youtubemute", widget: "boolean", default: false, required: false },
+              { label: "YouTube AutoPlay", name: "youtubeautostart", widget: "boolean", default: false, required: false },
+              { label: "YouTube Loop", name: "youtubeloop", widget: "boolean", default: true, required: false },
+              { label: "YouTube Controls", name: "youtubecontrols", widget: "boolean", default: false, required: false },
+              { label: "YouTube Use Custom Controls", name: "customcontrols", widget: "boolean", default: true, required: false },
+              { label: "YouTube Click To Play", name: "clicktoplay", widget: "boolean", default: false, required: false }
+            ]
+          }
+
+
       - { label: "Bumper Text", name: "bumpertext", widget: "string", default: "", required: false  }
       - { label: "Viewer Warning", name: "viewerwarning", widget: "string", default: "", required: false  }
       - { label: "Content Rating", name: "marate", widget: "string", default: "PG", required: false }
@@ -160,6 +155,8 @@ collections:
         }
     preview_template: "preview-templates/posts.js"
 
+
+
   - label: "Pages"
     name: "pages"
     files:
@@ -182,20 +179,33 @@ collections:
           - { label: "SVG Image", name: "svgImage", widget: "image", required: false}
           - { label: "SVG Z-Index", name: "svgzindex", widget: "string", required: false }
 
-          - { label: "YouTube Url", name: "youtuber", widget: "string",required: false }
-          - { label: "YouTube Start", name: "youtubestart", widget: "string", required: false } 
-          - { label: "YouTube End", name: "youtubeend", widget: "string", required: false } 
-          - { label: "YouTube Audio", name: "youtuber2", widget: "string", required: false }
-          - { label: "YouTube Audio Start", name: "audiostart", widget: "string", required: false } 
-          - { label: "YouTube Audio End", name: "audioend", widget: "string", required: false }
-          - { label: "YouTube Audio Title", name: "audiotitle", widget: "string", required: false } 
+          - {
+              label: "YouTube",
+              name: "youtube",
+              widget: "object",
+              collapsed: true, # Set to true to collapse panel by default
+            fields: [
+              { label: "YouTube Url", name: "youtuber", widget: "string",required: false },
+              { label: "YouTube Start", name: "youtubestart", widget: "string", required: false },
+              { label: "YouTube End", name: "youtubeend", widget: "string", required: false },
+              { label: "YouTube Audio", name: "youtuber2", widget: "string", required: false },
+              { label: "YouTube Audio Start", name: "audiostart", widget: "string", required: false },
+              { label: "YouTube Audio End", name: "audioend", widget: "string", required: false },
+              { label: "YouTube Audio Title", name: "audiotitle", widget: "string", required: false },
+              { label: "YouTube Mute", name: "youtubemute", widget: "boolean", default: false, required: false },
+              { label: "YouTube AutoPlay", name: "youtubeautostart", widget: "boolean", default: false, required: false },
+              { label: "YouTube Loop", name: "youtubeloop", widget: "boolean", default: true, required: false },
+              { label: "YouTube Controls", name: "youtubecontrols", widget: "boolean", default: false, required: false },
+              { label: "YouTube Use Custom Controls", name: "customcontrols", widget: "boolean", default: true, required: false },
+              { label: "YouTube Click To Play", name: "clicktoplay", widget: "boolean", default: false, required: false }
+            ]
+          }
 
-          - { label: "YouTube Mute", name: "youtubemute", widget: "boolean", default: "false", required: false }
-          - { label: "YouTube AutoPlay", name: "youtubeautostart", widget: "boolean", default: "false", required: false }
-          - { label: "YouTube Loop", name: "youtubeloop", widget: "boolean", default: "true", required: false }
-          - { label: "YouTube Controls", name: "youtubecontrols", widget: "boolean", default: "false", required: false }
-          - { label: "YouTube Use Custom Controls", name: "customcontrols", widget: "boolean", default: "true", required: false }
-          - { label: "YouTube Click To Play", name: "clicktoplay", widget: "boolean", default: "false", required: false }
+
+
+
+
+          
           - { label: "Embed Content inside Video (BEWARE)", 
             hint: "Do not use this unless you understand how to put custom html and css into your content panel. Please ask     before using and breaking your website", name: "contentinvideo", widget: "boolean", default: "false", required: false }
           - { label: "Turn Fact Check On", name: "liarliar", widget: "boolean", default: "false", required: false }
@@ -284,6 +294,23 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "team"
+    label: "Team Member"
+    description: >
+      Team Member Pages
+    folder: "src/content/team"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "team"}
+      - {label: "Team Member Name", name: "name", widget: "string"}
+      - {label: "Job Title", name: "jobTitle", widget: "string"}
+      - {label: "Credentials", name: "credentials", widget: "string"}
+      - {label: "Page Order", name: "order", widget: "string"}
+      - {label: "Team Image", name: "profilePicture", widget: "image", required: false,}
+      - {label: "Body", name: "body", widget: "markdown"}
+
   - name: settings
     label: Settings
     files:
@@ -402,7 +429,7 @@ collections:
                 name: showSkills
                 label: Show Skills
                 required: false
-              
+
               - widget: boolean
                 name: showModals
                 label: Show Modals
@@ -448,6 +475,9 @@ collections:
             name: ga
             widget: string
             hint: "Add your tracking ID, should look like UA-XXXXXXXXX-X or G-XXXXXXXXXX"
+
+
+
       - label: Social Icons
         name: socialIcons
         file: "src/util/socialmedia.json"
@@ -486,6 +516,27 @@ collections:
                 label: url
                 required: true
                 hint: "Paste the 'URL' of your Social media"
+
+      - label: Menu Navigation
+        name: menuNavigation
+        file: "src/util/menu.json"
+        fields:
+          - label: Menu Items
+            name: menuItems
+            widget: list
+            collapsed: true
+            hint: "Here you can add menu items, Click on 'Add menu item'"
+            fields:
+              - widget: string
+                name: menutitle
+                label: Menu Title
+                required: true
+                hint: "The title that appears in the menu"
+              - widget: string
+                name: url
+                label: url
+                required: true
+                hint: "add the url of the menu item"
 
   - label: "Appearance"
     name: "appearance"
