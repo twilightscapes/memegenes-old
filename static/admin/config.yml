@@ -404,8 +404,8 @@ collections:
                 required: false
               
               - widget: boolean
-                name: showSkills
-                label: Show Skills
+                name: showModals
+                label: Show Modals
                 required: false
 
               - widget: string
