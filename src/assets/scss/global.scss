@@ -1,4 +1,4 @@
-// @import "theme-variables";
+@import "theme-variables";
 @import "user.scss";
 @import "animate.css";
 
@@ -124,10 +124,10 @@ body.scroll{overflow-x:hidden!important;overflow-y:scroll!important}
 }
 
 .grid-container .post-card1{
-  background-color:#ff0000;
+  // background-color:#111;
   // background:linear-gradient(180deg,#333 1%,#111 80%);
   // background:linear-gradient(180deg,rgba(0, 0, 0, .3) 1%,rgba(0, 0, 0, .8) 80%);
-  background:var(--theme-ui-colors-cardBg);
+  background:var(--theme-ui-colors-headerColor);
   border:1px solid rgba(0,0,0,.08);
   border-radius:5px;
   box-shadow:0 5px 10px rgba(0, 0, 0, 0.8);
@@ -594,8 +594,7 @@ to{opacity:0;z-index:-3}
 
 #menu{-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);
   // #menu.header {background:red !important;}
-  
-  background:var(--theme-ui-colors-siteColor);
+  background:var(--theme-ui-colors-headerColor) !important;
   color:var(--theme-ui-colors-text);
   text-shadow:var(--theme-ui-colors-textShadow);
   margin-top:0!important;

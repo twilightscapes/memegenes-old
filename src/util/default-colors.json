@@ -1,9 +1,10 @@
 {
-  "siteColor": "rgba(255, 255, 255, .7)",
+  "siteColor": "rgba(0, 0, 0, .7)",
   "headerColor": "rgba(0, 0, 0, .8)",
-  "bodyBg": "rgba(255, 255, 255, .92)",
-  "text": "#222",
+  "background": "rgba(255, 255, 255, .92)",
+  "bodyColor": "rgba(0, 0, 0, .6)",
+  "text": "#222222",
   "fontFamily": "Titan One",
-  "cardBg": "rgba(0, 0, 0,.7)",
-  "textShadow": "#333"
+  "cardBg": "rgba(0, 0, 0, .6)",
+  "textShadow": "rgba(0, 0, 0, .1)"
 }
