@@ -300,8 +300,6 @@ collections:
           - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "team"
-  editor:
-      preview: false
     label: "Team Members"
     label_singular: "Team Member"
     description: >
