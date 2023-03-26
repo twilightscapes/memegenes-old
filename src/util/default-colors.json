@@ -1,5 +1,5 @@
 {
-  "siteColor": "#ddd",
+  "siteColor": "rgba(0, 0, 0, .5)",
   "bodyBg": "rgba(255, 255, 255, .92)",
   "bodyColor": "#ddd",
   "fontFamily": "Titan One",
