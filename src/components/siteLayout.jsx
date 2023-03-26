@@ -47,14 +47,14 @@ const Layout = ({ children }) => {
       sessionStorage.setItem("scrollPos", window.pageYOffset)
     }, [])
   
-    useEffect(() => {
-      if (window.history.scrollRestoration) {
-        const scrollPos = sessionStorage.getItem("scrollPos")
-        window.history.scrollRestoration = "manual"
-        window.scrollTo(0, scrollPos)
-        window.history.scrollRestoration = "auto"
-      }
-    }, [])
+    // useEffect(() => {
+    //   if (window.history.scrollRestoration) {
+    //     const scrollPos = sessionStorage.getItem("scrollPos")
+    //     window.history.scrollRestoration = "manual"
+    //     window.scrollTo(0, scrollPos)
+    //     window.history.scrollRestoration = "auto"
+    //   }
+    // }, [])
 
 
     useEffect(() => {
@@ -236,8 +236,10 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 {showNav ? (
-<div id="menu" className="menu print panel1 header" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', maxHeight:'', overFlow:'', boxShadow:'0 0 2px rgba(0,0,0,.7)', padding:'0 2%', alignItems:'start', borderRadius:'0', display:'flex', justifyContent:'space-around', gap:'10px', color:'#fff',  borderBottom:'1px solid #222', background:'linear-gradient(180deg,#333 1%,#111 80%)',
-  backgroundColor:'#111'  }}>
+<div id="menu" className="menu print panel1 header" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', maxHeight:'', overFlow:'', boxShadow:'0 0 2px rgba(0,0,0,.7)', padding:'0 2%', alignItems:'start', borderRadius:'0', display:'flex', justifyContent:'space-around', gap:'10px', color:'#fff',  borderBottom:'1px solid #222',
+backgroundColor:'#111',
+background:'linear-gradient(180deg,rgba(0, 0, 0, .9) 1%,rgba(0, 0, 0, .6) 80%)',
+  }}>
 
 
 {prefersReducedMotion ? (
