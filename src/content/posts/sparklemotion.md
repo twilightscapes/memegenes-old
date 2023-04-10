@@ -30,7 +30,9 @@ shareable: true
 underlayImage: /assets/sparklemotion.webp
 featuredImage: /assets/sparklemotion-promo.webp
 svgImage: 
-scrollable: true
+scrollable: false
+showZoom: true
+showPageNav: true
 nftdrop: "2023-02-11T10:00:00"
 contentinvideo: true
 bumpertext: "Sometimes, I doubt your commitment to SparkleMotion!"

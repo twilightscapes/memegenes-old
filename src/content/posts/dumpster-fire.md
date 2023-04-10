@@ -30,7 +30,9 @@ shareable: true
 underlayImage: /assets/trump-dumpfire.webp
 featuredImage: /assets/trump-fire-promo.webp
 svgImage: 
-scrollable: true
+scrollable: false
+showZoom: true
+showPageNav: true
 nftdrop: "2023-02-09T10:00:00"
 contentinvideo: false
 bumpertext: ""

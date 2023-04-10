@@ -7,7 +7,7 @@ description: We know...
 youtube:
   youtuber: 
   youtuber2: 
-  youtubeshoworiginal: true
+  youtubeshoworiginal: false
   youtubersuggestion1: 
   youtubersuggestion2: 
   youtubersuggestion3: 
@@ -16,7 +16,7 @@ youtube:
   youtubemute: false
   youtubecontrols: false
   clicktoplay: false
-  customcontrols: true
+  customcontrols: false
   youtubeautostart: false
   youtubeloop: true
 audiostart: "0"
@@ -31,6 +31,8 @@ underlayImage:
 featuredImage: /assets/jox-socks.webp
 svgImage:
 scrollable: false
+showZoom: true
+showPageNav: true
 nftdrop: "2023-02-09T10:00:00"
 marating1: YB
 marating2: SS

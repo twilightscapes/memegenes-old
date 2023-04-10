@@ -1,5 +1,16 @@
 {
   "menuItems": [
-
+    {
+      "menutitle": "Tags",
+      "url": "/tags"
+    },
+    {
+      "menutitle": "Archive",
+      "url": "/archive"
+    },
+    {
+      "menutitle": "Contact",
+      "url": "/contact"
+    }
   ]
 }

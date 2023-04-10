@@ -6,7 +6,7 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 import { ImPlay } from "react-icons/im"
 import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
-
+import { StaticImage } from 'gatsby-plugin-image';
 
 // import TimeAgo from 'react-timeago'
 
@@ -34,16 +34,15 @@ const BlogList = ({ data, pageContext }) => {
         ""
       )}
 
-      <div style={{maxHeight:'80vh'}}>
-        <h1 style={{textAlign:'center'}}>Archive</h1>
+      <div style={{maxHeight:'100vh'}}>
 
 
-
+        {/* <h1 style={{textAlign:'center'}}>Archive</h1> */}
 
 
         <div className="contentpanel horizontal-scroll panels" style={{padding:''}}>
 
-<div className="sliderSpacer" style={{height:'', paddingTop:'0', display:'none'}}></div>
+<div className="sliderSpacer" style={{height:'', paddingTop:'', display:''}}></div>
 
 
         {posts.map(({ node }) => {
@@ -53,21 +52,29 @@ const BlogList = ({ data, pageContext }) => {
           const featuredImg = node.frontmatter.featuredImage
 
           return (
-            <div key={node.fields.slug}>
+            <div className='post-card1' key={node.fields.slug}>
               {/* Render featured image thumbnail if it exists */}
-              {featuredImg && (
-                <Link to={node.fields.slug}>
+ 
+                <Link className="postlink" to={node.fields.slug}>
 
+
+{featuredImg ? (
 
 <GatsbyImage
-          image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
-          alt={node.frontmatter.title + " - Featured image"}
-          className="featured-image1"
-          placeholder="blurred"
-              // loading="eager"
-    
-              style={{position:'relative', zIndex:'1', maxHeight:'', margin:'0 auto'}}
-        />
+image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
+alt={node.frontmatter.title + " - Featured image"}
+className="featured-image12 layer12 iiz__img"
+placeholder="blurred"
+// loading="eager"
+/>
+) : (
+<StaticImage
+            className="featured-image1"
+            src="../../static/assets/default-og-image.webp"
+            alt="Default Image"
+            style={{ position: 'relative', zIndex: '' }}
+          />
+)}
 
       
 
@@ -80,50 +87,39 @@ const BlogList = ({ data, pageContext }) => {
                   
 
 
-                  <div className="post-content" style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'0', margin:'0 auto 0 auto', textAlign:'center', overFlow:'hidden'}}>
+<div className="post-content" style={{ width:'100%', height:'100%', position:'relative', background:'', padding:'0', margin:'0 auto 0 auto', textAlign:'center', overFlow:'hidden'}}>
+        
 
-{node.frontmatter.youtube.youtuber ? (
-<Link to={node.frontmatter.slug} style={{}}>
+<div className="panel" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'10px auto', maxWidth:'80vw', gap:'.4vw', height:'', textAlign:'center', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'', color:'#aaa' }}>
+            <h2 className="title" style={{ }}>
+              {node.frontmatter.title}
+            </h2>
+          {/* <p style={{position:'', textAlign:'center', border:'0px solid red', fontSize:'70%', minWidth:'100px'}}>
+            <TimeAgo date={data.frontmatter.date}/>
+          </p> */}
+        </div>
 
-  <div className="spotlight" style={{marginLeft:'10%', marginTop:'-28%', margin:'-24% 10% 0 10%'}}>
-
-<div className="posticons" style={{flexDirection:'column', margin:'0 auto'}}>
-
-<div style={{display:'flex', justifyContent:'space-around', gap:'2vw', color:'fff', }}>
-<FaImage className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
-    <ImPlay className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
-    <AiOutlinePicLeft className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
+            {node.frontmatter.youtube.youtuber ? (
+              <div className="spotlight" style={{border:'0px solid green', }}>
+  <div className="posticons" style={{flexDirection:'column', justifyContent:'center', margin:'0 auto'}}>
+    <div style={{display:'flex', justifyContent:'space-around', gap:'2vw', color:'fff', }}>
+      <FaImage className="posticon" style={{margin:'0 auto', width:'60%', height:'30px', fontSize:''}} />
+      <ImPlay className="posticon" style={{margin:'0 auto', width:'60%', height:'30px', fontSize:''}} />
+      <AiOutlinePicLeft className="posticon" style={{margin:'0 auto', width:'60%', height:'30px', fontSize:''}} />
+    </div>
+    Play Multimedia
+  </div>
 </div>
-
-Play Multimedia
-</div>
-
-</div>
-
-</Link>
 ) : (
-  ""
+""
 )}
-
-
-
-
-
-<div className="panel" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'0 auto', maxWidth:'80vw', gap:'.4vw', height:'', textAlign:'center', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'', color:'#aaa' }}>
-
-<h2 className="title1" style={{ }}>
-    {node.frontmatter.title}
-</h2>
-
-
-            </div>
 
             </div>
 
 
             
           </Link>
-              )}
+      
 
 
             </div>
@@ -135,7 +131,7 @@ Play Multimedia
       </div>
 
       {/* Render pagination links */}
-<div style={{position:'fixed', bottom:'0', width:'100vw',  background:'rgba(0, 0, 0, 0.7)', padding:'2vh 2vw', textAlign:'center', color:'#fff'}}>
+<div style={{position:'fixed', bottom:'0', width:'100vw',  background:'rgba(0, 0, 0, 0.7)', padding:'2vh 2vw', textAlign:'center', color:'#fff', display:'flex', justifyContent:'center'}}>
   <button onClick={() => navigate(pageContext.currentPage > 2 ? `/archive/${pageContext.currentPage - 1}` : '/archive')} disabled={pageContext.currentPage === 1}>
     Previous
   </button>
@@ -172,7 +168,7 @@ export const query = graphql`
     allMarkdownRemark(
       sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: 10
+      limit: 30
       skip: $skip
     ) {
       edges {

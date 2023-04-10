@@ -235,7 +235,11 @@ const ClickToPlay = frontmatter.clicktoplay
 
 
 
-
+const seoProps = {
+  title: frontmatter.title,
+  description: frontmatter.description ? frontmatter.description : excerpt,
+  image: frontmatter.featuredImage ? siteUrl + getSrc(frontmatter.featuredImage) : undefined,
+};
 
 
 
@@ -543,7 +547,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'15
           </div>
           </button>}
    
-            light="../assets/transparent.png"
+            light="../src/img/transparent.png"
           />
      </div>
 
@@ -780,25 +784,39 @@ Click to play
 
     <Layout>
 {frontmatter.scrollable ? (
-  <Helmet>
-  <body id="body" className="homepage scroll" style={{}} />
+<Helmet>
+  <body id="body" className="homepage scroll"  />
 </Helmet>
 ) : (
-  <Helmet>
-  <body id="body" className="homepage" style={{}} />
+<Helmet>
+  <body id="body" className="homepage" />
 </Helmet>
   )}
-       <Seo
+
+
+{/* {FrontImage ? (
+  <Seo
         title={frontmatter.title}
         description={
           frontmatter.description ? frontmatter.description : excerpt
         }
    image={ siteUrl + getSrc(frontmatter.featuredImage) }
       />
+) : (
+  <Seo
+        title={frontmatter.title}
+        description={
+          frontmatter.description ? frontmatter.description : excerpt
+        }
+  //  image={ siteUrl + getSrc(frontmatter.featuredImage) }
+      />
+)} */}
+       
+       <Seo {...seoProps} />
 
 
 {showNav ? (
-  <div id="top" className="spacer" style={{height:'70px', border:'0px solid yellow'}}></div>
+  <div className="spacer" style={{height:'70px', border:'0px solid yellow'}}></div>
       ) : (
         ""
       )}
@@ -831,13 +849,14 @@ Click to play
 
   <div className='stack-layout' style={{ display:'flex',justifyContent:'center', position:'relative', top:'0', zIndex:'0', minHeight:'250px', height:'', overflow:'hidden', filter: 'drop-shadow(0 0 20px #000)' }}>
 {FrontImage ? (
-            <GatsbyImage
-              image={FrontImage}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image12 layer1"
-              style={{height:'100vh', maxHeight:'100vh', width:'', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'cover', paddingTop:'0', overflow:'hidden',}}
-            />
 
+            <GatsbyImage
+            image={FrontImage}
+            alt={frontmatter.title + " - Featured image"}
+            className="featured-image12 layer12 iiz__img"
+            placeholder="blurred"
+            // loading="eager"
+          />
 
 
 
@@ -863,65 +882,6 @@ Click to play
 )}
 
 {/* end show feature */}
-
-
-
-
-
-
-{showPosts ? (
-  <section id="showPosts" style={{marginTop:''}}>
-  <div style={{position:'relative', background:'none', maxHeight:'', overflow:'', width:'100vw'}}>
-
-
-
-
-
-
-  {/* <TwilightLogo className="bglogo darkened" /> */}
-<div className="contentpanel" style={{padding:''}}>
-
-<div className="sliderSpacer" style={{height:'', paddingTop:'', display:'none'}}></div>
-                         <BlogListHome data={posts} />
-      {/* <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
-      </div> */}
-</div>
-
-</div>
-</section>
-      ) : (
-        ""
-      )}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1041,8 +1001,8 @@ Click to play
             <GatsbyImage
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
-              className="drop-shadow avatar-frame"
-              style={{ maxWidth:'', height:'45vh', maxHeight:'45vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', marginBottom:'0', border:'2rem'}}
+              className="avatar-frame"
+              style={{ maxWidth:'300px', margin:'0 auto', height:'', maxHeight:'300px', position:'relative', top:'', objectFit:'contain', backgroundSize:'contain', marginBottom:'0', border:'0'}}
             />
           ) : (
             ""
@@ -1189,6 +1149,36 @@ Click to play
 
 
 
+{showPosts ? (
+  <section id="showPosts" style={{marginTop:''}}>
+
+
+
+
+
+
+
+  {/* <TwilightLogo className="bglogo darkened" /> */}
+<div className="contentpanel grid-container" style={{}}>
+
+<div className="sliderSpacer" style={{height:'', paddingTop:'', display:''}}></div>
+                         <BlogListHome data={posts} />
+      {/* <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/2" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
+      </div> */}
+</div>
+
+
+</section>
+      ) : (
+        ""
+      )}
+
+
+
+
+
+
+
 
 
 
@@ -1294,6 +1284,6 @@ Click to play
 
 export default HomePage
 
-export const Head = () => (
-  <body className="todd" />
-)
+// export const Head = () => (
+//   <body className="flatten" />
+// )

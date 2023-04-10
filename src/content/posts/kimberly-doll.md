@@ -31,7 +31,9 @@ shareable: true
 underlayImage: /assets/kimberly-makeup-bg.webp
 featuredImage: /assets/kimberly-makeup-promo.webp
 svgImage: 
-scrollable: true
+scrollable: false
+showZoom: true
+showPageNav: true
 nftdrop: "2023-02-22T10:00:00"
 contentinvideo: true
 viewerwarning: Viewer Discretion Strongly Advised

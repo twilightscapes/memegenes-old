@@ -30,7 +30,9 @@ shareable: true
 underlayImage: /assets/matt-venmo-underage-girls-background.webp
 featuredImage: /assets/matt-gaetz-venmo-promo.webp
 svgImage: 
-scrollable: true
+scrollable: false
+showZoom: true
+showPageNav: true
 nftdrop: "2023-03-05T10:00:00"
 contentinvideo: true
 viewerwarning: Viewer Discretion Strongly Advised

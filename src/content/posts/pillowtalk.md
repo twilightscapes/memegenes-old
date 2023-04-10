@@ -19,7 +19,9 @@ youtube:
  youtubestart: "0"
  youtubersuggestion2: https://youtu.be/iiZnOlRPiE0
 shareable: true
-scrollable: true
+scrollable: false
+showZoom: true
+showPageNav: true
 contentinvideo: false
 liarliar: false
 audiotitle: Alternate Soundtrack

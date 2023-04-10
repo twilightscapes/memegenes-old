@@ -31,7 +31,9 @@ shareable: true
 underlayImage: /assets/mypillow-stage.webp
 featuredImage: /assets/election-fraud-promo.webp
 svgImage: /assets/election-fraud-central.svg
-scrollable: true
+scrollable: false
+showZoom: true
+showPageNav: true
 nftdrop: "2023-02-11T10:00:00"
 contentinvideo: true
 marating1: YB

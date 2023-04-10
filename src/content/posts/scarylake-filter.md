@@ -31,7 +31,9 @@ shareable: true
 underlayImage: /assets/tv-crew.webp
 featuredImage: /assets/Skari-no-filter.webp
 svgImage: 
-scrollable: true
+scrollable: false
+showZoom: true
+showPageNav: true
 nftdrop: "2023-02-09T10:00:00"
 contentinvideo: true
 viewerwarning: Viewer Discretion Strongly Advised

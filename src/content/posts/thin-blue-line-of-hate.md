@@ -28,7 +28,9 @@ shareable: true
 underlayImage: "/assets/transparent.png"
 featuredImage: /assets/murica-promo.png
 svgImage: /assets/murica.svg
-scrollable: true
+scrollable: false
+showZoom: true
+showPageNav: true
 nftdrop: "2023-02-09T10:00:00"
 contentinvideo: true
 marating1: ACAB

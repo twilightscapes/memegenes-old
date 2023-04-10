@@ -81,7 +81,9 @@ profTitle: MG Reports
 coverletter:
   coverText: About Meme Genes
   coverLink: /about
-scrollable: true
+scrollable: false
+showZoom: true
+showPageNav: true
 contentinvideo: false
 nftdrop: "2023-02-11T10:00:00"
 ---

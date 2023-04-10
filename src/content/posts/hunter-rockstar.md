@@ -31,7 +31,9 @@ shareable: true
 underlayImage: /assets/hunter-party-underlay.webp
 featuredImage: /assets/hunter-rockstar-promo.webp
 svgImage: 
-scrollable: true
+scrollable: false
+showZoom: true
+showPageNav: true
 nftdrop: "2023-02-11T10:00:00"
 contentinvideo: false
 viewerwarning: Warning

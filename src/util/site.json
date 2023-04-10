@@ -32,6 +32,7 @@
     "image": "/assets/newspaper.webp",
     "description": "Do these memes make my ass look fat?!?!?!?!",
     "icon512": "/assets/icon.svg",
+    "showSwipe": true,
     "showSkills": false,
     "showModals": false
   },

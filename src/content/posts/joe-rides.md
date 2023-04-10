@@ -33,7 +33,9 @@ marating4: AL
 maratingtx4: Adult Language
 comments: false
 shareable: true
-scrollable: true
+scrollable: false
+showZoom: true
+showPageNav: true
 contentinvideo: false
 audiotitle: null
 audioend: null

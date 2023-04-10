@@ -31,7 +31,9 @@ shareable: true
 underlayImage: /assets/transparent.png
 featuredImage: /assets/yellowstone-promo.webp
 svgImage: 
-scrollable: true
+scrollable: false
+showZoom: true
+showPageNav: true
 nftdrop: "2023-02-11T10:00:00"
 contentinvideo: false
 marating1: YB

@@ -29,7 +29,9 @@ shareable: true
 underlayImage: /assets/marge-trash-bg.webp
 featuredImage: /assets/marg-dumpster-promo.webp
 svgImage: 
-scrollable: true
+scrollable: false
+showZoom: true
+showPageNav: true
 nftdrop: "2023-02-09T10:00:00"
 contentinvideo: true
 bumpertext: ""

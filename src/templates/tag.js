@@ -33,7 +33,7 @@ const Tag = ({ data, pageContext }) => {
   return (
     <Layout>
       <Helmet>
-  <body id="body" className="tag scroll" style={{}} />
+  <body id="body" className="tag" style={{}} />
 </Helmet>
 
 
@@ -47,11 +47,11 @@ const Tag = ({ data, pageContext }) => {
       <h1 style={{textAlign:'center'}}>Posts tagged "{tag}"</h1>
       
 
-
+      <section id="showPosts" style={{marginTop:''}}>
 
 <div className="contentpanel horizontal-scroll panels" style={{padding:''}}>
 
-<div className="sliderSpacer" style={{height:'', paddingTop:'', display:'none'}}></div>
+<div className="sliderSpacer" style={{height:'', paddingTop:'', display:''}}></div>
 
       
         {posts.map(({ node }) => (
@@ -95,7 +95,10 @@ Play Multimedia
           </div>
         ))}
       
+
+
     </div>
+    </section>
     </Layout>
   )
 }

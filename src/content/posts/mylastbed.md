@@ -28,7 +28,9 @@ shareable: true
 underlayImage: 
 featuredImage: /assets/MyLastBed.webp
 svgImage:
-scrollable: true
+scrollable: false
+showZoom: true
+showPageNav: true
 nftdrop: "2023-02-09T07:00:00"
 contentinvideo: false
 marating1: YB

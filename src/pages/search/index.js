@@ -1,4 +1,5 @@
-import * as React from "react"
+import React from "react"
+
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { ImPlay } from "react-icons/im"
@@ -8,6 +9,8 @@ import Layout from "../../components/siteLayout"
 import { Helmet } from "react-helmet"
 import TwilightLogo from "../../../static/assets/logo.svg"
 import { StaticImage } from "gatsby-plugin-image"
+
+import useSiteMetadata from "../../hooks/SiteMetadata"
 
 // import TimeAgo from 'react-timeago'
 
@@ -20,6 +23,9 @@ function clearfield() {
 
 
 const SearchPage = ({ data }) => {
+
+  const { showModals } = useSiteMetadata();
+
   const allPosts = data.allMarkdownRemark.edges
   const [query, setQuery] = React.useState("")
   const [filteredPosts, setFilteredPosts] = React.useState(allPosts)
@@ -43,11 +49,11 @@ const SearchPage = ({ data }) => {
 <Layout>
 
 <Helmet>
-  <body id="body" className="search scroll" style={{}} />
+  <body id="body" className="search"  />
 </Helmet>
 
 
-<div id="top" className="spacer" style={{height:'80px', border:'0px solid yellow'}}></div>
+<div className="spacer" style={{height:'80px', border:'0px solid yellow'}}></div>
 
       <div className="searchform" style={{
 
@@ -64,16 +70,16 @@ const SearchPage = ({ data }) => {
       </div>
 
       <TwilightLogo className="bglogo darkened" />
-      <div className="contentpanel horizontal-scroll panels" style={{justifyContent:'center', alignItems:'center', marginTop:'70px'}}>
+      <div className="contentpanel grid-container" style={{justifyContent:'center', alignItems:'center', marginTop:'70px'}}>
 
-<div className="sliderSpacer" style={{height:'', paddingTop:'', display:'none'}}></div>
+<div className="sliderSpacer" style={{height:'', paddingTop:'', display:''}}></div>
 
 
   {/* {filteredPosts.length} result{filteredPosts.length !== 1 && 's'} */}
 
 
         {filteredPosts.map(({ node }) => (
-          <Link key={node.id} to={node.frontmatter.slug}>
+ 
 
 
 
@@ -86,39 +92,47 @@ const SearchPage = ({ data }) => {
     className="post-card1"
     style={{  alignItems:'center'}}
   >
-
-
+<Link className="postlink" state={showModals ? { modal: true } : {}} key={node.frontmatter.slug} to={node.frontmatter.slug}>
 
 {node.frontmatter.featuredImage ? (
-      <Link to={node.frontmatter.slug}>
-        <GatsbyImage
-          image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
-          alt={node.frontmatter.title + " - Featured image"}
-          className="featured-image1"
-          placeholder="blurred"
-              // loading="eager"
-    
-              style={{position:'relative', zIndex:'1', maxHeight:'', margin:'0 auto'}}
-        />
-      </Link>
-      
-    ) : (
-      <Link  to={node.frontmatter.slug}><StaticImage className="featured-image1" src="../../static/assets/default-og-image.webp" alt="Default Image" style={{position:'relative', zIndex:''}} /></Link>
-    )}
+        
+          <GatsbyImage
+            image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
+            alt={node.frontmatter.title + " - Featured image"}
+            className="featured-image1"
+            placeholder="blurred"
+            loading="eager"
+            style={{ position: 'relative', zIndex: '1', maxHeight: '', margin: '0 auto' }}
+          />
+
+      ) : (
+
+          <StaticImage
+            className="featured-image1"
+            src="../../../static/assets/default-og-image.webp"
+            alt="Default Image"
+            style={{ position: 'relative', zIndex: '' }}
+          />
+
+      )}
+
+
+
+
 
 <div className="post-content" style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'0', margin:'0 auto 0 auto', textAlign:'center', overFlow:'hidden'}}>
 
 {node.frontmatter.youtube.youtuber ? (
-<Link to={node.frontmatter.slug} style={{}}>
+
 
   <div className="spotlight" style={{marginLeft:'10%', marginTop:'-28%', margin:'-24% 10% 0 10%'}}>
 
 <div className="posticons" style={{flexDirection:'column', margin:'0 auto'}}>
 
 <div style={{display:'flex', justifyContent:'space-around', gap:'2vw', color:'fff', }}>
-<FaImage className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
-    <ImPlay className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
-    <AiOutlinePicLeft className="posticon" style={{margin:'0 auto', width:'100%', height:'5vh', fontSize:''}} />
+<FaImage className="posticon" style={{margin:'0 auto', width:'60%', height:'30px', fontSize:''}} />
+<ImPlay className="posticon" style={{margin:'0 auto', width:'60%', height:'30px', fontSize:''}} />
+<AiOutlinePicLeft className="posticon" style={{margin:'0 auto', width:'60%', height:'30px', fontSize:''}} />
 </div>
 
 Play Multimedia
@@ -126,7 +140,7 @@ Play Multimedia
 
 </div>
 
-</Link>
+
 ) : (
   ""
 )}
@@ -140,16 +154,15 @@ Play Multimedia
 <h2 className="title1" style={{ }}>
     {node.frontmatter.title}
 </h2>
-
-
-            </div>
+ </div>
 
             </div>
-
+</Link>
 </div>
-            
-          </Link>
+
+          
         ))}
+        
       </div>
 
       </Layout>
