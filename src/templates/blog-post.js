@@ -962,7 +962,7 @@ Click to play
           // className="featured-image1"
             src={getSrc(FrontImage)}
             loading="eager"
-            zoomSrc={getSrc(FrontImage)}
+            // zoomSrc={getSrc(FrontImage)}
             // fullscreenOnMobile={true}
             // moveType="drag"
             zoomScale={0.9}
@@ -976,10 +976,10 @@ Click to play
         <GatsbyImage
         image={FrontImage}
         alt={frontmatter.title + " - Featured image"}
-        className="featured-image11 layer12 iiz__img"
+        // className="featured-image11 layer12 iiz__img"
         placeholder="blurred"
         loading="eager"
-        style={{  maxHeight:'75vh', objectFit:'scale-down', margin:'0 auto'}}
+        style={{  maxHeight:'100vh', objectFit:'scale-down', margin:'0 auto'}}
       />
           
       )

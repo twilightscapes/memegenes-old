@@ -55,7 +55,7 @@ TRAITOR
 </div> -->
 
 <div class="contentinside" style="height:85vh; overflow:hidden;">
-<img class="" src="/assets/travolta-where.webp" width="100%" style="opacity:0;
+<img class="" src="/assets/hillary.gif" width="100%" style="opacity:0;
 animation: fadeIn 10s ease-out;
 animation-delay: 6s;
 animation-iteration-count:infinite;" />
