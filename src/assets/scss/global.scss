@@ -113,7 +113,25 @@ body.blogpost .gatsby-image-wrapper {
 
 
 
+.effects::after{
+      top:0;
+      content:"  ";
+      left:0;
+      opacity:.99;
+      z-index: 0;
+      position:absolute;
+      height:50px;
+      width:100%;
+      display: block;
+      background-size: 100%;
+      background-color: #000000;
+      animation:fadeout 4s forwards;
+      animation-delay: 6s;
+}
 
+// .effects iframe{
+//   border:20px solid blue !important;
+// }
 
 
 .audiopopper{border:1px solid #222;}
