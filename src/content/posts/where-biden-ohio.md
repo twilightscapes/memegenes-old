@@ -1,18 +1,18 @@
 ---
 template: blog-post
-title: Where is Joe Biden?
-slug: /where-biden-ohio
+title: What is up with Joe Biden?
+slug: /biden-is-lost
 date: 2023-02-12 03:00
-description: Party with Hunter Biden and try to keep up!
+description: This man is having difficulties and nobody seems to want to admit that
 youtube:
- youtuber: https://www.youtube.com/embed/YMJiAkAfuaM
+ youtuber: https://youtu.be/WtYyfyr6Q-E
  youtuber2: 
  youtubeshoworiginal: true
  youtubersuggestion1: 
  youtubersuggestion2: 
  youtubersuggestion3: 
- youtubestart: "1359"
- youtubeend: ""
+ youtubestart: "385"
+ youtubeend: "421"
  youtubemute: false
  youtubecontrols: false
  clicktoplay: false
@@ -22,14 +22,14 @@ youtube:
 audiostart: "20"
 audioend: "5000"
 audiotitle: 
-bumpertext: "Rated HB for CrackHead"
+bumpertext: ""
 liarliar: true
 isnftforsale: false
 svgzindex: "0"
 comments: true
 shareable: true
 underlayImage: 
-featuredImage: /assets/hunter-rockstar-promo.webp
+featuredImage: /assets/biden-is-lost-promo.webp
 svgImage: 
 scrollable: false
 showZoom: true
@@ -47,7 +47,9 @@ maratingtx2: Sexual Situations
 maratingtx3: Deranged Violence
 maratingtx4: Hunter Biden levels
 category: memes
-tags: [humor]
+tags: 
+ - biden
+ - senile
 ---
 
 <!-- <div class="contentinside" style="position:relative; z-index:0; min-width:50%; height:auto; margin-top:10%;  padding:1rem; font-size:clamp(1rem, 2.3vw, 3rem); left:0;, top:4vh; line-height:90%; text-shadow:0 2px 7px #000; background:rgba(0,0,0,0.8); border:0px solid yellow; text-align:center; width:100vw;">
@@ -55,7 +57,7 @@ TRAITOR
 </div> -->
 
 <div class="contentinside" style="height:85vh; overflow:hidden;">
-<img class="" src="/assets/hillary.gif" width="100%" style="opacity:0;
+<img class="" src="/assets/travolta-where.webp" width="100%" style="opacity:0;
 animation: fadeIn 10s ease-out;
 animation-delay: 6s;
 animation-iteration-count:infinite;" />
