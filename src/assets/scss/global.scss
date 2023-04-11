@@ -78,7 +78,12 @@ body.homepage #showPosts { display: block; position:relative; }
 
 // body.homepage .horizontal-scroll .featured-image1, body.homepage .horizontal-scroll .gatsby-image-wrapper {max-height: 55vh; overflow: hidden;}
 
-
+body.blogpost .gatsby-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: inherit !important;
+  margin: 0 auto;
+}
 
   .header {
     transform: translateY(0);
