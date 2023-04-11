@@ -15,7 +15,7 @@ const PostCard = ({ data }) => {
 
     <div className="post-card1">
 
-      <Link className="postlink" state={showModals ? { modal: true } : {}} to={data.frontmatter.slug}>
+      <Link className="postlink" to={data.frontmatter.slug}>
 
       {data.frontmatter.featuredImage ? (
           <GatsbyImage
