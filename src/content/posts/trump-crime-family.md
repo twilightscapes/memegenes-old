@@ -54,9 +54,9 @@ tags:
 ---
 <div class="contentinside" style="height:auto; margin-top:1%;">
 <img class="" src="/assets/hillary-laugh.webp" width="100%" style="opacity:0;
-animation: hillaryLaugh 1s ease-out;
-animation-delay: 5s;
-animation-iteration-count:10;" />
+animation: hillaryLaugh 2s ease-out;
+animation-delay: 7s;
+animation-iteration-count:7;" />
 </div>
 
 <style>
