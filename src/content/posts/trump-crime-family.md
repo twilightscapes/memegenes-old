@@ -1,12 +1,12 @@
 ---
 template: blog-post
-title: A family that crimes together bonds together
+title: A family that crimes together bonds out together
 slug: /trump-crime-family
 date: 2023-04-03 10:43
-description: The family business that built an empire and how it all came crashing down
+description: Click to view the Trump's get a special visitor!
 youtube:
  youtuber: 
- youtuber2: 
+ youtuber2: https://youtu.be/RQXEXnexOkU
  youtubeshoworiginal: true
  youtubersuggestion1: ""
  youtubersuggestion2: ""
@@ -20,7 +20,7 @@ youtube:
  clicktoplay: false
 audiostart: "20"
 audioend: "5000"
-audiotitle: "Liar Liar!"
+audiotitle: "Poor Babies! Click here to laugh"
 liarliar: false
 isnftforsale: false
 svgzindex: "0"
@@ -52,11 +52,11 @@ tags:
   - donjr
   - ivanka
 ---
-<div class="contentinside" style="height:85vh; margin-top:-10%;">
-<img class="" src="/assets/hillary.gif" width="100%" style="opacity:0;
-animation: fadeIn 10s ease-out;
-animation-delay: 10s;
-animation-iteration-count:3;" />
+<div class="contentinside" style="height:auto; margin-top:1%;">
+<img class="" src="/assets/hillary-laugh.webp" width="100%" style="opacity:0;
+animation: hillaryLaugh 1s ease-out;
+animation-delay: 5s;
+animation-iteration-count:10;" />
 </div>
 
 <style>
@@ -65,7 +65,16 @@ animation-iteration-count:3;" />
 
   
 
+@keyframes hillaryLaugh {
+0%{opacity:0}
+25%{opacity:.3}
+50%{opacity:.6;transform:scale(.5)}
+75%{opacity:.8;transform:translateY(-1%)}
+to{opacity:.1;transform:translateY(1%)}
+}
 
+
+/* .lake:after{animation:SkariFilter 6s ease-in-out;animation-delay:1s;animation-direction:alternate;animation-iteration-count:infinite;aspect-ratio:4/3!important;border:0 solid red;content:" ";display:block;display:grid;left:2.5vw;max-height:58vh;opacity:0;place-content:center;position:fixed;top:3vh;width:73vw;z-index:0} */
   
 
 .numblist {
