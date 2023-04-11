@@ -16,6 +16,8 @@ const TagIndex = ({ data }) => {
     setSelectedTag(event.target.value);
   }
 
+
+  
   const tags = data.allMarkdownRemark.group.filter(
     group => group.fieldValue !== null && group.fieldValue !== ""
   ).map(group => group.fieldValue);
@@ -46,6 +48,7 @@ const TagIndex = ({ data }) => {
           {data.allMarkdownRemark.edges &&
             data.allMarkdownRemark.edges
               .filter(({ node }) => !selectedTag || (node.frontmatter.tags && node.frontmatter.tags.includes(selectedTag)))
+              .reverse()
               .map(({ node }) => {
                 const { featuredImage } = node.frontmatter;
 
@@ -77,7 +80,7 @@ const TagIndex = ({ data }) => {
 
 <div className="post-content" style={{display:'flex', flexDirection:'column', justifyContent:'start', width:'100%', height:'', position:'relative', background:'', padding:'0', margin:'0 auto 0 auto', textAlign:'center', overFlow:'hidden'}}>
   
-        {node.frontmatter.youtube.youtuber ? (
+        {node.frontmatter.youtuber ? (
 
 <div className="spotlight" style={{border:'0px solid green', }}>
   <div className="posticons" style={{flexDirection:'column', justifyContent:'center', margin:'0 auto'}}>
@@ -123,7 +126,7 @@ const TagIndex = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: {frontmatter: {template: {eq: "blog-post"}}}) {
       edges {
         node {
           fields {
