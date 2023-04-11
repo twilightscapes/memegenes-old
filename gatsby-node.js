@@ -108,7 +108,7 @@ if (post.node.frontmatter.tags) {
 })
 
 // Create blog-list pages
-const postsPerPage = 6
+const postsPerPage = 30
 const numPages = Math.ceil(blogPostsCount / postsPerPage)
 
 Array.from({ length: numPages }).forEach((_, i) => {
