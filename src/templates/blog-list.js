@@ -41,7 +41,7 @@ const BlogList = ({ data, pageContext }) => {
         {/* <h1 style={{textAlign:'center'}}>Archive</h1> */}
 
 
-        <div className="contentpanel horizontal-scroll panels" style={{padding:''}}>
+        <div className="contentpanel grid-container" style={{padding:''}}>
 
 <div className="sliderSpacer" style={{height:'', paddingTop:'', display:''}}></div>
 
@@ -124,7 +124,7 @@ const BlogList = ({ data, pageContext }) => {
       </div>
 
       {/* Render pagination links */}
-<div style={{position:'fixed', bottom:'0', width:'100vw',  background:'rgba(0, 0, 0, 0.7)', padding:'2vh 2vw', textAlign:'center', color:'#fff', display:'flex', justifyContent:'center'}}>
+<div style={{position:'fixed', bottom:'0', zIndex:'5', width:'100vw',  background:'rgba(0, 0, 0, 0.7)', padding:'2vh 2vw', textAlign:'center', color:'#fff', display:'flex', justifyContent:'center'}}>
   <button onClick={() => navigate(pageContext.currentPage > 2 ? `/archive/${pageContext.currentPage - 1}` : '/archive')} disabled={pageContext.currentPage === 1}>
     Previous
   </button>
