@@ -29,7 +29,7 @@ underlayImage:
 featuredImage: /assets/yellowbackmountain.webp
 svgImage: 
 scrollable: false
-showZoom: true
+showZoom: false
 showPageNav: true
 nftdrop: "2023-02-11T10:00:00"
 contentinvideo: true

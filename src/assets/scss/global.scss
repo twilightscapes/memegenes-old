@@ -132,12 +132,13 @@ body.blogpost .gatsby-image-wrapper {
   column-count: 1;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 3vw;
+  padding-bottom: 30vh !important;
 }
 
 
 
 .grid-container .featured-image1{
-  max-height: 30vh !important;
+  max-height: 20vh !important;
 }
 
 
@@ -243,13 +244,41 @@ body.blogpost .gatsby-image-wrapper {
 
 
 .iiz__img {
-  max-width: 80vw;
+  max-width: 98vw;
   height: auto;
   max-height:70vh!important;
   object-fit:scale-down !important; 
   color:rgb(183, 8, 246)
 }
 
+
+.iiz__close {
+//   top:inherit !important;
+// bottom: 10px !important;
+//   right: 10px !important;
+  visibility: inherit !important;
+  opacity: 1 !important;
+  color: #fff !important;
+}
+
+.iiz__close--visible {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.iiz__close::before {
+  content: " ";
+  width: 29px;
+  height: 29px;
+  background-image:
+    -webkit-gradient(linear, left top, left bottom, from(#222), to(#222)),
+    -webkit-gradient(linear, left top, left bottom, from(#222), to(#222));
+  background-image: linear-gradient(#222, #222), linear-gradient(#222, #222);
+  background-size: 100% 1px, 1px 100%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
 
 
