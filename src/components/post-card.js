@@ -38,7 +38,7 @@ const PostCard = ({ data }) => {
       )}
 
 
-<div className="post-content" >
+<div className="post-content" style={{display:'flex', flexDirection:'column', justifyContent:'start', width:'100%', height:'', position:'relative', background:'', padding:'0', margin:'0 auto 0 auto', textAlign:'center', overFlow:'hidden'}}>
   
         {data.frontmatter.youtube.youtuber ? (
 
