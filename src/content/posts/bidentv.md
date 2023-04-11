@@ -19,7 +19,7 @@ youtube:
   youtubersuggestion1: ""
   youtubersuggestion2: ""
   youtubersuggestion3: ""
-audiostart: ""
+audiostart: "36"
 audioend: ""
 audiotitle: ""
 liarliar: false
