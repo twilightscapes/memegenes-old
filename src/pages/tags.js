@@ -126,7 +126,7 @@ const TagIndex = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(filter: {frontmatter: {template: {eq: "blog-post"}}}) {
+    allMarkdownRemark(filter: {frontmatter: {template: {eq: "blog-post"}}}, sort: { fields: frontmatter___date, order: ASC }) {
       edges {
         node {
           fields {
