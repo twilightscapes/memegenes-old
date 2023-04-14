@@ -49,7 +49,7 @@ const TagIndex = ({ data }) => {
 
        
 
-        <div className="contentpanel grid-container" style={{ marginTop: "6vh" }}>
+        <div className="contentpanel grid-container" style={{ marginTop: "8vh" }}>
           <div className="sliderSpacer" style={{ height: "", paddingTop: "", display: "" }}></div>
    
           {data.allMarkdownRemark.edges &&

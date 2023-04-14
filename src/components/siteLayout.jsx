@@ -102,15 +102,15 @@ useEffect(() => {
       if (showNav2) {
         document.querySelector('#menuicon').style.transform = 'translateX(0)';
       }
-      document.querySelector('.pagemenu').style.transform = 'translateY(220%)';
+      document.querySelector('.pagemenu').style.transform = 'translateY(140px)';
       // document.body.classList.remove('scroll');
       // document.body.classList.add('scroll');
     } else if (prevScrollpos < currentScrollPos && currentScrollPos - prevScrollpos > 75) {
-      document.querySelector('.header').style.transform = 'translateY(-100%)';
+      document.querySelector('.header').style.transform = 'translateY(-100px)';
       if (showNav2) {
-        document.querySelector('#menuicon').style.transform = 'translateX(110%)';
+        document.querySelector('#menuicon').style.transform = 'translateX(100px)';
       }
-      document.querySelector('.pagemenu').style.transform = 'translateY(-200%)';
+      document.querySelector('.pagemenu').style.transform = 'translateY(-100px)';
       // document.body.classList.add('scroll');
     }
     prevScrollpos = currentScrollPos;
@@ -577,7 +577,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 
-<div id="top" name="pagetop" style={{maxWidth:'100vw', overflowX:'hidden', position:'relative'}}>
+<div id="top" name="pagetop" style={{maxWidth:'99vw', overflowX:'hidden', position:'relative'}}>
 {children}
 </div>
       
