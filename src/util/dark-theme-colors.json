@@ -4,7 +4,7 @@
   "background": "rgba(0, 0, 0, .95)",
   "bodyColor": "#222",
   "text": "#cccccc",
-  "fontFamily": "Titan One",
+  "fontFamily": "Titan%20One",
   "cardBg": "rgba(0, 0, 0, .6)",
   "textShadow": "rgba(0, 0, 0, .1)"
 }
