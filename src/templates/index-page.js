@@ -804,7 +804,7 @@ style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'relative', zI
 <br />
 {frontmatter.addressText2}
 <br />
-<Link to="/contact" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center' }}>Contact Me</Link>
+<Link to="/contact" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center' }}>{frontmatter.cta.ctaText}</Link>
 
 <br />
 {showCover ? (
@@ -1142,7 +1142,7 @@ query HomeQuery($id: String!) {
   posts: allMarkdownRemark(
     sort: [{frontmatter: {spotlight: ASC}}, {frontmatter: {date: ASC}}]
     filter: {frontmatter: {template: {eq: "blog-post"}}}
-    limit: 6
+    limit: 30
   ) {
     edges {
       node {

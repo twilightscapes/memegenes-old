@@ -4,7 +4,7 @@ tagline:  Memes are life
 featuredImage: /assets/trump-epstein-promo.webp
 youtube:
   youtuber: 
-  youtuber2: https://youtu.be/k8TjgvwoVgE
+  youtuber2: 
   youtubeautostart: false
   youtubemute: false
   youtubecontrols: false
@@ -57,7 +57,7 @@ skillsText:
   </dl>
 cta:
   ctaText: Contact Gene
-  ctaLink: ""
+  ctaLink: "/contact"
 svgImage: /assets/transparent.png
 secondaryImage: /assets/default-user.webp
 title: Do these memes make my butt look fat?
