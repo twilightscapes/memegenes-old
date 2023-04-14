@@ -6,8 +6,8 @@
 .animated{-webkit-animation-duration:1ms;-webkit-animation-iteration-count:1;-webkit-transition-duration:1ms;animation-duration:1ms;animation-iteration-count:1;transition-duration:1ms}
 *{animation-duration:.01ms;animation-iteration-count:1;scroll-behavior:auto;transition-duration:.01ms}
 }
-
-html, body{height:100vh; overflow-x:hidden !important;}
+// html {overflow-x:hidden !important;}
+html, body{height:100vh; }
 
 // *{
 //   box-shadow:none ;
@@ -34,6 +34,7 @@ body.homepage #gobacker{display: none;}
 // body{overflow-x:hidden !important;overflow-y:auto;}
 body{overflow-x:hidden; overflow-y:auto !important;}
 body.scroll{overflow-x:hidden; overflow-y:hidden !important;}
+
 
 
 .scroll-container {
