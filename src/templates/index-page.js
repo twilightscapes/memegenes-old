@@ -1140,7 +1140,7 @@ query HomeQuery($id: String!) {
     }
   }
   posts: allMarkdownRemark(
-    sort: [{frontmatter: {spotlight: ASC}}, {frontmatter: {date: ASC}}]
+    sort: [{frontmatter: {spotlight: ASC}}, {frontmatter: {date: DESC}}]
     filter: {frontmatter: {template: {eq: "blog-post"}}}
     limit: 30
   ) {

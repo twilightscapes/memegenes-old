@@ -7,7 +7,7 @@ import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
 import Layout from "../../components/siteLayout"
 import { Helmet } from "react-helmet"
-import TwilightLogo from "../../../static/assets/logo.svg"
+// import TwilightLogo from "../../../static/assets/logo.svg"
 import { StaticImage } from "gatsby-plugin-image"
 
 import useSiteMetadata from "../../hooks/SiteMetadata"
@@ -71,7 +71,7 @@ const SearchPage = ({ data }) => {
 
       </div>
 
-      <TwilightLogo className="bglogo darkened" />
+      {/* <TwilightLogo className="bglogo darkened" /> */}
       <div className="contentpanel grid-container" style={{justifyContent:'center', alignItems:'center', marginTop:'70px'}}>
 
 <div className="sliderSpacer" style={{height:'', paddingTop:'', display:''}}></div>
