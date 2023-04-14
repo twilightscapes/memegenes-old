@@ -577,7 +577,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 
-<div id="top" name="pagetop" style={{maxWidth:'99vw', overflowX:'hidden', position:'relative'}}>
+<div id="top" name="pagetop" style={{maxWidth:'', overflowX:'hidden', position:'relative'}}>
 {children}
 </div>
       
