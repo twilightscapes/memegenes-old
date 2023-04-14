@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import Seo from "./seo"
 import { Link } from 'gatsby-plugin-modal-routing-4'
 // import { ModalRoutingContext } from '@decantyme/gatsby-plugin-modal-routing'
@@ -18,132 +18,21 @@ import Theme from "./theme"
 import SearchIcon from "../../src/img/search"
 // import SearchForm from "./searchbox"
 import useSiteMetadata from "../hooks/SiteMetadata"
-
 import { RiArrowUpFill } from "react-icons/ri"
-
 import GoBack from "../components/goBack"
 import { BiLeftArrow } from "react-icons/bi"
-
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-4'
 // import { AiOutlineClose } from "react-icons/ai"
-
-
 import { BiGridHorizontal } from "react-icons/bi"
 import { MdOutlineRectangle } from "react-icons/md"
-
 import Menu from "../components/menu"
-
-import { userStyles } from "../util/userStyles.json"
-
-
-// import Fullscreen from "../components/FullScreen"
-// import ss from "../../static/assets/pagebg.webp"
-// import { Link } from "gatsby-plugin-anchor-links"
-// import { StaticImage } from "gatsby-plugin-image"
-// import styled from "styled-components"
+import userStyles from "../util/userStyles.json"
 import SignUp from "../components/newssign"
-// import Install from './install-discount'
-// import { navigate } from "gatsby";
+
+
+
+
 const Layout = ({ children }) => {
-
-
-  
-       useEffect(() => {
-      sessionStorage.setItem("scrollPos", window.pageYOffset)
-    }, [])
-  
-    // useEffect(() => {
-    //   if (window.history.scrollRestoration) {
-    //     const scrollPos = sessionStorage.getItem("scrollPos")
-    //     window.history.scrollRestoration = "manual"
-    //     window.scrollTo(0, scrollPos)
-    //     window.history.scrollRestoration = "auto"
-    //   }
-    // }, [])
-
-
-    useEffect(() => {
-      let prevScrollpos = window.pageYOffset;
-    
-      window.onscroll = function() {
-        const currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos && prevScrollpos - currentScrollPos > 75) {
-          // document.querySelector('.header').style.transform = 'translateY(0)';
-          if (showNav2) {
-            document.querySelector('#menuicon').style.transform = 'translateX(0)';
-          }
-          document.querySelector('.pagemenu').style.transform = 'translateY(220%)';
-          // document.body.classList.remove('scroll');
-          // document.body.classList.add('scroll');
-        } else if (prevScrollpos < currentScrollPos && currentScrollPos - prevScrollpos > 75) {
-          // document.querySelector('.header').style.transform = 'translateY(-100%)';
-          if (showNav2) {
-            document.querySelector('#menuicon').style.transform = 'translateX(110%)';
-          }
-          document.querySelector('.pagemenu').style.transform = 'translateY(-200%)';
-          // document.body.classList.add('scroll');
-        }
-        prevScrollpos = currentScrollPos;
-      };
-    }, []);
-  
-
-    const { showSwipe } = useSiteMetadata()
-    const [archiveView, setArchiveView] = useState('');
-
-    
-    useEffect(() => {
-      if (showSwipe) {
-        // Retrieve the selected option from local storage or default to 'grid' or 'swipe'
-        const storedArchiveView = localStorage.getItem("archiveView");
-        setArchiveView(
-          storedArchiveView || (showSwipe ? "swipe" : "grid")
-        );
-      }
-    }, [showSwipe]);
-    
-    useEffect(() => {
-      // Apply the selected option on page load
-      applyArchiveView();
-    }, [archiveView]);
-    
-    const applyArchiveView = () => {
-      const elements = document.querySelectorAll(".contentpanel");
-      elements.forEach((el) => {
-        if (archiveView === "grid") {
-          el.classList.remove("horizontal-scroll", "panels");
-          el.classList.add("grid-container");
-          // document.body.classList.add("scrollable");
-          // document.querySelector('#showPosts').style.height = 'auto';
-          window.scrollTo(0, 0);
-        } else if (archiveView === "swipe") {
-          el.classList.remove("grid-container");
-          el.classList.add("horizontal-scroll", "panels");
-          // document.body.classList.remove("scrollable");
-    
-          document.querySelector('.contentpanel').style.transition = 'all .5s ease-in-out';
-          // document.querySelector('#showPosts').style.height = '600px';
-          // window.scrollTo(0, 0);
-        }
-      });
-      localStorage.setItem("archiveView", archiveView);
-    };
-    
-    const toggleArchiveView = () => {
-      const newArchiveView = archiveView === "grid" ? "swipe" : "grid";
-      setArchiveView(newArchiveView);
-      applyArchiveView();
-    };
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -157,23 +46,119 @@ const { image } = useSiteMetadata()
 
 const { showNav } = useSiteMetadata()
 const { showNav2 } = useSiteMetadata()
-const { showInfo } = useSiteMetadata()
+// const { showInfo } = useSiteMetadata()
 // const { showFeature } = useSiteMetadata()
 // const { showPosts } = useSiteMetadata()
 const { showSearch } = useSiteMetadata()
 
-const { showResume } = useSiteMetadata()
+// const { showResume } = useSiteMetadata()
 // const { showSocial } = useSiteMetadata()
-const { showSkills } = useSiteMetadata()
+// const { showSkills } = useSiteMetadata()
 // const { showCover } = useSiteMetadata()
 // const { showfooter } = useSiteMetadata()
 const { showPopup } = useSiteMetadata()
-const { menu1 } = useSiteMetadata()
+// const { menu1 } = useSiteMetadata()
 // const { menu2 } = useSiteMetadata()
-const { menu3 } = useSiteMetadata()
-const { menu4 } = useSiteMetadata()
+// const { menu3 } = useSiteMetadata()
+// const { menu4 } = useSiteMetadata()
 const { font1 } = useSiteMetadata()
 // const { userStyles } = useSiteMetadata()
+
+
+
+const { showSwipe } = useSiteMetadata()
+const [archiveView, setArchiveView] = useState('');
+
+const applyArchiveView = useCallback(() => {
+  const elements = document.querySelectorAll(".contentpanel");
+  elements.forEach((el) => {
+    if (archiveView === "grid") {
+      el.classList.remove("horizontal-scroll", "panels");
+      el.classList.add("grid-container");
+      // document.body.classList.add("scrollable");
+      // document.querySelector('#showPosts').style.height = 'auto';
+      window.scrollTo(0, 0);
+    } else if (archiveView === "swipe") {
+      el.classList.remove("grid-container");
+      el.classList.add("horizontal-scroll", "panels");
+      // document.body.classList.remove("scrollable");
+
+      document.querySelector('.contentpanel').style.transition = 'all .5s ease-in-out';
+      // document.querySelector('#showPosts').style.height = '600px';
+      // window.scrollTo(0, 0);
+    }
+  });
+  localStorage.setItem("archiveView", archiveView);
+}, [archiveView]);
+
+useEffect(() => {
+  sessionStorage.setItem("currentScrollPos", window.pageYOffset)
+  let prevScrollpos = window.pageYOffset;
+
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos && prevScrollpos - currentScrollPos > 75) {
+      document.querySelector('.header').style.transform = 'translateY(0)';
+      if (showNav2) {
+        document.querySelector('#menuicon').style.transform = 'translateX(0)';
+      }
+      document.querySelector('.pagemenu').style.transform = 'translateY(220%)';
+      // document.body.classList.remove('scroll');
+      // document.body.classList.add('scroll');
+    } else if (prevScrollpos < currentScrollPos && currentScrollPos - prevScrollpos > 75) {
+      document.querySelector('.header').style.transform = 'translateY(-100%)';
+      if (showNav2) {
+        document.querySelector('#menuicon').style.transform = 'translateX(110%)';
+      }
+      document.querySelector('.pagemenu').style.transform = 'translateY(-200%)';
+      // document.body.classList.add('scroll');
+    }
+    prevScrollpos = currentScrollPos;
+  };
+
+  handleScroll();
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  }
+}, [showNav2]);
+
+useEffect(() => {
+  if (showSwipe) {
+    // Retrieve the selected option from local storage or default to 'grid' or 'swipe'
+    const storedArchiveView = localStorage.getItem("archiveView");
+    setArchiveView(
+      storedArchiveView || (showSwipe ? "swipe" : "grid")
+    );
+  }
+}, [showSwipe]);
+
+useEffect(() => {
+  // Apply the selected option on page load
+  applyArchiveView();
+}, [applyArchiveView]);
+
+const toggleArchiveView = () => {
+  const newArchiveView = archiveView === "grid" ? "swipe" : "grid";
+  setArchiveView(newArchiveView);
+  applyArchiveView();
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   const QUERY = '(prefers-reduced-motion: no-preference)';
@@ -214,6 +199,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 
 
+
 <Seo />
 
 
@@ -239,7 +225,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   
 
 
-<div className="pagemenu upbar panel" style={{position:'fixed', bottom:'20px', zIndex:'4', left:'', right:'1vw', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'', textShadow:'0 1px 1px rgba(0, 0, 0, .7)', fontSize:'', verticalAlign:'center', transform: 'translateY(200%)' }}>
+<div className="pagemenu upbar panel" style={{position:'fixed', bottom:'20px', zIndex:'4', left:'', right:'1vw', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw', background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'', textShadow:'0 1px 1px rgba(0, 0, 0, .7)', fontSize:'', verticalAlign:'center', transform: 'translateY(200%)' }}>
 
 <div className="menusnapp" style={{display:'flex', gap:'10px', padding:'1vh 1vw', alignItems:'center', textAlign:'center'}}>
   <AnchorLink to="#top" aria-label="Link to Top" style={{cursor:'pointer', height:'2vh', fontSize:'.2rem'}}><RiArrowUpFill style={{cursor:'pointer', color:'#999', fontSize:'2rem'}} />top</AnchorLink>
@@ -254,8 +240,6 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 
 {showNav ? (
 <div id="menu" className="menu print panel1 header" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', maxHeight:'', overFlow:'', boxShadow:'0 0 2px rgba(0,0,0,.7)', padding:'0 2%', alignItems:'start', borderRadius:'0', display:'flex', justifyContent:'space-around', gap:'10px', color:'#fff',  borderBottom:'1px solid #222',
-// backgroundColor:'#111111',
-// background:'linear-gradient(180deg,rgba(0, 0, 0, .9) 1%,rgba(0, 0, 0, .6) 80%)',
 
   }}>
 
@@ -272,7 +256,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
           
           ) : (
           
-                        <AnchorLink to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'block', maxWidth:'', height:'auto', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
+                        <AnchorLink to="/#top" className="cornerlogo" name="homereturn" style={{position:'', display:'block', maxWidth:'', height:'auto', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
       <img className="cornerlogo" style={{position:'relative', top:'', left:'4%', border:'0px solid white', padding:'0', maxHeight:''}} src={iconimage} alt={companyname} width="117" height="60" />
                 ) : (
@@ -299,7 +283,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
       
  
 
-{showInfo ? (
+{/* {showInfo ? (
 <li style={{position:'relative',}}>
       {prefersReducedMotion ? (
        <Link aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>{menu1}</Link>    
@@ -311,10 +295,6 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
       ) : (
   ""
 )}
-
-
-
-
 
 {showResume ? (
 <li style={{position:'relative',}}>
@@ -329,9 +309,6 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
   ""
 )}
 
-
-
-
 {showSkills ? (
 <li style={{position:'relative',}}>
       {prefersReducedMotion ? (
@@ -343,7 +320,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 </li>
       ) : (
   ""
-)}
+)} */}
 
 
 <Menu />
@@ -458,7 +435,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
             </AnchorLink>
     </li>
       
-{showInfo ? (
+{/* {showInfo ? (
 <li style={{position:'relative',}}>
       {prefersReducedMotion ? (
        <Link aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>{menu1}</Link>    
@@ -496,7 +473,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
 </li>
       ) : (
   ""
-)}
+)} */}
 
 <Menu />
 
@@ -606,8 +583,13 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=s
       
 
 
-<img className="backimage" src={image} alt="Default Background" style={{height:'100vh', width:'100vw', position:'fixed', zIndex:'-2', top:'0', objectFit:'cover',}} width="10" height="10" />
+ 
 
+{image ? (
+<img className="backimage" src={image} alt="Default Background" style={{height:'100vh', width:'100vw', position:'fixed', zIndex:'-2', top:'0', objectFit:'cover',}} width="10" height="10" />
+) : (
+  ""
+)}
 
       
       {/* <Consent /> */}

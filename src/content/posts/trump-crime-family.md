@@ -51,6 +51,7 @@ tags:
   - crime
   - donjr
   - ivanka
+spotlight: true
 ---
 <div class="contentinside" style="height:auto; margin-top:1%;">
 <img class="" src="/assets/hillary-laugh.webp" width="100%" style="opacity:0;

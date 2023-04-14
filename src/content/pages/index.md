@@ -3,7 +3,7 @@ slug: /
 tagline:  Memes are life
 featuredImage: /assets/trump-epstein-promo.webp
 youtube:
-  youtuber: https://youtu.be/k8TjgvwoVgE
+  youtuber: 
   youtuber2: https://youtu.be/k8TjgvwoVgE
   youtubeautostart: false
   youtubemute: false
@@ -86,6 +86,7 @@ showZoom: true
 showPageNav: true
 contentinvideo: false
 nftdrop: "2023-02-11T10:00:00"
+postLimit: "4"
 ---
 <!-- Do not delete -->
 <div>
