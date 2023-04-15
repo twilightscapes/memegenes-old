@@ -298,6 +298,20 @@ module.exports = {
               ],
             },
           },
+
+          {
+            resolve: `gatsby-source-rss-feed`,
+            options: {
+              url: `https://urbanfetish.com/public/rss.xml`,
+              name: `UrbanFetish`,
+              parserOption: {
+                customFields: {
+                  item: ['media:content', 'description'],
+                },
+              },
+            },
+          },
+          
           
           
 
