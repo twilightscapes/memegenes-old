@@ -206,27 +206,27 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 }
 
 
-exports.createResolvers = ({ createResolvers }) => {
-  const resolvers = {
-    FeedUrbanFetish: {
-      items: {
-        type: `[FeedUrbanFetishItem]`,
-        resolve(source) {
-          return source.items.map((item) => ({
-            ...item,
-            enclosure: item.enclosure ? item.enclosure.url : null,
-          }));
-        },
-      },
-    },
-    FeedUrbanFetishItem: {
-      enclosure: {
-        resolve(source) {
-          return source.enclosure ? source.enclosure.url : null;
-        },
-      },
-    },
-  };
-  createResolvers(resolvers);
-};
+// exports.createResolvers = ({ createResolvers }) => {
+//   const resolvers = {
+//     FeedUrbanFetish: {
+//       items: {
+//         type: `[FeedUrbanFetishItem]`,
+//         resolve(source) {
+//           return source.items.map((item) => ({
+//             ...item,
+//             enclosure: item.enclosure ? item.enclosure.url : null,
+//           }));
+//         },
+//       },
+//     },
+//     FeedUrbanFetishItem: {
+//       enclosure: {
+//         resolve(source) {
+//           return source.enclosure ? source.enclosure.url : null;
+//         },
+//       },
+//     },
+//   };
+//   createResolvers(resolvers);
+// };
 

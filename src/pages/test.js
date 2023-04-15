@@ -6,8 +6,8 @@ import { Helmet } from "react-helmet";
 
 const CustomBox = styled.div``;
 
-function RSSFeed({ data }) {
-  const { allFeedUrbanFetish } = data;
+function RSSFeed({ }) {
+  // const { allFeedUrbanFetish } = data;
 
   return (
     <CustomBox>
@@ -17,7 +17,7 @@ function RSSFeed({ data }) {
         </Helmet>
 
         <div className="scroll-container">
-          {allFeedUrbanFetish &&
+          {/* {allFeedUrbanFetish &&
             allFeedUrbanFetish.edges.map(({ node }) => (
               <div key={node.id}>
                 <h2>
@@ -30,7 +30,7 @@ function RSSFeed({ data }) {
                   <img src={node.enclosure.url} alt={node.title} />
                 )}
               </div>
-            ))}
+            ))} */}
         </div>
       </Layout>
     </CustomBox>
@@ -38,22 +38,22 @@ function RSSFeed({ data }) {
 }
 
 
-export const query = graphql`
-  query {
-    allFeedUrbanFetish {
-      edges {
-        node {
-          title
-          link
-          pubDate
-          isoDate
-          contentSnippet
-          guid
-        }
-      }
-    }
-  }
-`;
+// export const query = graphql`
+//   query {
+//     allFeedUrbanFetish {
+//       edges {
+//         node {
+//           title
+//           link
+//           pubDate
+//           isoDate
+//           contentSnippet
+//           guid
+//         }
+//       }
+//     }
+//   }
+// `;
 
 
 
