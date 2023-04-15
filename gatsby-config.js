@@ -267,29 +267,28 @@ module.exports = {
                   },
           
                   query: `
-                    {
-                      allMarkdownRemark(
-                        sort: { order: DESC, fields: [frontmatter___date] },
-                      ) {
-                        edges {
-                          node {
-                            excerpt
-                            html
-                            fields {
-                              slug
-                            }
-                            frontmatter {
-                              title
-                              date
-                              slug
-                              featuredImage {
-                                publicURL
-                              }
+                  {
+                    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+                      edges {
+                        node {
+                          excerpt
+                          html
+                          fields {
+                            slug
+                          }
+                          frontmatter {
+                            title
+                            date
+                            slug
+                            featuredImage {
+                              publicURL
                             }
                           }
                         }
                       }
                     }
+                  }
+                  
                   `,
                   output: "/rss.xml",
                   title: "My RSS Feed",
