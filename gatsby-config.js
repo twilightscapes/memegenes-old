@@ -12,8 +12,9 @@ const netlifyCmsPaths = {
 }
 
 const settings = require("./src/util/site.json")
-
+const siteUrl = process.env.SITE_URL || 'https://example.com';
 module.exports = {
+  siteUrl,
   flags: {},
   siteMetadata: settings.meta,
   plugins: [
