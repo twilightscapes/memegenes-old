@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import React from "react"
 
-import { useState, useRef,forwardRef } from "react";
+import { useState, useRef, useEffect, forwardRef } from "react";
 
 // import Zoom from 'react-medium-image-zoom'
 // import 'react-medium-image-zoom/dist/styles.css'
@@ -39,7 +39,7 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 
 import { ImCross } from "react-icons/im"
 
-import { RiCloseCircleFill, RiMenuUnfoldFill } from "react-icons/ri"
+import { RiMenuUnfoldFill, RiCloseCircleFill } from "react-icons/ri"
 
 // import { IoArrowRedoSharp, IoArrowUndoSharp } from "react-icons/io5"
 import { AiOutlineAudioMuted } from "react-icons/ai"
@@ -138,6 +138,49 @@ const Pagination = props => (
 
 const Post = ({ data, pageContext }) => {
 
+  const [isMenuOpen, setIsMenuOpen] = useState(true); // set default value to true
+  const [isMobile, setIsMobile] = useState(false);
+
+  const resizeMobile = () => {
+    setIsMenuOpen(false);
+    setIsMobile(true);
+    const elements = document.querySelectorAll(".menusnapp");
+    elements.forEach((el) => {
+      el.style.display = "none";
+      el.style.overflow = "hidden";
+      el.style.transition = "transform 1550ms ease-in-out";
+    });
+  };
+
+  const resizeDesk = () => {
+    setIsMenuOpen(true);
+    setIsMobile(false);
+    const elements = document.querySelectorAll(".menusnapp");
+    elements.forEach((el) => {
+      el.style.display = "flex";
+      el.style.transition = "transform 1550ms ease-in-out";
+    });
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedIsMenuOpen = window.localStorage.getItem("isMenuOpen");
+      if (storedIsMenuOpen) {
+        setIsMenuOpen(storedIsMenuOpen === "true");
+      } else {
+        setIsMenuOpen(true); // set default value to true if no value found in local storage
+      }
+    }
+  }, []);
+  
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("isMenuOpen", isMenuOpen);
+    }
+  }, [isMenuOpen]);
+  
+
+  const MenuIcon = isMenuOpen ? RiCloseCircleFill : RiMenuUnfoldFill;
 
   // const { showModals } = useSiteMetadata()
 
@@ -178,19 +221,7 @@ const Post = ({ data, pageContext }) => {
 
 
 
-  const [isMobile, setIsMobile] = useState(true);
 
-const resizeMobile = () => {
-  setIsMobile(true);
-  const elements = document.querySelectorAll('.menusnapp');
-  elements.forEach(el => el.style.display = 'none', el => el.style.overflow = 'hidden', el => el.style.transition = 'transform 1550ms ease-in-out');
-}
-
-const resizeDesk = () => {
-  setIsMobile(false);
-  const elements = document.querySelectorAll('.menusnapp');
-  elements.forEach(el => el.style.display = 'flex', el => el.style.transition = 'transform 1550ms ease-in-out');
-}
 
   const Svg = frontmatter.svgImage
   // const svgZindex = frontmatter.svgzindex
@@ -567,7 +598,7 @@ const YouTube = frontmatter.youtube.youtuber
 
 
 
-<button aria-label="Click To Play" className="clickplays videohide 555" style={{position:'relative', zIndex:'', top:'0', border:'0px  solid red', width:'100vw', height:'', minHeight:'300px', aspectRatio:'16/9', maxHeight:'', fontSize:'', textAlign:'center', display:'', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', padding:'2vh 0 0 0', background:'#111', color:'#ddd', transition:'all 2s ease-in-out', cursor:'pointer'}}>
+<div aria-label="Click To Play" className="clickplays videohide 555" style={{position:'relative', zIndex:'', top:'0', border:'0px  solid red', width:'100vw', height:'', minHeight:'300px', aspectRatio:'16/9', maxHeight:'', fontSize:'', textAlign:'center', display:'grid', flexDirection:'column', verticalAlign:'center', justifyContent:'center', alignItems:'center', padding:'2vh 0 0 0', background:'#111', color:'#ddd', transition:'all 2s ease-in-out', cursor:'pointer'}}>
 
 
 
@@ -672,7 +703,7 @@ Click to play
       ></button>
       
       
-      </button>
+      </div>
       </div>
 
 
@@ -862,45 +893,51 @@ Click to play
 
 
 {frontmatter.showPageNav ? (
-  
-<div className="pagemenu panel" style={{position:'fixed', bottom:'20px', zIndex:'4', left:'1vw', right:'', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw',	background:'rgba(0, 0, 0, .5)', padding:'', border:'1px solid #666', borderRadius:'', textShadow:'0 1px 1px rgba(0, 0, 0, .7)', fontSize:'clamp(2rem, 3vw, 3rem)', verticalAlign:'center' }}>
-
-<div className="menusnapp" style={{display:'none', gap:'10px', padding:'1vh 1vw', alignItems:'center'}}>
-
-{/* {frontmatter.scrollable ? (
-  <AnchorLink to="#top" style={{cursor:'pointer', height:'2vh'}}><RiArrowUpFill style={{cursor:'pointer', color:'#999'}} /></AnchorLink>
-) : (
-""
-  )} */}
-
-
-{(previous || next) && <Pagination {...props} />}
-</div>
-
-{isMobile ? 
-
-      <div style={{display:'flex', gap:'10px', padding:'1vh 1vw'}}>
-
-{/* {frontmatter.scrollable ? (
-  <AnchorLink to="#top" aria-label="Return To TOP" style={{cursor:'pointer', marginTop:'2vh'}}><RiArrowUpFill style={{cursor:'pointer', color:'#999',}} /></AnchorLink>
-) : (
-""
-  )} */}
-        <button onClick={resizeDesk} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0 0 0 0', color:'#999'}}><RiMenuUnfoldFill />
-        </button>
+        <div
+          className="pagemenu panel"
+          style={{
+            position: "fixed",
+            bottom: "20px",
+            zIndex: "4",
+            left: "1vw",
+            right: "",
+            display: "flex",
+            justifyContent: "center",
+            width: "auto",
+            maxWidth: "80vw",
+            margin: "0 auto",
+            gap: "5vw",
+            background: "rgba(0, 0, 0, .5)",
+            padding: "",
+            border: "1px solid #666",
+            borderRadius: "",
+            textShadow: "0 1px 1px rgba(0, 0, 0, .7)",
+            fontSize: "clamp(2rem, 3vw, 3rem)",
+            verticalAlign: "center",
+          }}
+        >
+          <div
+            className="menusnapp"
+            style={{
+              gap: "10px",
+              padding: "1vh 1vw",
+              alignItems: "center",
+              display: isMenuOpen ? "block" : "none",
+            }}
+          >
+            {(previous || next) && <Pagination {...props} />}
+          </div>
+          <button
+            onClick={isMenuOpen ? resizeMobile : resizeDesk}
+            aria-label={isMenuOpen ? "Collapse menu" : "Expand menu"}
+            style={{ cursor: "pointer", padding: "8px", color: "#999" }}
+          >
+            <MenuIcon />
+          </button>
         </div>
-
-       :
-
-      <div style={{display:'flex', gap:'2vw', padding:'1vh 1vw'}}>
-        <button onClick={resizeMobile} aria-label="Expand/Collapse menu" style={{cursor:'pointer', padding:'0', color:'#999'}}><RiCloseCircleFill />
-        </button>
-        </div>
-    }
-</div>
-) : (
-""
-  )}
+      ) : (
+        ""
+      )}
 
 
 
@@ -1031,8 +1068,8 @@ Click to play
               config={{
                 file: {
                   attributes: {
-                    samesite: "none",
-                    crossOrigin: "anonymous",
+                    sameSite: "none",
+                    crossorigin: "anonymous",
                   },
                 },
                   youtube: {
