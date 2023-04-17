@@ -351,7 +351,7 @@ module.exports = {
       },
     },
 
-
+    
 
     // {
     //   resolve: `gatsby-source-filesystem`,
@@ -394,29 +394,29 @@ module.exports = {
 
     
     `gatsby-plugin-sitemap`,
-    // {
-    //   resolve: 'gatsby-plugin-robots-txt',
-    //   options: {
-    //     host: 'https://memegenes.com',
-    //     sitemap: 'https://memegenes.com/sitemap.xml',
-    //     resolveEnv: () => process.env.GATSBY_ENV,
-    //     env: {
-    //       development: {
-    //         policy: [{ userAgent: '*', allow: ['/'] }]
-    //       },
-    //       production: {
-    //         policy: [{ userAgent: '*', allow: '/' }]
-    //       }
-    //     }
-    //   }
-    // },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: settings.siteUrl,
+        sitemap: `${settings.siteUrl}/sitemap.xml`,
+        resolveEnv: () => process.env.GATSBY_ENV,
+        env: {
+          development: {
+            policy: [{ userAgent: '*', allow: ['/'] }]
+          },
+          production: {
+            policy: [{ userAgent: '*', allow: '/' }]
+          }
+        }
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Meme Genes`,
-        short_name: `Meme Genes`,
+        name: settings.companyname,
+        short_name: settings.companyname,
         start_url: `/?user_mode=app`,
-        description: `Meme Genes`,
+        description: settings.companyname,
         background_color: `#111`,
         lang: `en`,
         theme_color: `#111`,
