@@ -397,8 +397,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: settings.siteUrl,
-        sitemap: `${settings.siteUrl}/sitemap.xml`,
+        host: settings.meta.siteUrl,
+        sitemap: `${settings.meta.siteUrl}/sitemap.xml`,
         resolveEnv: () => process.env.GATSBY_ENV,
         env: {
           development: {
@@ -410,14 +410,14 @@ module.exports = {
         }
       }
     },
-    
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: settings.companyname,
-        short_name: settings.companyname,
+        name: settings.meta.companyname,
+        short_name: settings.meta.companyname,
         start_url: `/?user_mode=app`,
-        description: settings.companyname,
+        description: settings.meta.companyname,
         background_color: `#111`,
         lang: `en`,
         theme_color: `#111`,
