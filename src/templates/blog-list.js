@@ -41,7 +41,7 @@ const BlogList = ({ data, pageContext }) => {
         ""
       )}
 
-      <div style={{maxHeight:'100vh'}}>
+      <div style={{maxHeight:'100vh', paddingTop:'2rem'}}>
 
 
         {/* <h1 style={{textAlign:'center'}}>Archive</h1> */}
@@ -63,7 +63,7 @@ const BlogList = ({ data, pageContext }) => {
 
 
           return (
-            <div className="post-card1" key={index}>
+            <div className="post-card1" key={index} style={{marginTop:''}}>
 
 <Link className="postlink" to={node.frontmatter.slug}>
 
