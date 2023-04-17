@@ -1,7 +1,7 @@
 {
   "menuItems": [
     {
-      "menutitle": "View by Tags",
+      "menutitle": "Sort by Keyword",
       "url": "/tags"
     },
     {

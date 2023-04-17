@@ -23,7 +23,7 @@ const TagIndex = ({ data }) => {
   ).map(group => group.fieldValue);
 
   if (!tags || tags.length === 0) {
-    return <div>No tags found.</div>;
+    return <div>No keywords found.</div>;
   }
 
   return (
@@ -39,7 +39,7 @@ const TagIndex = ({ data }) => {
 
         <div className="selectArrow" style={{position:'fixed', left:'1%', right:'1%',  margin:'1vh auto 0 auto', zIndex:'3', display:'grid', placeSelf:'center',  padding:'',}}>
           <select className="cattags" id="tag-select" value={selectedTag} onChange={handleTagChange}>
-            <option value="">View All tags</option>
+            <option value="">view all keywords</option>
             {tags.map(tag => (
               <option key={tag} value={tag}>{tag}</option>
             ))}

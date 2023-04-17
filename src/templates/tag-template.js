@@ -50,7 +50,7 @@ const Tag = ({ data, pageContext }) => {
       <div style={{display:'flex', flexDirection:'column', justifyContent:'center', marginTop:''}}>
         
       <select className="cattags" value={selectedTag} onChange={handleTagChange}>
-  <option value=''>All tags</option>
+  <option value=''>All Keywords</option>
   {allTags.map(tag => (
     <option key={tag} value={tag}>
       {tag}

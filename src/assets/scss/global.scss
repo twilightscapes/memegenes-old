@@ -863,11 +863,11 @@ ul li{display:inline-block}
     border-radius: 3px;
     // display:grid;
     // place-self:center;
+    text-transform:capitalize;
     outline:1px solid #999;
     padding:1vh 4vw;
     background:rgba(0, 0, 0, 0.6);
     color:#fff;
-    text-transform:capitalize;
     -webkit-appearance: none;
     appearance: none;
     cursor: pointer;
@@ -876,6 +876,13 @@ ul li{display:inline-block}
 
      border:1px solid #666; color:#fff;font-size:18px;font-weight:600;margin:0;max-width:100%;opacity:.8;padding:1vh;width:100%
   }
+  // option{
+  
+  //   text-transform:capitalize;
+  //   border: 2px solid red !important;
+  //   background:#37f8f8 !important;
+  //   padding-left: 100px !important;
+  // }
 
 .selectArrow{
     max-width:380px;
