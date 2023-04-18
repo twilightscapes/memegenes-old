@@ -13,7 +13,7 @@ const PostCard = ({ data }) => {
 
   return (
 
-    <div className="post-card1">
+    <div className="post-card1" key={data.frontmatter.slug}>
 
       <Link className="postlink" to={data.frontmatter.slug}>
 

@@ -190,7 +190,7 @@ body.blogpost .gatsby-image-wrapper {
   display: grid;
   list-style: none;
   column-gap: 3vw;
-  padding: 2vh 3%;
+  padding: 0 3%;
   column-count: 1;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 3vw;
@@ -320,7 +320,7 @@ bottom: 10px !important;
 
 .grid-container article{ flex-wrap: none; display: grid;}
 
-.spacer{display:block; height:60px !important;}
+.spacer{display:block; height:70px !important;}
 
 .sliderSpacer{display:none;}
 .horizontal-scroll .sliderSpacer{display:block ; height:50% ; padding-top:0% ; }
@@ -330,7 +330,7 @@ bottom: 10px !important;
 
 
 
-
+.uparrow::after{content:" top "; color:#fff;}
 
 
 
@@ -840,7 +840,7 @@ ul li{display:inline-block}
 
   .cornerlogo{ left:18%; top:2px; width:117; height:60px; }
   
-  .spacer{display:block; height:130px !important;}
+  .spacer{display:block; height:150px !important;}
   
   .topmenu {gap:1vw ; padding:0 ;}
   .topmenu li {margin-top:2vh ;
