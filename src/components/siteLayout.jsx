@@ -229,7 +229,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
 <div className="upbar panel" style={{position:'fixed', bottom:'20px', zIndex:'4', left:'', right:'1vw', display:'flex', justifyContent:'center', width:'auto', maxWidth:'80vw', margin:'0 auto', gap:'5vw', background:'rgba(0, 0, 0, .9)', padding:'', border:'1px solid #666', borderRadius:'', textShadow:'0 1px 1px rgba(0, 0, 0, .7)', fontSize:'', verticalAlign:'center', transform: 'translateY(200%)' }}>
 
 <div className="uparrow" style={{display:'flex', flexDirection:'column', gap:'0', padding:'1vh 1vw', alignItems:'center', textAlign:'center'}}>
-  <AnchorLink to="#top" aria-label="Link to Top" style={{cursor:'pointer', height:'', fontSize:''}}><RiArrowUpFill className="" style={{cursor:'pointer', color:'#ddd', fontSize:'2rem'}} /></AnchorLink>
+  <AnchorLink to="#top" aria-label="Link to Top" style={{cursor:'pointer', height:'', fontSize:''}}><RiArrowUpFill className="" style={{cursor:'pointer', color:'#ddd', fontSize:'3rem'}} /></AnchorLink>
 </div>
 </div>
 
