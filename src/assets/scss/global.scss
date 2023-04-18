@@ -328,8 +328,12 @@ bottom: 10px !important;
 
 
 
-body.archivepage .spacer, body.homepage .spacer, body.tagpage .spacer{
+body.tagpage .spacer{
   height:130px !important;
+}
+
+body.homepage .spacer, body.archivepage .spacer{
+  height:70px !important;
 }
 
 .uparrow::after{content:" top "; color:#fff;}
