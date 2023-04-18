@@ -9,10 +9,12 @@ import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from "gatsby"
+import TimeAgo from 'react-timeago'
 const Tag = ({ data, pageContext }) => {
   const { tag } = pageContext;
   const posts = data.allMarkdownRemark.edges;
   const { showNav } = useSiteMetadata();
+  const { showDates } = useSiteMetadata()
 
 
   const [selectedTag, setSelectedTag] = useState(tag);
@@ -130,6 +132,13 @@ Play Multimedia
 </div>
 
 </Link>
+{showDates ? (
+            <p style={{position:'', textAlign:'center', border:'0px solid red', fontSize:'70%', minWidth:'100px'}}>
+            <TimeAgo date={node.frontmatter.date}/>
+          </p>
+          ) : (
+            ""
+          )}
               
             </div>
           );

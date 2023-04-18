@@ -12,7 +12,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import useSiteMetadata from "../../hooks/SiteMetadata"
 
-// import TimeAgo from 'react-timeago'
+import TimeAgo from 'react-timeago'
 
 function clearfield() {  
   document.querySelector('#clearme').value = ''
@@ -25,6 +25,7 @@ function clearfield() {
 const SearchPage = ({ data }) => {
 
   const { showModals } = useSiteMetadata();
+  const { showDates } = useSiteMetadata()
 
   const allPosts = data.allMarkdownRemark.edges
   const [query, setQuery] = React.useState("")
@@ -160,6 +161,13 @@ Play Multimedia
 
             </div>
 </Link>
+{showDates ? (
+            <p style={{position:'', textAlign:'center', border:'0px solid red', fontSize:'70%', minWidth:'100px'}}>
+            <TimeAgo date={node.frontmatter.date}/>
+          </p>
+          ) : (
+            ""
+          )}
 </div>
 
           
