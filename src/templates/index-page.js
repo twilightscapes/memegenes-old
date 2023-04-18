@@ -892,7 +892,7 @@ style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'relative', zI
 
 
 { !YouTube2 ? (
-            "nope"
+            ""
        
           ) : (
             
@@ -1143,7 +1143,7 @@ query HomeQuery($id: String!) {
   posts: allMarkdownRemark(
     sort: [{frontmatter: {spotlight: ASC}}, {frontmatter: {date: DESC}}]
     filter: {frontmatter: {template: {eq: "blog-post"}}}
-    limit: 30
+    limit: 6
   ) {
     edges {
       node {

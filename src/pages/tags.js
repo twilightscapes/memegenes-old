@@ -40,7 +40,7 @@ const TagIndex = ({ data }) => {
 
         <div className="selectArrow" style={{position:'fixed', top:'', left:'1%', right:'1%',  margin:'-60px auto 0 auto', zIndex:'3', display:'grid', placeSelf:'center',  padding:'',}}>
           <select className="cattags" id="tag-select" value={selectedTag} onChange={handleTagChange}>
-            <option value="">keywords:</option>
+            <option value="">keyword:</option>
             {tags.map(tag => (
               <option key={tag} value={tag}>{tag}</option>
             ))}

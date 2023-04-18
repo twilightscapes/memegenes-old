@@ -12,7 +12,7 @@ const CategoryIndex = ({ data, pageContext }) => {
   const categories = data.allMarkdownRemark.group.map((group) => group.fieldValue)
 
   const { showNav } = useSiteMetadata()
-  const { showDates } = useSiteMetadata()
+  // const { showDates } = useSiteMetadata()
 
   return (
 
@@ -38,7 +38,7 @@ const CategoryIndex = ({ data, pageContext }) => {
   }}
   value={category}
 >
-<option value="">Categories:</option>
+<option value="">Category:</option>
   {categories.map((category) => (
     
     <option key={category} value={category} selected={category === pageContext.category}>
@@ -56,8 +56,8 @@ const CategoryIndex = ({ data, pageContext }) => {
 
    
         {categories.map(category => (
-          <div key={category} style={{border:'1px solid red', display:'block', width:'100%', height:'50vh'}}>
-            <Link to={`/category/${category}`}>{category}</Link>
+          <div className="post-card12 font" key={category} style={{border:'0px solid red', display:'grid', width:'100%', maxWidth:'', height:'70vh', placeContent:'center', textTransform:'capitalize' }}>
+            <Link style={{display:'grid', placeContent:'center', height:'50vh', width:'60vh', border:'1px solid #999',fontSize:'clamp(3rem, 3.4vw, 3.2rem)',  background:'rgba(0, 0, 0, 0.5)', color:'#fff', backdropFilter:'blur(12px)', borderRadius:'8px', opacity:'.8'}} to={`/category/${category}`}>view<br />{category}</Link>
           </div>
         ))}
       </div>

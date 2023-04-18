@@ -86,7 +86,7 @@ showZoom: true
 showPageNav: true
 contentinvideo: false
 nftdrop: "2023-02-11T10:00:00"
-postLimit: "4"
+postNumber: "4"
 ---
 <!-- Do not delete -->
 <div>
