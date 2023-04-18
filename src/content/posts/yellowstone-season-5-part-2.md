@@ -34,6 +34,7 @@ svgImage:
 scrollable: false
 showZoom: true
 showPageNav: true
+spotlight: true
 nftdrop: "2023-02-11T10:00:00"
 contentinvideo: false
 marating1: YB
@@ -44,7 +45,7 @@ maratingtx1: Use your brain please
 maratingtx2: Spontaneous & Sporadic
 maratingtx3: It's Humor - laugh
 maratingtx4: Adult Language
-category: memes
+category: news
 tags:
   - tv
   - yellowstone

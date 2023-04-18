@@ -1,6 +1,10 @@
 {
   "menuItems": [
     {
+      "menutitle": "View Categories",
+      "url": "/category"
+    },
+    {
       "menutitle": "Sort by Keyword",
       "url": "/tags"
     },

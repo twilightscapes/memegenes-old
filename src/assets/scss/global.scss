@@ -328,7 +328,7 @@ bottom: 10px !important;
 
 
 
-body.tagpage .spacer{
+body.tagpage .spacer, body.category .spacer{
   height:130px !important;
 }
 
@@ -840,7 +840,7 @@ ul li{display:inline-block}
 @media(max-width:48rem) {
   .button{background:linear-gradient(180deg,rgba(23,23,24,.5) 1%,rgba(0,0,0,.7) 99%);font-size:92%}
   .mobilehide{display:none}
-  #menu {font-family: inherit ;}
+  // #menu {font-family: inherit ;}
   
   #menu {flex-direction: column ; min-height: 70px;}
   
@@ -856,9 +856,9 @@ ul li{display:inline-block}
   // }
 
   body .spacer{height:130px !important;}
-  body.archivepage .spacer, body.homepage .spacer, body.tagpage .spacer{
+  body.archivepage .spacer, body.homepage .spacer, body.tagpage .spacer, body.category .spacer{
     display:block;
-    height:200px !important;
+    height:220px !important;
   }
   
   .topmenu {gap:1vw ; padding:0 ;}
