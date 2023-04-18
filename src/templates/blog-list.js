@@ -8,7 +8,7 @@ import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
 import { StaticImage } from 'gatsby-plugin-image';
 import { Helmet } from "react-helmet"
-import { AnchorLink } from 'gatsby-plugin-anchor-links';
+// import { AnchorLink } from 'gatsby-plugin-anchor-links';
 // import TimeAgo from 'react-timeago'
 
 const BlogList = ({ data, pageContext }) => {
@@ -41,13 +41,13 @@ const BlogList = ({ data, pageContext }) => {
         ""
       )}
 
-      <div style={{maxHeight:'100vh', paddingTop:''}}>
+      <div style={{maxHeight:'100vh'}}>
 
 
         {/* <h1 style={{textAlign:'center'}}>Archive</h1> */}
 
 
-        <div className="contentpanel grid-container" style={{padding:''}}>
+        <div className="contentpanel grid-container" style={{}}>
 
 <div className="sliderSpacer" style={{height:'', paddingTop:'', display:''}}></div>
 

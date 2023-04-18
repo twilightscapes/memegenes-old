@@ -31,13 +31,13 @@ const TagIndex = ({ data }) => {
         <Helmet>
         <body className="tagpage utilitypage" />
       </Helmet>
-      <div className="spacer" style={{ height: '80px', border: '0px solid yellow',    maxWidth:'380px' }}></div>
+      <div className="spacer" style={{ height: '70px', border: '0px solid yellow', }}></div>
 
 
         
 
 
-        <div className="selectArrow" style={{position:'fixed', left:'1%', right:'1%',  margin:'1vh auto 0 auto', zIndex:'3', display:'grid', placeSelf:'center',  padding:'',}}>
+        <div className="selectArrow" style={{position:'fixed', top:'', left:'1%', right:'1%',  margin:'-60px auto 0 auto', zIndex:'3', display:'grid', placeSelf:'center',  padding:'',}}>
           <select className="cattags" id="tag-select" value={selectedTag} onChange={handleTagChange}>
             <option value="">view all keywords</option>
             {tags.map(tag => (
@@ -49,7 +49,7 @@ const TagIndex = ({ data }) => {
 
        
 
-        <div className="contentpanel grid-container" style={{ marginTop: "8vh" }}>
+        <div className="contentpanel grid-container" style={{ marginTop: "" }}>
           <div className="sliderSpacer" style={{ height: "", paddingTop: "", display: "" }}></div>
    
           {data.allMarkdownRemark.edges &&

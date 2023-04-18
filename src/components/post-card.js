@@ -7,10 +7,13 @@ import { FaImage } from "react-icons/fa"
 import { AiOutlinePicLeft } from "react-icons/ai"
 import { StaticImage } from "gatsby-plugin-image"
 // import useSiteMetadata from "../hooks/SiteMetadata"
+// import TimeAgo from 'react-timeago'
+// import useSiteMetadata from "../hooks/SiteMetadata"
+
 
 const PostCard = ({ data, index }) => {
   // index is the index of the current PostCard in the array of posts
-
+  // const { showDates } = useSiteMetadata()
   // ...
 
   return (
@@ -61,9 +64,16 @@ const PostCard = ({ data, index }) => {
             <h2 className="title" style={{ }}>
               {data.frontmatter.title}
             </h2>
-          {/* <p style={{position:'', textAlign:'center', border:'0px solid red', fontSize:'70%', minWidth:'100px'}}>
-            <TimeAgo date={data.frontmatter.date}/>
-          </p> */}
+
+            {/* {showDates ? (
+             <p style={{position:'', textAlign:'center', border:'0px solid red', fontSize:'70%', minWidth:'100px'}}>
+             <TimeAgo date={data.frontmatter.date}/>
+           </p>
+          ) : (
+            ""
+          )} */}
+
+         
         </div>
 
 
