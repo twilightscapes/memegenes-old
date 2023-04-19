@@ -138,8 +138,9 @@ const Pagination = props => (
 
 const Post = ({ data, pageContext }) => {
 
-  const [isMenuOpen, setIsMenuOpen] = useState(true); // set default value to true
-  const [ setIsMobile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+  
 
   const resizeMobile = () => {
     setIsMenuOpen(false);
