@@ -85,7 +85,7 @@ const applyArchiveView = useCallback(() => {
 
       document.querySelector('.contentpanel').style.transition = 'all .5s ease-in-out';
       // document.querySelector('#showPosts').style.height = '600px';
-      // window.scrollTo(0, 0);
+      window.scrollTo(0, 0);
     }
   });
   localStorage.setItem("archiveView", archiveView);

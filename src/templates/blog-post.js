@@ -1392,11 +1392,16 @@ zindex:'1'
 <h1 className="headline" style={{color:'#ddd', borderRadius:'12px'}}>{frontmatter.title}</h1>
 {/* <time sx={{color: "muted"}}>{frontmatter.date}</time> */}
 
-    {showDates ? (
-            <div>Posted: <TimeAgo date={frontmatter.date} style={{color:''}} /></div>
-          ) : (
-            ""
-          )}
+{showDates ? (
+  <div>
+    Posted:{" "}
+    <time title={frontmatter.date} sx={{ color: "muted" }}>
+      <TimeAgo date={frontmatter.date} style={{ color: "" }} />
+    </time>
+  </div>
+) : (
+  ""
+)}
 
 
 
