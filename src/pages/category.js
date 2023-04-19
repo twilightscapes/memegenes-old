@@ -30,7 +30,8 @@ const CategoryIndex = ({ data, pageContext }) => {
 
 <div className="selectArrow" style={{position:'fixed', top:'', left:'1%', right:'1%',  margin:'-55px auto 0 auto', zIndex:'3', display:'grid', placeSelf:'center',  padding:'',}}>
         {/* <h1 style={{ textAlign: "center" }}>{category}</h1> */}
-        <select className="cattags"
+        <select
+  className="cattags"
   style={{}}
   onChange={(e) => {
     const selectedCategory = e.target.value;
@@ -38,10 +39,9 @@ const CategoryIndex = ({ data, pageContext }) => {
   }}
   value={category}
 >
-<option value="">Category:</option>
+  <option value="">Categories:</option>
   {categories.map((category) => (
-    
-    <option key={category} value={category} selected={category === pageContext.category}>
+    <option key={category} value={category}>
       {category}
     </option>
   ))}
