@@ -77,7 +77,7 @@ const applyArchiveView = useCallback(() => {
       el.classList.add("grid-container");
       // document.body.classList.add("scrollable");
       // document.querySelector('#showPosts').style.height = 'auto';
-      window.scrollTo(0, 0);
+      // window.scrollTo(0, 0);
     } else if (archiveView === "swipe") {
       el.classList.remove("grid-container");
       el.classList.add("horizontal-scroll", "panels");
