@@ -106,29 +106,8 @@ const Pagination = props => (
           </Link>
         </li>
       )}
-
-
-
     </ul>
-
-    
   </div>
-
-
-
-  
-
-  
-    
-  
-  
-  
-  
-  
-    
-
-
-
 )
 
 
@@ -139,6 +118,7 @@ const Pagination = props => (
 const Post = ({ data, pageContext }) => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(true);
+  /* eslint-disable-next-line no-unused-vars */
   const [isMobile, setIsMobile] = useState(false);
   
 
@@ -206,6 +186,7 @@ const Post = ({ data, pageContext }) => {
       <div style={{ maxWidth: '300px', margin: '3vh auto', paddingBottom: '2vh', borderBottom: '1px solid' }}>
         <h4>Category:</h4>
         {categories.map((category, index) => (
+          
           <React.Fragment key={category}>
             {index > 0 && ', '}
             <Link to={`/category/${category}`}>{category}</Link>
