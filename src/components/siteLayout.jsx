@@ -77,7 +77,7 @@ const applyArchiveView = useCallback(() => {
       el.classList.add("grid-container");
       // document.body.classList.add("scrollable");
       // document.querySelector('#showPosts').style.height = 'auto';
-      // window.scrollTo(0, 0);
+      window.scrollTo(0, 0);
     } else if (archiveView === "swipe") {
       el.classList.remove("grid-container");
       el.classList.add("horizontal-scroll", "panels");
@@ -246,7 +246,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
 
 
 {prefersReducedMotion ? (
-    
+    <Link to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'block', maxWidth:'', height:'auto', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
             <button className="cornerlogo" style={{position:'relative', top:'', left:'4%', border:'0px solid white', borderBottom:'0px solid transparent'}} aria-label="Return to Home">
             {iconimage ? (
       <img className="" src={iconimage} alt={companyname} style={{maxHeight:'', border:'none'}} width="117" height="60" />
@@ -254,16 +254,16 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
                   <div style={{fontWeight:'bold',}}>{companyname}</div>
                 )}
             </button>
-          
+            </Link>
           ) : (
           
-                        <AnchorLink to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'block', maxWidth:'', height:'auto', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
+                        <Link to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'block', maxWidth:'', height:'auto', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
       <img className="cornerlogo" style={{position:'relative', top:'', left:'4%', border:'0px solid white', padding:'0', maxHeight:''}} src={iconimage} alt={companyname} width="117" height="60" />
                 ) : (
                   <div style={{fontWeight:'bold',}}>{companyname}</div>
                 )}
-            </AnchorLink>
+            </Link>
                         
           )}
 
