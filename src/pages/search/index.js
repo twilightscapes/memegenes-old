@@ -58,9 +58,11 @@ const SearchPage = ({ data }) => {
 
 <div className="spacer" style={{height:'80px', border:'0px solid yellow'}}>{query}</div>
 
+
+
       <div className="searchform" style={{
 
-    position:'fixed', left:'1%', right:'1%', maxWidth:'380px', margin:'1vh auto 0 auto', zIndex:'3', display:'grid', placeSelf:'center', outline:'1px solid #999', borderRadius:'3px', padding:'', background:'rgba(0, 0, 0, 0.6)', color:'#ddd'}}>
+    position:'fixed', top:'', left:'1%', right:'1%', maxWidth:'380px', margin:'-55px auto 0 auto', zIndex:'3', display:'grid', placeSelf:'center', outline:'1px solid #999', borderRadius:'3px', padding:'', background:'rgba(0, 0, 0, 0.6)', color:'#ddd'}}>
 
       <label style={{}}>
         <input id="clearme" type="text" placeholder="Search:" onChange={handleSearch} style={{maxWidth:'80vw', background:'transparent'}} /> 
@@ -73,7 +75,7 @@ const SearchPage = ({ data }) => {
       </div>
 
       {/* <TwilightLogo className="bglogo darkened" /> */}
-      <div className="contentpanel grid-container" style={{justifyContent:'center', alignItems:'center', marginTop:'70px'}}>
+      <div className="contentpanel grid-container" style={{justifyContent:'center', alignItems:'center', marginTop:''}}>
 
 <div className="sliderSpacer" style={{height:'', paddingTop:'', display:''}}></div>
 

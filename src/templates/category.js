@@ -31,7 +31,7 @@ const Category = ({ data, pageContext }) => {
       )}
 
       <div>
-      <div className="selectArrow" style={{position:'fixed', top:'', left:'1%', right:'1%',  margin:'-60px auto 0 auto', zIndex:'3', display:'grid', placeSelf:'center',  padding:'',}}>
+      <div className="selectArrow" style={{position:'fixed', top:'', left:'1%', right:'1%',  margin:'-55px auto 0 auto', zIndex:'3', display:'grid', placeSelf:'center',  padding:'',}}>
         {/* <h1 style={{ textAlign: "center" }}>{category}</h1> */}
         <select className="cattags"
   style={{}}
