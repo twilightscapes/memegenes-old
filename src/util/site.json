@@ -7,7 +7,7 @@
     "showNav": true,
     "companyname": "Meme Gene",
     "siteUrl": "https://memegenes.com",
-    "showDates": true,
+    "showDates": false,
     "twitterUsername": "memegenesx",
     "titleDefault": "MG Reports",
     "showSocial": true,
