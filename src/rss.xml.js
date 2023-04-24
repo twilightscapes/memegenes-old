@@ -26,14 +26,25 @@ const RssXml = ({ data }) => {
   });
 
   allMarkdownRemark.nodes.forEach(node => {
-    feed.addItem({
+    const item = {
       title: node.frontmatter.title,
       id: node.fields.slug,
       link: `${site.siteMetadata.siteUrl}${node.fields.slug}`,
       description: node.excerpt,
       content: node.html,
       date: node.frontmatter.date,
-    });
+    };
+
+    if (node.frontmatter.featuredImage) {
+      const imageUrl = `${site.siteMetadata.siteUrl}${node.frontmatter.featuredImage.childImageSharp.fixed.src}`;
+      item.enclosure = {
+        url: imageUrl,
+        type: 'image/jpeg',
+        size: '800',
+      };
+    }
+
+    feed.addItem(item);
   });
 
   return (
