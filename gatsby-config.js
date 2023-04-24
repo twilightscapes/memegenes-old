@@ -227,7 +227,6 @@ module.exports = {
                       title
                       description
                       siteUrl
-                      site_url: siteUrl
                     }
                   }
                 }
@@ -241,48 +240,43 @@ module.exports = {
                         date: node.frontmatter.date,
                         url: site.siteMetadata.siteUrl + node.fields.slug,
                         guid: site.siteMetadata.siteUrl + node.fields.slug,
-                        custom_elements: [{ "content:encoded": node.html }],
-                      })
-                    })
+                        enclosure: {
+                          url:
+                            site.siteMetadata.siteUrl +
+                            node.frontmatter.featuredImage.childImageSharp.fixed.src,
+                          type: 'image/jpeg',
+                          length: '800',
+                        },
+                      });
+                    });
                   },
-                  query: `{
-                    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
-                      nodes {
-                        excerpt
-                        html
-                        fields {
-                          slug
-                        }
-                        frontmatter {
-                          title
-                          date
-                          featuredImage {
-                            relativePath
-                            childImageSharp {
-                              gatsbyImageData(layout: FULL_WIDTH)
+                  query: `
+                    {
+                      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+                        nodes {
+                          excerpt
+                          fields {
+                            slug
+                          }
+                          frontmatter {
+                            title
+                            date
+                            featuredImage {
+                              childImageSharp {
+                                fixed(width: 800) {
+                                  src
+                                }
+                              }
                             }
                           }
                         }
                       }
                     }
-                  }`,
-                  output: "/public/rss.xml",
-                  title: "Complete Web RSS Feed",
+                  `,
+                  output: '/rss.xml',
+                  title: 'My Blog RSS Feed',
                 },
               ],
-            },
-          },
-
-          {
-            resolve: `gatsby-source-rss-feed`,
-            options: {
-              url: `https://urbanfetish.com/public/rss.xml`,
-              name: `UrbanFetish`,
-              parserOption: {
-                customFields: {
-                  item: ['media:content', 'description'],
-                },
-              },
             },
           },
           
