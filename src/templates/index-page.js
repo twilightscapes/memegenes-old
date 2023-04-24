@@ -989,7 +989,7 @@ query HomeQuery($id: String!) {
   posts: allMarkdownRemark(
     sort: [{frontmatter: {spotlight: ASC}}, {frontmatter: {date: DESC}}]
     filter: {frontmatter: {template: {eq: "blog-post"}}}
-    limit: 30
+    limit: 9
   ) {
     edges {
       node {

@@ -42,9 +42,11 @@ const SearchPage = ({ data }) => {
         title.toLowerCase().includes(query.toLowerCase()) ||
         (tags && tags.join("").toLowerCase().includes(query.toLowerCase()))
       )
-    })
+    }).slice(0, 24) // Add this line to limit the results to 24
+  
     setFilteredPosts(filteredPosts)
   }
+  
   
   
 

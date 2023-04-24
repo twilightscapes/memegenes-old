@@ -176,7 +176,7 @@ export const query = graphql`
     allMarkdownRemark(
       sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: 30
+      limit: 24
       skip: $skip
     ) {
       edges {
