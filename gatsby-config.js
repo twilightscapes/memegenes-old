@@ -227,64 +227,87 @@ module.exports = {
                       title
                       description
                       siteUrl
-                      site_url: siteUrl
                     }
                   }
                 }
               `,
               feeds: [
                 {
-                  serialize: ({ query: { site, allMarkdownRemark } }) =>
-                    allMarkdownRemark.edges.map(edge => {
+                  serialize: ({ query: { site, allMarkdownRemark } }) => {
+                    return allMarkdownRemark.edges.map(edge => {
+                      const postUrl = site.siteMetadata.siteUrl + edge.node.fields.slug;
+                      const imageUrl = edge.node.frontmatter.featuredImage
+                        ? site.siteMetadata.siteUrl + edge.node.frontmatter.featuredImage.publicURL
+                        : null;
                       return {
                         title: edge.node.frontmatter.title,
-                        description: edge.node.frontmatter.description,
+                        description: edge.node.excerpt,
                         date: edge.node.frontmatter.date,
-                        url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                        guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                        enclosure: {
-                          url:
-                            site.siteMetadata.siteUrl +
-                            edge.node.frontmatter.featuredImage.publicURL,
-                        },
+                        url: postUrl,
+                        guid: postUrl,
                         custom_elements: [
-                          {
-                            'content:encoded': edge.node.html,
-                          },
-                        ],
-                      }
-                    }),
+                          { "content:encoded": edge.node.html },
+                          imageUrl
+  ? {
+      [`media:content`]: {
+        _attr: {
+          url: imageUrl,
+          type: "image/jpeg",
+          width: 500,
+          height: 500,
+          xmlns: "http://search.yahoo.com/mrss/"
+        }
+      }
+    }
+  : null
+
+                        ]
+                      };
+                    });
+                  },
+          
                   query: `
-                    {
-                      allMarkdownRemark(
-                        sort: { order: DESC, fields: [frontmatter___date] }
-                      ) {
-                        edges {
-                          node {
-                            fields {
-                              slug
+                  {
+                    allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
+                      edges {
+                        node {
+                          excerpt
+                          html
+                          fields {
+                            slug
+                          }
+                          frontmatter {
+                            title
+                            date
+                            slug
+                            featuredImage {
+                              publicURL
                             }
-                            frontmatter {
-                              title
-                              description
-                              date
-                              featuredImage {
-                                publicURL
-                              }
-                            }
-                            html
                           }
                         }
                       }
                     }
+                  }
+                  
                   `,
-                  output: '/rss.xml',
-                  title: 'Your Site RSS Feed',
-                  // Optional configuration options
-                  match: '^/blog/',
-                  link: 'https://example.com/blog/',
+                  output: "/rss.xml",
+                  title: "My RSS Feed",
+                  // ...
                 },
               ],
+            },
+          },
+
+          {
+            resolve: `gatsby-source-rss-feed`,
+            options: {
+              url: `https://urbanfetish.com/public/rss.xml`,
+              name: `UrbanFetish`,
+              parserOption: {
+                customFields: {
+                  item: ['media:content', 'description'],
+                },
+              },
             },
           },
           
