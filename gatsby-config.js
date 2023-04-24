@@ -227,54 +227,62 @@ module.exports = {
                       title
                       description
                       siteUrl
+                      site_url: siteUrl
                     }
                   }
                 }
               `,
               feeds: [
                 {
-                  serialize: ({ query: { site, allMarkdownRemark } }) => {
-                    return allMarkdownRemark.nodes.map(node => {
-                      return Object.assign({}, node.frontmatter, {
-                        description: node.excerpt,
-                        date: node.frontmatter.date,
-                        url: site.siteMetadata.siteUrl + node.fields.slug,
-                        guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  serialize: ({ query: { site, allMarkdownRemark } }) =>
+                    allMarkdownRemark.edges.map(edge => {
+                      return {
+                        title: edge.node.frontmatter.title,
+                        description: edge.node.frontmatter.description,
+                        date: edge.node.frontmatter.date,
+                        url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                        guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                         enclosure: {
                           url:
                             site.siteMetadata.siteUrl +
-                            node.frontmatter.featuredImage.childImageSharp.fixed.src,
-                          type: 'image/jpeg',
-                          length: '800',
+                            edge.node.frontmatter.featuredImage.publicURL,
                         },
-                      });
-                    });
-                  },
+                        custom_elements: [
+                          {
+                            'content:encoded': edge.node.html,
+                          },
+                        ],
+                      }
+                    }),
                   query: `
                     {
-                      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-                        nodes {
-                          excerpt
-                          fields {
-                            slug
-                          }
-                          frontmatter {
-                            title
-                            date
-                            featuredImage {
-                              childImageSharp {
-                                fixed(width: 800) {
-                                  src
-                                }
+                      allMarkdownRemark(
+                        sort: { order: DESC, fields: [frontmatter___date] }
+                      ) {
+                        edges {
+                          node {
+                            fields {
+                              slug
+                            }
+                            frontmatter {
+                              title
+                              description
+                              date
+                              featuredImage {
+                                publicURL
                               }
                             }
+                            html
                           }
                         }
                       }
                     }
                   `,
                   output: '/rss.xml',
-                  title: 'My Blog RSS Feed',
+                  title: 'Your Site RSS Feed',
+                  // Optional configuration options
+                  match: '^/blog/',
+                  link: 'https://example.com/blog/',
                 },
               ],
             },
