@@ -567,6 +567,22 @@ body.homepage .resp-sharing-button__icon svg{height:5vh;width:5vw}
 
 
 
+.star-button button {
+  color: #aaa; /* Default star color */
+  font-size: 1.5em; /* Adjust size as needed */
+  transition: color 0.3s; /* Add a transition for a smooth color change */
+}
+
+.star-button:hover button {
+  color: #FFD700; /* Yellow color on hover */
+}
+
+.star-button button[data-favorite="true"] {
+  color: #FFD700; /* Yellow color when set to true */
+}
+
+
+
 
 .signbox{align-items:center;align-self:center;display:flex;flex-direction:column;gap:10px;justify-content:center;overflow:hidden;padding:0 10px;width:100%}
 .spacer33{height:33vh}
