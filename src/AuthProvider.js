@@ -10,9 +10,9 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
+    console.log(netlifyIdentity.currentUser());
     netlifyIdentity.init();
     setUser(netlifyIdentity.currentUser());
-    console.log(netlifyIdentity.currentUser());
     netlifyIdentity.on("login", (user) => setUser(user));
     netlifyIdentity.on("logout", () => setUser(null));
   }, []);
