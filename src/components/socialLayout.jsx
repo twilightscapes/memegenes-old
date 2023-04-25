@@ -25,7 +25,7 @@ import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-4'
 // import { AiOutlineClose } from "react-icons/ai"
 import { BiGridHorizontal } from "react-icons/bi"
 import { MdOutlineRectangle } from "react-icons/md"
-import Menu from "./menu"
+import Menu from "./menu-social"
 import userStyles from "../util/userStyles.json"
 import SignUp from "./newssign"
 
@@ -332,7 +332,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
 
 
 
-
+<Menu />
 
 
 

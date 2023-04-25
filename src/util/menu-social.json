@@ -1,0 +1,20 @@
+{
+  "menuItems": [
+    {
+      "menutitle": "Discover",
+      "url": "/tags"
+    },
+    {
+      "menutitle": "Create",
+      "url": "/tags"
+    },
+    {
+      "menutitle": "Favorites",
+      "url": "/archive"
+    },
+    {
+      "menutitle": "Support",
+      "url": "/admin"
+    }
+  ]
+}

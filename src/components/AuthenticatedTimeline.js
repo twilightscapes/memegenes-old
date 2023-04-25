@@ -114,7 +114,7 @@ const AuthenticatedTimeline = () => {
 
       <Layout>
         <Helmet>
-          <body id="body" className="test" />
+          <body id="body" className="social" />
         </Helmet>
 
         {showNav ? (
@@ -122,7 +122,16 @@ const AuthenticatedTimeline = () => {
       ) : (
         ""
       )}
-<h1 style={{ position: 'relative', zIndex: '1', margin: '0 auto', textAlign:'center' }}>My Timeline:</h1>
+{/* <h1 style={{ position: 'relative', zIndex: '1', margin: '0 auto', textAlign:'center' }}>My Timeline:</h1> */}
+<div className='flexbutt' style={{}}> 
+
+<div className="flexcheek" style={{maxWidth:'15%', position:'sticky', top:'0'}}>
+  <div className="post-card controlpanel" style={{display:'flex', height:'100vh', minWidth:'15%', position:'fixed', alignItems:'center', justifyContent:'start', padding:'1vh 2vw'}}>
+  <h3>Controls</h3>
+  </div>
+</div>
+
+
 <div className="contentpanel grid-container" style={{ marginTop: "1rem" }}>
           <div className="sliderSpacer" style={{ height: "", paddingTop: "", display: "" }}></div>
 
@@ -131,7 +140,7 @@ const AuthenticatedTimeline = () => {
           {combinedFeed.slice(0, visibleItems).map((item, index) => (
           
 
-          <div className="post-card1" style={{ justifyContent: "center", alignItems: "center", position:'relative' }} key={index}>
+          <div className="post-card1" style={{ justifyContent: "end", alignItems: "center", position:'relative' }} key={index}>
 
 
 
@@ -141,7 +150,7 @@ const AuthenticatedTimeline = () => {
       <img className="featured-image1" src={item.imageUrl} alt={item.title} style={{ position: 'relative', zIndex: '1', maxHeight: '', margin: '0 auto' }} />
     )}
 
-    <div className="post-content" style={{display:'flex', flexDirection:'column', justifyContent:'center', width:'100%', height:'', position:'relative', background:'', padding:'0', margin:'0 auto 0 auto', textAlign:'center', overFlow:'hidden'}}>
+    <div className="post-content" style={{display:'flex', flexDirection:'column', justifyContent:'end', width:'100%', height:'', position:'relative', background:'', padding:'0', margin:'0 auto 0 auto', textAlign:'center', overFlow:'hidden'}}>
       
       <div className="panel" style={{display:'flex', flexDirection:'column', justifyContent:'space-between', alignItems:'center', margin:'10px auto', maxWidth:'80vw', gap:'.4vw', height:'', textAlign:'center', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'', color:'#aaa' }}>
       {/* <h2 onClick={() => toggleFavorite(item)}>
@@ -149,30 +158,7 @@ const AuthenticatedTimeline = () => {
 </h2> */}
 
 
-{!item.favorite && (
-  <button
-    className="star-button"
-    onClick={(event) => {
-      event.preventDefault();
-      toggleFavorite(item);
-    }}
-    style={{ cursor: "pointer", background: "none", border: "none", position:'absolute', bottom:'10px', right:'10px', zIndex:'2' }}
-  >
-    ☆
-  </button>
-)}
-{item.favorite && (
-  <button
-    className="star-button"
-    onClick={(event) => {
-      event.preventDefault();
-      toggleFavorite(item);
-    }}
-    style={{ cursor: "pointer", background: "none", border: "none", position:'absolute', bottom:'10px', right:'10px', zIndex:'2' }}
-  >
-    ⭐
-  </button>
-)}
+
 
 
 
@@ -186,15 +172,39 @@ const AuthenticatedTimeline = () => {
         <p style={{textAlign:'left', textWrap:'balance', fontSize:'85%'}}>{item.description}</p>
       </div>
 
-      {showDates ? (
+      {/* {showDates ? ( */}
         <p style={{position:'', textAlign:'center', border:'0px solid red', fontSize:'70%', minWidth:'100px'}}>
           <TimeAgo date={item.pubDate} />
         </p>
-      ) : (
+      {/* ) : (
         ""
-      )}
+      )} */}
     </div>
   </a>
+  {!item.favorite && (
+  <button
+    className="star-button"
+    onClick={(event) => {
+      event.preventDefault();
+      toggleFavorite(item);
+    }}
+    style={{ cursor: "pointer", background: "none", border: "none", position:'relative', top:'-10px', right:'10px', zIndex:'2' }}
+  >
+    ☆
+  </button>
+)}
+{item.favorite && (
+  <button
+    className="star-button"
+    onClick={(event) => {
+      event.preventDefault();
+      toggleFavorite(item);
+    }}
+    style={{ cursor: "pointer", background: "none", border: "none", position:'relative', top:'-10px', right:'10px', zIndex:'2' }}
+  >
+    ⭐
+  </button>
+)}
 </div>
 
           
@@ -215,6 +225,7 @@ const AuthenticatedTimeline = () => {
   <div style={{ textAlign: 'center', margin: '1rem 0' }}>End of Results Reached</div>
 )}
         
+      </div>
       </div>
       </Layout>
 
