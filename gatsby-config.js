@@ -42,6 +42,12 @@ module.exports = {
     },
   },
 
+  {
+    resolve: "gatsby-plugin-netlify-identity-widget",
+    options: {
+      url: "https://memegenes.com" // Replace with your website URL
+    }
+  },
   
 
 
