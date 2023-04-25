@@ -567,17 +567,17 @@ body.homepage .resp-sharing-button__icon svg{height:5vh;width:5vw}
 
 
 
-.star-button button {
+.star-button {
   color: #aaa; /* Default star color */
   font-size: 1.5em; /* Adjust size as needed */
   transition: color 0.3s; /* Add a transition for a smooth color change */
 }
 
-.star-button:hover button {
+.star-button:hover {
   color: #FFD700; /* Yellow color on hover */
 }
 
-.star-button button[data-favorite="true"] {
+.star-button[data-favorite="true"] {
   color: #FFD700; /* Yellow color when set to true */
 }
 
