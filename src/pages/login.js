@@ -5,7 +5,7 @@ import netlifyIdentity from "netlify-identity-widget";
 import Layout from "../components/siteLayout";
 
 const LoginPage = () => {
-  const { user } = useContext(AuthContext);
+  const { user } = useContext(AuthContext) || {};
 
   useEffect(() => {
     if (user) {
