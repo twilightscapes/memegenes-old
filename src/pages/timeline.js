@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { navigate } from "gatsby";
-import AuthContext from "../AuthProvider";
+import { AuthContext } from "../AuthProvider";
 import AuthenticatedTimeline from "../components/AuthenticatedTimeline"; // Import the AuthenticatedTimeline component
 
 const TimeLine = () => {

@@ -4,7 +4,7 @@ import Layout from "../components/siteLayout";
 import { Helmet } from "react-helmet";
 import TimeAgo from "react-timeago";
 import userRssData from "../util/userRss.json";
-import styled from "styled-components";
+
 
 const AuthenticatedTimeline = () => {
     const { showNav } = useSiteMetadata();
@@ -19,47 +19,47 @@ const AuthenticatedTimeline = () => {
       ...feed.filter((item) => !favorites.some((fav) => fav.link === item.link)),
     ];
 
-  useEffect(() => {
-    const fetchRssFeed = async (rssFeed) => {
-      const response = await fetch(rssFeed.rssFeedUrl);
-      const text = await response.text();
-      const xml = new DOMParser().parseFromString(text, "text/xml");
-      const items = xml.querySelectorAll("item");
-    
+    useEffect(() => {
+        const fetchRssFeed = async (rssFeed) => {
+          const response = await fetch(rssFeed.rssFeedUrl);
+          const text = await response.text();
+          const xml = new DOMParser().parseFromString(text, "text/xml");
+          const items = xml.querySelectorAll("item");
       
-      return Array.from(items).map((item) => {
-        const mediaContent = item.getElementsByTagName("media:content")[0];
-        const imageUrl = mediaContent ? mediaContent.getAttribute("url") : null;
-    
-        return {
-          name: rssFeed.name,
-          title: item.querySelector("title")?.textContent || "",
-          link: item.querySelector("link")?.textContent || "",
-          description: item.querySelector("description")?.textContent || "",
-          pubDate: item.querySelector("pubDate")?.textContent || "",
-          imageUrl: imageUrl,
-          favorite: false // Add the favorite field and set it to false by default
+          return Array.from(items).map((item) => {
+            const mediaContent = item.getElementsByTagName("media:content")[0];
+            const imageUrl = mediaContent ? mediaContent.getAttribute("url") : null;
+      
+            return {
+              name: rssFeed.name,
+              title: item.querySelector("title")?.textContent || "",
+              link: item.querySelector("link")?.textContent || "",
+              description: item.querySelector("description")?.textContent || "",
+              pubDate: item.querySelector("pubDate")?.textContent || "",
+              imageUrl: imageUrl,
+              favorite: false // Add the favorite field and set it to false by default
+            };
+          });
         };
-      });
-    };
-  
-    const fetchAllFeeds = async () => {
-      const feedPromises = userRssData.rssFeeds.map((feed) => fetchRssFeed(feed));
-      const allFeeds = await Promise.all(feedPromises);
-      const mergedFeed = [].concat(...allFeeds);
-    
-      // Sort the merged feeds by their pubDate in descending order (most recent first)
-      const sortedFeed = mergedFeed.sort((a, b) => {
-        return new Date(b.pubDate) - new Date(a.pubDate);
-      });
-    
-      setFeed(sortedFeed);
-    };
-    
-    
-  
-    fetchAllFeeds();
-  }, []);
+      
+        const fetchAllFeeds = async () => {
+          if (typeof window !== "undefined") {
+            const feedPromises = userRssData.rssFeeds.map((feed) => fetchRssFeed(feed));
+            const allFeeds = await Promise.all(feedPromises);
+            const mergedFeed = [].concat(...allFeeds);
+      
+            // Sort the merged feeds by their pubDate in descending order (most recent first)
+            const sortedFeed = mergedFeed.sort((a, b) => {
+              return new Date(b.pubDate) - new Date(a.pubDate);
+            });
+      
+            setFeed(sortedFeed);
+          }
+        };
+      
+        fetchAllFeeds();
+      }, []);
+      
 
 
 
