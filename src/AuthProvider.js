@@ -9,13 +9,13 @@ const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
-  useEffect(() => {
-    netlifyIdentity.init();
-    setUser(netlifyIdentity.currentUser());
-    netlifyIdentity.on("login", (user) => setUser(user));
-    netlifyIdentity.on("logout", () => setUser(null));
-    navigate("/timeline");
-  }, []);
+useEffect(() => {
+  netlifyIdentity.init();
+  console.log(netlifyIdentity); // add this line
+  setUser(netlifyIdentity.currentUser());
+  netlifyIdentity.on("login", (user) => setUser(user));
+  netlifyIdentity.on("logout", () => setUser(null));
+}, []);
 
   return (
     <AuthContext.Provider value={{ user, netlifyIdentity }}>
