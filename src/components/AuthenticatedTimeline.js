@@ -20,7 +20,8 @@ const AuthenticatedTimeline = () => {
     ];
 
     useEffect(() => {
-        const fetchRssFeed = async (rssFeed) => {
+      const fetchRssFeed = async (rssFeed) => {
+        try {
           const response = await fetch(rssFeed.rssFeedUrl);
           const text = await response.text();
           const xml = new DOMParser().parseFromString(text, "text/xml");
@@ -40,7 +41,12 @@ const AuthenticatedTimeline = () => {
               favorite: false // Add the favorite field and set it to false by default
             };
           });
-        };
+        } catch (error) {
+          console.error(`Failed to fetch RSS feed from ${rssFeed.rssFeedUrl}:`, error);
+          return [];
+        }
+      };
+      
       
         const fetchAllFeeds = async () => {
           if (typeof window !== "undefined") {
@@ -103,6 +109,11 @@ const AuthenticatedTimeline = () => {
   };
   
   
+  const createExcerpt = (html, maxLength) => {
+    const strippedText = new DOMParser().parseFromString(html, 'text/html').body.textContent;
+    return strippedText.length > maxLength ? `${strippedText.slice(0, maxLength)}...` : strippedText;
+  };
+
   // const fullName = user && user.user_metadata ? user.user_metadata.full_name : 'Unknown';
 
 
@@ -169,7 +180,9 @@ const AuthenticatedTimeline = () => {
 <h2 style={{textAlign:'left', textWrap:'balance'}}>
   {item.name} - {item.title}
 </h2>
-        <p style={{textAlign:'left', textWrap:'balance', fontSize:'85%'}}>{item.description}</p>
+<p style={{textAlign:'left', textWrap:'balance', fontSize:'85%'}}>
+      {createExcerpt(item.description, 200)}
+    </p>
       </div>
 
       {/* {showDates ? ( */}
