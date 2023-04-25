@@ -9,9 +9,14 @@ const AuthProvider = ({ children }) => {
   const fullName = user?.user_metadata?.full_name || 'Unknown';
 
   useEffect(() => {
-    console.log(netlifyIdentity.currentUser());
     netlifyIdentity.init();
-    setUser(netlifyIdentity.currentUser());
+
+    // Check if a user is already authenticated
+    const user = netlifyIdentity.currentUser();
+    if (user) {
+      setUser(user);
+    }
+
     netlifyIdentity.on("login", (user) => setUser(user));
     netlifyIdentity.on("logout", () => setUser(null));
   }, []);
