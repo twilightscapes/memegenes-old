@@ -5,8 +5,12 @@
       "rssFeedUrl": "https://urbanfetish.com/rss.xml"
     },
     {
-      "name": "Medium Guy",
+      "name": "simplecast",
       "rssFeedUrl": "https://feeds.simplecast.com/54nAGcIl"
+    },
+    {
+      "name": "The Verge",
+      "rssFeedUrl": "https://www.theverge.com/rss/index.xml"
     },
     {
       "name": "Meme Genes",
