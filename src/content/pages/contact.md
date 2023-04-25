@@ -8,6 +8,7 @@ contactphone: false
 contactupload: true
 scrollable: false
 uploadtext: JPG preferred - (1600px wide)
+excludeFromRSS: true
 ---
 &nbsp;
 

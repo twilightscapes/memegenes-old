@@ -87,6 +87,7 @@ showPageNav: true
 contentinvideo: false
 nftdrop: "2023-02-11T10:00:00"
 postNumber: "4"
+excludeFromRSS: true
 ---
 <!-- Do not delete -->
 <div>

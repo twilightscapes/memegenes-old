@@ -36,6 +36,7 @@ const useSiteMetadata = () => {
             menu3
             menu4
             font1
+            postcount
           }
         }
       }

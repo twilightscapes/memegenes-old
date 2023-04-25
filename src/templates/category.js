@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react"
 import { graphql, Link, navigate } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import Layout from "../components/siteLayout"
@@ -11,12 +11,21 @@ import { Helmet } from "react-helmet"
 import TimeAgo from 'react-timeago'
 
 const Category = ({ data, pageContext }) => {
+  const { showNav } = useSiteMetadata()
+  const { showDates } = useSiteMetadata()
+  const { postcount } = useSiteMetadata()
+
   const { category } = pageContext
   const posts = data.posts.edges
   const categories = data.allMarkdownRemark.group.map((group) => group.fieldValue)
 
-  const { showNav } = useSiteMetadata()
-  const { showDates } = useSiteMetadata()
+  const [visibleItems, setVisibleItems] = useState(postcount || 5);
+
+  const visiblePosts = posts.slice(0, visibleItems);
+
+  const showMoreItems = () => {
+    setVisibleItems(visibleItems + postcount);
+  };
 
   return (
     <Layout>
@@ -31,33 +40,33 @@ const Category = ({ data, pageContext }) => {
       )}
 
       <div>
-      <div className="selectArrow" style={{position:'fixed', top:'', left:'1%', right:'1%',  margin:'-55px auto 0 auto', zIndex:'3', display:'grid', placeSelf:'center',  padding:'',}}>
-        {/* <h1 style={{ textAlign: "center" }}>{category}</h1> */}
-        <select
-  className="cattags"
-  style={{}}
-  onChange={(e) => {
-    const selectedCategory = e.target.value;
-    navigate(`/category/${selectedCategory}`);
-  }}
-  value={category}
->
-  <option value="">Categories:</option>
-  {categories.map((category) => (
-    <option key={category} value={category}>
-      {category}
-    </option>
-  ))}
-</select>
+        <div className="selectArrow" style={{position:'fixed', top:'', left:'1%', right:'1%',  margin:'-55px auto 0 auto', zIndex:'3', display:'grid', placeSelf:'center',  padding:'',}}>
+          <select
+            className="cattags"
+            style={{}}
+            onChange={(e) => {
+              const selectedCategory = e.target.value;
+              navigate(`/category/${selectedCategory}`);
+            }}
+            value={category}
+          >
+            <option value="">Categories template:</option>
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
 
-<div style={{position:'absolute', right:'10px', top:'8px', height:'100%', color:'#fff', zIndex:'-1', fontSize:'30px'}}><AiFillDownSquare /></div>
- </div>       
-        
+          <div style={{position:'absolute', right:'10px', top:'8px', height:'100%', color:'#fff', zIndex:'-1', fontSize:'30px'}}>
+            <AiFillDownSquare />
+          </div>
+        </div>       
 
- <div className="contentpanel grid-container" style={{ marginTop: "" }}>
+        <div className="contentpanel grid-container" style={{ marginTop: "" }}>
           <div className="sliderSpacer" style={{ height: "", paddingTop: "", display: "" }}></div>
 
-          {posts.map(({ node }) => {
+          {visiblePosts.map(({ node }) => {
             const featuredImg = node.frontmatter.featuredImage;
 
             return (
@@ -69,14 +78,14 @@ const Category = ({ data, pageContext }) => {
 
 {featuredImg ? (
 
-<GatsbyImage
-      image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
-      alt={node.frontmatter.title + " - Featured image"}
-      className="featured-image1"
-      placeholder="blurred"
-      // loading="eager"
-      style={{ position: 'relative', zIndex: '1', maxHeight: '', margin: '0 auto' }}
-    />
+                    <GatsbyImage
+                      image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
+                      alt={node.frontmatter.title + " - Featured image"}
+                      className="featured-image1"
+                      placeholder="blurred"
+                      // loading="eager"
+                      style={{ position: 'relative', zIndex: '1', maxHeight: '', margin: '0 auto' }}
+                    />
 ) : (
 
     <StaticImage
@@ -128,6 +137,13 @@ const Category = ({ data, pageContext }) => {
               </div>
             );
           })}
+{visibleItems < posts.length ? (
+  <button className="post-card1" style={{ justifyContent: "center", alignItems: "center" }} onClick={showMoreItems}>
+    Show more
+  </button>
+) : (
+  <div className="post-card1" style={{ justifyContent: "center", alignItems: "center" }}>End of Results Reached</div>
+)}
         </div>
       </div>
     </Layout>

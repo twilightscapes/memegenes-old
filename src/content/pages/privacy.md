@@ -5,6 +5,7 @@ title: Privacy
 scrollable: false
 showZoom: true
 showPageNav: true
+excludeFromRSS: true
 ---
 
 
