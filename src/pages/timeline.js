@@ -80,7 +80,7 @@ const TimeLine = () => {
     }
   }, []);
 
-  
+
 
   const toggleFavorite = (item) => {
     const newFavorites = [...favorites];
@@ -120,9 +120,9 @@ const TimeLine = () => {
 
     const { user } = useContext(AuthContext);
 
-    // if (!user) {
-    //   navigate("/login");
-    // }
+    if (!user) {
+      navigate("/login");
+    }
 
     
 
