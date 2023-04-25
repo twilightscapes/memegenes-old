@@ -6,19 +6,26 @@ const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const fullName = user?.user_metadata?.full_name || 'Unknown';
+  const [fullName, setFullName] = useState('Unknown');
 
   useEffect(() => {
     netlifyIdentity.init();
 
-    // Check if a user is already authenticated
-    const user = netlifyIdentity.currentUser();
-    if (user) {
-      setUser(user);
+    const currentUser = netlifyIdentity.currentUser();
+    if (currentUser) {
+      setUser(currentUser);
+      setFullName(currentUser.user_metadata.full_name);
     }
 
-    netlifyIdentity.on("login", (user) => setUser(user));
-    netlifyIdentity.on("logout", () => setUser(null));
+    netlifyIdentity.on("login", (user) => {
+      setUser(user);
+      setFullName(user.user_metadata.full_name);
+    });
+
+    netlifyIdentity.on("logout", () => {
+      setUser(null);
+      setFullName('Unknown');
+    });
   }, []);
 
   return (

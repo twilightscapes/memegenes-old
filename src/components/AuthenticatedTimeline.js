@@ -1,18 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import useSiteMetadata from "../hooks/SiteMetadata";
 import Layout from "../components/siteLayout";
 import { Helmet } from "react-helmet";
 import TimeAgo from "react-timeago";
 import userRssData from "../util/userRss.json";
-
+import { AuthContext } from "../AuthProvider";
 
 const AuthenticatedTimeline = () => {
-    const { showNav } = useSiteMetadata();
-    const { showDates } = useSiteMetadata();
-    const { postcount } = useSiteMetadata();
-    const [feed, setFeed] = useState([]);
-    const [visibleItems, setVisibleItems] = useState(postcount);
-    const [favorites, setFavorites] = useState([]);
+  const { showNav } = useSiteMetadata();
+  const { showDates } = useSiteMetadata();
+  const { postcount } = useSiteMetadata();
+  const [feed, setFeed] = useState([]);
+  const [visibleItems, setVisibleItems] = useState(postcount);
+  const [favorites, setFavorites] = useState([]);
+
+  const { user } = useContext(AuthContext);
+
+
   
     const combinedFeed = [
       ...favorites,
@@ -101,7 +105,9 @@ const AuthenticatedTimeline = () => {
   };
   
   
-  
+  const fullName = user && user.user_metadata ? user.user_metadata.full_name : 'Unknown';
+
+
 
     const showMoreItems = () => {
       setVisibleItems(visibleItems + postcount);
