@@ -125,8 +125,8 @@ const AuthenticatedTimeline = () => {
 {/* <h1 style={{ position: 'relative', zIndex: '1', margin: '0 auto', textAlign:'center' }}>My Timeline:</h1> */}
 <div className='flexbutt' style={{}}> 
 
-<div className="flexcheek" style={{maxWidth:'15%', position:'sticky', top:'0'}}>
-  <div className="post-card controlpanel" style={{display:'flex', height:'100vh', minWidth:'15%', position:'fixed', alignItems:'center', justifyContent:'start', padding:'1vh 2vw'}}>
+<div className="flexcheek" style={{maxWidth:'20%', position:'sticky', top:'0', zIndex:'1'}}>
+  <div className="post-card controlpanel" style={{display:'flex', height:'100vh', minWidth:'20%', position:'fixed', alignItems:'center', justifyContent:'start', padding:'1vh 2vw',}}>
   <h3>Controls</h3>
   </div>
 </div>
