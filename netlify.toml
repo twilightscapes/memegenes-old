@@ -14,7 +14,7 @@
     Access-Control-Allow-Origin = "*"
 
 [[redirects]]
-  from = "/.netlify/functions/*"
+  from = "/functions/*"
   to = "/api/:splat"
   status = 200
 
