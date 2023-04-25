@@ -21,10 +21,13 @@ const TimeLine = () => {
   const { showDates } = useSiteMetadata()
   const { postcount } = useSiteMetadata()
   const [feed, setFeed] = useState([]);
-  const [visibleItems, setVisibleItems] = useState(postcount); // Add a state variable to track visible items
+  const [visibleItems, setVisibleItems] = useState(postcount); // state variable to track visible items
   const [favorites, setFavorites] = useState([]);
 
-  const combinedFeed = [...favorites, ...feed.filter((item) => !favorites.some((fav) => fav.link === item.link))];
+  const combinedFeed = [
+    ...favorites,
+    ...feed.filter((item) => !favorites.some((fav) => fav.link === item.link)),
+  ];
 
   useEffect(() => {
     const fetchRssFeed = async (rssFeed) => {
@@ -70,6 +73,14 @@ const TimeLine = () => {
 
 
 
+  useEffect(() => {
+    const storedFavorites = localStorage.getItem("favorites");
+    if (storedFavorites) {
+      setFavorites(JSON.parse(storedFavorites));
+    }
+  }, []);
+
+  
 
   const toggleFavorite = (item) => {
     const newFavorites = [...favorites];
