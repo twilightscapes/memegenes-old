@@ -6,7 +6,7 @@ const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [fullName, setFullName] = useState('Unknown');
+  const [userName, setUserName] = useState('');
 
   useEffect(() => {
     netlifyIdentity.init();
@@ -14,25 +14,26 @@ const AuthProvider = ({ children }) => {
     const currentUser = netlifyIdentity.currentUser();
     if (currentUser) {
       setUser(currentUser);
-      setFullName(currentUser.user_metadata.full_name);
+      setUserName(currentUser.email);
     }
 
     netlifyIdentity.on("login", (user) => {
       setUser(user);
-      setFullName(user.user_metadata.full_name);
+      setUserName(user.email);
     });
 
     netlifyIdentity.on("logout", () => {
       setUser(null);
-      setFullName('Unknown');
+      setUserName('');
     });
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, netlifyIdentity, fullName }}>
+    <AuthContext.Provider value={{ user, netlifyIdentity, userName }}>
       {children}
     </AuthContext.Provider>
   );
 };
+
 
 export { AuthContext, AuthProvider };
