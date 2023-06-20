@@ -1,11 +1,15 @@
 {
   "menuItems": [
     {
-      "menutitle": "Discover",
+      "menutitle": "Timeline",
+      "url": "/timeline"
+    },
+    {
+      "menutitle": "Favorites",
       "url": "/tags"
     },
     {
-      "menutitle": "Create",
+      "menutitle": "Discover",
       "url": "/tags"
     },
     {
@@ -13,8 +17,8 @@
       "url": "/archive"
     },
     {
-      "menutitle": "Support",
-      "url": "/admin"
+      "menutitle": "Create",
+      "url": "/tags"
     }
   ]
 }
