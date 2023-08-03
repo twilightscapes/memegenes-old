@@ -1,11 +1,11 @@
 {
   "meta": {
-    "iconimage": "",
+    "iconimage": "/assets/logo.svg",
     "font1": "Titan One",
     "favicon32x32": "/assets/logo.svg",
     "favicon16x16": "/assets/logo.svg",
     "showNav": true,
-    "companyname": "Meme Gene",
+    "companyname": "Meme Genes",
     "siteUrl": "https://memegenes.com",
     "showDates": false,
     "twitterUsername": "memegenesx",
