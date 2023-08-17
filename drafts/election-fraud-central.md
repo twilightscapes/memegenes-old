@@ -5,15 +5,15 @@ slug: /election-fraud-central
 date: 2023-02-11 03:00
 description: Mike is working hard to find any election fraud. 
 youtube:
-  youtuber: https://youtu.be/MQyJmHlNGIQ
+  youtuber: https://youtu.be/kw9Cl9YKZEE
   youtuber2: 
   youtubeshoworiginal: true
   youtubersuggestion1:
   youtubersuggestion2:
   youtubersuggestion3:
-  youtubestart: "48"
-  youtubeend: "68"
-  youtubemute: false
+  youtubestart: "42"
+  youtubeend: "127"
+  youtubemute: true
   youtubecontrols: false
   clicktoplay: false
   customcontrols: true
@@ -28,7 +28,7 @@ isnftforsale: false
 svgzindex: "0"
 comments: true
 shareable: true
-underlayImage: /assets/mypillow-stage.webp
+underlayImage: /assets/pillowtalkBG1.webp
 featuredImage: /assets/election-fraud-promo.webp
 svgImage: /assets/election-fraud-central.svg
 scrollable: false
