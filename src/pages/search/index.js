@@ -99,8 +99,7 @@ const showMoreItems = () => {
 
 
 <div  key={index}
-    className="post-card1"
-    style={{  alignItems:'center'}}
+    className="post-card1" style={{ justifyContent: "center", alignItems: "center" }}
   >
 <Link className="postlink" state={showModals ? { modal: true } : {}} key={node.frontmatter.slug} to={node.frontmatter.slug}>
 

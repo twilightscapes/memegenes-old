@@ -2,7 +2,7 @@
   "menuItems": [
     {
       "menutitle": "Archive",
-      "url": "/tags"
+      "url": "/archive"
     },
     {
       "menutitle": "Contact",
