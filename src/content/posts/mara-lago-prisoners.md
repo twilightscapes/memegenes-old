@@ -9,7 +9,7 @@ description: "A NATIONAL DISGRACE: Photos Leaked of Horrific January 6 Prisoner
   Watch?"
 category: news
 comments: false
-shareable: "true"
+shareable: true
 tags: []
 youtube:
   youtubemute: false
