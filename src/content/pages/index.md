@@ -1,93 +1,87 @@
 ---
-slug: /
-tagline:  Memes are life
-featuredImage: /assets/trump-epstein-promo.webp
+marating1: SP
+marating2: LS
+secondaryImage: /assets/default-user.webp
+addressText: "1234"
+audiotitle: Lamb - Gorecki
+marating3: PH
+marating4: null
 youtube:
-  youtuber: 
-  youtuber2: 
-  youtubeautostart: false
-  youtubemute: false
-  youtubecontrols: false
-  clicktoplay: false
-  customcontrols: false
-  youtubestart: "0"
-  youtubeend: "10"
+  youtubersuggestion3: ""
+  youtuber2: null
   youtubeloop: true
+  customcontrols: false
+  youtuber: null
+  youtubeautostart: false
   youtubeshoworiginal: false
+  clicktoplay: false
+  youtubeend: "10"
+  youtubecontrols: false
+  youtubemute: false
   youtubersuggestion1: ""
   youtubersuggestion2: ""
-  youtubersuggestion3: ""
-audiostart: "20"
+  youtubestart: "0"
 audioend: "5000"
-audiotitle: "Lamb - Gorecki"
-underlayImage: /assets/transparent.png
-profText: 
- <div class="" style="text-align:left;">Memes are a way of life for many and this site is meant to be an outlet for that. This site was created to make it easy to post new memes and have somewhere to archive all of them.</div><br />
-  <p>Please enjoy(and share) the memes! <br /><br />Stay tuned for really big news about the platform that we're building and that we'll soon be offering to everyone. </p>
-addressText: ""
+profText: <div class="" style="text-align:left;">Memes are a way of life for
+  many and this site is meant to be an outlet for that. This site was created to
+  make it easy to post new memes and have somewhere to archive all of
+  them.</div><br /> <p>Please enjoy(and share) the memes! <br /><br />Stay tuned
+  for really big news about the platform that we're building and that we'll soon
+  be offering to everyone. </p>
+scrollable: false
 portfolio:
-  openText: "Thank you for visiting, please swipe to view my portfolio"
+  openText: Thank you for visiting, please swipe to view my portfolio
   closeText: Experience has taught me that good design is not created on a spur of
     the moment, nor does it come naturally. Good design is a thorough and
     interative process with site visitors in mind foremost. Good design is
     identifying a problem for those visitors and removing that problem.
-addressText2: ""
-skillsTitle: "Mad Skills Yo!"
-skillsText: 
-  <dl>
-  <dt>
-  <h2>Overall Skills</h2><div>100%</div>
-  </dt>
-  <dd class="percentage percentage-90"><span class="text">Organization</span> <span class="percent">90%</span></dd>
-  <dd class="percentage percentage-75"><span class="text">Problem Solving</span> <span class="percent">75%</span></dd>
-  <dd class="percentage percentage-85"><span class="text">Outgoing</span> <span class="percent">85%</span></dd>
-  <dd class="percentage percentage-75"><span class="text">Javascript</span> <span class="percent">75%</span></dd>
-  <dd class="percentage percentage-80"><span class="text">UI Design</span> <span class="percent">80%</span></dd>
-  <dd class="percentage percentage-85"><span class="text">UX Design</span> <span class="percent">85%</span></dd>
-  </dl>
+postNumber: "4"
+viewerwarning: You may lose brain cells after viewing this
+nftdrop: 2023-02-11T10:00:00
+slug: /
+audiostart: "20"
+template: index-page
+title: Do these memes make my butt look fat?
+tagline: Memes are life
+featuredImage: /assets/Experiences-Header-8.jpg
+excludeFromRSS: true
+underlayImage: /assets/transparent.png
+svgImage: /assets/transparent.png
+addressText2: "5678"
+skillsText: >-
+  <dl> <dt> <h2>Overall Skills</h2><div>100%</div> </dt> <dd class="percentage
+  percentage-90"><span class="text">Organization</span> <span
+  class="percent">90%</span></dd> <dd class="percentage percentage-75"><span
+  class="text">Problem Solving</span> <span class="percent">75%</span></dd> <dd
+  class="percentage percentage-85"><span class="text">Outgoing</span> <span
+  class="percent">85%</span></dd> <dd class="percentage percentage-75"><span
+  class="text">Javascript</span> <span class="percent">75%</span></dd> <dd
+  class="percentage percentage-80"><span class="text">UI Design</span> <span
+  class="percent">80%</span></dd> <dd class="percentage percentage-85"><span
+  class="text">UX Design</span> <span class="percent">85%</span></dd> </dl>
 
-  <dl>
-  <dt>
-  <h2>Detailed Skills</h2><div>100%</div>
-  </dt>
-  <dd class="percentage percentage-90"><span class="text">Word Perfect</span> <span class="percent">90%</span></dd>
-  <dd class="percentage percentage-85"><span class="text">MS Paint</span> <span class="percent">85%</span></dd>
-  <dd class="percentage percentage-75"><span class="text">Photoshop</span> <span class="percent">75%</span></dd>
-  <dd class="percentage percentage-99"><span class="text">Hacking</span> <span class="percent">99%</span></dd>
-  </dl>
+  <dl> <dt> <h2>Detailed Skills</h2><div>100%</div> </dt> <dd class="percentage percentage-90"><span class="text">Word Perfect</span> <span class="percent">90%</span></dd> <dd class="percentage percentage-85"><span class="text">MS Paint</span> <span class="percent">85%</span></dd> <dd class="percentage percentage-75"><span class="text">Photoshop</span> <span class="percent">75%</span></dd> <dd class="percentage percentage-99"><span class="text">Hacking</span> <span class="percent">99%</span></dd> </dl>
+bumpertext: These guys were bros
+showZoom: true
 cta:
   ctaText: Contact Gene
-  ctaLink: "/contact"
-svgImage: /assets/transparent.png
-secondaryImage: /assets/default-user.webp
-title: Do these memes make my butt look fat?
-sharethis: false
-liarliar: false
-bumpertext: "These guys were bros"
+  ctaLink: /contact
 marate: SICK
-viewerwarning: You may lose brain cells after viewing this
-marating1: SP
-marating2: LS
-marating3: PH
-marating4: 
+skillsTitle: Mad Skills Yo!
+showPageNav: true
 maratingtx1: Souless Perverts
-maratingtx2: Love Story
-maratingtx3: Political Humor
-maratingtx4: 
-template: index-page
-description: A rogue one, out there to change the world, one meme at a time. 
+liarliar: false
+description: A rogue one, out there to change the world, one meme at a time.
 svgzindex: ""
-profTitle: MG Reports
+maratingtx2: Love Story
 coverletter:
   coverText: About Meme Genes
   coverLink: /about
-scrollable: false
-showZoom: true
-showPageNav: true
+sharethis: false
 contentinvideo: false
-nftdrop: "2023-02-11T10:00:00"
-postNumber: "4"
-excludeFromRSS: true
+maratingtx3: Political Humor
+maratingtx4: null
+profTitle: MG Reports
 ---
 <!-- Do not delete -->
 <div>
