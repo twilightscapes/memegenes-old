@@ -13,6 +13,7 @@ shareable: true
 tags: []
 viewerwarning: Viewer Discretion Strongly Advised
 marate: MA
+showZoom: true
 youtube:
   youtubemute: false
   youtubeautostart: false
