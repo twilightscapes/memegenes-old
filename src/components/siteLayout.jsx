@@ -130,7 +130,7 @@ useEffect(() => {
     // Retrieve the selected option from local storage or default to 'grid' or 'swipe'
     const storedArchiveView = localStorage.getItem("archiveView");
     setArchiveView(
-      storedArchiveView || (showSwipe ? "swipe" : "grid")
+      storedArchiveView || (showSwipe ? "grid" : "swipe")
     );
   }
 }, [showSwipe]);
