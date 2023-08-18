@@ -11,12 +11,14 @@ category: news
 comments: false
 shareable: true
 tags: []
+viewerwarning: Viewer Discretion Strongly Advised
+marate: MA
 youtube:
   youtubemute: false
   youtubeautostart: false
   youtubeloop: true
   youtubecontrols: false
-  customcontrols: true
+  customcontrols: false
   clicktoplay: false
 featuredImage: /assets/mara-lago-treatment.webp
 ---

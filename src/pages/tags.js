@@ -46,7 +46,7 @@ const TagIndex = ({ data }) => {
 
         <div className="selectArrow" style={{position:'fixed', top:'', left:'1%', right:'1%',  margin:'-55px auto 0 auto', zIndex:'3', display:'grid', placeSelf:'center',  padding:'',}}>
           <select className="cattags" id="tag-select" value={selectedTag} onChange={handleTagChange}>
-            <option value="">keyword:</option>
+            <option value="">View By Keyword:</option>
             {tags.map(tag => (
               <option key={tag} value={tag}>{tag}</option>
             ))}
@@ -142,18 +142,18 @@ Play Multimedia
           }
 
 {visibleItems === data.allMarkdownRemark.edges.length && (
-  <div className="post-card1" style={{ justifyContent: "center", alignItems: "center" }}>End of Results Reached</div>
+    <div className="post-card1" style={{ justifyContent: "center", alignItems: "center" }}><div className="post-card11" style={{ justifyContent: "center", alignItems: "center", verticalAlign:'center', width:'500px', height:'500px', display:'flex', border:'1px solid red', textAlign:'center', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'', border:'0px solid red', color:'#aaa' }} onClick={showMoreItems}>End of Results Reached</div></div>
 )}
 
 {visibleItems < data.allMarkdownRemark.edges.length && (
-  <button className="post-card1" style={{ justifyContent: "center", alignItems: "center" }} onClick={showMoreItems}>
+  <div className="post-card11" style={{ justifyContent: "center", alignItems: "center" }}><button className="post-card11" style={{ justifyContent: "center", alignItems: "center", verticalAlign:'center', width:'500px', height:'500px', display:'flex', border:'1px solid red', textAlign:'center', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'', border:'0px solid red', color:'#aaa' }} onClick={showMoreItems}>
     Show more
-  </button>
+  </button></div>
 
 )}
 
 {visibleItems >= data.allMarkdownRemark.edges.length && (
-  <div className="post-card1" style={{ justifyContent: "center", alignItems: "center" }}>End of Results Reached</div>
+  <div className="post-card11" style={{ justifyContent: "center", alignItems: "center" }}><div className="post-card11" style={{ justifyContent: "center", alignItems: "center", verticalAlign:'center', width:'500px', height:'500px', display:'flex', border:'1px solid red', textAlign:'center', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'', border:'0px solid red', color:'#aaa' }} onClick={showMoreItems}>End of Results Reached</div></div>
 )}
 
 

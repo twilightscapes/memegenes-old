@@ -1,11 +1,11 @@
 {
   "menuItems": [
     {
-      "menutitle": "View by Keyword",
+      "menutitle": "Archive",
       "url": "/tags"
     },
     {
-      "menutitle": "Contact Gene",
+      "menutitle": "Contact",
       "url": "/contact"
     }
   ]
