@@ -27,7 +27,7 @@ comments: true
 shareable: true
 underlayImage: "/assets/transparent.png"
 featuredImage: /assets/murica-promo.png
-svgImage: /assets/murica.svg
+svgImage: /assets/murica-3.svg
 scrollable: false
 showZoom: true
 showPageNav: true
