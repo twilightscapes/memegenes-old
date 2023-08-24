@@ -2,7 +2,7 @@
 template: blog-post
 title: President Biden to be Special Guest at Disney for the Summer
 slug: /biden-bot
-date: 2023-08-02 16:00
+date: 2023-07-02 16:00
 description: Watch Disney's newest President added to park.
 youtube:
   youtuber: "https://youtu.be/bhC91MTsKn0"
@@ -46,7 +46,7 @@ maratingtx1: Dumb Ass
 maratingtx2: 
 maratingtx3: 
 maratingtx4: 
-spotlight: false
+spotlight: true
 category: memes
 tags:
   - disney
