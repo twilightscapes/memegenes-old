@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: EXCLUSIVE - Trump Mugshot and weight revealed - HaHaHa!!
-slug: /trump-mughshot
+slug: /trump-mugshot
 date: 2023-08-23 03:00
 description: Exclusive! Trump photo and weight revealed!
 youtube:
