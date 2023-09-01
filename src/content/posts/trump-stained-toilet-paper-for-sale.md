@@ -5,8 +5,8 @@ slug: trump-stains
 date: 2023-09-01 15:15
 description: "Trump branded toilet paper now for SALE! "
 category: opinion
-comments: false
-shareable: "true"
+comments: true
+shareable: true
 tags:
   - Trump
 youtube:
