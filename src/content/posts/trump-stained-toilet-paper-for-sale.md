@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: Trump Stained Toilet Paper For Sale
-slug: trump-stains
+slug: trump-stained-toilet-paper-for-sale
 date: 2023-09-01 15:15
 description: "Trump branded toilet paper now for SALE! "
 category: opinion
