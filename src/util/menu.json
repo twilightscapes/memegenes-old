@@ -1,12 +1,12 @@
 {
   "menuItems": [
     {
-      "menutitle": "Archive",
-      "url": "/archive"
+      "menutitle": "View by Keyword",
+      "url": "/tags"
     },
     {
-      "menutitle": "Contact",
-      "url": "/contact"
+      "menutitle": "View Archive",
+      "url": "/archive"
     }
   ]
 }

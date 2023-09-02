@@ -10,7 +10,7 @@ showZoom: true
 shareable: true
 showPageNav: true
 tags:
-  - Trump
+  - trump
 youtube:
   youtubemute: false
   youtubeautostart: false

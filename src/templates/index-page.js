@@ -615,7 +615,7 @@ Click to play
 
 <div className="scroll-container">
 
-
+<h1 className="" style={{textAlign:'center', display:'flex', justifyContent:'center', width:'100%'}}>Popuar Memes Right Now:</h1>
 
 {/* show feature */}
 {showFeature ? (   
