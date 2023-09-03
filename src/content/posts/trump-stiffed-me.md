@@ -28,9 +28,9 @@ isnftforsale: false
 svgzindex: "0"
 comments: false 
 shareable: true
-underlayImage: /assets/frankandbeans-bg.webp
+underlayImage: /assets/mypillow-bg2.webp
 featuredImage: /assets/trump-stiffed-promo.webp
-svgImage: /assets/MyPillowGuy-4.svg
+svgImage: /assets/chyron-trump-stiff.svg
 scrollable: false
 showZoom: true
 showPageNav: true
@@ -45,6 +45,7 @@ maratingtx2: Spontaneous & Sporadic
 maratingtx3: It's Humor - laugh
 maratingtx4: Adult Language
 category: memes
+spotlight: true
 tags:
   - lindell
   - mypillow
@@ -53,8 +54,8 @@ tags:
   - trump
 ---
 
-<div class="contentinside" style="position:relative; z-index:1; min-width:50%; height:auto;  padding:0; left:0; border:0px solid yellow; text-align:center;">
-<object class="" style="height:auto; border:0px solid red;" class="" id="svg1" data="/assets/MyPillowGuyEdit.svg" type="image/svg+xml" alt="animated content" title="animated content" ></object>
+<div class="contentinside" style="position:relative; z-index:0; min-width:50%; height:auto;  padding:0; left:0; border:0px solid yellow; text-align:center;">
+<object class="" style="height:auto; border:0px solid red;" class="" id="svg1" data="/assets/MyPillowGuy-4.svg" type="image/svg+xml" alt="animated content" title="animated content" ></object>
 </div>
 
 

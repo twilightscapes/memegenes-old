@@ -1,11 +1,11 @@
 ---
 template: blog-post
-title: 2020 Election Fraud Network
-slug: /election-fraud-central
-date: 2023-02-11 03:00
-description: Mike is working hard to find any election fraud. 
+title: Chyron Test
+slug: /chyrontest
+date: 2023-09-01 03:00
+description: Chryon Test 
 youtube:
-  youtuber: https://youtu.be/kw9Cl9YKZEE
+  youtuber: https://youtu.be/sg8v500u1PE?si=QNlvopOfQQt2UIgk
   youtuber2: 
   youtubeshoworiginal: true
   youtubersuggestion1:
@@ -13,7 +13,7 @@ youtube:
   youtubersuggestion3:
   youtubestart: "42"
   youtubeend: "127"
-  youtubemute: true
+  youtubemute: false
   youtubecontrols: false
   clicktoplay: false
   customcontrols: true
@@ -28,9 +28,9 @@ isnftforsale: false
 svgzindex: "0"
 comments: true
 shareable: true
-underlayImage: /assets/pillowtalkBG1.webp
+underlayImage: /assets/fox-background.webp
 featuredImage: /assets/election-fraud-promo.webp
-svgImage: /assets/election-fraud-central.svg
+svgImage: /assets/chyron-scroll.svg
 scrollable: false
 showZoom: true
 showPageNav: true
@@ -52,8 +52,8 @@ tags:
   - threetoes
 ---
 
-<div class="contentinside" style="position:relative; z-index:1; min-width:50%; height:auto;  padding:0; left:0; border:0px solid yellow; text-align:center;">
-<object class="" style="height:auto; border:0px solid red;" class="" id="svg1" data="/assets/MyPillowGuyEdit.svg" type="image/svg+xml" alt="animated content" title="animated content" ></object>
+<div class="contentinside" style="position:relative; z-index:0; min-width:50%; height:auto;  padding:0; left:0; border:0px solid yellow; text-align:center;">
+<!-- <object class="" style="height:auto; border:0px solid red;" class="" id="svg1" data="/assets/MyPillowGuy-4.svg" type="image/svg+xml" alt="animated content" title="animated content" ></object> -->
 </div>
 
 
