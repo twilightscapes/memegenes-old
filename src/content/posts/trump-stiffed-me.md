@@ -55,6 +55,19 @@ tags:
 ---
 
 <div class="contentinside" style="position:relative; z-index:0; min-width:50%; height:auto;  padding:0; left:0; border:0px solid yellow; text-align:center;">
+
+<!-- <marquee
+  direction="left"
+  width=""
+  height="200"
+  behavior=""
+  scrolldelay=""
+  scrollamount=""
+  loop="-1"
+  style="position:absolute; z-index:1; min-width:50%; height:auto;  padding:0; top:82%; left:0; border:0px solid yellow; text-align:center; color:#000;">
+  "I'm starting to think Trump stiffed me and I don't know what to do" He still owes me over seven thousand dollars for pillows, as he claims he was told by Trump to "order lots and lots of pillows as Mar-A-Lago patrons would love them".
+  </marquee> -->
+
 <object class="" style="height:auto; border:0px solid red;" class="" id="svg1" data="/assets/MyPillowGuy-4.svg" type="image/svg+xml" alt="animated content" title="animated content" ></object>
 </div>
 
@@ -62,6 +75,7 @@ tags:
 
 
 <div class="contentbody" style="position:relative; top:; z-index:; border:px solid blue; height:100%; margin-top:1%; text-align:left">
+
 
 Mike Lindell, the founder and CEO of MyPillow claims recently that he had a deal to stock Mar-A-Lago with his companys pillows and other products.
 <br /><br />
