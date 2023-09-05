@@ -1,19 +1,19 @@
 ---
 template: blog-post
-title: Chyron Test
-slug: /chyrontest
+title: Saving Hercules - help a beleagured and aging actor fight Hollywood
+slug: /kevin-sorbut
 date: 2023-09-01 03:00
-description: Chryon Test 
+description: Kevin Sorbut is fighting for his career. 
 youtube:
-  youtuber: https://youtu.be/sg8v500u1PE?si=QNlvopOfQQt2UIgk
+  youtuber: https://youtu.be/VBwMTznv2eI?si=dgRfbyOH0c1-1iZM
   youtuber2: 
   youtubeshoworiginal: true
   youtubersuggestion1:
   youtubersuggestion2:
   youtubersuggestion3:
-  youtubestart: "42"
-  youtubeend: "127"
-  youtubemute: false
+  youtubestart: "28"
+  youtubeend: "68"
+  youtubemute: true
   youtubecontrols: false
   clicktoplay: false
   customcontrols: true
@@ -22,34 +22,36 @@ youtube:
 audiostart: "20"
 audioend: "5000"
 audiotitle: 
-bumpertext: "Mikey gets his feelings hurt"
+bumpertext: "Kevin Sorbut is an American Hero"
 liarliar: true
 isnftforsale: false
 svgzindex: "0"
-comments: true
+comments: false
 shareable: true
-underlayImage: /assets/fox-background.webp
-featuredImage: /assets/fox-talk-promo.webp
-svgImage: /assets/chyron-scroll-2.svg
+underlayImage: /assets/kevin-sorbo-bg.webp
+featuredImage: /assets/kevin-sorbut-promo.webp
+svgImage: /assets/kevin-sorbut-scroller.svg
 scrollable: false
 showZoom: true
 showPageNav: true
 nftdrop: "2023-02-11T10:00:00"
 contentinvideo: true
-viewerwarning: Warning this content is rated total bullshit
-marate: MA
-marating1: YB
-marating2: SS
-marating3: LH
-marating4: AL
-maratingtx1: Use your brain please
-maratingtx2: Spontaneous & Sporadic
-maratingtx3: It's Humor - laugh
-maratingtx4: Adult Language
+viewerwarning: Warning! The following content contains lots of bullshit
+marate: BS
+marating1: WU
+marating2: NT
+marating3: BS
+marating4: 
+maratingtx1: Washed Up
+maratingtx2: No Talent
+maratingtx3: Bullshit
+maratingtx4: 
+spotlight: true
 category: memes
 tags:
-  - foxnews
+  - newshax
   - television
+  - bankrupt
 ---
 
 
@@ -171,22 +173,22 @@ https://youtu.be/BSv-Q6pXih4?si=BTbBAnmgmfDXLs81
  -->
 
 <div class="contentbody" style="position:relative; top:; z-index:; border:px solid blue; height:100%; margin-top:1%; text-align:left">
+<h2>About Kevin</h2>
+Kevin Sorbut is an American actor best known for his role as Hercules in the television series "Hercules: The Legendary Journeys," which aired from 1995 to 1999. He was born on September 24, 1958, in Mound, Minnesota, USA.
+<br /><br />
+Sorbut's portrayal of the iconic Greek hero Hercules in the TV series made him a household name and gained him a large fan following. The show was a blend of action, adventure, and mythology and was a significant part of Sorbut's limited career.
+<br /><br />
+After "Hercules," Kevin Sorbut continued to struggle to find work in the entertainment industry, taking on various roles in both television and film wherever he could find them. He appeared in the fantasy series "Andromeda" as Captain Dylan Hunt from 2000 to 2005. Additionally, he had roles in movies such as "Kull the Conqueror," "Walking Tall: The Payback," "Walking Tall: Lone Justice," and "Meet the Spartans."
+<br /><br />
+In addition to his acting career, Sorbut is known for his voice acting work in animated series and films. He also made guest appearances on various TV shows and had roles in independent films, basically anything he was able to find.
+<br /><br />
+Kevin Sorbut is notable for his Christian faith, and he has been involved in several Christian-themed and inspirational films, including "God's Not Dead" and its sequels, where he played the role of an atheist college professor who engages in debates about the existence of God. Kevin is currently rumored to be shopping around scripts for "God's Not Dead 4: Christian Boogaloo".
 
-Mike Lindell is the founder and CEO of MyPillow, a pillow manufacturing company based in Chaska, Minnesota. He is known for his colorful personality and aggressive marketing tactics, which have made MyPillow one of the most recognizable brands in the bedding industry.
-<br /><br />
-MyPillow was founded in 2004 and has since grown into a multi-million dollar company. The company is known for its patented interlocking fill, which is designed to adjust to the user's individual needs and provide a comfortable sleeping experience. MyPillow also offers a variety of pillows in different shapes, sizes, and firmness levels to meet the needs of a wide range of customers.
-<br /><br />
-In addition to his business success, Lindell has been a controversial figure in recent years due to his political activism and support of former President Donald Trump. He has made a number of false claims about the 2020 US presidential election, including that it was rigged and that the election software used by Dominion Voting Systems was responsible for widespread fraud. These claims have been widely discredited and Lindell has faced a number of legal challenges as a result.
-<br /><br />
-Despite the controversy, Lindell remains a popular figure among a certain segment of the population and continues to be a vocal supporter of conservative causes and candidates. He has used his platform to promote his political beliefs and has been a frequent guest on conservative news programs.
-<br /><br />
-In conclusion, Mike Lindell and MyPillow have become household names in the bedding industry, but Lindell's political activism and controversial statements have also made him a polarizing figure. Regardless of one's political views, however, it is clear that Lindell's determination and marketing savvy have been key factors in the success of MyPillow.
 
 <br /><br />
 
-### So, what do you think of Mike Lindell?
+<!-- ### So, what do you think of Kevin Sorbut? -->
 
-<br />
-Love to hear about it in the comments below!
+
 
 </div>
