@@ -5,15 +5,15 @@ import React from "react";
 import styled from "styled-components"
 import Layout from "../components/siteLayout"
 import { Helmet } from "react-helmet"
-// import Map from "../components/contact-map"
-import ChatGPT from "../components/chatgpt"
+import FavoriteFeeds from "../components/FavoriteFeeds";
+
 
 const CustomBox = styled.div`
 
 
 `
 
-function Test() {
+function Favorites() {
 
   
   
@@ -24,14 +24,14 @@ function Test() {
     <CustomBox>
 <Layout>
 <Helmet>
-        <body id="body" className="test" />
+        <body id="body" className="social" />
       </Helmet>
-      test
-<div className="scroll-container" style={{display:'grid', justifyContent:'center', maxWidth:'80vw', height:'60vh', margin:'140px auto 0 auto'}}>
-  test
-<ChatGPT />
 
-</div>
+
+
+<FavoriteFeeds />
+
+
 
 
 
@@ -45,6 +45,6 @@ function Test() {
   );
 }
 
-export default Test;
+export default Favorites;
 
 

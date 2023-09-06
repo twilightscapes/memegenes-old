@@ -99,7 +99,8 @@ const showMoreItems = () => {
 
 
 <div  key={index}
-    className="post-card1" style={{ justifyContent: "center", alignItems: "center" }}
+    className="post-card1"
+    style={{  alignItems:'center'}}
   >
 <Link className="postlink" state={showModals ? { modal: true } : {}} key={node.frontmatter.slug} to={node.frontmatter.slug}>
 
@@ -179,19 +180,12 @@ Play Multimedia
           
         ))}
         
-        {visibleItems === data.allMarkdownRemark.edges.length && (
-    <div className="post-card1" style={{ justifyContent: "center", alignItems: "center" }}><div className="post-card11" style={{ justifyContent: "center", alignItems: "center", verticalAlign:'center', width:'500px', height:'500px', display:'flex', border:'1px solid red', textAlign:'center', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'', border:'0px solid red', color:'#aaa' }} onClick={showMoreItems}>End of Results Reached</div></div>
-)}
-
-{visibleItems < data.allMarkdownRemark.edges.length && (
-  <div className="post-card11" style={{ justifyContent: "center", alignItems: "center" }}><button className="post-card11" style={{ justifyContent: "center", alignItems: "center", verticalAlign:'center', width:'500px', height:'500px', display:'flex', border:'1px solid red', textAlign:'center', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'', border:'0px solid red', color:'#aaa' }} onClick={showMoreItems}>
-    Show more
-  </button></div>
-
-)}
-
-{visibleItems >= data.allMarkdownRemark.edges.length && (
-  <div className="post-card11" style={{ justifyContent: "center", alignItems: "center" }}><div className="post-card11" style={{ justifyContent: "center", alignItems: "center", verticalAlign:'center', width:'500px', height:'500px', display:'flex', border:'1px solid red', textAlign:'center', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'', border:'0px solid red', color:'#aaa' }} onClick={showMoreItems}>End of Results Reached</div></div>
+        {visibleItems < data.allMarkdownRemark.edges.length && (
+  <div className="" style={{display:'flex', flexDirection:'column', justifyContent:'center', gap:'', height:'50vh'}}>
+        <button className="button load-more" onClick={showMoreItems}>
+          Load more
+        </button>
+        </div>
 )}
       </div>
 

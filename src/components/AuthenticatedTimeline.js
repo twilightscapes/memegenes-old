@@ -1,86 +1,169 @@
 import React, { useState, useEffect } from "react";
 import useSiteMetadata from "../hooks/SiteMetadata";
-import Layout from "../components/socialLayout";
+import { Link } from "gatsby"
+import Layout from "../components/siteLayout";
 import { Helmet } from "react-helmet";
 import TimeAgo from "react-timeago";
-import userRssData from "../util/userRss.json";
-
+import userRssData from "../../src/util/userRss.json";
+import Menu from "../components/menu";
+import useNetlifyIdentity from '../components/useNetlifyIdentity';
+import { RiMenuUnfoldFill, RiCloseCircleFill } from "react-icons/ri"
 
 const AuthenticatedTimeline = () => {
-    const { showNav } = useSiteMetadata();
-    const { showDates } = useSiteMetadata();
-    const { postcount } = useSiteMetadata();
-    const [feed, setFeed] = useState([]);
-    const [visibleItems, setVisibleItems] = useState(postcount);
-    const [favorites, setFavorites] = useState([]);
+
+  const [storedFeedUrls, setStoredFeedUrls] = useState([]);
+
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  /* eslint-disable-next-line no-unused-vars */
+  const [isMobile, setIsMobile] = useState(false);
   
-    const combinedFeed = [
-      ...favorites,
-      ...feed.filter((item) => !favorites.some((fav) => fav.link === item.link)),
-    ];
 
-    useEffect(() => {
-      const fetchRssFeed = async (rssFeed) => {
-        try {
-          const response = await fetch(rssFeed.rssFeedUrl);
-          const text = await response.text();
-          const xml = new DOMParser().parseFromString(text, "text/xml");
-          const items = xml.querySelectorAll("item");
-      
-          return Array.from(items).map((item) => {
-            const mediaContent = item.getElementsByTagName("media:content")[0];
-            const imageUrl = mediaContent ? mediaContent.getAttribute("url") : null;
-      
-            return {
-              name: rssFeed.name,
-              title: item.querySelector("title")?.textContent || "",
-              link: item.querySelector("link")?.textContent || "",
-              description: item.querySelector("description")?.textContent || "",
-              pubDate: item.querySelector("pubDate")?.textContent || "",
-              imageUrl: imageUrl,
-              favorite: false // Add the favorite field and set it to false by default
-            };
-          });
-        } catch (error) {
-          console.error(`Failed to fetch RSS feed from ${rssFeed.rssFeedUrl}:`, error);
-          return [];
-        }
-      };
-      
-      
-        const fetchAllFeeds = async () => {
-          if (typeof window !== "undefined") {
-            const feedPromises = userRssData.rssFeeds.map((feed) => fetchRssFeed(feed));
-            const allFeeds = await Promise.all(feedPromises);
-            const mergedFeed = [].concat(...allFeeds);
-      
-            // Sort the merged feeds by their pubDate in descending order (most recent first)
-            const sortedFeed = mergedFeed.sort((a, b) => {
-              return new Date(b.pubDate) - new Date(a.pubDate);
-            });
-      
-            setFeed(sortedFeed);
-          }
-        };
-      
-        fetchAllFeeds();
-      }, []);
-      
+  const resizeMobile = () => {
+    setIsMenuOpen(false);
+    setIsMobile(true);
+    const elements = document.querySelectorAll(".menusnapp");
+    elements.forEach((el) => {
+      el.style.display = "none";
+      el.style.overflow = "hidden";
+      el.style.transition = "transform 1550ms ease-in-out";
+    });
+  };
+
+  const resizeDesk = () => {
+    setIsMenuOpen(true);
+    setIsMobile(false);
+    const elements = document.querySelectorAll(".menusnapp");
+    elements.forEach((el) => {
+      el.style.display = "flex";
+      el.style.transition = "transform 1550ms ease-in-out";
+    });
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedIsMenuOpen = window.localStorage.getItem("isMenuOpen");
+      if (storedIsMenuOpen) {
+        setIsMenuOpen(storedIsMenuOpen === "true");
+      } else {
+        setIsMenuOpen(true); // set default value to true if no value found in local storage
+      }
+    }
+  }, []);
+  
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("isMenuOpen", isMenuOpen);
+    }
+  }, [isMenuOpen]);
+  
+
+  const MenuIcon = isMenuOpen ? RiCloseCircleFill : RiMenuUnfoldFill;
 
 
+
+
+  const { showNav } = useSiteMetadata();
+  const { showDates } = useSiteMetadata();
+  const { postcount } = useSiteMetadata();
+  const [feed, setFeed] = useState([]);
+  const [visibleItems, setVisibleItems] = useState(postcount);
+  const [favorites, setFavorites] = useState([]);
+  const [userSubscriptions, setUserSubscriptions] = useState([]);
+  const [newFeedUrl, setNewFeedUrl] = useState("");
+  const [newFeedName, setNewFeedName] = useState("");
+
+
+  const showMoreItems = () => {
+    setVisibleItems(visibleItems + postcount);
+    };
+    
+
+  const [loggedIn, setLoggedIn] = useState(false);
+  useNetlifyIdentity(setLoggedIn);
+
+  const combinedFeed = [
+    ...favorites,
+    ...feed.filter((item) => !favorites.some((fav) => fav.link === item.link)),
+  ];
+
+  // filter out favorited items from combinedFeed
+  const filteredFeed = combinedFeed.filter((item) => !item.favorite);
+
+  useEffect(() => {
+    const fetchRssFeed = async (rssFeed) => {
+      try {
+        const response = await fetch(rssFeed.rssFeedUrl);
+        const text = await response.text();
+        const xml = new DOMParser().parseFromString(text, "text/xml");
+        const items = xml.querySelectorAll("item");
+
+        return Array.from(items).map((item) => {
+          const mediaContent = item.getElementsByTagName("media:content")[0];
+          const imageUrl = mediaContent ? mediaContent.getAttribute("url") : null;
+
+          return {
+            name: rssFeed.name,
+            title: item.querySelector("title")?.textContent || "",
+            link: item.querySelector("link")?.textContent || "",
+            description: item.querySelector("description")?.textContent || "",
+            pubDate: item.querySelector("pubDate")?.textContent || "",
+            imageUrl: imageUrl,
+            favorite: false, // Add the favorite field and set it to false by default
+          };
+        });
+      } catch (error) {
+        console.error(`Failed to fetch RSS feed from ${rssFeed.rssFeedUrl}:`, error);
+        return [];
+      }
+    };
+
+    const fetchAllFeeds = async () => {
+      if (typeof window !== "undefined") {
+        const feedPromises = [...userRssData.rssFeeds, ...userSubscriptions].map((feed) => fetchRssFeed(feed));
+        const allFeeds = await Promise.all(feedPromises);
+        const mergedFeed = [].concat(...allFeeds);
+    
+        // Add the feedUrl property to each item
+        mergedFeed.forEach((item) => {
+          const feed = userRssData.rssFeeds.find((f) => f.name === item.name) || userSubscriptions.find((f) => f.name === item.name);
+          item.feedUrl = feed ? feed.rssFeedUrl : "";
+        });
+    
+        // Sort the merged feeds by their pubDate in descending order (most recent first)
+        const sortedFeed = mergedFeed.sort((a, b) => {
+          return new Date(b.pubDate) - new Date(a.pubDate);
+        });
+    
+        setFeed(sortedFeed);
+      }
+    };
+    
+  
+    fetchAllFeeds();
+  }, [userSubscriptions]);
 
   useEffect(() => {
     const storedFavorites = localStorage.getItem("favorites");
     if (storedFavorites) {
       setFavorites(JSON.parse(storedFavorites));
     }
+  
+    const storedSubscriptions = localStorage.getItem("userSubscriptions");
+    if (storedSubscriptions) {
+      const parsedSubscriptions = JSON.parse(storedSubscriptions);
+      setUserSubscriptions(parsedSubscriptions);
+    
+      // Update the stored feed URLs
+      const urls = parsedSubscriptions.map((subscription) => subscription.rssFeedUrl);
+      setStoredFeedUrls(urls);
+    }
   }, []);
-
-
+  
+    
 
   const toggleFavorite = (item) => {
     const newFavorites = [...favorites];
-  
+
     if (favorites.some((favorite) => favorite.link === item.link)) {
       // If the item is already in favorites, remove it
       const index = newFavorites.findIndex((favorite) => favorite.link === item.link);
@@ -91,12 +174,12 @@ const AuthenticatedTimeline = () => {
       newFavorites.push(item);
       item.favorite = true;
     }
-  
+    
     setFavorites(newFavorites);
-  
+    
     // Save the new favorites to localStorage
     localStorage.setItem("favorites", JSON.stringify(newFavorites));
-  
+    
     // Update the favorite status of the item in the feed
     const newFeed = feed.map((feedItem) => {
       if (feedItem.link === item.link) {
@@ -104,149 +187,249 @@ const AuthenticatedTimeline = () => {
       }
       return feedItem;
     });
-  
+    
     setFeed(newFeed);
+
   };
-  
-  
+
   const createExcerpt = (html, maxLength) => {
     const strippedText = new DOMParser().parseFromString(html, 'text/html').body.textContent;
     return strippedText.length > maxLength ? `${strippedText.slice(0, maxLength)}...` : strippedText;
   };
+  
+  
+  // const addSubscription = () => {
+  //   if (newFeedUrl && newFeedName) {
+  //     const newSubscription = {
+  //       rssFeedUrl: newFeedUrl,
+  //       name: newFeedName,
+  //     };
+  //     const updatedSubscriptions = [...userSubscriptions, newSubscription];
+  //     setUserSubscriptions(updatedSubscriptions);
+  //     localStorage.setItem("userSubscriptions", JSON.stringify(updatedSubscriptions));
+  
+  //     setNewFeedUrl("");
+  //     setNewFeedName("");
+  //   }
+  // };
+  
+  const uniqueSubscriptions = [...new Set(userSubscriptions.map(subscription => subscription.name))];
 
-  // const fullName = user && user.user_metadata ? user.user_metadata.full_name : 'Unknown';
-
-
-    const showMoreItems = () => {
-      setVisibleItems(visibleItems + postcount);
+  const addSubscription = () => {
+    const newSubscription = {
+      name: newFeedName,
+      url: newFeedUrl,
     };
+  
+    // Check if subscription already exists
+    const subscriptionExists = userSubscriptions.some(
+      (subscription) => subscription.name === newFeedName
+    );
+  
+    if (!subscriptionExists) {
+      setUserSubscriptions([...userSubscriptions, newSubscription]);
+      setNewFeedName("");
+      setNewFeedUrl("");
+    }
+  
+    // Check if the RSS feed URL is already stored in local storage
+    if (storedFeedUrls.includes(newSubscription.rssFeedUrl)) {
+      return;
+    }
+  
+    const updatedSubscriptions = [...userSubscriptions, newSubscription];
+    setUserSubscriptions(updatedSubscriptions);
+    localStorage.setItem("userSubscriptions", JSON.stringify(updatedSubscriptions));
+  
+    // Update the stored feed URLs
+    const urls = [...storedFeedUrls, newSubscription.rssFeedUrl];
+    setStoredFeedUrls(urls);
+  };
+  
+  
+  
 
-  return (
 
-      <Layout>
-        <Helmet>
-          <body id="body" className="social" />
-        </Helmet>
+return (
+<Layout>
+<Helmet>
+<body id="body" className="social" />
+</Helmet>
+{showNav ? (
+    <div className="spacer" style={{ height: "70px", border: "0px solid yellow" }}></div>
+  ) : (
+    ""
+  )}
 
-        {showNav ? (
-        <div className="spacer" style={{ height: "70px", border: "0px solid yellow" }}></div>
-      ) : (
-        ""
-      )}
-{/* <h1 style={{ position: 'relative', zIndex: '1', margin: '0 auto', textAlign:'center' }}>My Timeline:</h1> */}
-<div className='flexbutt' style={{}}> 
 
-<div className="flexcheek" style={{maxWidth:'20%', position:'sticky', top:'0', zIndex:'1'}}>
-  <div className="post-card controlpanel" style={{display:'flex', height:'100vh', minWidth:'20%', position:'fixed', alignItems:'center', justifyContent:'start', padding:'1vh 2vw',}}>
-  <h3>Controls</h3>
-  </div>
+
+
+        <div
+          className="pagemenu panel"
+          style={{
+            position: "fixed",
+            bottom: "20px",
+            zIndex: "4",
+            left: "1vw",
+            right: "",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "auto",
+            maxWidth: "80vw",
+            margin: "0 auto",
+            gap: "5vw",
+            background: "rgba(0, 0, 0, .5)",
+            padding: "",
+            border: "1px solid #666",
+            borderRadius: "",
+            textShadow: "0 1px 1px rgba(0, 0, 0, .7)",
+            // fontSize: "clamp(2rem, 3vw, 3rem)",
+            verticalAlign: "center",
+          }}
+        >
+          <div
+            className="menusnapp"
+            style={{
+              gap: "0",
+              padding: "2vh 4vw",
+              alignItems: "center",
+              display: isMenuOpen ? "block" : "none",
+            }}
+          >
+
+<div className="flexbutt" style={{width:'100%', gap:'2vw'}}>
+
+<div className="contact-form flexcheek" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', minWidth:'30vw' }}>
+<h4>Add A Feed:</h4>
+        <input
+          type="text"
+          placeholder="Feed name"
+          value={newFeedName}
+          onChange={(e) => setNewFeedName(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Feed URL"
+          value={newFeedUrl}
+          onChange={(e) => setNewFeedUrl(e.target.value)}
+/>
+<button className="button" onClick={addSubscription}>Add Subscription</button>
+</div>
+<div className="flexcheek" style={{ minWidth: '', maxHeight: '40vh', overflow: 'scroll', border:'1px solid #333', padding:'100px 3% 0 3%', borderRadius:'8px', textAlign:'center', position:'relative' }}>
+<h3>Latest Subscribed Feeds:</h3>
+
+<ul style={{display:'flex', flexDirection:'column'}}>
+  {uniqueSubscriptions.map((subscription, index) => (
+    <li key={index}>{subscription}</li>
+  ))}
+</ul>
+
+
+        <Link to="/favorites" className="button" style={{position:'absolute',  top:'10px', left:'0', right:'0', width:'70%', margin:'0 auto'}} >Manage Feeds</Link>
+
 </div>
 
 
-<div className="contentpanel grid-container" style={{ marginTop: "1rem" }}>
+</div>   
+
+          </div>
+          <button
+            onClick={isMenuOpen ? resizeMobile : resizeDesk}
+            aria-label={isMenuOpen ? "Collapse menu" : "Expand menu"}
+            style={{ cursor: "pointer", padding: "8px", color: "#999", fontSize: 'clamp(2rem, 3vw, 3rem)' }}
+          >
+            <MenuIcon />
+          </button>
+        </div>
+
+
+
+
+
+
+
+  {/* <div className="contentpanel grid-container" style={{ marginTop: "1rem" }}>
+          <div className="sliderSpacer" style={{ height: "", paddingTop: "", display: "" }}></div>
+
+      {favorites.map((item, index) => (
+        <div className="post-card" key={index}>
+          <div className="post-header">
+            <h3 className="post-title">
+              <a href={item.link} target="_blank" rel="noopener noreferrer">
+                {item.title}
+              </a>
+            </h3>
+            <button onClick={() => toggleFavorite(item)}>
+              {item.favorite ? "Unfavorite" : "Favorite"}
+            </button>
+          </div>
+          <div className="post-meta">
+            <span className="post-source">{item.name}</span>
+            {showDates && <TimeAgo date={item.pubDate} />}
+          </div>
+          <div className="post-content">
+            {item.imageUrl && (
+              <img src={item.imageUrl} alt={item.title} className="post-image" />
+            )}
+            <p className="post-excerpt">{createExcerpt(item.description, 150)}</p>
+          </div>
+        </div>
+      ))}
+    </div> */}
+
+<div className="contentpanel grid-container" style={{ marginTop: "" }}>
           <div className="sliderSpacer" style={{ height: "", paddingTop: "", display: "" }}></div>
 
 
 
-          {combinedFeed.slice(0, visibleItems).map((item, index) => (
-          
-
-          <div className="post-card1" style={{ justifyContent: "end", alignItems: "center", position:'relative' }} key={index}>
-
-
-
-
-  <a className="postlink" href={item.link} rel="noopener noreferrer">
-    {item.imageUrl && (
-      <img className="featured-image1" src={item.imageUrl} alt={item.title} style={{ position: 'relative', zIndex: '1', maxHeight: '', margin: '0 auto' }} />
-    )}
-
-    <div className="post-content" style={{display:'flex', flexDirection:'column', justifyContent:'end', width:'100%', height:'', position:'relative', background:'', padding:'0', margin:'0 auto 0 auto', textAlign:'center', overFlow:'hidden'}}>
-      
-      <div className="panel" style={{display:'flex', flexDirection:'column', justifyContent:'space-between', alignItems:'center', margin:'10px auto', maxWidth:'80vw', gap:'.4vw', height:'', textAlign:'center', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)',  background:'rgba(0, 0, 0, 0.7)', borderRadius:'', color:'#aaa' }}>
-      {/* <h2 onClick={() => toggleFavorite(item)}>
-  {item.favorite ? "⭐" : "☆"} {item.name} - {item.title}
-</h2> */}
-
-
-
-
-
-
-
-
-
-
-<h2 style={{textAlign:'left', textWrap:'balance'}}>
-  {item.name} - {item.title}
-</h2>
-<p style={{textAlign:'left', textWrap:'balance', fontSize:'85%'}}>
-      {createExcerpt(item.description, 200)}
-    </p>
+          {filteredFeed.slice(0, visibleItems).map((item, index) => (
+  <div className="post-card1" key={index} style={{ justifyContent: "center", alignItems: "center" }}>
+    <a className="postlink" href={item.link} rel="noopener noreferrer">
+      {item.imageUrl && (
+        <img src={item.imageUrl} alt={item.title} className="featured-image1" />
+      )}
+      <div className="post-content" style={{display:'flex', flexDirection:'column', justifyContent:'start', gap:'2vh', width:'100%', height:'', position:'relative', background:'', padding:'0 1vw', margin:'2vh auto 0 auto', textAlign:'', overFlow:'hidden'}}>
+        <h3 className="post-title">{item.title}</h3>
+        <p className="post-excerpt">{createExcerpt(item.description, 150)}</p> 
       </div>
-
-      {/* {showDates ? ( */}
-        <p style={{position:'', textAlign:'center', border:'0px solid red', fontSize:'70%', minWidth:'100px'}}>
-          <TimeAgo date={item.pubDate} />
-        </p>
-      {/* ) : (
-        ""
-      )} */}
+    </a>
+    <div className="post-meta" style={{display:'flex', justifyContent:'space-between', alignItems:'center', margin:'0 auto', width:'auto', maxWidth:'80vw', margin:'0 auto', textAlign:'center', padding:'1vh 2vw', fontSize:'clamp(1rem, 1vw, 1rem)', gap:'2vw', }}>
+    <a
+  href={item.feedUrl} // Set the href to the feed URL
+  className="postlink"
+  onClick={(e) => {
+    e.preventDefault();
+    addSubscription(item);
+    toggleFavorite(item);
+  }}
+  style={{ border: 'none', background: 'none' }}
+>
+  {item.name}
+</a>
+      {showDates && <TimeAgo date={item.pubDate} />}
     </div>
-  </a>
-  {!item.favorite && (
-  <button
-    className="star-button"
-    onClick={(event) => {
-      event.preventDefault();
-      toggleFavorite(item);
-    }}
-    style={{ cursor: "pointer", background: "none", border: "none", position:'relative', top:'-10px', right:'10px', zIndex:'2' }}
-  >
-    ☆
+    <button onClick={() => toggleFavorite(item)} style={{position:''}}>
+      {item.favorite ? "Unfavorite" : "☆"}
+    </button>
+  </div>
+))}
+
+ 
+
+{visibleItems < filteredFeed.length && (
+  <div className="load-more-wrapper" style={{display:'flex', flexDirection:'column', justifyContent:'center', gap:'', width:'', height:''}}>
+  <button className="button load-more" onClick={showMoreItems}>
+    Load more
   </button>
-)}
-{item.favorite && (
-  <button
-    className="star-button"
-    onClick={(event) => {
-      event.preventDefault();
-      toggleFavorite(item);
-    }}
-    style={{ cursor: "pointer", background: "none", border: "none", position:'relative', top:'-10px', right:'10px', zIndex:'2' }}
-  >
-    ⭐
-  </button>
-)}
-</div>
+  </div>
+      )}
 
-          
+    </div>
 
-          
-        ))}
+</Layout>
 
-
-
-{visibleItems < feed.length && (
-            
-              <button className="post-card1" style={{ justifyContent: "center", alignItems: "center" }} onClick={showMoreItems} >
-                Show more
-              </button>
-            
-          )}
-{visibleItems === feed.length && (
-  <div style={{ textAlign: 'center', margin: '1rem 0' }}>End of Results Reached</div>
-)}
-        
-      </div>
-      </div>
-      </Layout>
-
-  );
+);
 };
-
-
-
-
 
 export default AuthenticatedTimeline;

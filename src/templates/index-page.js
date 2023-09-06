@@ -64,6 +64,7 @@ const HomePage = ({ data }) => {
     const YouTubeAutostart = frontmatter.youtube.youtubeautostart
     const SkillsText = frontmatter.skillsText
     const coverText = frontmatter.coverletter.coverText
+    const postCount = frontmatter.postCount
     const { showNav } = useSiteMetadata()
     const { showInfo } = useSiteMetadata()
     const { showFeature } = useSiteMetadata()
@@ -615,11 +616,11 @@ Click to play
 
 <div className="scroll-container">
 
-<h1 className="" style={{textAlign:'center', display:'flex', justifyContent:'center', width:'100%'}}>Popuar Memes Right Now:</h1>
+
 
 {/* show feature */}
 {showFeature ? (   
-<section id="feature" order="1" name="feature" className="print scroll-area" style={{ display:'', height:'90vh', maxHeight:'', margin:'0 0 0 0', padding:'0 0 10px 0', position:'relative'}}>
+<section id="feature" order="1" name="feature" className="print scroll-area" style={{ display:'', height:'100vh', maxHeight:'', margin:'-20px 0 0 0', padding:'0 0 10px 0', position:'relative'}}>
   <article>
 
   <div className=""  >
@@ -771,8 +772,7 @@ style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'relative', zI
 {showPosts ? (
   <section id="showPosts" order="3" className="scroll-area" style={{display:'block', height:'',  minHeight:'', position:'relative', zIndex:'0', overflow:'visible', margin:'0 auto', padding:'0 0 0 0', border:'0px solid blue'}}>
   {/* <TwilightLogo className="bglogo darkened" /> */}
-
-<div className="contentpanel-NOswipe grid-container">
+  <div className="contentpanel grid-container">
 
 <div className="sliderSpacer" style={{height:'', paddingTop:'', display:''}}></div>
 <BlogListHome data={posts} />
@@ -990,7 +990,7 @@ query HomeQuery($id: String!) {
   posts: allMarkdownRemark(
     sort: [{frontmatter: {spotlight: ASC}}, {frontmatter: {date: DESC}}]
     filter: {frontmatter: {template: {eq: "blog-post"}}}
-    limit: 9
+    limit: 6
   ) {
     edges {
       node {

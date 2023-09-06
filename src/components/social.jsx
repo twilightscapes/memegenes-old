@@ -1,10 +1,10 @@
 import * as React from "react"
 // import useSiteMetadata from "../hooks/SiteMetadata"
 // import ScrollAnimation from 'react-animate-on-scroll'
-
+import Xlogo from "../img/xcorp-logo.svg"
 
 // import Install from "../components/Install-footer"
-import Icons from "../util/socialmedia.json"
+import Icons from "../../src/util/socialmedia.json"
 // import { FaHandPointDown } from "react-icons/fa"
 
 import {
@@ -49,7 +49,7 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
       )}
       {icons.icon === "twitter" ? (
         <a aria-label="Link to Twitter" title="Twitter" className="social" href={icons.url} rel="noreferrer" target="_blank">
-          <RiTwitterFill />
+          <Xlogo style={{maxWidth:'30px'}} />
         </a>
       ) : (
         ""

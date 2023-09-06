@@ -4,7 +4,7 @@ import useSiteMetadata from "../hooks/SiteMetadata"
 // import Theme from "../components/theme"
 // import Consent from "./Consent"
 // import Install from "./install-footer"
-import Icons from "../util/socialmedia.json"
+import Icons from "../../src/util/socialmedia.json"
 import {
   RiFacebookBoxFill,
   RiTwitterFill,
@@ -22,6 +22,7 @@ import {
   RiBehanceFill,
 } from "react-icons/ri"
 import { FaWordpress, FaVk } from "react-icons/fa"
+import Xlogo from "../img/xcorp-logo.svg"
 
 
 import { Link } from "gatsby"
@@ -53,7 +54,8 @@ const sIcons = Icons.socialIcons.map((icons, index) => {
       )}
       {icons.icon === "twitter" ? (
         <a aria-label="Link to Twitter" title="Twitter" className="social" href={icons.url} rel="noreferrer" target="_blank">
-          <RiTwitterFill />
+          {/* <RiTwitterFill /> */}
+          <Xlogo style={{maxWidth:'30px'}} />
         </a>
       ) : (
         ""
@@ -235,7 +237,7 @@ export default function Footer() {
   
 
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy;
-{/* {(new Date().getFullYear())}  */}
+{(new Date().getFullYear())} 
 &nbsp;
  {companyname}
 </div>
@@ -246,7 +248,7 @@ export default function Footer() {
 <br />
 <br /> */}
 
-<a href="https://completeweb.site" rel="noreferrer">Web App by Complete Web</a> &nbsp; | &nbsp; <a href={speedIt} rel="noreferrer">Site Report Card</a>
+<a href="https://piratesocial.org" rel="noreferrer">Web App by PIRATE</a> &nbsp; | &nbsp; <a href={speedIt} rel="noreferrer">Site Report Card</a>
 </div>
 <br />
 <br />
