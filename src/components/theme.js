@@ -12,7 +12,7 @@ const Theme = () => {
           setColorMode(colorMode === "default" ? "dark" : "default")
             // window.location.reload()
         }}
-        aria-label="Theme Color"
+        aria-label="light dark light"
       >
         <div 
         // sx={themeStyles.modeIcons} 
