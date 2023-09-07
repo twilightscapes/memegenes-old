@@ -36,7 +36,7 @@ scrollable: false
 showZoom: true
 showPageNav: true
 nftdrop: "2023-03-05T10:00:00"
-contentinvideo: true
+contentinvideo: false
 viewerwarning: Viewer Discretion Strongly Advised
 marate: MA
 marating1: EW
@@ -133,7 +133,11 @@ opacity:0;
 
 
 
-
+<img class="" src="/assets/swammy-mammas-promo2.webp" width="100%" style=" z-index:-1; opacity:;
+/* animation: kariFilter1 6s ease-in-out;
+animation-delay: 4s;
+animation-iteration-count:infinite; */
+" />
 
 
 
