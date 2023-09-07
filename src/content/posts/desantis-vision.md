@@ -1,9 +1,9 @@
 ---
 template: blog-post
-title: The Desantis Vision For America - Are you ready?
+title: The DeSantis Vision For America - Are you ready?
 slug: /desantis-vision
 date: 2023-09-07 16:00
-description: Ramaswamy will say anything and sell anything in order to get your vote.
+description: Ron and Casey DeSantis are what is wrong America. 
 youtube:
  youtuber: "https://www.youtube.com/embed/mVLrBJYGxk4"
  youtuber2: 
