@@ -26,7 +26,7 @@ bumpertext: "Make sure to stand behind Alec Baldwin"
 liarliar: true
 isnftforsale: false
 svgzindex: "0"
-comments: true
+comments: false
 shareable: true
 underlayImage: /assets/rust-props.webp
 featuredImage: /assets/rust-scene-promo.webp

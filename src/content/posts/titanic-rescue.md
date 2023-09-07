@@ -25,7 +25,7 @@ audiotitle: "Liar Liar!"
 liarliar: false
 isnftforsale: false
 svgzindex: "0"
-comments: true
+comments: false
 shareable: true
 underlayImage: /assets/titanic-underlay.webp
 featuredImage: /assets/titanic-tourism.webp

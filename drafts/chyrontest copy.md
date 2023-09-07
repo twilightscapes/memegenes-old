@@ -26,7 +26,7 @@ bumpertext: "Mikey gets his feelings hurt"
 liarliar: true
 isnftforsale: false
 svgzindex: "0"
-comments: true
+comments: false
 shareable: true
 underlayImage: /assets/fox-background.webp
 featuredImage: /assets/fox-talk-promo.webp

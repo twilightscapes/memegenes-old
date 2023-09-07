@@ -25,7 +25,7 @@ audiotitle:
 liarliar: true
 isnftforsale: false
 svgzindex: "0"
-comments: true
+comments: false
 shareable: true
 underlayImage: /assets/sparklemotion.webp
 featuredImage: /assets/sparklemotion-promo.webp

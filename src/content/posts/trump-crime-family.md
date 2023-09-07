@@ -24,7 +24,7 @@ audiotitle: "Poor Babies! Click here to laugh"
 liarliar: false
 isnftforsale: false
 svgzindex: "0"
-comments: true
+comments: false
 shareable: true
 underlayImage: 
 featuredImage: /assets/trump-crime-family.webp

@@ -26,7 +26,7 @@ bumpertext: ""
 liarliar: true
 isnftforsale: false
 svgzindex: "0"
-comments: true
+comments: false
 shareable: true
 underlayImage: 
 featuredImage: /assets/biden-is-lost-promo.webp

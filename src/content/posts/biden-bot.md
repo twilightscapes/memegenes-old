@@ -26,7 +26,7 @@ bumpertext: "Disney Hall of Presidents adds Biden"
 liarliar: true
 isnftforsale: false
 svgzindex: "0"
-comments: true
+comments: false
 shareable: true
 underlayImage: /assets/curtains.webp
 featuredImage: /assets/biden-bot.webp

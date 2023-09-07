@@ -26,7 +26,7 @@ bumpertext: "Rated HB for CrackHead"
 liarliar: true
 isnftforsale: false
 svgzindex: "0"
-comments: true
+comments: false
 shareable: true
 underlayImage: /assets/hunter-party-underlay.webp
 featuredImage: /assets/hunter-rockstar-promo.webp

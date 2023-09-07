@@ -3,7 +3,7 @@ template: blog-post
 title: The DeSantis Vision For America - Are you ready?
 slug: /desantis-vision
 date: 2023-09-07 16:00
-description: Ron and Casey DeSantis are what is wrong America. 
+description: Ron and Casey DeSantis are what is wrong with America. 
 youtube:
  youtuber: "https://www.youtube.com/embed/mVLrBJYGxk4"
  youtuber2: 

@@ -26,7 +26,7 @@ bumpertext: "Trump Water - the only thing Trump can make wet"
 liarliar: true
 isnftforsale: false
 svgzindex: "0"
-comments: true
+comments: false
 shareable: true
 underlayImage: /assets/trump-water-bg.webp
 featuredImage: /assets/trump-water-promo.webp

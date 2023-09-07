@@ -26,7 +26,7 @@ bumpertext: ""
 liarliar: true
 isnftforsale: false
 svgzindex: "0"
-comments: true
+comments: false
 shareable: true
 underlayImage: /assets/transparent.png
 featuredImage: /assets/yellowstone-promo.webp

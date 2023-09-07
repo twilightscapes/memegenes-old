@@ -14,6 +14,7 @@ tags: []
 viewerwarning: Viewer Discretion Strongly Advised
 marate: MA
 showZoom: true
+showPageNav: true
 youtube:
   youtubemute: false
   youtubeautostart: false

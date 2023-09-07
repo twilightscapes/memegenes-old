@@ -26,7 +26,7 @@ bumpertext: "Like two catepillars fighting for a hole in the dirt"
 liarliar: true
 isnftforsale: false
 svgzindex: "0"
-comments: true
+comments: false
 shareable: true
 underlayImage: /assets/kimberly-makeup-bg.webp
 featuredImage: /assets/kimberly-makeup-promo.webp

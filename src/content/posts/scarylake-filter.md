@@ -26,7 +26,7 @@ bumpertext: "Oh No, Ma Face!"
 liarliar: true
 isnftforsale: false
 svgzindex: "0"
-comments: true
+comments: false
 shareable: true
 underlayImage: /assets/tv-crew.webp
 featuredImage: /assets/Skari-no-filter.webp
