@@ -10,7 +10,7 @@ const NotFound = () => (
   <Layout className="not-found-page">
     <Seo title="Page not found" />
 
-      <header>
+      <header className="tvscreen"></header>
 
         {/* <AiFillRobot
           style={{
@@ -20,27 +20,31 @@ const NotFound = () => (
         textAlign:'center'
           }}
         /> */}
- <div style={{display:'flex', justifyContent:'center', gap:'30px', width:'100vw', position:'absolute', zIndex:'1', top:'70vh', border:'0px solid'}}>
+ <div style={{display:'grid', justifyContent:'center', gap:'30px', height:'100vh', width:'100vw',  border:'0px solid', background:'rgba(0, 0, 0, .8)'}}>
 
-<StaticImage src="../img/moose.webp" alt="Todd builds Web Apps" style={{height:'auto', position:'fixed', top:'100px', left:'0', zIndex:'-1', width:'100vw', maxHeight:'60vh',  objectFit:'cover', overflow:'', border:'0px solid red !important'}}  />
+  
 
-
-        {/* <h1 className="headline1" style={{fontSize:'200%'}}>Well, Darn.</h1>
-        <p className="headline1" style={{fontSize:'150%', margin:'2rem'}}>
-          That wasn't supposed to happen.
-        </p> */}
+ <StaticImage src="../img/moose.webp" alt="Todd builds Web Apps" style={{height:'auto', position:'fixed', top:'80px', left:'0', zIndex:'', width:'100vw', maxHeight:'60%',  objectFit:'contain', overflow:'',}}  />
 
 
-     
+{/* <h1 className="headline1" style={{fontSize:'200%'}}>Well, Darn.</h1> */}
+<p className="headline1" style={{fontSize:'', margin:'2rem auto'}}>
+  
+</p>
+
+<div style={{display:'flex',}}>
         <Link to="/" className="button">
         <RiArrowLeftSLine className="icon -left" />
         Back to Homepage
       </Link>
       <Link to="/contact" className="button">
-        Report this <RiBugLine className="icon -right" />
+        Report this &nbsp;<RiBugLine className="icon -right" />
       </Link></div>
 
-</header>
+      
+      </div>
+
+
   </Layout>
 )
 
