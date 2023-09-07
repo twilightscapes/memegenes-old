@@ -1,9 +1,9 @@
 ---
 template: blog-post
-title: Matt Stopped by local highschool before CPAC
-slug: /matt-venmo
-date: 2023-08-01 22:00
-description: Hit Me Up On My Venmo, YO!
+title: Matty the "Venmo Valentine" wants to be your Venmo buddy - BFFs 4 EVAR!
+slug: /venmo-valentine
+date: 2023-09-05 22:00
+description: Matt Stopped by local highschool before CPAC
 youtube:
  youtuber: "https://youtu.be/9S_Q0h8Dz5c"
  youtuber2: 
@@ -28,7 +28,7 @@ youtubeautostart: false
 youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
-comments: true
+comments: false
 shareable: true
 underlayImage: /assets/matt-venmo-underage-girls-background.webp
 featuredImage: /assets/matt-gaetz-venmo-promo.webp

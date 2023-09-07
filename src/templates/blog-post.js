@@ -1295,8 +1295,8 @@ zindex:'1'
   <div className="article-header" style={{textAlign:'center', paddingTop:'1rem', height:'auto', color:'', borderRadius:'12px'}}>
     
             <h1 className="headline panel" style={{color:'#ddd', borderRadius:''}}>{frontmatter.title}</h1>
-            <time sx={{color: "muted"}}>{frontmatter.date}</time>
-            Posted: <TimeAgo date={frontmatter.date} style={{color:''}} />
+            <time sx={{color: ""}}>{frontmatter.date}</time>
+            Posted: <TimeAgo date={frontmatter.date} style={{color:'inherit !important'}} />
            
            {/* <Link to={`/category/${frontmatter.category}`}>Category:{frontmatter.category}</Link>
 

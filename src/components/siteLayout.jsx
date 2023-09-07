@@ -403,9 +403,9 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
 
 {showSearch ? (
 <div className="searchIcon">
-   <Link aria-label="search" to="/search/" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'0px', textAlign:'center'}}>
+   <Link className="themetext" aria-label="search memegenes" to="/search/" style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', marginTop:'0px', textAlign:'center'}}>
     <SearchIcon style={{height:'30px'}} />
-    <span className="themetext">search</span>
+    search
    </Link>
         </div>
       ) : (
