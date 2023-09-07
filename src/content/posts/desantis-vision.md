@@ -2,7 +2,7 @@
 template: blog-post
 title: The Desantis Vision For America - Are you ready?
 slug: /desantis-vision
-date: 2023-09-06 22:00
+date: 2023-09-07 16:00
 description: Ramaswamy will say anything and sell anything in order to get your vote.
 youtube:
  youtuber: "https://www.youtube.com/embed/mVLrBJYGxk4"
