@@ -772,12 +772,12 @@ style={{height:'auto', width:'100vw', maxHeight:'100vh', position:'relative', zI
 {showPosts ? (
   <section id="showPosts" order="3" className="scroll-area" style={{display:'block', height:'',  minHeight:'', position:'relative', zIndex:'0', overflow:'visible', margin:'0 auto', padding:'0 0 0 0', border:'0px solid blue'}}>
   {/* <TwilightLogo className="bglogo darkened" /> */}
-  <div className="contentpanel grid-container">
+  <div className="contentpanel horizontal-scroll panels">
 
 <div className="sliderSpacer" style={{height:'', paddingTop:'', display:''}}></div>
 <BlogListHome data={posts} />
-      {/* <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
-      </div> */}
+      <div style={{textAlign:'center', display:'grid', placeContent:'center', padding:'20% 0 0 0'}}><Link className="button " to="/archive/" style={{textDecoration:'none', color:'inherit', textAlign:'center'}}>View More </Link>
+      </div>
 </div>
 
 
