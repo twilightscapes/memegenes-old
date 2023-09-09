@@ -53,6 +53,11 @@ tags:
   - ivanka
 spotlight: true
 ---
+
+<div style="position:absolute; top:75vh; text-shadow:2px 2px 2px #333; color:#1D9BF0 !important; padding-left:2vw; animation:fadeout 4s forwards; animation-delay:4s;">
+▼ SCROLL DOWN ▼
+</div>
+
 <div class="contentinside" style="height:auto; margin-top:1%;">
 <img class="" src="/assets/hillary-laugh.webp" width="100%" style="opacity:0;
 animation: hillaryLaugh 2s ease-out;

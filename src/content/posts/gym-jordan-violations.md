@@ -51,6 +51,11 @@ tags:
   - gymjordan
   - deviants
 ---
+
+<div style="position:absolute; top:75vh; text-shadow:2px 2px 2px #333; color:#fff !important; padding-left:2vw; animation:fadeout 4s forwards; animation-delay:4s;">
+▼ SCROLL DOWN ▼
+</div>
+
 <div class="contentinside" style="">
 <!-- <img class="" src="/assets/matt-floating-head.webp" width="100%" style=" z-index:-1; opacity:0;
 animation: kariFilter1 6s ease-in-out;

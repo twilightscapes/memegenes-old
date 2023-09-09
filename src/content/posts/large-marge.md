@@ -50,6 +50,11 @@ tags:
   - trash
   - threetoes
 ---
+
+<div style="position:absolute; top:75vh; text-shadow:2px 2px 2px #333; color:#1D9BF0 !important; padding-left:2vw; animation:fadeout 4s forwards; animation-delay:4s;">
+▼ SCROLL DOWN ▼
+</div>
+
 <div class="contentinside" style="position:relative; aspect-ratio:16/9;  width:100%; border:0px solid white; display:flex; flex-direction:column; justify-content:center;">
 
 <!-- <div class="bubble bubble-bottom-left" style="position:absolute; width:; top:45%; left:15vw; display:flex; justify-content:center;backdrop-filter: blur(6px); font-size:110%;

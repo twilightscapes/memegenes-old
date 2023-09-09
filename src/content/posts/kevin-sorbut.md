@@ -128,6 +128,9 @@ tags:
   
 </style>
 
+<div style="position:absolute; top:75vh; text-shadow:2px 2px 2px #333; color:#1D9BF0 !important; padding-left:2vw; animation:fadeout 4s forwards; animation-delay:4s;">
+▼ SCROLL DOWN ▼
+</div>
 
 <div class="contentinside" style="position:relative; z-index:0; min-width:50%; height:auto;  padding:0; left:0; border:0px solid yellow; text-align:center;">
 
