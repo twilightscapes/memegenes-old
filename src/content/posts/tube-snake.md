@@ -12,7 +12,7 @@ youtube:
  youtubersuggestion2: "https://youtu.be/7vz43MYaCA0"
  youtubersuggestion3: "https://youtu.be/7vz43MYaCA0"
  youtubestart: "70"
- youtubeend: ""
+ youtubeend: "200"
  youtubemute: true
  youtubecontrols: false
  clicktoplay: false
@@ -50,7 +50,7 @@ maratingtx3: Drama Queen
 maratingtx4: Trump Slurper
 category: memes
 tags: 
- - mattgaetz
+ - tuberville
  - deviants
 spotlight: true
 ---
