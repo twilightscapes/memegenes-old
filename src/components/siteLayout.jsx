@@ -527,12 +527,6 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
         </li>
 
   
-
-        <li>
-  <Switch />
-</li>
-
-
         {/* {showSwipe ? (
   <li>
   <button
