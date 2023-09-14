@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import Seo from "./seo"
 import { Link } from 'gatsby-plugin-modal-routing-4'
 // import { ModalRoutingContext } from '@decantyme/gatsby-plugin-modal-routing'
@@ -24,8 +24,8 @@ import GoBack from "../components/goBack"
 import { BiLeftArrow } from "react-icons/bi"
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-4'
 // import { AiOutlineClose } from "react-icons/ai"
-// import { BiGridHorizontal } from "react-icons/bi"
-// import { MdOutlineRectangle } from "react-icons/md"
+import { BiGridHorizontal } from "react-icons/bi"
+import { MdOutlineRectangle } from "react-icons/md"
 import Menu from "../components/menu"
 import MenuSocial from "../components/menu-social"
 import userStyles from "../../src/util/userStyles.json"
