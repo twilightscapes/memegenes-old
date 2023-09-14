@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Nancy Pelosi and Mitch McConnell announce controvserial new plans for using Congressional Cloning Cryonics (CCC)
+title: Nancy and Mitch plan to use new Congressional Cloning Cryonics (CCC) program
 slug: /congress-clones
 date: 2023-09-09 03:00
 description: Frozen senators might become the normal state for members of congress

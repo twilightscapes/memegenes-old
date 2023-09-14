@@ -17,6 +17,8 @@ const PostCard = ({ data, index }) => {
   // ...
 
   return (
+
+    
     <div className="post-card1" key={data.frontmatter.slug}>
       <Link className="postlink" to={data.frontmatter.slug}>
         {data.frontmatter.featuredImage ? (
