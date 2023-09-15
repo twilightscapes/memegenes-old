@@ -50,8 +50,9 @@ spotlight: true
 category: memes
 tags:
   - newshax
-  - television
+  - tv
   - bankrupt
+  - celebrity
 ---
 
 
