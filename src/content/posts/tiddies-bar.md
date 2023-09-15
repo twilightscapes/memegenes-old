@@ -8,7 +8,7 @@ category: memes
 tags:
   - boebert
   - trash
-  - bankruptcy
+  - bankrupt
 youtube:
 
   youtubersuggestion3: null
