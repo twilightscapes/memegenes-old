@@ -2,7 +2,7 @@
 template: blog-post
 title: Shit that NEVER happened
 slug: /neverhappened
-date: 2023-09-15 11:43
+date: 2023-09-14 08:03
 description: Throughout history, Trump has proven to the biggest fraud of all time
 category: memes
 tags:
