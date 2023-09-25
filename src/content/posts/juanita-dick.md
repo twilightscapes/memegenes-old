@@ -2,7 +2,7 @@
 template: blog-post
 title: Juanita Dick SO BAD!
 slug: /juanita-dick
-date: 2023-09-24 07:03
+date: 2023-09-24 21:03
 description: Juanita needs a man. 
 category: memes
 tags:
@@ -62,7 +62,7 @@ Juanita Dick SO Badly!</div>
 			width="100%"
 			height="315"
 			style="height:100vh"
-			src="http://juanitabroaddrick.com"
+			src="https://juanitabroaddrick.com"
 			title="A total farce of human being"
 			frameborder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
