@@ -18,7 +18,7 @@ youtube:
  clicktoplay: false
  customcontrols: true
  youtubeautostart: false
- youtubeloop: true
+ youtubeloop: false
 audiotitle: "Fuckin' Liar!"
 liarliar: true
 isnftforsale: false
