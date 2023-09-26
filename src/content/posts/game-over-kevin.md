@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: Game Over Kevin! Watch the trash get taken out
-slug: /kevin-trash
+slug: /game-over-kevin
 date: 2023-09-26 06:00
 description: Kevin is feeling the squeeze on all sides 
 youtube:
@@ -12,20 +12,20 @@ youtube:
  youtubersuggestion2: "https://youtu.be/xCuyPvfkmug"
  youtubersuggestion3: "https://youtu.be/dQw4w9WgXcQ"
  youtubestart: "0"
- youtubeend: "30"
+ youtubeend: "29"
  youtubemute: false
  youtubecontrols: false
  clicktoplay: false
  customcontrols: true
  youtubeautostart: false
- youtubeloop: false
+ youtubeloop: true
 audiotitle: "Fuckin' Liar!"
 liarliar: true
 isnftforsale: false
 svgzindex: "0"
 comments: false
 shareable: true
-underlayImage: /assets/zodiac-cruz-bg1.webp
+underlayImage: 
 featuredImage: /assets/kevin-trash-promo.webp
 svgImage: /assets/kevin-squeeze.svg
 scrollable: false
