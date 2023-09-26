@@ -2,7 +2,7 @@
 template: blog-post
 title: Game Over Kevin! Watch the trash get taken out
 slug: /game-over-kevin
-date: 2023-09-26 06:00
+date: 2023-09-26 05:00
 description: Kevin is feeling the squeeze on all sides 
 youtube:
  youtuber: "https://youtu.be/6u3QInIMVME?si=f_t69VZvzrG-9tS2"

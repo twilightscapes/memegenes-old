@@ -21,10 +21,6 @@ youtube:
  youtubeloop: true
 audiotitle: "Fuckin' Liar!"
 liarliar: true
-youtubecontrols: false
-clicktoplay: true
-customcontrols: false
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: false
