@@ -13,18 +13,14 @@ youtube:
  youtubersuggestion3: "https://youtu.be/dQw4w9WgXcQ"
  youtubestart: "0"
  youtubeend: "30"
- youtubemute: true
+ youtubemute: false
  youtubecontrols: false
  clicktoplay: false
  customcontrols: true
- youtubeautostart: true
+ youtubeautostart: false
  youtubeloop: true
 audiotitle: "Fuckin' Liar!"
 liarliar: true
-youtubecontrols: false
-clicktoplay: true
-customcontrols: false
-youtubeloop: true
 isnftforsale: false
 svgzindex: "0"
 comments: false
@@ -36,15 +32,15 @@ scrollable: false
 showZoom: true
 showPageNav: true
 nftdrop: "2023-03-05T10:00:00"
-contentinvideo: false
+contentinvideo: true
 viewerwarning: Viewer Discretion Strongly Advised
 marate: MG
 marating1: DA
-marating2: TS
-marating3: SP
+marating2: GL
+marating3: SL
 marating4: 
-maratingtx1: Dumb Ass
-maratingtx2: Trump Sucker
+maratingtx1: Dumbass
+maratingtx2: Gutless
 maratingtx3: Spineless
 maratingtx4: 
 category: memes
