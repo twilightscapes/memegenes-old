@@ -9,14 +9,14 @@ youtube:
  youtuber2: 
  youtubeshoworiginal: true
  youtubersuggestion1: "https://www.youtube.com/shorts/U5RWqqyrMaQ"
- youtubersuggestion2: "https://www.youtube.com/shorts/U5RWqqyrMaQ"
+ youtubersuggestion2: "https://youtu.be/xCuyPvfkmug"
  youtubersuggestion3: "https://youtu.be/dQw4w9WgXcQ"
  youtubestart: "483"
  youtubeend: "490"
  youtubemute: true
  youtubecontrols: false
  clicktoplay: false
- customcontrols: false
+ customcontrols: true
  youtubeautostart: true
  youtubeloop: true
 audiotitle: "Fuckin' Liar!"
@@ -31,7 +31,7 @@ comments: false
 shareable: true
 underlayImage: /assets/zodiac-cruz-bg.webp
 featuredImage: /assets/zodiac-cruz-promo.webp
-svgImage: 
+svgImage: /assets/zodiac-cruz.svg
 scrollable: false
 showZoom: true
 showPageNav: true
@@ -39,14 +39,14 @@ nftdrop: "2023-03-05T10:00:00"
 contentinvideo: false
 viewerwarning: Viewer Discretion Strongly Advised
 marate: MA
-marating1: EW
-marating2: QA
-marating3: DQ
-marating4: TS
-maratingtx1: Eww!
-maratingtx2: Qrazy
-maratingtx3: Drama Queen
-maratingtx4: Trump Slurper
+marating1: DA
+marating2: BS
+marating3: 
+marating4: 
+maratingtx1: Dumb Ass
+maratingtx2: Total BS
+maratingtx3: 
+maratingtx4: 
 category: memes
 tags: 
  - tedcruz
