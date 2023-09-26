@@ -16,7 +16,7 @@ youtube:
  youtubemute: true
  youtubecontrols: false
  clicktoplay: false
- customcontrols: false
+ customcontrols: true
  youtubeautostart: true
  youtubeloop: true
 audiotitle: "Fuckin' Liar!"
@@ -38,14 +38,14 @@ showPageNav: true
 nftdrop: "2023-03-05T10:00:00"
 contentinvideo: false
 viewerwarning: Viewer Discretion Strongly Advised
-marate: MA
+marate: MG
 marating1: DA
-marating2: BS
-marating3: 
+marating2: TS
+marating3: SP
 marating4: 
 maratingtx1: Dumb Ass
-maratingtx2: Total BS
-maratingtx3: 
+maratingtx2: Trump Sucker
+maratingtx3: Spineless
 maratingtx4: 
 category: memes
 tags: 
