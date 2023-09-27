@@ -1,6 +1,6 @@
 ---
 template: blog-post
-title: Pregnant lady leaks footage of a lewd Lauren Boebert
+title: Pregnant lady leaks her footage of a lewd Lauren Boebert
 slug: /lauren-theater
 date: 2023-09-27 04:00
 description: Footage of Lauren enjoying the movie from two rows behind her 
@@ -66,13 +66,13 @@ spotlight: true
 ## Lauren Boebert exposed in outlandish re-enactment of an Alanis Morrisette song.
 
 <br />
-Finally the pregnant lady seated behind Lauren Boebert in the now infamous showing of Beetlejuice has come forward. She's also provided video of the congeesswoman's outrageoud behavior.
+Finally, the pregnant lady seated behind Lauren Boebert in the now infamous showing of Beetlejuice has come forward. She's also provided video of the congeesswoman's outrageoud behavior.
 <br /><br />
 Wishing to remain anonymous for obvious reasons, she said that the congresswoman was rude from the moment she sat down. But she was dismayed and amazed as her behavior continued to degrade throughout the night with her eventually finding her boyfriends lap.
 
 <blockquote>she just buried her head into his lap and went to town like a cheap bar sleezer at the end of the night</blockquote>
 
-"She insisted that I shut up, and she told me that she was re-enacting her favorite song" said the fellow theater patron.
+"She insisted that I just shut up, and she told me that she was re-enacting her favorite song" said the fellow theater patron.
 
 For reference here are the lyrics that she was suggestively singing while he openly groped the congresswoman's breats:
 
