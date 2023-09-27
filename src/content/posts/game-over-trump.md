@@ -2,7 +2,7 @@
 template: blog-post
 title: Watch The Walls Close In On Trump!
 slug: /game-over-trump
-date: 2023-09-27 05:00
+date: 2023-09-26 23:00
 description: Donald is feeling the squeeze on all sides 
 youtube:
  youtuber: "https://youtu.be/6u3QInIMVME?si=f_t69VZvzrG-9tS2"
