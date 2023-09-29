@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import Menu from "../../src/util/menu-social.json";
-// import BlueCheck from "./bluecheck";
+import BlueCheck from "./bluecheck";
 const newMenu = Menu.menuItems.map((menu) => (
   <Link
     key={menu.menutitle}
