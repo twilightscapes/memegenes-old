@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect } from 'react';
 import Seo from "./seo"
 import { Link } from 'gatsby-plugin-modal-routing-4'
 // import { ModalRoutingContext } from '@decantyme/gatsby-plugin-modal-routing'
@@ -24,10 +24,10 @@ import GoBack from "../components/goBack"
 import { BiLeftArrow } from "react-icons/bi"
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-4'
 // import { AiOutlineClose } from "react-icons/ai"
-import { BiGridHorizontal } from "react-icons/bi"
-import { MdOutlineRectangle } from "react-icons/md"
+// import { BiGridHorizontal } from "react-icons/bi"
+// import { MdOutlineRectangle } from "react-icons/md"
 import Menu from "../components/menu"
-import MenuSocial from "../components/menu-social"
+// import MenuSocial from "../components/menu-social"
 import userStyles from "../../src/util/userStyles.json"
 import SignUp from "../components/newssign"
 // import useNetlifyIdentity from '../components/useNetlifyIdentity';
@@ -122,9 +122,9 @@ useEffect(() => {
 
 
 
-  const QUERY = '(prefers-reduced-motion: no-preference)';
-  const mediaQueryList = window.matchMedia(QUERY);
-  const prefersReducedMotion = !mediaQueryList.matches;
+  // const QUERY = '(prefers-reduced-motion: no-preference)';
+  // const mediaQueryList = window.matchMedia(QUERY);
+  // const prefersReducedMotion = !mediaQueryList.matches;
 
   
 
@@ -154,7 +154,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
     #menu,.font,.full-width-image:after,.h1,.h2,.h3,.h4,.header .menu-icon:before,.horizontal-scroll:before,.intro:after,.intro:before,.scrolldown,h1,h2,h3,h4,input.special{font-family:${font1}, sans-serif}
     ${userStyles.userStyles}
   `}</style>
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 </Helmet>
 
 
@@ -233,33 +233,17 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
 
 <div id="menu" className="menu print panel1 header" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', maxHeight:'', overFlow:'', boxShadow:'0 0 2px rgba(0,0,0,.7)', padding:'0 2%', alignItems:'start', borderRadius:'0', display:'flex', justifyContent:'space-around', gap:'10px', color:'#fff',  borderBottom:'1px solid #222',}}>
 
-{/* {loggedIn ? (
-<div style={{position:'absolute', left:'10px', top:'22px', cursor:'pointer'}}><BlueCheck /></div>
-) : (
-  ""
-  )} */}
 
-{/* <div style={{position:'absolute', left:'10px', top:'22px', cursor:'pointer'}}><BlueCheck /></div> */}
 
-{prefersReducedMotion ? (
-    <Link to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'block', maxWidth:'', height:'auto', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
-            <button className="cornerlogo" style={{position:'relative', top:'', left:'4%', border:'0px solid white', borderBottom:'0px solid transparent'}} aria-label="Return to Home">
-            {iconimage ? (
-      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'', border:'none'}} width="117" height="60" />
-                ) : (
-                  <div style={{fontWeight:'bold',}}>{companyname}</div>
-                )}
-            </button>
-            </Link>
-          ) : (
+
           
                         <Link to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'flex', alignItems:'center', justifyContent:'center', maxWidth:'', height:'60px', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
 <>
 
-  <SiteLogo className="cornerlogo" style={{position:'relative', top:'', left:'30px', border:'0px solid white', padding:'0', maxHeight:'60px'}} alt={companyname} width="117" height="60" />
+  <SiteLogo className="cornerlogo" style={{position:'relative', top:'', left:'4%', border:'0px solid white', padding:'0', maxHeight:'60px'}} alt={companyname} width="117" height="60" />
 
-  <img className="cornerlogo" style={{position:'relative', top:'', left:'4%', border:'0px solid white', padding:'0', maxHeight:'60px'}} src={iconimage} alt={companyname} width="117" height="60" />
+  {/* <img className="cornerlogo" style={{position:'relative', top:'', left:'4%', border:'0px solid white', padding:'0', maxHeight:'60px'}} src={iconimage} alt={companyname} width="117" height="60" /> */}
               
 
 </>    
@@ -268,7 +252,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
                 )}
             </Link>
                         
-          )}
+
 
 
           
