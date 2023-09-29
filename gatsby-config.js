@@ -228,95 +228,95 @@ module.exports = {
 
           
           
-          {
-            resolve: 'gatsby-plugin-feed',
-            options: {
-              custom_namespaces: {
-                media: "http://search.yahoo.com/mrss/",
-              },
-              custom_elements: [
-                {
-                  _attr: {
-                    "xmlns:media": "http://search.yahoo.com/mrss/",
-                  },
-                },
-              ],
-              query: `
-                {
-                  site {
-                    siteMetadata {
-                      title
-                      description
-                      siteUrl
-                      site_url: siteUrl
-                    }
-                  }
-                }
-              `,
-              feeds: [
-                {
-                  serialize: ({ query: { site, allMarkdownRemark } }) => {
-                    return allMarkdownRemark.nodes.map(node => {
-                      const imageUrl = node.frontmatter.featuredImage
-                        ? site.siteMetadata.siteUrl + node.frontmatter.featuredImage.childImageSharp.fixed.src
-                        : null;
+          // {
+          //   resolve: 'gatsby-plugin-feed',
+          //   options: {
+          //     custom_namespaces: {
+          //       media: "http://search.yahoo.com/mrss/",
+          //     },
+          //     custom_elements: [
+          //       {
+          //         _attr: {
+          //           "xmlns:media": "http://search.yahoo.com/mrss/",
+          //         },
+          //       },
+          //     ],
+          //     query: `
+          //       {
+          //         site {
+          //           siteMetadata {
+          //             title
+          //             description
+          //             siteUrl
+          //             site_url: siteUrl
+          //           }
+          //         }
+          //       }
+          //     `,
+          //     feeds: [
+          //       {
+          //         serialize: ({ query: { site, allMarkdownRemark } }) => {
+          //           return allMarkdownRemark.nodes.map(node => {
+          //             const imageUrl = node.frontmatter.featuredImage
+          //               ? site.siteMetadata.siteUrl + node.frontmatter.featuredImage.childImageSharp.fixed.src
+          //               : null;
           
-                      const mediaContent = imageUrl
-                        ? {
-                            "media:content": {
-                              _attr: {
-                                url: imageUrl,
-                                medium: "image",
-                              },
-                            },
-                          }
-                        : null;
+          //             const mediaContent = imageUrl
+          //               ? {
+          //                   "media:content": {
+          //                     _attr: {
+          //                       url: imageUrl,
+          //                       medium: "image",
+          //                     },
+          //                   },
+          //                 }
+          //               : null;
           
-                      return Object.assign({}, node.frontmatter, {
-                        description: node.excerpt,
-                        date: node.frontmatter.date,
-                        url: site.siteMetadata.siteUrl + node.fields.slug,
-                        guid: site.siteMetadata.siteUrl + node.fields.slug,
-                        custom_elements: [
-                          { "content:encoded": node.html },
-                          mediaContent,
-                        ].filter(Boolean),
-                      });
-                    });
-                  },
-                  query: `
-                  {
-                    allMarkdownRemark(
-                      sort: { fields: [frontmatter___date], order: DESC }
-                      filter: { frontmatter: { excludeFromRSS: { ne: true } } }
-                    ) {
-                      nodes {
-                        excerpt
-                        html
-                        fields {
-                          slug
-                        }
-                        frontmatter {
-                          title
-                          date
-                          featuredImage {
-                            childImageSharp {
-                              fixed(width: 800) {
-                                src
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                `,
-                output: '/rss.xml',
-                  title: 'Feed Title',
-                },
-              ],
-            },
-          },
+          //             return Object.assign({}, node.frontmatter, {
+          //               description: node.excerpt,
+          //               date: node.frontmatter.date,
+          //               url: site.siteMetadata.siteUrl + node.fields.slug,
+          //               guid: site.siteMetadata.siteUrl + node.fields.slug,
+          //               custom_elements: [
+          //                 { "content:encoded": node.html },
+          //                 mediaContent,
+          //               ].filter(Boolean),
+          //             });
+          //           });
+          //         },
+          //         query: `
+          //         {
+          //           allMarkdownRemark(
+          //             sort: { fields: [frontmatter___date], order: DESC }
+          //             filter: { frontmatter: { excludeFromRSS: { ne: true } } }
+          //           ) {
+          //             nodes {
+          //               excerpt
+          //               html
+          //               fields {
+          //                 slug
+          //               }
+          //               frontmatter {
+          //                 title
+          //                 date
+          //                 featuredImage {
+          //                   childImageSharp {
+          //                     fixed(width: 800) {
+          //                       src
+          //                     }
+          //                   }
+          //                 }
+          //               }
+          //             }
+          //           }
+          //         }
+          //       `,
+          //       output: '/rss.xml',
+          //         title: 'Feed Title',
+          //       },
+          //     ],
+          //   },
+          // },
 
           `gatsby-remark-responsive-iframe`,
           // {
@@ -337,7 +337,7 @@ module.exports = {
       },
     },
     // 'gatsby-plugin-sharp-exif',
-    `gatsby-plugin-sass`,
+    // `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-theme-ui`,
     // `gatsby-plugin-static-cms`,
@@ -366,17 +366,17 @@ module.exports = {
     // },
 
 
-    { 
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: true, // Print removed selectors and processed file names
-        develop: true, // Enable while using `gatsby develop`
-        // tailwind: true, // Enable tailwindcss support
-        // whitelist: ['headroom', 'headroom--unfixed'], // Don't remove this selector
-         ignore: ['/user.scss', '/global.scss', '/styles.css'], // Ignore files/folders
-         purgeOnly : ['/animate.css'] // Purge only these files/folders
-      }
-    },
+    // { 
+    //   resolve: `gatsby-plugin-purgecss`,
+    //   options: {
+    //     printRejected: true, // Print removed selectors and processed file names
+    //     develop: true, // Enable while using `gatsby develop`
+    //     // tailwind: true, // Enable tailwindcss support
+    //     // whitelist: ['headroom', 'headroom--unfixed'], // Don't remove this selector
+    //      ignore: ['/user.scss', '/global.scss', '/styles.css'], // Ignore files/folders
+    //      purgeOnly : ['/animate.css'] // Purge only these files/folders
+    //   }
+    // },
 
  
     // {

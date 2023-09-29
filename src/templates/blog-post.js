@@ -13,7 +13,7 @@ import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css'
 
 
 // import Controls from "../components/Controls";
-import { document } from "browser-monads"
+// import { document } from "browser-monads"
 import PropTypes from "prop-types";
 import { MdPlayArrow } from "react-icons/md"
 import { MdPause } from "react-icons/md"
@@ -31,7 +31,7 @@ import { Helmet } from "react-helmet"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 // import { RiArrowRightDownFill } from "react-icons/ri"
-import CommentBox from "../components/commentbox"
+// import CommentBox from "../components/commentbox"
 
 import useSiteMetadata from "../hooks/SiteMetadata"
 // import Countdown from 'react-countdown'
@@ -47,7 +47,7 @@ import { AiOutlineAudioMuted } from "react-icons/ai"
 
 import Footer from "../components/footer"
 // import { SRLWrapper } from "simple-react-lightbox"
-import { CopyToClipboard } from 'react-copy-to-clipboard'
+// import { CopyToClipboard } from 'react-copy-to-clipboard'
 import ReactPlayer from 'react-player/lazy'
 // import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import YouTubed from "../components/youtube"
@@ -289,7 +289,7 @@ function ShowSuggestion() {
 We recommend these alternatives:
 <br /><br />
 Click to Copy:<br />
-<CopyToClipboard text={Suggestion1}>
+{/* <CopyToClipboard text={Suggestion1}>
   <button>{Suggestion1} </button>
 </CopyToClipboard><br />
 
@@ -300,7 +300,7 @@ Click to Copy:<br />
 
 <CopyToClipboard text={Suggestion3}>
   <button>{Suggestion3} </button>
-</CopyToClipboard><br />
+</CopyToClipboard><br /> */}
 
 <br />
 Add your own in the comments below!
@@ -1485,7 +1485,7 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 {Comments ? (
 
 <div id="comments" style={{height:'', paddingBottom:'0',   display:'grid', placeContent:'center', maxWidth:'100vw', padding:'0', margin:'10vh auto'}}>
-<CommentBox />
+{/* <CommentBox /> */}
 
 
 

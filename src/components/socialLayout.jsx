@@ -3,9 +3,9 @@ import Seo from "./seo"
 import { Link } from 'gatsby-plugin-modal-routing-4'
 // import { ModalRoutingContext } from '@decantyme/gatsby-plugin-modal-routing'
 // import { AiOutlineClose } from "react-icons/ai"
-import { window } from "browser-monads"
-import "../assets/scss/reset.scss"
-import "../assets/scss/global.scss"
+// import { window } from "browser-monads"
+import "../assets/scss/reset.css"
+import "../assets/scss/global.css"
 // import "../assets/scss/styles.css"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { StoreContext } from "../context/store-context"
@@ -28,14 +28,14 @@ import { MdOutlineRectangle } from "react-icons/md"
 import Menu from "./menu-social"
 import userStyles from "../../src/util/userStyles.json"
 import SignUp from "./newssign"
-import useNetlifyIdentity from '../components/useNetlifyIdentity';
+// import useNetlifyIdentity from '../components/useNetlifyIdentity';
 
 
 
 const Layout = ({ children }) => {
 
   const [loggedIn, setLoggedIn] = useState(false);
-  useNetlifyIdentity(setLoggedIn);
+  // useNetlifyIdentity(setLoggedIn);
 
 
 const { companyname } = useSiteMetadata()

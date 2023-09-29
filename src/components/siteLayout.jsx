@@ -3,9 +3,9 @@ import Seo from "./seo"
 import { Link } from 'gatsby-plugin-modal-routing-4'
 // import { ModalRoutingContext } from '@decantyme/gatsby-plugin-modal-routing'
 // import { AiOutlineClose } from "react-icons/ai"
-import { window } from "browser-monads"
-import "../assets/scss/reset.scss"
-import "../assets/scss/global.scss"
+// import { window } from "browser-monads"
+import "../assets/scss/reset.css"
+import "../assets/scss/global.css"
 // import "../assets/scss/styles.css"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import { StoreContext } from "../context/store-context"
@@ -30,15 +30,15 @@ import Menu from "../components/menu"
 import MenuSocial from "../components/menu-social"
 import userStyles from "../../src/util/userStyles.json"
 import SignUp from "../components/newssign"
-import useNetlifyIdentity from '../components/useNetlifyIdentity';
-import BlueCheck from './bluecheck';
+// import useNetlifyIdentity from '../components/useNetlifyIdentity';
+// import BlueCheck from './bluecheck';
 
-
+ 
 
 const Layout = ({ children }) => {
 
-  const [loggedIn, setLoggedIn] = useState(false);
-  useNetlifyIdentity(setLoggedIn);
+  // const [loggedIn, setLoggedIn] = useState(false);
+  // useNetlifyIdentity(setLoggedIn);
 
 
 const { companyname } = useSiteMetadata()
@@ -239,7 +239,7 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
   ""
   )} */}
 
-<div style={{position:'absolute', left:'10px', top:'22px', cursor:'pointer'}}><BlueCheck /></div>
+{/* <div style={{position:'absolute', left:'10px', top:'22px', cursor:'pointer'}}><BlueCheck /></div> */}
 
 {prefersReducedMotion ? (
     <Link to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'block', maxWidth:'', height:'auto', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
@@ -256,12 +256,12 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
                         <Link to="/" className="cornerlogo" name="homereturn" style={{position:'', display:'flex', alignItems:'center', justifyContent:'center', maxWidth:'', height:'60px', border:'0px solid transparent'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
 <>
-{loggedIn ? (
+
   <SiteLogo className="cornerlogo" style={{position:'relative', top:'', left:'30px', border:'0px solid white', padding:'0', maxHeight:'60px'}} alt={companyname} width="117" height="60" />
-) : (
+
   <img className="cornerlogo" style={{position:'relative', top:'', left:'4%', border:'0px solid white', padding:'0', maxHeight:'60px'}} src={iconimage} alt={companyname} width="117" height="60" />
               
-)}
+
 </>    
                 ) : (
                   <div style={{fontWeight:'bold', display:'grid', justifyContent:'center', alignItems:'center', height:'60px', fontSize:'150%' }}>{companyname}</div>
@@ -327,18 +327,11 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
 )} */}
 
 
-{/* {loggedIn && (
-        
-        <Menu />
-      
-    )} */}
 
-{loggedIn ? (
-      <MenuSocial />
-                ) : (
+
                   <Menu />
                   
-                )}
+
 
 
 
@@ -497,12 +490,10 @@ const fontUrl = "https://fonts.googleapis.com/css?family=" + font1.replace(/\s+/
   ""
 )} */}
 
-{loggedIn ? (
-      <Menu />
-    ) : (
+
        <Menu />
                   
-)}
+
 
 <li>
 <ul className="missioncontrol sitecontrols" style={{display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'', textAlign:'center', maxHeight:'', alignItems:'center', paddingTop:'5px'}}>
