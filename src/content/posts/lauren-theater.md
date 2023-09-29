@@ -36,12 +36,12 @@ contentinvideo: true
 viewerwarning: Viewer Discretion Strongly Advised
 marate: MA
 marating1: DA
-marating2: SP
-marating3: CM
+marating2: BS
+marating3: 
 marating4: 
 maratingtx1: Dumb Ass
-maratingtx2: Sleazy Princess
-maratingtx3: Congressional Misconduct
+maratingtx2: Total BS
+maratingtx3: 
 maratingtx4: 
 category: memes
 tags: 
