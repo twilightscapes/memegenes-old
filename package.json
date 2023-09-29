@@ -25,6 +25,7 @@
     "@sindresorhus/slugify": "^2.2.0",
     "@theme-ui/color": "^0.15.7",
     "@theme-ui/mdx": "^0.15.7",
+    "browser-monads": "^1.0.0",
     "gatsby": "^5.8.1",
     "gatsby-background-image": "^1.6.0",
     "gatsby-image": "^3.11.0",
