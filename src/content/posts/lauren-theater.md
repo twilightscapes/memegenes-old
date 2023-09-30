@@ -3,7 +3,7 @@ template: blog-post
 title: Pregnant lady leaks her footage of a lewd Lauren Boebert
 slug: /lauren-theater
 date: 2023-09-27 04:00
-description: Footage of Lauren enjoying the movie from two rows behind her 
+description: Footage of Lauren enjoying the movie from the seat behind her 
 youtube:
  youtuber: "https://youtu.be/NPcyTyilmYY"
  youtuber2: 
