@@ -12,7 +12,7 @@ youtube:
  youtubersuggestion2: ""
  youtubersuggestion3: ""
  youtubestart: "0"
- youtubeend: 
+ youtubeend: "10"
  youtubemute: true
  youtubecontrols: false
  youtubeautostart: true
