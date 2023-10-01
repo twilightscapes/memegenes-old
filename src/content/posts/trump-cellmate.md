@@ -7,18 +7,17 @@ description: See Trump get "introduced" to the homies
 youtube:
  youtuber: "https://youtu.be/hDciMlTXDbA"
  youtuber2: 
- youtubeshoworiginal: false
+ youtubeshoworiginal: true
  youtubersuggestion1: ""
- youtubersuggestion2: "https://youtu.be/0iVDJwdJcl8"
- youtubersuggestion3: "https://youtu.be/NPcyTyilmYY"
- youtubestart: ""
- youtubeend: "10"
- youtubemute: false
+ youtubersuggestion2: ""
+ youtubersuggestion3: ""
+ youtubestart: "0"
+ youtubeend: 
+ youtubemute: true
  youtubecontrols: false
- clicktoplay: false
- customcontrols: false
  youtubeautostart: true
  youtubeloop: true
+ clicktoplay: false
 audiotitle: "Fuckin' Liar!"
 liarliar: true
 isnftforsale: false
