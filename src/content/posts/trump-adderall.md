@@ -2,7 +2,7 @@
 template: blog-post
 title: Is Trump on Adderall?
 slug: /trump-adderall
-date: 2023-10-02 22:00
+date: 2023-10-02 20:00
 description: Definitive proof that Trump is an Adderall huffer
 youtube:
  youtuber: "https://youtu.be/fRYSqGYwlbg"
@@ -25,8 +25,8 @@ isnftforsale: false
 svgzindex: "0"
 comments: false
 shareable: true
-underlayImage: /assets/trumpcellmates-overlay.webp
-featuredImage: /assets/trump-cell-promo.webp
+underlayImage: 
+featuredImage: /assets/trump-adderall-promo.webp
 svgImage: /assets/trump-adderall.svg
 scrollable: false
 showZoom: true
