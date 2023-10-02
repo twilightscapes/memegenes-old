@@ -7,7 +7,7 @@ description: A recently found pager show a shocking life of sellatious activitie
 youtube:
  youtuber: "https://youtu.be/ZSVcJ0AkCfs"
  youtuber2: ""
- youtubeshoworiginal: true
+ youtubeshoworiginal: false
  youtubersuggestion1: ""
  youtubersuggestion2: ""
  youtubersuggestion3: ""
@@ -52,8 +52,11 @@ tags:
 spotlight: true
 ---
 
-<div class="contentbody" style="text-align:left !important; margin-top:0;">
 
+<div class="contentbody" style="text-align:left !important; margin-top:0;">
+<div style="position:absolute; top:75vh; left:30%; text-shadow:2px 2px 2px #333; color:#1D9BF0 !important; padding-left:2vw; animation:fadeout 4s forwards; animation-delay:4s;">
+▼ SCROLL DOWN ▼
+</div>
 <img src="/assets/santos-sales-photo1.webp" width="100%" height="auto" alt="shit that never happened"  />
 
 ## Georgie Hustle revealed as one of George Santos alter-egos
