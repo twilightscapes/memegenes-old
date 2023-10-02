@@ -5,13 +5,13 @@ slug: /trump-adderall
 date: 2023-10-02 20:00
 description: Definitive proof that Trump is an Adderall huffer
 youtube:
- youtuber: "https://youtu.be/fRYSqGYwlbg"
+ youtuber: "https://youtu.be/QNo2YyBYpqA"
  youtuber2: 
  youtubeshoworiginal: false
- youtubersuggestion1: ""
- youtubersuggestion2: ""
- youtubersuggestion3: ""
- youtubestart: "10"
+ youtubersuggestion1: "https://youtube.com/shorts/IMS7DnEVwBo"
+ youtubersuggestion2: "https://youtube.com/shorts/IMS7DnEVwBo"
+ youtubersuggestion3: "https://youtube.com/shorts/IMS7DnEVwBo"
+ youtubestart: "0"
  youtubeend: ""
  youtubemute: false
  youtubecontrols: false
