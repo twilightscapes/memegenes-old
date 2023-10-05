@@ -29,7 +29,7 @@ underlayImage:
 featuredImage: /assets/matt-viagra.webp
 svgImage: 
 scrollable: false
-showZoom: true
+showZoom: false
 showPageNav: true
 nftdrop: "2023-03-05T10:00:00"
 contentinvideo: true
