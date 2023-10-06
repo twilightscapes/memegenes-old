@@ -1,7 +1,7 @@
 ---
 template: blog-post
 title: Rudy starts up his own GoFundMe
-slug: /my-go-fund-me
+slug: /rudy-gofundme
 date: 2023-10-06 03:00
 description: Rudy is so broke he is drinking rubbing alcohol
 youtube:
