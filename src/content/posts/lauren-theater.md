@@ -66,7 +66,7 @@ spotlight: true
 ## Lauren Boebert exposed in outlandish re-enactment of an Alanis Morrisette song.
 
 <br />
-Finally, the pregnant lady seated behind Lauren Boebert in the now infamous showing of Beetlejuice has come forward. She's also provided video of the congeesswoman's outrageoud behavior.
+Finally, the pregnant lady seated behind Lauren Boebert, in the now infamous showing of Beetlejuice has come forward. She's also provided video of the congresswoman's outrageous behavior.
 <br /><br />
 Wishing to remain anonymous for obvious reasons, she said that the congresswoman was rude from the moment she sat down. But she was dismayed and amazed as her behavior continued to degrade throughout the night with her eventually finding her boyfriends lap.
 
@@ -74,7 +74,7 @@ Wishing to remain anonymous for obvious reasons, she said that the congresswoman
 
 "She insisted that I just shut up, and she told me that she was re-enacting her favorite song" said the fellow theater patron.
 
-For reference here are the lyrics that she was suggestively singing while he openly groped the congresswoman's breats:
+For reference here are the lyrics that she was suggestively singing while he openly groped the congresswoman's breasts:
 
 <blockquote>Is she perverted like me?<br />
 <span style="font-weight:bold; text-decoration:underline;">Would she go down on you in a theatre?</span><br />
