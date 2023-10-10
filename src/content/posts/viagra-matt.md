@@ -48,7 +48,7 @@ tags:
  - celebrity
  - mattgaetz
  - deviants
-spotlight: false
+spotlight: true
 ---
 
 <!-- ## You make the decision! -->

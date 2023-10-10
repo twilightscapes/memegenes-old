@@ -1,22 +1,22 @@
 ---
 template: blog-post
-title: Coming This Fall - Return to Brokeback Mountain
-slug: /trumpelon-broke
-date: 2023-10-05 12:00
-description: Brokeback Mountain 2 - Crazy man-love Boogaloo
+title: RFK Jr. Reads The Declaration of Independence
+slug: /rfk-reads-independence
+date: 2023-10-10 04:00
+description: How much of a patriot are you? Can you listen to the whole thing?
 youtube:
- youtuber: 
+ youtuber: "https://youtu.be/DNF420oBZno"
  youtuber2: 
  youtubeshoworiginal: true
- youtubersuggestion1: "https://youtu.be/GPT9YILnCUQ"
- youtubersuggestion2: "https://youtu.be/KudedLV0tP0"
- youtubersuggestion3: "https://youtu.be/KudedLV0tP0"
- youtubestart: "40"
- youtubeend: "42"
+ youtubersuggestion1: ""
+ youtubersuggestion2: "https://youtu.be/xCuyPvfkmug"
+ youtubersuggestion3: "https://youtu.be/dQw4w9WgXcQ"
+ youtubestart: "483"
+ youtubeend: "490"
  youtubemute: false
  youtubecontrols: false
  clicktoplay: false
- customcontrols: false
+ customcontrols: true
  youtubeautostart: false
  youtubeloop: true
 audiotitle: "Fuckin' Liar!"
@@ -26,7 +26,7 @@ svgzindex: "0"
 comments: false
 shareable: true
 underlayImage: 
-featuredImage: /assets/brokeback.webp
+featuredImage: /assets/rfkjr-reads-promo.webp
 svgImage: 
 scrollable: false
 showZoom: true
@@ -35,24 +35,21 @@ nftdrop: "2023-03-05T10:00:00"
 contentinvideo: false
 viewerwarning: Viewer Discretion Strongly Advised
 marate: MA
-marating1: EC
-marating2: SS
-marating3: HL
+marating1: DA
+marating2: BS
+marating3: 
 marating4: 
-maratingtx1: Extreme Closeups
-maratingtx2: Strong Sexual Situations
-maratingtx3: It's Humor, Laugh
+maratingtx1: Dumb Ass
+maratingtx2: Total BS
+maratingtx3: 
 maratingtx4: 
 category: memes
 tags: 
- - celebrity
- - trump
- - elon
- - gay
+ - rfkjr
 spotlight: true
 ---
 
-<!-- ## You make the decision! -->
+## You make the decision!
 
 <div class="contentinside" style="display:none;">
 <!-- <img class="" src="/assets/matt-floating-head.webp" width="100%" style=" z-index:-1; opacity:;
