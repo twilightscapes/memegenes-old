@@ -50,7 +50,7 @@ tags:
 spotlight: true
 ---
 
-## You make the decision!
+## The White House was put on LOCKDOWN after the President was disovered missing
 
 <div class="contentinside" style="display:none;">
 <!-- <img class="" src="/assets/matt-floating-head.webp" width="100%" style=" z-index:-1; opacity:;
@@ -121,14 +121,24 @@ opacity:0;
 
 
 </style>
-<!-- <div class="contentbody" style="text-align:left !important; margin-top:0;">
+<div class="contentbody" style="text-align:left !important; margin-top:0;">
 <span style="text-align: center;">
 
-## Ramaswamy will say anything and sell anything in order to get your vote.
 
 </span>
 
 <br />
+According to WH aides, the President was discovered missing after he was assumed to have retired for the evening. 
+<br /><br />
+After an exhaustive search, the President was found safely in the cafeteria eating ice cream.
+<br /><br />
+White House security video footage shows the President dressed in only his Pajamas roaming the White House grounds after Midnight. 
+<br /><br />
+In the video, President Biden appears lost or confused as he stumbles his way through a construction area. 
+<br /><br />
+The White House claims the President was simply going for an evening stroll when he made a wrong turn. 
+<br /><br />
+More developments as they come - stay tuned.
 
 
 
@@ -136,5 +146,4 @@ opacity:0;
 
 
 
-
-</div> -->
+</div>
