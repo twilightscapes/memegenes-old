@@ -219,7 +219,7 @@ const Post = ({ data, pageContext }) => {
 // const IsNft = frontmatter.isnftforsale
 const ShowOriginal = frontmatter.youtube.youtubeshoworiginal
 const ShareThis = frontmatter.shareable
-const Comments = frontmatter.comments
+// const Comments = frontmatter.comments
 
 const YouTubeStart = frontmatter.youtube.youtubestart
 const YouTubeEnd = frontmatter.youtube.youtubeend
@@ -1482,7 +1482,7 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
           
 
-{Comments ? (
+{/* {Comments ? (
 
 <div id="comments" style={{height:'', paddingBottom:'0',   display:'grid', placeContent:'center', maxWidth:'100vw', padding:'0', margin:'10vh auto'}}>
 <CommentBox />
@@ -1495,7 +1495,7 @@ textShadow:'2px 2px 0 #222', filter:'drop-shadow(0px 0px 5px rgba(155,155,155,1)
 
 ""
 
-          )}
+          )} */}
          
 
 
@@ -1674,7 +1674,6 @@ export const pageQuery = graphql`
         audiotitle
         liarliar
         contentinvideo
-        comments
         shareable
         isnftforsale
         bumpertext
