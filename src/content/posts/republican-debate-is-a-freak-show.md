@@ -5,7 +5,7 @@ slug: /republican-debate-freakshow
 date: 2023-11-10 06:35
 description: Republican debate - is a freak show
 category: memes
-shareable: "true"
+shareable: true
 showZoom: false
 youtube:
   youtubemute: false
