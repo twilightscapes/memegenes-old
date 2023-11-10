@@ -12,7 +12,7 @@ youtube:
   youtubeautostart: false
   youtubeloop: true
   youtubecontrols: false
-  customcontrols: true
+  customcontrols: false
   clicktoplay: false
 featuredImage: /assets/judge-juicebox.webp
 ---
