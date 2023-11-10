@@ -154,6 +154,7 @@ collections:
           name: "body",
           widget: "markdown",
           hint: "Main content goes here.",
+          required: false,
         }
         
       # - { label: "Bumper Text", name: "bumpertext", widget: "string", default: "", required: false  }
