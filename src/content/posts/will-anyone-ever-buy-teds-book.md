@@ -5,8 +5,8 @@ slug: /buy-teds-book
 date: 2023-11-10 06:43
 description: Will anyone ever buy Teds book?
 category: memes
-shareable: "true"
-showZoom: "true"
+shareable: true
+showZoom: true
 youtube:
   youtubemute: false
   youtubeautostart: false
