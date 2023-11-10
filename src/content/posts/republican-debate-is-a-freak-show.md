@@ -15,4 +15,7 @@ youtube:
   customcontrols: false
   clicktoplay: false
 featuredImage: /assets/odd-debate.webp
+tags:
+  - rondesantis
+  - election2024
 ---

@@ -16,5 +16,7 @@ youtube:
   clicktoplay: false
 featuredImage: /assets/judge-juicebox.webp
 comments: false
+tags:
+  - tedcruz
 ---
 Judge Juice!
