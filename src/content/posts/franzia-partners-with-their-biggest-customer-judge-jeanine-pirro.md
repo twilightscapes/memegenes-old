@@ -4,9 +4,9 @@ title: Franzia partners with their biggest customer - Judge Jeanine Pirro
 slug: /judge-juice
 date: 2023-11-10 05:36
 description: Franzia partners with their biggest customer - Judge Jeanine Pirro
-category: news
-comments: false
+category: memes
 shareable: true
+showZoom: true
 youtube:
   youtubemute: false
   youtubeautostart: false
@@ -15,5 +15,6 @@ youtube:
   customcontrols: false
   clicktoplay: false
 featuredImage: /assets/judge-juicebox.webp
+comments: false
 ---
 Judge Juice!
