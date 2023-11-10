@@ -102,7 +102,7 @@ collections:
               { label: "YouTube AutoPlay", name: "youtubeautostart", widget: "boolean", default: false, required: false },
               { label: "YouTube Loop", name: "youtubeloop", widget: "boolean", default: true, required: false },
               { label: "YouTube Controls", name: "youtubecontrols", widget: "boolean", default: false, required: false },
-              { label: "YouTube Use Custom Controls", name: "customcontrols", widget: "boolean", default: true, required: false },
+              { label: "YouTube Use Custom Controls", name: "customcontrols", widget: "boolean", default: false, required: false },
               { label: "YouTube Click To Play", name: "clicktoplay", widget: "boolean", default: false, required: false }
             ]
           }
