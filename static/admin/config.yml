@@ -75,7 +75,7 @@ collections:
 
 
       # - { label: "Make Comments Available?", name: "comments", widget: "boolean", default: "true", required: false }
-      - { label: "Make Post Shareable?", name: "shareable", widget: "boolean", default: "true", required: false }
+      - { label: "Make Post Shareable?", name: "shareable", widget: "boolean", default: "true", required: true }
       - { label: "Make Feature Image Zoom", name: "showZoom", widget: "boolean", default: "true", required: false }
       # - { label: "Turn Page Scroll On", name: "scrollable", widget: "boolean", default: "false", hint: "Allows post to be scrolled vertically", required: false  }
       # - { label: "Place content inside Video Frame", name: "contentinvideo", widget: "boolean", default: "false", hint: "For Devs to inject the content of the post directly into video frame area, allowing for custom layout and features - By doing so, this replaces the normally visible content on your page - BEWARE", required: false }
